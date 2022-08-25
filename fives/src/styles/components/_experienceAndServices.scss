@@ -1,0 +1,20 @@
+.experiences-and-services {
+  // margin: 5% 0;
+  .container {
+    @media (max-width: $desktop) {
+      margin-bottom: 15px;
+    }
+  }
+  .content-description{
+    padding: 0 25%;
+    margin: 0.5rem 0 2.8rem;
+    text-align: center;
+    @media (max-width:$desktop) {
+        padding: 0 15%;
+    }
+    @media (max-width:$desktop) {
+      margin: 0.5rem 0 0rem;
+    }
+  }
+}
+ 

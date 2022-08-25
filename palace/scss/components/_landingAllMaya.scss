@@ -1,0 +1,320 @@
+body.page-node-5304,
+body.page-node-5278{
+    section.intro-text-5282,
+    section.intro-text-5299,
+    section.intro-text-5301,     
+    section.intro-text-5285{ 
+        .content{        
+        h2{
+            transition: opacity 2s ease-in;    
+            opacity: 0;
+            @media (max-width: $tablet){        
+                opacity: 1;
+              }  
+            span{                
+                transition: opacity 1s ease-in;
+                opacity: 0;
+                @media (max-width: $tablet){        
+                    opacity: 1;
+                  }  
+            }          
+            &::after{
+                width: 0px;
+                transition: width 2s ease-in;
+                @media (max-width: $tablet){        
+                    width: 60px;
+                  }  
+            }
+        }
+        .pr1{
+            p{
+                margin: 0 !important;
+            }
+            p:nth-child(1){
+                opacity: 0;
+                transition: opacity 2.5s ease-in-out;  
+                @media (max-width: $tablet){        
+                    opacity: 1;
+                  } 
+            }        
+            p:nth-child(2){
+                opacity: 0;
+                transition: opacity 4.5s ease-in-out;  
+                @media (max-width: $tablet){        
+                    opacity: 1;
+                  } 
+            }
+            p:nth-child(3){
+                opacity: 0;
+                transition: opacity 6.5s ease-in-out;  
+                @media (max-width: $tablet){        
+                    opacity: 1;
+                  } 
+            }     
+        }
+        .pr2{
+            p{
+                margin: 0 !important;
+            }
+            p:nth-child(1){
+                opacity: 0;
+                transition: opacity 8.5s ease-in-out;  
+                @media (max-width: $tablet){        
+                    opacity: 1;
+                  } 
+            }        
+            p:nth-child(2){
+                opacity: 0;
+                transition: opacity 10.5s ease-in-out;  
+                @media (max-width: $tablet){        
+                    opacity: 1;
+                  } 
+            }       
+        }
+    }
+        &.animatedsectionLP{
+            .content{
+            h2{
+                opacity: 1;
+                span{                
+                    opacity: 1;
+                }
+                &::after{
+                    width: 60px;
+                }
+            }
+            .pr1{
+                p:nth-child(1){
+                    opacity: 1;                   
+                }        
+                p:nth-child(2){
+                    opacity: 1;                   
+                }
+                p:nth-child(3){
+                    opacity: 1;
+                }     
+            }
+            .pr2{
+                p:nth-child(1){
+                    opacity: 1;
+                }        
+                p:nth-child(2){
+                    opacity: 1;
+                }       
+            }
+          }
+          }
+    }
+    section.destination_list {
+        .content{
+            article{
+                picture{
+                   img{
+                    transform-origin: center;
+                    transition: transform 0.5s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                   }
+                }
+            }
+            article:nth-child(odd){
+                picture{
+                    opacity: 0;
+                    @include translatex(0px,30px);
+                    @include timming1sparam(1s);
+                    @media (max-width: $tablet){
+                        @include translatex(0%,0px);
+                        opacity: 1;
+                      }
+                }
+                .copy{
+                    h2{
+                        @include translatex(30px,0px);
+                        @include timming1sparam(1s);
+                        opacity: 0;
+                        @media (max-width: $tablet){
+                            @include translatex(0%,0px);
+                            opacity: 1;
+                          }
+                        &::before{
+                            transition: opacity 1s ease-in;    
+                            opacity: 0;
+                            @media (max-width: $tablet){                            
+                                opacity: 1;
+                              }
+                        }
+                        &::after{
+                            width: 0px;
+                            transition: width 2s ease-in;
+                            @media (max-width: $tablet){
+                                width: 60px;
+                              }
+                        }
+                    }
+                    p:first-line{
+                        @include translatex(30px,0px);
+                        @include timming1sparam(1s);
+                        opacity: 0;
+                        @media (max-width: $tablet){
+                            @include translatex(0%,0px);
+                            opacity: 1;
+                          }
+                    }
+                    p{
+                        transition: opacity 1s ease-in;    
+                        opacity: 0;
+                        @media (max-width: $tablet){
+                            opacity: 1;
+                          }
+                    }
+                    a{
+                        transform: scale(0);
+                        transition: transform 1s ease-in;
+                        @media (max-width: $tablet){
+                            transform: scale(1);
+                          }
+                    }
+                }
+                &.animatedsectionLP{
+                    picture{
+                        opacity: 1;
+                        @include translatex(0%,0px);
+                        @include delaytime(1s);
+                    }
+                    .copy{
+                        h2{
+                            @include translatex(0%,0px);
+                            @include delaytime(0.1s);
+                            opacity: 1;
+                            &::before{
+                                opacity: 1;
+                            }
+                            &::after{
+                                width: 60px;
+                            }
+                        }
+                        p:first-line{
+                            @include translatex(0%,0px);
+                            @include delaytime(0.1s);
+                            opacity: 1;
+                        }
+                        p{
+                            opacity: 1;
+                        }
+                        a{
+                            transform: scale(1) ;
+                        }
+                    }
+                }
+            } 
+            article:nth-child(even){
+                picture{
+                    opacity: 0;
+                    @include translatex(0px,-30px);
+                    @include timming1sparam(1s);
+                    @media (max-width: $tablet){
+                        @include translatex(0%,0px);
+                        opacity: 1;
+                      }
+                }
+                .copy{
+                    h2{
+                        @include translatex(30px,0px);
+                        @include timming1sparam(1s);
+                        opacity: 0;
+                        @media (max-width: $tablet){
+                            @include translatex(0%,0px);
+                            opacity: 1;
+                          }
+                        &::before{
+                            transition: opacity 1s ease-in;    
+                            opacity: 0;
+                            @media (max-width: $tablet){
+                                opacity: 1;
+                              }
+                        }
+                        &::after{
+                            width: 0px;
+                            transition: width 2s ease-in;
+                            @media (max-width: $tablet){
+                                width: 60px;
+                              }
+                        }
+                    }
+                    p:first-line{
+                        @include translatex(30px,0px);
+                        @include timming1sparam(1s);
+                        opacity: 0;
+                        @media (max-width: $tablet){
+                            @include translatex(0%,0px);
+                            opacity: 1;
+                          }
+                    }
+                    p{
+                        transition: opacity 1s ease-in;    
+                        opacity: 0;
+                        @media (max-width: $tablet){
+                            opacity: 1;
+                          }
+                    }
+                    a{
+                        transform: scale(0);
+                        transition: transform 1s ease-in;
+                        @media (max-width: $tablet){
+                            transform: scale(1);
+                          }
+                    }
+                }
+                &.animatedsectionLP{
+                    picture{
+                        opacity: 1;
+                        @include translatex(0%,0px);
+                        @include delaytime(1s);
+                    }
+                    .copy{
+                        h2{
+                            @include translatex(0%,0px);
+                            @include delaytime(0.1s);
+                            opacity: 1;
+                            &::before{
+                                opacity: 1;
+                            }
+                            &::after{
+                                width: 60px;
+                            }
+                        }
+                        p:first-line{
+                            @include translatex(0%,0px);
+                            @include delaytime(0.1s);
+                            opacity: 1;
+                        }
+                        p{
+                            opacity: 1;
+                        }
+                        a{
+                            transform: scale(1) ;
+                        }
+                    }
+                }
+            } 
+                  
+        }
+        
+    }
+    section.page_tabs,
+    section.bloque-purely{
+        opacity: 0;
+        @include translatex(0px,30px);
+        @include timming1sparam(1s);
+        @media (max-width: $tablet){
+            @include translatex(0%,0px);
+            opacity: 1;
+          }
+        &.animatedsectionLP{
+            opacity: 1;
+            @include translatex(0%,0px);
+            @include delaytime(0.1s);
+        }
+    }
+}

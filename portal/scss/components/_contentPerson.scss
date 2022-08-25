@@ -1,0 +1,87 @@
+/*contentPerson*/
+.contentPerson {
+  padding: 60px 0 0 0;
+  .content {
+    .c-content {
+      .contentPerson__content {
+        padding-top: 35px;
+        .contentPerson__item {
+          display: none;
+          &.active {
+            display: block;
+          }
+          .contentPerson__right {
+            padding: 0 80px;
+            background-color: $background_golda;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media (max-width: $desktop_1024) {
+              padding: 0 60px;
+            }
+            @media (max-width: $tablet) {
+              padding: 0 30px;
+            }
+            @media (max-width: $mobile) {
+              padding: 30px 15px;
+            }
+            h3 {
+              padding: 25px 0;
+              color: $color_big_stone;
+              font-size: 1.5rem;
+              line-height: 29px;
+              @media (max-width: $desktop_1024) {
+                padding: 15px 0;
+              }
+              @media (max-width: $tablet) {
+                font-size: 1.25rem;
+                line-height: 24px;
+              }
+            }
+            p {
+              color: $color_big_stone;
+              font-size: 0.8125rem;
+              line-height: 16px;
+              @media (max-width: $tablet) {
+                font-size: 0.75rem;
+                line-height: 15px;
+              }
+            }
+            .hashtag {
+              color: $color_big_stone;
+              font-size: 0.875rem;
+              line-height: 18px;
+              font-family: $montserratsemibold;
+            }
+            .btn-link {
+              color: $color_big_stone;
+              font-size: 0.6875rem;
+              line-height: 13px;
+              padding-top: 45px;
+
+              display: flex;
+              align-items: center;
+              @media (max-width: $desktop_1024) {
+                padding-top: 25px;
+              }
+              .icon-icon-paper {
+                width: 25px;
+                height: 25px;
+                margin-left: 0;
+                margin-right: 10px;
+                color: $color_golda;
+                border-radius: 50%;
+                background-color: $background_big_stone;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

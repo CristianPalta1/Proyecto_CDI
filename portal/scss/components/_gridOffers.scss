@@ -1,0 +1,144 @@
+/*gridOffers*/
+.gridOffers {
+  padding: 60px 0;
+  background-color: $background_gallery;
+  @media (max-width: $mobile) {
+    padding: 60px 0 40px 0;
+  }
+  .content {
+    .c-header {
+      text-align: center;
+      h2 {
+        font-size: 2.25rem;
+        line-height: 44px;
+        @media (max-width: $mobile) {
+          font-size: 1.75rem;
+          line-height: 34px;
+        }
+      }
+    }
+    .c-content {
+      .gridOffers__content {
+        padding-top: 65px;
+        @media (max-width: $tablet) {
+          padding-top: 35px;
+        }
+        article {
+          padding-bottom: 80px;
+          @media (max-width: $tablet) {
+            padding-bottom: 25px;
+          }
+          &.left {
+            display: flex;
+            flex-direction: row;
+            @media (max-width: $tablet) {
+              flex-direction: column;
+            }
+          }
+          &.right {
+            display: flex;
+            flex-direction: row-reverse;
+            @media (max-width: $tablet) {
+              flex-direction: column;
+            }
+          }
+          .gridOffers__img {
+            top: -20px;
+            width: 40%;
+            position: relative;
+            @media (max-width: $tablet) {
+              top: 0;
+              width: 100%;
+            }
+          }
+          .gridOffers__text {
+            width: 60%;
+            padding: 25px 25px;
+            background-color: $background_white;
+            @media (max-width: $tablet) {
+              top: -25px;
+              width: 90%;
+              margin: 0 auto;
+              position: relative;
+            }
+            h3 {
+              font-size: 2.25rem;
+              line-height: 44px;
+              font-family: $montserratmedium;
+              @media (max-width: $mobile) {
+                font-size: 1.875rem;
+                line-height: 37px;
+              }
+            }
+            p {
+              padding: 20px 0 40px 0;
+              font-size: 1rem;
+              line-height: 1.5rem;
+              @media (max-width: $mobile) {
+                padding: 20px 0;
+              }
+
+              a, strong {
+                font-size: inherit;
+                font-weight: 700;
+                line-height: inherit;
+              }
+              
+              a {
+                text-decoration: underline !important;
+              }
+            }
+            span {
+              font-size: 1rem;
+              line-height: 1.5rem;
+            }
+            ul {
+              padding-top: 20px;
+
+              display: flex;
+              flex-direction: row;
+              @media (max-width: $mobile) {
+                flex-direction: column;
+              }
+              li {
+                padding-right: 25px;
+                @media (max-width: $mobile) {
+                  padding-right: 0;
+                  padding-bottom: 15px;
+                }
+                &:last-child {
+                  padding-right: 0;
+                  padding-bottom: 0;
+                }
+                a {
+                  color: $color_big_stone;
+                  font-size: 1rem;
+                  line-height: 1.5rem;
+                  text-decoration: underline !important;
+                }
+                strong {
+                  font-size: inherit;
+                  font-weight: 700;
+                  line-height: inherit;
+                }
+              }
+            }
+          }
+        }
+        .row > div:last-child article {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.page-node-type-oferta-academica{
+  .gridOffers{
+    .content{
+      .c-header{
+        z-index: 0;
+      }
+    }
+  }
+}

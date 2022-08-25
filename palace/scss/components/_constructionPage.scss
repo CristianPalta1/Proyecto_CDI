@@ -1,0 +1,51 @@
+@use '../base/mixins' as *;
+@use '../base/variables' as *;
+@use '../base/fonts' as *;
+
+body.palace-market-co.path-frontpage {
+    //overflow: hidden;
+}
+
+.constrution-page {
+    background-image: url(../img/palace-back-img-construction.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 9999999999;
+    display: none;
+
+    .wrapper {
+        width: 100%;
+        max-width: 600px;
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .ico {
+            background-image: url(../img/corona-palace.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 20px;
+            margin: 0 auto 10px auto;
+
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Gotham-Bold', sans-serif;
+        }
+
+        p {
+            color: white;
+            font-family: $gotham-bold;
+        }
+    }
+
+}

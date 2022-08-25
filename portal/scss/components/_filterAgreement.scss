@@ -1,0 +1,342 @@
+/*agreement*/
+.agreement {
+  padding-top: 60px;
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+  }
+  .container {
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding-top: 5px;
+      @media (max-width: $tablet) {
+        padding-top: 1px;
+      }
+    }
+  }
+}
+
+/*agreementFilters - Desktop*/
+.agreementFilters {
+  padding: 60px 0;
+  .agreementFilters__left {
+    form.views-exposed-form {
+      padding: 10px 15px;
+      background-color: $background_gallery;
+      @media (max-width: $tablet) {
+        top: 0;
+        right: -1500px;
+        z-index: 9999;
+        width: auto;
+        height: 100vh;
+        position: fixed;
+        padding-top: 30px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: all 0.5s;
+      }
+      @media (max-width: $mobile) {
+        width: 80%;
+        height: 100vh;
+      }
+      .btn-closeC {
+        top: 10px;
+        right: 15px;
+        display: none;
+        position: absolute;
+        @media (max-width: $tablet) {
+          display: block;
+        }
+        i {
+          color: $color_big_stone;
+          font-size: 1.2rem;
+        }
+      }
+      .clearfix {
+        .fieldgroup {
+          legend {
+            .fieldset-legend {
+              font-size: 1rem;
+              line-height: 1.5rem;
+              font-family: $latobold;
+              color: $color_congress_blue;
+              padding: 30px 0 15px;
+            }
+          }
+        }
+        .fieldset-wrapper {
+          .form-radios {
+            .bef-nested {
+              ul {
+                li {
+                  padding-left: 0;
+                  &:before {
+                    display: none;
+                  }
+                  .form-item {
+                    padding-right: 25px;
+                    .form-control.form-radio[type="radio"] {
+                      display: none;
+                    }
+                    .form-control.form-radio[type="radio"] {
+                      top: 0;
+                      right: 0;
+                      margin: 0;
+                      width: 16px;
+                      height: 16px;
+                      cursor: pointer;
+                      box-shadow: none;
+                      border-radius: 50%;
+                      position: absolute;
+                      display: inline-block;
+                      box-sizing: border-box;
+                      border: 1px solid $border_congress_blue;
+                      background-color: $background_white;
+
+                      -webkit-appearance: none;
+                      -moz-appearance: none;
+                      appearance: none;
+                    }
+                    .form-control.form-radio:checked {
+                      border: 1px solid $border_congress_blue;
+
+                      background-image: url("../img/icons/radio-blue.png");
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: 16px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .agreementFilters__right {
+    .btn-filterC {
+      display: none;
+      cursor: pointer;
+      padding: 5px 20px;
+      margin-bottom: 40px;
+      border-radius: 3px;
+      border: 1px solid $border_alto;
+      @media (max-width: $tablet) {
+        display: block;
+      }
+      i {
+        color: $color_big_stone;
+        font-size: 1.5rem;
+      }
+      span {
+        font-size: 0.9rem;
+        padding-left: 15px;
+      }
+    }
+    .row {
+      .views-row {
+        article {
+          margin-bottom: 35px;
+          .agreementFilters__text {
+            padding: 15px 0;
+            h3 {
+              padding-bottom: 15px;
+              @media (max-width: $mobile) {
+                height: auto !important;
+              }
+            }
+            p {
+              padding-bottom: 15px;
+              @media (max-width: $tablet) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+              }
+              @media (max-width: $mobile) {
+                height: auto !important;
+              }
+            }
+            a {
+              display: block;
+              color: $color_big_stone;
+              font-size: 0.7rem;
+              line-height: 19px;
+              font-weight: 400;
+              font-family: $latoregular;
+              text-decoration: underline !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*agreementFilters - Mobile*/
+.form-filters-mobile {
+  @media (min-width: $desktop_992) {
+    display: none;
+  }
+  form {
+    div {
+      .filter__options {
+        width: 100%;
+        a {
+          height: 40px;
+          font-size: 0.875rem;
+          color: $color_alto;
+          padding: 20px 10px;
+          position: relative;
+          font-family: $latoregular;
+          border: 1px solid $border_alto;
+          border-radius: 3px 0px 0px 3px;
+
+          display: flex;
+          align-items: center;
+          .search-icon {
+            content: "";
+            width: 20px;
+            height: 20px;
+            display: block;
+            cursor: pointer;
+            margin-right: 17px;
+            background: url(../img/icons/search-iconS.png) center/contain
+              no-repeat;
+          }
+        }
+      }
+    }
+    .form-filters-mobile-header {
+      top: 0;
+      right: 0;
+      opacity: 0;
+      z-index: 999;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      min-height: 100vh;
+      pointer-events: none;
+      transition: all 0.5s ease;
+      background: rgba(0, 0, 0, 0.71);
+
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      .form-filters-mobile-body {
+        right: -1500px;
+        width: 70%;
+        height: 100%;
+        overflow-y: auto;
+        position: relative;
+        align-self: flex-end;
+        transition-delay: 0.5s;
+        transition: all 0.5s ease;
+        background: $background_white;
+        .buton-close {
+          width: 40%;
+          display: block;
+          font-size: 0.8rem;
+          font-weight: bold;
+          padding: 0.5em 1.2rem;
+          margin: 30px 10% 7vh auto;
+        }
+        .btn-blue-all {
+          color: $color_white;
+          border: 1px solid #2c5697;
+          background-color: #2c5697;
+        }
+        .views-exposed-form .card {
+          border-radius: inherit;
+          padding: 0.4rem 1.25rem;
+          margin-bottom: 0 !important;
+          border: 1px solid $border_white;
+          transition: all 0.5s cubic-bezier(0.4, 0, 1, 1) 0.5s;
+        }
+        .card {
+          border-radius: inherit;
+          padding: 0.4rem 1.25rem;
+          margin-bottom: 0 !important;
+          border: 1px solid $border_white;
+          transition: all 0.5s cubic-bezier(0.4, 0, 1, 1) 0.5s;
+          summary {
+            cursor: pointer;
+            display: list-item;
+          }
+          .card-header {
+            color: #2c5697;
+            font-size: 1.125rem;
+            font-weight: 600;
+            padding: 0.5rem 0;
+            position: relative;
+            background: transparent;
+          }
+          .card-body {
+            .filters__radio {
+              display: block;
+              cursor: pointer;
+              user-select: none;
+              margin-bottom: 5px;
+              position: relative;
+              &:hover {
+                input ~ .checkmark {
+                  background-color: $background_white;
+                }
+              }
+              input {
+                opacity: 0;
+                cursor: pointer;
+                position: absolute;
+                &:checked ~ .checkmark {
+                  background-color: $background_congress_blue;
+                }
+                &:checked ~ .checkmark:after {
+                  display: block;
+                }
+              }
+              .checkmark {
+                top: 0;
+                right: 0;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                position: absolute;
+                background-color: $background_white;
+                border: 1px solid $border_congress_blue;
+                &:after {
+                  content: "";
+                  position: absolute;
+                  display: none;
+                  left: 5px;
+                  top: 1px;
+                  width: 5px;
+                  height: 10px;
+                  border: solid white;
+                  border-width: 0 2px 2px 0;
+                  transform: rotate(45deg);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+body.open-menu .form-filters-mobile-header {
+  opacity: 1;
+  pointer-events: auto;
+}
+body.open-menu .form-filters-mobile-header .form-filters-mobile-body {
+  right: 0;
+}
+
+/*page-node-type-convenios-corporativos*/
+.page-node-type-convenios-corporativos {
+  .sliderAdvertising {
+    padding: 0;
+    background-color: $background_white;
+    .view-header {
+      display: none;
+    }
+  }
+}

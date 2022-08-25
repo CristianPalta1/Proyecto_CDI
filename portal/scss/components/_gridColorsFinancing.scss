@@ -1,0 +1,104 @@
+/*gridColorsFinancing*/
+.gridColorsFinancing {
+  padding: 60px 0;
+  @media (max-width: $mobile) {
+    margin-bottom: 0px;
+  }
+  .content {
+    .c-header {
+      p {
+        color: $color_boulder;
+      }
+    }
+    .c-content {
+      .gridColors__content {
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-gap: 2px;
+          padding: 40px 0;
+          @media (max-width: $mobile) {
+            grid-template-columns: auto;
+          }
+          div {
+            @media (max-width: $mobile) {
+              margin-bottom: 1.5px;
+            }
+            article {
+              position: relative;
+              overflow: hidden;
+              &:after {
+                content: "";
+                top: 0;
+                left: 0;
+                opacity: 0.4;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: $background_black;
+              }
+              .gridColors__text {
+                bottom: 15%;
+                width: 100%;
+                height: auto;
+                z-index: 1;
+                margin: 0 auto;
+                position: absolute;
+                padding: 15px 60px;
+                h3 {
+                  padding: 15px 0;
+                  color: $color_white;
+                  font-size: 1.7375rem;
+                  line-height: 19px;
+                  font-family: $montserratbold;
+                  @media (max-width: $tablet) {
+                    font-size: 0.9375rem;
+                  }
+                }
+                p {
+                  color: $color_white;
+                  padding: 10px 0;
+                  @media (max-width: $tablet) {
+                    font-size: 0.75rem;
+                  }
+                }
+                span {
+                  display: block;
+                  color: $color_white;
+                  font-size: 1.7375rem;
+                  line-height: 17px;
+                  padding: 5px 0 15px 0;
+                  font-family: $montserratregular;
+                }
+                a {
+                  display: none;
+                }
+              }
+              .layer {
+                opacity: 0;
+                transition: all 0.25s;
+              }
+              &:hover {
+                .layer {
+                  opacity: 0.75;
+                }
+                a {
+                  display: block;
+                  color: $color_white;
+                  font-size: 1rem;
+                  line-height: 19px;
+                  background-color: transparent;
+                  font-family: $montserratregular;
+                  bottom: -30px;
+                  i {
+                    color: $color_white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+/*listPrograms*/
+/*page-node-type-todos-los-programas*/
+.listPrograms {
+  padding: 0 0 60px 0;
+  .content {
+    .c-content {
+      .listPrograms__content {
+        padding-top: 35px;
+        .listPrograms__articles {
+          margin: 0 -15px;
+          padding-top: 45px;
+          article {
+            margin-bottom: 25px;
+            @media (max-width: $mobile) {
+              height: auto !important;
+
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+            }
+            .listPrograms__img {
+              width: 100%;
+              @media (max-width: $mobile) {
+                width: 45%;
+              }
+            }
+            .listPrograms__text {
+              padding: 10px 0;
+              @media (max-width: $mobile) {
+                width: 65%;
+                height: auto !important;
+                padding: 0 0 0 10px;
+              }
+              h3 {
+                padding: 15px 0 10px 0;
+                @media (max-width: $mobile) {
+                  height: auto !important;
+                  font-size: 0.8125rem;
+                  padding: 5px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*listPrograms*/
+/*page-node-type-oferta-academica*/
+.page-node-type-oferta-academica {
+  .listPrograms {
+    &:first-child {
+      padding: 0;
+    }
+    .content {
+      .c-content {
+        .listPrograms__content {
+          position: relative;
+          .listPrograms__filters {
+            top: -80px;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            position: absolute;
+            @media (max-width: $tablet) {
+              top: -50px;
+            }
+            @media (max-width: $mobile) {
+              top: -230px;
+              padding: 25px 15px;
+              box-shadow: 0 5px 10px 0 $box_shadow;
+              background-color: $background_white;
+            }
+            form.views-exposed-form {
+              .form--inline {
+                justify-content: center;
+              }
+            }
+          }
+          .text-center-educon{
+            text-align: center;
+            h3{
+              font-size: 20px;
+            }
+          }
+          .listPrograms__articles {
+            padding-top: 15px;
+            @media (max-width: $mobile) {
+              padding-top: 120px;
+            }
+            .item-list {
+              ul {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                flex-wrap: wrap;
+
+                @media (max-width: $desktop_992) {
+                  grid-template-columns: repeat(3, 1fr);
+                }
+                @media (max-width: $tablet) {
+                  grid-template-columns: repeat(2, 1fr);
+                }
+                @media (max-width: $mobile) {
+                  grid-template-columns: repeat(1, 1fr);
+                }
+
+                li {
+                  padding: 0;
+
+                  &::before {
+                    display: none;
+                  }
+                  
+                  div {
+                    max-width: 100%;
+                    flex: 0 0 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.path-listado-grupos-de-investigacion {
+  .groupInvestigationList {
+    .content {
+      .view-header {
+        margin-bottom: 40px;
+        .c-header {
+        }
+      }
+      .view-filters {
+        form.views-exposed-form {
+          .form--inline{
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

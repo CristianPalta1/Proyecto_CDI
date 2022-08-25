@@ -1,0 +1,87 @@
+/*gridSteps*/
+.gridSteps {
+  padding: 60px 0;
+  margin-top: 60px;
+  background-color: $background_gallery;
+  .content {
+    .c-header {
+      text-align: center;
+      p {
+        margin: 0 auto;
+      }
+    }
+    .c-content {
+      .gridSteps__content {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 45px;
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
+        .views-row {
+          padding-bottom: 45px;
+          &:last-child {
+            padding-bottom: 0;
+          }
+          .row {
+            margin: 0;
+
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            @media (max-width: $mobile) {
+              align-items: flex-start;
+            }
+            .gridSteps__content-img {
+              padding: 0;
+              overflow: hidden;
+              border-radius: 50%;
+            }
+            .gridSteps__content-text {
+              padding-left: 60px;
+              @media (max-width: $mobile) {
+                padding-left: 30px;
+              }
+              h3 {
+                color: $color_big_stone;
+                font-size: 1.25rem;
+                line-height: 24px;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+              }
+              p,
+              b,
+              strong {
+                font-size: 1rem;
+                line-height: 1.5rem;
+
+                a {
+                  font-size: inherit;
+                  text-decoration: underline !important;
+                }
+              }
+            }
+          }
+        }
+      }
+      .pager {
+        margin: 20px auto 0 auto;
+        ul.pagination {
+          display: table;
+          margin: 0 auto;
+          li.page-item {
+            a{
+              margin: 0 16px;
+            }
+            &:hover{
+              background-color: transparent;
+            }
+            &.pager__item--next{
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

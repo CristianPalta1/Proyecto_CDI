@@ -1,0 +1,86 @@
+body.page404 {
+    .educon-container {
+        .region-breadcrumb{
+            display: none;
+        }
+        #block-educon-content {
+            .node__content {
+                .block-404 {
+                    display: grid;
+                    min-height: 90vh;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                    position: relative;
+                    justify-items: center;
+                    align-items: center;
+                    overflow: hidden;
+                    .block-404--info {
+                        text-align: center;
+                        h2 {
+                            font-size: 28rem;
+                            color: $color-gold;
+                            font-weight: 700;
+                            @include media-query(mobile) {
+                                font-size: 20rem;
+                            }
+                        }
+                        h3 {
+                            font-size: 4rem;
+                            font-weight: 700;
+                            color: $color-title-news;
+                        }
+                        p {
+                            font-weight: 400;
+                            font-size: 2.6rem;
+                            color: $color-title-news;
+                        }
+                        .field--name-link {
+                            margin: 49px 0 32px;
+                            a {
+                                &:hover {
+                                    background-color: #07228b;
+                                    color: white;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                    .sub-arrow-left {
+                        position: absolute;
+                        bottom: 0;
+                        left: -45%;
+                        transform: rotate(45deg);
+                        width: 50%;
+                        height: 50%;
+                        border: 1px solid #7091f5;
+                        box-shadow: 0 0 0 57px rgb(112, 145, 245), 0 0 0 101px rgb(8, 66, 237),
+                            0 0 0 161px rgb(8, 66, 237);
+                        @include media-query(mobile) {
+                            height: 25%;
+                            left: -40%;
+                            box-shadow: 0 0 0 57px rgb(112, 145, 245), 0 0 0 85px rgb(8, 66, 237),
+                                0 0 0 115px rgb(8, 66, 237);
+                        }
+                    }
+                    .sub-arrow-right {
+                        position: absolute;
+                        top: 0;
+                        right: -43%;
+                        width: 50%;
+                        height: 50%;
+                        border: 1px solid #7091f5;
+                        transform: rotate(46deg);
+                        box-shadow: 0 0 0 57px rgb(112, 145, 245), 0 0 0 101px rgb(8, 66, 237),
+                            0 0 0 161px rgb(8, 66, 237);
+                        @include media-query(mobile) {
+                            right: -47%;
+                            height: 25%;
+                            box-shadow: 0 0 0 57px rgb(112, 145, 245), 0 0 0 85px rgb(8, 66, 237),
+                                0 0 0 115px rgb(8, 66, 237);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,4584 @@
+button#btn-book-now-mobile {
+
+  position: fixed;
+  z-index: 9;
+  font-size: $desktopX-p;
+  line-height: 28px;
+  right: 0;
+  bottom: 0;
+  width: 190px;
+  background-color: $color-r-dark-green;
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  font-family: $gotham-light;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.35);
+  top: -50px;
+  height: 50px;
+  z-index: 999;
+  @include hover-transition-5;
+  @media (max-width: $desktop){
+    display: block;
+    top: initial;
+    width: 100%;
+    height: 50px;
+  }
+  &:before {
+    width: 40px;
+    height: 16px;
+    display: inline-block;
+    content: "";
+    background-image: url(../img/arrow-nav-mobile-white.png);
+    background-position-y: -13px;
+    background-size: cover;
+    transform: rotate(-90deg);
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: -10px;
+    display: none;
+  }
+
+  &.min {
+    width: 230px;
+    display: block;
+    padding: 10px 10px 10px 0px;
+    top: 80px;
+  }
+}
+
+
+section.booking {
+    width: 1320px;
+    left: 50%;
+    margin-left: -660px;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.80);
+    display: none;
+    @media (max-width: $desktopXL){
+      width: 1180px;
+      margin-left: -590px;
+    }
+    @media (min-width: $desktop) and (max-width:$desktopL) {
+      width: 95%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+
+    .close_h {
+        display: none;
+    }
+
+  form.form_book_now {
+    font-size: 0;
+
+    .icons_booking {
+        width: $spaceBooking;
+        display: inline-block;
+        vertical-align: top;
+        padding: 6px 0px;
+        box-sizing: border-box;
+        text-align: center;
+        /* @media (max-width: $desktopXL){
+          width: 154px;
+        }
+        @media (min-width: $desktop) and (max-width:$desktopL) {
+          width: 14%;
+        } */
+
+        .ico_resort {
+            padding: 8px 5px 3px 5px;
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            @media (min-width: $desktop) and (max-width:$desktopL) {
+              padding: 8px 3px 3px 5px;
+            }
+
+
+            &[data-ref="onlyresort"] {
+              span {
+                  width: 29px;
+                  height: 21px;
+                  display: block;
+                  background-image: url(../img/sprite.png);
+                  background-size: 200px;
+                  background-position: -6px -173px;
+                  margin: 0 auto;
+                 /*  @media (min-width: $desktop) and (max-width:$desktopL) {
+                    width: 25px;
+                    height: 17px;
+                  } */
+              }
+
+            }
+
+            &[data-ref="resortfly"] {
+              span {
+                  width: 61px;
+                  height: 21px;
+                  display: block;
+                  background-image: url(../img/sprite.png);
+                  background-size: 200px;
+                  background-position: -42px -172px;
+                  margin: 0 auto;
+                  /* @media (min-width: $desktop) and (max-width:$desktopL) {
+                    width: 52px;
+                    height: 16px;
+                  } */
+              }
+            }
+
+            &.active {
+              &[data-ref="onlyresort"] {
+                span {
+                  background-position: -6px -147px;
+                }
+              }
+              &[data-ref="resortfly"] {
+                span {
+                  background-position: -42px -147px;
+                }
+              }
+              p {
+                color: $color-r-blue;
+              }
+
+              &:after {
+                border-top: 6px solid $color-r-blue;
+              }
+            }
+
+            p {
+              color: $color-r-dark-green;
+              font-size: 11px;
+            }
+
+            &:after {
+              width: 0;
+              height: 0;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              border-top: 6px solid rgba(255, 255, 255, 0);
+              content: "";
+              position: absolute;
+              top: -6px;
+              left: 50%;
+              margin-left: -2.5px;
+            }
+
+        }
+    }
+
+    .only_resort {
+      width: 87.5%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: end;
+      @media (max-width: $desktopL){
+        text-align: center;
+      }
+     /*  @media (min-width: $desktop) and (max-width:$desktopL) {
+        width: 86%;
+      } */
+
+      .select_resort {
+          text-align: left;
+          display: inline-block;
+          vertical-align: middle;
+          width: 16.5%;
+          margin: 0;
+          cursor: pointer;
+          position: relative;
+
+          @media (max-width: $desktop){
+            width: 100%;
+            padding: 0 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+          }
+
+
+          .box_select_resort {
+              border: 1px solid $color-r-blue;
+              padding: 7.5px 10px;
+              position: relative;
+              overflow: hidden;
+              margin-right: 4px;
+              @media (max-width: $desktop){
+                border: 1px solid $color-r-grey-light2;
+                margin: 0;
+              }
+
+              &:before {
+                width: 1px;
+                height: 18px;
+                background-color: $color-r-dark-green;
+                content: "";
+                display: block;
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                margin-top: -9px;
+                z-index: 1;
+              }
+
+              &:after {
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 6px solid $color-r-dark-green;
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 8px;
+                margin-top: -3px;
+              }
+
+              span.box {
+                  overflow: hidden;
+                  width: 120px;
+                  display: block;
+
+                  p {
+                    font-size: 14px;
+                    width: 300px;
+                    overflow: hidden;
+                    color: $color-r-dark-green;
+                    height: 19px;
+                  }
+
+              }
+
+          }
+
+          ul {
+             border: 1px solid $color-r-grey-light2;
+             padding: 0;
+             margin-top: 4px;
+             display: none;
+             position: absolute;
+             width: 300px;
+             background-color: $color-white;
+             @media (max-width: $desktopL){
+               z-index: 9;
+             }
+
+             li {
+                padding: 6px 16px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                @include hover-transition-5;
+                cursor: pointer;
+                font-size: 13px;
+                color: $color-r-dark-green;
+
+                &.active,
+                &:hover {
+                  background-color: $color-r-dark-green;
+                  color: $color-white;
+                }
+
+                &:before {
+                  display: none;
+                }
+             }
+          }
+
+      }
+
+      .checkin,
+      .checkout {
+          text-align: left;
+        width: 14.35%;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+        margin-right: 4px;
+       /*  @media (max-width: $desktopXL){
+          width: 138px;
+        }
+        @media (max-width: $desktopL){
+          width: 125px;
+        }
+        @media (min-width: $desktop) and (max-width:$desktopL) {
+          width: 13.5%;
+        } */
+
+        span {
+          font-size: 10px;
+          color: $color-r-dark-green;
+          position: absolute;
+          left: 12px;
+          top: 3px;
+          @media (max-width: $desktop){
+            left: 23px;
+          }
+        }
+
+        &:before {
+          width: 1px;
+          height: 18px;
+          background-color: $color-r-dark-green;
+          content: "";
+          display: block;
+          position: absolute;
+          right: 35px;
+          top: 50%;
+          margin-top: -9px;
+          pointer-events: none;
+          @media (max-width: $desktopXL){
+            right: 33px;
+          }
+      }
+
+        &:after {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 30px;
+          background: url(../img/sprite.png);
+          background-position: -145px -25px;
+          background-size: 200px;
+          position: absolute;
+          right: 5%;
+          top: 2px;
+          pointer-events: none;
+        }
+
+          input.form-control {
+            background-color: transparent;
+            border: 1px solid $color-r-blue;
+            border-radius: 2px;
+            box-shadow: initial;
+            color: $color-r-dark-green;
+            font-size: 13px;
+            height: auto;
+            padding: 14px 12px 3px 12px;
+            @media (max-width: $desktopXL){
+              font-size: 12px;
+            }
+            @media (max-width: $desktop){
+              border: 1px solid $color-r-grey-light2;
+            }
+          }
+      }
+
+      .rooms {
+          text-align: left;
+          width: 34%;
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          @media (max-width: $desktopL){
+            width: 33%;
+          }
+          /* @media (max-width: $desktopXL){
+              width: 380px;
+          }
+          @media (min-width: $desktop) and (max-width:$desktopL) {
+            width: 39%;
+          } */
+
+          .rooms_text_select {
+            background-color: transparent;
+            border: 1px solid $color-r-blue;
+            border-radius: 2px;
+            box-shadow: initial;
+            margin: 0 4px 0 0;
+            width: 32%;
+            display: inline-block;
+            padding: 7.5px 10px;
+            box-sizing: border-box;
+            position: relative;
+            cursor: pointer;
+            //overflow: hidden;
+            vertical-align: middle;
+            @media (max-width: $desktopL){
+              width: 31%;
+            }
+            @media (max-width: $desktop){
+              border: 1px solid $color-r-grey-light2;
+            }
+
+            &:after {
+              width: 0;
+              height: 0;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              border-top: 6px solid $color-r-dark-green;
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 8px;
+              margin-top: -3px;
+            }
+
+            &:before {
+              width: 1px;
+              height: 18px;
+              background-color: $color-r-dark-green;
+              content: "";
+              display: block;
+              position: absolute;
+              right: 25px;
+              top: 50%;
+              margin-top: -9px;
+            }
+
+            span.alert {
+                background-color: $color-white;
+                font-size: 12px;
+                line-height: 13px;
+                position: absolute;
+                z-index: 9;
+                width: 200px;
+                padding: 8px;
+                box-sizing: border-box;
+                text-align: center;
+                left: 50%;
+                margin-left: -100px;
+                bottom: 37px;
+                display: none;
+                @media (max-width: $desktop){
+                  background-color: $color-r-grey-light2;
+                  bottom: 24px;
+                }
+
+                &:after {
+                  width: 0;
+                  height: 0;
+                  border-left: 5px solid transparent;
+                  border-right: 5px solid transparent;
+                  border-top: 6px solid $color-white;
+                  content: "";
+                  position: absolute;
+                  bottom: -6px;
+                  left: 50%;
+                  margin-left: -2.5px;
+                  @media (max-width: $desktop){
+                    border-top: 6px solid $color-r-grey-light2;
+                  }
+                }
+            }
+            .box_p{
+              @media (min-width: $desktop) and (max-width:$desktopL) {
+                width: 78%;
+                white-space: nowrap;
+                overflow: hidden;
+              }
+            }
+
+
+
+            p.number_rooms {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 3px;
+                margin: 0;
+                box-sizing: border-box;
+                color: $color-r-dark-green;
+                font-size: $desktop-p-booking;
+                @media (max-width: $desktopXL){
+                  padding-left: 0;
+                }
+            }
+
+            p.copy_rooms {
+              display: inline-block;
+              vertical-align: middle;
+              padding-left: 3px;
+              margin: 0;
+              box-sizing: border-box;
+              color: $color-r-dark-green;
+              font-size: $desktop-p-booking;
+            }
+
+
+
+          }
+
+          .type_guests_text_adult,
+          .type_guests_text_children {
+            background-color: transparent;
+            border: 1px solid $color-r-blue;
+            border-radius: 2px;
+            box-shadow: initial;
+            margin: 0 4px 0 0;
+            width: 32%;
+            display: inline-block;
+            color: $color-fonts;
+            position: relative;
+            padding: 7.5px 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+            overflow: hidden;
+            vertical-align: middle;
+            @media (max-width: $desktopL){
+              width: 31%;
+            }
+            @media (max-width: $desktop){
+              border: 1px solid $color-r-grey-light2;
+            }
+
+            &:after {
+              width: 0;
+              height: 0;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              border-top: 6px solid $color-r-dark-green;
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 8px;
+              margin-top: -3px;
+            }
+
+            &:before {
+              width: 1px;
+              height: 18px;
+              background-color: $color-r-dark-green;
+              content: "";
+              display: block;
+              position: absolute;
+              right: 25px;
+              top: 50%;
+              margin-top: -9px;
+            }
+
+                p.number {
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-left: 8px;
+                    margin: 0;
+                    box-sizing: border-box;
+                    color: $color-r-dark-green;
+                    font-size: $desktop-p-booking;
+                    @media (max-width: $desktopXL){
+                    padding-left: 0;
+                    }
+                }
+
+                p.copy {
+                  display: inline-block;
+                  vertical-align: middle;
+                  padding-left: 8px;
+                  margin: 0;
+                  box-sizing: border-box;
+                  color: $color-r-dark-green;
+                  font-size: $desktop-p-booking;
+                }
+
+
+          }
+
+          .main_box_rooms {
+            position: absolute;
+            width: 100%;
+            max-width: 72%;
+            right: 1%;
+            display: none;
+            margin-left: 3px;
+            padding-top: 7px;
+            box-sizing: border-box;
+            overflow: hidden;
+            @media (max-width: $desktopXL){
+              max-width: 84%;
+            }
+
+              .quantity_rooms {
+                  background-color: $color-white;
+                  border: 1px solid $color-r-grey-light2;
+                  padding: 12px;
+                  box-sizing: border-box;
+                  overflow-y: auto !important;
+                  //height: 100%;
+                  max-height: 300px;
+                  width: 100% !important;
+
+                  &::-webkit-scrollbar {
+                    opacity: 0;
+                  }
+
+                  .box_title {
+                      background-color: $color-r-dark-green;
+                      padding: 5px 20px;
+                      text-align: center;
+
+                      .copy {
+                          width: 40%;
+                          display: inline-block;
+                          vertical-align: middle;
+
+                          p {
+                            color: #fff;
+                            font-size: 13px;
+                          }
+                      }
+
+                      .rooms_bottom {
+                          width: 60%;
+                          display: inline-block;
+                          vertical-align: middle;
+
+                          span {
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 16px;
+                            text-align: center;
+                            border: 1px solid $color-r-blue;
+                            color: $color-white;
+                            line-height: 17px;
+                            cursor: pointer;
+                        }
+
+                        p  {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin: 0 16px;
+                            color: #fff;
+                            font-size: 13px;
+                        }
+
+                      }
+                  }
+
+                  .main_room_guests {
+                    margin: 12px 0 0 0;
+                    border: 1px solid $color-r-grey-light2;
+                    padding: 12px 12px 6px 12px;
+
+                    p.number_room {
+                        font-weight: 600;
+                        text-align: center;
+                        position: relative;
+                        font-size: 10px;
+
+                        span.alert {
+                            background-color: #fff;
+                            font-size: 12px;
+                            line-height: 13px;
+                            position: absolute;
+                            z-index: 9;
+                            width: 200px;
+                            padding: 8px;
+                            box-sizing: border-box;
+                            text-align: center;
+                            left: 50%;
+                            margin-left: -100px;
+                            bottom: 24px;
+                            display: none;
+
+                            &:after {
+                              width: 0;
+                              height: 0;
+                              border-left: 5px solid transparent;
+                              border-right: 5px solid transparent;
+                              border-top: 6px solid #fff;
+                              content: "";
+                              position: absolute;
+                              bottom: -6px;
+                              left: 50%;
+                              margin-left: -2.5px;
+                            }
+                        }
+
+                        &:after {
+                          width: 30px;
+                          height: 1px;
+                          background-color: $color-r-blue;
+                          display: block;
+                          content: "";
+                          margin: 5px auto 20px auto;
+                        }
+                    }
+
+                    .adult,
+                    .children {
+                        margin-bottom: 10px;
+                        @media (max-width: $desktopXL){
+                          margin-bottom: 7px;
+                        }
+
+                        span {
+                          width: 20px;
+                          height: 20px;
+                          display: inline-block;
+                          vertical-align: middle;
+                          font-size: 16px;
+                          text-align: center;
+                          border: 1px solid $color-r-blue;
+                          color: $color-r-fonts;
+                          line-height: 17px;
+                          cursor: pointer;
+                      }
+
+                      p  {
+                          display: inline-block;
+                          vertical-align: middle;
+                          margin: 0;
+                          color: $color-r-fonts;
+                          width: 55px;
+                          font-size: 13px;
+
+                          &.type,
+                          &.age_children_text {
+                              width: 40%;
+                              display: inline-block;
+                              vertical-align: middle;
+                              margin: 0;
+                              font-size: 13px;
+                          }
+                      }
+
+                      .rooms_bottom {
+                          width: 60%;
+                          display: inline-block;
+                          text-align: center;
+                      }
+
+                    }
+
+
+                    .box_age_children {
+
+                        span {
+                          width: 20px;
+                          height: 20px;
+                          display: inline-block;
+                          vertical-align: middle;
+                          font-size: 16px;
+                          text-align: center;
+                          border: 1px solid $color-r-blue;
+                          color: $color-r-fonts;
+                          line-height: 17px;
+                          cursor: pointer;
+                      }
+
+                      p  {
+                          display: inline-block;
+                          vertical-align: middle;
+                          width: 55px;
+                          margin: 0;
+                          color: $color-r-fonts;
+                          font-size: 13px;
+
+                          &.under {
+                              width: 55px;
+                              font-size: 10px;
+                              line-height: 10px;
+                          }
+
+                          &.type,
+                          &.age_children_text {
+                              width: 40%;
+                              display: inline-block;
+                              vertical-align: middle;
+                              margin: 0;
+                          }
+                      }
+
+                      .rooms_bottom {
+                          width: 60%;
+                          display: inline-block;
+                          text-align: center;
+                          margin-bottom: 10px;
+                          position: relative;
+                          @media (max-width: $desktopXL){
+                            margin-bottom: 7px;
+                          }
+
+                          span.alert {
+                            background-color: #fff;
+                            font-size: 12px;
+                            position: absolute;
+                            z-index: 9;
+                            width: 80px;
+                            padding: 8px;
+                            box-sizing: border-box;
+                            text-align: center;
+                            left: 50%;
+                            margin-left: -40px;
+                            bottom: 10px;
+                            height: initial;
+                            color: $color-fonts;
+                            font-weight: 600;
+                            display: none;
+
+                            &:after {
+                              width: 0;
+                              height: 0;
+                              border-left: 5px solid transparent;
+                              border-right: 5px solid transparent;
+                              border-top: 6px solid #fff;
+                              content: "";
+                              position: absolute;
+                              bottom: -6px;
+                              left: 50%;
+                              margin-left: -2.5px;
+                            }
+                        }
+
+                      }
+
+                      .age_children {
+                        p.age_children_text {
+                          margin: 0;
+                          font-size: 12px;
+                          color: $color-r-fonts;
+
+                          span {
+                            border: 0;
+                            width: auto;
+                            font-size: 12px;
+                          }
+                        }
+                      }
+
+                    }
+
+                  }
+              }
+
+          }
+      }
+
+      button#btn_book_now_resort {
+          text-align: center;
+        width: 20%;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: $desktopX-p;
+        background-color: $color-r-dark-green;
+        border: 0;
+        height: 64px;
+        color: $color-white;
+        //margin-left: 32px;
+        font-family: $gotham-light;
+        text-shadow: 1px 1px 2px rgba(12,5,13,.22);
+        //padding: 0 10px 0 0px;
+        line-height: 30px;
+
+        span {
+          vertical-align: middle;
+        }
+        /* &::after{
+          content: "";
+          width: 2px;
+          height: 64px;
+          position: absolute;
+          right: -2px;
+          top: 0;
+          background-color: $color-r-dark-green;
+          @media (max-width: $desktopL){
+            display: none;
+           }
+        } */
+        &:before {
+          width: 40px;
+          height: 30px;
+          display: inline-block;
+          content: "";
+          background-image: url(../img/arrow-nav-mobile-white.png);
+          background-size: cover;
+          transform: rotate(-90deg);
+          vertical-align: middle;
+          margin-top: -4px;
+          display: none;
+        }
+
+        /* @media (max-width: $desktopXL){
+          width: 200px;
+          margin-left: 10px;
+        }
+        @media (min-width: $desktop) and (max-width:$desktopL) {
+          width: 12.7%;
+          margin-left: 13px;
+          //font-size: 24px;
+          padding-right: 0;
+        } */
+      }
+
+    }
+
+    .resort_fly {
+      width: 87.5%;
+      vertical-align: middle;
+      display: none;
+      text-align: end;
+      @media (max-width: $desktopL){
+        text-align: center;
+      }
+
+
+      .box_inputs {
+          width: 80%;
+          display: inline-block;
+          vertical-align: middle;
+          text-align: initial;
+
+          .easy-autocomplete {
+            width: 10.8%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 4px;
+            position: relative;
+            border: 1px solid $color-r-blue;
+            /* @media (max-width: $desktopXL){
+              width: 100px;
+            }
+            @media (min-width: $desktop) and (max-width:$desktopL) {
+              width: 10%;
+            } */
+
+              &:before {
+                  width: 1px;
+                  height: 18px;
+                  background-color: $color-r-dark-green;
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  right: 25px;
+                  top: 50%;
+                  margin-top: -9px;
+                  z-index: 1;
+                  opacity: 0;
+                  @media (max-width: $desktopL){
+                    display: none;
+                  }
+              }
+
+              input.origin {
+                  font-size: 16px;
+                  background-color: transparent;
+                  border: 0;
+                  border-radius: 2px;
+                  box-shadow: initial;
+                  display: inline-block;
+                  vertical-align: middle;
+                  padding: 8.5px 15px 8.5px 15px;
+                  width: 100%;
+                  color: $color-r-dark-green;
+                  font-size: 13px;
+                  @media (max-width: $desktopXL){
+                    padding: 8.5px 10px;
+                  }
+                  @media (max-width: $desktopL){
+                    border: 1px solid $color-r-grey-light2;
+                  }
+
+                  &::placeholder {
+                    color: $color-r-dark-green;
+                  }
+
+              }
+
+              .easy-autocomplete-container {
+                ul {
+                   position: absolute;
+                   background-color: $color-white;
+                   border: 1px solid $color-r-grey-light2;
+                   color: $color-r-dark-green;
+                   width: 300px;
+                   margin-top: 5px;
+                   padding: 12px 15px;
+                   box-sizing: border-box;
+                   display: none;
+                   @media (max-width: $desktopL){
+                     z-index: 99;
+                     width: 94%;
+                   }
+
+                   li {
+                     margin-bottom: 4px;
+                     font-size: 13px;
+
+                     &:before {
+                       display: none;
+                     }
+
+                    div.eac-item {
+                      cursor: pointer;
+                      b {
+                           color: $color-r-blue;
+                       }
+                    }
+
+                   }
+               }
+              }
+
+          }
+
+          .select_resort_f {
+              display: inline-block;
+              vertical-align: middle;
+              width: 15.2%;
+              margin: 0 4px 0 0;
+              cursor: pointer;
+              position: relative;
+              border: 1px solid $color-r-blue;
+              @media (max-width: $desktop){
+                width: 100%;
+                padding: 0 10px;
+                margin: 5px 0;
+                box-sizing: border-box;
+                border: 0;
+              }
+
+
+              .box_select_resort_f {
+                  padding: 7.5px 10px;
+                  position: relative;
+                  overflow: hidden;
+                  @media (max-width: $desktop){
+                    border: 1px solid $color-r-grey-light2;
+                  }
+
+                  &:before {
+                    width: 1px;
+                    height: 18px;
+                    background-color: $color-r-dark-green;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    right: 25px;
+                    top: 50%;
+                    margin-top: -9px;
+                    z-index: 1;
+                  }
+
+                  &:after {
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 6px solid $color-r-dark-green;
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 8px;
+                    margin-top: -3px;
+                  }
+
+                  span.box {
+                      overflow: hidden;
+                      display: block;
+                      width: 75px;
+                      @media (max-width: $desktopXL){
+                      width: 78px;
+                      }
+                  }
+
+                  p {
+                    font-size: 14px;
+                    width: 300px;
+                    overflow: hidden;
+                    color: $color-r-dark-green;
+
+                    @media (min-width: $desktop) and (max-width:$desktopL) {
+                      width: 68%;
+                      white-space: nowrap;
+                      overflow: hidden;
+                    }
+
+
+                  }
+
+              }
+
+              ul {
+                 border: 1px solid $color-r-grey-light2;
+                 padding: 0;
+                 margin-top: 4px;
+                 display: none;
+                 position: absolute;
+                 width: 300px;
+                 background-color: $color-white;
+                 @media (max-width: $desktopL){
+                   z-index: 9;
+                 }
+
+                 li {
+                    padding: 6px 16px;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    @include hover-transition-5;
+                    cursor: pointer;
+                    font-size: 13px;
+                    color: $color-r-dark-green;
+
+                    &.active,
+                    &:hover {
+                      background-color: $color-r-dark-green;
+                      color: $color-white;
+                    }
+
+                    &:before {
+                      display: none;
+                    }
+                 }
+              }
+
+          }
+          .checkin,
+          .checkout {
+            width: 15.5%;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+            border: 1px solid $color-r-blue;
+            margin: 0 4px 0 0;
+            /* @media (max-width: $desktopXL){
+               width: 120px;
+            }
+            @media (min-width: $desktop) and (max-width:$desktopL) {
+              width: 16.5%;
+            }
+ */
+            span {
+              font-size: 10px;
+              color: $color-r-dark-green;
+              position: absolute;
+              left: 13px;
+              top: 3px;
+              @media (max-width: $desktopXL){
+                left: 13px;
+              }
+              @media (max-width: $desktopL){
+                left: 23px;
+              }
+            }
+
+            &:before {
+              width: 1px;
+              height: 18px;
+              background-color: $color-r-dark-green;
+              content: "";
+              display: block;
+              position: absolute;
+              right: 35px;
+              top: 50%;
+              margin-top: -9px;
+          }
+
+            &:after {
+              content: "";
+              display: block;
+              width: 30px;
+              height: 30px;
+              background: url(../img/sprite.png);
+              background-position: -145px -25px;
+              background-size: 200px;
+              position: absolute;
+              right: 5%;
+              top: 2px;
+              pointer-events: none;
+            }
+
+              input.form-control {
+                background-color: transparent;
+                border: 0;
+                border-radius: 2px;
+                box-shadow: initial;
+                color: $color-r-dark-green;
+                font-size: 13px;
+                height: auto;
+                padding: 14px 12px 3px 12px;
+                @media (max-width: $desktopXL){
+                  font-size: 12px;
+                }
+                @media (max-width: $desktopL){
+                  border: 1px solid $color-r-grey-light2;
+                }
+              }
+          }
+
+          .adults_select_rf {
+            display: inline-block;
+            vertical-align: middle;
+            width: 12.9%;
+            margin: 0 4px 0 0;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid $color-r-blue;
+            /* @media (max-width: $desktopXL){
+                width: 110px;
+            }
+            @media (max-width: $desktopL){
+                margin: 0;
+            }
+            @media (min-width: $desktop) and (max-width:$desktopL) {
+              width: 13%;
+            } */
+
+              span.alert {
+                  background-color: #fff;
+                  font-size: 12px;
+                  position: absolute;
+                  z-index: 9;
+                  width: 200px;
+                  padding: 8px;
+                  box-sizing: border-box;
+                  text-align: center;
+                  left: 50%;
+                  margin-left: -100px;
+                  bottom: 24px;
+                  display: none;
+
+                  &:after {
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 6px solid #fff;
+                    content: "";
+                    position: absolute;
+                    bottom: -6px;
+                    left: 50%;
+                    margin-left: -2.5px;
+                  }
+              }
+
+              .number_adults_rf {
+                  border: 0;
+                  padding: 7.5px 10px;
+                  position: relative;
+                  overflow: hidden;
+                  @media (max-width: $desktopL){
+                    border: 1px solid $color-r-grey-light2;
+                  }
+
+                  &:before {
+                      width: 1px;
+                      height: 18px;
+                      background-color: $color-r-dark-green;
+                      content: "";
+                      display: block;
+                      position: absolute;
+                      right: 25px;
+                      top: 50%;
+                      margin-top: -9px;
+                  }
+
+                  &:after {
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 6px solid $color-r-dark-green;
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 8px;
+                    margin-top: -3px;
+                  }
+
+                  span.box {
+                      overflow: hidden;
+                      display: block;
+                      width: 72px;
+                  }
+
+                  p.number_rooms_rf {
+                   display: inline-block;
+                   vertical-align: middle;
+                   padding-left: 8px;
+                   margin: 0;
+                   box-sizing: border-box;
+                   color: $color-r-dark-green;
+                   font-size: 13px;
+                }
+
+                p.copy_rooms_rf {
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-left: 8px;
+                    margin: 0;
+                    box-sizing: border-box;
+                    color: $color-r-dark-green;
+                    font-size: 13px;
+                    width: 250px;
+                    overflow: hidden;
+                    @media (max-width: $desktopXL){
+                      padding-left: 0;
+                    }
+                }
+
+              }
+
+              ul {
+                  border: 1px solid $color-r-grey-light2;
+                  padding: 0;
+                  margin-top: 4px;
+                  display: none;
+                  position: absolute;
+                  width: 100%;
+                  background-color: $color-white;
+
+                  li {
+                    padding: 6px 16px;
+                    box-sizing: border-box;
+                    @include hover-transition-5;
+                    cursor: pointer;
+                    font-size: 13px;
+                    color: $color-r-dark-green;
+
+                    &:hover,
+                    &.active {
+                      background-color: $color-r-dark-green;
+                      color: $color-white;
+                    }
+
+                    &:before {
+                      display: none;
+                    }
+                  }
+              }
+
+            }
+
+
+
+            .children_select_rf {
+              display: inline-block;
+              vertical-align: middle;
+              width:  12.9%;
+              margin: 0 4px 0 0;
+              cursor: pointer;
+              position: relative;
+              border: 1px solid $color-r-blue;
+              /* @media (max-width: $desktopXL){
+                width: 110px;
+              }
+              @media (min-width: $desktop) and (max-width:$desktopL) {
+                width: 13%;
+                margin: 0 4px 0 4px;
+              } */
+
+              span.alert {
+                  background-color: $color-white;
+                  font-size: 12px;
+                  position: absolute;
+                  z-index: 9;
+                  width: 200px;
+                  padding: 8px;
+                  box-sizing: border-box;
+                  text-align: center;
+                  left: 50%;
+                  margin-left: -100px;
+                  bottom: 24px;
+                  display: none;
+
+                  &:after {
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 6px solid #fff;
+                    content: "";
+                    position: absolute;
+                    bottom: -6px;
+                    left: 50%;
+                    margin-left: -2.5px;
+                  }
+              }
+
+              .number_children_rf {
+                  border: 0;
+                  padding: 7.5px 10px;
+                  position: relative;
+                  overflow: hidden;
+                  @media (max-width: $desktopL){
+                    border: 1px solid $color-r-grey-light2;
+                  }
+
+                  &:before {
+                      width: 1px;
+                      height: 18px;
+                      background-color: $color-r-dark-green;
+                      content: "";
+                      display: block;
+                      position: absolute;
+                      right: 25px;
+                      top: 50%;
+                      margin-top: -9px;
+                  }
+
+                  &:after {
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 6px solid $color-r-dark-green;
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 8px;
+                    margin-top: -3px;
+                  }
+
+                  span.box {
+                      width: 70px;
+                      overflow: hidden;
+                      display: block;
+                  }
+
+                  p.number_rooms_rf {
+                   display: inline-block;
+                   vertical-align: middle;
+                   padding-left: 8px;
+                   margin: 0;
+                   box-sizing: border-box;
+                }
+
+                p.copy_rooms_rf {
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-left: 8px;
+                    margin: 0;
+                    box-sizing: border-box;
+                    color: $color-r-dark-green;
+                    font-size: 13px;
+                    width: 250px;
+                    overflow: hidden;
+                    @media (max-width: $desktopXL){
+                      padding-left: 0;
+                    }
+                }
+
+              }
+
+              ul {
+                  border: 1px solid $color-r-grey-light2;
+                  padding: 0;
+                  margin-top: 4px;
+                  display: none;
+                  position: absolute;
+                  width: 100%;
+                  background-color: $color-white;
+
+                  li {
+                    padding: 6px 16px;
+                    box-sizing: border-box;
+                    @include hover-transition-5;
+                    cursor: pointer;
+                    font-size: 13px;
+                    color: $color-r-dark-green;
+
+                    &:hover,
+                    &.active {
+                      background-color: $color-r-dark-green;
+                      color: $color-white;
+                    }
+
+                    &:before {
+                      display: none;
+                    }
+                  }
+              }
+
+
+
+              .main_box_age_kids {
+                display: inline-block;
+                vertical-align: middle;
+                width: 100%;
+                position: absolute;
+                top: 40px;
+                background-color: $color-white;
+                display: none;
+
+                  .kids_select_age_rf {
+                      position: relative;
+                      margin-bottom: 4px;
+
+                      &:last-child {
+                        margin-bottom: 0;
+                      }
+
+                    p.copy_kids_rf {
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-left: 8px;
+                        margin: 0;
+                        box-sizing: border-box;
+                        width: 100%;
+                        padding: 6px 10px;
+                        position: relative;
+                        border: 1px solid $color-r-grey-light2;
+                        background-color: $color-white;
+                        font-size: 13px;
+                        color: $color-r-dark-green;
+
+                        &:before {
+                            width: 1px;
+                            height: 18px;
+                            background-color: $color-r-dark-green;
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            right: 25px;
+                            top: 50%;
+                            margin-top: -9px;
+                        }
+
+                        &:after {
+                          width: 0;
+                          height: 0;
+                          border-left: 5px solid transparent;
+                          border-right: 5px solid transparent;
+                          border-top: 6px solid $color-r-dark-green;
+                          content: "";
+                          position: absolute;
+                          top: 50%;
+                          right: 8px;
+                          margin-top: -3px;
+                        }
+                    }
+
+                  }
+
+                  ul {
+                      border: 1px solid $color-r-grey-light2;
+                      padding: 0;
+                      left: 0;
+                      margin-top: 4px;
+                      display: none;
+                      position: relative;
+                      width: 100%;
+                      background-color: $color-white;
+                      overflow-y: scroll;
+                      height: 150px;
+                      margin-bottom: 0;
+
+                      li {
+                        padding: 8px 16px;
+                        box-sizing: border-box;
+                        @include hover-transition-5;
+                        cursor: pointer;
+
+                        &:hover {
+                          background-color: $color-r-dark-green;
+                          color: $color-white;
+                        }
+
+                        &:before {
+                          display: none;
+                        }
+                      }
+                  }
+              }
+
+            }
+
+            .rooms_select_rf {
+              display: inline-block;
+              vertical-align: middle;
+              width:  12.9%;
+              margin: 0;
+              cursor: pointer;
+              position: relative;
+              border: 1px solid $color-r-blue;
+              /* @media (max-width: $desktopXL){
+                width: 110px;
+              }
+              @media (min-width: $desktop) and (max-width:$desktopL) {
+                width: 13%;
+              } */
+
+              .box_number_romms_rf {
+                  border: 0;
+                  padding: 7.5px 10px;
+                  position: relative;
+                  overflow: hidden;
+                  @media (max-width: $desktopL){
+                    border: 1px solid $color-r-grey-light2;
+                  }
+
+                  &:before {
+                      width: 1px;
+                      height: 18px;
+                      background-color: $color-r-dark-green;
+                      content: "";
+                      display: block;
+                      position: absolute;
+                      right: 25px;
+                      top: 50%;
+                      margin-top: -9px;
+                      z-index: 1;
+                  }
+
+                  &:after {
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 6px solid $color-r-dark-green;
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 8px;
+                    margin-top: -3px;
+                  }
+
+                  span.box {
+                      width: 60px;
+                      overflow: hidden;
+                      display: block;
+                  }
+
+                  p.number_room_rf {
+                   display: inline-block;
+                   vertical-align: middle;
+                   padding-left: 8px;
+                   margin: 0;
+                   box-sizing: border-box;
+                   color: $color-r-dark-green;
+                   font-size: 13px;
+                }
+
+                p.copy_room_rf {
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-left: 8px;
+                    margin: 0;
+                    box-sizing: border-box;
+                    color: $color-r-dark-green;
+                    font-size: 13px;
+                    width: 250px;
+                    overflow: hidden;
+                    @media (max-width: $desktopXL){
+                      padding-left: 0;
+                    }
+                    @media (min-width: $desktop) and (max-width:$desktopL) {
+                      width: 83%;
+                      white-space: nowrap;
+                      overflow: hidden;
+                    }
+
+                }
+
+              }
+
+              ul {
+                  border: 1px solid $color-r-grey-light2;
+                  padding: 0;
+                  margin-top: 4px;
+                  display: none;
+                  position: absolute;
+                  width: 150px;
+                  right: 0px;
+                  background-color: $color-white;
+
+                  li {
+                    padding: 6px 15px;
+                    box-sizing: border-box;
+                    @include hover-transition-5;
+                    cursor: pointer;
+                    color: $color-r-dark-green;
+                    font-size: 13px;
+
+                    &:hover,
+                    &.active {
+                      background-color: $color-r-dark-green;
+                      color: $color-white;
+                    }
+
+                    &:before {
+                      display: none;
+                    }
+                  }
+              }
+
+            }
+
+      }
+
+        button#btn_book_now_resort_fly {
+          width: 20%;
+          text-align: center;
+          position: relative;
+          display: inline-block;
+          vertical-align: middle;
+          font-size: $desktopX-p;
+          background-color: $color-r-dark-green;
+          border: 0;
+          height: 64px;
+          color: $color-white;
+
+          //margin-left: 11px;
+          font-family: $gotham-light;
+          text-shadow: 1px 1px 2px rgba(12,5,13,.22);
+          //padding: 0 10px 0 0px;
+          line-height: 30px;
+
+          /* @media (max-width: $desktopXL){
+            width: 200px;
+            margin-left: 10px;
+          }
+          @media (min-width: $desktop) and (max-width:$desktopL) {
+            width: 12.7%;
+            margin-left: 12px;
+            //font-size: 24px;
+            padding-right: 0;
+          }
+ */
+          span {
+            vertical-align: middle;
+          }
+          /* &::after{
+            content: "";
+            width: 2px;
+            height: 64px;
+            position: absolute;
+            right: -2px;
+            top: 0;
+            background-color: $color-r-dark-green;
+            @media (max-width: $desktopL){
+             display: none;
+            }
+          } */
+          &:before {
+            width: 40px;
+            height: 30px;
+            display: inline-block;
+            content: "";
+            background-image: url(../img/arrow-nav-mobile-white.png);
+            background-size: cover;
+            transform: rotate(-90deg);
+            vertical-align: middle;
+            margin-top: -4px;
+            display: none;
+          }
+
+      }
+
+      ///////////////////////////////////////////////////////////////////////
+
+      &.mex {
+        width: 85%;
+        display: inline-block;
+        vertical-align: middle;
+        display: none;
+        @media (max-width: $desktopXL){
+          width: 84%;
+        }
+
+        .easy-autocomplete {
+            width: 12%;
+            display: inline-block;
+            vertical-align: middle;
+
+            input.origin_mex {
+                font-size: 16px;
+                background-color: transparent;
+                border: 1px solid $color-medium-dark-gold;
+                border-radius: 2px;
+                box-shadow: initial;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 8.5px 15px;
+                width: 100%;
+                color: #ffffff;
+                font-size: 13px;
+
+                &::placeholder {
+                  color: $color-fonts;
+                }
+
+            }
+
+            .easy-autocomplete-container {
+              ul {
+                 position: absolute;
+                 background-color: $color-black-header;
+                 border: 1px solid $color-medium-dark-gold;
+                 width: 30%;
+                 margin-top: 5px;
+                 padding: 12px 15px;
+                 box-sizing: border-box;
+                 display: none;
+                 @media (max-width: $desktopL){
+                   z-index: 99;
+                   width: 94%;
+                 }
+
+                 li {
+                   margin-bottom: 4px;
+                   font-size: 13px;
+
+                   &:before {
+                     display: none;
+                   }
+
+                  div.eac-item {
+                    cursor: pointer;
+                    b {
+                         color: $color-gold;
+                     }
+                  }
+
+                 }
+             }
+            }
+
+        }
+
+        .checkin,
+        .checkout {
+          width: 13%;
+          display: inline-block;
+          vertical-align: middle;
+          padding: 0 0.4%;
+          box-sizing: border-box;
+          position: relative;
+
+
+
+          span {
+            font-size: 10px;
+            color: $color-fonts;
+            position: absolute;
+            left: 18px;
+            top: 3px;
+          }
+
+          &:before {
+            width: 1px;
+            height: 18px;
+            background-color: $color-medium-dark-gold;
+            content: "";
+            display: block;
+            position: absolute;
+            right: 35px;
+            top: 50%;
+            margin-top: -9px;
+            pointer-events: none;
+        }
+
+          &:after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: url(../img/sprite.png);
+            background-position: -145px -25px;
+            background-size: 200px;
+            position: absolute;
+            right: 5%;
+            top: 2px;
+            pointer-events: none;
+          }
+
+            input.form-control {
+              background-color: transparent;
+              border: 1px solid $color-medium-dark-gold;
+              border-radius: 2px;
+              box-shadow: initial;
+              color: #ffffff;
+              font-size: 13px;
+              height: auto;
+              padding: 14px 12px 3px 12px;
+            }
+        }
+
+        .rooms {
+            width: 42%;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+
+            .rooms_text_select {
+              background-color: transparent;
+              border: 1px solid $color-medium-dark-gold;
+              border-radius: 2px;
+              box-shadow: initial;
+              margin: 0 0.6%;
+              width: 32%;
+              display: inline-block;
+              padding: 7.5px 10px;
+              box-sizing: border-box;
+              position: relative;
+              cursor: pointer;
+
+              &:after {
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 6px solid $color-gold;
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 8px;
+                margin-top: -3px;
+              }
+
+              &:before {
+                width: 1px;
+                height: 18px;
+                background-color: $color-medium-dark-gold;
+                content: "";
+                display: block;
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                margin-top: -9px;
+              }
+
+              span.alert {
+                  background-color: #fff;
+                  font-size: 12px;
+                  line-height: 13px;
+                  position: absolute;
+                  z-index: 9;
+                  width: 200px;
+                  padding: 8px;
+                  box-sizing: border-box;
+                  text-align: center;
+                  left: 50%;
+                  margin-left: -100px;
+                  bottom: 24px;
+                  display: none;
+
+                  &:after {
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 6px solid #fff;
+                    content: "";
+                    position: absolute;
+                    bottom: -6px;
+                    left: 50%;
+                    margin-left: -2.5px;
+                  }
+              }
+
+              .box_p{
+
+              }
+
+              p.number_rooms {
+                  display: inline-block;
+                  vertical-align: middle;
+                  padding-left: 8px;
+                  margin: 0;
+                  box-sizing: border-box;
+                  color: #ffffff;
+                  font-size: 13px;
+              }
+
+              p.copy_rooms {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 8px;
+                margin: 0;
+                box-sizing: border-box;
+                color: #ffffff;
+                font-size: 13px;
+              }
+
+            }
+
+            .type_guests_text_adult,
+            .type_guests_text_children {
+              background-color: transparent;
+              border: 1px solid $color-medium-dark-gold;
+              border-radius: 2px;
+              box-shadow: initial;
+              margin: 0 0.6%;
+              width: 32%;
+              display: inline-block;
+              color: $color-fonts;
+              position: relative;
+              padding: 7.5px 10px;
+              box-sizing: border-box;
+              cursor: pointer;
+
+              &:after {
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 6px solid $color-gold;
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 8px;
+                margin-top: -3px;
+              }
+
+              &:before {
+                width: 1px;
+                height: 18px;
+                background-color: $color-medium-dark-gold;
+                content: "";
+                display: block;
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                margin-top: -9px;
+              }
+
+              p.number {
+                  display: inline-block;
+                  vertical-align: middle;
+                  padding-left: 8px;
+                  margin: 0;
+                  box-sizing: border-box;
+                  color: #ffffff;
+                  font-size: 13px;
+              }
+
+              p.copy {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 8px;
+                margin: 0;
+                box-sizing: border-box;
+                color: #ffffff;
+                font-size: 13px;
+              }
+
+              span.alert {
+                  background-color: #fff;
+                  font-size: 12px;
+                  line-height: 13px;
+                  position: absolute;
+                  z-index: 9;
+                  width: 200px;
+                  padding: 8px;
+                  box-sizing: border-box;
+                  text-align: center;
+                  left: 50%;
+                  margin-left: -100px;
+                  bottom: 24px;
+                  display: none;
+
+                  &:after {
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 6px solid #fff;
+                    content: "";
+                    position: absolute;
+                    bottom: -6px;
+                    left: 50%;
+                    margin-left: -2.5px;
+                  }
+              }
+            }
+
+            .main_box_rooms {
+              position: absolute;
+              width: 100%;
+              max-width: 65.2%;
+              right: 1%;
+              display: none;
+              margin-left: 3px;
+              padding-top: 7px;
+              box-sizing: border-box;
+              overflow: hidden;
+
+                .quantity_rooms {
+                    background-color: $color-black-header;
+                    border: 1px solid $color-medium-dark-gold;
+                    padding: 12px;
+                    box-sizing: border-box;
+                    overflow-y: auto !important;
+                    //height: 100%;
+                    max-height: 300px;
+                    width: 100% !important;
+
+                    &::-webkit-scrollbar {
+                      opacity: 0;
+                    }
+
+                    .box_title {
+                        background-color: $color-medium-dark-gold;
+                        padding: 5px 20px;
+                        text-align: center;
+
+                        .copy {
+                            width: 40%;
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            p {
+                              color: #fff;
+                              font-size: 13px;
+                            }
+                        }
+
+                        .rooms_bottom {
+                            width: 60%;
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            span {
+                              width: 20px;
+                              height: 20px;
+                              display: inline-block;
+                              vertical-align: middle;
+                              font-size: 16px;
+                              text-align: center;
+                              border: 1px solid $color-black-header;
+                              color: #fff;
+                              line-height: 17px;
+                              cursor: pointer;
+                          }
+
+                          p  {
+                              display: inline-block;
+                              vertical-align: middle;
+                              margin: 0 16px;
+                              color: #fff;
+                              font-size: 13px;
+                          }
+
+                        }
+                    }
+
+                    .main_room_guests {
+                      margin: 12px 0 0 0;
+                      border: 1px solid $color-dark-grey;
+                      padding: 12px 12px 6px 12px;
+
+                      p.number_room {
+                          font-weight: 600;
+                          text-align: center;
+                          position: relative;
+                          font-size: 13px;
+
+                          span.alert {
+                              background-color: #fff;
+                              font-size: 12px;
+                              line-height: 13px;
+                              position: absolute;
+                              z-index: 9;
+                              width: 200px;
+                              padding: 8px;
+                              box-sizing: border-box;
+                              text-align: center;
+                              left: 50%;
+                              margin-left: -100px;
+                              bottom: 24px;
+                              display: none;
+
+                              &:after {
+                                width: 0;
+                                height: 0;
+                                border-left: 5px solid transparent;
+                                border-right: 5px solid transparent;
+                                border-top: 6px solid #fff;
+                                content: "";
+                                position: absolute;
+                                bottom: -6px;
+                                left: 50%;
+                                margin-left: -2.5px;
+                              }
+                          }
+
+                          &:after {
+                            width: 30px;
+                            height: 1px;
+                            background-color: $color-gold;
+                            display: block;
+                            content: "";
+                            margin: 5px auto 20px auto;
+                          }
+                      }
+
+                      .adult,
+                      .children {
+                          margin-bottom: 10px;
+                          @media (max-width: $desktopXL){
+                            margin-bottom: 7px;
+                          }
+
+                          span {
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 16px;
+                            text-align: center;
+                            border: 1px solid $color-medium-dark-gold;
+                            color: #fff;
+                            line-height: 17px;
+                            cursor: pointer;
+                        }
+
+                        p  {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin: 0;
+                            color: $color-fonts;
+                            width: 55px;
+                            font-size: 13px;
+
+                            &.type,
+                            &.age_children_text {
+                                width: 40%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin: 0;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .rooms_bottom {
+                            width: 60%;
+                            display: inline-block;
+                            text-align: center;
+                        }
+
+                      }
+
+
+                      .box_age_children {
+
+                          span {
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 16px;
+                            text-align: center;
+                            border: 1px solid $color-medium-dark-gold;
+                            color: #fff;
+                            line-height: 17px;
+                            cursor: pointer;
+                        }
+
+                        p  {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 55px;
+                            margin: 0;
+                            color: $color-fonts;
+                            font-size: 13px;
+
+                            &.under {
+                                width: 55px;
+                                font-size: 10px;
+                                line-height: 10px;
+                            }
+
+                            &.type,
+                            &.age_children_text {
+                                width: 40%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin: 0;
+                            }
+                        }
+
+                        .rooms_bottom {
+                            width: 60%;
+                            display: inline-block;
+                            text-align: center;
+                            margin-bottom: 10px;
+                            position: relative;
+                            @media (max-width: $desktopXL){
+                              margin-bottom: 7px;
+                            }
+
+                            span.alert {
+                              background-color: #fff;
+                              font-size: 12px;
+                              position: absolute;
+                              z-index: 9;
+                              width: 80px;
+                              padding: 8px;
+                              box-sizing: border-box;
+                              text-align: center;
+                              left: 50%;
+                              margin-left: -40px;
+                              bottom: 10px;
+                              height: initial;
+                              color: $color-fonts;
+                              font-weight: 600;
+                              display: none;
+
+                              &:after {
+                                width: 0;
+                                height: 0;
+                                border-left: 5px solid transparent;
+                                border-right: 5px solid transparent;
+                                border-top: 6px solid #fff;
+                                content: "";
+                                position: absolute;
+                                bottom: -6px;
+                                left: 50%;
+                                margin-left: -2.5px;
+                              }
+                          }
+
+                        }
+
+                        .age_children {
+                          p.age_children_text {
+                            margin: 0;
+                            font-size: 12px;
+                            color: #fff;
+
+                            span {
+                              border: 0;
+                              width: auto;
+                              font-size: 12px;
+                            }
+                          }
+                        }
+
+                      }
+
+                    }
+                }
+
+            }
+        }
+
+        button#btn_book_now_resort_fly-bookink-mx {
+          width: 19%;
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 23px;
+          background-color: $color-gold;
+          border: 0;
+          height: 64px;
+          color: #fff;
+          margin-left: 1%;
+          font-family: $gotham-bold;
+          text-shadow: 1px 1px 2px rgba(12,5,13,.22);
+          padding: 0 10px;
+          line-height: 21px;
+          &::after{
+            content: "";
+            width: 2px;
+            height: 64px;
+            position: absolute;
+            right: -2px;
+            top: 0;
+            background-color: $color-r-dark-green;
+            @media (max-width: $desktopL){
+             display: none;
+            }
+          }
+      }
+
+
+      }
+
+
+      .mex_brand {
+
+        .select_resort {
+            display: inline-block;
+            vertical-align: middle;
+            width: 120px;
+            margin: 0 4px 0 0;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid $color-r-blue;
+            @media (max-width: $desktop){
+              width: 100%;
+              padding: 0 10px;
+              margin: 5px 0;
+              box-sizing: border-box;
+              border: 0;
+            }
+
+            @media (min-width: $desktop) and (max-width:$desktopL) {
+              width: 11%;
+              padding: 0;
+              margin: 0 4px 0 0;
+            }
+
+            .box_select_resort {
+                padding: 7.5px 10px;
+                position: relative;
+                overflow: hidden;
+                @media (max-width: $desktopL){
+                  border: 1px solid $color-r-grey-light2;
+                }
+
+                &:before {
+                  width: 1px;
+                  height: 18px;
+                  background-color: $color-r-dark-green;
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  right: 25px;
+                  top: 50%;
+                  margin-top: -9px;
+                  z-index: 1;
+                }
+
+                &:after {
+                  width: 0;
+                  height: 0;
+                  border-left: 5px solid transparent;
+                  border-right: 5px solid transparent;
+                  border-top: 6px solid $color-r-dark-green;
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  right: 8px;
+                  margin-top: -3px;
+                }
+
+                span.box {
+                    overflow: hidden;
+                    display: block;
+                    width: 100px;
+                    @media (max-width: $desktopXL){
+                    width: 78px;
+                    }
+                }
+
+                p {
+                  font-size: 14px;
+                  width: 300px;
+                  overflow: hidden;
+                  color: $color-r-dark-green;
+                  @media (min-width: $desktop) and (max-width:$desktopL) {
+                    width: 60%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                  }
+                }
+
+            }
+
+            ul {
+               border: 1px solid $color-r-grey-light2;
+               padding: 0;
+               margin-top: 4px;
+               display: none;
+               position: absolute;
+               width: 300px;
+               background-color: $color-white;
+               @media (max-width: $desktopL){
+                 z-index: 9;
+               }
+
+               li {
+                  padding: 6px 16px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  @include hover-transition-5;
+                  cursor: pointer;
+                  font-size: 13px;
+                  color: $color-r-dark-green;
+
+                  &.active,
+                  &:hover {
+                    background-color: $color-r-dark-green;
+                    color: $color-white;
+                  }
+
+                  &:before {
+                    display: none;
+                  }
+               }
+            }
+
+        }
+
+        .easy-autocomplete {
+          width: 115px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 4px;
+          position: relative;
+          border: 1px solid $color-r-blue;
+          @media (max-width: $desktopXL){
+            width: 100px;
+          }
+          @media (min-width: $desktop) and (max-width:$desktopL) {
+            width: 9%;
+          }
+
+            &:before {
+                width: 1px;
+                height: 18px;
+                background-color: $color-r-dark-green;
+                content: "";
+                display: block;
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                margin-top: -9px;
+                z-index: 1;
+                opacity: 0;
+                @media (max-width: $desktopL){
+                  display: none;
+                }
+            }
+
+            input.origin {
+                font-size: 16px;
+                background-color: transparent;
+                border: 0;
+                border-radius: 2px;
+                box-shadow: initial;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 8.5px 15px 8.5px 15px;
+                width: 100%;
+                color: $color-r-dark-green;
+                font-size: 13px;
+                @media (max-width: $desktopXL){
+                  padding: 8.5px 10px;
+                }
+                @media (max-width: $desktopL){
+                  border: 1px solid $color-r-grey-light2;
+                }
+
+                &::placeholder {
+                  color: $color-r-dark-green;
+                }
+
+            }
+
+            .easy-autocomplete-container {
+              ul {
+                 position: absolute;
+                 background-color: $color-white;
+                 border: 1px solid $color-r-grey-light2;
+                 color: $color-r-dark-green;
+                 width: 300px;
+                 margin-top: 5px;
+                 padding: 12px 15px;
+                 box-sizing: border-box;
+                 display: none;
+                 @media (max-width: $desktopL){
+                   z-index: 99;
+                   width: 94%;
+                 }
+
+                 li {
+                   margin-bottom: 4px;
+                   font-size: 13px;
+
+                   &:before {
+                     display: none;
+                   }
+
+                  div.eac-item {
+                    cursor: pointer;
+                    b {
+                         color: $color-r-blue;
+                     }
+                  }
+
+                 }
+             }
+            }
+
+        }
+
+        .checkin,
+        .checkout {
+          width: 135px;
+          display: inline-block;
+          vertical-align: middle;
+          padding: 0;
+          box-sizing: border-box;
+          position: relative;
+          border: 1px solid $color-r-blue;
+          margin: 0 4px 0 0;
+          @media (max-width: $desktopXL){
+             width: 120px;
+          }
+          @media (min-width: $desktop) and (max-width:$desktopL) {
+            width: 13.5%;
+          }
+
+          span {
+            font-size: 10px;
+            color: $color-r-dark-green;
+            position: absolute;
+            left: 13px;
+            top: 3px;
+            @media (max-width: $desktopXL){
+              left: 13px;
+            }
+            @media (max-width: $desktopL){
+              left: 23px;
+            }
+          }
+
+          &:before {
+            width: 1px;
+            height: 18px;
+            background-color: $color-r-dark-green;
+            content: "";
+            display: block;
+            position: absolute;
+            right: 35px;
+            top: 50%;
+            margin-top: -9px;
+        }
+
+          &:after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: url(../img/sprite.png);
+            background-position: -145px -25px;
+            background-size: 200px;
+            position: absolute;
+            right: 5%;
+            top: 2px;
+            pointer-events: none;
+          }
+
+            input.form-control {
+              background-color: transparent;
+              border: 0;
+              border-radius: 2px;
+              box-shadow: initial;
+              color: $color-r-dark-green;
+              font-size: 13px;
+              height: auto;
+              padding: 14px 12px 3px 12px;
+              @media (max-width: $desktopXL){
+                font-size: 12px;
+              }
+              @media (max-width: $desktopL){
+                border: 1px solid $color-r-grey-light2;
+              }
+            }
+        }
+
+        .rooms {
+            width: 404px;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            @media (max-width: $desktopXL){
+                width: 340px;
+            }
+            @media (min-width: $desktop) and (max-width:$desktopL) {
+              width: 37%;
+            }
+
+            .rooms_text_select {
+              background-color: transparent;
+              border: 1px solid $color-r-blue;
+              border-radius: 2px;
+              box-shadow: initial;
+              margin: 0 4px 0 0;
+              width: 32%;
+              display: inline-block;
+              padding: 7.5px 10px;
+              box-sizing: border-box;
+              position: relative;
+              cursor: pointer;
+              //overflow: hidden;
+              vertical-align: middle;
+              @media (max-width: $desktop){
+                border: 1px solid $color-r-grey-light2;
+              }
+
+              &:after {
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 6px solid $color-r-dark-green;
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 8px;
+                margin-top: -3px;
+              }
+
+              &:before {
+                width: 1px;
+                height: 18px;
+                background-color: $color-r-dark-green;
+                content: "";
+                display: block;
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                margin-top: -9px;
+              }
+
+              span.alert {
+                  background-color: $color-white;
+                  font-size: 12px;
+                  line-height: 13px;
+                  position: absolute;
+                  z-index: 9;
+                  width: 200px;
+                  padding: 8px;
+                  box-sizing: border-box;
+                  text-align: center;
+                  left: 50%;
+                  margin-left: -100px;
+                  bottom: 37px;
+                  display: none;
+                  @media (max-width: $desktopL){
+                    background-color: $color-r-grey-light2;
+                    bottom: 24px;
+                  }
+
+                  &:after {
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 6px solid $color-white;
+                    content: "";
+                    position: absolute;
+                    bottom: -6px;
+                    left: 50%;
+                    margin-left: -2.5px;
+                    @media (max-width: $desktopL){
+                      border-top: 6px solid $color-r-grey-light2;
+                    }
+                  }
+              }
+
+              p.number_rooms {
+                  display: inline-block;
+                  vertical-align: middle;
+                  padding-left: 8px;
+                  margin: 0;
+                  box-sizing: border-box;
+                  color: $color-r-dark-green;
+                  font-size: 13px;
+                  @media (max-width: $desktopXL){
+                    padding-left: 0;
+                  }
+              }
+
+              p.copy_rooms {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 8px;
+                margin: 0;
+                box-sizing: border-box;
+                color: $color-r-dark-green;
+                font-size: 13px;
+                max-width: 76px;
+                overflow: hidden;
+
+                @media (min-width: $desktop) and (max-width:$desktopL) {
+                  width: 70%;
+                  white-space: nowrap;
+                  overflow: hidden;
+                }
+              }
+
+
+
+            }
+
+            .type_guests_text_adult,
+            .type_guests_text_children {
+              background-color: transparent;
+              border: 1px solid $color-r-blue;
+              border-radius: 2px;
+              box-shadow: initial;
+              margin: 0 4px 0 0;
+              width: 32%;
+              display: inline-block;
+              color: $color-fonts;
+              position: relative;
+              padding: 7.5px 10px;
+              box-sizing: border-box;
+              cursor: pointer;
+              overflow: hidden;
+              vertical-align: middle;
+              @media (max-width: $desktop){
+                border: 1px solid $color-r-grey-light2;
+              }
+
+              &:after {
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 6px solid $color-r-dark-green;
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 8px;
+                margin-top: -3px;
+              }
+
+              &:before {
+                width: 1px;
+                height: 18px;
+                background-color: $color-r-dark-green;
+                content: "";
+                display: block;
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                margin-top: -9px;
+              }
+
+                  p.number {
+                      display: inline-block;
+                      vertical-align: middle;
+                      padding-left: 8px;
+                      margin: 0;
+                      box-sizing: border-box;
+                      color: $color-r-dark-green;
+                      font-size: 13px;
+                      @media (max-width: $desktopXL){
+                      padding-left: 0;
+                      }
+                  }
+
+                  p.copy {
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-left: 8px;
+                    margin: 0;
+                    box-sizing: border-box;
+                    color: $color-r-dark-green;
+                    font-size: 13px;
+                  }
+
+
+            }
+
+            .main_box_rooms {
+              position: absolute;
+              width: 100%;
+              max-width: 72%;
+              right: 1%;
+              display: none;
+              margin-left: 3px;
+              padding-top: 7px;
+              box-sizing: border-box;
+              overflow: hidden;
+              @media (max-width: $desktopXL){
+                max-width: 84%;
+              }
+
+                .quantity_rooms {
+                    background-color: $color-white;
+                    border: 1px solid $color-r-grey-light2;
+                    padding: 12px;
+                    box-sizing: border-box;
+                    overflow-y: auto !important;
+                    //height: 100%;
+                    max-height: 300px;
+                    width: 100% !important;
+
+                    &::-webkit-scrollbar {
+                      opacity: 0;
+                    }
+
+                    .box_title {
+                        background-color: $color-r-dark-green;
+                        padding: 5px 20px;
+                        text-align: center;
+
+                        .copy {
+                            width: 40%;
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            p {
+                              color: #fff;
+                              font-size: 13px;
+                            }
+                        }
+
+                        .rooms_bottom {
+                            width: 60%;
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            span {
+                              width: 20px;
+                              height: 20px;
+                              display: inline-block;
+                              vertical-align: middle;
+                              font-size: 16px;
+                              text-align: center;
+                              border: 1px solid $color-r-blue;
+                              color: $color-white;
+                              line-height: 17px;
+                              cursor: pointer;
+                          }
+
+                          p  {
+                              display: inline-block;
+                              vertical-align: middle;
+                              margin: 0 16px;
+                              color: #fff;
+                              font-size: 13px;
+                          }
+
+                        }
+                    }
+
+                    .main_room_guests {
+                      margin: 12px 0 0 0;
+                      border: 1px solid $color-r-grey-light2;
+                      padding: 12px 12px 6px 12px;
+
+                      p.number_room {
+                          font-weight: 600;
+                          text-align: center;
+                          position: relative;
+                          font-size: 13px;
+
+                          span.alert {
+                              background-color: #fff;
+                              font-size: 12px;
+                              line-height: 13px;
+                              position: absolute;
+                              z-index: 9;
+                              width: 200px;
+                              padding: 8px;
+                              box-sizing: border-box;
+                              text-align: center;
+                              left: 50%;
+                              margin-left: -100px;
+                              bottom: 24px;
+                              display: none;
+
+                              &:after {
+                                width: 0;
+                                height: 0;
+                                border-left: 5px solid transparent;
+                                border-right: 5px solid transparent;
+                                border-top: 6px solid #fff;
+                                content: "";
+                                position: absolute;
+                                bottom: -6px;
+                                left: 50%;
+                                margin-left: -2.5px;
+                              }
+                          }
+
+                          &:after {
+                            width: 30px;
+                            height: 1px;
+                            background-color: $color-r-blue;
+                            display: block;
+                            content: "";
+                            margin: 5px auto 20px auto;
+                          }
+                      }
+
+                      .adult,
+                      .children {
+                          margin-bottom: 10px;
+                          @media (max-width: $desktopXL){
+                            margin-bottom: 7px;
+                          }
+
+                          span {
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 16px;
+                            text-align: center;
+                            border: 1px solid $color-r-blue;
+                            color: $color-r-fonts;
+                            line-height: 17px;
+                            cursor: pointer;
+                        }
+
+                        p  {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin: 0;
+                            color: $color-r-fonts;
+                            width: 55px;
+                            font-size: 13px;
+
+                            &.type,
+                            &.age_children_text {
+                                width: 40%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin: 0;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .rooms_bottom {
+                            width: 60%;
+                            display: inline-block;
+                            text-align: center;
+                        }
+
+                      }
+
+
+                      .box_age_children {
+
+                          span {
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 16px;
+                            text-align: center;
+                            border: 1px solid $color-r-blue;
+                            color: $color-r-fonts;
+                            line-height: 17px;
+                            cursor: pointer;
+                        }
+
+                        p  {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 55px;
+                            margin: 0;
+                            color: $color-r-fonts;
+                            font-size: 13px;
+
+                            &.under {
+                                width: 55px;
+                                font-size: 10px;
+                                line-height: 10px;
+                            }
+
+                            &.type,
+                            &.age_children_text {
+                                width: 40%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin: 0;
+                            }
+                        }
+
+                        .rooms_bottom {
+                            width: 60%;
+                            display: inline-block;
+                            text-align: center;
+                            margin-bottom: 10px;
+                            position: relative;
+                            @media (max-width: $desktopXL){
+                              margin-bottom: 7px;
+                            }
+
+                            span.alert {
+                              background-color: #fff;
+                              font-size: 12px;
+                              position: absolute;
+                              z-index: 9;
+                              width: 80px;
+                              padding: 8px;
+                              box-sizing: border-box;
+                              text-align: center;
+                              left: 50%;
+                              margin-left: -40px;
+                              bottom: 10px;
+                              height: initial;
+                              color: $color-fonts;
+                              font-weight: 600;
+                              display: none;
+
+                              &:after {
+                                width: 0;
+                                height: 0;
+                                border-left: 5px solid transparent;
+                                border-right: 5px solid transparent;
+                                border-top: 6px solid #fff;
+                                content: "";
+                                position: absolute;
+                                bottom: -6px;
+                                left: 50%;
+                                margin-left: -2.5px;
+                              }
+                          }
+
+                        }
+
+                        .age_children {
+                          p.age_children_text {
+                            margin: 0;
+                            font-size: 12px;
+                            color: $color-r-fonts;
+
+                            span {
+                              border: 0;
+                              width: auto;
+                              font-size: 12px;
+                            }
+                          }
+                        }
+
+                      }
+
+                    }
+                }
+
+            }
+        }
+
+
+        button#btn_book_now_resort_mex_b {
+          width: 224px;
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 28px;
+          background-color: $color-r-dark-green;
+          border: 0;
+          height: 64px;
+          color: $color-white;
+          margin-left: 11px;
+          font-family: $gotham-light;
+          text-shadow: 1px 1px 2px rgba(12,5,13,.22);
+          padding: 0 10px 0 0px;
+          line-height: 30px;
+
+          @media (max-width: $desktopXL){
+            width: 200px;
+            margin-left: 10px;
+          }
+
+          @media (min-width: $desktop) and (max-width:$desktopL) {
+            width: 12.7%;
+            margin-left: 10px;
+            font-size: 24px;
+            padding-right: 0;
+          }
+
+
+          span {
+            vertical-align: middle;
+          }
+
+          &:before {
+            width: 40px;
+            height: 30px;
+            display: inline-block;
+            content: "";
+            background-image: url(../img/arrow-nav-mobile-white.png);
+            background-size: cover;
+            transform: rotate(-90deg);
+            vertical-align: middle;
+            margin-top: -4px;
+            display: none;
+          }
+
+      }
+
+
+
+      }
+
+
+    }
+
+  }
+
+  &.min {
+      position: fixed;
+      width: 300px;
+      left: initial;
+      margin-left: initial;
+      right: -300px;
+      z-index: 999;
+      border: 1px solid $color-r-grey-light2;
+      background-color: $color-white;
+
+      .close_h {
+          display: block;
+          z-index: 999;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          color: $color-r-dark-green;
+          opacity: 1;
+          width: 24px;
+          height: 24px;
+          text-align: center;
+          border-radius: 50%;
+          border: 2px solid $color-r-dark-green;
+          cursor: pointer;
+          font-weight: 600;
+          font-size: 14px;
+      }
+
+      form.form_book_now {
+        .icons_booking {
+            width: 100%;
+            text-align: center;
+            padding: 30px 6px 10px 6px;
+        }
+
+        .only_resort {
+            width: 100%;
+
+            .select_resort {
+                width: 100%;
+                padding: 0 10px;
+                margin: 5px 0;
+                box-sizing: border-box;
+
+                .box_select_resort {
+                  border: 1px solid $color-r-grey-light2;
+                  margin: 0;
+
+                  span.box {
+                      width: 230px;
+                  }
+
+                }
+
+                ul {
+                  z-index: 99;
+                  width: 278px;
+                }
+            }
+
+             .checkin,
+             .checkout {
+                width: 100%;
+                padding: 0 10px;
+                margin: 5px 0;
+                box-sizing: border-box;
+
+                &:after {
+                  right: 10px;
+                }
+
+                input.form-control {
+                  border: 1px solid $color-r-grey-light2;
+                }
+
+                span {
+                  left: 22px;
+                }
+
+            }
+
+            .rooms {
+                width: 100%;
+                margin: 5px 0;
+                padding: 0 10px;
+
+                .rooms_text_select {
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                    border: 1px solid $color-r-grey-light2;
+
+                    span.box {
+                        width: 230px;
+                    }
+
+                    .box_p {
+                      &:before {
+                          display: none;
+                      }
+                    }
+
+                    &:before {
+                      z-index: 9;
+                    }
+                }
+
+                .type_guests_text_adult,
+                .type_guests_text_children {
+                    margin: 0 0 10px 0;
+                    width: 100%;
+                    border: 1px solid $color-r-grey-light2;
+
+                    span.box {
+                        width: 230px;
+                    }
+
+                    .box_p {
+                      &:before {
+                          display: none;
+                      }
+                    }
+
+                    &:before {
+                      z-index: 9;
+                    }
+                }
+
+                .main_box_rooms {
+                    margin: 0;
+                    width: 280px;
+                    top: 80px;
+                    padding: 0;
+                    position: fixed;
+                    right: 300px;
+                }
+
+            }
+
+            button#btn_book_now_resort {
+                width: 100%;
+                margin: 0;
+                height: 47px;
+                font-size: $desktopX-p;
+                &::after{
+                  display: none;
+                }
+            }
+
+        }
+
+
+
+        .resort_fly {
+            width: 100%;
+
+            .box_inputs {
+                width: 100%;
+
+                .select_resort_f {
+                    width: 100%;
+                    padding: 0 10px;
+                    margin: 5px 0;
+                    box-sizing: border-box;
+                    border: 0;
+
+                    ul {
+                      z-index: 99;
+                      width: 278px;
+                    }
+
+                    .box_select_resort_f {
+                      border: 1px solid $color-r-grey-light2;
+
+                      span.box {
+                          width: 230px;
+                      }
+
+                    }
+
+                }
+
+                .easy-autocomplete {
+                    width: 100%;
+                    padding: 5px 10px 10px 10px;
+                    box-sizing: border-box;
+                    border: 0;
+
+                    input.origin {
+                      border: 1px solid $color-r-grey-light2;
+                      padding: 8.5px 15px;
+                    }
+
+                    .easy-autocomplete-container {
+                      ul {
+                        width: 279px;
+                        z-index: 9;
+                         @media (max-width: $desktopL){
+                           z-index: 99;
+                           width: 94%;
+                         }
+
+                         li {
+                           margin-bottom: 4px;
+                           font-size: 13px;
+
+                           &:before {
+                             display: none;
+                           }
+
+                          div.eac-item {
+                            cursor: pointer;
+                            b {
+                                 color: $color-gold;
+                             }
+                          }
+
+                         }
+                     }
+                    }
+
+                }
+
+                .checkin,
+                .checkout {
+                    width: 100%;
+                    padding: 0 10px;
+                    margin-bottom: 10px;
+                    border: 0;
+
+                    span {
+                      left: 22px;
+                    }
+
+                    &:after {
+                      right: 10px;
+                    }
+
+                    input.form-control {
+                      border: 1px solid $color-r-grey-light2;
+                    }
+
+                }
+
+                .adults_select_rf {
+                    width: 100%;
+                    padding: 0px 10px;
+                    margin: 0;
+                    border: 0;
+
+                    ul {
+                        margin: 0;
+                        width: 150px;
+                        top: 80px;
+                        padding: 0;
+                        position: fixed;
+                        right: 300px;
+                        height: 200px;
+                        overflow-y: auto;
+                    }
+
+                    .number_adults_rf {
+                      border: 1px solid $color-r-grey-light2;
+                      &:before{
+                        z-index: 9;
+                      }
+
+                      span.box {
+                          width: 230px;
+                      }
+
+                    }
+
+                }
+
+                .children_select_rf {
+                    width: 100%;
+                    margin: 0;
+                    padding: 10px;
+                    border: 0;
+
+                    ul {
+                      margin: 0;
+                      width: 150px;
+                      padding: 0;
+                      right: 300px;
+                      height: 200px;
+                      overflow-y: auto;
+                      top: 80px;
+                      position: fixed;
+                      left: initial;
+
+                      &.ul_kids_select_rf {
+                          right: 451px;
+                      }
+                    }
+
+                    .main_box_age_kids {
+                        margin: 0;
+                        width: 150px;
+                        top: 80px;
+                        padding: 0;
+                        position: fixed;
+                        right: 300px;
+                    }
+
+                    .number_children_rf{
+                      border: 1px solid $color-r-grey-light2;
+                      &:before {
+                        z-index: 9;
+                      }
+
+                      span.box {
+                          width: 230px;
+                      }
+
+                    }
+
+                }
+
+                .rooms_select_rf {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0 10px;
+                    border: 0;
+
+                    .box_number_romms_rf {
+                        border: 1px solid $color-r-grey-light2;
+
+                        span.box {
+                            width: 230px;
+                        }
+
+                    }
+
+                    ul {
+                      margin: 0;
+                      width: 150px;
+                      top: 80px;
+                      padding: 0;
+                      position: fixed;
+                      right: 300px;
+                      height: auto;
+                      max-height: 230px;
+                      overflow-y: auto;
+                    }
+                }
+
+            }
+
+            button#btn_book_now_resort_fly {
+                width: 100%;
+                margin: 15px 0 0 0;
+                height: 47px;
+                font-size: $desktopX-p;
+                &::after{
+                  display: none;
+                }
+            }
+
+            &.mex {
+              width: 100%;
+
+              .easy-autocomplete {
+                  width: 100%;
+                  padding: 5px 10px 10px 10px;
+                  box-sizing: border-box;
+
+                  .easy-autocomplete-container {
+                    ul {
+                      z-index: 99;
+                      width: 280px;
+                    }
+                  }
+              }
+
+               .checkin,
+               .checkout {
+                  width: 100%;
+                  padding: 0 10px;
+                  margin: 5px 0;
+                  box-sizing: border-box;
+
+                  &:after {
+                    right: 10px;
+                  }
+              }
+
+              .rooms {
+                  width: 100%;
+                  margin: 5px 0;
+                  padding: 0 10px;
+
+                  .rooms_text_select {
+                      width: 100%;
+                      margin: 0 0 10px 0;
+                  }
+
+                  .type_guests_text_adult,
+                  .type_guests_text_children {
+                      margin: 0 0 10px 0;
+                      width: 100%;
+                  }
+
+                  .main_box_rooms {
+                      margin: 0;
+                      width: 280px;
+                      top: 80px;
+                      padding: 0;
+                      position: fixed;
+                      right: 300px;
+                  }
+
+              }
+
+              button#btn_book_now_resort_fly-bookink-mx {
+                  width: 100%;
+                  margin: 15px 0 0 0;
+                  height: 47px;
+                  font-size: $desktopX-p;
+                  &::after{
+                     display: none;
+                  }
+              }
+
+            }
+
+            .mex_brand {
+                .select_resort {
+                    width: 100%;
+                    padding: 0 10px;
+                    margin: 5px 0;
+                    box-sizing: border-box;
+                    border: 0;
+
+                    .box_select_resort {
+                        border: 1px solid $color-r-grey-light2;
+                        margin: 0;
+
+                        span.box {
+                            width: 90%;
+                        }
+                    }
+
+                    ul {
+                        z-index: 9;
+                        width: 277px;
+                    }
+
+                }
+
+                .easy-autocomplete {
+                    width: 100%;
+                    padding: 0 10px;
+                    margin: 5px 0;
+                    box-sizing: border-box;
+                    border: 0;
+
+                    input.origin {
+                      border: 1px solid $color-r-grey-light2;
+                      margin: 0;
+                    }
+
+                    .easy-autocomplete-container {
+                      ul {
+                        z-index: 9;
+                        width: 277px;
+                      }
+                    }
+
+                }
+
+                .checkin,
+                .checkout {
+                    width: 280px;
+                    margin: 5px 0 5px 9px;
+                    border: 1px solid $color-r-grey-light2;
+                }
+
+                .rooms {
+
+                  .main_box_rooms {
+                      margin: 0;
+                      width: 280px;
+                      top: 80px;
+                      padding: 0;
+                      position: fixed;
+                      right: 300px;
+                  }
+
+                  .rooms_text_select,
+                  .type_guests_text_adult,
+                  .type_guests_text_children {
+                    width: 280px;
+                    margin: 5px 0 5px 9px;
+                    border: 1px solid $color-r-grey-light2;
+                  }
+                }
+
+                button#btn_book_now_resort_mex_b {
+                    width: 100%;
+                    margin: 10px 0 0 0;
+                    height: 47px;
+                    font-size: $desktopX-p;
+                    border: 0;
+                    &::after{
+                      display: none;
+                   }
+                }
+
+            }
+
+        }
+
+      }
+
+  }
+
+  &.mobile {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: initial;
+      margin-left: initial;
+      display: none;
+      top: 0;
+      z-index: 999999999999999999999999999999999!important;
+      background-color: $color-white;
+
+      .close_h {
+          display: block;
+          z-index: 999;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          color: $color-r-blue;
+          opacity: 1;
+          width: 24px;
+          height: 24px;
+          text-align: center;
+          border-radius: 50%;
+          border: 2px solid $color-r-blue;
+          cursor: pointer;
+          font-weight: 600;
+          font-size: 14px;
+      }
+
+      form.form_book_now {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+
+
+        .icons_booking {
+            width: 100%;
+            text-align: center;
+            padding: 30px 6px 10px 6px;
+        }
+
+        .only_resort {
+            width: 100%;
+
+             .checkin,
+             .checkout {
+                width: 100%;
+                padding: 0 10px;
+                margin: 5px 0;
+                box-sizing: border-box;
+
+                &:after {
+                  right: 10px;
+                }
+            }
+
+            .rooms {
+                width: 100%;
+                margin: 5px 0;
+                padding: 0 10px;
+
+                .rooms_text_select {
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                }
+
+                .type_guests_text_adult,
+                .type_guests_text_children {
+                    margin: 0 0 10px 0;
+                    width: 100%;
+                }
+
+                .main_box_rooms {
+                  margin: 0;
+                  width: 97%;
+                  max-width: initial;
+                  top: 122px;
+                  height: 250px;
+                  overflow-y: scroll;
+                  padding-bottom: 35px;
+                }
+
+            }
+
+            button#btn_book_now_resort {
+                width: 100%;
+                margin: 0;
+                height: 47px;
+                font-size: $desktopX-p;
+                padding: 0;
+
+                &:before {
+                  display: none;
+                }
+
+            }
+
+        }
+
+
+
+        .resort_fly {
+            width: 100%;
+
+            .box_inputs {
+                width: 100%;
+
+                .easy-autocomplete {
+                    width: 100%;
+                    padding: 5px 10px 10px 10px;
+                    box-sizing: border-box;
+                    border: 0;
+                }
+
+                .checkin,
+                .checkout {
+                    width: 100%;
+                    padding: 0 10px;
+                    margin-bottom: 10px;
+                    border: 0;
+
+                    &:after {
+                      right: 10px;
+                    }
+                }
+
+                .adults_select_rf {
+                    width: 100%;
+                    padding: 0px 10px;
+                    border: 0;
+
+                    ul {
+                      margin: 0;
+                      width: 98%;
+                      max-width: initial;
+                      top: 40px;
+                      height: auto;
+                      left: 1%;
+                      z-index: 9;
+                    }
+
+                }
+
+                .children_select_rf {
+                    width: 100%;
+                    margin: 0;
+                    padding: 10px;
+                    border: 0;
+
+                    ul {
+                      margin: 0;
+                      width: 98%;
+                      max-width: initial;
+                      top: 52px;
+                      height: auto;
+                      left: 1%;
+                      z-index: 9;
+                      @media (max-width: $desktopL){
+                        top: 5px;
+                        height: 120px;
+                        overflow-y: scroll;
+                        z-index: 99;
+                      }
+                    }
+
+                    .main_box_age_kids {
+                      z-index: 99;
+                      width: 94%;
+                      top: 51px;
+                    }
+
+                }
+
+                .rooms_select_rf {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0 10px;
+                    border: 0;
+                    .box{
+                      width: 80% !important;
+                    }
+                    ul {
+                      margin: 0;
+                      width: 98%;
+                      max-width: initial;
+                      top: 42px;
+                      height: auto;
+                      left: 1%;
+                      z-index: 9;
+                    }
+                }
+
+            }
+
+            button#btn_book_now_resort_fly {
+                width: 100%;
+                margin: 15px 0 0 0;
+                height: 47px;
+                font-size: $desktopX-p;
+                padding: 0;
+
+                &:before {
+                  display: none;
+                }
+            }
+
+            &.mex {
+                  width: 100%;
+
+                  .easy-autocomplete {
+                      width: 100%;
+                      padding: 5px 10px 10px;
+                      box-sizing: border-box;
+                  }
+
+                   .checkin,
+                   .checkout {
+                      width: 100%;
+                      padding: 0 10px;
+                      margin: 5px 0;
+                      box-sizing: border-box;
+
+                      &:after {
+                        right: 10px;
+                      }
+                  }
+
+                  .rooms {
+                      width: 100%;
+                      margin: 5px 0;
+                      padding: 0 10px;
+
+                      .rooms_text_select {
+                          width: 100%;
+                          margin: 0 0 10px 0;
+                      }
+
+                      .type_guests_text_adult,
+                      .type_guests_text_children {
+                          margin: 0 0 10px 0;
+                          width: 100%;
+                      }
+
+                      .main_box_rooms {
+                        margin: 0;
+                        width: 97%;
+                        max-width: initial;
+                        top: 122px;
+                        height: 250px;
+                        overflow-y: scroll;
+                      }
+
+                  }
+
+                  button#btn_book_now_resort_fly-bookink-mx {
+                      width: 100%;
+                      margin: 0;
+                      height: 47px;
+                      font-size: $desktopX-p;
+                  }
+
+              }
+
+              .no_mex {
+                .box_inputs {
+                  .select_resort_f {
+                    .box_select_resort_f {
+                      span.box {
+                        width: 90%;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .mex_brand {
+                  .select_resort {
+                      width: 100%;
+                      padding: 0 10px;
+                      margin: 5px 0;
+                      box-sizing: border-box;
+                      border: 0;
+
+                      .box_select_resort {
+                          border: 1px solid $color-r-grey-light2;
+                          margin: 0;
+
+                          span.box {
+                              width: 90%;
+                          }
+                      }
+
+                      ul {
+                          z-index: 9;
+                          width: 277px;
+                      }
+
+                  }
+
+
+                  .easy-autocomplete {
+                      width: 100%;
+                      padding: 0 10px;
+                      margin: 5px 0;
+                      box-sizing: border-box;
+                      border: 0;
+
+                      input.origin {
+                        border: 1px solid $color-r-grey-light2;
+                        margin: 0;
+                      }
+
+                      .easy-autocomplete-container {
+                        ul {
+                          z-index: 9;
+                          width: 277px;
+                        }
+                      }
+
+                  }
+
+                  .checkin,
+                  .checkout {
+                      width: calc(100% - 18px);
+                      left: 9px;
+                      margin: 5px 0;
+                      border: 1px solid $color-r-grey-light2;
+
+                      &:after {
+                        right: 4px;
+                      }
+                  }
+
+                  .rooms {
+                    width: 100%;
+                    padding-right: 20px;
+                    .rooms_text_select,
+                    .type_guests_text_adult,
+                    .type_guests_text_children {
+                      width: 100%;
+                      margin: 5px 0 5px 9px;
+                      border: 1px solid $color-r-grey-light2;
+                    }
+
+                    .main_box_rooms {
+                        max-width: initial;
+                        margin-top: 0;
+                        padding-top: 0;
+                        width: calc(100% - 18px);
+                        right: 0;
+                        margin-left: 0;
+                        left: 8px;
+                        z-index: 9;
+                    }
+
+                  }
+
+                  button#btn_book_now_resort_mex_b {
+                      width: 100%;
+                      margin: 10px 0 0 0;
+                      height: 47px;
+                      font-size: $desktopX-p;
+                      padding: 0;
+                  }
+
+
+              }
+
+
+        }
+
+      }
+
+  }
+
+  &.mex {
+
+    form.form_book_now {
+      .resort_fly{
+         .no_mex {
+           display: none;
+         }
+      }
+    }
+
+  }
+
+}
+
+.datepicker.dropdown-menu {
+  background-color: $color-white;
+  border: 1px solid $color-r-grey-light2;
+  @include bRadius(2px);
+  z-index: 999 !important;
+  font-size: 13px;
+
+
+  &.datepicker-orient-bottom {
+    margin-top: 10px;
+
+    &:after  {
+      border-bottom: 6px solid $color-white;
+    }
+  }
+
+  &.datepicker-orient-top {
+    margin-top: -10px;
+
+    &:after  {
+      border-top: 6px solid $color-white;
+    }
+
+    &::before  {
+      opacity: 0;
+    }
+  }
+
+  table.table-condensed {
+    th {
+       color: $color-r-dark-green;
+       @include bRadius(2px);
+
+       &:hover {
+         background: $color-r-dark-green;
+         color: $color-white;
+       }
+
+       &.dow {
+         &:hover {
+           background: transparent;
+           color: $color-r-dark-green;
+         }
+       }
+
+   }
+
+   tr {
+     td {
+
+       &.day {
+         color: $color-r-dark-green;
+         @include bRadius(2px);
+
+         &:hover {
+           background: $color-r-dark-green;
+           color: $color-white;
+         }
+
+         &.active {
+           background: $color-r-dark-green;
+           color: $color-white;
+         }
+       }
+
+       &.disabled.day {
+            color: $color-r-dark-green;
+            opacity: 0.2;
+
+            &:hover {
+              background: transparent;
+              color: $color-r-dark-green;
+            }
+        }
+
+        &.new.day,
+        &.old.day {
+             color: $color-r-dark-green;
+             opacity: 0.5;
+
+             &:hover {
+               background: $color-r-dark-green;
+               color: $color-white;
+             }
+
+             &.disabled {
+                 opacity: 0.2;
+             }
+         }
+
+      span.month,
+      span.year {
+         color: $color-r-dark-green;
+
+        &.disabled {
+          color: $color-r-dark-green;
+          opacity: 0.2;
+        }
+
+        &.active,
+        &:hover {
+          background: $color-r-dark-green;
+          color: $color-white;
+        }
+
+        &.focused{
+          background: $color-r-dark-green;
+          color: $color-white;
+          opacity: 0.7;
+        }
+
+      }
+
+     }
+   }
+
+  }
+
+}
+
+
+/*booking mexico*/
+section.booking {
+  .etWContainer {
+      width: 100%;
+      height: initial;
+      font-size: 13px;
+
+      .boxframe {
+        .etWforms {
+
+          .etWrow1 {
+              width: 16%;
+              background-color: transparent;
+              border: 1px solid $color-medium-dark-gold;
+              border-radius: 2px;
+              display: inline-block;
+              vertical-align: middle;
+              box-shadow: initial;
+              color: #fff;
+              font-size: 13px;
+              height: auto;
+              padding: 14px 12px 3px 12px;
+              height: 37px;
+              position: relative;
+
+              label {
+                  font-size: 10px;
+                  color: $color-fonts;
+                  position: absolute;
+                  left: 13px;
+                  top: 2px;
+              }
+
+              .EtCityOrig {
+                  background-color: transparent;
+                  border: 0;
+              }
+          }
+
+          .etWrow2 {
+              width: 15%;
+              background-color: transparent;
+              border: 1px solid $color-medium-dark-gold;
+              border-radius: 2px;
+              display: inline-block;
+              vertical-align: middle;
+              box-shadow: initial;
+              color: #fff;
+              font-size: 13px;
+              height: auto;
+              padding: 14px 12px 3px 12px;
+              height: 37px;
+              position: relative;
+
+              p.tit {
+                font-size: 10px;
+                color: $color-fonts;
+                position: absolute;
+                left: 13px;
+                top: -1px;
+              }
+
+              input {
+                  background-color: transparent;
+                  border: 0;
+              }
+
+              &:before {
+                width: 1px;
+                height: 18px;
+                background-color: $color-medium-dark-gold;
+                content: "";
+                display: block;
+                position: absolute;
+                right: 35px;
+                top: 50%;
+                margin-top: -9px;
+                pointer-events: none;
+              }
+
+              &:after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 30px;
+                background: url(../img/sprite.png);
+                background-position: -145px -25px;
+                background-size: 200px;
+                position: absolute;
+                right: 5%;
+                top: 2px;
+                pointer-events: none;
+              }
+          }
+
+          .etWPax {
+            width: 30%;
+            background-color: transparent;
+            border: 1px solid $color-medium-dark-gold;
+            border-radius: 2px;
+            display: inline-block;
+            vertical-align: middle;
+            box-shadow: initial;
+            color: #fff;
+            font-size: 13px;
+            height: auto;
+            padding: 14px 12px 3px 12px;
+            height: 37px;
+            position: relative;
+
+            .etWheader {
+                font-size: 10px;
+                color: #b6b6b6;
+                position: absolute;
+                left: 0;
+                top: -1px;
+                width: 100%;
+            }
+
+
+          }
+
+
+          .button.buttonA {
+            width: 20%;
+            margin-left: 2%;
+            display: inline-block;
+            vertical-align: middle;
+            input[type="submit"] {
+                width: 100%;
+                font-size: 23px;
+                background-color: $color-gold;
+                border: 0;
+                height: 64px;
+                color: #fff;
+                font-family: $gotham-bold;
+                text-shadow: 1px 1px 2px rgba(12,5,13,.22);
+                padding: 0 10px;
+                line-height: 21px;
+            }
+          }
+        }
+      }
+  }
+}
+
+section.booking {
+  form.form_book_now {
+    .only_resort.resort_fly {
+      display: inline-block !important;
+      .easy-autocomplete {
+
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        position: relative;
+        border: 1px solid $color-r-blue;
+
+        @media (max-width: $desktopXL) {
+          width: 9%;
+        }
+        @media (max-width: $desktopL) {
+          width: 100%;
+        }
+
+        &:before {
+          width: 1px;
+          height: 18px;
+          background-color: $color-white;
+          content: "";
+          display: block;
+          position: absolute;
+          right: 25px;
+          top: 50%;
+          margin-top: -9px;
+          z-index: 1;
+          opacity: 0;
+          @media (max-width: $desktopL) {
+            display: none;
+          }
+
+        }
+
+        input.origin {
+          font-size: 16px;
+          background-color: transparent;
+          border: 0;
+          border-radius: 2px;
+          box-shadow: initial;
+          display: inline-block;
+          vertical-align: middle;
+          padding: 8.5px 15px;
+          width: 100%;
+          color: $color-r-dark-green;
+          font-size: 13px;
+          @media (max-width: $desktopL) {
+            border: 1px solid $color-medium-dark-gold;
+          }
+
+          &::placeholder {
+            color: $color-r-dark-green;
+          }
+
+        }
+
+        .easy-autocomplete-container {
+          text-align: left;
+          ul {
+            position: absolute;
+            background-color: $color-white;
+            border: 1px solid $color-r-grey-light2;
+            color: $color-r-dark-green;
+            width: 300px;
+            margin-top: 5px;
+            padding: 12px 15px;
+            box-sizing: border-box;
+            display: none;
+            @media (max-width: $desktopL) {
+              z-index: 99;
+              width: 94%;
+            }
+
+            li {
+              margin-bottom: 4px;
+              font-size: 13px;
+
+              &:before {
+                display: none;
+              }
+
+              div.eac-item {
+                cursor: pointer;
+
+                b {
+                  color: $color-r-blue;
+                }
+              }
+
+            }
+          }
+        }
+
+      }
+    }
+
+
+    .only_resort.resort_fly.onlyresort-mx{
+      button#btn_book_now_resort{
+        //margin-left: 5%;
+        @media (max-width: $desktopL) {
+          // margin-left: 0;
+        }
+      }
+      .checkin.checkin-rf {
+        display: none;
+      }
+
+      .checkout.checkout-rf {
+        display: none;
+      }
+
+      .easy-autocomplete {
+        display: none;
+      }
+      .rooms {
+        .rooms_text_select {
+          p.number_rooms {
+            padding-left: 0;
+            @media (max-width: $desktopL) {
+              padding-left: 8px;
+            }
+          }
+        }
+        @media (max-width: $desktopXL) {
+          // width: 408px;
+        }
+        @media (max-width: $desktopL) {
+          // width: 100%;
+        }
+      }
+    }
+    .only_resort.resort_fly.resortfly-mx {
+      .select_resort {
+        @media (max-width: $desktopXL) {
+          width: 15.3%;
+        }
+        @media (max-width: $desktopL) {
+          width: 100%;
+        }
+      }
+
+      .checkin.checkin-rf {
+        width: 11.8%;
+        @media (max-width: $desktopL) {
+          width: 100%;
+        }
+      }
+
+      .checkout.checkout-rf {
+        width: 11.8%;
+        @media (max-width: $desktopL) {
+          width: 100%;
+        }
+      }
+
+      .easy-autocomplete {
+        //width: 120px;
+        @media (max-width: $desktopL) {
+          width: 100%;
+          border: none;
+          padding-left: 10px;
+          padding-right: 10px;
+          margin: 5px 0;
+        }
+      }
+
+      .rooms {
+
+        .type_guests_text_adult {
+          .box_p:before{
+            @media (max-width: $desktopXL) {
+              left: 70px;
+            }
+          }
+        }
+
+        .type_guests_text_children{
+          .box_p:before {
+            @media (max-width: $desktopXL) {
+              left: 70px;
+            }
+          }
+        }
+
+
+        .rooms_text_select {
+
+          .box_p:before {
+            @media (max-width: $desktopXL) {
+              left: 70px;
+            }
+          }
+          p.number_rooms {
+            padding-left: 0;
+            @media (max-width: $desktopL) {
+              padding-left: 8px;
+            }
+          }
+        }
+        @media (max-width: $desktopXL) {
+          width: 30.8%;
+        }
+        @media (max-width: $desktopL) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.checkIn-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    .checkin{
+        text-decoration: none;
+        .content-title{
+            margin-top: 0;
+            span{
+                font-size: .8rem;
+                padding: 8px 0;
+                color: white;
+                b{
+                    font-size:.8rem;
+                    display: inline;
+                    font-weight: 500;
+                    text-decoration: underline;
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,212 @@
+/*gridNews*/
+.gridNews {
+  padding: 60px 0;
+  @media (max-width: $mobile) {
+    padding: 60px 0;
+  }
+  .content {
+    .c-content {
+      .gridNews__content {
+        padding-top: 35px;
+        .gridNews__featured {
+          @media (max-width: $tablet) {
+            padding-bottom: 20px;
+          }
+          article {
+            .gridNews__text {
+              padding: 10px 0;
+              position: relative;
+              h3 {
+                padding: 10px 0;
+                font-size: 1.25rem;
+                line-height: 24px;
+                text-decoration: underline !important;
+                @media (max-width: $mobile) {
+                  height: auto !important;
+                }
+              }
+              &.multimedia {
+                .multimedia {
+                  top: -20px;
+                  right: 15px;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  position: absolute;
+                  border: 1px solid $border_white;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  .icon-icon-audio,
+                  .icon-icon-video,
+                  .icon-icon-podcast {
+                    color: $color_white;
+                    font-size: 1.35rem;
+                  }
+                  &.audio {
+                    background-color: $background_pistachio;
+                  }
+                  &.podcast {
+                    background-color: $background_electric_violet;
+                  }
+                  &.video {
+                    background-color: $background_web_orange;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .gridNews__notfeatured {
+          @media (max-width: $mobile) {
+            padding-top: 25px;
+            padding-bottom: 35px;
+            background-color: $background_gallery;
+          }
+          .view-content {
+            width: 100%;
+            & > div {
+              &:last-child {
+                article {
+                  padding-bottom: 0;
+                }
+              }
+            }
+            article {
+              @media (max-width: $mobile) {
+                padding-bottom: 25px;
+
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+              }
+              .gridNews__img {
+                @media (max-width: $mobile) {
+                  width: 40%;
+                }
+              }
+              .gridNews__text {
+                padding: 10px 0;
+                position: relative;
+                @media (max-width: $mobile) {
+                  width: 60%;
+                  padding: 0 0 0 10px;
+                }
+                .category {
+                  top: 0;
+                  left: 0;
+                  margin-right: 60px;
+                  position: absolute;
+                  @media (max-width: $mobile) {
+                    top: inherit !important;
+                    left: inherit !important;
+                    margin-right: 0;
+                    margin-bottom: 5px;
+                    position: relative;
+                  }
+                }
+                &.multimedia {
+                  h3 {
+                    width: 85%;
+                    font-size: 0.8125rem;
+                    line-height: 16px;
+                    @media (max-width: $mobile) {
+                      width: 100%;
+                      height: auto !important;
+                    }
+                  }
+                  .multimedia {
+                    top: -15px;
+                    right: 10px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    position: absolute;
+                    border: 1px solid $border_white;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @media (max-width: $mobile) {
+                      top: 80px;
+                      left: -40px;
+                      right: inherit;
+                      width: 25px;
+                      height: 25px;
+                    }
+                    .icon-icon-audio,
+                    .icon-icon-video,
+                    .icon-icon-podcast {
+                      color: $color_white;
+                      font-size: 1rem;
+                      @media (max-width: $mobile) {
+                        font-size: 0.8rem;
+                      }
+                    }
+                    &.audio {
+                      background-color: $background_pistachio;
+                    }
+                    &.podcast {
+                      background-color: $background_electric_violet;
+                    }
+                    &.video {
+                      background-color: $background_web_orange;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .view-footer {
+            @media (max-width: $tablet) {
+              width: 100%;
+              padding: 0 15px;
+            }
+          }
+        }
+        .gridNews__btn {
+          display: none;
+          padding-top: 20px;
+          text-align: right;
+          @media (max-width: $tablet) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.gridNews.generica-17{
+  .c-content{
+    .gridNews__content{
+      .row {
+        .gridNews__notfeatured{
+          .view-content{
+            display: flex;
+            flex-wrap: wrap;
+
+            .views-row{
+              @media (min-width: $tablet) {
+                width: 50%;
+              }
+
+              &:nth-of-type(1){
+                display: none;
+              }
+
+              .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6{
+                @media (min-width: $tablet) {
+                  flex: 0 0 100%;
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

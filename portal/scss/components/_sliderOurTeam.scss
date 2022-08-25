@@ -1,0 +1,65 @@
+/*sliderOurTeam*/
+.sliderOurTeam {
+  padding: 60px 0;
+  .container {
+    @media (max-width: $mobile) {
+      padding: 0;
+    }
+    .content {
+      .c-header {
+        text-align: center;
+        @media (max-width: $mobile) {
+          padding: 0 20px;
+        }
+        p {
+          margin: 0 auto;
+        }
+      }
+      .c-content {
+        .sliderOurTeam__content {
+          padding-top: 45px;
+          .s-sliderOurTeam {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .views-row {
+              width: calc(25% - 20px);
+              padding: 0 20px;
+              margin: 0 10px 40px 10px;
+              @media (max-width: $tablet) {
+                width: calc(33.33% - 20px);
+              }
+              @media (max-width: $mobile) {
+                width: 100%;
+                margin: 0;
+              }
+              article {
+                .s-sliderOurTeam__img {
+                  overflow: hidden;
+                  border-radius: 50%;
+                }
+                .s-sliderOurTeam__text {
+                  padding-top: 15px;
+                  text-align: center;
+                  h3 {
+                    color: $color_big_stone;
+                    font-size: 1.25rem;
+                    line-height: 24px;
+                    font-family: $latobold;
+                  }
+                  span {
+                    display: block;
+                    color: $color_congress_blue;
+                    font-size: 0.875rem;
+                    line-height: 17px;
+                    padding: 5px 0 15px 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.meetings-and-events {
+    padding: 0;
+    margin: 6rem 0 6rem 0;
+    @media (max-width: $tablet) {
+        margin: 4rem 0 4rem 0;
+    }
+    .container-fluid {
+        .row {
+            position: relative;
+            &.meetings {
+            }
+            .events-info {
+                padding: 0 8%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                .content-title {
+                    text-align: start;
+                }
+            }
+
+            .events {          
+                 .events-carousel {
+                    position: inherit;
+                    width: 100%;
+                    padding-bottom: 6%;
+                    .react-multi-carousel-dot-list {
+                        right: 5%;
+                        justify-content: right;
+                        bottom: -10%;
+                        @media (max-width: $desktop) {
+                            bottom: -5px;
+                        }
+                        .react-multi-carousel-dot {
+                            button {
+                                width: 34px;
+                                height: 1px;
+                                border-radius: 0;
+                                background-color: $gray;
+                                border: 0;
+                            }
+                            &.react-multi-carousel-dot--active {
+                                button {
+                                    width: 80px;
+                                    background-color: black;
+                                }
+                            }
+                        }
+                    }
+
+                    .carousel-button-left,
+                    .react-multiple-carousel__arrow--left,
+                    .react-multiple-carousel__arrow--right,
+                    .carousel-button-right {
+                        background-color: black;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        border: 1px solid black;
+                        color: $white-0;
+                        display: block;
+                        font-size: 14px;
+                        z-index: 100;
+                        transform: translateX(-50%);
+                        z-index: 95;
+                        position: absolute;
+                        bottom: 0;
+                        overflow: hidden;
+                        z-index: 1;
+                        @media (max-width: $desktop) {
+                            display: none;
+                        }
+                        .arrow_content_prev,
+                        .arrow_content_next {
+                            width: 16px;
+                            height: 21px;
+                            display: flex;
+                            align-items: center;
+                            margin: 0 auto;
+                            justify-content: center;
+                            img {
+                                width: 100%;
+                                object-fit: contain;
+                                height: 100%;
+                                object-position: center center;
+                                filter: invert(1);
+                            }
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            transition: all 0.5s ease;
+                            border-radius: 50%;
+                            background-color: white;
+                            transform: scale(0);
+                            border: 1px solid black;
+                        }
+                        &:hover {
+                            border: 1px solid black;
+                            &::before {
+                                transform: scale(1.2);
+                            }
+                            .arrow_content_prev,
+                            .arrow_content_next {
+                                img {
+                                    filter: invert(0);
+                                }
+                            }
+                        }
+                    }
+                    .carousel-button-left {
+                        position: absolute;
+                        left: 42.5%;
+                        bottom: 0;
+                        @media (max-width: $desktopLS) {
+                            left: 41.5%;
+                        }
+                    }
+                    .carousel-button-right {
+                        position: absolute;
+                        right: 52%;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

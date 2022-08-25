@@ -1,0 +1,50 @@
+body.path-frontpage {
+  .region-breadcrumb {
+    display: none;
+  }
+}
+
+.region-breadcrumb {
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+
+  @include media-query(tablet) {
+    display: none;
+  }
+
+  nav {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    ol {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex: auto;
+      background-color: white;
+      li {
+        height: inherit;
+        padding: 0.2rem;
+        font-weight: $regular;
+        background-color: white;
+        .span_breadCrumb2{
+            margin-left: -5px;
+        }
+      }
+      li:last-child {
+        color: $color-font-primary;
+        font-weight: $bold;
+        background-color: white;
+        span{
+            display: none;
+        }
+      }
+    }
+  }
+}

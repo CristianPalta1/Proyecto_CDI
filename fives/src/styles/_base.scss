@@ -1,0 +1,313 @@
+html,
+* {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-display: swap;
+}
+p,
+label,
+button,
+label,
+a,
+span {
+    color: #575656;
+    font-weight: 300;
+
+    @media (max-width: $desktopLS) {
+        font-size: 12px;
+    }
+}
+
+a {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+section {
+    margin-bottom: 6rem;
+    padding: 0 0 5rem;
+    overflow: hidden;
+    @media (max-width: $desktopLS) {
+        margin-bottom: 3%;
+        padding: 0 0 3%;
+    }
+    @media (max-width: $desktop) {
+        margin-bottom: 1%;
+        padding: 0 0 1%;
+    }
+}
+.container {
+    @media (min-width: $desktopXXL) {
+        max-width: 1640px;
+    }
+}
+h2,
+h1 {
+    font-weight: 300;
+    color: black;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    @media (max-width: $desktopLS) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: $desktop) {
+        font-size: 1.3rem;
+    }
+    @media (max-width: $tablet) {
+        font-size: 15px;
+    }
+    .content-title-comp,
+    b,
+    span,
+    p {
+        font-size: 3.2rem;
+        display: block;
+        font-weight: 300;
+        @media (max-width: $desktopLS) {
+            font-size: 2.9rem;
+        }
+        @media (max-width: $desktop) {
+            font-size: 2.5rem;
+        }
+        @media (max-width: $tablet) {
+            font-size: 25px;
+            margin: 0;
+        }
+    }
+}
+
+.content-titles {
+    font-weight: 300;
+    color: black;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (max-width: $desktopLS) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: $desktop) {
+        font-size: 1.3rem;
+    }
+    @media (max-width: $tablet) {
+        font-size: 15px;
+    }
+}
+.content-title,
+.our-residences-title {
+    &.destination__Card,
+    &.special_offers,
+    &.contactUs {
+        h2,
+        h1 {
+            text-align: start;
+            span {
+                color: black;
+            }
+        }
+    }
+    &.contactSpecial {
+        margin-bottom: 97px;
+        h2,
+        h1 {
+            font-weight: 300;
+            color: black;
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-align: center;
+
+            @media (max-width: $desktopLS) {
+                font-size: 1.5rem;
+            }
+            @media (max-width: $desktop) {
+                font-size: 1.3rem;
+            }
+            @media (max-width: $tablet) {
+                font-size: 15px;
+            }
+            .content-title-comp,
+            b,
+            span {
+                font-size: 3.2rem;
+                display: block;
+                font-weight: 300;
+                color: black;
+                @media (max-width: $desktopLS) {
+                    font-size: 2.9rem;
+                }
+                @media (max-width: $desktop) {
+                    font-size: 2.5rem;
+                }
+                @media (max-width: $tablet) {
+                    font-size: 25px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    h2,
+    h1 {
+        font-weight: 300;
+        color: black;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media (max-width: $desktopLS) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: $desktop) {
+            font-size: 1.3rem;
+        }
+        @media (max-width: $tablet) {
+            font-size: 15px;
+        }
+        .content-title-comp,
+        b,
+        span {
+            color: black;
+            font-size: 3.2rem;
+            display: block;
+            font-weight: 300;
+            @media (max-width: $desktopLS) {
+                font-size: 2.9rem;
+            }
+            @media (max-width: $desktop) {
+                font-size: 2.5rem;
+            }
+            @media (max-width: $tablet) {
+                font-size: 25px;
+                margin: 0;
+            }
+        }
+    }
+    font-weight: 300;
+    color: black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.5rem 0 0 0;
+    @media (max-width: $desktopLS) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: $desktop) {
+        font-size: 1.3rem;
+    }
+    @media (max-width: $tablet) {
+        font-size: 15px;
+    }
+
+    .content-title-comp,
+    b,
+    span {
+        color: black;
+        font-size: 3.2rem;
+        display: block;
+        font-weight: 300;
+        @media (max-width: $desktopLS) {
+            font-size: 2.9rem;
+        }
+        @media (max-width: $desktop) {
+            font-size: 2.5rem;
+        }
+        @media (max-width: $tablet) {
+            font-size: 25px;
+            margin: 0;
+        }
+    }
+}
+
+.content-subtitle {
+    font-size: 20px;
+    color: $gray;
+    margin: 0.5rem 0 1rem;
+    font-weight: 500;
+    display: block;
+
+    @media (max-width: $desktop) {
+        font-size: 16px;
+    }
+    &.contactUs {
+        font-size: 16px;
+    }
+}
+
+.content-description,
+.content-description p {
+    font-size: 14px;
+    color: $gray;
+    margin: 0.5rem 0 1rem;
+    font-weight: 200;
+    display: block;
+    line-height: 1.7rem;
+
+    @media (max-width: $desktopLS) {
+        font-size: 12px;
+    }
+}
+
+span {
+    font-size: 14px;
+    @media (max-width: $desktopLS) {
+        font-size: 12px;
+    }
+}
+
+.content-actions {
+    .btn,
+    a {
+        font-weight: 500;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 45px;
+        border: 1px solid #575656;
+        color: black;
+        text-transform: uppercase;
+        border-radius: 0;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+
+        &.btn-reserve {
+            background-color: black;
+            color: white;
+        }
+
+        @media (max-width: $desktop) {
+            margin: 10px 0;
+        }
+    }
+}
+
+///Estilos chat
+.dvBAhE {
+    padding-left: 0px !important;
+    padding-right: 22px !important;
+    top: 0px !important;
+    bottom: 15%;
+    right: 6%;
+    transform: translate(-6%, -15%);
+}
+
+.IIVKa {
+    height: 48px !important;
+    width: 48px !important;
+    .dHETZR{
+        .ivHKcY{
+            svg{
+                width: 29px !important;
+                height: 29px !important;
+            }
+        }
+    }
+}
+
+.iAnaW{
+    height: 48px !important;
+    width: 48px !important;
+}

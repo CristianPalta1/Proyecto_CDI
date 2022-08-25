@@ -1,0 +1,30 @@
+.covid__float_btn {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 4;   
+    border: 1px solid #f5f5f5;
+    width: 40px;
+    .desc, p {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transform: rotate(180deg);
+        background-color: black;
+        display: block;
+        padding: 1.2rem 0.6rem;
+        font-size: 14px;
+        width: 100%;
+        cursor: pointer;
+        writing-mode: vertical-lr;
+        text-transform: uppercase;
+        @media (max-width: $desktopLS) {
+            font-size: 12px;
+        }
+    }
+    &:hover{
+        .desc {
+            background-color:#575656;
+        }        
+    }
+}

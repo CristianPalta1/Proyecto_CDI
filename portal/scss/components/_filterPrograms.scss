@@ -1,0 +1,88 @@
+/*listPrograms*/
+.listPrograms {
+  padding: 60px 0;
+  .content {
+    .c-content {
+      .listPrograms__content {
+        padding-top: 35px;
+        @media (max-width: $mobile) {
+          padding-top: 0px;
+        }
+        .listPrograms__articles {
+          padding-top: 35px;
+          article {
+            margin-bottom: 25px;
+            @media (max-width: $mobile) {
+              display: flex;
+              flex-direction: column !important;
+            }
+            .programsList__img {
+              @media (max-width: $mobile) {
+                width: 100%;
+              }
+            }
+            .programsList__text {
+              padding: 15px 0;
+              div {
+                padding-bottom: 20px;
+                .modalidad {
+                  padding: 4px 8px;
+                  color: $color_white;
+                  font-size: 0.65rem;
+                  line-height: 13px;
+                  display: inline-block;
+                  font-family: $montserratmedium;
+                  background-color: $background_big_stone;
+                }
+                .nivelFormacion {
+                  padding: 4px 8px;
+                  color: $color_white;
+                  font-size: 0.65rem;
+                  line-height: 13px;
+                  display: inline-block;
+                  font-family: $montserratmedium;
+                  background-color: $background_congress_blue;
+                }
+              }
+              h3 {
+                font-size: 0.9rem;
+                padding-bottom: 10px;
+              }
+              p {
+                color: black;
+                padding-bottom: 10px;
+                font-weight: 600;
+                font-size: 0.8rem;
+                position: relative;
+                &:last-of-type {
+                  padding-bottom: 20px;
+                }
+                // &::after{
+                //   content: "";
+                //   background-color: rgba(0, 0, 0, 0.16);
+                //   width: 5px;
+                //   height: 5px;
+                //   position: absolute;
+                //   top: 0;
+                //   left: 0;
+                // }
+                .icon-icon-marker2 {
+                  color: $border_golda;
+                  //color: $color_silver_chalice;
+                  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                  font-size: 1.8rem;
+                  margin-right: 5px;
+                  width: 0; 
+                  height: 0; 
+                  border-left: 5px solid transparent;
+                   border-right: 5px solid transparent;                  
+                 border-bottom: 5px solid rgba(0, 0, 0, 0.16);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

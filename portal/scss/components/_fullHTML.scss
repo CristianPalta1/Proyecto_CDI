@@ -1,0 +1,110 @@
+/*fullHTML*/
+.fullHTML {
+  padding: 20px 0;
+  .content {
+    .c-content {
+      .fullHTML__content {
+        h2 {
+          font-size: 1.75rem;
+          text-transform: inherit;
+          font-family: $montserratbold;
+        }
+        .btn-border {
+          margin-top: 25px;
+          margin-right: 10px;
+          text-align: center;
+          @media (max-width: $tablet) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        .table {
+          display: table;
+          .table__title {
+            padding: 8px;
+            display: table-row;
+            background-color: $background_white !important;
+            @media (max-width: $mobile) {
+              display: none;
+            }
+            p {
+              padding: 8px;
+              font-size: 1rem;
+              display: table-cell;
+              font-family: $latobold;
+              color: $color_congress_blue !important;
+            }
+          }
+          div {
+            padding: 8px;
+            display: table-row;
+            p {
+              display: table-cell;
+              padding: 8px;
+              color: $color_boulder;
+              font-size: 1rem;
+              @media (max-width: $mobile) {
+                display: block;
+              }
+              &:first-of-type {
+                color: $color_big_stone;
+                font-family: $latobold;
+              }
+            }
+            &:nth-child(odd) {
+              background-color: $background_white;
+            }
+            &:nth-child(even) {
+              background-color: $background_gallery;
+            }
+            &:last-of-type {
+              display: none;
+            }
+          }
+        }
+        .mainOffice {
+          margin-bottom: 30px;
+          @media (min-width: $tablet) {
+            display: none;
+          }
+          a {
+            width: 100%;
+            height: 40px;
+            display: block;
+            padding: 0 10px;
+            position: relative;
+            font-size: 0.875rem;
+            font-family: $latoregular;
+            color: $color_congress_blue;
+            border: 1px solid $border_congress_blue;
+            background-color: $background_white;
+            display: flex;
+            align-items: center;
+            &.rotate-180 {
+              font-family: $latobold;
+              color: $color_white;
+              background-color: $background_congress_blue;
+              .icon-icon-arrow-down {
+                right: 10px;
+                color: $color_white;
+                font-size: 0.5rem;
+                position: absolute;
+              }
+            }
+            .icon-icon-arrow-down {
+              right: 10px;
+              color: $color_congress_blue;
+              font-size: 0.5rem;
+              position: absolute;
+              transition: all 0.25s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

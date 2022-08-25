@@ -1,0 +1,86 @@
+.calizzo-floating {
+    .region-floating {
+        .calizo-sidebar-contact {
+            position: fixed;
+            bottom: 12%;
+            right: 1%;
+            transform: translate(-1%, -12%);
+            z-index: 999;
+            .field--type-entity-reference-revisions {
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                .field__item {
+                    background-color: $border-btn-float;
+                    border: 0.5rem solid $color-white;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    a {
+                        display: block;
+                        width: 5rem;
+                        height: 5rem;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+        .calizo-sidebar-payment {
+            display: none;
+            // position: fixed;
+            // bottom: 1.1%;
+            // right: 3.5%;
+            // transform: translate(-3.5%, -1.1%);
+            // z-index: 999;
+            // border: 0.1rem solid $color-white;
+            // border-radius: 0.6rem;
+            // overflow: hidden;
+            // @include media-query(tablet) {
+            //     width: 100%;
+            //     bottom: 0;
+            //     border-radius: 0;
+            //     right: 0;
+            //     transform: translate(0,0);
+            // }
+            // .calizo-sidebar-payment__link {
+            //     display: flex;
+            //     justify-content: flex-start;
+            //     align-items: center;
+            //     gap: 1.2rem;
+            //     background-color: $color-black;
+            //     padding: 0.6rem 1.6rem;
+            //     flex-direction: row-reverse;
+            //     @include media-query(tablet) {
+            //         justify-content: center;
+            //     }
+            //     .calizo-sidebar-payment__title {
+            //         .field--name-title {
+            //             color: $color-white;
+            //             font-size: 1.2rem;
+            //             @include media-query(tablet) {
+            //                 font-size: 1.8rem;
+            //             }
+            //         }
+            //     }
+            //     .calizo-sidebar-payment__image {
+            //         .field--name-image {
+            //             width: 3rem;
+            //             height: 3rem;
+            //             img {
+            //                 width: 100%;
+            //                 height: 100%;
+            //                 object-fit: contain;
+            //             }
+            //         }
+            //     }
+            // }
+            // .calizo-sidebar-payment__url {
+            //     display: none;
+            // }
+        }
+    }
+}

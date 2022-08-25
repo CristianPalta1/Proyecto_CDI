@@ -1,0 +1,431 @@
+.page-node-type-maquetacion {
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+    .banner {
+        position: relative;
+        height: 620px;
+        min-height: 620px;
+        max-height: 620px;
+        .wrap {
+            position: absolute;
+            max-width: 1400px;
+            width: 100%;
+            padding: 0 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-51%, -50%);
+            z-index: 3;
+            .info {
+                @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;700&display=swap");
+                h1 {
+                    font-size: 44px;
+                    color: white;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 900;
+                }
+                p {
+                    color: white;
+                    font-size: 16px;
+                    margin-bottom: 4rem;
+                    padding-top: 10px;
+                }
+                a {
+                    color: white;
+                    padding: 0.6rem 2.5rem;
+                    font-size: 14px;
+                    font-weight: 900;
+                    border: 1px solid white;
+                    border-radius: 4px;
+                    background-color: transparent;
+                    &.hover {
+                        background-color: white;
+                        color: $color_congress_blue;
+                    }
+                }
+            }
+        }
+        .img-bg {
+            height: 600px;
+            z-index: 3;
+            img {
+                height: 600px;
+                object-fit: cover;
+                object-position: center bottom;
+            }
+        }
+        .waves__bg__1 {
+            content: "";
+            position: absolute;
+            background-image: url(/themes/custom/uniminuto/assets/img/banners/bannerLandings/LandingBannerWaveDesktop1.png);
+            background-position: center bottom;
+            height: 100px;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+        }
+        .waves__bg__2 {
+            content: "";
+            position: absolute;
+            background-image: url(/themes/custom/uniminuto/assets/img/banners/bannerLandings/LandingBannerWaveDesktop2.png);
+            background-position: center bottom;
+            height: 100px;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        &:hover {
+            .waves__bg__1 {
+                animation: 5s infinite alternate slidein;
+                transition-delay: 1s;
+                transition-timing-function: ease;
+            }
+            .waves__bg__2 {
+                animation: 7s infinite alternate slidein2;
+                transition-delay: 1s;
+                transition-timing-function: ease;
+            }
+        }
+        @include keyframes(slidein) {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+        @include keyframes(slidein2) {
+            from {
+                margin-left: 0%;
+                width: 100%;
+            }
+
+            to {
+                margin-left: 100%;
+                width: 300%;
+            }
+        }
+    }
+
+    .section-card-information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        flex-direction: column;
+        .container-content-title-cards {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+
+            .container-title {
+                height: 70px;
+                h3 {
+                    font-size: 46px;
+                    font-family: "Montserrat", sans-serif;
+                    line-height: 49px !important;
+                    font-weight: 900;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .grid-cards-containter {
+                display: grid;
+                grid-template-columns: repeat(4, minmax(100px, 350px));
+                justify-items: center;
+                align-items: center;
+                gap: 1rem;
+                .views-row {
+                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                    height: 300px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    justify-content: space-around;
+                    padding: 1rem 2rem;
+                    align-items: center;
+                    .container-number-card {
+                        width: 216px;
+
+                        p {
+                            -webkit-text-stroke: 1px $color_golda;
+                            color: transparent;
+                            font-size: 46px;
+                        }
+                    }
+                    .container-title-description {
+                        width: 216px;
+                        h3 {
+                            font-size: 2.75rem;
+                            color: $color_congress_blue;
+                            font-family: "Montserrat", sans-serif;
+                            line-height: 47px !important;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                    .container-btn {
+                        a {
+                            padding: 0.7rem 3rem;
+                            color: $color_congress_blue;
+                            font-size: 14px;
+                            border: 1px solid $color_congress_blue;
+                            border-radius: 4px;
+                            font-weight: 900;
+                        }
+                    }
+                    &:hover {
+                        .container-number-card {
+                            p {
+                                color: $color_golda;
+                            }
+                        }
+                        .container-title-description {
+                            h3 {
+                                font-weight: 900;
+                            }
+                        }
+                        .container-btn {
+                            a {
+                                background-color: $color_golda;
+                                border: 1px solid $color_golda;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+/*INICIO ANIMACION MAPA LANDING*/
+    .section-animate-map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color_gallery;
+        padding: 3rem;
+        .container-information-map {
+            height: 600px;
+            position: relative;
+            max-width: 1440px;
+            width: 100%;
+            .container-increment-text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;700&display=swap");
+
+                p {
+                    &::before {
+                        content: "+";
+                        color: $color_congress_blue;
+                        width: 20px;
+                        height: 20px;
+                        font-size: 46px;
+                        padding-right: 1.5rem;
+                        z-index: 1;
+                    }
+                    font-size: 46px;
+                    color: $color_congress_blue;
+                    font-weight: 900;
+                    font-family: "Montserrat", sans-serif;
+                    text-align: center;
+                }
+            }
+            .container-title-description {
+                position: absolute;
+                top: 10%;
+                left: 0;
+                h3 {
+                    font-size: 20px;
+                    color: $color_congress_blue;
+                    font-weight: 900;
+                    font-family: "Montserrat", sans-serif;
+                }
+                p {
+                    font-size: 14px;
+                    font-family: "Montserrat", sans-serif;
+                }
+            }
+            .container-map-data {
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 100px repeat(2, 1fr);
+                grid-template-areas:
+                    ". map"
+                    "data map"
+                    "data map";
+                .container-text-animated {
+                    grid-area: data;
+                    grid-column: 1 / span 1;
+                    grid-row: 2 / span -1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    row-gap: 10px;
+
+                    .views-row {
+                        width: 0px;
+                        height: 50px;
+                        background-color: $color_congress_blue;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        position: relative;
+                        z-index: 1;
+                        &::after {
+                            content: "";
+                            background-color: #e2e2e2;
+                            width: 510px;
+                            height: 50px;
+                            position: absolute;
+                            top: 0;
+                            left: 100%;
+                            z-index: 0;
+                            transition-property: width;
+                            transition-duration: 1s;
+                            transition-delay: 0.5s;
+                            transition-timing-function: ease;
+                        }
+                        transition-property: width;
+                        transition-duration: 1s;
+                        transition-delay: 0.5s;
+                        transition-timing-function: ease;
+
+                        p {
+                            color: white;
+                            font-size: 18px;
+                            font-family: "Montserrat", sans-serif;
+                            padding: 0 2rem;
+                            animation: fadeInAnimation ease 3s;
+                            z-index: 1;
+                        }
+                    }
+                }
+
+                .container-svg-map {
+                    grid-area: map;
+                    grid-row: 1 / span -1;
+                    grid-column: 2 / span 1;
+                }
+            }
+        }
+
+        &:hover > .container-information-map .container-map-data .container-text-animated .views-row {
+            width: 510px;
+            z-index: 1;
+            &::after {
+                width: 0;
+            }
+            //background-color: $color_congress_blue;
+        }
+    }
+/*FIN ANIMACION MAPA LANDING*/
+    .section-students-information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content {
+            max-width: 1440px;
+            width: 100%;
+            .title-description-information {
+                padding: 2rem 0;
+                h3 {
+                    font-size: 46px;
+                    font-family: "Montserrat", sans-serif;
+                    line-height: 49px !important;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .c-content {
+                .sliderCards__content {
+                    .s-sliderCards {
+                        .owl-stage-outer {
+                            .owl-stage,
+                            .owl-item {
+                                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                                width: 263px;
+                                .views-row {
+                                    .container-img-student {
+                                        max-width: 263px;
+                                        width: 100%;
+                                        height: 300px;
+                                        position: relative;
+                                        img {
+                                            width: 263px;
+                                        }
+                                        .container-social-icons {
+                                            display: none;
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%);
+                                            z-index: 1;
+                                            .social-icon {
+                                                border-radius: 50%;
+                                                height: 30px;
+                                                width: 30px;
+                                                img {
+                                                    width: 30px;
+                                                    border-radius: 50%;
+                                                }
+                                            }
+                                        }
+                                        &:hover {
+                                            &::after {
+                                                content: "";
+                                                background-color: $color_seance;
+                                                opacity: 0.56;
+                                                width: 100%;
+                                                position: absolute;
+                                                z-index: 0;
+                                                top: 0;
+                                                left: 0;
+                                                height: 300px;
+                                            }
+                                            .container-social-icons {
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: center;
+                                                align-items: center;
+                                                column-gap: 10px;
+                                                background-color: white;
+                                            }
+                                        }
+                                    }
+                                    .container-name-description {
+                                        background-color: white;
+                                        text-align: center;
+                                        padding: 0.5rem;
+                                        h2 {
+                                            font-size: 14px;
+                                            line-height: 24px !important;
+                                            font-family: "Montserrat", sans-serif;
+                                            font-weight: 900;
+                                        }
+                                        p {
+                                            font-size: 12px;
+                                            background-color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,116 @@
+/*galleryContent*/
+.galleryContent {
+  padding: 20px 0;
+  .content {
+    .c-content {
+      .galleryContent__content {
+        .s-galleryContent {
+          .s-galleryContent__item {
+            position: relative;
+            &.option1 {
+              .s-galleryContent__text {
+                left: 20px;
+                bottom: 20px;
+                opacity: 0.9;
+                width: 380px;
+                height: auto;
+                padding: 15px;
+                border-radius: 10px;
+                position: absolute;
+                background-color: $background_big_stone;
+
+                display: flex;
+                flex-direction: row;
+                @media (max-width: $mobile) {
+                  left: 0;
+                  bottom: 0;
+                  width: 100%;
+                  height: auto;
+                  border-radius: 0;
+                }
+                .icon {
+                  left: 15px;
+                  bottom: 7.5px;
+                  position: absolute;
+                  .icon-icon-admiration {
+                    color: $color_white;
+                    font-size: 2rem;
+                  }
+                }
+                .text {
+                  padding-left: 50px;
+                  p {
+                    color: $color_white;
+                  }
+                }
+              }
+            }
+            &.option2 {
+              .s-galleryContent__text {
+                left: 0;
+                bottom: 0;
+                opacity: 0.5;
+                width: 100%;
+                height: auto;
+                padding: 15px 20px;
+                position: absolute;
+                background-color: $background_black;
+                span {
+                  display: block;
+                  color: $color_white;
+                  font-size: 1.125rem;
+                  line-height: 18px;
+                  padding-bottom: 10px;
+                }
+                p {
+                  color: $color_white;
+                }
+              }
+            }
+          }
+        }
+        .s-galleryContent__nav {
+          width: 85%;
+          margin: 0 auto;
+          padding-top: 20px;
+          @media (max-width: $tablet) {
+            width: 85%;
+          }
+          @media (max-width: $mobile) {
+            width: 100%;
+          }
+          .s-galleryContent__navItem {
+            position: relative;
+            .layer {
+              opacity: 0.5;
+              background-color: $background_black;
+            }
+          }
+          .synced .s-galleryContent__navItem .layer {
+            display: none;
+          }
+        }
+        .owl-nav {
+          .owl-prev {
+            left: 0;
+            bottom: -90px;
+            position: absolute;
+            @media (max-width: $tablet) {
+              left: 0;
+              bottom: -85px;
+            }
+          }
+          .owl-next {
+            right: 0;
+            bottom: -90px;
+            position: absolute;
+            @media (max-width: $tablet) {
+              right: 0;
+              bottom: -85px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

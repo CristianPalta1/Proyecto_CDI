@@ -1,0 +1,85 @@
+.view-generica-modulo-18 {
+  .servicesScienceTech {
+    .row {
+      .view-header {
+        .c-header {
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .row.list_servicesScienceTech {
+      display: flex;
+      justify-content: space-evenly;
+      counter-reset: my-awesome-counter;
+      .views-row {
+        @media (max-width: $tablet) {
+          width: 100%;
+          flex: initial;
+        }
+      }
+      a {
+        p {
+          color: #004a93;
+          font-size: 0.9375rem;
+          margin-top: 20px;
+          font-family: $latobold;
+          text-decoration: underline !important;
+        }
+      }
+      p {
+        margin-bottom: 10px;
+        font-size: 0.8375rem;
+      }
+      li.no-aplica {
+        &:before {
+          content: initial;
+        }
+      }
+      li.numeración {
+        list-style: none;
+        counter-increment: my-awesome-counter;
+        p:first-child {
+          text-indent: 20px;
+        }
+        &:before {
+          top: initial;
+          margin-left: 10px;
+          content: counter(my-awesome-counter);
+          color: #004a93;
+          font-size: 0.9375rem;
+          font-family: $latobold;
+          text-decoration: underline !important;
+          background-color: transparent;
+        }
+      }
+      li.viñeta {
+        list-style: none;
+        counter-increment: my-awesome-counter;
+        a {
+          p {
+            text-indent: 20px;
+          }
+        }
+        &:before {
+          top: 7px;
+          left: 20px;
+        }
+      }
+      li {
+        p {
+          a, strong {
+            font-size: inherit;
+            font-weight: 700;
+            line-height: inherit;
+          }
+          
+          a {
+            text-decoration: underline !important;
+          }
+        }
+      }
+    }
+  }
+}

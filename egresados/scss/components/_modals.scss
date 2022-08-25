@@ -1,0 +1,498 @@
+.ui-widget.ui-widget-content {
+  max-width: 700px !important;
+  width: 100% !important;
+  border: 0;
+  border-radius: 20px;
+
+  @include media-query(desktopXL) {
+    max-width: 600px !important;
+  }
+  @include media-query(tablet) {
+    width: 90% !important;
+    margin: auto;
+  }
+
+  .ui-dialog-titlebar {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-color: transparent;
+    background-color: white;
+    height: 60px;
+
+    @include media-query(tablet) {
+      height: 50px;
+    }
+
+    .ui-dialog-title {
+      display: none;
+    }
+
+    .ui-dialog-titlebar-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1300;
+
+      &::before {
+        content: "";
+        background: url(../img/icon-close-modal.svg) no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 29px;
+        position: absolute;
+        top: 8px;
+        right: 5px;
+
+        @include media-query(tablet) {
+          top: 0px;
+        }
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .ui-dialog-content {
+    padding: 0rem 2rem 3rem;
+
+    article {
+      .node__content {
+        .field--name-coupon-entity {
+          margin: 0 0 2rem;
+
+          .field__label {
+            display: none;
+          }
+
+          .field__item {
+            .layout__region--content {
+              display: flex;
+              flex-direction: row-reverse;
+              justify-content: flex-end;
+              align-items: center;
+              width: auto;
+              border-radius: 0;
+              box-shadow: none;
+              height: auto;
+
+              .field--name-taxonomy-term-title {
+                h2 {
+                  font-size: 2rem;
+                  font-weight: $bold;
+                  color: $color-font-primary;
+
+                  @include media-query(mobile) {
+                    font-size: 1.37rem;
+                  }
+                }
+
+              }
+
+              .field--name-discounts-entity-image {
+                position: relative;
+                width: 114px;
+                height: 114px;
+                margin-right: 20px;
+
+                &::after {
+                  content: "";
+                  width: 1px;
+                  height: 80px;
+                  position: absolute;
+                  top: 50%;
+                  right: -10px;
+                  background-color: $color-line-footer;
+                  transform: translateY(-50%);
+
+                  @include media-query(mobile) {
+                    height: 50px;
+                  }
+                }
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+
+        .field--name-title {
+          h2 {
+            font-size: 1.25rem;
+            font-weight: $bold;
+            margin-bottom: 1.5rem;
+
+            @include media-query(mobile) {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .field--name-short-description {
+          font-size: 1rem;
+          font-weight: $regular;
+          color: $color-font-second;
+          margin-bottom: 1rem;
+
+          @include media-query(mobile) {
+            font-size: 1rem;
+          }
+        }
+
+        .field--name-validate-cupon {
+          position: relative;
+          margin: 1.5rem 0;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            background: url(../img/icon-clock-blue.svg) no-repeat;
+            width: 18px;
+            height: 18px;
+            margin-right: 1rem;
+          }
+
+          p {
+            display: inline-block;
+            color: $color-gray-dark-letter;
+            font-size: 1rem;
+            font-weight: $regular;
+
+            @include media-query(mobile) {
+              font-size: 1rem;
+            }
+
+            &:first-of-type {
+              margin-left: 2rem;
+            }
+          }
+        }
+
+        .field--name-coupon-from,
+        .field--name-coupon-until {
+          display: none;
+        }
+
+        .field--name-how-use-coupon {
+          .field__label {
+            font-size: 1.12rem;
+            font-weight: $bold;
+            margin-bottom: 0.3rem;
+
+            @include media-query(mobile) {
+              font-size: 1rem;
+            }
+          }
+
+          .field__item {
+            margin-bottom: 2rem;
+            color: $color-font-second;
+
+            ol {
+              li {
+                font-size: 1rem;
+                font-weight: $regular;
+                list-style: auto;
+                margin-left: 16px;
+              }
+            }
+          }
+        }
+
+        .field--name-terms-coupon {
+          .field__label {
+            font-size: 1.12rem;
+            font-weight: $bold;
+            margin-bottom: 0.3rem;
+
+            @include media-query(mobile) {
+              font-size: 1rem;
+            }
+          }
+
+          .field__item {
+            p {
+              font-size: 1rem;
+              font-weight: $regular;
+              margin-bottom: 2rem;
+              color: $color-font-second;
+            }
+          }
+        }
+
+        .field--name-external-link {
+          text-align: center;
+          margin: 3.5rem 0 1rem;
+
+          a {
+            background-color: $color-blue-light;
+            color: $color-font-primary;
+            padding: 1.2rem 4rem;
+            border-radius: 10px;
+
+            @include media-query(mobile) {
+              padding: 1rem 4rem;
+            }
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Modal de cultura y entretenimiento
+.ui-widget.ui-widget-content {
+  .node--type-recreation {
+    // background-color: red;
+    .node__content {
+      
+      div:nth-of-type(2) {
+        // background-color: red;
+        padding: 0.5em;
+        display: flex;
+        flex: auto;
+        flex-direction: row;
+        align-items: center;
+
+        div:nth-of-type(1){
+          display: none;
+        }
+
+        div:nth-of-type(2) {
+          color: $color-gray-dark-letter;
+          // background-color: green;
+          position: relative;
+          font-size: 15px;
+          // justify-content: space-evenly;
+          margin-left: 26px;
+          &::before {
+            content: "";
+            position: absolute;
+            left: -25px;
+            top: 4px;
+            background: url(../img/icon-user-culture-modal.png) no-repeat !important;
+            // background-color: blue;
+            width: 21px;
+            height: 25px;
+            margin-right: 1rem;
+          }
+        }
+      }
+      .field--name-culture-entity {
+        margin-bottom: 1.5em;
+        /* .vocabulary-culture-entity {
+          display: flex;
+          flex: auto;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+          align-items: center;
+          // background-color: blue;
+          h2 {
+            width: 30%;
+            color: $color-font-primary;
+            margin-left: 1.2em;
+            font-size: 1.25rem;
+
+            div {
+              // background-color: blue;
+            }
+          }
+          .content {
+            // background-color: green;
+            position: relative;
+            &::after {
+              content: "";
+              width: 1px;
+              height: 80px;
+              position: absolute;
+              top: 50%;
+              right: -10px;
+              background-color: $color-line-footer;
+              transform: translateY(-50%);
+            }
+          }
+        } */
+        .layout__region--content {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+          align-items: center;
+          width: auto;
+          border-radius: 0;
+          box-shadow: none;
+          height: auto;
+
+          .field--name-taxonomy-term-title {
+            h2 {
+              font-size: 1.25rem;
+              font-weight: $semibold;
+            }
+
+          }
+
+          .field--name-culture-entity-image {
+            position: relative;
+            width: 114px;
+            height: 114px;
+            margin-right: 30px;
+            display: inherit;
+            flex: inherit;
+
+            &::after {
+              content: "";
+              width: 1px;
+              height: 80px;
+              position: absolute;
+              top: 50%;
+              right: -20px;
+              background-color: $color-line-footer;
+              transform: translateY(-50%);
+            }
+
+            img {
+              width: 114px;;
+              height: 114px;
+            }
+          }
+        }
+      }
+      div:nth-of-type(3) {
+        // background-color: red;
+        padding: 0.5em;
+        display: flex;
+        flex: auto;
+        flex-direction: row;
+        align-items: center;
+        p {
+          // background-color: green;
+
+          color: $color-gray-dark-letter;
+          position: relative;
+          font-size: 15px;
+          // justify-content: space-evenly;
+          margin-left: 35px;
+          &::before {
+            content: "";
+            position: absolute;
+            left: -34px;
+            top: 0;
+            background: url(../img/icon-phone-culture-modal.png) no-repeat !important;
+            width: 23px;
+            height: 23px;
+            margin-right: 1rem;
+          }
+        }
+      }
+      div:nth-of-type(4) {
+        // background-color: red;
+        padding: 0.5em;
+        display: flex;
+        flex: auto;
+        flex-direction: row;
+        align-items: center;
+        p {
+          // background-color: green;
+          position: relative;
+          font-size: 15px;
+          // justify-content: space-evenly;
+          color: $color-gray-dark-letter;
+          margin-left: 35px;
+          &::before {
+            content: "";
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            background: url(../img/icon-email-culture-modal.png) no-repeat !important;
+            // background-color: blue;
+            width: 23px;
+            height: 15px;
+            margin-right: 1rem;
+          }
+        }
+      }
+      div:nth-of-type(5) {
+        margin-top: 1.5em;
+        div:nth-of-type(1) {
+          color: $color-font-primary;
+          font-size: 1.12rem;
+          font-weight: $bold;
+        }
+        div:nth-of-type(2) {
+          color: $color-font-primary;
+          font-size: 15px;
+          font-weight: $regular;
+        }
+      }
+      div:nth-of-type(6) {
+        color: $color-gray-dark-letter;
+      }
+      div:nth-of-type(7) {
+      }
+    }
+  }
+}
+
+// Modal formación exclusiva TECMD
+.modal-formacion-exclusiva-tecmd {
+  .layout__region--content {
+    .field--name-exclusive-training-category {
+      a {
+        color: $color-white;
+        font-size: 0.75rem;
+        font-weight: $medium;
+        padding: 0.2rem 0.7rem;
+        background-color: $color-blue;
+      }
+    }
+
+    .field--name-node-title {
+      h2 {
+        font-size: 2.19rem;
+        font-weight: $semibold;
+        margin: 1rem 0;
+      }
+    }
+
+    .field--name-body {
+      color: $color-font-second;
+      font-size: 1rem;
+      font-weight: $regular;
+      margin: 1.5rem 0 3rem;
+
+      p,
+      strong {
+        color: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+      }
+    }
+
+    .field--name-external-link {
+      margin-top: 3rem;
+      text-align: center;
+
+      a {
+        background-color: $color-blue-light;
+        color: $color-font-primary;
+        font-weight: $semibold;
+        font-size: 1rem;
+        padding: 1rem 3rem;
+        border-radius: 10px;
+
+        @include media-query(tablet) {
+          display: block;
+          padding: 0.7rem 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+/*sliderAdvertising*/
+.sliderAdvertising {
+  padding: 60px 0;
+  background-color: $background_gallery;
+  .content {
+    .c-content {
+      .sliderAdvertising__content {
+        padding-top: 35px;
+        .s-sliderAdvertising {
+          .owl-stage {
+            padding-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  &.noBackground {
+    background-color: $background_white;
+  }
+}

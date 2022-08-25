@@ -1,0 +1,148 @@
+.our-spreads{
+   padding: 0;
+    position: relative;
+    @media (max-width:$tablet) {
+        padding:25px 0;
+        
+    }
+    
+    .our-spreads-content{
+        display: flex;
+        flex-direction: row;
+        margin: 5% 0;
+        .our-spread-item{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            // transform: scale(0.8);
+            transition: all .5s;
+            width: 20%;
+            min-height: 250px;
+            padding: 0 2%;
+            margin: 0 2px;
+            // box-shadow: 1px 3px 4px 0px rgba(128, 128, 128, 0.397);
+            @media (max-width:$tablet) {
+                width: 90%;
+            }
+            span{
+                transform: translateY(-2px)
+            }
+            .spread-title{
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight:500;
+                pointer-events: none;
+                transform: translateY(34px);
+                @media (max-width:$desktopLS) {
+                    font-size: 14px;
+                }
+                @media (max-width:$desktop) {
+                    font-size: 12px;
+                }
+            }
+            .spread-description{
+                display: none;
+                font-size: 14px;
+                pointer-events: none;
+                opacity: 0;
+                transition: all .5s ease;
+            }
+            .spread-icon{
+                pointer-events: none;
+            }
+
+            &:hover{
+                transform: scale(1.3);
+                transition: all .5s ease;
+                span{
+                    transform: translateY(0);
+                    display: none !important;
+                }
+                .spread-title{
+                    transform: translateY(0);
+                    margin-bottom: 1rem;
+                    font-size: 12px;
+                }
+                .spread-description{
+                    display:block;
+                    font-size: 10px;
+                    font-weight: 300;
+                    opacity: 1;
+                    transition: all .5s ease;
+                    margin: 0;
+                }
+                @media (max-width:$desktop) {
+                    transform: none;
+                    transition: none;
+                    background-color: white;
+                    color: black;
+                }
+            }
+            
+        }
+        @media (max-width:$desktop) {
+            .react-multi-carousel-item{
+                transform: scale(1);
+                .our-spread-item{
+                    
+                }
+                &.react-multi-carousel-item--active{
+                    box-sizing: border-box;
+                    .our-spread-item{
+                        height: 100%;
+                        width: 100%;
+                        transition: all .5s;
+                        background-color: black;
+                        color: white;
+                        .spread-title{
+                            transform: translateY(0);
+                            margin-bottom: 1rem;
+                            font-size: 12px;
+                        }
+                        .spread-description{
+                            color: white;
+                            display: block;
+                            font-size: 14px;
+                            opacity: 1;
+                            padding: 0 20px;
+                        }
+                    }
+                }
+            }
+            .react-multi-carousel-track,
+            .our-spreads-carousel{
+                position: inherit;
+            }
+            .react-multi-carousel-dot-list {
+                justify-content: flex-start;
+                bottom: -8%;
+                left: 0;
+                @media (max-width:$desktop) {
+                    justify-content: center;
+                    bottom: 0%;
+                }
+                @media (max-width:$tablet) {
+                    justify-content: center;
+                    bottom: 1%;
+                }
+                .react-multi-carousel-dot {
+                    button{
+                        width: 34px;
+                        height:1px;
+                        border-radius: 0;
+                        background-color: $gray;
+                        border: 0;
+                    }
+                    &.react-multi-carousel-dot--active{
+                        button{
+                            width: 80px;
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+nav.pager {
+    margin: 4rem 0 0 0;
+    padding: 2rem 0 0 0;
+    ul.js-pager__items {
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        li.page-item {
+            a.page-link {
+                background-color: transparent;
+                border: none;
+                border-radius: 0.6rem;
+                height: 3.6rem;
+                width: 3.6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-gray-nav-links;
+            }
+            &.is-active {
+                a {
+                    font-weight: 700;
+                    background-color: $color-black;
+                    color: $color-white;
+                }
+            }
+            a[rel="prev"],
+            a[rel="next"] {
+                background-color: transparent !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    content: "";
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &::after {
+                        content: "";
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        width: 1.4rem;
+                        height: 1.4rem;
+                    }
+                }
+            }
+            a[rel="prev"] {
+                span {
+                    &::after {
+                        background-image: url("./assets/img/pager_prev.svg");
+                    }
+                }
+            }
+            a[rel="next"] {
+                span {
+                    &::after {
+                        background-image: url("./assets/img/pager_next.svg");
+                    }
+                }
+            }
+
+            &.pager__item--last,
+            &.pager__item--first {
+                display: none;
+            }
+        }
+    }
+}

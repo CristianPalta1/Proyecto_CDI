@@ -1,0 +1,180 @@
+.our-residences {
+  background-color: $grayLight;
+  margin: 5% 0;
+  padding: 2% 0;
+  @media (max-width: $desktop) {
+    padding: 5% 0 10%;
+    position: relative;
+  }
+  .our-residences-title {
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    @media (max-width: $desktopLS) {
+      font-size: 1.5rem;
+    }
+    @media (max-width: $desktop) {
+      font-size: 1.3rem;
+    }
+    .our-residences-comp {
+      font-size: 3.2rem;
+      display: block;
+      font-weight: 300;
+      color: inherit;
+      @media (max-width: $desktopLS) {
+        font-size: 2.9rem;
+      }
+      @media (max-width: $desktop) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .our-highlights-content {
+    .our-highlight-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: black;
+      margin: 2rem 0;
+    }
+    .our-highlights {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 1rem 0 0;
+      .highlight-item {
+        text-align: center;
+        margin: 0 10px;
+        position: relative;
+        width: 120px;
+        cursor: pointer;
+        &::before {
+          content: "";
+          width: 1px;
+          height: 50%;
+          background-color: #e0e0e0;
+          position: absolute;
+          right: -30%;
+          top: 5%;
+          display: block;
+        }
+        &:last-child {
+          &::before {
+            display: none;
+          }
+        }
+        .highlight-title {
+          font-weight: 400;
+          font-size: 1rem;
+          text-transform: uppercase;
+          color: $gray;
+          .quantity-highlight {
+            font-weight: 100;
+            font-size: 20px;
+            color: black;
+          }
+        }
+        .highlight-description {
+          font-size: 12px;
+          font-weight: 100;
+          opacity: 0;
+          transition: 0.5s all;
+          box-sizing: border-box;
+          color: $gray;
+        }
+        &:hover {
+          .highlight-description {
+            transition: 0.5s all;
+            box-sizing: border-box;
+            opacity: 1;
+          }
+        }
+      }
+      .react-multi-carousel-track {
+        position: inherit;
+      }
+      .react-multi-carousel-dot-list {
+        justify-content: flex-start;
+        bottom: -8%;
+        left: 0;
+        @media (max-width: $desktop) {
+          justify-content: center;
+          bottom: -2%;
+        }
+        .react-multi-carousel-dot {
+          button {
+            width: 34px;
+            height: 2px;
+            border-radius: 0;
+            background-color: $gray;
+            border: 0;
+          }
+          &.react-multi-carousel-dot--active {
+            button {
+              width: 80px;
+              background-color: black;
+            }
+          }
+        }
+      }
+    }
+
+    .residences-types-tabs {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      button {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid $gray;
+        width: 33%;
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-weight: 200;
+        &.active {
+          border-bottom: 2px solid $gray;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .residences-types-content {
+      .our-residences-carousel {
+        position: inherit;
+        .room-card {
+        }
+        .react-multi-carousel-track,
+        .react-multi-carousel-list {
+          position: inherit;
+        }
+        .react-multi-carousel-dot-list {
+          justify-content: flex-start;
+          padding: 0 1rem;
+          bottom: 3%;
+          @media (max-width: $desktop) {
+            bottom: 20px;
+            justify-content: center;
+          }
+          .react-multi-carousel-dot {
+            button {
+              width: 34px;
+              height: 2px;
+              border-radius: 0;
+              background-color: $gray;
+              border: 0;
+            }
+            &.react-multi-carousel-dot--active {
+              button {
+                width: 80px;
+                background-color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

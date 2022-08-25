@@ -1,0 +1,192 @@
+.booking-form {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    left: 50%;
+
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 998;
+    animation: backwards;
+    max-width: 1290px;
+
+    @media (max-width: $desktopLS) {
+        top: 53%;
+    }
+    @media (max-width: $desktopL) {
+        top: 39%;
+    }
+
+    @media (max-width: $desktop) {
+        top: 100%;
+        &.show-booking,
+        &.show-booking.scroll {
+            top: unset;
+            bottom: 24%;
+        }
+    }
+
+    @media (min-width: 2200px) {
+        top: 60%;
+    }
+
+    &.scroll {
+        top: 50.5px;
+        transition: all 0.4s ease;
+        animation: backwards;
+        width: 100%;
+        max-width: 100%;
+        &.checkin {
+            top: 80.5px;
+            @media (max-width: $desktopLS) {
+                top: 72.5px;
+            }
+            @media (max-width: $desktopL) {
+                top: 60.5px;
+            }
+            @media (max-width: $desktop) {
+                top: 100%;
+            }
+            @media (min-width: 2200) {
+                top: 60.5px;
+            }
+        }
+        @media (max-width: $desktopLS) {
+            top: 42.5px;
+        }
+        @media (max-width: $desktopL) {
+            top: 30.5px;
+        }
+        @media (max-width: $desktop) {
+            top: 100%;
+        }
+        @media (min-width: 2200) {
+            top: 60.5px;
+        }
+    }
+    &.scroll_404 {
+        display: none !important;
+    }
+
+    #roi-engine-container {
+        #roi-search-engine {
+            form {
+                .roi-search-engine__item--destination {
+                    @media (min-width: 1025px) {
+                        width: 25%;
+                    }
+                    select#id_destino-widget-0 {
+                        @media (max-width: $desktopLS) {
+                            width: 271px;
+                            padding-right: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.booking-button-mobile {
+    display: none;
+    @media (max-width: $desktop) {
+        display: block;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 5;
+    }
+    .btn {
+        width: 85%;
+        background-color: $black;
+        color: white;
+        padding: 8px 45px;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+.jquery-modal {
+    &.blocker {
+        z-index: 998 !important;
+    }
+    #airlines_flights {
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        height: 100%;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        .modal___content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 2rem;
+            position: relative;
+            @media (max-width: $tablet) {
+                flex-direction: column;
+            }
+            .reserv-search-engine__item--air {
+                margin: 0 !important;
+                padding: 0 !important;
+                display: flex !important;
+                justify-content: flex-start !important;
+                align-items: center !important;
+                width: 20rem !important;
+                @media (max-width: $tablet) {
+                    width: 13rem !important;
+                }
+                input {
+                    border: 1px solid #333 !important;
+                    height: 44px !important;
+                }
+                label {
+                    bottom: 0 !important;
+                }
+            }
+            .btn_search {
+                width: auto !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                display: flex !important;
+                justify-content: flex-start !important;
+                align-items: flex-end !important;
+                a {
+                    margin: 0;
+                    /* padding: 0; */
+                    height: 44px;
+                    border-radius: 0 !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 16px;
+                    width: initial;
+                    @media (max-width: $tablet) {
+                        width: 100%;
+                    }
+                }
+                @media (max-width: $tablet) {
+                    width: 100% !important;
+                }
+            }
+            .close-modal-new {
+                position: absolute;
+                top: -34%;
+                right: 0;
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                transform: translate(0, 34%);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#ui-id-1 {
+    width: initial !important;
+    display: block;
+    z-index: 9999 !important;
+}

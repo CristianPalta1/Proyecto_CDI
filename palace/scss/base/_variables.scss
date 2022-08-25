@@ -1,0 +1,188 @@
+@use './fonts' as *;
+
+/* QUERYS */
+$mobileXS: 350px !default;
+$mobileXA: 375px !default;
+$mobileX: 480px !default;
+$mobile: 540px !default;
+$tablet: 768px !default;
+$desktop: 992px !default;
+$desktopL: 1200px !default;
+$desktopXL: 1500px !default;
+$desktopX: 1440px !default;
+
+$spaceBooking: 12.5%;
+
+
+/* COLORS */
+$color-gold: #a9733e;
+$color-dark-gold: #382614;
+$color-hover-gold: #cc9156;
+$color-medium-dark-gold: #654628;
+$color-dark-grey: #414141;
+$color-black-footer: #131313;
+$color-green: #9afa68;
+$color-green-alert: #CDD36F;
+$color-black-header: #161616;
+$color-gray: #7d7d7d;
+$color-dark-gray-menu: #222222;
+$color-dark-gray-menu-h: #383838;
+$color-red: #902729;
+$color-red-alert: #ff4b6a;
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray-bg: #252327;
+$color-gray-border: #5d5d5d;
+$color-brown-light: #b88946;
+$color-brown-medium: #9c6638;
+$color-before-nav: #1d1b1f;
+$color-after-nav: #2d2b2f;
+$color-gray-nav: #1c1c1c;
+
+
+/*COLORS PALACE RESORT*/
+$color-fonts: #b6b6b6;
+//$color-r-blue: #01b0ef;
+$color-r-blue-no-contrast: #0D5582;
+$color-r-blue-mobile-reserve: #274C69;
+$color-r-line-benefits: #b5b5b5;
+$color-r-blue: #4296c3;//0D5582
+$color-r-blue-button: #4296c3;//167BB1
+$color-r-blue-bucket:#00aff4;
+$color-r-blue-bucket-left:#009ddb;
+$color-r-green: #00d6ef;
+$color-r-dark-green: #003447;
+$color-r-dark-blue: #00396e;
+$color-r-black: #2a2c2c;
+$color-r-fonts: #626262;
+$color-r-section-gray:#9494941a;
+$color-r-calculator: #01304e;
+$color-lp-blue:#0b9aa5;
+
+$color-r-grey-footer: #141414;
+$color-r-grey-legal-f: #202020;
+$color-r-grey-lines: #949494;
+$color-r-grey-light: #f5f5f5;
+$color-r-grey-light2: #e4e4e4;
+$color-r-grey-light3: #c7c7c7;
+$color-r-grey-light4: #6a6a6a;
+$color-r-grey-font-header: #cecece;
+
+
+$color-r-hotdeals: #a6000b;
+$color-r-lm-green: #04a6a4;
+$color-r-lm-orange: #ff2f17;
+$color-r-lm-blue: #001e3e;
+$color-r-hd-green: #054049;
+$color-r-hd-white: #ffffff;
+$color-r-hd-orange: #f86944;
+$color-r-lm-green-light: #57b1b2;
+
+$color-text-contador:#fff;//062f48
+$color-fondo-contador:rgba(0,0,0,.7);
+$color-fondo-contador-v2: #f3d259c9;
+$color-fondo-contador-v3:   #003254cf;//f3d259c9
+
+/* COLORS LOW CARBON */
+$color-orange-low: #AD5F05;//ce8838
+$color-blue-low: #187267;//74c6bb
+$color-footer-text-low: #979796;//7d7d7d
+
+/*New landing Fonts*/
+$gotham-bold: 'Gotham-Bold';
+$gotham-ultra: 'Gotham-Ultra';
+$gotham-thin: 'Gotham-Thin';
+$gotham-light: 'Gotham-Light';
+$gotham-extra-light: 'Gotham-ExtraLight';
+
+$gotham-medium: 'Gotham-Medium';
+$gotham-book: 'Gotham-Book';
+
+
+/* FONTS */
+$helvetica-neue:'HelveticaNeue';
+$helvetica-neue-light:'HelveticaNeue-Light';
+$helvetica-neue-bold:'HelveticaNeue-Bold';
+$helvetica-neue-medium:'HelveticaNeue-Medium';
+$miso: 'Miso';
+$miso-regular: 'Miso-Regular';
+$miso-bold: 'Miso-Bold';
+$miso-light: 'Miso-Light';
+$gotham-rounded-bold: 'GothamRounded-Bold';
+$gotham-rounded-light: 'GothamRounded-Light';
+$gotham-rounded-medium: 'GothamRounded-Medium';
+$gotham-rounded-bold-italic: 'GothamRounded-BoldItalic';
+$gotham-rounded-light-italic: 'GothamRounded-LightItalic';
+$gotham-rounded-medium-italic: 'GothamRounded-MediumItalic';
+$gotham-rounded-book-italic: 'GothamRounded-BookItalic';
+$gotham-rounded-book: 'GothamRounded-Book';
+$fornato: 'Fonarto-Regular';
+
+$steelfish_bd: 'Steelfish_bd';
+$steelfish_eb: 'Steelfish_eb';
+$steelfish_rg: 'Steelfish_rg';
+
+
+/*FONTS PALACE RESORT*/
+$roboto-condensed-bold:'RobotoCondensed-Bold';
+$roboto-condensed-light:'RobotoCondensed-Light';
+$roboto-condensed-regular:'RobotoCondensed-Regular';
+
+/* Bigdeals */
+$miso-light-big-deals:'Miso-Light-big-deals';
+$gotham-rounded-book-big-deals: 'GothamRounded-Book-big-deals';
+
+/* FONT-SIZE*/
+
+/* $mobileSmall-h1: 26px;
+$mobileSmall-h2: 24px;
+$mobileSmall-h3: 22px;
+$mobileSmall-h4: 14px;
+*/
+
+$mobileSmall-h1: 2.875rem;//46px
+$mobileSmall-h2: 2.625rem;//42px
+$mobileSmall-h3: 2.375rem;//38px
+$mobileSmall-h4: 24px;//24px
+$mobileSmall-p: 14px;
+$mobileSmall-span: 12px;
+$mobileSmall-F: xx-small;
+
+/* $mobile-h1: 30px;
+$mobile-h2: 28px;
+$mobile-h3: 26px;
+$mobile-h4: 18px;
+ */
+
+$mobile-h1: 3rem;//48px
+$mobile-h1-small: 1.875rem;//30px
+$mobile-h1: 3rem;//48px
+$mobile-h2: 2.75rem;//44px
+$mobile-h3: 2.5rem;//40px
+$mobile-h4: 1.625rem;//26px
+$mobile-p: 15px;
+$mobile-span: 14px;
+$mobile-F: medium;
+
+
+/* $desktop-h1: 32px;
+$desktop-h2: 30px;
+$desktop-h3: 28px;
+$desktop-h4: 20px;
+ */
+ $desktop-h1: 3.125rem;//50px
+ $desktop-h2: 2.875rem;//46px
+ $desktop-h3: 2.625rem;//42px
+ $desktop-h4: 1.875rem;//30px
+ $desktop-h5: 18px;
+$desktop-p: 16px;
+$desktop-p-booking: 11px;
+$desktop-FS-header: 12px;
+$desktop-span: 16px;
+$desktop-li: 16px;
+$desktop-li-footer: 12px;
+$desktop-F: large;
+
+$desktopX-p: 20px;
+

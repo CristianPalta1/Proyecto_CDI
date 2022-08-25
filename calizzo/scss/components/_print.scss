@@ -1,0 +1,117 @@
+.calizo_quoter__quoter__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1rem solid $line-quoter;
+    background-color: $backgroun-item-quoter;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 0.6rem;
+
+    .calizo_quoter__quoter__item__image,
+    .calizo_quoter__quoter__item__quantity,
+    .calizo_quoter__quoter__item__price_unit,
+    .calizo_quoter__quoter__item__price_total {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .calizo_quoter__quoter__item__name,
+        .calizo_quoter__quoter__item__price_unit,
+        .calizo_quoter__quoter__item__price_text {
+            flex-direction: column;
+            .title__produtct,
+            .product__name,
+            p {
+                text-transform: uppercase;
+                font-size: 1.2rem;
+            }
+            .title__produtct {
+                font-weight: 600;
+            }
+            .product__name {
+                font-weight: 900;
+            }
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    .calizo_quoter__quoter__item__image {
+        width: 100%;
+        gap: 1.8rem;
+        border-right: none;
+        padding-right: 0rem;
+
+        .container__image_quote {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .calizo_quoter__quoter__item__name {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+    .calizo_quoter__quoter__item__quantity {
+        flex-direction: column;
+        border-right: none;
+        width: 100%;
+        height: 4rem;
+        gap: 0 2rem;
+    }
+    .calizo_quoter__quoter__item__price_unit {
+        flex-direction: column;
+        border-right: none;
+        width: 100%;
+        height: 4rem;
+    }
+    .calizo_quoter__quoter__item__price_total {
+        justify-content: space-around;
+        height: 4rem;
+        flex-direction: row !important;
+
+        .calizo_quoter__quoter__item__price_text {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 100%;
+            height: 4rem;
+            align-items: flex-start;
+           
+        }
+        .calizo_quoter__quoter__item__action {
+            .delete_item {
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                &::before {
+                    content: "";
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    background-color: $color-black;
+                    border-radius: 50%;
+                    background-image: url("./assets/img/transh_icon.svg");
+                }
+            }
+        }
+    }
+}

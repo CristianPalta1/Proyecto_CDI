@@ -1,0 +1,140 @@
+.section-instagram {
+    margin: 6rem 0 0 0;
+    padding: 0;
+    @media (max-width: $desktop) {
+        margin: 5rem 0;
+    }
+    @media (max-width: $desktop) {
+        margin: 0;
+    }
+    @media (max-width: $tablet) {
+        margin: 11% 0 0 0;
+    }
+    .content-title{
+        font-weight: 300;
+                color: black;
+                font-size: 2rem;
+                text-transform: uppercase;
+                text-align: center;
+              
+                @media (max-width: $desktopLS) {
+                    font-size: 1.5rem;
+                }
+                @media (max-width: $desktop) {
+                    font-size: 1.3rem;
+                }
+                span {
+                    font-size: 3.2rem;
+                    display: block;
+                    font-weight: 300;
+                    @media (max-width: $desktopLS) {
+                        font-size: 2.9rem;
+                    }
+                    @media (max-width: $desktop) {
+                        font-size: 2.5rem;
+                    }
+                }
+    }
+    .content-description {
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+        @media (max-width: $tablet) {
+            width: 76%;
+        }
+    }
+    .container-fluid {
+        margin-top: 40px;
+        .row {
+            gap: 2px;
+            .instagram_col_feed {
+                padding: 0;
+                height: 380px;
+                position: relative;
+                @media (max-width: $desktopLS) {
+                    height: 275px;
+                }
+                @media (max-width: $desktopL) {
+                    height: 200px;
+                }
+                img.image_feed {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+                .icon__instagram_feed {
+                    position: absolute;
+                    bottom: 5%;
+                    right: 5%;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: rgba($color: #ffffff, $alpha: 0.8);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img.image_feed_icon {
+                        object-fit: auto;
+                    }
+                }
+            }
+        }
+    }
+    .carousel__movil {
+        position: relative;
+        .instagram_carousel {
+            position: inherit;
+            padding: 40px 0;
+            .react-multi-carousel-track {
+                li {
+                    .instagram_col_feed {
+                        padding: 0;
+                        height: 100%;
+                        position: relative;
+                        img.image_feed {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center center;
+                        }
+                        .icon__instagram_feed {
+                            position: absolute;
+                            bottom: 5%;
+                            right: 5%;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            background-color: rgba($color: #ffffff, $alpha: 0.8);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img.image_feed_icon {
+                                object-fit: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .react-multi-carousel-dot-list {
+                bottom: 0%;
+
+                .react-multi-carousel-dot {
+                    button {
+                        width: 34px;
+                        height: 2px;
+                        border-radius: 0;
+                        background-color: $gray;
+                        border: 0;
+                    }
+                    &.react-multi-carousel-dot--active {
+                        button {
+                            width: 80px;
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

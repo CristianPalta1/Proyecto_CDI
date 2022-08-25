@@ -1,0 +1,385 @@
+main {
+    .calizo-container__body {
+        #block-calizo-content {
+            .node__content {
+                .layout--onecol {
+                    .layout__region--content {
+                        position: relative;
+
+                        //Banner
+                        .ally__banner {
+                            position: relative;
+
+                            .field--name-title {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                text-align: center;
+                                width: max-content;
+
+                                @include media-query(tablet) {
+                                    width: auto;
+                                }
+
+                                h1 {
+                                    color: $color-white;
+                                    font-size: 4rem;
+                                }
+                            }
+
+                            .field--name-image-desktop {
+                                picture {
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+
+                        //Carrusel aliado
+                        .ally__builder {
+                            position: relative;
+                            margin: 3.2rem;
+
+                            @include media-query(desktop) {
+                                display: block;
+                                margin: 4rem;
+                            }
+
+                            @include media-query(mobile) {
+                                margin: 0rem;
+                            }
+
+                            .field--name-ally-builder {
+                                display: grid;
+                                grid-template-columns: repeat(4, 1fr);
+                                position: relative;
+                                text-align: center;
+                                justify-items: center;
+                                gap: 1.2rem;
+                                padding: 2rem;
+                                margin: 0rem 3rem;
+
+                                @include media-query(desktop) {
+                                    display: block;
+                                    margin: 0rem 3.4rem;
+                                }
+
+                                @include media-query(tablet) {
+                                    margin: 0 0 27rem 0.2rem;
+
+                                }
+
+                                @include media-query(mobile) {
+                                    margin: 0 0 2.6rem 0.2rem;
+
+                                }
+
+                                @include media-query(mobilex) {
+                                    margin: 0 0 13.6rem 0.2rem;
+
+                                }
+
+                                .field__item {
+                                    display: block;
+
+                                    .builder__image {
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        picture {
+                                            img {
+                                                width: 100%;
+                                                border-radius: 0.6rem;
+                                            }
+                                        }
+                                    }
+
+                                    .builder__white {
+                                        position: relative;
+                                        background: $color-white;
+                                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                                        border-radius: 0.6rem;
+                                        display: grid;
+                                        grid-template-rows: 18% 19rem;
+
+                                        @include media-query(desktopL) {
+                                            grid-template-rows: 18% 19rem;
+                                        }
+
+                                        @include media-query(tablet) {
+                                            grid-template-rows: 18% 11rem;
+                                        }
+
+                                        .builder__icon {
+                                            width: 7.6rem;
+                                            justify-self: center;
+                                            transform: translate(0.2%, -60%);
+
+                                            @include media-query(desktopL) {
+                                                transform: translate(0.2%, -60%);
+                                            }
+
+                                            @include media-query(tablet) {
+                                                transform: translate(8.2%, -99%);
+                                            }
+
+                                            picture {
+                                                img {
+                                                    width: 75%;
+                                                }
+                                            }
+                                        }
+
+                                        .builder__text {
+                                            margin: 1rem 1.2rem;
+
+                                            @include media-query(desktopL) {
+                                                margin: 1rem 1.2rem;
+                                            }
+
+                                            @include media-query(tablet) {
+                                                margin: 2.4rem 1.2rem;
+                                            }
+
+                                            .builder__title {
+                                                text-transform: uppercase;
+                                                font-weight: 600;
+                                            }
+
+                                            .builder__body {
+                                                color: $color-black;
+                                                margin: 1.3rem 0.3rem;
+                                                padding-bottom: 0.3rem;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .owl-nav {
+                                    display: none;
+                                }
+
+                                .owl-dots {
+                                    display: grid;
+                                    justify-self: center;
+                                    margin: 5rem 1rem;
+
+                                    @include media-query(desktop) {
+                                        display: none;
+                                    }
+
+                                    @include media-query(tablet) {
+                                        display: block;
+                                    }
+
+                                    .owl-dot {
+                                        width: 2.5rem;
+                                        height: 0.1rem;
+                                        margin: 0 0.5rem;
+                                        background-color: rgba(31, 31, 31, 0.38);
+
+                                        &.active {
+                                            width: 3.4rem;
+                                            height: 0.2rem;
+                                            background-color: $color-links-a;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                    //Formulario
+                    .block-block-contentbee61a1b-1c28-49a5-ab35-01470135f8fb {
+                        .distributor-leads {
+                            display: grid;
+                            grid-template-columns: 128rem 1fr;
+                            grid-template-rows: 5rem 50rem 5rem;
+                            grid-template-areas: "images .""images form""images .";
+                            position: relative;
+
+                            @include media-query(desktopXL) {
+                                grid-template-columns: 80rem 1fr;
+                            }
+
+                            @include media-query(desktopLS) {
+                                grid-template-columns: 64rem 1fr;
+                            }
+
+                            @include media-query(tablet) {
+                                grid-template-columns: 1rem 1fr 1rem;
+                                grid-template-areas:
+                                    "images images images"
+                                    ". form .";
+                                grid-template-rows: initial;
+                            }
+
+                            .distributor-leads__background {
+                                grid-area: images;
+                                height: 100%;
+
+                                .block-field-blockblock-contentcalizo-distributor-leadsimage-desktop {
+                                    height: 100%;
+
+                                    .field--name-image-desktop {
+                                        height: 100%;
+
+                                        picture {
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .distributor-leads__image {
+                                height: 50rem;
+                                position: absolute;
+                                z-index: 1;
+                                left: 37%;
+                                bottom: 0%;
+                                transform: translate(-37%, 0%);
+
+                                @include media-query(desktopXXL) {
+                                    left: 47%;
+                                    transform: translate(-47%, 0%);
+                                }
+
+                                @include media-query(desktopXL) {
+                                    left: 23%;
+                                    transform: translate(-23%, 0%);
+                                }
+
+                                @include media-query(desktopLSS) {
+                                    left: 26%;
+                                    transform: translate(-26%, 0%);
+                                }
+
+                                @include media-query(desktopLS) {
+                                    left: 18%;
+                                    transform: translate(-17%, 0%);
+                                }
+
+                                @include media-query(desktopL) {
+                                    left: 6%;
+                                    transform: translate(-6%, 0%);
+                                }
+
+                                @include media-query(tablet) {
+                                    display: none;
+                                }
+
+                                .block-field-blockblock-contentcalizo-distributor-leadsimage {
+                                    height: 100%;
+
+                                    .field--name-image {
+                                        height: 100%;
+
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: contain;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .distributor-leads__info {
+                                grid-area: form;
+                                width: 90rem;
+                                transform: translateX(-27rem);
+                                border-radius: 0.6rem;
+                                background: $backgroun-item-form;
+                                box-shadow: 0 0.2rem 0.4rem rgba($color: #000, $alpha: 0.16);
+                                margin-top: 0;
+                                overflow: hidden;
+                                padding: 0 6rem;
+
+                                @include media-query(desktopL) {
+                                    transform: translateX(-42rem);
+                                    width: 72rem;
+                                }
+
+                                @include media-query(tablet) {
+                                    transform: translateX(0rem);
+                                    margin-top: -61rem;
+                                    height: auto;
+                                    padding: 0;
+                                    width: 100%;
+                                }
+
+                                .distributor-leads__info-title {
+                                    font-size: 2rem;
+                                    text-align: center;
+                                    background-color: transparent;
+                                    padding-top: 2rem;
+                                    padding-left: 4.2rem;
+
+                                }
+
+                                .field--name-title {
+                                    text-transform: uppercase;
+                                    font-weight: $extrabold;
+                                    text-align: start;
+                                    font-size: 2.2rem;
+                                    padding-bottom: 1.2rem;
+
+                                    @include media-query(mobile) {
+                                        text-align: center;
+                                    }
+                                }
+
+                                div {
+                                    .block-field-blockblock-contentcalizo-distributor-leadssub-title {
+                                        .field--name-sub-title {
+                                            font-size: 1.3rem;
+
+                                            text-align: start;
+
+                                            @include media-query(mobile) {
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Constrcures aliados
+.about__brands {
+    .field--name-title {
+        .products_featured__header {
+            h2 {
+                &::after {
+                    bottom: -3%;
+                    right: 13.7%;
+                    transform: translate(4%, -7.7%);
+
+                    @include media-query(tablet) {
+                        bottom: -4%;
+                        right: 36.7%;
+                        transform: translate(4%, -7.7%);
+                    }
+                    @include media-query(mobile) {
+                        bottom: -4%;
+                        right: 22.7%;
+                        transform: translate(4%, -7.7%);
+                    }
+                }
+            }
+        }
+    }
+
+}

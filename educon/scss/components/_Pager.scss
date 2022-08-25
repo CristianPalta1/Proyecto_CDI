@@ -1,0 +1,423 @@
+#block-educon-content {
+    .node__content {
+        .programs-list {
+            .programs-list--cards-programs {
+                .block-views-blockprograms-list-listprograms, #block-views-block-news-list-news, #block-views-block-event-list-events   {
+                    nav.pager {
+                        max-width: 200px;
+                        margin: 24px auto;
+                        ul.pagination {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            li.page-item {
+                                width: 36px;
+                                height: 36px;
+                                margin: 0 4px;
+                                order: 2;
+                                a {
+                                    display: flex;
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 6px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border: none;
+                                    font-weight: 500;
+                                    font-family: "Montserrat", sans-serif;
+                                    color: $color-btn-a;
+                                }
+                                &.pager__item--next {
+                                    grid-area: next;
+                                    width: 24px;
+                                    height: 24px;
+                                    border: 1px solid #041d74;
+                                    background-color: transparent;
+                                    border-radius: 50%;
+                                    a {
+                                        border: none;
+                                        background-color: transparent !important;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin: 0;
+                                        span {
+                                            display: none;
+                                        }
+                                        &::before {
+                                            content: "";
+                                            background-image: url("./assets/img/pager_next.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            width: 5px;
+                                            height: 9px;
+                                            vertical-align: 0;
+                                            border-top: 0;
+                                            border-right: 0;
+                                            border-bottom: 0;
+                                            border-left: 0;
+                                        }
+                                    }
+                                }
+                                &.pager__item--last {
+                                  display: none;
+                                    grid-area: prev;
+                                    width: 24px;
+                                    height: 24px;
+                                    border: 1px solid #041d74;
+                                    background-color: transparent;
+                                    border-radius: 50%;
+                                    a {
+                                        border: none;
+                                        background-color: transparent !important;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin: 0;
+                                        span {
+                                            display: none;
+                                        }
+                                        &::before {
+                                            content: "";
+                                            background-image: url("./assets/img/pager_prev.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            width: 5px;
+                                            height: 9px;
+                                            vertical-align: 0;
+                                            border-top: 0;
+                                            border-right: 0;
+                                            border-bottom: 0;
+                                            border-left: 0;
+                                        }
+                                    }
+                                }
+                                &.pager__item--previous {
+                                    order: 1;
+                                    grid-area: prev;
+                                    width: 24px;
+                                    height: 24px;
+                                    border: 1px solid #041d74;
+                                    background-color: transparent;
+                                    border-radius: 50%;
+                                    a {
+                                        border: none;
+                                        background-color: transparent !important;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin: 0;
+                                        span {
+                                            display: none;
+                                        }
+                                        &::before {
+                                            content: "";
+                                            background-image: url("./assets/img/pager_prev.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            width: 5px;
+                                            height: 9px;
+                                            vertical-align: 0;
+                                            border-top: 0;
+                                            border-right: 0;
+                                            border-bottom: 0;
+                                            border-left: 0;
+                                        }
+                                    }
+                                }
+                                &.pager__item--first {
+                                    display: none;
+                                }
+
+                                &.is-active {
+                                    a {
+                                        background-color: #04228b;
+                                        font-weight: 700;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// #block-views-block-news-list-news {
+//     nav.pager {
+//         max-width: 200px;
+//         margin: 24px auto;
+//         ul.pagination {
+//             display: grid;
+//             grid-template-columns: repeat(auto-fill, 40px);
+//             grid-template-areas: "prev one two three next";
+//             align-items: center;
+//             li.page-item {
+//                 width: 36px;
+//                 height: 36px;
+//                 margin: 0 4px;
+//                 a {
+//                     display: flex;
+//                     width: 100%;
+//                     height: 100%;
+//                     border-radius: 6px;
+//                     justify-content: center;
+//                     align-items: center;
+//                     border: none;
+//                     font-weight: 500;
+//                     font-family: "Montserrat", sans-serif;
+//                     color: $color-btn-a;
+//                 }
+//                 &.pager__item--next {
+//                     grid-area: next;
+//                     width: 24px;
+//                     height: 24px;
+//                     border: 1px solid #041d74;
+//                     background-color: transparent;
+//                     border-radius: 50%;
+//                     a {
+//                         border: none;
+//                         background-color: transparent !important;
+//                         display: flex;
+//                         justify-content: center;
+//                         align-items: center;
+//                         margin: 0;
+//                         span {
+//                             display: none;
+//                         }
+//                         &::before {
+//                             content: "";
+//                             background-image: url("./assets/img/pager_next.svg");
+//                             background-size: auto;
+//                             background-repeat: no-repeat;
+//                             background-position: center;
+//                             width: 5px;
+//                             height: 9px;
+//                             vertical-align: 0;
+//                             border-top: 0;
+//                             border-right: 0;
+//                             border-bottom: 0;
+//                             border-left: 0;
+//                         }
+//                     }
+//                 }
+//                 &.pager__item--last {
+//                     grid-area: prev;
+//                     width: 24px;
+//                     height: 24px;
+//                     border: 1px solid #041d74;
+//                     background-color: transparent;
+//                     border-radius: 50%;
+//                     a {
+//                         border: none;
+//                         background-color: transparent !important;
+//                         display: flex;
+//                         justify-content: center;
+//                         align-items: center;
+//                         margin: 0;
+//                         span {
+//                             display: none;
+//                         }
+//                         &::before {
+//                             content: "";
+//                             background-image: url("./assets/img/pager_prev.svg");
+//                             background-size: auto;
+//                             background-repeat: no-repeat;
+//                             background-position: center;
+//                             width: 5px;
+//                             height: 9px;
+//                             vertical-align: 0;
+//                             border-top: 0;
+//                             border-right: 0;
+//                             border-bottom: 0;
+//                             border-left: 0;
+//                         }
+//                     }
+//                 }
+//                 &.pager__item--previous {
+//                     grid-area: prev;
+//                     width: 24px;
+//                     height: 24px;
+//                     border: 1px solid #041d74;
+//                     background-color: transparent;
+//                     border-radius: 50%;
+//                     a {
+//                         border: none;
+//                         background-color: transparent !important;
+//                         display: flex;
+//                         justify-content: center;
+//                         align-items: center;
+//                         margin: 0;
+//                         span {
+//                             display: none;
+//                         }
+//                         &::before {
+//                             content: "";
+//                             background-image: url("./assets/img/pager_prev.svg");
+//                             background-size: auto;
+//                             background-repeat: no-repeat;
+//                             background-position: center;
+//                             width: 5px;
+//                             height: 9px;
+//                             vertical-align: 0;
+//                             border-top: 0;
+//                             border-right: 0;
+//                             border-bottom: 0;
+//                             border-left: 0;
+//                         }
+//                     }
+//                 }
+//                 &.pager__item--first {
+//                     display: none;
+//                 }
+
+//                 &.is-active {
+//                     a {
+//                         background-color: #04228b;
+//                         font-weight: 700;
+//                         color: white;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// #block-views-block-event-list-events {
+//     nav.pager {
+//         max-width: 200px;
+//         margin: 24px auto;
+//         ul.pagination {
+//             display: grid;
+//             grid-template-columns: repeat(auto-fill, 40px);
+//             grid-template-areas: "prev one two three next";
+//             align-items: center;
+//             li.page-item {
+//                 width: 36px;
+//                 height: 36px;
+//                 margin: 0 4px;
+//                 a {
+//                     display: flex;
+//                     width: 100%;
+//                     height: 100%;
+//                     border-radius: 6px;
+//                     justify-content: center;
+//                     align-items: center;
+//                     border: none;
+//                     font-weight: 500;
+//                     font-family: "Montserrat", sans-serif;
+//                     color: $color-btn-a;
+//                 }
+//                 &.pager__item--next {
+//                     grid-area: next;
+//                     width: 29px;
+//                     height: 29px;
+//                     border: 1px solid $color-btn-a;
+//                     background-color: transparent;
+//                     border-radius: 50%;
+//                     a {
+//                         border: none;
+//                         background-color: transparent !important;
+//                         display: flex;
+//                         justify-content: center;
+//                         align-items: center;
+//                         span {
+//                             display: none;
+//                         }
+//                         &::before {
+//                             content: "";
+//                             background-image: url("./assets/img/pager_next.svg");
+//                             background-size: auto;
+//                             background-repeat: no-repeat;
+//                             background-position: center;
+//                             width: 17px;
+//                             height: 17px;
+//                             vertical-align: 0;
+//                             border-top: 0;
+//                             border-right: 0;
+//                             border-bottom: 0;
+//                             border-left: 0;
+//                         }
+//                     }
+//                 }
+//                 &.pager__item--last {
+//                     grid-area: prev;
+//                     width: 29px;
+//                     height: 29px;
+//                     border: 1px solid $color-btn-a;
+//                     background-color: transparent;
+//                     border-radius: 50%;
+//                     a {
+//                         border: none;
+//                         background-color: transparent !important;
+//                         display: flex;
+//                         justify-content: center;
+//                         align-items: center;
+//                         span {
+//                             display: none;
+//                         }
+//                         &::before {
+//                             content: "";
+//                             background-image: url("./assets/img/pager_prev.svg");
+//                             background-size: auto;
+//                             background-repeat: no-repeat;
+//                             background-position: center;
+//                             width: 17px;
+//                             height: 17px;
+//                             vertical-align: 0;
+//                             border-top: 0;
+//                             border-right: 0;
+//                             border-bottom: 0;
+//                             border-left: 0;
+//                         }
+//                     }
+//                 }
+//                 &.pager__item--previous {
+//                     grid-area: prev;
+//                     width: 29px;
+//                     height: 29px;
+//                     border: 1px solid $color-btn-a;
+//                     background-color: transparent;
+//                     border-radius: 50%;
+//                     a {
+//                         border: none;
+//                         background-color: transparent !important;
+//                         display: flex;
+//                         justify-content: center;
+//                         align-items: center;
+//                         span {
+//                             display: none;
+//                         }
+//                         &::before {
+//                             content: "";
+//                             background-image: url("./assets/img/pager_prev.svg");
+//                             background-size: auto;
+//                             background-repeat: no-repeat;
+//                             background-position: center;
+//                             width: 17px;
+//                             height: 17px;
+//                             vertical-align: 0;
+//                             border-top: 0;
+//                             border-right: 0;
+//                             border-bottom: 0;
+//                             border-left: 0;
+//                         }
+//                     }
+//                 }
+
+//                 &.is-active {
+//                     a {
+//                         background-color: #04228b;
+//                         font-weight: 700;
+//                         color: white;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

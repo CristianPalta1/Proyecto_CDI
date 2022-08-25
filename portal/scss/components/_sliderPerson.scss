@@ -1,0 +1,120 @@
+/*sliderPerson*/
+.sliderPerson {
+  padding: 0 0 60px 0;
+  .content {
+    .c-content {
+      .sliderPerson__content {
+        .s-sliderPerson {
+          width: 50%;
+          margin: 0 auto;
+          margin-top: -65px;
+          @media (max-width: $desktop_1024) {
+            width: 55%;
+            margin-top: -55px;
+          }
+          @media (max-width: $tablet) {
+            width: 70%;
+            margin-top: 0;
+          }
+          @media (max-width: $mobile) {
+            width: 100%;
+            margin-top: 0;
+          }
+          .owl-stage {
+            padding: 30px 0;
+            @media (max-width: $mobile) {
+              padding: 30px 0 15px 0;
+            }
+            .owl-item {
+              cursor: pointer;
+              li {
+                margin: 0;
+                padding: 0;
+                &:before {
+                  display: none;
+                }
+              }
+              .s-sliderPerson__img {
+                overflow: hidden;
+                border-radius: 50%;
+                position: relative;
+                filter: grayscale(80%);
+              }
+              .s-sliderPerson__text {
+                opacity: 0;
+                padding-top: 10px;
+                text-align: center;
+                transition: all 0.25s;
+                h4 {
+                  @media (max-width: $mobile) {
+                    font-size: 0.75rem;
+                  }
+                }
+                span {
+                  display: inline-block;
+                  color: $color_congress_blue;
+                  @media (max-width: $mobile) {
+                    font-size: 0.75rem;
+                    line-height: 13px;
+                  }
+                }
+              }
+              &.center {
+                transform: scale(1.25);
+                .s-sliderPerson__img {
+                  filter: grayscale(0%);
+                  box-shadow: 0 0 10px 0 $box_shadow;
+                  &:before {
+                    content: "";
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 90%;
+                    height: 90%;
+                    margin: auto;
+                    border-radius: 50%;
+                    position: absolute;
+                    border: 1px solid $border_white;
+                  }
+                  &:after {
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    opacity: 0.7;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: $background_congress_blue;
+                  }
+                }
+                .s-sliderPerson__text {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+          .owl-nav {
+            .owl-prev {
+              top: 32.5%;
+              left: -9%;
+              position: absolute;
+              @media (max-width: $desktop_1024) {
+                top: 27.5%;
+              }
+            }
+            .owl-next {
+              top: 32.5%;
+              right: -9%;
+              position: absolute;
+              @media (max-width: $desktop_1024) {
+                top: 27.5%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

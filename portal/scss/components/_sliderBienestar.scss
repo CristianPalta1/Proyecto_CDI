@@ -1,0 +1,68 @@
+/*sliderBienestar*/
+.sliderBienestar {
+  padding: 60px 0;
+  .content {
+    .c-content {
+      .sliderBienestar__content {
+        padding-top: 35px;
+        .s-sliderBienestar {
+          article {
+            position: relative;
+            overflow: hidden;
+            &:after {
+              content: "";
+              top: 0;
+              left: 0;
+              opacity: 0.4;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              background-color: $background_black;
+            }
+            .s-sliderBienestar__text {
+              left: 20px;
+              bottom: 20px;
+              width: auto;
+              height: auto;
+              z-index: 1;
+              margin: 0 auto;
+              position: absolute;
+              padding: 15px 20px;
+              h3 {
+                color: $color_white;
+                font-size: 0.9375rem;
+                line-height: 19px;
+                padding: 15px 0;
+              }
+              p {
+                color: $color_white;
+                padding: 10px 0;
+              }
+              a {
+                margin-bottom: 10px;
+                display: none;
+              }
+            }
+            .layer {
+              opacity: 0;
+              transition: all 0.25s;
+            }
+            &:hover {
+              .layer {
+                opacity: 0.75;
+              }
+              a {
+                display: block;
+                color: $color_golda;
+                font-size: 0.7rem;
+                line-height: 19px;
+                background-color: transparent;
+                text-decoration: underline !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

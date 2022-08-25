@@ -1,0 +1,37 @@
+/*blockquote*/
+.blockquote {
+  padding: 40px 0 0 0;
+  .content {
+    .c-content {
+      .blockquote__content {
+        .blockquote__text {
+          padding: 40px 35px;
+          position: relative;
+          box-shadow: 0 0 10px 0 $box_shadow;
+          background-color: $background_gallery;
+          span {
+            display: block;
+            color: $color_congress_blue;
+            font-size: 1.125rem;
+            line-height: 24px;
+            margin-bottom: 15px;
+            font-family: $montserratsemibold;
+          }
+          label {
+            display: block;
+            font-size: 0.75rem;
+            line-height: 24px;
+            color: $color_big_stone;
+          }
+          .icon-icon-quote {
+            top: -40px;
+            left: 35px;
+            color: $color_golda;
+            font-size: 3rem;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}

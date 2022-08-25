@@ -1,0 +1,51 @@
+[about^="/nuestros-servicios/emprendimiento"] {
+  .block__general--service, .block__general__emp {
+    .block__general__service__banner, .block__general__emp__banner {
+      @include banner_text_right;
+
+      .s-bannerService__item {
+        .s-bannerService__item--info {
+          @include media-query(tablet) {
+            transform: translateY(20%);
+          }
+          .container {
+            .info__banner {
+              .title, .title p {
+                color: $color-white;
+
+                @include media-query(tablet) {
+                  margin-bottom: 2rem;
+                }
+
+                @include media-query(mobilexl) {
+                  font-size: 2.7rem;
+                }
+
+                @include media-query(mobilex) {
+                  font-size: 2.5rem;
+                }
+
+              }
+              .description {
+                color: $color-white;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    .block__general__service__nav, .block__general__emp__nav {
+      @include nav_figure_background($color-orange);
+      
+      .block-menu.navigation {
+        .menu {
+          @include media-query(mintablet) {
+            gap: 5rem;
+          }
+        }
+      }
+    }
+  }
+}

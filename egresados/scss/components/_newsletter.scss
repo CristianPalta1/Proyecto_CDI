@@ -1,0 +1,174 @@
+.newsletter {
+  height: 245px;
+  margin-top: 12rem;
+  background-color: $color-purple;
+
+  @include media-query(desktop) {
+    height: 185px;
+  }
+
+  @include media-query(tablet) {
+    height: 390px;
+    margin-top: 2rem;
+  }
+
+  .container {
+    height: 100%;
+
+    .content {
+      position: relative;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      @include media-query(tablet) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 40%;
+
+    @include media-query(tablet) {
+      height: 40%;
+      width: 189px;
+      max-width: 190px;
+      margin: auto;
+    }
+
+    img {
+      position: absolute;
+      max-width: 363px;
+      width: 100%;
+      height: auto;
+      bottom: 0;
+      z-index: 2;
+
+      @include media-query(tablet) {
+        position: relative;
+        bottom: 0px;
+        z-index: 5;
+      }
+    }
+  }
+
+  .images__bg {
+    @include images_bg(-19deg);
+    z-index: 1 !important;
+
+    &::after {
+      @include bg-figure-images($color-blue-light, 30px);
+      width: 68%;
+      height: 110%;
+
+      @include media-query(desktopXL) {
+        width: 75%;
+      }
+
+      @include media-query(desktopL) {
+        width: 90%;
+      }
+
+      @include media-query(desktop) {
+        border-radius: 20px;
+      }
+
+      @include media-query(tablet) {
+        top: 60px;
+        width: 86%;
+        height: 100%;
+        border-radius: 15px;
+
+        z-index: 5;
+      }
+    }
+  }
+
+  &__form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    @include media-query(tablet) {
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    &--title {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $color-white;
+      margin-bottom: 1rem;
+
+      @include media-query(desktop) {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+      @include media-query(tablet) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+
+      @include media-query(tablet) {
+        flex-direction: column;
+      }
+
+      .form-item-email {
+        width: 70%;
+
+        @include media-query(tablet) {
+          width: 100%;
+          margin: 0;
+        }
+
+        input.form-email {
+          width: 100%;
+          height: 60px;
+          border: none;
+          border-radius: 10px;
+          color: $color-font-second;
+          font-weight: 600;
+          font-size: 1.25rem;
+          padding: 1rem 1.5rem;
+
+          @include media-query(desktop) {
+            height: 45px;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .form-actions {
+        width: 28%;
+
+        @include media-query(tablet) {
+          width: 100%;
+        }
+
+        input.button {
+          width: 100%;
+          height: 60px;
+          border: none;
+          border-radius: 10px;
+          font-weight: 600;
+          font-size: 1.25rem;
+          text-transform: uppercase;
+          color: $color-font-primary;
+          background-color: $color-blue-light;
+
+          @include media-query(desktop) {
+            height: 45px;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

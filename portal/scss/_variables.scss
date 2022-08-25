@@ -1,0 +1,169 @@
+/*Colors*/
+$color_pelorous: #449fb5;
+$color_cinnabar: #e73e3f;
+$color_jaffa: #f28e3d;
+$color_fiord: #445869;
+$color_golda: #ffd300;
+$color_congress_blue: #004a93;
+$color_big_stone: #162644;
+$color_black: #000000;
+$color_white: #ffffff;
+$color_gallery: #eeeeee;
+$color_alto: #dddddd;
+$color_silver: #cccccc;
+$color_van_cleef: #52160c;
+$color_costa_del_sol: #626e35;
+$color_sushi: #9bb447;
+$color_luxor_gold: #9f862c;
+$color_silver_chalice: #aaaaaa;
+$color_dusty_gray: #999999;
+$color_boulder: #777777;
+$color_azure_radiance: #008ced;
+$color_purple_heart: #7b23e2;
+$color_web_orange: #ffa700;
+$color_pistachio: #8bbe00;
+$color_seance: #a81bb4;
+$color_deep_cove: #051533;
+$color_curious_blue: #2187eb;
+$color_electric_violet: #ba00ff;
+
+/*Backgrounds*/
+$background_pelorous: #449fb5;
+$background_cinnabar: #e73e3f;
+$background_jaffa: #f28e3d;
+$background_fiord: #445869;
+$background_golda: #ffd300;
+$background_congress_blue: #004a93;
+$background_big_stone: #162644;
+$background_black: #000000;
+$background_white: #ffffff;
+$background_gallery: #eeeeee;
+$background_alto: #dddddd;
+$background_silver: #cccccc;
+$background_van_cleef: #52160c;
+$background_costa_del_sol: #626e35;
+$background_sushi: #9bb447;
+$background_luxor_gold: #9f862c;
+$background_silver_chalice: #aaaaaa;
+$background_dusty_gray: #999999;
+$background_boulder: #777777;
+$color-fonts-library: #707070;
+$background_azure_radiance: #008ced;
+$background_purple_heart: #7b23e2;
+$background_purple_dark: #7417d7;
+$background_web_orange: #ffa700;
+$background_orange_dark: #f29102;
+$background_pistachio: #8bbe00;
+$background_green_dark: #019541;
+$background_seance: #a81bb4;
+$background_seance_dark: #a4195c;
+$background_deep_cove: #051533;
+$background_curious_blue: #2187eb;
+$background_electric_violet: #ba00ff;
+
+/*Borders*/
+$border_pelorous: #449fb5;
+$border_cinnabar: #e73e3f;
+$border_jaffa: #f28e3d;
+$border_fiord: #445869;
+$border_golda: #ffd300;
+$border_congress_blue: #004a93;
+$border_big_stone: #162644;
+$border_black: #000000;
+$border_white: #ffffff;
+$border_gallery: #eeeeee;
+$border_alto: #dddddd;
+$border_silver: #cccccc;
+$border_van_cleef: #52160c;
+$border_costa_del_sol: #626e35;
+$border_sushi: #9bb447;
+$border_luxor_gold: #9f862c;
+$border_silver_chalice: #aaaaaa;
+$border_dusty_gray: #999999;
+$border_boulder: #777777;
+$border_azure_radiance: #008ced;
+$border_purple_heart: #7b23e2;
+$border_web_orange: #ffa700;
+$border_pistachio: #8bbe00;
+$border_seance: #a81bb4;
+$border_deep_cove: #051533;
+$border_curious_blue: #2187eb;
+$border_electric_violet: #ba00ff;
+
+/*Others*/
+$background_html: #f2f2f2;
+$box_shadow: rgba(0, 0, 0, 0.15);
+$disabled: rgba(0, 0, 0, 0.05);
+
+$color_facebook: #4867aa;
+$color_twitter: #39a3f4;
+$color_share: #aaaaaa;
+
+/*Fonts*/
+$latobold: "latobold";
+$latoregular: "latoregular";
+$montserratbold: "montserratbold";
+$montserratmedium: "montserratmedium";
+$montserratregular: "montserratregular";
+$montserratsemibold: "montserratsemibold";
+
+/*Resolutions*/
+$desktop_1920: 1920px !default;
+$desktop_1640: 1640px !default;
+$desktop_1440: 1440px !default;
+$desktop_1366: 1366px !default;
+$desktop_1280: 1280px !default;
+$desktop_1100: 1100px !default;
+$desktop_1024: 1024px !default;
+$desktop_992: 992px !default;
+$tablet: 768px !default;
+$mobile: 576px !default;
+$mobilex: 375px !default;
+$mobilexs: 300px !default;
+
+/*Mixins*/
+/*max_width_container*/
+@mixin max_width_container {
+  width: 100%;
+  padding: 0 15px;
+  @media (min-width: 576px) {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+  @media (min-width: 1640px) {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}

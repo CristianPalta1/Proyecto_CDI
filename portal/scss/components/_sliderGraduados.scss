@@ -1,0 +1,59 @@
+/*sliderGraduados*/
+.sliderGraduados {
+  padding: 60px 0;
+  position: relative;
+  background-color: $background_golda;
+  .content {
+    .c-content {
+      .sliderGraduados__content {
+        padding-top: 35px;
+        .s-sliderGraduados {
+          article {
+            margin: 5px;
+            padding: 40px 30px;
+            box-shadow: 0 0 10px 0 $box_shadow;
+            background-color: $background_white;
+            .s-sliderGraduados__img {
+              width: 35%;
+              margin: 0 auto;
+              overflow: hidden;
+              border-radius: 50%;
+            }
+            .s-sliderGraduados__text {
+              padding-top: 25px;
+              text-align: center;
+              h3 {
+                font-size: 1.25rem;
+                line-height: 24px;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 20px;
+              }
+              .button {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: flex-end;
+                cursor: pointer;
+                margin: 20px 0 0 0;
+                .s-sliderGraduados__text-icon {
+                  width: 35px;
+                  height: auto;
+                }
+                span {
+                  padding: 0;
+                  display: block;
+                  margin-right: 10px;
+                  color: $color_congress_blue;
+                  font-size: 0.75rem;
+                  line-height: 17px;
+                  font-family: $latoregular;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

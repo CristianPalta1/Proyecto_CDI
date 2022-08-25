@@ -1,0 +1,409 @@
+/*sliderEvents*/
+.sliderEvents {
+  padding: 60px 0 120px 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (max-width: $mobile) {
+    padding: 60px 0 0 0;
+  }
+  &.end {
+    margin-bottom: 60px;
+  }
+  .content {
+    .c-content {
+      .sliderEvents__content {
+        .sliderEvents__left {
+          z-index: 1;
+          padding-top: 15px;
+          @media (min-width: $desktop_992) {
+            max-width: 50%;
+          }
+          @media (max-width: $mobile) {
+            padding-top: 0;
+          }
+          h2 {
+            color: $color_white;
+          }
+          p {
+            padding-top: 5px;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: $color_white;
+          }
+          .btn-header {
+            right: inherit;
+            bottom: inherit;
+            display: block;
+            padding-top: 35px;
+            color: $color_white;
+            position: relative;
+            @media (max-width: $mobile) {
+              display: none;
+            }
+            .icon-icon-arrow-btn {
+              color: $color_white;
+            }
+          }
+        }
+        .sliderEvents__right {
+          top: 60px;
+          right: 0;
+          z-index: 1;
+          padding: 0;
+          position: absolute;
+          @media (max-width: $mobile) {
+            top: inherit;
+            right: inherit;
+            position: relative;
+            padding: 30px 0 40px 0;
+          }
+          .view-footer {
+            @media (max-width: $tablet) {
+              display: none;
+            }
+            @media (max-width: $mobile) {
+              display: block;
+              padding-top: 40px;
+            }
+          }
+          .s-sliderEvents {
+            padding: 35px 0 25px 30px;
+            background-color: $background_white;
+            li {
+              margin: 0;
+              padding: 0;
+              &:before {
+                display: none;
+              }
+            }
+            article {
+              padding-right: 30px;
+              border-right: 1.5px solid $border_gallery;
+              .date {
+                .day {
+                  color: $color_big_stone;
+                  font-size: 1.875rem;
+                  line-height: 37px;
+                  font-family: $montserratsemibold;
+                }
+                .month {
+                  color: $color_golda;
+                  font-size: 1.875rem;
+                  line-height: 37px;
+                  text-transform: uppercase;
+                  font-family: $montserratregular;
+                }
+              }
+              .time {
+                color: $color_boulder;
+                font-size: 0.75rem;
+                padding-top: 15px;
+                font-family: $montserratsemibold;
+              }
+              .btn-link {
+                padding-top: 15px;
+              }
+            }
+            .owl-nav {
+              &.disabled{
+                display: none;
+              }
+              right: initial;
+              bottom: -65px;
+              position: absolute;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              @media (max-width: $desktop_1640) {
+                bottom: -55px;
+              }
+              @media (max-width: $desktop_1440) {
+                bottom: -55px;
+              }
+              @media (max-width: $desktop_1366) {
+                bottom: -55px;
+              }
+              @media (max-width: $desktop_1280) {
+                bottom: -55px;
+              }
+              @media (max-width: $desktop_1024) {
+                bottom: -55px;
+              }
+            }
+            .owl-dots {
+              @media (max-width: $mobile) {
+                bottom: -45px;
+                position: absolute;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .layer {
+    opacity: 0.8;
+    background-color: $background_congress_blue;
+  }
+}
+
+.view-generica-modulo-21 {
+  .sliderEvents {
+    min-height: 400px;
+    .container {
+      .content {
+        .c-content {
+          .sliderEvents__content {
+            .sliderEvents__left {
+              h2 {
+                @media (min-width: $tablet) {
+                  font-size: 2rem;
+                }
+                @media (min-width: $desktop_1280) {
+                  font-size: 2.4rem;
+                }
+                @media (min-width: $desktop_1440) {
+                  font-size: 2rem;
+                }
+                @media (min-width: $desktop_1640) {
+                  font-size: 2.4rem;
+                }
+              }
+            }
+            .sliderEvents__right {
+              .s-sliderEvents {
+                .owl-nav {
+                  @media (max-width: $mobile) {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .layer {
+        height: 100%;
+      }
+    }
+  }
+}
+
+/*sliderEventsNews*/
+.block-micrositios-eventos-noticias {
+  .sliderEvents {
+    padding: 60px 0 120px 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (max-width: $mobile) {
+      padding: 60px 0 0 0;
+    }
+    &.end {
+      margin-bottom: 60px;
+    }
+    .content {
+      .c-content {
+        .sliderEvents__content {
+          .sliderEvents__left {
+            z-index: 1;
+            padding-top: 15px;
+            @media (min-width: $desktop_992) {
+              max-width: 50%;
+            }
+            @media (max-width: $mobile) {
+              padding-top: 0;
+            }
+            h2 {
+              color: $color_white;
+            }
+            p {
+              padding-top: 5px;
+              font-size: 1rem;
+              line-height: 1.5rem;
+              color: $color_white;
+            }
+            .btn-header {
+              right: inherit;
+              bottom: inherit;
+              display: block;
+              padding-top: 35px;
+              color: $color_white;
+              position: relative;
+              @media (max-width: $mobile) {
+                display: none;
+              }
+              .icon-icon-arrow-btn {
+                color: $color_white;
+              }
+            }
+          }
+          .sliderEvents__right {
+            top: 60px;
+            right: 0;
+            z-index: 1;
+            padding: 0;
+            position: absolute;
+            @media (max-width: $mobile) {
+              top: inherit;
+              right: inherit;
+              position: relative;
+              padding: 30px 0 40px 0;
+            }
+            .view-footer {
+              @media (max-width: $tablet) {
+                display: none;
+              }
+              @media (max-width: $mobile) {
+                display: block;
+                padding-top: 40px;
+              }
+            }
+            .s-sliderEvents {
+              padding: 35px 0 25px 30px;
+              background-color: $background_white;
+              li {
+                margin: 0;
+                padding: 0;
+                &:before {
+                  display: none;
+                }
+              }
+              article {
+                padding-right: 30px;
+                border-right: 1.5px solid $border_gallery;
+                .date {
+                  .day {
+                    color: $color_big_stone;
+                    font-size: 1.875rem;
+                    line-height: 37px;
+                    font-family: $montserratsemibold;
+                  }
+                  .month {
+                    color: $color_golda;
+                    font-size: 1.875rem;
+                    line-height: 37px;
+                    text-transform: uppercase;
+                    font-family: $montserratregular;
+                  }
+                }
+                .time {
+                  color: $color_boulder;
+                  font-size: 0.75rem;
+                  padding-top: 15px;
+                  font-family: $montserratsemibold;
+                }
+                .btn-link {
+                  padding-top: 15px;
+                }
+              }
+              .owl-nav {
+                right: 20%;
+                bottom: -65px;
+                position: absolute;
+                @media (max-width: $desktop_1640) {
+                  right: 10%;
+                  bottom: -55px;
+                }
+                @media (max-width: $desktop_1440) {
+                  right: 17%;
+                  bottom: -55px;
+                }
+                @media (max-width: $desktop_1366) {
+                  right: 14%;
+                  bottom: -55px;
+                }
+                @media (max-width: $desktop_1280) {
+                  right: 11%;
+                  bottom: -55px;
+                }
+                @media (max-width: $desktop_1024) {
+                  right: 8%;
+                  bottom: -55px;
+                }
+              }
+              .owl-dots {
+                @media (max-width: $mobile) {
+                  bottom: -45px;
+                  position: absolute;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .layer {
+      opacity: 0.8;
+      background-color: $background_congress_blue;
+    }
+  }
+}
+
+// Bloque evaluación-docentes
+.view-evaluacion-docentes {
+  .sliderEvents {
+    .content {
+      .sliderEvents__content {
+        .sliderEvents__right {
+          .s-sliderEvents {
+            .owl-item {
+              article {
+                h3 {
+                  font-size: 1.5rem;
+                  line-height: 25px;
+                  padding-bottom: 10px;
+                }
+
+                p {
+                  line-height: 25px;
+                  font-family: montserratsemibold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .calendarOptions {
+    .container {
+      .content {
+        .calendarOptions__content {
+          .view-content {
+            & > .row {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//Sliders nuevos
+
+//Ocultar dots slider en home
+#block-views-block-eventos-destacados-home-block-1 {
+  .view-eventos-destacados-home {
+    .sliderEvents{
+      .content{
+        .sliderEvents__content{
+          .sliderEvents__right{
+            .s-sliderEvents{
+              .owl-nav{
+                display: inline-block;
+                @media (max-width: $mobile) {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

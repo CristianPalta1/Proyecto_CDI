@@ -1,0 +1,1017 @@
+/*
+################## Estilos Big Delas ######################
+######### Creado por Dwan Felipe Veloza Paez ##############
+En esta clase se definen estilos y animaciones de Big Deals
+y Affiliates.
+*/
+.landing-big-deals.affiliate {
+  .contenedor_sitios {
+    margin: 100px 0;
+    @media (max-width: $desktop) {
+      margin: 40px 0;
+    }
+  }
+}
+
+.landing-big-deals {
+  background-color: #fff !important;
+  font-family: $gotham-rounded-book-big-deals;
+
+  img {
+    width: 0;
+  }
+
+  header {
+    picture {
+      img {
+        width: auto;
+      }
+    }
+  }
+
+  footer {
+    img {
+      width: auto;
+    }
+
+    ul {
+      li {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .main_content_banner {
+    .picture {
+      padding: 0 !important;
+    }
+  }
+
+
+  .col-12 {
+    width: 100%;
+
+    .col-8 {
+      width: 66.66%;
+      @media (max-width: $desktop) {
+        width: 100%;
+      }
+    }
+
+    .col-4 {
+      width: 33.33%;
+      @media (max-width: $desktop) {
+        width: 100%;
+      }
+    }
+  }
+
+  .tabs-container h1, .tabs-container h2, .tabs-container h3 {
+    font-family: $miso-light-big-deals;
+    font-weight: 600;
+    color: $color-black;
+    width: 100%;
+  }
+
+  .tabs-container h3 {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #c7c7c7;
+    text-decoration: underline;
+  }
+
+  /* Estilos para botonera general de big deals y afiliate */
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media (max-width: $desktop) {
+      flex-direction: column;
+    }
+
+    .Book,
+    .HV {
+      font-family: $miso-light-big-deals;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 48%;
+      max-height: 35px;
+      transition: all 0.5s ease-in-out;
+      border: 0;
+      font-size: 20px;
+      letter-spacing: 0;
+      padding: 2px 5px;
+      @media screen and (max-width: $desktopL) and (min-width: $desktop) {
+        font-size: 14px;
+      }
+      @media (max-width: $desktop) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      a {
+        width: 100%;
+      }
+    }
+
+    .Book {
+      background-color: #4396c3;
+      border: 1px #4396c3 solid;
+
+      a {
+        color: #fff;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:focus,
+      &:checked,
+      &:hover {
+        background-color: #fff;
+        border: 1px rgb(6, 55, 82) solid;
+
+        a {
+          color: rgb(6, 55, 82);
+        }
+      }
+    }
+
+    .HV {
+      background-color: #fff;
+      border: 1px #4396c3 solid;
+
+      a {
+        color: #4396c3;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:focus,
+      &:checked,
+      &:hover {
+        background-color: rgb(6, 55, 82);
+        border: 1px rgb(6, 55, 82) solid;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  /* Flecha vertical para avanzar entre galerias */
+  .arrow-down {
+    width: 40px;
+    height: 20px;
+    background-image: url(../img/big-deals/arrowDown.png);
+    -webkit-background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin: -20px auto 40px auto;
+    cursor: pointer;
+    @media (max-width: $desktop) {
+      display: none;
+    }
+  }
+
+  section:last-of-type {
+    .arrow-down {
+      display: none;
+    }
+  }
+
+  /* Accordeon */
+  section.prb,
+  section.mpb,
+  section.lbb {
+    @media (min-width: 993px) {
+      display: block !important;
+    }
+
+    label {
+      display: none;
+    }
+
+    @media (max-width: $desktop) {
+      label {
+        display: block;
+        position: relative;
+        margin: 0px 20px;
+        font-weight: 500;
+        font-size: 40px;
+        border-top: 1px #0095c8 solid;
+        border-bottom: 1px #0095c8 solid;
+        color: #0095c8;
+        font-family: $miso-light-big-deals;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &::after {
+          content: ">";
+          font-size: 40px;
+          font-family: $miso-light-big-deals;
+          font-weight: 600;
+          width: max-content;
+          position: absolute;
+          right: 0;
+          transform: rotate(0deg);
+          transition: all 0.3s ease-in;
+        }
+
+        /* &.active::after{
+          transform: rotate(90deg);
+        } */
+      }
+      .tabs-container {
+        display: none;
+      }
+      transition: all 0.6s ease-in-out;
+      &.active {
+        .tabs-container {
+          display: block;
+        }
+
+        label::after {
+          transform: rotate(90deg);
+        }
+
+        order: 1;
+      }
+    }
+
+  }
+
+  /* TABS */
+
+
+  ul {
+    list-style: none;
+  }
+
+
+  .tabs-container {
+    max-width: 77%;
+    margin: 50px auto;
+    background-color: white;
+    @media (min-width: 993px) {
+      display: block !important;
+    }
+    @media (max-width: $desktop) {
+      max-width: 100%;
+      margin: 5px auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .tabs-subcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: $desktop) {
+        display: none;
+      }
+
+      .introduction h1 {
+        color: #0095c8;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        @media screen and (max-width: $desktopL) and (min-width: $desktop) {
+          font-size: 2rem;
+        }
+      }
+
+      .tabs {
+        display: flex;
+        padding: 0;
+        margin-bottom: 0;
+
+        li {
+          position: relative;
+          width: 20%;
+          padding-right: 0px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          display: flex;
+          cursor: pointer;
+          @media (max-width: $desktopL) {
+            font-size: 14px;
+          }
+
+          &::before {
+            content: "|";
+            opacity: 0.3;
+            width: 1px;
+            font-size: 25px;
+            //position: absolute;
+            left: 0;
+            top: 0;
+            color: black;
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+          }
+
+          &:last-child::after {
+            content: "|";
+            opacity: 0.3;
+            width: 1px;
+            font-size: 25px;
+            //position: absolute;
+            right: 0;
+            top: 0;
+            color: black;
+            display: flex;
+            justify-content: center;
+          }
+
+          a {
+            display: block;
+            position: relative;
+            //top: 4px;
+            font-family: $miso-light-big-deals;
+            //font-weight: 600;
+            text-transform: uppercase;
+            padding: 0px 15px;
+            margin: 0;
+            background: transparent;
+            opacity: 0.7;
+            width: 100%;
+            transition: all 0.1s ease-in-out;
+            max-width: 140px;
+            text-align: center;
+          }
+
+          &.active a,
+          a:hover {
+            opacity: 1;
+            color: #0095c8;
+          }
+        }
+      }
+    }
+
+    .tabs-content {
+      position: relative;
+      z-index: 2;
+      border-radius: 0 4px 4px 4px;
+      background: white;
+
+      .tabs-panel {
+        display: flex;
+        flex-flow: wrap;
+        position: absolute;
+        left: -3000px;
+        opacity: 0;
+        transition: opacity 0.8s ease-out;
+        @media (max-width: $desktop) {
+          flex-direction: column;
+          flex-flow: column-reverse;
+          position: relative;
+          left: 0;
+          opacity: 1;
+
+        }
+        /* De acuerdo al sitio seleccionado se produce un corrimiento al centro */
+        &.active {
+          position: relative;
+          left: 0;
+          opacity: 1;
+
+          .nav,
+          .info_destino,
+          .carouselbigDeals {
+            @include translatex(0%, 0px);
+            @include delaytime(0.1s);
+          }
+
+        }
+
+        .nav {
+          will-change: transform;
+          @include translatex(0px, -30px);
+          @include timming1sparam(1s);
+          color: #797979;
+          font-size: 10px;
+          @media (max-width: $desktopL) {
+            font-size: 8px;
+          }
+          @media (max-width: $desktop) {
+            order: 1;
+            padding: 0 20px;
+            @include translatex(0%, 0px);
+            @include delaytime(0.1s);
+          }
+        }
+
+        .info_destino {
+          will-change: transform;
+          @include translatex(-30px, 0px);
+          @include timming1sparam(1s);
+          padding-right: 25px;
+          display: flex;
+          flex-flow: wrap;
+          align-content: space-between;
+          @media (max-width: $desktop) {
+            padding: 0 20px;
+            @include translatex(0%, 0px);
+            @include delaytime(0.1s);
+          }
+
+          h2 {
+            text-transform: uppercase;
+            font-size: 28px;
+            margin: 0;
+            @media screen and (max-width: $desktopL) and (min-width: $desktop) {
+              font-size: 22px;
+            }
+          }
+
+          h3 span {
+            font-weight: 700;
+            @media screen and (max-width: $desktopL) and (min-width: $desktop) {
+              font-size: 20px;
+            }
+
+          }
+
+          p {
+            font-size: 12px;
+            width: 100%;
+            margin: 0;
+            @media screen and (max-width: $desktopL) and (min-width: $desktop) {
+              font-size: 10px;
+              line-height: normal;
+            }
+            @media (max-width: $desktop) {
+              font-size: 16px;
+              margin: 10px 0;
+            }
+            @media (max-width: $tablet) {
+              font-size: 14px;
+            }
+            @media (max-width: $mobileXS) {
+              font-size: 12px;
+            }
+          }
+
+          .items ul {
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media (max-width: $desktop) {
+              margin-bottom: 20px;
+            }
+
+            li {
+              color: #07334b;
+              width: 50%;
+              font-size: 12px;
+              position: relative;
+              margin-bottom: 5px;
+              padding: 0 0px 0 10px;
+
+              &:nth-child(odd) {
+                padding: 0 5px 0 10px;
+              }
+
+              @media screen and (max-width: $desktopL) and (min-width: $desktop) {
+                font-size: 8px;
+                line-height: normal;
+              }
+              @media (max-width: $desktop) {
+                width: 100%;
+                padding: 0 10px;
+                font-size: 16px;
+              }
+              @media (max-width: $tablet) {
+                font-size: 14px;
+              }
+              @media (max-width: $mobileXS) {
+                font-size: 12px;
+              }
+
+              &:before {
+                content: "";
+                background-image: url(../img/big-deals/iconIntro.png);
+                width: 10px;
+                height: 10px;
+                margin-right: 5px;
+                left: 0;
+                top: 2px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+              }
+            }
+          }
+
+          /* Estilizado independiente de los owl dots para big deals */
+          .owl-dots-alt {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: space-around;
+            overflow: hidden;
+            @media (max-width: $desktop) {
+              display: none;
+            }
+
+            a {
+              transform: scale(1);
+              transition: all 0.1s ease-in;
+              width: 48%;
+              cursor: pointer;
+
+              &:last-child {
+                img {
+                  margin-bottom: 11px;
+                }
+              }
+
+              &:nth-child(odd) {
+                padding-left: 1%;
+              }
+
+              &:nth-child(even) {
+                padding-right: 1%;
+              }
+
+              &:first-child {
+                display: none;
+              }
+
+              &:active {
+                transform: scale(1.1);
+              }
+
+              &:hover {
+                opacity: 0.4;
+              }
+
+              &:focus {
+                opacity: 0.6;
+                filter: brightness(0.6);
+                zoom: 1;
+              }
+
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .carouselbigDeals {
+          overflow: hidden;
+          position: relative;
+          will-change: transform;
+          @include translatex(30px, 0px);
+          @include timming1sparam(1s);
+          @media (max-width: $desktop) {
+            @include translatex(0%, 0px);
+            @include delaytime(0.1s);
+          }
+
+          .item {
+            position: relative;
+            height: auto;
+            margin-bottom: 0;
+
+            img {
+              object-fit: cover;
+              object-position: center;
+            }
+
+            p {
+              position: absolute;
+              left: 0;
+              width: 75%;
+              height: 60px;
+              font-size: 12px;
+              bottom: 0;
+              margin-bottom: 25px;
+              margin-left: 25px;
+              color: white;
+              z-index: 9;
+              display: flex;
+              justify-content: space-between;
+              align-content: center;
+              align-items: center;
+              background: linear-gradient(to top, transparent 0, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, .36) 40%, #000000c7 170%);
+              backdrop-filter: blur(5px);
+              padding: 0 20px;
+              border-radius: 8px;
+              @media (max-width: $desktopL) {
+                width: 70%;
+                font-size: 10px;
+              }
+              @media (max-width: $desktop) {
+                width: 85%;
+                display: grid;
+                text-align: center;
+                height: auto;
+                padding: 5px 20px 0;
+              }
+
+              a {
+                z-index: 1000;
+                border: 1px solid #fff !important;
+                background-color: #11354773; //e6f0f573
+                color: #fff;
+                line-height: normal;
+                padding: 5px 0px;
+                text-decoration: none;
+                transition: all 0.2s ease-in;
+                font-weight: 600;
+                min-width: 100px;
+                text-align: center;
+                margin-left: 10px;
+                //text-shadow: -1px 1px 3px #000, 1px 0 0;
+                &:hover {
+                  background-color: #003447 !important;
+                  color: #fff !important;
+                  text-shadow: none !important;
+                  border: 2px solid #003447 !important;
+                }
+
+                @media (max-width: $desktop) {
+                  width: 30%;
+                  margin: 10px auto;
+                }
+              }
+            }
+          }
+
+          .owl-carousel .owl-stage {
+            will-change: transform;
+          }
+
+          .owl-nav {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-bottom: 36px;
+            margin-right: 10px;
+            width: 130px;
+            height: 50px;
+            color: black;
+            z-index: 1;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0 10px;
+            align-items: center;
+            @media (max-width: $desktop) {
+              width: 100%;
+              left: 0;
+              top: 0;
+              margin: auto;
+              justify-content: space-between;
+            }
+
+            .owl-prev,
+            .owl-next {
+              background-image: url(../img/big-deals/arrow-white.png);
+              background-position: left;
+              background-repeat: no-repeat;
+              background-size: inherit;
+              background-color: transparent;
+              width: 35px;
+              height: 100%;
+              border: 0;
+              font-size: 0;
+              @media (max-width: $desktop) {
+                margin: 0 10px;
+              }
+            }
+
+            .owl-next {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /* Estilos para Purley de Big Deals */
+  section.purley {
+    background-image: url(../assets/img/big-deals/Fondo_Purely.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 80px;
+    position: relative;
+    background-color: #f2f2f2;
+    @media (max-width: $desktopL) {
+      padding: 20px;
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 50%;
+      height: 1px;
+      background: linear-gradient(to right, rgba(169, 115, 62, 0) 0, rgba(169, 115, 62, .02) 1%, #4a9ac5 53%, rgba(169, 115, 62, 0) 100%);
+      content: '';
+      top: 0;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-family: $gotham-rounded-book-big-deals;
+      text-align: center;
+      color: #063752;
+      padding: 0 0 20px;
+      width: 50%;
+      @media (max-width: $desktopL) {
+        font-size: 16px;
+        width: 100%;
+      }
+      @media (max-width: $tablet) {
+        font-size: 14px;
+      }
+      @media (max-width: $mobileXS) {
+        font-size: 12px;
+      }
+    }
+
+    .contenedor {
+      display: flex;
+      align-items: center;
+      @media (max-width: $desktopL) {
+        display: grid;
+      }
+    }
+
+    .benefits {
+      width: 50%;
+      @media (max-width: $desktopL) {
+        width: 100%;
+      }
+
+      .int_box_icons {
+        @media (max-width: $tablet) {
+          display: grid;
+        }
+
+        .four_box {
+          @media (max-width: $tablet) {
+            display: flex;
+            justify-content: center;
+          }
+
+          .item {
+            padding: 2px;
+            box-sizing: border-box;
+            float: left;
+            width: 14%;
+            @media (max-width: $tablet) {
+              width: 28%;
+            }
+
+            .box_item {
+              border: 1px solid #cecece;
+              border-radius: 10px;
+              padding: 5px;
+              background: #d7d7d796;
+
+              p {
+                font-size: 7px;
+                color: #626262;
+                line-height: 10px;
+                text-align: center;
+                margin-top: 6px;
+                height: 28px;
+                font-family: 'Gotham-Black';
+                white-space: break-spaces;
+                @media (max-width: $desktopL) {
+                  font-size: 10px;
+                  line-height: 9px;
+                  height: 24px;
+                }
+                @media (max-width: $tablet) {
+                  font-size: 8px;
+                }
+                @media (max-width: $mobileXS) {
+                  font-size: 7px;
+                }
+              }
+
+              picture img {
+                max-height: 30px;
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+
+      picture {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .purley_icons {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: $desktopL) {
+        width: 100%;
+      }
+      /* Clase especial de affiliate en Purley */
+      &.affiliate {
+        p {
+          width: 100%;
+          text-align: center;
+          font-size: 18px;
+          font-family: $gotham-rounded-book-big-deals;
+          text-align: center;
+          color: #063752;
+          @media (max-width: $desktopL) {
+            font-size: 16px;
+          }
+          @media (max-width: $tablet) {
+            font-size: 14px;
+          }
+          @media (max-width: $mobileXS) {
+            font-size: 12px;
+          }
+        }
+
+        .step-2 .main_instructive {
+          display: none;
+
+          .instructive {
+            @media (max-width: $tablet) {
+              max-height: inherit;
+            }
+          }
+        }
+
+        flex-wrap: wrap;
+        padding: 0 60px;
+        @media (max-width: $desktopL) {
+          padding: 20px 0;
+        }
+      }
+
+      .text {
+        text-align: center;
+        padding: 0 20px 0 0;
+        @media (max-width: $desktopL) {
+          text-align: center;
+          padding: 20px 0px 20px 0;
+          width: 50%;
+        }
+
+        h3 {
+          font-size: 18px;
+          font-family: $gotham-rounded-book-big-deals;
+          text-align: center;
+          color: #063752;
+          line-height: 1;
+          @media (max-width: $desktopL) {
+            font-size: 16px;
+          }
+          @media (max-width: $tablet) {
+            font-size: 14px;
+          }
+          @media (max-width: $mobileXS) {
+            font-size: 12px;
+          }
+        }
+
+        p {
+          color: #4396c3;
+          font-size: 14px;
+          @media (max-width: $desktopL) {
+            font-size: 13px;
+            line-height: 12px;
+          }
+          @media (max-width: $tablet) {
+            font-size: 10px;
+          }
+          @media (max-width: $mobileXS) {
+            font-size: 9px;
+          }
+        }
+      }
+
+      picture {
+        padding: 0 !important;
+
+        img {
+          width: 240px;
+          @media (max-width: $desktopL) {
+            width: 180px;
+            width: 50%;
+          }
+          @media (max-width: $tablet) {
+            width: 150px;
+          }
+          @media (max-width: $mobileXS) {
+            width: 130px;
+          }
+        }
+      }
+    }
+
+  }
+
+  /* Bloque para Afiliates */
+  .referred-block {
+    display: none;
+    text-align: center;
+    padding: 30px;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+    @media (max-width: $desktop) {
+      height: auto;
+    }
+
+    p {
+      display: none;
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      @media (max-width: $desktop) {
+        width: 100%;
+        /* br{
+          display: none;
+        }  */
+      }
+    }
+
+    h2 {
+      font-size: 18px;
+      font-family: $gotham-rounded-book-big-deals;
+      //color: $color-r-blue;
+      @media (max-width: $desktop) {
+        line-height: inherit;
+      }
+
+      em {
+        margin: 0 10px;
+        font-weight: 600;
+      }
+    }
+  }
+
+}
+
+
+/* Media queries generales de Big Deals */
+@media screen and (max-width: 600px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tabs li {
+    width: 100%;
+  }
+
+  .tabs li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .tabs li a {
+    border-radius: 0;
+    opacity: 1;
+    top: 0;
+  }
+
+  .tabs li.active a::before {
+    content: "•";
+    padding-right: 5px;
+  }
+
+  .tabs-content {
+    border-radius: 0;
+  }
+}

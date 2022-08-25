@@ -1,0 +1,263 @@
+
+
+main{
+    &:not(.main-home){
+        header.header{
+            display: unset;
+            .navbar{
+                position: sticky;
+            }
+        }    
+    }
+ 
+    header.header {
+        // position: sticky;
+        // width: 100%;
+        // top: 0;
+        // z-index: 100;
+        // transition: .5s all;
+        .navbar {
+            position: fixed;
+            padding-top: 0.3rem;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+            transition: 0.5s all;
+            // height: 81px;
+            // @media (max-width: $desktopLS) {
+            //     height: 72px;
+            // }
+            // @media (max-width: $desktop) {
+            //     height: 61px;
+            // }
+            @media (max-width: $tablet) {
+                padding-top: 1.5rem;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+    
+            .container {
+                padding: 0 21px;
+                @media (max-width: $desktop) {
+                    flex-wrap: initial;
+                }
+            }
+    
+            .burguer-menu {
+                .btn-burguer {
+                    background-color: transparent;
+                    border: 0;
+                    color: $white-0;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 1.15rem;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 46px;
+    
+                    @media (max-width: $tablet) {
+                        color: transparent;
+                        width: 0;
+                    }
+    
+                    &::before {
+                        content: "";
+                        background-image: url(../../../public/resourses/assets/burguer-menu.svg);
+                        width: 31px;
+                        height: 26px;
+                        background-size: cover;
+                        background-position: center;
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+    
+                // &:hover {
+                //     .btn-burguer {
+                      
+                //         &::before {  
+                //             transition: all .2s ease-in;
+                //             background-image: url(../../../public/resourses/assets/burguer-close-icon.svg); 
+                //             filter: invert(1);
+                //         }
+                //     }
+                // }
+            }
+            .branding-region {
+                .navbar-info {
+                    .info-country {
+                        .country {
+                            p,
+                            span {
+                                color: $white-0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        &.scroll {
+            // transition: .5s all;
+            // background-color: white;
+            // box-shadow: 0 1px 6px 1px #00000060;
+            // top: 0;
+            .navbar {
+                transition: 0.5s all;
+                background-color: white;
+                top: 0;
+                // padding-top: 0.5rem;
+                // padding-bottom: 0.8rem;
+    
+                .burguer-menu {
+                    .btn-burguer {
+                        color: $black;
+                        font-weight: 600;
+    
+                        @media (max-width: $tablet) {
+                            color: transparent;
+                            width: 0;
+                        }
+    
+    
+                        &::before {
+                            filter: invert(1);
+                            // background-image: url(../../../public/resourses/assets/burguer-menu-black.svg);
+                        }
+                    }
+                    // &:hover {
+                    //     .btn-burguer {
+                          
+                    //         &::before {  
+                    //             transition: all .2s ease-in;
+                    //             background-image: url(../../../public/resourses/assets/burguer-close-icon.svg); 
+                    //             filter: invert(0);
+                                
+                    //         }
+                    //     }
+                    // }
+                }
+    
+                .branding-region {
+                    .navbar-brand {
+                        .replaced-svg {
+                            fill: $black;
+                            color: $black;
+    
+                            g {
+                                defs,
+                                clipPath,
+                                rect,
+                                image,
+                                path {
+                                    fill: $black;
+                                    color: $black;
+                                }
+    
+                                line {
+                                    stroke: $black;
+                                }
+                            }
+                        }
+                    }
+    
+                    .navbar-info {
+                        .info-country {
+                            &::after {
+                                background-color: $black;
+                            }
+    
+                            p,
+                            span, .phone {
+                                color: $black;
+    
+                                @media (max-width: $desktop) {
+                                    color: $white-0;
+                                }
+                                p, a {
+                                    color: $black;
+                                }
+                            }
+                        }
+    
+                        .language-options {
+                            .language-item {
+                                .language-link {
+                                    color: $black;
+                                }
+    
+                                &.active {
+                                    background-color: transparent;
+                                    border: 1px solid $black;
+                                }
+                                &:hover{
+                                    background-color: transparent;
+                                    border: 1px solid $black;
+                                }
+                            }
+    
+                            &::after {
+                                background-color: $black;
+                            }
+                        }
+    
+                        .user-actions {
+                            &::before {
+                                background-color: $black;
+                            }
+                            &.active{
+                                .btn-login{
+                                    background-color: black;
+                                    &::after {
+                                        filter: invert(0);
+                                    }
+                                }
+                              }
+                            .btn-login {
+                                border: 1px solid $black;
+                                background-color: transparent;
+                                color: $black;
+    
+                                &::after {
+                                    filter: invert(1);
+                                }
+    
+                                &:hover{
+                                    background-color: black;
+                                    &::after {
+                                        filter: invert(0);
+                                    }
+                                }
+                            }
+                            .user__acount {
+                            }
+                        }
+    
+                        .phone-field {
+                            .phone-info {
+                                border: 1px solid $black;
+                                background-color: transparent;
+                                color: $black;
+    
+                                &::after {
+                                    filter: invert(0)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.checkin{
+            .navbar{
+                top: 30.5px;
+            }
+        }
+    }
+}

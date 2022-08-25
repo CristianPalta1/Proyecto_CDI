@@ -1,0 +1,162 @@
+/*accordionGeneric*/
+.accordionGeneric {
+  padding: 60px 0;
+  .container {
+    .content {
+      .c-content {
+        div {
+          .card {
+            border: 0px solid rgba(0, 0, 0, 0.125);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+            .card-header {
+              padding: 0.75rem 0;
+              background-color: $background_white;
+              border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+              h5 {
+                button {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                }
+                .btn-link {
+                  width: 100%;
+                  padding: 0 60px 0 10px;
+                  position: relative;
+                  text-align: initial;
+                  color: $color_big_stone;
+                  font-size: 0.9375rem;
+                  line-height: 19px;
+                  font-family: $latobold;
+                  white-space: normal;
+                  word-wrap: break-word;
+                  text-transform: uppercase;
+                  text-decoration: none !important;
+                  &:before {
+                    content: "\e825";
+                    top: 0;
+                    right: 15px;
+                    color: $color_big_stone;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "fontello";
+                    position: absolute;
+                    transition: all 0.25s;
+                  }
+                  &:hover {
+                    box-shadow: none;
+                    .icon-icon-plus-1 {
+                      color: $color_big_stone;
+                      font-size: 1.5rem;
+                      content: "\e824";
+                    }
+                  }
+                  &:focus {
+                    box-shadow: none;
+                    .icon-icon-plus-1 {
+                      color: $color_big_stone;
+                      font-size: 1.5rem;
+                    }
+                  }
+                  &.collapsed {
+                    color: $color_congress_blue;
+                    font-size: 0.9375rem;
+                    line-height: 19px;
+                    font-family: $latobold;
+                    text-transform: uppercase;
+                    text-decoration: none !important;
+                    &:before {
+                      content: "\e824";
+                      top: 0;
+                      right: 15px;
+                      color: $color_congress_blue;
+                      font-size: 1.5rem;
+                      font-weight: 400;
+                      font-style: normal;
+                      font-family: "fontello";
+                      position: absolute;
+                      transition: all 0.25s;
+                    }
+                  }
+                }
+              }
+            }
+            .card-body {
+              padding: 0 1.25rem 1.25rem;
+              .container-images {
+                &.left {
+                  float: left;
+                  margin-right: 20px;
+                }
+                &.right {
+                  float: right;
+                  margin-left: 20px;
+                }
+              }
+              p {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                strong {
+                  font-size: inherit;
+                  line-height: inherit;
+                }
+                a {
+                  font-size: inherit;
+                  &:hover {
+                    text-decoration: underline !important;
+                  }
+                }
+              }
+              a {
+                font-size: inherit;
+                &:hover {
+                  text-decoration: underline !important;
+                }
+              }
+              ul {
+                li {
+                  font-size: 1rem;
+                  line-height: 1.5rem;
+
+                  a, strong {
+                    font-size: inherit;
+                    font-weight: 700;
+                    line-height: inherit;
+                  }
+
+                  a {
+                    text-decoration: underline!important;
+                  }
+                }
+              }
+              ol {
+                list-style: auto !important;
+                padding-left: 25px;
+                li {
+                  list-style: auto !important;
+                  font-size: 1rem;
+                  line-height: 2rem;
+                  color: #777;
+                  &::marker {
+                    font-weight: 600;
+                    color: $color_congress_blue;
+                  }
+
+                  a, strong {
+                    font-size: inherit;
+                    font-weight: 700;
+                    line-height: inherit;
+                  }
+
+                  a {
+                    text-decoration: underline!important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

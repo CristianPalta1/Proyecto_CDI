@@ -1,0 +1,61 @@
+.educon-container {
+    #block-educon-content {
+        .node__content {
+            .layout__region--content {
+                .thank__content {
+                    min-height: 100vh;
+                    justify-items: center;
+                    align-items: center;
+                    overflow: hidden;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    .layout--twocol-section--50-50 {
+                        min-height: 90vh;
+
+                        flex-direction: row;
+                        justify-items: center;
+                        align-items: center;
+                        overflow: hidden;
+                        .layout__region--first {
+                            & > .itemTitle-0 {
+                                text-align: center;
+                                font-size: 8rem;
+                                color: #c6a16e;
+                                margin: 1rem !important;
+                                font-family: "Montserrat", sans-serif;
+                                font-weight: 700;
+                            }
+                            & > .itemBody-0 {
+                                max-width: 450px !important;
+                                margin: 0 auto;
+                                text-align: left;
+                                p {
+                                    color: $color-blue-general;
+                                    font-size: 2rem;
+                                    font-weight: 700;
+                                    padding: 0 !important;
+                                    text-align: left !important;
+                                    margin: 0 !important;
+                                }
+                            }
+
+                            & > .field--name-link{
+                                margin-right: 40%;
+                            }
+                        }
+                        .layout__region--second {
+                            display: none;
+                            picture {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

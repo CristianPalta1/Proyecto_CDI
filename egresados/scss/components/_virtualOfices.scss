@@ -1,0 +1,114 @@
+[about^="/nuestros-servicios/empleabilidad"],
+[about^="/nuestros-servicios/emprendimiento"] {
+  .block__general--service, .block__general__emp {
+
+    .block__general__service__virtual, .block__general__emp__cards {
+
+      .block__emp{
+        position: relative;
+
+        .block__emp__img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          margin-bottom: 3rem;
+
+          .block-layout-builder {
+            position: relative;
+
+            .field--name-image {
+
+              &::after {
+                @include layer_images($color-purple);
+              }
+
+              img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+
+                @include media-query(mobile) {
+                  height: 340px;
+                }
+              }
+
+            }
+          }
+        }
+
+        .block__emp__cards {
+          position: relative;
+          padding-top: 4rem;
+
+          @include media-query(mobile) {
+            padding-top: 3rem;
+          }
+
+          .view-header {
+            text-align: center;
+            color: $color-white;
+            margin-bottom: 2.5rem;
+            
+            @include media-query(mobile) {
+              margin-bottom: 1.5rem;
+            }
+
+            .title_offices_virtual {
+              font-size: 2.81rem;
+              font-weight: $medium;
+              margin-bottom: 1rem;
+
+              @include media-query(tablet) {
+                font-size: 2.4rem;
+              }
+              
+              @include media-query(mobile) {
+                font-size: 1.87rem;
+              }
+            }
+
+            .sub_title_offices_virtual {
+              font-size: 1.12rem;
+              font-weight: $medium;
+
+              @include media-query(mobile) {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          .view-filters {
+            text-align: center;
+            width: 400px;
+            margin: auto;
+            margin-bottom: 6rem;
+
+            @include media-query(mobile) {
+              width: 100%;
+              margin-bottom: 2rem;
+            }
+
+            form {
+              .form-type-select {
+                width: 100%;
+
+                select {
+                  border-radius: 10px;
+                }
+              }
+
+              .form-actions {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      
+    }
+
+  }
+
+}

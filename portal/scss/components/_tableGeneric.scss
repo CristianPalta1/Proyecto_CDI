@@ -1,0 +1,73 @@
+/*tableGeneric*/
+.tableGeneric {
+  padding: 60px 0;
+  margin-top: 60px;
+  background-color: $background_gallery;
+  .container {
+    .c-content {
+      .table-responsive {
+        margin: 0;
+        margin-top: 35px;
+        table {
+          width: 100%;
+
+          &[align='center'] {
+            margin: auto;
+          }
+
+          tr {
+            td {
+              border: none !important;
+              padding: 10px 15px !important;
+            }
+          }
+          thead {
+            tr {
+              background-color: $background_congress_blue;
+              color: $color_white;
+              th {
+                p {
+                  color: $color_white;
+                  font-size: 0.85rem;
+                  text-align: left !important;
+                  span {
+                    color: $color_white;
+                    font-size: 0.85rem;
+                    font-family: $latobold !important;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+            }
+          }
+
+          tbody {
+            tr {
+              td:first-child {
+                p {
+                  color: $color_congress_blue;
+                  span {
+                    color: $color_congress_blue;
+                  }
+                }
+              }
+              &:nth-child(odd) {
+                background-color: $background_white;
+              }
+              &:nth-child(even) {
+                background-color: $background_gallery;
+              }
+
+              th {
+                background-color: $background_congress_blue;
+                color: $color_white;
+              }
+              
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+main {
+    .calizo-container__body {
+        .region-content {
+            #block-calizo-content {
+                .content {
+                    .banner-list-products {
+                        position: relative;
+                        .banner-list-products__image {
+                            position: relative;
+                            &::after {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                content: "";
+                                background-color: rgba($color: #000000, $alpha: 0.4);
+                            }
+                            .block-field-blocktaxonomy-termproduct-categoryimage-desktop {
+                                .field--type-image {
+                                    picture {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .banner-list-products__info {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            .block-field-blocktaxonomy-termproduct-categorysub-title {
+                                .field--name-sub-title {
+                                    color: white;
+                                    font-size: 3rem;
+                                    font-weight: 700;
+                                    text-align: center;
+                                    width: initial;
+                                    position: relative;
+                                    @include media-query(desktopLS) {
+                                        font-size: 2.8rem;
+                                    }
+                                    @include media-query(desktopL) {
+                                        font-size: 2.5rem;
+                                    }
+                                    @include media-query(desktop) {
+                                        font-size: 1.8rem;
+                                    }
+                                    @include media-query(tablet) {
+                                        width: 71%;
+                                        padding: 0;
+                                    }
+                                    &::after {
+                                        content: "";
+                                        width: 0.5rem;
+                                        height: 0.5rem;
+                                        background-color: $color-input;
+                                        border-radius: 50%;
+                                        border: none;
+                                        position: absolute;
+                                        z-index: 4;
+                                        bottom: -4%;
+                                        right: 7.7%;
+                                        transform: translate(4%, -7.7%);
+                                    }
+                                }
+                            }
+                            .block-field-blocktaxonomy-termproduct-categoryname {
+                                margin-top: 2rem;
+                                text-align: center;
+                                .field--name-name {
+                                    color: white;
+                                    font-size: 4rem;
+                                    font-weight: 900;
+                                    text-align: center;
+                                    display: inline;
+                                    padding-bottom: 2rem;
+                                    border-bottom: 2px solid $color-input;
+                                }
+                            }
+                        }
+                    }
+                    .layout--onecol {
+                        margin: 6rem 0;
+                        padding: 4rem 0;
+                        @include media-query(desktopLS) {
+                            margin: 4.5rem 0;
+                            padding: 2.5rem 0;
+                        }
+                        .layout__region--content {
+                            .block-field-blocktaxonomy-termproduct-categoryform-leds {
+                                .field--type-entity-reference-revisions {
+                                    display: grid;
+                                    grid-template-columns: 98rem 1fr;
+                                    grid-template-areas:
+                                        "images ."
+                                        "images forms"
+                                        "images .";
+                                    grid-template-rows: 5.5rem 53rem 5.5rem;
+                                    ///Responsive
+                                    @include media-query(desktopLS) {
+                                        grid-template-rows: 5rem 50rem 5rem;
+                                        grid-template-columns: 64rem 1fr;
+                                    }
+                                    @include media-query(tablet) {
+                                        grid-template-columns: 1rem 1fr 1rem;
+                                        grid-template-areas:
+                                            "images images images"
+                                            ". forms .";
+                                        grid-template-rows: initial;
+                                    }
+                                    .leads-categories__image {
+                                        grid-area: images;
+                                        picture {
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                    }
+                                    .leads-categories__content {
+                                        grid-area: forms;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-direction: column;
+                                        min-height: initial !important;
+                                        height: 100%;
+                                        transform: translateX(-15rem);
+                                        border-radius: 0.6rem;
+                                        background-color: $backgroun-item-form;
+                                        box-shadow: 0 0.2rem 0.4rem rgba($color: #000, $alpha: 0.16);
+                                        margin-top: 0;
+                                        @include media-query(tablet) {
+                                            transform: translateX(0rem);
+                                            margin-top: -11rem;
+                                            height: auto;
+                                        }
+                                        .leads-categories__title {
+                                            width: 100%;
+                                            background-color: $color-white;
+                                            padding-left: 3.8rem;
+                                            @include media-query(tablet) {
+                                                padding: 3.8rem;
+                                                padding-bottom: 0;
+                                            }
+                                            h3 {
+                                                color: $color-black;
+                                                font-size: 2.8rem;
+                                                font-weight: 400;
+                                                text-transform: uppercase;
+                                                @include media-query(desktopLS) {
+                                                    font-size: 2rem;
+                                                }
+                                                span {
+                                                    color: $color-black;
+                                                    font-size: 4rem;
+                                                    font-weight: 900;
+                                                    text-transform: uppercase;
+                                                    @include media-query(desktopLS) {
+                                                        font-size: 3.2rem;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .leads-categories__form {
+                                            min-height: initial !important;
+                                            width: 100%;
+                                            height: 38rem;
+                                            @include media-query(tablet) {
+                                                height: auto;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

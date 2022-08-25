@@ -1,0 +1,64 @@
+/*sliderTeacher*/
+.sliderTeacher {
+  padding: 60px 0;
+  background-color: $background_golda;
+  .content {
+    .c-content {
+      .sliderTeacher__content {
+        padding-top: 35px;
+        .s-sliderTeacher {
+          li {
+            margin: 0;
+            padding: 0;
+            &:before {
+              display: none;
+            }
+          }
+          article {
+            margin: 5px;
+            padding: 40px 40px;
+            box-shadow: 0 0 10px 0 $box_shadow;
+            background-color: $background_white;
+            .s-sliderTeacher__img {
+              width: 35%;
+              margin: 0 auto;
+              overflow: hidden;
+              border-radius: 50%;
+            }
+            .s-sliderTeacher__text {
+              padding-top: 15px;
+              text-align: center;
+              h3 {
+                color: $color_big_stone;
+                font-size: 1.25rem;
+                line-height: 24px;
+              }
+              span {
+                display: block;
+                color: $color_congress_blue;
+                font-size: 0.875rem;
+                line-height: 17px;
+                padding: 5px 0 15px 0;
+                font-family: $montserratbold;
+              }
+              a {
+                display: block;
+                padding: 5px 0;
+                .icon-icon-contact1 {
+                  color: $color_big_stone;
+                  font-size: 0.9rem;
+                  margin-right: 5px;
+                }
+                .icon-icon-message1 {
+                  color: $color_big_stone;
+                  font-size: 0.7rem;
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

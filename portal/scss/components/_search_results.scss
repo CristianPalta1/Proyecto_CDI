@@ -1,0 +1,357 @@
+/*view-search*/
+.view-search {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .view-header {
+    form {
+      & > .form--inline.clearfix {
+        position: relative;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $border_alto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        @media (max-width: $tablet) {
+          border: none;
+
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .form-item-combine {
+          width: 60%;
+          margin: 0;
+          padding-left: 60px;
+          padding-right: 15px;
+          position: relative;
+          @media (max-width: $tablet) {
+            width: 100%;
+            padding: 0 0 10px 45px;
+            border-bottom: 1px solid $border_alto;
+          }
+          &:before {
+            content: "";
+            top: 10px;
+            left: 15px;
+            width: auto;
+            height: auto;
+            color: $border_alto;
+            font-size: 1.75rem;
+            position: absolute;
+
+            content: "\e810";
+            font-weight: 400;
+            font-style: normal;
+            font-family: "fontello";
+            @media (max-width: $tablet) {
+              top: 5px;
+              left: 5px;
+              font-size: 1.35rem;
+            }
+          }
+          &:after {
+            content: "";
+            top: 5px;
+            left: 60px;
+            width: 1px;
+            height: 50px;
+            position: absolute;
+            background-color: $border_alto;
+            @media (max-width: $tablet) {
+              top: 0;
+              left: 40px;
+              height: 40px;
+            }
+          }
+          input {
+            width: 100%;
+            height: 60px;
+            outline: 0;
+            border: none;
+            padding: 0 15px;
+            box-shadow: none;
+            color: $border_big_stone;
+            font-size: 2rem;
+            line-height: normal;
+            font-family: $montserratbold;
+            @media (max-width: $tablet) {
+              width: 100%;
+              height: 40px;
+              padding: 0 10px;
+              font-size: 1.25rem;
+            }
+          }
+        }
+        .form-item-sede {
+          width: 27%;
+          margin: 0 25px;
+          position: relative;
+          @media (max-width: $tablet) {
+            width: 100%;
+            margin: 0;
+            padding-top: 10px;
+          }
+          &:before {
+            content: "";
+            top: -5px;
+            left: -25px;
+            width: 1px;
+            height: 50px;
+            position: absolute;
+            background-color: $border_alto;
+            @media (max-width: $tablet) {
+              top: 10px;
+              left: 40px;
+              z-index: 1;
+              height: 40px;
+            }
+          }
+          .nice-select {
+            width: 80%;
+            height: 40px;
+            padding: 0 30px;
+            border: none;
+            box-shadow: none;
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            @media (max-width: $tablet) {
+              width: 100%;
+              padding-left: 50px;
+            }
+            &:before {
+              content: "";
+              top: 0;
+              left: 0;
+              width: auto;
+              height: auto;
+              color: $color_congress_blue;
+              font-size: 1.4rem;
+              position: absolute;
+
+              content: "\e813";
+              font-weight: 400;
+              font-style: normal;
+              font-family: "fontello";
+              @media (max-width: $tablet) {
+                left: 10px;
+              }
+            }
+            &:after {
+              width: 8px;
+              height: 8px;
+              border-right: 2px solid $border_congress_blue;
+              border-bottom: 2px solid $border_congress_blue;
+            }
+            .current {
+              color: $color_boulder;
+              font-size: 0.9375rem;
+              position: relative;
+              font-family: $montserratmedium;
+            }
+            .list {
+              width: 100%;
+              height: 180px !important;
+              border-radius: 0;
+              overflow-y: scroll !important;
+              li {
+                min-height: 35px;
+                padding: 0 15px;
+                color: $color_boulder;
+                font-size: 0.75rem;
+                line-height: 35px;
+                font-family: $latoregular;
+                border-bottom: 1px solid $border_alto;
+                &:before {
+                  display: none;
+                }
+                &:hover,
+                &.selected {
+                  color: $color_big_stone !important;
+                  font-family: $latobold !important;
+                  background-color: transparent !important;
+                }
+              }
+            }
+          }
+        }
+        .form-composite {
+          left: 0;
+          bottom: -30px;
+          width: 100%;
+          height: auto;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          @media (max-width: $tablet) {
+            left: inherit;
+            bottom: inherit;
+            margin-top: 25px;
+            position: relative;
+          }
+          legend {
+            position: absolute;
+            @media (max-width: $tablet) {
+              position: relative;
+              padding-bottom: 15px;
+            }
+            span {
+              font-size: 0.8rem;
+            }
+          }
+          .form-checkboxes {
+            & > .form-checkboxes {
+              padding-left: 90px;
+
+              display: flex;
+              flex-direction: row;
+              @media (max-width: $tablet) {
+                padding-left: 0;
+                flex-direction: column;
+              }
+              .form-type-checkbox {
+                margin: 0;
+                padding-right: 25px;
+                position: relative;
+                @media (max-width: $tablet) {
+                  margin: 5px 0;
+                  padding-right: 0;
+                }
+                &:last-child {
+                  padding-right: 0;
+                }
+                .form-checkbox[type="checkbox"] {
+                  display: none;
+                }
+                .form-checkbox[type="checkbox"] {
+                  top: 3px;
+                  left: 0;
+                  margin: 0;
+                  width: 20px;
+                  height: 20px;
+                  cursor: pointer;
+                  box-shadow: none;
+                  border-radius: 3px;
+                  position: absolute;
+                  display: inline-block;
+                  box-sizing: border-box;
+                  border: 1px solid $border_alto;
+                  background-color: $background_white;
+
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  appearance: none;
+                }
+                .form-checkbox:checked {
+                  border: 1px solid $border_congress_blue;
+
+                  background-image: url("../img/icons/checkbox-blue.png");
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: 20px;
+                }
+                label {
+                  color: $color_congress_blue;
+                  font-size: 0.8rem;
+                  padding-left: 30px;
+                  font-family: $latoregular;
+                }
+              }
+            }
+          }
+        }
+        .form-actions {
+          width: 13%;
+          margin: 0;
+          @media (max-width: $tablet) {
+            width: 100%;
+            margin-top: 40px;
+          }
+          input {
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            color: $color_big_stone;
+            font-size: 0.875rem;
+            font-family: $latobold;
+            letter-spacing: 0.75px;
+            border-radius: 5px;
+            background-color: $background_golda;
+          }
+        }
+      }
+    }
+  }
+  .view-content {
+    padding-top: 70px;
+    @media (max-width: $tablet) {
+      padding-top: 35px;
+    }
+    .views-row {
+      padding: 25px 5px;
+      border-bottom: 1px solid $border_alto;
+      &:last-child {
+        border-bottom: none;
+      }
+      h2 {
+        width: 80%;
+        color: $color_congress_blue;
+        font-size: 1.5rem;
+        line-height: normal;
+        text-transform: inherit;
+        font-family: $montserratsemibold;
+        @media (max-width: $tablet) {
+          width: 100%;
+        }
+        @media (max-width: $mobile) {
+          font-size: 1.25rem;
+        }
+      }
+      .views-field-type {
+        .field-content {
+          color: $color_big_stone;
+          font-size: 0.95rem;
+          line-height: normal;
+          font-family: $latobold;
+        }
+      }
+      .views-field-field-municipio {
+        .field-content {
+          color: $color_big_stone;
+          font-size: 0.85rem;
+          line-height: normal;
+          font-family: $latoregular;
+        }
+      }
+      .views-field-view-parrafo {
+        padding-top: 15px;
+        color: $color_boulder;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-family: $latoregular;
+      }
+      .views-field-view-node,
+      .views-field-field-url {
+        a {
+          color: $color_big_stone;
+          font-size: 0.75rem;
+          line-height: 19px;
+          text-decoration: underline !important;
+          &:hover {
+            color: $color_big_stone;
+          }
+        }
+      }
+    }
+  }
+  .view-empty {
+    padding-top: 0;
+    color: $color_big_stone;
+    font-size: 1rem;
+    line-height: normal;
+    font-family: $latoregular;
+    margin-top: 100px;
+  }
+}

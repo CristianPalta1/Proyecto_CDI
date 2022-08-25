@@ -1,0 +1,252 @@
+section.multiple-carousel-section {
+    padding: 0 0 0 0;
+    margin: 6rem 0 0;
+    position: relative;
+    &.enjoy-activities {
+        margin-bottom: 3%;
+        padding: 0 0 3%;
+    }
+    &.related-rooms {
+        margin-bottom: 0;
+        padding: 0 0 3%;
+    }
+    &.our-residences {
+        padding: 42px 0 74px 0;
+    }
+
+    &.related-section-blog{
+        background-color: $grayLight;
+        padding: 5rem 0;
+    }
+
+    .container {
+        .content-description {
+            text-align: center;
+        }
+        .multiple-carousel {
+            &.activities-carousel {
+                position: inherit;
+                .react-multi-carousel-track {
+                    position: inherit;
+                }
+
+                .carousel-button-left,
+                .carousel-button-right {
+                    background-color: black;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 1px solid $gray;
+                    color: white;
+                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    @media (max-width: $desktop) {
+                        display: none;
+                    }
+                    .arrow_content_prev,
+                    .arrow_content_next {
+                        width: 16px;
+                        height: 21px;
+                        display: flex;
+                        align-items: center;
+
+                        justify-content: center;
+                        img {
+                            width: 100%;
+                            object-fit: contain;
+                            height: 100%;
+                            object-position: center center;
+                            filter: invert(1);
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        transition: all 0.5s ease;
+                        border-radius: 50%;
+                        background-color: white;
+                        transform: scale(0);
+                        border: 1px solid white;
+                    }
+                    &:hover {
+                        border: 1px solid black;
+                        &::before {
+                            transform: scale(1.2);
+                        }
+                        .arrow_content_prev,
+                        .arrow_content_next {
+                            img {
+                                filter: invert(0);
+                            }
+                        }
+                    }
+                }
+                .carousel-button-left {
+                    position: absolute;
+                    left: 5%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @media (max-width: $desktopXL) {
+                        left: 25px;
+                    }
+                }
+                .carousel-button-right {
+                    position: absolute;
+                    right: 5%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @media (max-width: $desktopXL) {
+                        right: 25px;
+                    }
+                }
+
+                .react-multi-carousel-dot-list {
+                    @media (max-width: $desktop) {
+                        bottom: -5px;
+                        flex-wrap: wrap;
+                    }
+                  
+                    .react-multi-carousel-dot {
+                        button {
+                            width: 34px;
+                            height: 1px;
+                            border-radius: 0;
+                            background-color: $gray;
+                            border: 0;
+                        }
+                        &.react-multi-carousel-dot--active {
+                            button {
+                                width: 80px;
+                                background-color: black;
+                            }
+                        }
+                    }
+                }
+            }
+            &.residences-carousel {
+                position: initial;
+                .react-multi-carousel-track {
+                    position: initial;
+                    .react-multi-carousel-item {
+                        .room-type {
+                            .room-card {
+                                @media (max-width: $desktopLS) {
+                                    margin-right: 14px;
+                                }
+                                margin-right: 11px;
+                            }
+                        }
+                    }
+                }
+                .carousel-button-left,
+                .carousel-button-right {
+                    background-color: black;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 1px solid $gray;
+                    color: white;
+                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    @media (max-width: $desktop) {
+                        display: none;
+                    }
+                    .arrow_content_prev,
+                    .arrow_content_next {
+                        width: 16px;
+                        height: 21px;
+                        display: flex;
+                        align-items: center;
+
+                        justify-content: center;
+                        img {
+                            width: 100%;
+                            object-fit: contain;
+                            height: 100%;
+                            object-position: center center;
+                            filter: invert(1);
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        transition: all 0.5s ease;
+                        border-radius: 50%;
+                        background-color: white;
+                        transform: scale(0);
+                        border: 1px solid white;
+                    }
+                    &:hover {
+                        border: 1px solid black;
+                        &::before {
+                            transform: scale(1.2);
+                        }
+                        .arrow_content_prev,
+                        .arrow_content_next {
+                            img {
+                                filter: invert(0);
+                            }
+                        }
+                    }
+                }
+                .carousel-button-left {
+                    position: absolute;
+                    left: 5%;
+                    top: 67%;
+                    transform: translateY(-67%);
+                    @media (max-width: $desktopXL) {
+                        left: 25px;
+                    }
+                }
+                .carousel-button-right {
+                    position: absolute;
+                    right: 4.3%;
+                    top: 67%;
+                    transform: translateY(-67%);
+                    @media (max-width: $desktopXL) {
+                        right: 25px;
+                    }
+                }
+                .react-multi-carousel-dot-list {
+                    bottom: 33px;
+
+                    .react-multi-carousel-dot {
+                        button {
+                            width: 34px;
+                            height: 1px;
+                            border-radius: 0;
+                            background-color: $gray;
+                            border: 0;
+                        }
+                        &.react-multi-carousel-dot--active {
+                            button {
+                                width: 80px;
+                                background-color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

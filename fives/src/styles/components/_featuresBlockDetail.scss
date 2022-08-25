@@ -1,0 +1,114 @@
+.features-block-section {
+    position: relative;
+    margin-bottom: 0%; 
+    padding: 0 0 0%;
+    height: 400px;
+    &.adjust-height{
+        height: 585px;
+    }
+    @media (max-width: $desktopLS) {
+        height: 369px;
+    }
+    @media (max-width: $tablet) {
+        height: initial;
+    }
+   
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        @media (max-width: $tablet) {
+            height: auto;
+            object-fit: initial;
+        }
+    }
+    .container {
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        width: 80%;
+        padding: 40px;
+        .content-title {
+            
+            color: white;
+            margin-bottom: 2rem;
+            @media (max-width: $tablet) {
+                margin-bottom: 0.8rem;
+            }
+            span{
+            
+                color: white;
+            }
+        }
+        .features-content {
+            &.center__items{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media (max-width: $tablet) {
+                    flex-direction: column;
+                }
+            }
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);            
+            justify-content: center;
+            align-items: center;
+            gap: 20px 0;
+            padding: 0 40px;
+            @media (max-width: $tablet) {
+                grid-template-columns:  1fr;
+                grid-template-rows: initial;
+                justify-items: center;
+                gap: 8px;
+                padding: 25px 40px;
+                overflow-y: scroll;
+            }
+            .feature-item {
+                align-items: center;
+                margin-left: 20px;
+                display: grid;
+                grid-template-columns: 60px 1fr;
+                gap: 8px;
+                @media (max-width: $tablet) {
+                    grid-template-columns:  1fr;
+                    grid-template-rows: initial;
+                    justify-items: center;
+                    margin-left: 0px;
+                }
+                .feature-icon {
+                    height: 60px;
+                    width: 60px;
+                    @media (max-width: $tablet) {
+                        width: 55px;
+                    }
+                }
+                .feature-name {
+                    color: white;
+                    font-weight: 400;
+                    font-size: 16px;
+                    padding-left: 10px;
+                    @media (max-width: $desktopLS) {
+                        font-size: 12px;
+                    }
+                    @media (max-width: $tablet) {
+                        font-size: 14px;
+                    }
+                    @media (max-width: $mobile) {
+                        font-size: 12px;
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

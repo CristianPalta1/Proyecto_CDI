@@ -1,0 +1,309 @@
+main {
+    .educon-container {
+        .region-content {
+            #block-webform {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 4;
+                // display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(0, 0, 0, 0.8);
+
+                .close_form {
+                    margin-top: -612px;
+                    margin-left: -56px;
+                    @include media-query(mobile) {
+                    }
+                    cursor: pointer;
+                    &::before {
+                        content: "";
+                        background-image: url("./assets/img/closePopUp.svg");
+                        background-size: auto;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 17px;
+                        height: 17px;
+                        border-top: 0;
+                        border-right: 0;
+                        border-bottom: 0;
+                        border-left: 0;
+                        display: block;
+                        border: 1px solid white;
+                        padding: 2.5rem;
+                        background-color: rgba(255, 255, 255, 0.6);
+                        border-radius: 50%;
+                    }
+                }
+                form {
+                    width: 60%;
+                    margin-top: 147px;
+                    padding: 40px;
+                    background-color: white;
+                    border-radius: 6px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas:
+                        "title title"
+                        "nombre cc"
+                        "email cel"
+                        "actualmente actualmente"
+                        "acercUnipa acercUnipa"
+                        "programaTitle ."
+                        "coursera diplomados"
+                        "acept btn"
+                        ". btn";
+                    gap: 8px;
+                    height: 70vh;
+                    overflow-y: auto;
+                    @include media-query(desktopXL) {
+                        height: 70vh;
+                        overflow-y: scroll;
+                    }
+                    @include media-query(mobile) {
+                        grid-template-columns: 1fr;
+                        grid-template-areas:
+                            "title"
+                            "nombre"
+                            "cc"
+                            "email"
+                            "cel"
+                            "actualmente"
+                            "acercUnipa"
+                            "programaTitle"
+                            "coursera"
+                            "diplomados"
+                            "acept"
+                            "btn";
+                        padding: 8px;
+                        width: 90%;
+                    }
+                    label {
+                        color: #041d74;
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                    }
+                    input {
+                        box-shadow: 0px 2px 4px 0px rgba(119, 119, 119, 0.3);
+                        height: 35px;
+                        border-radius: 6px;
+                        border: none;
+                    }
+                    .js-form-item {
+                        margin: 0 !important;
+                    }
+                    .js-form-item-markup {
+                        grid-area: title;
+                        h2 {
+                            font-size: 2.8rem;
+                            color: #c6a16e;
+                            font-weight: 700;
+                            @include media-query(mobile) {
+                                font-size: 2.2rem;
+                            }
+                        }
+                        p {
+                            color: #00071c;
+                            font-weight: 300;
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .js-form-item-study-uniminuto {
+                        grid-area: actualmente;
+                        .js-webform-radios {
+                            display: flex;
+                            align-items: center;
+                            gap: 13px;
+                            .js-form-item-study-uniminuto {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                gap: 8px;
+                                .form-radio {
+                                    box-shadow: none;
+                                }
+                                // #edit-study-uniminuto-si {
+                                //     box-shadow: none;
+                                // }
+                                // #edit-study-uniminuto-no {
+                                //     box-shadow: none;
+                                // }
+                            }
+                        }
+                    }
+                    #edit-about-services--wrapper {
+                        grid-area: acercUnipa;
+                        legend {
+                            color: #041d74;
+                            font-weight: 600;
+                        }
+                        .fieldset-wrapper {
+                            #edit-about-services {
+                                display: flex;
+                                align-items: center;
+                                gap: 12px;
+                                .js-form-item-about-services-unipacks-coursera,
+                                .js-form-item-about-services-cursos-y-diplomados,
+                                .js-form-item-about-services-formación-empresarial {
+                                    margin: 0;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    gap: 8px;
+                                    input {
+                                        box-shadow: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #edit-markup-01 {
+                        grid-area: programaTitle;
+                        margin: 0 !important;
+                        color: #041d74;
+                        font-weight: 600;
+                    }
+                    .js-form-item-unipacks-coursera {
+                        grid-area: coursera;
+                        select {
+                            box-shadow: 0px 2px 4px 0px rgba(119, 119, 119, 0.3);
+                            height: 35px;
+                            border-radius: 6px;
+                            border: none;
+                        }
+                    }
+                    .js-form-item-courses-diplomas {
+                        grid-area: cursos;
+                        select {
+                            box-shadow: 0px 2px 4px 0px rgba(119, 119, 119, 0.3);
+                            height: 35px;
+                            border-radius: 6px;
+                            border: none;
+                        }
+                    }
+                    .js-form-item-name-lastname {
+                        grid-area: nombre;
+                        margin: 0;
+                    }
+                    .js-form-item-document-number {
+                        grid-area: cc;
+                        margin: 0;
+                    }
+                    .js-form-item-cellphone {
+                        grid-area: cel;
+                        margin: 0;
+                    }
+                    .js-form-item-email {
+                        grid-area: email;
+                        margin: 0;
+                    }
+                    .js-form-item-unipack {
+                        grid-area: acercaUni;
+                        margin: 0;
+                        select {
+                            box-shadow: 0px 2px 4px 0px rgba(119, 119, 119, 0.3);
+                            height: 35px;
+                            border-radius: 6px;
+                        }
+                    }
+                    .js-form-item-courses-diplomas {
+                        grid-area: diplomados;
+                        select {
+                            box-shadow: 0px 2px 4px 0px rgba(119, 119, 119, 0.3);
+                            height: 35px;
+                            border-radius: 6px;
+                            border: none;
+                        }
+                    }
+                    .js-form-item-terms-of-service {
+                        grid-area: acept;
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        input {
+                            box-shadow: none;
+                        }
+                        label.label--terms {
+                            cursor: pointer;
+                        }
+                    }
+                    .form-actions {
+                        grid-area: btn;
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-bottom: 0;
+                        margin-top: 10px;
+                        input {
+                            height: 50px;
+                            width: 200px;
+                            border-radius: 6px;
+                            border: none;
+                            font-size: 1.5rem;
+                            text-transform: uppercase;
+                            background-color: #041d74;
+                            color: white;
+                            font-family: 700;
+                            box-shadow: none;
+                            &:hover {
+                                background-color: transparent;
+                                border: 1px solid $color-btn-a;
+                                color: #041d74;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // #spb-block-webform-block {
+        //     .block-webform-block-modal-minimized {
+        //         display: none !important;
+        //     }
+        //     .block-webform-block-modal {
+        //         .spb-popup-main-wrapper {
+        //             transform: translate(-50%, -50%);
+        //             width: 700px !important;
+        //             box-shadow: 0px 2px 4px 0px rgba(119, 119, 119, 0.9);
+        //             border-radius: 6px;
+        //             padding: 24px;
+        //             margin-left: 0 !important;
+        //             margin-top: 16px !important;
+        //             border: none;
+        //             .spb-controls {
+        //                 top: -68px;
+        //                 .block-webform-block-modal-close {
+        //                     border-radius: 50%;
+        //                     height: 50px;
+        //                     width: 50px;
+        //                     display: flex;
+        //                     justify-content: center;
+        //                     align-items: center;
+        //                     background-color: rgba(255, 255, 255, 0.6);
+        //                     border: 1px solid white;
+        //                     &::before {
+        //                         content: "";
+        //                         background-image: url("./assets/img/closePopUp.svg");
+        //                         background-size: auto;
+        //                         background-repeat: no-repeat;
+        //                         background-position: center;
+        //                         width: 17px;
+        //                         height: 17px;
+        //                         vertical-align: 0;
+        //                         border-top: 0;
+        //                         border-right: 0;
+        //                         border-bottom: 0;
+        //                         border-left: 0;
+        //                     }
+        //                 }
+        //                 .block-webform-block-modal-minimize {
+        //                     display: none;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}

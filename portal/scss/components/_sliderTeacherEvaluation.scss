@@ -1,0 +1,124 @@
+/*sliderTeacherEvaluation*/
+.sliderTeacherEvaluation {
+  padding: 60px 0 180px 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (max-width: $tablet) {
+    padding: 60px 0;
+  }
+  .content {
+    .c-content {
+      .sliderTeacherEvaluation__content {
+        .sliderTeacherEvaluation__left {
+          z-index: 1;
+          padding-top: 50px;
+          @media (max-width: $tablet) {
+            padding-top: 0;
+          }
+          h2 {
+            color: $color_white;
+            text-transform: initial;
+          }
+          p {
+            padding-top: 5px;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: $color_white;
+          }
+          .btn-header {
+            right: inherit;
+            bottom: inherit;
+            display: inline-block;
+            margin-top: 40px;
+            color: $color_white;
+            position: relative;
+            @media (max-width: $mobile) {
+              display: none;
+            }
+            .icon-icon-arrow-btn {
+              color: $color_white;
+            }
+          }
+        }
+        .sliderTeacherEvaluation__right {
+          top: 60px;
+          right: 0;
+          z-index: 1;
+          padding: 0;
+          position: absolute;
+          @media (max-width: $tablet) {
+            top: inherit;
+            right: inherit;
+            position: relative;
+            padding: 30px 0 40px 0;
+          }
+          .s-sliderTeacherEvaluation {
+            padding: 60px 0 60px 40px;
+            background-color: $background_white;
+            @media (max-width: $tablet) {
+              padding: 40px 0 40px 30px;
+            }
+            article {
+              padding-right: 60px;
+              border-right: 1.5px solid $border_gallery;
+              h3 {
+                font-size: 1.5rem;
+                line-height: 25px;
+                padding-bottom: 10px;
+              }
+              p {
+                line-height: 25px;
+                font-family: $montserratsemibold;
+              }
+            }
+            .owl-nav {
+              right: 20%;
+              bottom: -65px;
+              position: absolute;
+              @media (max-width: $desktop_1640) {
+                right: 10%;
+                bottom: -55px;
+              }
+              @media (max-width: $desktop_1440) {
+                right: 17%;
+                bottom: -55px;
+              }
+              @media (max-width: $desktop_1366) {
+                right: 14%;
+                bottom: -55px;
+              }
+              @media (max-width: $desktop_1280) {
+                right: 11%;
+                bottom: -55px;
+              }
+              @media (max-width: $desktop_1024) {
+                right: 8%;
+                bottom: -55px;
+              }
+            }
+            .owl-dots {
+              @media (max-width: $mobile) {
+                bottom: -45px;
+                position: absolute;
+              }
+            }
+          }
+        }
+      }
+    }
+    .c-bottom {
+      @media (max-width: $tablet) {
+        display: none;
+      }
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+  }
+  .layer {
+    opacity: 0.8;
+    background-color: $background_congress_blue;
+  }
+}

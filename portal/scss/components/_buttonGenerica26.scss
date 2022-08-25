@@ -1,0 +1,28 @@
+.view-generica-modulo-26{
+  .content{
+    .views-row{
+      text-align: center;
+      
+      .button-generica-26{
+        display: inline-block;
+        margin: 20px 0;
+        transition: 0.5s all;
+      
+        &:hover{
+          transform: scale(1.1);
+        }
+      
+        a {
+          width: 100%;
+          height: 100%;
+          font-size: .875rem;
+          font-family: "latobold";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      
+        }
+      }
+    }
+  }
+}

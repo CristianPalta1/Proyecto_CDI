@@ -1,0 +1,193 @@
+/*mapsInvestigationGroup*/
+.mapsInvestigationGroup {
+  padding: 60px 0;
+  background-color: $background_gallery;
+  .c-content {
+    .mapsInvestigationGroup__content {
+      ul.nav-pills {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        @media (max-width: $tablet) {
+          width: 100%;
+          overflow-x: scroll;
+          white-space: nowrap;
+
+          flex-wrap: nowrap;
+          justify-content: inherit;
+        }
+        li {
+          a {
+            display: block;
+            padding: 15px 80px;
+            border-radius: 3px;
+            position: relative;
+            margin: 0 10px 10px 10px;
+            color: $color_congress_blue;
+            font-size: 0.875rem;
+            font-family: $latoregular;
+            background-color: transparent;
+            border: 1px solid $border_congress_blue;
+            &:hover,
+            &.active {
+              color: $color_white;
+              border: 1px solid $border_congress_blue;
+              background-color: $background_congress_blue;
+            }
+            @media (max-width: $tablet) {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+      .search {
+        padding: 40px 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        @media (max-width: $mobile) {
+          flex-direction: column;
+        }
+        .text {
+          width: 70%;
+          @media (max-width: $mobile) {
+            width: 100%;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+
+            a, strong {
+              font-size: inherit;
+              font-weight: 700;
+              line-height: inherit;
+            }
+            
+            a {
+              text-decoration: underline !important;
+            }
+          }
+        }
+        .icons {
+          width: 30%;
+
+          display: flex;
+          justify-content: flex-end;
+          @media (max-width: $mobile) {
+            width: 100%;
+            padding-top: 25px;
+          }
+          .search-menu1 {
+            width: 50px;
+            height: 50px;
+            margin: 0 5px;
+            border-radius: 3px;
+            background-color: $background_pelorous;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon-icon-menu1,
+            .icon-icon-marker3 {
+              color: $color_white;
+              font-size: 1.25rem;
+            }
+          }
+          .search-marker3 {
+            width: 50px;
+            height: 50px;
+            margin: 0 5px;
+            border-radius: 3px;
+            background-color: $background_big_stone;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon-icon-menu1,
+            .icon-icon-marker3 {
+              color: $color_white;
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+      .tab-content {
+        background-color: $background_gallery;
+        .tab-pane {
+          box-shadow: 0 0 10px 0 $box_shadow;
+          &.show {
+            opacity: 1;
+          }
+          iframe {
+            width: 100%;
+            height: 500px;
+            @media (max-width: $mobile) {
+              width: 100%;
+              height: 400px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.view-generica-modulo-24{
+  .mapsInvestigationGroup{
+    .c-content{
+      .mapsInvestigationGroup__content{
+        ul{
+          margin-bottom: 2rem;
+          &.nav-pills{
+            li{
+              margin-left: 0;
+              padding-left: 0;
+              &::before{
+                display: none;
+              }
+            }
+          }
+        }
+        .tab-content {
+          margin-top: 2rem;
+          .tab-pane {
+            box-shadow: none;
+            .views-field-body {
+              width: 100%;
+              margin-bottom: 2rem;
+              @media (max-width: $tablet) {
+                width: 100%;
+              }
+              p {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                strong, a {
+                  font-size: inherit;
+                }
+                a, strong {
+                  font-size: inherit;
+                  font-weight: 700;
+                  line-height: inherit;
+                }
+                
+                a {
+                  text-decoration: underline !important;
+                }
+              }
+            }
+            .views-field-field-generica-24-iframe {
+              box-shadow: 0 0 10px 0 rgba(0,0,0, .15);
+              .dashboard-container {
+                // background-color: #e7e7e7;
+                background-color: #eee;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

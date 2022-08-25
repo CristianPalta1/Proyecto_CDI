@@ -1,0 +1,184 @@
+/*gridVideosInvestigation*/
+.gridVideosInvestigation {
+  padding: 60px 0;
+  background-color: $background_big_stone;
+  @media (max-width: $tablet) {
+    padding: 60px 0 40px 0;
+  }
+  .content {
+    .c-content {
+      .gridVideos__content {
+        padding-top: 35px;
+        .gridVideos__featured {
+          @media (max-width: $tablet) {
+            padding-bottom: 40px;
+          }
+          @media (max-width: $mobile) {
+            padding-bottom: 25px;
+          }
+          article {
+            .gridVideosImg__content {
+              &.play {
+                .gridVideos__img,
+                .gridVideos__layer {
+                  opacity: 0;
+                  visibility: hidden;
+                }
+              }
+            }
+            .gridVideosImg__content {
+              position: relative;
+              .gridVideos__img {
+                z-index: 1;
+                position: relative;
+                transition: all 0.25s;
+              }
+              .gridVideos__video {
+                iframe {
+                  top: 0;
+                  left: 0;
+                  z-index: 0;
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  transition: all 0.25s;
+                }
+              }
+              .gridVideos__layer {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: all 0.25s;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon {
+                  width: 10%;
+                  z-index: 2;
+                  cursor: pointer;
+                  &:hover {
+                    width: 11%;
+                  }
+                }
+                .layer {
+                  z-index: 1;
+                  opacity: 0.5;
+                  background-color: $background_black;
+                }
+              }
+            }
+            .gridVideos__text {
+              padding: 10px 15px;
+              background-color: $background_white;
+              h3 {
+                padding-top: 10px;
+                font-size: 1.25rem;
+                line-height: 24px;
+              }
+              p {
+                padding: 10px 0;
+              }
+            }
+          }
+        }
+        .gridVideos__notfeatured {
+          article {
+            margin-bottom: 30px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            @media (max-width: $mobile) {
+              margin-bottom: 20px;
+            }
+            .gridVideosImg__content {
+              &.play {
+                .gridVideos__img,
+                .gridVideos__layer {
+                  opacity: 0;
+                  visibility: hidden;
+                }
+              }
+            }
+            .gridVideosImg__content {
+              position: relative;
+              width: 42%;
+              @media (max-width: $mobile) {
+                width: 45%;
+              }
+              .gridVideos__img {
+                z-index: 1;
+                position: relative;
+                transition: all 0.25s;
+              }
+              .gridVideos__video {
+                iframe {
+                  top: 0;
+                  left: 0;
+                  z-index: 0;
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  transition: all 0.25s;
+                }
+              }
+              .gridVideos__layer {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: all 0.25s;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon {
+                  width: 15%;
+                  z-index: 2;
+                  cursor: pointer;
+                  &:hover {
+                    width: 16%;
+                  }
+                }
+                .layer {
+                  z-index: 1;
+                  opacity: 0.5;
+                  background-color: $background_black;
+                }
+              }
+            }
+            .gridVideos__text {
+              width: 58%;
+              padding-left: 20px;
+              @media (max-width: $mobile) {
+                width: 55%;
+              }
+              .category {
+                color: $color_big_stone;
+                background-color: $background_white;
+              }
+              h3,
+              h4 {
+                padding: 10px 0;
+                color: $color_white;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                @media (max-width: $mobile) {
+                  padding: 5px 0;
+                  font-size: 0.8125rem;
+                }
+              }
+              .text {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

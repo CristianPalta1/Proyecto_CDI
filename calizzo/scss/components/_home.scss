@@ -1,0 +1,405 @@
+body.calizo-home {
+  main {
+    .calizo-container__body {
+      #block-calizo-content {
+        margin-top: 0;
+        @include media-query(tablet) {
+          margin-top: 6.6rem;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .calizo-container__body {
+    #block-calizo-content {
+      .node__content {
+        .layout--onecol {
+          .layout__region--content {
+            //Banner
+            .block-views-blockbanner-home {
+              .views-element-container {
+                padding: 0;
+                margin: 0;
+                .banner_home {
+                  position: relative;
+                  display: block;
+                  margin: 0 auto;
+                  width: 100%;
+                  margin-top: initial;
+                  @include media-query(tablet) {
+                    margin-top: 6.4rem;
+                  }
+                  .views-row {
+                    position: relative;
+                    .banner_home__image {
+                      picture {
+                        img {
+                          width: 100%;
+                        }
+                      }
+                    }
+                    .banner_home__info {
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      text-align: center;
+                      width: initial;
+                      @include media-query(tablet) {
+                        width: 100%;
+                      }
+                      .banner_home__title,
+                      .banner_home__subtitle {
+                        color: $color-white;
+                      }
+                      .banner_home__title {
+                        font-size: 3rem;
+                        font-weight: 400;
+                        margin-bottom: 1.5rem;
+                        @include media-query(tablet) {
+                          font-size: 1.8rem;
+                        }
+                      }
+                      .banner_home__subtitle {
+                        font-size: 4rem;
+                        font-weight: 700;
+                        margin-bottom: 2rem;
+                        @include media-query(tablet) {
+                          font-size: 2.8rem;
+                        }
+                      }
+                      .banner_home__link {
+                        display: none !important;
+                        @include btns-links(
+                          $color-input,
+                          $color-white,
+                          $color-input-border,
+                          $color-white,
+                          $color-black
+                        );
+                      }
+                    }
+                  }
+                  @include arrowsCarousel(5rem, 5rem, rgba(255, 255, 255, 0.9));
+                  @include dotsCarousel(1rem, 1rem, $color-white);
+                }
+              }
+            }
+
+            ///Title
+            .block-block-contenta1a68cd0-2366-4c88-8933-369729c9718c {
+              .field--name-title {
+                text-align: center;
+                margin: 6rem 0;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 4rem 0;
+
+                @include media-query(desktopLS) {
+                  margin: 4.5rem 0;
+                  padding: 2.5rem 0;
+                }
+                .titles__section {
+                  font-size: 3rem;
+                  z-index: 3;
+                  background-color: $color-white;
+                  padding: 0 2rem;
+                  position: relative;
+                  font-weight: 900;
+                  width: initial;
+                  @include media-query(desktopLS) {
+                    font-size: 2.8rem;
+                  }
+                  @include media-query(desktopL) {
+                    font-size: 2.5rem;
+                  }
+                  @include media-query(desktop) {
+                    font-size: 1.8rem;
+                  }
+                  @include media-query(tablet) {
+                    width: 74%;
+                    padding: 0;
+                  }
+                  &::after {
+                    content: "";
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    background-color: $color-input;
+                    border-radius: 50%;
+                    border: none;
+                    position: absolute;
+                    z-index: 4;
+                    bottom: -4%;
+                    right: 11.9%;
+                    transform: translate(4%, -11.9%);
+                    @include media-query(tablet) {
+                      right: 24.3%;
+                      transform: translate(4%, -24.3%);
+                    }
+                  }
+                }
+                &::before {
+                  content: "";
+                  width: 100%;
+                  height: 0.1rem;
+                  background-color: $color-gray-nav-links;
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  transform: translate(0, -50%);
+                  z-index: 0;
+                }
+              }
+            }
+            //Fomulario
+            .block-block-content3478e88b-4a74-4a7b-b131-c2d0572d6ffe {
+              background-color: $color-background-product;
+              .field--name-title {
+                margin: 0 4rem;
+                padding: 2rem;
+                font-weight: 400;
+                font-size: 2rem;
+                padding-bottom: 0;
+                span {
+                  font-weight: 700;
+                  font-size: 2.5rem;
+                }
+              }
+              .field--name-body {
+                padding: 0 2rem;
+              }
+            }
+            //Productos
+            .block-views-blockproducts-home {
+              .views-element-container {
+                position: relative;
+                .products_featured {
+                  text-align: center;
+                  position: inherit;
+                  .products_featured__rows {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    gap: 1.2rem;
+                    padding: 0 2.5rem;
+                    @include media-query(tablet) {
+                      padding: 0 0;
+                      position: inherit;
+                    }
+                    .views-row {
+                      width: 100%;
+                      figure.products_featured__image {
+                        border: 4rem solid $color-background-product;
+                        width: 100%;
+                        box-shadow: 0rem 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.2);
+                        img {
+                          width: 100%;
+                          height: 100%;
+                        }
+                      }
+                      .products_featured__info {
+                        .products_featured__link {
+                          padding-left: 1rem;
+                          justify-content: flex-start !important;
+                        }
+                      }
+                    }
+                    @include navsGeneralCarousel(-19%);
+                  }
+                  .products_featured__footer {
+                    display: none;
+                  }
+                }
+              }
+            }
+            //Categorias
+            .block-views-blockcategories-quotes-home {
+              display: none;
+              // .views-element-container {
+              //   margin: 0;
+              //   padding: 6rem;
+              //   background-position: center;
+              //   background-repeat: no-repeat;
+              //   background-size: auto;
+              //   @include media-query(desktop) {
+              //     padding: 3rem;
+              //   }
+              //   .view-id-categories_quotes {
+              //     .view-filters {
+              //       form {
+              //         .form--inline {
+              //           fieldset {
+              //             display: block;
+              //             width: 20%;
+              //             legend {
+              //               display: none;
+              //             }
+              //             .fieldset-wrapper {
+              //               div.form-radios {
+              //                 .js-form-item {
+              //                   &:nth-child(1) {
+              //                     display: none;
+              //                   }
+              //                 }
+              //                 .form-radios {
+              //                   width: 100%;
+              //                   .form-item-category-target-id {
+              //                     width: 100%;
+              //                     @include media-query(tablet) {
+              //                       margin: 0;
+              //                     }
+              //                     label {
+              //                       display: block;
+              //                       padding: 1.6rem;
+              //                       border-bottom: 0.1rem solid rgba(112, 112, 112, 0.21);
+              //                       width: 100%;
+              //                       border-radius: 0;
+              //                       &:hover {
+              //                         background-color: #272727;
+              //                         color: white;
+              //                         font-weight: 700;
+              //                         border-radius: 0.6rem;
+              //                         &::after {
+              //                           filter: invert(1);
+              //                         }
+              //                       }
+              //                       &:active {
+              //                         background-color: #272727;
+              //                         border-radius: 0.6rem;
+              //                       }
+              //                       &::after {
+              //                         content: "";
+              //                         display: block;
+              //                         background-image: url("./assets/img/arrow_quotes.svg");
+              //                         background-size: contain;
+              //                         background-repeat: no-repeat;
+              //                         background-position: center;
+              //                         width: 1rem;
+              //                         height: 1.4rem;
+              //                         position: absolute;
+              //                         top: 50%;
+              //                         right: 5%;
+              //                         transform: translate(-5%, -50%);
+              //                       }
+              //                     }
+              //                     input {
+              //                       display: none;
+              //                     }
+              //                   }
+              //                 }
+              //               }
+              //             }
+              //           }
+              //         }
+              //       }
+              //     }
+              //     .view-content {
+              //       .views-row {
+              //         @include cardsImagesGeneral();
+              //       }
+              //     }
+              //   }
+              // }
+            }
+
+            //Proyectos
+            .block-views-blockprojects-home {
+              .views-element-container {
+                position: relative;
+                .projects_featured {
+                  position: inherit;
+                  .projects_featured__rows {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.2rem;
+                    position: inherit;
+                    .views-row {
+                      display: grid;
+                      grid-template-columns: 5rem 1fr 5rem;
+                      grid-template-areas:
+                        "image image image"
+                        ". desc .";
+                      place-content: center;
+                      justify-content: center;
+                      align-items: center;
+                      padding-bottom: initial;
+                      padding-bottom: 1rem;
+
+                      figure {
+                        grid-area: image;
+                        z-index: 1;
+                        overflow: hidden;
+                        img {
+                          width: 100%;
+                          height: 100%;
+                          transition: transform ease 0.8s;
+                        }
+                        &:hover {
+                          img {
+                            transform: scale(1.3);
+                          }
+                        }
+                      }
+                      .projects_featured__info {
+                        grid-area: desc;
+                        text-align: center;
+                        z-index: 3;
+                        background-color: white;
+                        padding: 3rem;
+                        box-shadow: 0rem 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.2);
+                        border-radius: 0.6rem;
+                        margin-top: -10rem;
+                        padding: 3rem;
+                        @include media-query(desktop1300) {
+                          padding: 1.5rem;
+                        }
+                        @include media-query(desktopL) {
+                          padding: 1rem;
+                        }
+                        .projects_featured__title {
+                          font-size: 2rem;
+                          padding: 0 0.5rem 2rem;
+                          width: 60%;
+                          @include media-query(desktopLS) {
+                            width: 84%;
+                          }
+                          margin: 0 auto;
+                          border-bottom: 0.2rem solid $color-input;
+                        }
+                        .projects_featured__body {
+                          padding: 1.6rem 0;
+                          height: 11rem;
+                          @include media-query(desktop1300) {
+                            height: 13rem;
+                          }
+                          @include media-query(desktopL) {
+                            height: 14rem;
+                          }
+                          @include media-query(tablet) {
+                            height: 13rem;
+                          }
+                        }
+                        .projects_featured__link {
+                          padding-top: 2rem;
+                          justify-content: center;
+                        }
+                      }
+                    }
+                    @include navsGeneralCarousel(-5%);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

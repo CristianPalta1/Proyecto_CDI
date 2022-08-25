@@ -1,0 +1,82 @@
+/*sliderFeaturedProjects*/
+.sliderFeaturedProjects {
+  padding: 60px 0;
+  position: relative;
+  .content {
+    .c-content {
+      .sliderFeaturedProjects__content {
+        padding-top: 35px;
+        .s-sliderFeaturedProjects {
+          .owl-item {
+            article {
+              position: relative;
+              overflow: hidden;
+              &:after {
+                content: "";
+                top: 0;
+                left: 0;
+                opacity: 0.4;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: $background_black;
+              }
+              .s-sliderFeaturedProjects__text {
+                left: 0;
+                bottom: 20px;
+                width: auto;
+                height: auto;
+                z-index: 1;
+                margin: 0 auto;
+                position: absolute;
+                padding: 15px 20px;
+                h3 {
+                  color: $color_white;
+                  font-size: 0.9375rem;
+                  line-height: 19px;
+                  padding: 15px 0;
+                }
+                p {
+                  color: $color_white;
+                  padding: 10px 0;
+                }
+                span {
+                  display: block;
+                  color: $color_white;
+                  font-size: 0.875rem;
+                  line-height: 17px;
+                  padding: 5px 0 15px 0;
+                  font-family: $montserratbold;
+                }
+                a {
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  color: $color_big_stone;
+                  background-color: $background_white;
+                }
+                .btn-link {
+                  margin: 0;
+                  padding: 0;
+                  color: $color_white;
+                  font-size: 0.7rem;
+                  line-height: 19px;
+                  background-color: transparent;
+                  text-decoration: underline !important;
+                }
+              }
+              .layer {
+                opacity: 0;
+                transition: all 0.25s;
+              }
+            }
+            &:hover {
+              .layer {
+                opacity: 0.75;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

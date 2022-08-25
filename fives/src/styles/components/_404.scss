@@ -1,0 +1,82 @@
+.notFound__container{
+    margin-top: 146px;
+    background-image: url(../../../public/resourses/assets/404_backGround.png);
+    height: 90vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    @media (max-width: $desktopLS) {
+      margin-top: 71px;
+    }
+    @media (max-width: $desktopL) {
+      margin-top: 67px;
+    }
+    @media (max-width: $desktop) {
+      margin-top: 63px;
+    }
+
+    &::before{
+        content: "";
+        background-color: rgba(0,0,0, 0.61);
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    .content__404{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+       
+        .title__404{
+            h1{
+                color: white;
+                font-size:  15rem;
+                font-weight: 600;
+                text-align: center;
+                span{
+                    color: white
+                }
+            }
+        }
+        .description{
+          color: white;
+        }
+        .button__404{
+          padding: 10px 45px;
+          border: 1px solid $gray;
+          border-radius: 0;
+          text-transform: uppercase;
+          white-space: normal;
+          background-color: white;
+          font-weight: 600;
+          text-decoration: none;
+          &::after {        
+            background: black;          
+          }
+
+          &:hover {
+       
+            color:white;
+           
+          
+        }
+        }
+           
+       
+            
+    }
+
+}

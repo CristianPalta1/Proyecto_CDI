@@ -1,0 +1,455 @@
+/*contentAnchors*/
+.contentAnchors {
+  padding: 40px 0 60px 0;
+  @media (max-width: $tablet) {
+    padding: 40px 0 20px 0;
+  }
+  .content {
+    .c-content {
+      position: relative;
+      .contentAnchors__content {
+        .contentAnchors__left {
+          padding-right: 60px;
+          @media (max-width: $tablet) {
+            padding-right: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid $border_silver;
+          }
+          .fullHTML,
+          .fullhtml {
+            padding: 20px 0;
+            &:first-child {
+              padding-top: 0;
+            }
+            &:last-child {
+              padding-bottom: 0;
+            }
+            h2 {
+              font-size: 1.75rem;
+              line-height: 2.25rem;
+              margin-bottom: 20px;
+              @media (max-width: $tablet) {
+                font-size: 1.375rem;
+                line-height: 1.875rem;
+              }
+            }
+            h3 {
+              font-size: 1.25rem;
+              line-height: 1.55rem;
+              margin-bottom: 15px;
+              font-family: $latobold;
+              @media (max-width: $tablet) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+              }
+            }
+          }
+          .bannerVideo,
+          .fullHTML {
+            .container {
+              padding: 0;
+            }
+          }
+          p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+          strong {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+          span {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+          ul {
+            li {
+              font-size: 1rem;
+              line-height: 1.5rem;
+            }
+          }
+        }
+        .contentAnchors__right {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          @media (max-width: $tablet) {
+            padding-top: 30px;
+          }
+          aside {
+            width: 100%;
+            height: auto;
+            .linkButtons {
+              margin-bottom: 25px;
+              .btn-border {
+                width: 100%;
+                border-radius: 0;
+                padding: 10px 15px;
+                text-align: center;
+                &:first-child {
+                  margin-bottom: 15px;
+                  color: $color_white;
+                  background-color: $background_congress_blue;
+                }
+                &:hover {
+                  &:first-child {
+                    color: $color_congress_blue;
+                    background-color: $background_white;
+                  }
+                }
+              }
+            }
+            .infoProfession {
+              padding: 15px;
+              margin-bottom: 30px;
+              background-color: $background_alto;
+              .info {
+                p {
+                  padding: 2.5px 0;
+                  color: $color_boulder;
+                  font-size: 0.8125rem;
+                  line-height: 1.3125rem;
+                  font-family: $latoregular;
+                  span {
+                    color: $color_congress_blue;
+                    font-size: 0.8125rem;
+                    line-height: 1.3125rem;
+                    font-family: $latobold;
+                  }
+                }
+                .accreditation.panel-collapse {
+                  display: block;
+                  padding: 10px 10px;
+                  background-color: $background_white;
+                  border: 1px solid $border_congress_blue;
+                }
+              }
+              .centers {
+                padding-top: 20px;
+                .title {
+                  text-align: center;
+                }
+                .accordion {
+                  .accordion__item {
+                    .accordion__item-a {
+                      width: 100%;
+                      height: 40px;
+                      display: block;
+                      padding: 0 10px;
+                      position: relative;
+                      font-size: 0.875rem;
+                      line-height: 1.375;
+                      color: $color_white;
+                      font-family: $latobold;
+                      border: 1px solid $border_congress_blue;
+                      background-color: $background_congress_blue;
+                      display: flex;
+                      align-items: center;
+                    }
+                    .panel-collapse {
+                      display: block;
+                      padding: 10px 10px;
+                      background-color: $background_white;
+                      border: 1px solid $border_congress_blue;
+                      .priceGeneral {
+                        span {
+                          display: block;
+                          color: $color_congress_blue;
+                          font-size: 0.8125rem;
+                          line-height: 1.3125rem;
+                          font-family: $latobold;
+                        }
+                        label {
+                          display: block;
+                          color: $color_congress_blue;
+                          font-size: 0.8125rem;
+                          line-height: 1.3125rem;
+                          font-family: $latoregular;
+                        }
+                      }
+                      .priceCampus {
+                        margin: 15px 0;
+                        padding: 15px 10px;
+                        background-color: $background_big_stone;
+                        span {
+                          display: block;
+                          color: $color_white;
+                          font-size: 0.8125rem;
+                          line-height: 1.3125rem;
+                          font-family: $latobold;
+                        }
+                        label {
+                          display: block;
+                          color: $color_white;
+                          font-size: 1rem;
+                          line-height: 1.5rem;
+                          font-family: $latobold;
+                        }
+                      }
+                      .info {
+                        span:nth-child(2)::before {
+                          content: "\A";
+                          white-space: pre;
+                        }
+                        p {
+                          padding: 1.5rem 0;
+                        }
+                      }
+                      .text {
+                        a,
+                        p,
+                        span {
+                          color: $color_boulder;
+                          font-size: 0.75rem;
+                          line-height: 1.25rem;
+                          font-family: $latoregular;
+                        }
+                        a {
+                          text-decoration: underline !important;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .linksAncles {
+              margin-bottom: 30px;
+              &.offices {
+                @media (max-width: $mobile) {
+                  display: none;
+                }
+              }
+              ul {
+                display: flex;
+                flex-direction: column;
+                @media (max-width: $mobile) {
+                  padding: 0 15px;
+                }
+                li {
+                  padding: 0;
+                  border-top: 1px solid $border_alto;
+                  border-bottom: 1px solid $border_alto;
+                  &:before {
+                    display: none;
+                  }
+                  a {
+                    padding: 15px;
+                    display: block;
+                    font-size: 0.875rem;
+                    line-height: 1.375rem;
+                    &.active {
+                      color: $color_white;
+                      background-color: $background_congress_blue;
+                    }
+                  }
+                }
+              }
+            }
+            .linksInterest {
+              padding: 15px;
+              margin-bottom: 30px;
+              background-color: $background_golda;
+              ul {
+                margin: 0;
+                padding-top: 15px;
+
+                display: flex;
+                flex-direction: column;
+                li {
+                  padding: 5px 0;
+                  &:before {
+                    display: none;
+                  }
+                  a {
+                    padding: 0;
+                    &:hover {
+                      color: $color_white;
+                      background-color: transparent;
+                    }
+                  }
+                }
+              }
+            }
+            .infoContact {
+              padding: 15px;
+              margin-bottom: 30px;
+              background-color: $background_alto;
+              .infoContact__item {
+                padding-bottom: 15px;
+
+                display: flex;
+                flex-direction: row;
+                &:last-child {
+                  padding-bottom: 0;
+                }
+                .icon {
+                  margin-right: 10px;
+                  .icon-icon-message2 {
+                    color: $color_congress_blue;
+                    font-size: 0.75rem;
+                  }
+                  .icon-icon-marker2 {
+                    color: $color_congress_blue;
+                    font-size: 0.95rem;
+                  }
+                  .icon-icon-clock {
+                    color: $color_congress_blue;
+                    font-size: 0.85rem;
+                  }
+                  .icon-icon-contact2 {
+                    color: $color_congress_blue;
+                    font-size: 0.95rem;
+                  }
+                }
+                .text {
+                  span {
+                    color: $color_congress_blue;
+                    font-size: 0.8125rem;
+                    font-family: $latobold;
+                  }
+                  a,
+                  label {
+                    display: block;
+                    font-size: 0.8125rem;
+                  }
+                }
+              }
+            }
+            .moreInformation {
+              margin-bottom: 30px;
+              span {
+                color: $color_congress_blue;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-family: $latobold;
+              }
+              .accordion {
+                padding-top: 5px;
+                .accordion__item {
+                  .accordion__item-a {
+                    width: 100%;
+                    height: 40px;
+                    display: block;
+                    padding: 0 10px;
+                    position: relative;
+                    font-size: 0.875rem;
+                    font-family: $latoregular;
+
+                    color: $color_congress_blue;
+                    border: 1px solid $border_congress_blue;
+                    background-color: $background_white;
+
+                    display: flex;
+                    align-items: center;
+                    .icon-icon-arrow-down {
+                      right: 10px;
+                      color: $color_big_stone;
+                      font-size: 0.5rem;
+                      position: absolute;
+                      transition: all 0.25s;
+                    }
+                  }
+                  .accordion__item-a[aria-expanded="true"] {
+                    font-family: $latobold;
+
+                    color: $color_white;
+                    border: 1px solid $border_congress_blue;
+                    background-color: $background_congress_blue;
+                    .icon-icon-arrow-down {
+                      color: $color_white;
+                    }
+                  }
+                  .panel-collapse {
+                    padding: 10px 10px;
+                    background-color: $background_white;
+                    border: 1px solid $border_congress_blue;
+                    .priceGeneral {
+                      span {
+                        display: block;
+                        color: $color_congress_blue;
+                        font-size: 0.8125rem;
+                        line-height: 22px;
+                        font-family: $latobold;
+                      }
+                      label {
+                        display: block;
+                        color: $color_congress_blue;
+                        font-size: 0.8125rem;
+                        line-height: 22px;
+                        font-family: $latoregular;
+                      }
+                    }
+                    .priceCampus {
+                      margin: 15px 0;
+                      padding: 15px 10px;
+                      background-color: $background_big_stone;
+                      span {
+                        display: block;
+                        color: $color_white;
+                        font-size: 0.8125rem;
+                        line-height: 22px;
+                        font-family: $latobold;
+                      }
+                      label {
+                        display: block;
+                        color: $color_white;
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                        font-family: $latobold;
+                      }
+                    }
+                    .text {
+                      a,
+                      p,
+                      span {
+                        color: $color_boulder;
+                        font-size: 0.75rem;
+                        line-height: 16px;
+                        font-family: $latoregular;
+                      }
+                      a {
+                        text-decoration: underline !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Imagenes en sistema uniminuto temporal ya que las actuales se ven grandes y pixeladas*/
+.page-node-type-historia,
+.page-node-type-mision-uniminuto {
+  .contentAnchors {
+    .container {
+      .content {
+        .c-content {
+          .contentAnchors__content {
+            .contentAnchors__left {
+              .fullHTML {
+                .container {
+                  .content {
+                    .c-content {
+                      .fullHTML__content {
+                        img {
+                          width: auto;
+                          display: block;
+                          margin: auto;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

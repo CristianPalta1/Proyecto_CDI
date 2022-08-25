@@ -1,0 +1,801 @@
+.page-node-type-pagina-generica-biblioteca,
+.page-node-type-base-datos-biblioteca,
+.page-node-type-libros-electronicos-biblioteca {
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+    .views-element-container {
+        header {
+            width: 1450px;
+            padding: 0 1.3rem;
+            margin: 2rem auto;
+            @media (max-width: $desktop_1366) {
+                padding: 0 7.3rem;
+            }
+            @media (max-width: $desktop_1280) {
+                padding: 0 5rem;
+            }
+            @media (max-width: $desktop_1024) {
+                padding: 0 3rem;
+            }
+            @media (max-width: $mobile) {
+                width: 313px;
+                margin: 2rem 0.6rem;
+                padding: 0 0 !important;
+            }
+            h2 {
+                color: $background_congress_blue;
+                font-size: 46px;
+                font-weight: 900;
+                // margin-bottom: -15px;
+                @media (max-width: $mobile) {
+                    font-size: 35px !important;
+                    line-height: 37px !important;
+                    margin-bottom: 2rem;
+                }
+            }
+            p {
+                color: #777777;
+                font-size: 16px;
+            }
+        }
+        .views--db--demostration {
+            margin-top: 6rem;
+            @media (max-width: $mobile) {
+                margin-top: 2rem;
+            }
+            .slider-data-bases {
+                padding: 32px 0 0 0 !important;
+                z-index: 1;
+                @media (max-width: $mobile) {
+                    margin-top: 0px !important;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $border_congress_blue;
+                    opacity: 0.96;
+                    z-index: -1;
+                }
+                .container {
+                    .view-footer {
+                        display: none;
+                        .clearfix {
+                            p {
+                                img {
+                                    height: 561px;
+                                }
+                            }
+                        }
+                    }
+
+                    .content {
+                        margin-left: -19px;
+                        .title-db {
+                            padding: 0 20px;
+                            box-sizing: border-box;
+
+                            h3 {
+                                font-size: 30px;
+                                font-weight: 500;
+                                color: white;
+                                @media (max-width: $mobile) {
+                                    font-size: 27px;
+                                    line-height: 36px !important;
+                                }
+                            }
+                        }
+                        .c-content {
+                            max-width: 1450px;
+                            position: relative;
+                            box-sizing: border-box;
+                            padding: 0 20px;
+                            .sliderCards__content {
+                                .owl-stage,
+                                .owl-stage-outer {
+                                    height: 405px;
+                                    .owl-item {
+                                        width: 100%;
+                                        .views-row {
+                                            background-color: white;
+                                            height: 325px;
+                                            width: 100%;
+                                            // width: 263px !important;
+                                            .container-img-db {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                padding: 1rem 0.25rem;
+                                                background-color: white;
+                                                img {
+                                                    max-height: 105px;
+                                                    min-height: 105px;
+                                                    height: 105px !important;
+                                                    max-width: 246px !important;
+                                                    width: 100%;
+                                                }
+                                            }
+
+                                            .container-resume-db {
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                align-items: flex-start;
+                                                padding: 10px 0 1px 0;
+                                                &::before {
+                                                    content: "";
+                                                    width: 100%;
+                                                    height: 1px;
+                                                    background-color: #eee;
+                                                }
+                                                span {
+                                                    width: 70%;
+                                                    margin-top: 1rem;
+                                                    padding: 0 1rem;
+                                                    @media (max-width: $desktop_1280) {
+                                                        margin-top: 0.5rem;
+                                                    }
+                                                    a {
+                                                        padding: 0 !important;
+                                                        font-size: 13px !important;
+                                                        color: $border_congress_blue;
+                                                        font-weight: 900 !important;
+                                                        font-family: "Montserrat", sans-serif;
+                                                    }
+                                                }
+                                                p {
+                                                    padding: 1rem 1rem;
+                                                    color: $color-fonts-library;
+                                                    font-family: Arial, Helvetica, sans-serif;
+                                                    font-size: 13px !important;
+                                                    @media (max-width: $desktop_1280) {
+                                                        padding: 0.6rem 1rem;
+                                                    }
+                                                }
+                                                a {
+                                                    padding: 0 1rem;
+                                                    font-size: 11px !important;
+                                                    color: $color_big_stone;
+                                                    text-decoration: underline !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .owl-nav {
+                                    position: absolute;
+                                    right: 0;
+                                    bottom: 0% !important;
+                                    button {
+                                        i {
+                                            background-color: $border_congress_blue !important;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                                .owl-dots {
+                                    bottom: 3% !important;
+                                    button {
+                                        span {
+                                            background-color: white !important;
+                                        }
+                                    }
+                                }
+                                .No-sliderCards {
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: row;
+                                    gap: 15px;
+                                    margin-bottom: 30px;
+                                    .views-row {
+                                        background-color: white;
+                                        height: 325px;
+                                        max-width: 263px;
+                                        width: 100%;
+                                        // width: 263px !important;
+                                        .container-img-db {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            padding: 1rem 0.25rem;
+                                            background-color: white;
+                                            img {
+                                                max-height: 105px;
+                                                min-height: 105px;
+                                                height: 105px !important;
+                                                max-width: 246px !important;
+                                                width: 100%;
+                                            }
+                                        }
+
+                                        .container-resume-db {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: flex-start;
+                                            padding: 10px 0 1px 0;
+                                            &::before {
+                                                content: "";
+                                                width: 100%;
+                                                height: 1px;
+                                                background-color: #eee;
+                                            }
+                                            span {
+                                                width: 70%;
+                                                margin-top: 1rem;
+                                                padding: 0 1rem;
+                                                @media (max-width: $desktop_1280) {
+                                                    margin-top: 0.5rem;
+                                                }
+                                                a {
+                                                    padding: 0 !important;
+                                                    font-size: 13px !important;
+                                                    color: $border_congress_blue;
+                                                    font-weight: 900 !important;
+                                                    font-family: "Montserrat", sans-serif;
+                                                }
+                                            }
+                                            p {
+                                                padding: 1rem 1rem;
+                                                color: $color-fonts-library;
+                                                font-family: Arial, Helvetica, sans-serif;
+                                                font-size: 13px !important;
+                                                @media (max-width: $desktop_1280) {
+                                                    padding: 0.6rem 1rem;
+                                                }
+                                            }
+                                            a {
+                                                padding: 0 1rem;
+                                                font-size: 11px !important;
+                                                color: $color_big_stone;
+                                                text-decoration: underline !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .views-exposed-form {
+            background-color: $border_gallery;
+
+            @media (max-width: $mobile) {
+                padding: 2rem 1rem;
+                height: 523px;
+            }
+            .form--inline {
+                position: relative;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr) 146px 1fr;
+                grid-template-rows: 100px 30px 100px;
+                grid-template-areas:
+                    ". tematica conocimiento buscador btn ."
+                    ". . . . . ."
+                    ". abc abc abc abc .";
+                width: 100%;
+                height: 285px;
+                align-items: end;
+                @media (max-width: $desktop_1100) {
+                    grid-template-columns: 100px repeat(3, 1fr) 146px 100px;
+                }
+                @media (max-width: $mobile) {
+                    grid-template-columns: repeat(1, 1fr);
+                    height: 297px;
+                    padding: 2rem 0;
+                    background-color: white;
+                    grid-template-rows: repeat(5, 50px) 1fr;
+                    grid-template-areas:
+                        "tematica"
+                        "conocimiento "
+                        "buscador"
+                        "."
+                        "btn"
+                        " abc ";
+                    justify-items: center;
+                    align-items: center;
+                }
+                //Area tematica
+                .js-form-item-field-area-tematica-target-id,
+                .js-form-item-field-modalidad-target-id {
+                    grid-area: tematica;
+
+                    width: 100%;
+                    @media (max-width: $mobile) {
+                        width: 90%;
+                    }
+                }
+                //Area Conocimiento
+                .js-form-item-field-area-del-conocimiento-target-id {
+                    grid-area: conocimiento;
+
+                    width: 100%;
+                    @media (max-width: $mobile) {
+                        width: 90%;
+                    }
+                }
+                //Buscador
+                .form-item-combine {
+                    grid-area: buscador;
+
+                    width: 100%;
+                    @media (max-width: $mobile) {
+                        width: 90%;
+                    }
+                }
+                //Radio Butons y letras
+                .fieldgroup {
+                    grid-area: abc;
+                    padding: 0 3px;
+                    width: 100%;
+                    @media (max-width: $mobile) {
+                        height: 210px;
+                        margin-top: 2.75rem;
+                    }
+                    .form-radios {
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        @media (max-width: $mobile) {
+                            display: block;
+                        }
+                        .form-item {
+                            width: 40px;
+                            height: 34px;
+                            display: inline-block;
+                            white-space: normal;
+                            vertical-align: top;
+                            text-align: center;
+                            .form-radio {
+                                display: none;
+                            }
+                            label {
+                                font-size: 12px;
+                                font-weight: 900;
+                                color: $background_big_stone;
+                                cursor: pointer;
+                                &.active {
+                                    border: 1px solid black;
+                                    border-top: none;
+                                    border-left: none;
+                                    border-right: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                //Botones
+                .form-actions {
+                    display: block;
+                    width: 100%;
+                    grid-area: btn;
+
+                    @media (max-width: $mobile) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    input:nth-of-type(1) {
+                        width: 146px;
+                        font-size: 16px;
+                        border-radius: 0px;
+                        font-weight: 900;
+
+                        @media (max-width: $mobile) {
+                            width: 90%;
+                            border-radius: 4px;
+                        }
+                    }
+                    &::before {
+                        content: "X |";
+                        color: $background_dusty_gray;
+                        width: 20px;
+                        height: 20px;
+                        font-size: 13px;
+                        position: absolute;
+                        top: 44.7%;
+                        left: 19.3%;
+                        z-index: 1;
+                        &:hover {
+                            color: white;
+                        }
+                        @media (max-width: $desktop_1280) {
+                            top: 45%;
+                            left: 17.5%;
+                        }
+                        @media (max-width: $desktop_1100) {
+                            left: 10%;
+                        }
+                        @media (max-width: $mobile) {
+                            top: 65%;
+                            left: 7%;
+                            background-color: #fafafa;
+                            color: $background_dusty_gray;
+                        }
+                    }
+                    input:nth-of-type(2) {
+                        position: absolute;
+                        top: 42.5%;
+                        left: 18.6%;
+                        margin: 0;
+                        height: 32px;
+                        margin: 0;
+                        width: 133px;
+                        font-size: 12px;
+                        border-radius: 0;
+                        background-color: white;
+                        border-color: transparent;
+                        color: $background_dusty_gray;
+                        &:hover {
+                            background-color: $background_dusty_gray;
+                            color: white;
+                            // @media (max-width: $mobile) {
+                            //     background-color: $background_silver;
+                            //     color: $background_dusty_gray;
+                            // }
+                        }
+                        @media (max-width: $desktop_1280) {
+                            left: 17.8%;
+                        }
+                        @media (max-width: $desktop_1100) {
+                            left: 9.3%;
+                        }
+                        @media (max-width: $mobile) {
+                            background-color: #fafafa;
+                            color: $background_dusty_gray;
+                            top: 63%;
+                            left: 5%;
+                        }
+                    }
+                }
+            }
+        }
+        .show-books-dbs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $border_gallery;
+            padding-top: 3rem;
+            @media (max-width: $mobile) {
+                padding-top: 5rem;
+            }
+            .container-books-list-db {
+                display: grid;
+                grid-template-columns: repeat(4, minmax(100px, 359px));
+                gap: 1.75em;
+                justify-items: center;
+                align-items: center;
+                @media (max-width: $desktop_1366) {
+                    grid-template-columns: repeat(4, minmax(100px, 288px));
+                    gap: 1rem;
+                }
+                @media (max-width: $desktop_1280) {
+                    grid-template-columns: repeat(4, minmax(100px, 223px));
+                    gap: 1rem;
+                }
+                @media (max-width: $desktop_1024) {
+                    grid-template-columns: repeat(4, minmax(100px, 223px));
+                    gap: 0.75em;
+                }
+
+                @media (max-width: $tablet) {
+                    grid-template-columns: repeat(2, minmax(100px, 322px));
+                    gap: 3.75em;
+                }
+                @media (max-width: $mobile) {
+                    grid-template-columns: repeat(1, minmax(100px, 322px));
+                    gap: 1.75em;
+                }
+                .views-row {
+                    height: 335px;
+                    width: 100%;
+                    position: relative;
+                    max-width: 267px;
+                    .container-img-book-db {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem 0.25rem;
+                        background-color: white;
+                        img {
+                            max-height: 105px;
+                            min-height: 105px;
+                            height: 105px !important;
+                            max-width: 246px !important;
+                            width: 100%;
+                        }
+                    }
+                    .container-resume-book-db {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding: 10px 1rem 1px 0.45rem;
+                        span {
+                            width: 70%;
+                            a {
+                                font-size: 13px !important;
+                                color: $border_congress_blue;
+                                font-weight: 900 !important;
+                                font-family: "Montserrat", sans-serif;
+                            }
+                        }
+                        p {
+                            width: 246px;
+                            color: $color-fonts-library;
+                            padding: 14px 0;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 13px !important;
+                        }
+                        a {
+                            font-size: 11px !important;
+                            color: $color_big_stone;
+                            text-decoration: underline !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .views-details-book-video-pdf,
+    .views-details-book-video {
+        @media (max-width: $mobile) {
+            padding: 2rem 0;
+        }
+        .container-detail-general-column {
+            display: flex;
+            flex: auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .container-image-detail-book {
+                height: 105px !important;
+                max-width: 246px !important;
+                width: 100%;
+                max-height: 105px !important;
+                .picture {
+                    img {
+                        height: 105px;
+                        width: 246px;
+                    }
+                }
+            }
+            .container-title-detail-book {
+                max-width: 368px;
+                width: 100%;
+                height: 85px;
+                h2 {
+                    font-size: 24px !important;
+                    color: $border_congress_blue;
+                    font-weight: 900;
+                    font-family: "Montserrat", sans-serif;
+                    text-align: center;
+                }
+            }
+            .container-resume-detail-book {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-self: center;
+                width: 50%;
+                row-gap: 1.75rem;
+                @media (max-width: $mobile) {
+                    width: 100% !important;
+                    padding: 0 2rem !important;
+                }
+                .container-resume-area,
+                .container-resume-description,
+                .container-resume-help,
+                .container-resume-tutorial {
+                    h3 {
+                        color: $color_big_stone !important;
+                        font-size: 16px;
+                        font-weight: 900;
+                    }
+                    p {
+                        color: $color_boulder;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .container-button-pdf {
+                padding: 2rem 0;
+                a {
+                    padding: 1rem 2rem;
+                    color: $border_congress_blue;
+                    font-size: 16px;
+                    font-weight: 900;
+                    border-radius: 4px;
+                    border: 1px solid $border_congress_blue;
+                }
+            }
+            .container-video {
+                margin-top: 2rem;
+                max-width: 758px !important;
+                max-height: 447px !important;
+                height: 447px !important;
+                width: 100%;
+                @media (max-width: $mobile) {
+                    padding: 0 2rem;
+                }
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .views-details-book-video {
+        .container-detail-general-column {
+            display: flex;
+            flex: auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .container-image-detail-book {
+                height: 105px !important;
+                max-width: 246px !important;
+                width: 100%;
+                max-height: 105px !important;
+                .picture {
+                    img {
+                        height: 105px;
+                        width: 246px;
+                    }
+                }
+            }
+            .container-title-detail-book {
+                max-width: 368px;
+                width: 100%;
+                height: 85px;
+                h2 {
+                    font-size: 24px !important;
+                    color: $border_congress_blue;
+                    font-weight: 900;
+                    font-family: "Montserrat", sans-serif;
+                    text-align: center;
+                }
+            }
+            .container-resume-detail-book {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-self: center;
+                width: 50%;
+                row-gap: 1.75rem;
+
+                padding: 0.6rem 0;
+                .container-resume-area,
+                .container-resume-description,
+                .container-resume-help,
+                .container-resume-tutorial {
+                    h3 {
+                        color: $color_big_stone !important;
+                        font-size: 16px;
+                        font-weight: 900;
+                    }
+                    p {
+                        color: $color_boulder;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .container-button-pdf {
+                padding: 2rem 0;
+                a {
+                    padding: 1rem 2rem;
+                    color: $border_congress_blue;
+                    font-size: 16px;
+                    font-weight: 900;
+                    border-radius: 4px;
+                    border: 1px solid $border_congress_blue;
+                }
+            }
+        }
+    }
+    .views-details-book-pdf {
+        padding: 1rem 3rem;
+        margin: 1rem auto;
+        box-sizing: border-box;
+        .container-detail-general-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: $mobile) {
+                flex-direction: column;
+            }
+            .container-image-title {
+                display: flex;
+                flex-direction: column;
+                width: 800px;
+                justify-content: center;
+                align-items: center;
+                @media (max-width: $mobile) {
+                    width: auto;
+                }
+                .container-image-detail-book {
+                    height: 105px !important;
+                    max-width: 246px !important;
+                    width: 100%;
+                    max-height: 105px !important;
+                    picture {
+                        img {
+                            height: 105px;
+                            width: 246px;
+                        }
+                    }
+                }
+                .container-title-detail-book {
+                    max-width: 368px;
+                    height: 85px;
+                    width: 100%;
+                    h2 {
+                        font-size: 24px !important;
+                        color: $border_congress_blue;
+                        font-weight: 900;
+                        font-family: "Montserrat", sans-serif;
+                        text-align: center;
+                    }
+                }
+            }
+            .container-resume-button {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 800px;
+                row-gap: 1.75rem;
+                @media (max-width: $mobile) {
+                    width: auto;
+                    margin-bottom: 2rem;
+                }
+                .container-resume-area,
+                .container-resume-description,
+                .container-resume-help,
+                .container-resume-tutorial {
+                    h3 {
+                        color: $color_big_stone !important;
+                        font-size: 16px;
+                        font-weight: 900;
+                    }
+                    p {
+                        color: $color_boulder;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+
+                .container-button-pdf {
+                    margin-left: 12rem;
+                    padding: 2rem 0;
+                    @media (max-width: $mobile) {
+                        margin-left: 0 !important;
+                        padding: 0 0 !important;
+                    }
+                    @media (max-width: $tablet) {
+                        margin-left: 0 !important;
+                        padding: 0 0 !important;
+                    }
+                    a {
+                        padding: 1rem 2rem;
+                        color: $border_congress_blue;
+                        font-size: 16px;
+                        font-weight: 900;
+                        border-radius: 4px;
+                        border: 1px solid $border_congress_blue;
+                    }
+                }
+            }
+        }
+    }
+}

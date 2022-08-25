@@ -1,0 +1,59 @@
+/*tagsArticle*/
+.tagsArticle {
+  padding: 0 0 60px 0;
+  @media (max-width: $mobile) {
+    padding: 0 0 40px 0;
+  }
+  .content {
+    .c-content {
+      .tagsArticle__content {
+        width: 90%;
+        margin: 0 auto;
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
+        ul {
+          width: 100%;
+          padding: 15px 0;
+          border-top: 1px solid $border_silver_chalice;
+          border-bottom: 1px solid $border_silver_chalice;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          @media (max-width: $mobile) {
+            width: auto;
+            overflow-x: scroll;
+            white-space: nowrap;
+            justify-content: inherit;
+          }
+          li {
+            padding: 0 15px;
+            position: relative;
+            color: $color_big_stone;
+            &:after {
+              content: "";
+              top: 0;
+              right: 0;
+              bottom: 0;
+              width: 1px;
+              height: 10px;
+              margin: auto;
+              position: absolute;
+              background-color: $background_big_stone;
+            }
+            &:last-child {
+              &:after {
+                display: none;
+              }
+            }
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

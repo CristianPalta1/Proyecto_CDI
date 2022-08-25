@@ -1,0 +1,236 @@
+article {
+    .node__content {
+        .layout--onecol {
+            .layout__region--content {
+                .block-block-content4f9e0204-79ed-434a-9c0f-44f883c0587c {
+                    .contact-page {
+
+                        //banner
+                        .contact-page__background {
+                            .block-field-blockblock-contentcontactimage-desktop {
+                                .field--name-image-desktop {
+                                    picture {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .contact-page__info {
+                            text-align: center;
+                            display: grid;
+                            grid-template-columns: 20.4rem 1fr 20.4rem;
+                            grid-template-areas: ". forms .";
+                            margin-top: -91rem;
+                            @include media-query(desktopXXL) {
+                                margin-top: -68rem;
+                            }
+                            @include media-query(desktopXL) {
+                                margin-top: -65rem;
+                            }
+                            @include media-query(desktopLSS) {
+                                margin-top: -56rem;
+                            }
+                            @include media-query(desktopLS) {
+                                margin-top: -39rem;
+                            }
+                            @include media-query(tablet) {
+                                grid-template-columns: 3rem 1fr 3rem;
+                                margin-top: -26rem;
+                            }
+                            @include media-query(mobilexl) {
+                                grid-template-columns: 3rem 1fr 3rem;
+                                margin-top: -48rem;
+                            }
+                            @include media-query(mobilex) {
+                                grid-template-columns: 3rem 1fr 3rem;
+                                margin-top: -35rem;
+                            }
+
+                            .contact-page__text {
+                                grid-area: forms;
+                                background: $backgroun-item-form;
+                                box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 16%);
+                                padding: 0 14rem;
+                                @include media-query(desktopLSS) {
+                                    padding: 0 7rem;
+                                }
+                                @include media-query(mobile) {
+                                    padding: 0 0rem;
+                                }
+                                .contact-page__title {
+                                    .block-field-blockblock-contentcontacttitle {
+                                        .field--name-title {
+                                            .products_featured__header {
+                                                margin: 0.4rem 0 !important;
+
+                                                h1 {
+                                                    &::after {
+                                                        bottom: -3%;
+                                                        right: 17%;
+                                                        transform: translate(-17%, 3%);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .contact-page__body {
+                                    margin: 0rem 12.3rem 3.5rem;
+
+                                    @include media-query(tablet) {
+                                        margin: 0rem 2.3rem 3.5rem;
+                                    }
+                                }
+
+                                .contact-page__subtitle-1,
+                                .contact-page__subtitle-2 {
+                                    margin: 1rem 6rem;
+
+                                    .field--name-sub-title,
+                                    .field--name-sub-title-2 {
+                                        font-weight: 800;
+                                    }
+                                }
+
+                                .contact-page__virtual-advisor {
+                                    margin: 3rem;
+
+                                    .field--name-virtual-advisor {
+                                        justify-content: center;
+                                        display: flex;
+
+                                        a {
+                                            padding: 0.8rem 2.8rem 0.8rem 4.8rem;
+                                            border: 1px solid $color-black;
+                                            border-radius: 0.8rem;
+                                            font-weight: $semibold;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 24%;
+                                            height: 3.8rem;
+                                            font-weight: 700;
+                                            padding: 1rem 1.5rem;
+                                            border-radius: 0.6rem;
+                                            text-transform: uppercase;
+                                            text-decoration: none;
+                                            @include media-query(desktopLS) {
+                                                width: 51%;
+                                            }
+                                            @include media-query(mobile) {
+                                                width: 80%;
+                                            }
+
+                                            @include media-query(mobilexl) {
+                                                width: 93%;
+                                            }
+
+                                            &:hover {
+                                                transition: all .5s;
+                                                background: $color-black;
+                                                color: white;
+                                                text-decoration: none;
+                                            }
+
+                                            &::before {
+                                                content: "";
+                                                background-image: url("./assets/img/whatsapp_icon.svg");
+                                                background-size: contain;
+                                                background-repeat: no-repeat;
+                                                background-position: center center;
+                                                width: 3.2rem;
+                                                height: 3.1rem;
+                                                margin-right: 0.8rem;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        .contact-page__items {
+                            .contact-page__item {
+                                margin: 6rem 0 5rem 0;
+
+                                .block-field-blockblock-contentcontactcontact-item {
+                                    .field--name-contact-item {
+                                        display: grid;
+                                        grid-template-columns: repeat(3, 1fr);
+                                        background: $color-black;
+                                        text-align: center;
+                                        border-top: 0.5px solid $color-input-border;
+
+                                        @include media-query(mobile) {
+                                            grid-template-columns: repeat(1, 1fr)
+                                        }
+
+                                        .field__item {
+
+                                            .contact-item {
+                                                margin: 2rem 0;
+                                                transform: translateY(-5rem);
+
+                                                @include media-query(mobile) {
+                                                    transform: translateY(0rem);
+                                                }
+
+                                                .contact-item__icon {
+                                                    width: 5.5rem;
+                                                    margin: 0 auto;
+
+                                                    img {
+                                                        width: 100%;
+                                                    }
+                                                }
+
+                                                .contact-item__white {
+                                                    .contact-item__title {
+                                                        display: inline-block;
+                                                        position: relative;
+                                                        margin: 4.4rem 0 2rem;
+                                                        color: $color-white;
+                                                        font-weight: $bold;
+
+                                                        &::after {
+                                                            content: "";
+                                                            width: 2rem;
+                                                            height: 0.24rem;
+                                                            background-color: #fd171f;
+                                                            position: absolute;
+                                                            left: 0;
+                                                            bottom: -0.3rem;
+                                                            
+
+
+                                                        }
+                                                    }
+
+                                                    .contact-item__body {
+                                                        p {
+                                                            color: $color-white;
+                                                            a{
+                                                                color: $color-white;
+                                                                text-align: center;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,708 @@
+.user-form-page {
+    display: flex;
+    align-items: center;
+    // height: 120vh;
+    background-color: $color-background-product;
+
+    @include media-query(tablet) {
+        display: grid;
+        grid-template-columns: 2rem 1fr 2rem;
+        grid-template-areas:
+            "banner banner banner"
+            ". formLogin .";
+        height: initial;
+    }
+
+    .user-form-page__wallpaper {
+
+        // height: 120vh;
+        @include media-query(tablet) {
+            grid-area: banner;
+            height: initial;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+
+    .user-form-page__user-form {
+        @include media-query(tablet) {
+            grid-area: formLogin;
+        }
+
+        .layout-container {
+            background-color: $color-white;
+            border-radius: 0.6rem;
+            transform: translateX(-9rem);
+            text-align: center;
+            position: relative;
+            padding: 4rem;
+            box-shadow: 0 0.2rem 0.4rem rgba($color: #000, $alpha: 0.16);
+
+            @include media-query(desktopLS) {
+                transform: translateX(-8rem);
+            }
+
+            @include media-query(tablet) {
+                transform: translateX(0rem);
+                transform: translateY(-10rem);
+                padding: 0;
+            }
+
+            main {
+                padding: 0;
+
+                @include media-query(tablet) {
+                    padding: 3rem;
+                }
+            }
+
+            .user-form-page__page-title {
+                font-size: 3rem;
+                font-weight: 900;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 0.8rem 0;
+                font-weight: 900;
+                position: relative;
+                display: inline-block;
+
+                @include media-query(desktopLS) {
+                    font-size: 2rem;
+                }
+
+                @include media-query(desktopL) {
+                    font-size: 1.9rem;
+                }
+
+                @include media-query(desktop) {
+                    font-size: 1.7rem;
+
+                }
+
+                &::after {
+                    content: "";
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    background-color: $color-input;
+                    border-radius: 50%;
+                    border: none;
+                    position: absolute;
+                    bottom: 4%;
+                    right: 7.7%;
+                    transform: translate(-4%, -7.7%);
+                    z-index: 4;
+                }
+            }
+
+            .region-content {
+                .alert-success {
+                    display: none !important;
+                }
+
+                #block-calizo-local-tasks {
+                    display: none;
+
+                    nav.tabs {
+                        nav {
+                            ul {
+                                li {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #block-calizo-content {
+
+                    ///Formulario login
+                    form.user-login-form {
+                        text-align: start;
+                        display: grid;
+                        grid-template-columns: 8.5rem 10.5rem 3rem 10.5rem 8.5rem;
+                        grid-template-areas:
+                            "login login login login login"
+                            "pass pass pass pass pass"
+                            "remember remember . forgot forgot"
+                            ". btn btn btn ."
+                            ". btn2 btn2 btn2 .";
+                        gap: 1rem;
+
+                        @include media-query(desktopLS) {
+                            grid-template-columns: 7.5rem 9.5rem 3rem 9.5rem 7.5rem;
+                        }
+
+                        @include media-query(tablet) {
+                            grid-template-areas:
+                                "login login login"
+                                "pass pass pass"
+                                "remember remember ."
+                                ". forgot ."
+                                ". btn ."
+                                ". btn2 .";
+                            grid-template-columns: 1rem 1fr 1rem;
+                        }
+
+                        .js-form-item {
+                            margin: 0;
+                        }
+
+                        .js-form-type-email,
+                        .js-form-type-password {
+                            .js-form-required {
+                                margin-bottom: 0.6rem;
+                                font-size: 1.2rem;
+                            }
+
+                            input {
+                                height: 3.7rem;
+                                border-radius: 0.6rem;
+                            }
+                        }
+
+                        .js-form-type-email {
+                            grid-area: login;
+
+                            #edit-name--description {
+                                display: none;
+                            }
+
+                            #edit-mail--description {
+                                display: none;
+                            }
+
+                            .js-form-required {
+                                margin-bottom: 0.6rem;
+                                font-size: 1.2rem;
+                            }
+
+                            input {
+                                height: 3.7rem;
+                                border-radius: 0.6rem;
+                            }
+                        }
+
+                        .js-form-type-password {
+                            grid-area: pass;
+
+                            .form-item-pass-pass1 {}
+
+                            .form-item-pass-pass2 {
+                                .js-password-confirm-message {
+                                    display: none;
+                                }
+                            }
+
+                            #edit-pass--description {
+                                display: none;
+                            }
+
+                            .password-strength {
+                                display: none;
+                            }
+
+                            .description {
+                                display: none;
+                            }
+                        }
+
+                        .js-form-item-persistent-login {
+                            grid-area: remember;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: 0.4rem;
+
+                            label {
+                                font-weight: 300;
+                            }
+                        }
+
+                        .forgot_password_link {
+                            grid-area: forgot;
+                            text-align: end;
+
+                            @include media-query(tablet) {
+                                text-align: center;
+                            }
+
+                            a {
+                                text-decoration: underline;
+                                font-weight: 600;
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        .form-actions {
+                            grid-area: btn;
+                            text-align: center;
+                            justify-content: center;
+
+                            input {
+                                display: block;
+                                width: 100%;
+                                height: 4.5rem;
+                                border-radius: 0.6rem;
+                                font-size: 1.4rem;
+                                background-color: $color-input;
+                                border: 0.1rem solid $color-input-border;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        .more-links {
+                            grid-area: btn2;
+                            .forgot_password_link {
+                                display: none;
+                            }
+                            .register_button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 0.8rem;
+
+                                @include media-query(tablet) {
+                                    flex-direction: column;
+                                }
+
+                                span {
+                                    font-size: 1.2rem;
+                                    font-weight: 300;
+                                    color: $color-black;
+                                }
+
+                                #edit-register-button {
+                                    font-weight: 700;
+                                    color: $color-black;
+                                    margin: 0;
+                                    padding: 0;
+                                    font-size: 1.3rem;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+
+                    ///Formulario registro
+                    form.user-register-form {
+                        text-align: start;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-areas: "names""tel""email""terms""btn""login";
+                        width: 45rem;
+
+                        @include media-query(desktopXL) {
+                            width: 40rem;
+                            margin: 1rem 7rem;
+                        }
+
+                        @include media-query(desktopL) {
+                            width: 21rem;
+                        }
+
+                        @include media-query(tablet) {
+                            margin: 1rem;
+                            width: 90%;
+                        }
+
+                        .js-form-item {
+                            margin: 0;
+                        }
+
+                        .js-form-type-email {
+
+                            // grid-area: login;
+                            #edit-name--description {
+                                display: none;
+                            }
+
+                            #edit-mail--description {
+                                display: none;
+                            }
+                        }
+
+                        #edit-fullname-wrapper {
+                            grid-area: names;
+                        }
+
+                        #edit-phone-wrapper {
+                            grid-area: tel;
+                        }
+
+                        #edit-account {
+                            grid-area: email;
+                        }
+
+                        #edit-terms-of-use {
+                            grid-area: terms;
+                        }
+
+                        #edit-more-links {
+                            grid-area: login;
+
+                            .register_button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 0.6rem;
+
+                                span {
+                                    font-size: 1.2rem;
+                                    font-weight: 300;
+                                    color: $color-black;
+                                }
+
+                                a {
+                                    font-weight: 700;
+                                    color: $color-black;
+                                    margin: 0;
+                                    padding: 0;
+                                    font-size: 1.3rem;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+
+                        #edit-fullname-wrapper,
+                        #edit-phone-wrapper,
+                        #edit-account {
+                            .js-form-required {
+                                margin-bottom: 0.6rem;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                            }
+
+                            input {
+                                height: 3.7rem;
+                                border-radius: 0.6rem;
+                            }
+                        }
+
+                        #edit-account {
+                            .js-form-type-password-confirm {
+
+                                // grid-area: pass;
+                                .form-item-pass-pass1 {}
+
+                                .form-item-pass-pass2 {
+                                    .js-password-confirm-message {
+                                        display: none;
+                                    }
+
+                                    .description {
+                                        display: none;
+                                    }
+                                }
+
+                                #edit-pass--description {
+                                    display: none;
+                                }
+
+                                .password-strength {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        #edit-terms-of-use {
+                            summary {
+                                display: none;
+                            }
+
+                            .details-wrapper {
+                                padding: 0;
+
+                                .js-form-item-terms-of-use-checkbox {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    gap: 0.6rem;
+                                }
+                            }
+                        }
+
+                        .forgot_password_link {}
+
+                        .form-actions {
+                            grid-area: btn;
+                            text-align: center;
+                            display: flex;
+                            justify-content: center;
+
+                            input {
+                                display: block;
+                                width: 79%;
+                                height: 4.5rem;
+                                border-radius: 0.6rem;
+                                font-size: 1.4rem;
+                                background-color: $color-input;
+                                border: 0.1rem solid $color-input-border;
+                                text-transform: uppercase;
+                                margin-bottom: 1rem;
+                            }
+                        }
+
+                        .more-links {
+                            // grid-area: btn2;
+                        }
+                    }
+
+                }
+
+                ///Formulario recuperar contraseña/
+                form.user-pass {
+                    text-align: start;
+                    margin: 0rem 1rem;
+
+                    @include media-query(desktopLSS) {
+                        margin: 0rem 4.7rem 3rem;
+                        width: 30rem
+                    }
+
+                    @include media-query(tablet) {
+                        margin: 0rem 17rem;
+                    }
+
+                    @include media-query(mobile) {
+                        margin: 0rem 1rem;
+                    }
+
+                    .js-form-type-email {
+                        width: 100%;
+
+                        .js-form-required {
+                            margin-top: 1rem;
+                            margin-bottom: 0.6rem;
+                            font-size: 1.2rem;
+                            font-weight: 700;
+                        }
+
+                        input {
+                            height: 3.7rem;
+                            border-radius: 0.6rem;
+                        }
+                    }
+
+                    p {
+                        display: none;
+                    }
+
+                    .form-actions {
+                        grid-area: btn;
+                        text-align: center;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        width: 70%;
+                        margin: 0 auto;
+                        input {
+                            display: block;
+                            width: 100%;
+                            height: 4.5rem;
+                            border-radius: 0.6rem;
+                            font-size: 1.4rem;
+                            background-color: transparent;
+                            border: 0.1rem solid $color-black;
+                            color: $color-black;
+                            text-transform: uppercase;
+                            z-index: 2;
+                        }
+                        &::after {
+                            content: "";
+                            background-color: $color-black;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 0;
+                            height: 100%;
+                            border-radius: 0.6rem;
+                            transition: all 0.5s;
+                            z-index: 0;
+                        }
+                        &:hover {
+                            &::after {
+                                width: 100%;
+                            }
+                            input {
+                                color: $color-white;
+                                font-weight: 700;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+ //Restablecer contraseña
+ form.user-pass-reset {
+    text-align: center;
+
+    p {
+        margin: 2rem;
+        background-color: red;
+    }
+}
+.popup {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    z-index: 9999;
+
+    // display: block;
+    .container-popup {
+        margin-top: 5rem;
+
+        .modal-content {
+            border-radius: 1rem;
+            position: relative;
+            height: 100%;
+
+            .modal-header {
+                overflow: hidden;
+                padding: 0;
+                border-radius: 0.9rem;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+
+            .modal-body {
+                padding: 0;
+                margin-top: -1rem;
+                background: white;
+                display: grid;
+                grid-template-columns: 2rem 1fr 2rem;
+                grid-template-areas: ". logo ."". title ."". msj ."". btn .";
+                position: initial;
+                padding-bottom: 2rem;
+                margin-bottom: 4rem;
+
+                .close-modal {
+                    background-image: url("./assets/img/close_modal.svg");
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 2rem;
+                    height: 2rem;
+                    position: absolute;
+                    top: -10%;
+                    right: 1%;
+                    transform: translate(-1%, 10%);
+
+                    @include media-query(tablet) {
+                        top: -8%;
+                        right: 1%;
+                        transform: translate(-1%, 8%);
+                    }
+                }
+
+                .container__logo_success {
+                    grid-area: logo;
+                    border-radius: 50%;
+                    height: 8rem;
+                    width: 8rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    margin-top: -10%;
+                    border: 0.1rem solid $color-white;
+
+                    @include media-query(desktopLS) {
+                        margin-top: -9%;
+                    }
+
+                    .logo__success {
+                        background-color: $color-white;
+                        border-radius: 50%;
+                        width: 7rem;
+                        height: 7rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0rem 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.2);
+
+                        img {
+                            width: 3.5rem;
+                            filter: invert(1);
+                        }
+                    }
+                }
+
+                .main__title {
+                    grid-area: title;
+                }
+
+                .alert-success {
+                    grid-area: msj;
+                    text-align: center;
+                    background-color: transparent !important;
+                    border-color: transparent !important;
+                    color: $color-black  !important;
+
+                    button {
+                        display: none;
+                    }
+                }
+
+                #btn__popUp {
+                    grid-area: btn;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    width: 20rem;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 4.5rem;
+                        border-radius: 0.6rem;
+                        font-size: 1.4rem;
+                        background-color: transparent;
+                        border: 0.1rem solid $color-black;
+                        color: $color-black;
+                        text-transform: uppercase;
+                        z-index: 2;
+                    }
+
+                    &::after {
+                        content: "";
+                        background-color: $color-black;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 100%;
+                        border-radius: 0.6rem;
+                        transition: all 0.5s;
+                        z-index: 0;
+                    }
+
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+
+                        a {
+                            color: white;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

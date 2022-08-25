@@ -1,0 +1,625 @@
+/*menu-chatbot*/
+.menu-chatbot {
+  right: -120px;
+  bottom: -50px !important;
+  z-index: 999;
+  width: 230px;
+  height: 230px;
+  position: fixed;
+  transform: translateX(-50%);
+}
+.menu-chatbot:focus {
+  background-color: #ffeb3b6b;
+}
+.menu-content-chatbot {
+  top: -203px;
+  left: 60%;
+  width: 175px;
+  height: 175px;
+  position: fixed;
+  transition: all 0.3s;
+  border-radius: 90% 0% 0% 0%;
+  transform: translateX(-50%);
+}
+.menu-content-chatbot-biblioteca {
+  top: -250px;
+  left: 60%;
+  width: 175px;
+  height: 175px;
+  position: fixed;
+  transition: all 0.3s;
+  border-radius: 90% 0% 0% 0%;
+  transform: translateX(-50%);
+}
+.menu-item-chatbot {
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ffc300;
+  transition: transform 300ms;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#menu-chatbot {
+  z-index: 10;
+}
+.img-chatbot {
+  width: 50%;
+  height: 50%;
+}
+.menu1-chatbot {
+  width: 60px;
+  height: 60px;
+  color: #aa7900;
+}
+.menu2-chatbot {
+  width: 45px;
+  height: 45px;
+}
+.menu-item-chatbot:hover {
+  background-color: #aa7900;
+}
+.menu-active-chatbot.menu-content-chatbot {
+  background-color: #ffeb3b6b;
+}
+.menu-active-chatbot .menu-item-chatbot:nth-child(2) {
+  transform: translateY(5px) translateX(-95px);
+}
+.menu-active-chatbot .menu-item-chatbot:nth-child(3) {
+  transform: translateY(-65px) translateX(-60px);
+}
+.menu-active-chatbot .menu-item-chatbot:nth-child(4) {
+  transform: translateY(-105px) translateX(5px);
+}
+
+@media (max-width: 3840px) {
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 65px;
+  }
+  .menu2-chatbot {
+    left: 115px;
+    bottom: 75px;
+  }
+}
+@media (max-width: 1370px) {
+  .menu-chatbot {
+    width: 230px;
+    height: 20px;
+  }
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 115px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 1680px) {
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 115px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .menu-chatbot {
+    width: 230px;
+    height: 875px;
+  }
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 110px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .menu-chatbot {
+    width: 230px;
+    height: 385px;
+  }
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 110px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 540px) {
+  .menu-chatbot {
+    width: 230px;
+    height: 20px;
+  }
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 115px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .menu1-chatbot {
+    left: 105px;
+    bottom: 190px;
+  }
+  .menu2-chatbot {
+    left: 110px;
+    bottom: 195px;
+  }
+}
+@media (max-width: 414px) {
+  .menu-chatbot {
+    right: -125px;
+  }
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 115px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 411px) {
+  .menu-chatbot {
+    right: -120px;
+  }
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 115px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 410px) {
+  .menu-chatbot {
+    right: -120px;
+  }
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 115px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 115px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 115px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 115px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 280px) {
+  .menu1-chatbot {
+    left: 110px;
+    bottom: 10px;
+  }
+  .menu2-chatbot {
+    left: 115px;
+    bottom: 15px;
+  }
+}
+
+///Boton para detectar la ruta actual
+.btn__back_to_home {
+  right: -120px;
+  bottom: -50px !important;
+  z-index: 999;
+  width: 230px;
+  height: 230px;
+  position: fixed;
+  transform: translateX(-50%);
+  #irinicio {
+    flex-direction: column;
+    top: -350px;
+    left: 83%;
+    width: 60px;
+    height: 60px;
+    background-color: #ffc300;
+    position: fixed;
+    display: block;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    border-radius: 50%;
+    a {
+      img{
+        max-width: 30px;
+        max-height: 30px;
+        height: 30px;
+        width: 30px;
+      }
+    }
+    p{
+      a{
+        color:#fff;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// NUEVO CHAT
+
+#chatbot{
+
+  .span-chat{
+    display: none;
+  }
+  
+  #btn-ppal {
+    /* id asociado con el checkbox, oculta el cuadro de check */
+    display: none;
+}
+#btn-wsp {
+    
+    display: none;
+}
+#btn-chat{
+    display: none;
+}
+.container {
+    /*div contenedor del botÃ³n principal y los sub botones*/
+    position: fixed;
+    bottom: 230px;
+    right: -41px;
+    width: 150px;
+    z-index: 999;
+    /* border-style: solid;
+    border-color: yellow; */
+}
+.redes {
+    text-align: center; 
+    display: none;
+    height: 147px;
+    flex-direction: column;
+    gap: 22px;
+
+
+    &.show-up{
+      display: flex;
+
+    }
+   
+}
+.wsp {
+  display: none;
+  
+  &.show-wsp-up{
+    display: block;
+
+  }
+}
+.chat{
+  display: none;
+    /* border-style: solid;
+    border-color: blue;  */
+    &.show-chat-up{
+      display: block;
+    }
+}
+.wsp a:hover {
+    cursor: pointer;
+    background: #fff;
+    color: $color_golda;
+    border-color: $color_golda;
+    /* font-size: 33px; */
+}
+.chat a:hover {
+    cursor: pointer;
+    background: #fff;
+    color: $color_golda;
+    border-color: $color_golda;
+    /* font-size: 33px; */
+}
+
+/*#btn-chat:checked~.chat{
+    display: block;
+}*/
+
+/* #btn-chat:checked~.wsp{
+    display: none;
+} */
+
+/*#btn-wsp:checked~.wsp{
+    display: block;
+}*/
+/* #btn-wsp:checked~.wsp{
+    display: none;
+} */
+
+.chat-modalidad-pre{
+    transform: translate(-147%,440%);
+    text-align: right;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    h5{
+      color: #ffffff;
+    }
+}
+
+.chat-modalidad-uvd{
+    transform: translate(-147%,893%);
+    text-align: right;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    h5{
+      color: #ffffff;
+    }
+}
+
+.modalidad-pre{
+    transform: translate(-143%,190%);
+    text-align: right;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    h5{
+      color: #ffffff;
+    }
+}
+.modalidad-uvd{
+    transform: translate(-147%,400%);
+    text-align: right;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    h5{
+      color: #ffffff;
+    }
+}
+/*#btn-ppal:not(:checked)~.wsp, 
+#btn-ppal:not(:checked)~.chat { 
+    display: none;
+}*/
+
+.chat a{
+    transform: translate(-150%, 350%);
+    display: block;
+    text-decoration: blink;
+    background: $color_golda; /*El color de fondo de la burbuja*/
+    color: #fff; /*El color del icono*/
+    width: 50px;     /*Ancho de la burbuja*/
+    height: 50px;     /*Alto de la burbuja */
+    line-height: 49px;    /*PosiciÃ³n del icono en referencia a la burbuja */
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden; 
+    border-radius: 50%;    /*Forma del contenedor*/
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 300ms ease; /* transition: all 500ms ease; */
+}
+
+.wsp a {
+    transform: translate(-150%, 200%);
+    display: block;
+    text-decoration: blink;
+    background: $color_golda; /*El color de fondo de la burbuja*/
+    color: #fff; /*El color del icono*/
+    width: 50px;     /*Ancho de la burbuja*/
+    height: 50px;     /*Alto de la burbuja */
+    line-height: 49px;    /*PosiciÃ³n del icono en referencia a la burbuja */
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden; 
+    border-radius: 50%;    /*Forma del contenedor*/
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 300ms ease; /* transition: all 500ms ease; */
+}
+
+.redes label { /* Vincula las acciones del boton principal, con los botones secundarios */ 
+    display: block; /*Muestra las burbujas de manera vertical*/
+    text-decoration: blink; /*Adiciona una linea, encima, debajo o sobre el icono*/
+    background: $color_golda; /*El color de fondo de la burbuja*/
+    color: #fff; /*El color del icono*/
+    width: 60px;     /*Ancho de la burbuja*/
+    height: 60px;     /*Alto de la burbuja */
+    line-height: 56px;    /*PosiciÃ³n del icono en referencia a la burbuja */
+    /*text-transform: none; Modifica el texto a Mayusuculas o Minusculas*/
+    overflow: hidden;    /* white-space: nowrap; */
+    text-align: center;     /*JustificaciÃ³n del icono dentro de la burbuja */
+    border-radius: 50%;    /*Forma del contenedor*/
+    border-style: solid;
+    border-color: #fff;
+    border-width: 2px;
+    margin-left: auto;
+    margin-right: auto;    /* box-shadow: 1px 1px 1px 1px rgba(148, 26, 26, 0.4);Sombra del contenedor */
+    transition: all 300ms ease; /* transition: all 500ms ease; */
+    font-size: 25px;
+}
+
+.btn-mas label {
+  display: block;
+  text-align: center;
+  margin: auto;
+  text-decoration: blink;
+  background: #ffd300;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 2px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  font-size: 25px;
+   
+}
+
+.redes label {
+    display: block;
+    /*Muestra las burbujas de manera vertical*/
+    text-decoration: blink;
+    /*Adiciona una linea, encima, debajo o sobre el icono*/
+    background: $color_golda; 
+    /*El color de fondo de la burbuja*/
+    color: #fff;
+    /*El color del icono*/
+    width: 65px;
+    /*Ancho de la burbuja*/
+    height: 65px;
+    /*Alto de la burbuja */
+    line-height: 63px;
+    /*PosiciÃ³n del icono en referencia a la burbuja */
+    /* overflow: hidden; */
+    text-align: center;
+    /*JustificaciÃ³n del icono dentro de la burbuja */
+    border-radius: 50%;
+    /*Forma del contenedor*/
+    border-style: solid;
+    border-color: #fff;
+    border-width: 2px;
+    transition: all 400ms ease;
+    /*Manera como se anima la forma */
+}
+
+.btn-mas {
+    text-align: center;
+    /* border-color: #be2e2e;
+    border-style: solid; */
+    label{
+      transition: all .5s;
+      &.rotate-icon{
+        transform: rotate(180deg);
+        font-size: 25px;
+        transition: all .5s;
+      }
+    }
+}
+.btn-mas label:hover {
+    cursor: pointer;
+    background: #fff;
+    color: $color_golda;
+    border-color: $color_golda;
+}
+
+.redes label {
+    margin-bottom: -15px;
+}
+
+/*#btn-ppal:checked~.redes label {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+    font-size: 20px;
+}*/
+
+.redes label {
+    cursor: pointer;
+}
+
+.redes label:hover {
+    cursor: pointer;
+    background: #ffffff;
+    color: $color_golda;
+    border-color: $color_golda;
+    /* font-size: 33px; */
+}
+
+
+/* .btn-mas label {
+    cursor: pointer;
+    background: #f44141;
+    font-size: 33px;
+} */
+
+/*#btn-ppal:checked~.btn-mas label {
+    transform: rotate(180deg);
+    font-size: 25px;
+}*/
+
+.btn-mas p {
+    /* Controla el aviso debajo del botÃ³n principal */
+    text-align: center;
+    color: #fff;
+    font-size: .75rem;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+/* .wa-pre::before {
+    content: 'Hola';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    transition: .2s ease;
+  }
+.wa-pre::after {
+    content: 'Presencial';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    transition: .2s ease;
+    opacity: 0;
+  }
+  .wa-pre:hover:before {
+      transform: translate(-50% -50%)scale(3);
+      opacity: 0;
+  }
+  .wa-pre:hover::after {
+    transform: translate(-50% -50%)scale(3);
+    opacity: 1;
+  } */
+}

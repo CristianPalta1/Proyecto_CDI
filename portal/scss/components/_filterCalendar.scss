@@ -1,0 +1,127 @@
+/*calendar*/
+.calendar {
+  padding: 60px 0;
+  .content {
+    .c-header {
+      p {
+        width: 100%;
+        color: $color_boulder;
+      }
+      .titleYear {
+        color: $color_congress_blue;
+        font-size: 2.75rem;
+        word-break: break-all;
+        text-transform: uppercase;
+        font-family: $montserratbold;
+      }
+      .calendar__filters {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        form.views-exposed-form {
+          @media (max-width: $tablet) {
+            padding: 25px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+          }
+          .form--inline {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: $tablet) {
+              flex-direction: column;
+            }
+            .js-form-item {
+              width: 25%;
+              margin: 0;
+              @media (max-width: $tablet) {
+                width: 100%;
+                margin-bottom: 15px;
+              }
+              label {
+                display: none;
+              }
+              input {
+                &.form-text {
+                  width: 100%;
+                  height: 70px;
+                  padding: 0 15px;
+                  color: $color_silver_chalice;
+                  font-size: 0.75rem;
+                  line-height: 15px;
+                  font-weight: 400;
+                  border-radius: 0;
+                  font-family: $latobold;
+                  border: 1px solid $border_alto;
+                  @media (max-width: $tablet) {
+                    height: 45px;
+                    border-radius: 3px;
+                  }
+                  &::placeholder {
+                    color: $color_silver_chalice;
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                    line-height: 15px;
+                    font-family: $latobold;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .bef-exposed-form .form--inline > .form-item {
+          float: left;
+        }
+      }
+    }
+    .c-content {
+      .calendar__content {
+        padding-top: 35px;
+        .calendar__articles {
+          article {
+            margin-bottom: 25px;
+            .calendar__text {
+              padding: 10px 0;
+              @media (max-width: $mobile) {
+                height: auto !important;
+                padding: 10px 5px;
+              }
+              & > div {
+                padding-bottom: 15px;
+                h3 {
+                  font-size: 0.8375rem;
+                  font-family: $montserratbold;
+                  span {
+                    color: $color_congress_blue;
+                    font-size: 0.8375rem;
+                    line-height: 19px;
+                    font-family: $montserratbold;
+                  }
+                }
+                p {
+                  font-family: $montserratregular;
+                }
+              }
+              .date {
+                color: $color_congress_blue;
+                .day {
+                  color: $color_big_stone;
+                  font-size: 0.75rem;
+                  font-family: $montserratbold;
+                }
+                .month {
+                  color: $color_big_stone;
+                  font-size: 0.75rem;
+                  text-transform: uppercase;
+                  font-family: $montserratregular;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.calendar__filters .view-filters .views-exposed-form .js-form-item label {
+  display: none;
+}

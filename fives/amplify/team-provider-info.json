@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-frontfiveshotel-dev-134724-authRole",
+      "UnauthRoleArn": "arn:aws:iam::639877699954:role/amplify-frontfiveshotel-dev-134724-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::639877699954:role/amplify-frontfiveshotel-dev-134724-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-frontfiveshotel-dev-134724-deployment",
+      "UnauthRoleName": "amplify-frontfiveshotel-dev-134724-unauthRole",
+      "StackName": "amplify-frontfiveshotel-dev-134724",
+      "StackId": "arn:aws:cloudformation:us-east-1:639877699954:stack/amplify-frontfiveshotel-dev-134724/69e63de0-b692-11ec-a12f-0a7084155cf1",
+      "AmplifyAppId": "d2vdgbpx1o7nxc"
+    }
+  }
+}

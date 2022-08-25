@@ -1,0 +1,503 @@
+#block-calizo-content {
+  .node__content {
+    .layout__region--content {
+      .about__experience,
+      .about__quote,
+      .about__desing,
+      .about__our-team,
+      .about__certifications,
+      .about__brands,
+      .about__finishes {
+        .calizo_experience_about_us,
+        .field--type-text-with-summary,
+        .calizo_desing_about_us,
+        .field--name-our-team,
+        .field--name-certifications,
+        .field--name-our-brands,
+        .calizo_title_image {
+          margin: 0 6rem 6rem;
+          padding: 0 4rem 4rem;
+          @include media-query(desktopLS) {
+            margin: 0 4.5rem 4.5rem;
+            padding: 0 2.5rem 2.5rem;
+          }
+          @include media-query(tablet) {
+            margin: 0 1.5rem 4.5rem;
+            padding: 0 0.5rem 2.5rem;
+          }
+        }
+      }
+      .about__banner {
+        margin-bottom: 6rem;
+        padding-bottom: 4rem;
+        @include media-query(desktopLS) {
+          margin-bottom: 4.5rem;
+          padding-bottom: 2.5rem;
+        }
+        .calizo_banner_about_us {
+          .container__calizo_banner_about_us {
+            display: grid;
+            grid-template-columns: 80rem 1fr;
+            grid-template-areas: ". images" "info images" ". images";
+            grid-template-rows: 5rem 1fr 5rem;
+            @include media-query(desktopLS) {
+              grid-template-columns: 60rem 1fr;
+            }
+            @include media-query(tablet) {
+              grid-template-rows: initial;
+              grid-template-columns: 2.5rem 1fr 2.5rem;
+              grid-template-areas:
+                "images images images"
+                ". info .";
+            }
+            .container__image {
+              grid-area: images;
+              .block-field-blockblock-contentbanner-about-usimage-desktop {
+                height: 100%;
+                .field--type-image {
+                  height: 100%;
+                  picture {
+                    img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                  }
+                }
+              }
+            }
+            .container__card_info {
+              grid-area: info;
+              .card__info {
+                border-radius: 0.6rem;
+                background-color: $color-white;
+                transform: translateX(10rem);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 5rem;
+                @include media-query(desktopLS) {
+                  padding-left: 2.5rem;
+                }
+                @include media-query(tablet) {
+                  transform: translateX(0);
+                  margin-top: -28%;
+
+                  height: initial;
+                  padding: 2rem;
+                  text-align: center;
+                }
+                .main__title_about_us {
+                  @include media-query(tablet) {
+                    margin: 2rem;
+                  }
+                  .block-field-blockblock-contentbanner-about-ussub-title {
+                    .field--name-sub-title {
+                      font-size: 3rem;
+                      text-transform: uppercase;
+                      font-weight: 900;
+
+                      @include media-query(desktopLS) {
+                        font-size: 2.3rem;
+                      }
+                    }
+                  }
+                }
+                .subtitle1_about_us {
+                  @include media-query(tablet) {
+                    margin-bottom: 2rem;
+                  }
+                  .block-field-blockblock-contentbanner-about-ustitle {
+                    .field--name-title {
+                      font-size: 6rem;
+                      text-transform: uppercase;
+                      font-weight: 900;
+                      @include media-query(desktopLS) {
+                        font-size: 4rem;
+                      }
+                      @include media-query(tablet) {
+                        font-size: 3rem;
+                      }
+                      span {
+                        font-size: 6rem;
+                        display: block;
+                        font-weight: 900;
+                        @include media-query(desktopLS) {
+                          font-size: 4rem;
+                        }
+                        @include media-query(tablet) {
+                          font-size: 3rem;
+                        }
+                      }
+                    }
+                  }
+                }
+                .subtitle2_about_us {
+                  margin-top: 2rem;
+                  .block-field-blockblock-contentbanner-about-ussub-title-2 {
+                    .field--name-sub-title-2 {
+                      font-weight: 300;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .about__experience,
+      .about__desing {
+        .calizo_experience_about_us,
+        .calizo_desing_about_us {
+          .container__calizo_desing_about_us {
+            flex-direction: row-reverse !important;
+            @include media-query(tablet) {
+              flex-direction: column-reverse !important;
+              margin-top: 2rem;
+            }
+          }
+          .container__calizo_experience_about_us,
+          .container__calizo_desing_about_us {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            align-items: center;
+            gap: 6rem;
+            @include media-query(desktopLS) {
+              gap: 4rem;
+            }
+            @include media-query(desktopL) {
+              gap: 2rem;
+            }
+            @include media-query(tablet) {
+              flex-direction: column;
+            }
+            .container__image {
+              .block-field-blockblock-contentexperience-about-usimage-x2,
+              .block-field-blockblock-contentdesing-about-usimage-x2 {
+                .field--name-image-x2 {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  grid-template-rows: 5rem 1fr 5rem;
+                  grid-template-areas:
+                    "image1 ."
+                    "image1 image2"
+                    ". image2";
+                  gap: 1.2rem;
+                  .field__item {
+                    &:nth-child(1) {
+                      grid-area: image1;
+                    }
+                    &:nth-child(2) {
+                      grid-area: image2;
+                    }
+                    img {
+                      object-fit: contain;
+                      width: 100%;
+                      height: 100%;
+                    }
+                  }
+                }
+              }
+              .block-field-blockblock-contentdesing-about-usimage-x2 {
+                .field--name-image-x2 {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  grid-template-rows: 5rem 1fr 5rem;
+                  grid-template-areas:
+                    ". image1"
+                    "image2 image1"
+                    "image2 .";
+                  gap: 1.2rem;
+                  .field__item {
+                    &:nth-child(1) {
+                      grid-area: image1;
+                    }
+                    &:nth-child(2) {
+                      grid-area: image2;
+                    }
+                    img {
+                      object-fit: contain;
+                      width: 100%;
+                      height: 100%;
+                    }
+                  }
+                }
+              }
+            }
+            .container__card_info {
+              width: 60%;
+              @include media-query(tablet) {
+                width: initial;
+              }
+              .main__title_experience_about_us,
+              .main__title_desing_about_us {
+                .block-field-blockblock-contentexperience-about-ustitle,
+                .block-field-blockblock-contentdesing-about-ustitle {
+                  .field--name-title {
+                    font-size: 3.8rem;
+                    font-weight: 400;
+                    span {
+                      font-size: 3.8rem;
+                      font-weight: 700;
+                      @include media-query(tablet) {
+                        font-size: 3rem;
+                      }
+                    }
+                    @include media-query(tablet) {
+                      font-size: 3rem;
+                    }
+                  }
+                }
+                .block-field-blockblock-contentdesing-about-ustitle {
+                  .field--name-title {
+                    text-align: end;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .about__quote {
+        width: 120rem;
+        margin: 0 auto;
+        @include media-query(desktopLS) {
+          width: 90rem;
+        }
+        @include media-query(tablet) {
+          width: initial;
+        }
+        .field--type-text-with-summary {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 20rem;
+          border: 1px solid $color-black;
+          position: relative;
+          p {
+            text-align: center;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: -30%;
+            left: 50%;
+            transform: translate(-50%, 30%);
+            z-index: 3;
+            background-image: url("./assets/img/quotes.svg");
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 15rem;
+            height: 8rem;
+            background-color: $color-white;
+            @include media-query(tablet) {
+              top: -40%;
+              transform: translate(-50%, 40%);
+            }
+          }
+        }
+      }
+      .about__finishes {
+        .calizo_title_image {
+          @include media-query(tablet) {
+            margin: 0 !important;
+            padding: 0 !important;
+          }
+          .container__calizo_title_image {
+            position: relative;
+            .container__image {
+              .block-field-blockblock-contenttitle-imageimage-desktop {
+                .field--type-image {
+                  position: relative;
+                  picture {
+                    img {
+                      width: 100%;
+                      z-index: 3;
+                    }
+                  }
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($color: $color-black, $alpha: 0.4);
+                    z-index: 0;
+                  }
+                }
+              }
+            }
+            .container__title {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 100%;
+              h2 {
+                .block-field-blockblock-contenttitle-imagetitle {
+                  .field--name-title {
+                    font-size: 6rem;
+                    font-weight: 400;
+                    color: $color-white;
+                    text-align: center;
+                    text-transform: uppercase;
+                    @include media-query(desktopLS) {
+                      font-size: 4.5rem;
+                    }
+                    span {
+                      font-size: 6rem;
+                      font-weight: 700;
+                      color: $color-white;
+                      text-transform: uppercase;
+                      @include media-query(desktopLS) {
+                        font-size: 4.5rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .about__our-team {
+        display: none;
+        // .field--name-our-team {
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        //   gap: 1rem;
+        //   .field__item {
+        //     .container_teams {
+        //       position: relative;
+        //       .team__image {
+        //         position: relative;
+        //         overflow: hidden;
+        //         picture {
+        //           img {
+        //             width: 100%;
+        //           }
+        //         }
+        //         &::after {
+        //           content: "";
+        //           width: 100%;
+        //           height: 100%;
+        //           background-color: rgba($color: $color-black, $alpha: 0.4);
+        //           position: absolute;
+        //           top: 0;
+        //           left: 0;
+        //           z-index: 0;
+        //         }
+        //       }
+        //       .team__white {
+        //         position: absolute;
+        //         bottom: 5%;
+        //         left: 50%;
+        //         transform: translate(-50%, -5%);
+        //         z-index: 3;
+        //         .info__white_container {
+        //           border: 1px solid white;
+        //           width: 40rem;
+        //           height: 37rem;
+        //           display: flex;
+        //           justify-content: end;
+        //           align-items: start;
+        //           flex-direction: column;
+        //           padding: 2rem;
+        //         }
+        //         .team__body {
+        //           margin-top: 4rem;
+        //         }
+        //         .info__white_container,
+        //         .team__body {
+        //           color: $color-white;
+        //           .team__title,
+        //           .team__position {
+        //             color: $color-white;
+        //           }
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
+      }
+      .about__certifications {
+        .field--name-certifications {
+          .field__item {
+            .container__certifications {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 2rem;
+              @include media-query(tablet) {
+                flex-direction: column;
+              }
+              .certifications__image {
+                picture {
+                  img {
+                    width: initial;
+                    @include media-query(tablet) {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+              .certifications__white {
+                width: 34rem;
+                .certifications__icon {
+                  height: 15rem;
+                  width: 9rem;
+                  picture {
+                    img {
+                      width: 100%;
+                      height: 100%;
+                    }
+                  }
+                }
+                .certifications__title {
+                  margin: 2rem 0;
+                  font-size: 2.6rem;
+                  font-weight: 900;
+                }
+                .certifications__body {
+                  font-weight: 300;
+                  text-align: justify;
+
+                }
+              }
+            }
+          }
+        }
+      }
+      .about__brands {
+        .field--name-our-brands {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+          .field__item {
+            .brands__image {
+              a {
+                picture {
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+              picture {
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

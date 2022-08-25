@@ -1,0 +1,63 @@
+/*sliderWorkTeam*/
+.sliderWorkTeam {
+  padding: 60px 0;
+  position: relative;
+  background-color: $background_golda;
+  .content {
+    .c-content {
+      .sliderWorkTeam__content {
+        padding-top: 35px;
+        .s-sliderWorkTeam {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin: 0 auto;
+         
+          article {
+            margin: 5px;
+            padding: 40px 40px;
+            box-shadow: 0 0 10px 0 $box_shadow;
+            background-color: $background_white;
+            .s-sliderWorkTeam__img {
+              width: 35%;
+              margin: 0 auto;
+              overflow: hidden;
+              border-radius: 50%;
+            }
+            .s-sliderWorkTeam__text {
+              padding-top: 25px;
+              text-align: center;
+              h3 {
+                color: $color_big_stone;
+                font-size: 1.25rem;
+                line-height: 24px;
+              }
+              span {
+                display: block;
+                color: $color_congress_blue;
+                font-size: 0.875rem;
+                line-height: 17px;
+                padding: 5px 0 15px 0;
+                font-family: $montserratbold;
+              }
+              a {
+                padding: 5px 0;
+                display: block;
+                word-break: break-all;
+                .icon-icon-contact1 {
+                  color: $color_big_stone;
+                  font-size: 0.9rem;
+                  margin-right: 5px;
+                }
+                .icon-icon-message1 {
+                  color: $color_big_stone;
+                  font-size: 0.7rem;
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

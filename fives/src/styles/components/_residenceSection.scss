@@ -1,0 +1,617 @@
+.residences-on {
+    margin: 3rem 0 1rem;
+    background-color: $grayLight;
+    padding: 5% 0 11%;
+    @media (max-width: $desktop) {
+        padding: 4rem 0 5rem;
+    }
+    .row {
+        @media (max-width: $desktop) {
+            flex-direction: column;
+        }
+    }
+    .residences-info {
+        padding: 0px 25px 0 0;
+        @media (max-width: $desktop) {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 15px 30px;
+        }
+
+        .title__residences{
+            text-align: start;
+            margin: 0;
+            h2{
+                font-weight: 300;
+                font-size: 1.5rem;
+                @media (max-width: $desktopLS) {
+                    font-size: 1.3rem;
+                }
+                @media (max-width: $desktop) {
+                    font-size: 1.1rem;
+                }
+                span  {
+                    font-size: 3rem;
+                    display: block;
+                    font-weight: 300;
+                    color: black;
+                    @media (max-width: $desktopLS) {
+                        font-size: 2rem;
+                    }
+                    @media (max-width: $desktop) {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        .content-description {
+            margin-top: 24px;
+        }
+        .highlights-block {
+            &.hide_highlights-block{
+                display: none !important;
+            }
+            margin-top: 16px;
+            display: block;
+            
+            .highlights-title {
+                grid-area: title;
+                width: 100%;
+                text-transform: uppercase;
+                font-size: 1rem;
+                @media (max-width: $desktop) {
+                    margin: 1rem 0 2rem;
+                }
+            }
+            .residences {
+                display: grid;
+                grid-template-columns: 138px 1fr;
+                flex-wrap: wrap;
+                p {
+                    font-size: 19px;
+                    color: $gray;
+                    font-weight: 200;
+                    @media (max-width: $desktopLS) {
+                        font-size: 18px;
+                    }
+                    span {
+                        font-size: 13px;
+                        @media (max-width: $desktopLS) {
+                            font-size: 12px;
+                        }
+                    }
+                   
+                    &:nth-child(2n){
+                        
+                        &::before {
+                            margin-right: 5%;
+                            content: "";
+                            display: block;
+                            float: left;
+                            height: 100%;
+                            width: 1px;
+                            background-color: #bebebe;
+                            margin-bottom: 1rem;
+                            margin-right: 18px;
+                        }
+                        
+                    }
+                }
+            }
+            
+            
+        }
+
+        .user-actions {
+            padding-top: 18%;
+            @media (max-width: $mobile) {
+                padding-top: 6%;
+           
+            }
+            .btn-see-more {
+                border: 0.5px solid rgba(0, 0, 0, 0.3);
+                border-radius: 0;
+                color: black;
+                padding: 15px 55px;
+                text-transform: uppercase;
+                overflow: hidden;
+                z-index: 1;
+                position: relative;
+                @media (max-width: $desktopLS) {
+                    padding: 12px 55px;
+                    font-size: 14px;
+                }
+                @media (max-width: $desktop) {
+                    width: 100%;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 100%;
+                    background: black;
+                    z-index: -1;
+                    transition: width 0.5s ease-in-out;
+                }
+                &:hover {
+                 
+                        color: white;
+                        font-weight: 700;
+                        &::after {
+                            width: 110%;
+                        }
+                    
+                }
+            }
+        }
+    }
+
+    .residences-options {
+        position: relative;
+        @media (max-width: $desktop) {
+            width: 100%;
+        }
+        .tabs-list {
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #a5a5a5;
+            @media (max-width: $desktop) {
+                overflow: hidden;
+                overflow-x: scroll;
+                height: 26px;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                .tabs {
+                    width: 150%;
+                    display: flex;
+                    padding-left: 10px;
+                }
+            }
+
+            .tab-item {
+                height: 100%;
+                margin-left: 15px;
+                padding: 0 10px;
+                border: 0;
+                text-transform: uppercase;
+                position: relative;
+
+                &.active {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 90%;
+                        height: 2px;
+                        bottom: -1px;
+                        background-color: $gray;
+                    }
+                }
+            }
+        }
+        .tabs-content {
+            @media (max-width: $desktop) {
+            }
+            .tabs-content-item {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+        .react-multi-carousel-track,
+        .react-multi-carousel-list {
+            position: inherit;
+            .react-multi-carousel-item {
+                height: 100%;
+                width: 100%;
+                padding-right: 10px;
+                @media (max-width: $mobile) {
+                    padding-right: 0px;
+                }
+                .residence-card {
+                    margin: 0;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 175px 274px 60px;
+                    grid-template-areas:
+                        "images"
+                        "texts"
+                        "footer";
+                    height: 100%;
+                    @media (max-width: $desktopLS) {
+                        grid-template-rows: 175px 234px 61px;
+                    }
+                    @media (max-width: $tablet) {
+                        grid-template-rows: 200px 197px 88px;
+                    }
+                    .card-header {
+                        grid-area: images;
+                    }
+                    .card-body {
+                        grid-area: texts;
+                        margin-top: 24px;
+                        @media (max-width: $desktopLS) {
+                            margin-top: 11px;
+                        }
+                        @media (max-width: $tablet) {
+                            margin-top: 0px;
+                        }
+                        .card-title {
+                            width: 100%;
+                            margin-bottom: 1rem;
+                            @media (max-width: $desktopLS) {
+                                font-size: 14px;
+                                line-height: 1.6;
+                                height: 68px;
+                            }
+                        }
+                        .card-description {
+                            @media (max-width: $desktopLS) {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .card-footer {
+                        grid-area: footer;
+                        padding: 0.5rem;
+                        .card-options {
+                            gap: 0 34px;
+                            flex-direction: row-reverse;
+                            justify-content: flex-end;
+                        }
+                    }
+                }
+            }
+        }
+        .react-multi-carousel-dot-list {
+            justify-content: flex-start;
+            padding: 0 1rem;
+            bottom: -9.5%;
+            flex-wrap: wrap;
+            @media (max-width: $desktop) {
+                bottom: -8%;
+                justify-content: center;
+             
+            }
+            .react-multi-carousel-dot {
+                button {
+                    width: 34px;
+                    height: 1px;
+                    border-radius: 0;
+                    background-color: $gray;
+                    border: 0;
+                    @media (max-width: $tablet) {
+                        width: 20px;
+                    }
+                }
+                &.react-multi-carousel-dot--active {
+                    button {
+                        width: 80px;
+                        background-color: black;
+                        @media (max-width: $tablet) {
+                            width: 60px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .carousel-button-left,
+        .react-multiple-carousel__arrow--left,
+        .react-multiple-carousel__arrow--right,
+        .carousel-button-right {
+            background-color: black;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid black;
+            color: $white-0;
+            display: block;
+            font-size: 14px;
+            z-index: 100;
+            transform: translateX(-50%);
+            z-index: 95;
+            bottom: -12%;
+            position: absolute;
+            @media (max-width: $desktop) {
+                display: none;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                transition: all 0.5s ease;
+                border-radius: 50%;
+                background-color: white;
+                transform: scale(0);
+            }
+
+            .arrow_content_prev,
+            .arrow_content_next {
+                width: 16px;
+                height: 18px;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                justify-content: center;
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    height: 100%;
+                    object-position: center center;
+                    filter: invert(1);
+                }
+            }
+
+            &:hover {
+               
+
+                .arrow_content_prev,
+                .arrow_content_next {
+                    img {
+                        filter: invert(0);  
+                    } 
+                }
+
+                &::before {
+                    transform: scale(1);
+                }
+            }
+        }
+        .carousel-button-left,
+        .react-multiple-carousel__arrow--left {
+          
+            right: 6%;
+           
+            left: initial;
+            @media (max-width: $desktopLS) {
+                right: 5.5%;
+            }
+        }
+        .carousel-button-right,
+        .react-multiple-carousel__arrow--right {
+          
+            right: 0%;
+          
+            @media (max-width: $desktopXL) {
+            }
+        }
+    }
+}
+
+.residencesAt {
+    padding: 0;
+    margin-bottom: 9%;
+    margin-top: 6rem;
+    .container {
+        padding-left: 0;
+        position: relative;
+        @media (max-width: $tablet) {
+            padding: 0;
+        }
+        .row {
+            @media (max-width: $tablet) {
+                flex-direction: column-reverse;
+            }
+            .content-images {
+                @media (max-width: $tablet) {
+                    margin: 5% 0;
+                    padding: 3% 0;
+                    width: 100%;
+                }
+                .residences-carousel {
+                    position: inherit;
+                    .react-multi-carousel-item {
+                        @media (max-width: $tablet) {
+                            transform: initial;
+                        }
+                        .residences-content {
+                            // padding: 0 15px;
+                            // transform: scale(0.9);
+                            padding: 0 5px;
+                            .residence-field {
+                                max-width: 400px;
+                                max-height: 700px;
+                                @media (max-width: $desktopLS) {
+                                    max-height: 500px;
+                                }
+                                @media (max-width: $desktop) {
+                                    max-height: 400px;
+                                }
+                                .image-residence {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        &.react-multi-carousel-item--active {
+                            @media (max-width: $tablet) {
+                                transform: initial;
+                            }
+                            &:nth-child(even) {
+                                padding-top: 3rem;
+                                @media (max-width: $desktop) {
+                                    padding-top: 0;
+                                }
+                            }
+                            &:nth-child(odd) {
+                                padding-bottom: 3rem;
+                                @media (max-width: $desktop) {
+                                    padding-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                    .react-multi-carousel-track {
+                        position: inherit;
+                    }
+                    .react-multi-carousel-dot-list {
+                        justify-content: flex-start;
+                        bottom: -14%;
+                        left: 0;
+                        @media (max-width: $desktop) {
+                            justify-content: center;
+                            bottom: -2%;
+                        }
+                        @media (max-width: $tablet) {
+                            justify-content: center;
+                            bottom: -1%;
+                        }
+                        .react-multi-carousel-dot {
+                            button {
+                                width: 34px;
+                                height: 1px;
+                                border-radius: 0;
+                                background-color: $gray;
+                                border: 0;
+                            }
+                            &.react-multi-carousel-dot--active {
+                                button {
+                                    width: 80px;
+                                    background-color: black;
+                                }
+                            }
+                        }
+                    }
+
+                    .carousel-button-left,
+                    .react-multiple-carousel__arrow--left,
+                    .react-multiple-carousel__arrow--right,
+                    .carousel-button-right {
+                        background-color: black;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        border: 1px solid black;
+                        color: $white-0;
+                        display: block;
+                        font-size: 14px;
+                        z-index: 100;
+                        transform: translateX(-50%);
+                        z-index: 1;
+                        position: relative;
+                        overflow: hidden;
+                        @media (max-width: $desktop) {
+                            display: none;
+                        }
+                        .arrow_content_prev,
+                        .arrow_content_next {
+                            width: 16px;
+                            height: 21px;
+                            display: flex;
+                            align-items: center;
+                            margin: 0 auto;
+                            justify-content: center;
+                            img {
+                                width: 100%;
+                                object-fit: contain;
+                                height: 100%;
+                                object-position: center center;
+                                filter: invert(1);
+                            }
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            transition: all 0.5s ease;
+                            border-radius: 50%;
+                            background-color: white;
+                            transform: scale(0);
+                            border: 1px solid white;
+                        }
+
+                        &:hover {
+                            &::before {
+                                transform: scale(1.2);
+                            }
+                            .arrow_content_prev,
+                            .arrow_content_next {
+                                img {
+                                    filter: invert(0);
+                                }
+                            }
+                        }
+                    }
+                    .carousel-button-left,
+                    .react-multiple-carousel__arrow--left {
+                        position: absolute;
+                        right: 41.5%;
+                        bottom: -14%;
+                      
+                    }
+                    .carousel-button-right,
+                    .react-multiple-carousel__arrow--right {
+                        position: absolute;
+                        right: 38.5%;
+                        bottom: -14%;
+                        transition: 0.5s all ease;
+                        @media (max-width: $desktopLS) {
+                            right: 37.5%;
+                        }
+                        @media (max-width: $desktop) {
+                            right: 36.5%;
+                        }
+                    }
+                }
+            }
+            .residences-info {
+                padding: 0 10% 0 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                @media (max-width: $desktop) {
+                    padding: 0 8% 0 5%;
+                }
+                @media (max-width: $tablet) {
+                    padding: 0 5%;
+                    margin: 0;
+                    width: 100%;
+                }
+                .content-title {
+                    text-align: start;
+                    padding-top: 10px;
+                    h1 {
+                        color: inherit;
+                        text-align: start;
+                        font-weight: 300;
+                        font-size: 2rem;
+                        @media (max-width: $desktopLS) {
+                            font-size: 1.5rem;
+                        }
+                        @media (max-width: $desktop) {
+                            font-size: 1.3rem;
+                        }
+                        span {
+                            font-size: 3.2rem;
+                            display: block;
+                            font-weight: 300;
+                            color: inherit;
+                            @media (max-width: $desktopLS) {
+                                font-size: 2.9rem;
+                            }
+                            @media (max-width: $desktop) {
+                                font-size: 2.5rem;
+                            }
+                        }
+                        &:nth-child(2){
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

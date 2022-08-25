@@ -1,0 +1,217 @@
+/*sliderTestimonials*/
+.sliderTestimonials {
+  padding: 60px 0;
+  .content {
+    .c-header {
+      text-align: center;
+      p {
+        margin: 0 auto;
+      }
+    }
+    .c-content {
+      .sliderTestimonials__content {
+        .s-sliderTestimonials {
+          width: 85%;
+          margin: 0 auto;
+          padding-top: 35px;
+          @media (max-width: $mobile) {
+            width: 100%;
+          }
+          .owl-stage {
+            padding: 20px 0;
+            article {
+              margin: 5px;
+
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              @media (max-width: $tablet) {
+                display: block;
+              }
+              .s-sliderTestimonials__img {
+                z-index: 1;
+                position: relative;
+                padding-bottom: 74px;
+                @media (max-width: $desktop_1366) {
+                  padding-bottom: 67px;
+                }
+                @media (max-width: $desktop_1024) {
+                  padding-bottom: 50px;
+                }
+                .item__icon {
+                  top: 0;
+                  left: 21%;
+                  z-index: 1;
+                  position: absolute;
+                  transform: translateX(-21%);
+                  @media (max-width: $desktop_1366) {
+                    left: 11%;
+                    transform: translateX(-11%);
+                  }
+                  @media (max-width: $tablet) {
+                    left: 0;
+                    right: 25%;
+                    margin: 0 auto;
+                    text-align: center;
+                  }
+                  @media (max-width: $mobile) {
+                    left: -22%;
+                    right: 0;
+                  }
+                  i {
+                    color: $color_golda;
+                    font-size: 2.75rem;
+                    @media (max-width: $mobile) {
+                      font-size: 3rem;
+                    }
+                  }
+                }
+                .item__img {
+                  overflow: hidden;
+                  border-radius: 50%;
+                  position: relative;
+                  width: 120px;
+                  height: 120px;
+                  justify-self: center;
+                  margin: 0 auto;
+                  @media (max-width: $tablet) {
+                    width: 120px;
+                    margin: 0 auto;
+                  }
+                  @media (max-width: $mobile) {
+                    width: 120px;
+                  }
+                }
+                .item__text {
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: 0 auto;
+                  text-align: center;
+                  position: absolute;
+                  h3 {
+                    color: $color_big_stone;
+                    font-size: 1.25rem;
+                    line-height: 24px;
+                    font-family: $latobold;
+                  }
+                  span {
+                    color: $color_congress_blue;
+                    font-size: 0.875rem;
+                    line-height: 17px;
+                  }
+                }
+              }
+              .s-sliderTestimonials__text {
+                left: -60px;
+                margin-top: -50px;
+                padding: 30px 60px 30px 80px;
+                box-shadow: 0 0 10px 0 $box_shadow;
+                background-color: $background_white;
+                @media (max-width: $desktop_1366) {
+                  left: -19px;
+                }
+                @media (max-width: $desktop_1640) {
+                  padding: 20px 60px 20px 80px;
+                }
+                @media (max-width: $tablet) {
+                  left: 0;
+                  padding: 20px;
+                  margin-top: 35px;
+                }
+                p {
+                  color: $color_big_stone;
+                  font-size: 1.5rem;
+                  line-height: 33px;
+                  font-style: italic;
+                  font-family: $latobold;
+                  @media (max-width: $desktop_1640) {
+                    font-size: 1.25rem;
+                    line-height: 30px;
+                  }
+                  @media (max-width: $mobile) {
+                    font-size: 1rem;
+                    line-height: 27px;
+                  }
+
+                  strong {
+                    font-size: inherit;
+                    color: inherit;
+                  }
+
+                  a {
+                    font-size: inherit;
+                    color: inherit;
+                    font-family: inherit;
+
+                    &:hover {
+                      text-decoration: underline !important;
+                    }
+                  }
+                }
+
+                a, strong {
+                  color: $color_big_stone;
+                  font-size: 1.5rem;
+                  line-height: 33px;
+                  font-style: italic;
+                  font-family: $latobold;
+                  @media (max-width: $desktop_1640) {
+                    font-size: 1.25rem;
+                    line-height: 30px;
+                  }
+                  @media (max-width: $mobile) {
+                    font-size: 1rem;
+                    line-height: 27px;
+                  }
+                }
+
+                a {
+                  &:hover {
+                    &:hover {
+                      text-decoration: underline !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .owl-nav {
+            .owl-prev {
+              top: 43%;
+              left: -7%;
+              position: absolute;
+              @media (max-width: $tablet) {
+                top: 25%;
+                left: -7%;
+              }
+              i {
+                color: $color_big_stone;
+                font-size: 2rem;
+              }
+            }
+            .owl-next {
+              top: 43%;
+              right: -3%;
+              position: absolute;
+              @media (max-width: $tablet) {
+                top: 25%;
+                right: -7%;
+              }
+              i {
+                color: $color_big_stone;
+                font-size: 2rem;
+              }
+            }
+          }
+          .owl-dots {
+            @media (max-width: $tablet) {
+              bottom: inherit;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}

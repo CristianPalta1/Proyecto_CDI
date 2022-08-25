@@ -1,0 +1,182 @@
+.know-our-events {
+    margin: 5% 0;
+    position: relative;
+    .events-carousel {
+        position: inherit;
+        padding-bottom: 3%;
+        .event {
+            .row {
+                @media (max-width: $desktop) {
+                    flex-direction: column;
+                }
+            }
+            .content-images {
+                @media (max-width: $desktop) {
+                    width: 100%;
+                }
+                padding: 0;
+                img {
+                    width: 100%;
+                }
+            }
+            .col-md-4 {
+                @media (max-width: $desktop) {
+                    width: 100%;
+                    padding: 0 2rem;
+                    transform: translateY(-10%);
+                }
+                @media (max-width: $mobile) {
+                    padding: 0 1rem;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 0;
+                .content-info {
+                    padding: 0 10%;
+                    background-color: $grayLight;
+                    position: relative;
+                    .date-field {
+                        background-color: black;
+                        position: absolute;
+                        right: 5%;
+                        top: -5%;
+                        padding: 5px 10px;
+                        text-align: center;
+                        z-index: 100;
+                        .date {
+                            color: white;
+                            margin-bottom: 0;
+                            font-weight: 100;
+                            font-size: 14px;
+
+                            .year {
+                                display: block;
+                                font-weight: normal;
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                    .content-title {
+                        text-align: start;
+                        font-weight: 400;
+                    }
+
+                    .content-schedule {
+                        font-weight: 100;
+                        font-size: 14px;
+                        padding-left: 25px;
+                        margin: 1rem 0;
+                        display: inline-block;
+                    }
+                    .content-actions {
+                        margin: 2rem 0;
+                    }
+                }
+            }
+        }
+
+        .react-multi-carousel-track {
+            position: inherit;
+        }
+
+        .carousel-button-left,
+        .react-multiple-carousel__arrow--left,
+        .react-multiple-carousel__arrow--right,
+        .carousel-button-right {
+            background-color: black;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid black;
+            color: $white-0;
+            display: block;
+            font-size: 14px;
+            z-index: 100;
+            transform: translateX(-50%);
+            z-index: 95;
+            position: absolute;
+            bottom: 0;
+            overflow: hidden;
+            z-index: 1;
+            @media (max-width: $desktop) {
+                display: none;
+            }
+            .arrow_content_prev,
+            .arrow_content_next {
+                width: 16px;
+                height: 21px;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                justify-content: center;
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    height: 100%;
+                    object-position: center center;
+                    filter: invert(1);
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                transition: all 0.5s ease;
+                border-radius: 50%;
+                background-color: white;
+                transform: scale(0);
+                border: 1px solid black;
+            }
+            &:hover {
+                border: 1px solid black;
+                &::before {
+                    transform: scale(1.2);
+                }
+                .arrow_content_prev,
+                .arrow_content_next {
+                    img {
+                        filter: invert(0);
+                    }
+                }
+            }
+        }
+        .carousel-button-left {
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            @media (max-width: $desktopLS) {
+                left: 41.5%;
+            }
+        }
+        .carousel-button-right {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+        }
+
+        .react-multi-carousel-dot-list {
+            @media (max-width: $desktop) {
+                bottom: -5px;
+            }
+            .react-multi-carousel-dot {
+                button {
+                    width: 34px;
+                    height: 1px;
+                    border-radius: 0;
+                    background-color: $gray;
+                    border: 0;
+                }
+                &.react-multi-carousel-dot--active {
+                    button {
+                        width: 80px;
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+/*sliderProjection*/
+.sliderProjection {
+  padding: 60px 0;
+  position: relative;
+  background-color: $background_big_stone;
+  @media (max-width: $mobile) {
+    padding: 60px 0 40px 0;
+  }
+  .content {
+    .c-content {
+      .sliderProjection__content {
+        padding-top: 35px;
+        .s-sliderProjection {
+          .owl-item {
+            li {
+              margin: 0;
+              padding: 0;
+              &:before {
+                display: none;
+              }
+            }
+            article {
+              position: relative;
+              .s-sliderProjection__text {
+                left: 0;
+                right: 0;
+                bottom: 30px;
+                z-index: 1;
+                width: 85%;
+                margin: 0 auto;
+                position: absolute;
+                h3 {
+                  color: $color_white;
+                  a:hover {
+                    color: $color_white;
+                  }
+                }
+                p {
+                  height: 0;
+                  opacity: 0;
+                  color: $color_white;
+                  transition: all 0.25s;
+                }
+                .btn-link {
+                  height: 0;
+                  opacity: 0;
+                  a {
+                    color: $color_golda;
+                    transition: all 0.25s;
+                  }
+                }
+              }
+              &:after {
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: linear-gradient(
+                  180deg,
+                  rgba(0, 74, 147, 0) 0%,
+                  rgba(4, 25, 46, 1) 100%
+                );
+              }
+            }
+            &.center {
+              article {
+                .s-sliderProjection__text {
+                  p {
+                    height: auto;
+                    opacity: 1;
+                    padding: 10px 0 25px 0;
+                  }
+                  .btn-link {
+                    height: auto;
+                    opacity: 1;
+                  }
+                }
+                &:after {
+                  background: linear-gradient(
+                    180deg,
+                    rgba(0, 74, 147, 0.5) 0%,
+                    rgba(4, 25, 46, 1) 100%
+                  );
+                }
+              }
+            }
+          }
+          .owl-nav {
+            @include max_width_container;
+          }
+        }
+      }
+    }
+  }
+}

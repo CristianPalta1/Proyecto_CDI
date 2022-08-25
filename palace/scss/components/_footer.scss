@@ -1,0 +1,227 @@
+footer {
+  background: black;
+
+  &.new {
+    display: block;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    @media (max-width: $desktopL) {
+      flex-direction: column;
+    }
+
+    .brand {
+      width: 15%;
+      @media (max-width: $desktopL) {
+        width: 220px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .brand-img {
+        @media (max-width: $desktopL) {
+          width: 60%;
+        }
+        img {
+          width: 100%;
+          max-width: 140px;
+        }
+      }
+
+      .safe.mobile {
+        display: none;
+        width: 100%;
+        @media (max-width: $desktopL) {
+          display: block;
+          width: 40%;
+        }
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+
+    nav {
+      width: 50%;
+      @media (max-width: $desktopL) {
+        width: 80%;
+        margin: 30px 0;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        column-count: 3;
+        @media (max-width: $desktopL) {
+          columns: 1;
+          display: flex;
+          justify-content: space-between;
+        }
+        @media (max-width: $mobile) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        li {
+          line-height: 1.5rem;
+          @media (max-width: $desktopL) {
+            font-size: 0.9rem;
+          }
+
+          &::before {
+            display: none;
+          }
+          a {
+            color: white;
+            text-decoration: none;
+            @media (max-width: $desktopL) {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+
+    .social {
+      width: 25%;
+      @media (max-width: $desktopL) {
+        width: 90%;
+        text-align: center;
+        border-top: 1px solid #707070;
+        padding-top: 20px;
+      }
+
+      p {
+        color: white;
+        @media (max-width: $desktopL) {
+          font-size: 0.9rem;
+          margin: 0;
+        }
+
+        &.numeral {
+          text-transform: uppercase;
+        }
+      }
+
+      .wrap-social {
+        display: flex;
+        align-items: center;
+        padding: 15px 80px 10px 0;
+        @media (max-width: $desktopL) {
+          padding: 15px 0;
+          justify-content: center;
+        }
+
+        a {
+         
+          width: 20px;
+          height: 20px;
+          display: block;
+          margin: 0 10px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+          img{
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    .safe {
+      width: 10%;
+
+      &.desktop {
+        display: block;
+        @media (max-width: $desktopL) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .footer-down {
+    background-color: #333333;
+
+    .title-mobile {
+      display: none;
+      text-align: center;
+      color: white;
+      padding-top: 20px;
+      @media (max-width: $mobile) {
+        display: block;
+      }
+
+      &:after {
+        content: "";
+        width: 15px;
+        height: 8px;
+        background-image: url(../img/new/arrow-down-white.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        margin: 6px auto 0 auto;
+      }
+    }
+
+    nav {
+      width: 100%;
+      max-width: 1640px;
+      margin: 0 auto;
+      padding: 10px 40px;
+      box-sizing: border-box;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        @media (max-width: $mobile) {
+          display: none;
+        }
+
+        li {
+          @media (max-width: $desktopL) {
+            font-size: 0.9rem;
+          }
+          &::before {
+            display: none;
+          }
+
+          a {
+            color: white;
+            text-decoration: none;
+            @media (max-width: $desktopL) {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .legal-footer {
+    background-color: #ebebeb;
+    text-align: center;
+    padding: 10px 20px;
+
+    p {
+      @media (max-width: $desktopL) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+/*accordionGeneric*/
+.accordionGeneric{
+    padding: 60px 0 0 0;
+    .container{
+        .content{
+            .c-content{
+                div{
+                    .card{     
+                        border: 0px solid rgba(0,0,0,.125);  
+                        border-bottom: 1px solid rgba(0,0,0,.125);                 
+                        .card-header{
+                            padding: .75rem 0;
+                            background-color: $background_white;
+                            border-bottom: 0px solid rgba(0,0,0,.125);
+                            h5{
+                                button{
+                                    display:flex;
+                                    align-items:center;
+                                    justify-content: space-between;
+                                }
+                                .btn-link{
+                                    width: 100%;
+                                    position: relative;
+                                    text-align: initial;
+                                    color: $color_big_stone;
+                                    font-size: .9375rem;
+                                    line-height: 19px;
+                                    font-family: $latobold;
+                                    padding: .375rem 1.25rem;
+                                    text-transform: uppercase;
+                                    text-decoration: none !important;
+                                    &:before{
+                                        content: "\e825";
+                                        top: 10px;
+                                        right: 15px;
+                                        color: $color_big_stone;
+                                        font-size: 1.5rem;
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        font-family: "fontello";
+                                        position: absolute;
+                                        transition: all .25s;
+                                    }
+                                    &:hover{
+                                        box-shadow: none;
+                                        .icon-icon-plus-1{
+                                            color: $color_big_stone;
+                                            font-size: 1.5rem;
+                                            content:"\e824";
+                                        }
+                                    }
+                                    &:focus{
+                                        box-shadow: none;
+                                        .icon-icon-plus-1{
+                                            color: $color_big_stone;
+                                            font-size: 1.5rem;
+                                        }
+                                    }
+                                    &.collapsed{
+                                        color: $color_congress_blue;
+                                        font-size: .9375rem;
+                                        line-height: 19px;
+                                        font-family: $latobold;
+                                        padding: .375rem 1.25rem;
+                                        text-transform: uppercase;
+                                        text-decoration: none !important;
+                                        &:before{
+                                            content: "\e824";
+                                            top: 10px;
+                                            right: 15px;
+                                            color: $color_congress_blue;
+                                            font-size: 1.5rem;
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            font-family: "fontello";
+                                            position: absolute;
+                                            transition: all .25s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .card-body{
+                            padding: 0 1.25rem 1.25rem;
+                            p{
+                                font-size: 1rem;
+							    line-height: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

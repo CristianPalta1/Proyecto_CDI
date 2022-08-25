@@ -1,0 +1,5085 @@
+/*Our resorts*/
+section.our_resort {
+
+  .content {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+
+    .header_or {
+      width: 100%;
+      max-width: 1320px;
+      margin: 0 auto;
+      .text-center{
+        margin: 80px 0;
+        @media (max-width: $tablet) {
+          margin: 60px 0;
+        }
+        .text_CTA_Profiler{
+          margin: 20px;
+          display: none;
+        }
+        .btn{
+          color: $color-r-blue-button;
+          margin: 0 !important;
+          &:hover{
+            color: $color-white;
+          }
+        }
+      }
+
+      h1 {
+        margin: 0 20px 30px;
+        text-transform: uppercase;
+        display: grid;
+        span {
+          color: $color-r-black;
+        }
+      }
+
+      h2 {
+        padding: 0 20px;
+        &:after {
+          width: 60px;
+          height: 1px;
+          background-color: $color-r-blue;
+          display: block;
+          content: "";
+          margin: 20px auto 0 auto;
+        }
+      }
+
+      span.arrow-down {
+        width: 64px;
+        height: 25px;
+        background-image: url(../img/sprite.png);
+        background-size: 200px;
+        background-position: -329px 0;
+        display: block;
+        margin: 0px auto 40px auto;
+        cursor: pointer;
+        @media (max-width: $mobile) {
+          margin: -10px auto 40px auto;
+        }
+      }
+
+      ul {
+        padding: 0;
+        margin: 30px 0;
+        font-size: 0;
+        @media (max-width: $desktopXL) {
+          margin: 30px 20px;
+        }
+        @media (max-width: $desktopL) {
+          margin: 30px 0;
+          display: inline-block;
+          line-height: initial;
+        }
+
+        li {
+          width: 10%;
+          display: inline-block;
+          vertical-align: middle;
+          padding: 0 10px;
+          text-transform: uppercase;
+          cursor: pointer;
+          line-height: 16px;
+          @include hover-transition-3;
+          position: relative;
+          @media (max-width: $desktopL) {
+            line-height: 20px;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+          }
+
+          &:after {
+            background-color: $color-r-grey-light3;
+            width: 1px;
+            height: 30px;
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          &:last-child {
+            &:after {
+              display: none;
+            }
+          }
+
+          &.active,
+          &:hover {
+            color: $color-r-blue-button;
+          }
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+      .owl-nav {
+        @media (max-width: $desktopL) {
+          position: absolute;
+          width: 96%;
+          height: 0;
+          top: 50%;
+          margin-top: -14px;
+          margin-left: 2%;
+        }
+
+
+        .owl-prev {
+          @media (max-width: $desktopL) {
+            display: inline-block;
+            -webkit-background-size: cover;
+            background-size: cover;
+            text-indent: 80px;
+            overflow: hidden;
+            float: left;
+            background-image: url(../img/sprite.png);
+            background-size: 200px;
+            background-position: -291px 0;
+            width: 17px;
+            height: 28px;
+          }
+
+          &.disabled {
+            opacity: 0.5;
+          }
+
+        }
+
+        .owl-next {
+          @media (max-width: $desktopL) {
+            display: inline-block;
+            background-size: cover;
+            text-indent: 80px;
+            overflow: hidden;
+            float: right;
+            background-image: url(../img/sprite.png);
+            background-size: 200px;
+            background-position: -310px 0;
+            width: 17px;
+            height: 28px;
+          }
+
+          &.disabled {
+            opacity: 0.5;
+          }
+
+        }
+      }
+
+    }
+
+    .body_or {
+      width: 100%;
+      display: none;
+
+      article {
+        position: relative;
+        width: 100%;
+
+        .img_resort {
+          width: 60%;
+          @media (max-width: $desktopL) {
+            width: 100%;
+          }
+
+          img {
+            width: 100%;
+            @media (max-width: $mobile) {
+              padding: 4%;
+            }
+
+          }
+        }
+
+        .info {
+          background-color: $color-r-grey-legal-f;
+          width: 50%;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 50px;
+          @media (max-width: $desktop) {
+            width: 100%;
+            position: relative;
+            top: initial;
+            transform: initial;
+            padding: 30px 20px;
+          }
+
+          .logo {
+            width: 100%;
+            max-width: 250px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .copy {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+
+            p {
+              color: $color-fonts;
+            }
+
+            .btn {
+              margin-top: 30px;
+              @media (max-width: $mobileX) {
+                width: 100%;
+              }
+            }
+          }
+
+        }
+
+      }
+
+      &.owl-carousel {
+        display: block;
+      }
+
+    }
+
+  }
+}
+
+section.slider_only_palace-resort {
+
+  h2.title {
+    width: 100%;
+    max-width: 1320px;
+    margin: 40px auto 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+      color: $color-r-black;
+    }
+
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    @media (max-width: $desktop) {
+      padding: 40px 0 0 0;
+    }
+
+    article {
+      width: 100%;
+      @media (max-width: $desktopXL) {
+        padding: 0 30px 0 80px;
+        min-height: 500px;
+      }
+      @media (max-width: $desktop) {
+        padding: initial;
+        min-height: 350px;
+      }
+
+      .content_int {
+        width: 100%;
+        max-width: 1320px;
+        margin: 0 auto;
+        overflow: hidden;
+        //position: relative;
+
+        .img_resort {
+          float: right;
+          width: 70%;
+          @media (max-width: $desktopL) {
+            width: 65%;
+            padding: 68px 0;
+          }
+          @media (max-width: $desktop) {
+            width: 100%;
+            padding: 0;
+            float: initial;
+            @media (max-width: $mobileX) {
+              padding: 4%;
+            }
+          }
+
+          .description {
+            position: absolute;
+            top: 0;
+            right: 0;
+            @media (max-width: $desktop) {
+              display: none;
+            }
+
+            h3 {
+              text-align: left;
+              color: $color-r-black;
+              text-transform: uppercase;
+              font-size: 24px;
+              font-family: $gotham-light;
+              margin-bottom: 0;
+              text-align: left;
+
+              &:after {
+                width: 30px;
+                height: 1px;
+                background-color: $color-r-grey-lines;
+                display: block;
+                content: "";
+                margin: 0 0 10px 0;
+              }
+
+            }
+
+            p {
+              text-align: left;
+              color: $color-r-blue;
+              font-family: $gotham-light;
+              text-transform: uppercase;
+              letter-spacing: 0.5px;
+            }
+
+          }
+        }
+
+        .info {
+          width: 30%;
+          float: left;
+          transform: translateY(-50%);
+          top: 50%;
+          position: absolute;
+          text-align: left;
+          @media (max-width: $desktopXL) {
+            width: 35%;
+          }
+          @media (max-width: $desktopL) {
+            width: 45%;
+          }
+          @media (max-width: $desktop) {
+            width: 100%;
+            position: relative;
+            transform: initial;
+            top: initial;
+            float: initial;
+            padding: 40px 20px 0 20px;
+            box-sizing: border-box;
+          }
+
+          p {
+            &:after {
+              width: 40px;
+              height: 1px;
+              background-color: $color-r-grey-font-header;
+              display: block;
+              content: "";
+              margin: 15px 0 20px 0;
+              @media (max-width: $desktopL) {
+                margin: 15px 0;
+              }
+            }
+
+            &.title {
+              font-size: 30px;
+              font-family: $gotham-light;
+              letter-spacing: -1px;
+              margin-bottom: 0;
+              line-height: 2.25rem;
+              @media (max-width: $tablet){
+                font-size: 28px;
+              }
+              @media (max-width: $mobileXS){
+                font-size: 25px;
+              }
+
+              &:before {
+                width: 22px;
+                height: 11px;
+                display: block;
+                content: "";
+                background-image: url(../img/sprite.png);
+                background-position: -85px -106px;
+                background-size: 122px;
+                margin-bottom: 6px;
+              }
+            }
+
+          }
+
+          h2 {
+            margin-top: 0px;
+            @media (max-width: $mobile) {
+              margin-bottom: 22px;
+            }
+
+            span {
+              color: $color-r-black;
+              display: block;
+            }
+          }
+
+          .box-btn {
+            text-align: center;
+
+            a.btn {
+              color: $color-r-blue-no-contrast;
+              @media (max-width: $mobileX) {
+                width: 100%;
+              }
+
+              &:hover {
+                color: $color-white;
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      margin-top: -76px;
+      height: 0;
+      width: 94%;
+      left: 3%;
+      margin-left: initial;
+      max-width: initial;
+      @media (max-width: $desktopXL) {
+        width: 96%;
+        left: 2%;
+      }
+      @media (max-width: $desktop) {
+        display: none;
+      }
+
+      .owl-prev {
+        width: 43px;
+        height: 78px;
+        background-image: url(../img/sprite.png);
+        background-position: 0 0;
+        background-size: 187px;
+        text-indent: 80px;
+        overflow: hidden;
+        float: left;
+      }
+
+      .owl-next {
+        width: 43px;
+        height: 78px;
+        background-image: url(../img/sprite.png);
+        background-position: -40px 0;
+        background-size: 187px;
+        text-indent: 80px;
+        overflow: hidden;
+        float: right;
+      }
+    }
+
+    .owl-dots {
+      text-align: center;
+      z-index: 10;
+      display: block;
+      width: 60%;
+      position: relative;
+      margin: 20px auto 0 auto;
+      left: initial;
+      display: none;
+      max-width: 320px;
+      @media (max-width: $desktop) {
+        margin: 40px auto;
+        display: block;
+      }
+
+      .owl-dot {
+        height: 2px;
+        width: 17%;
+        background: $color-r-grey-lines;
+        display: inline-block;
+        opacity: 1;
+        position: relative;
+        margin: 0 1%;
+
+        &.active {
+          background: $color-r-blue;
+        }
+      }
+    }
+
+  }
+
+  &.type-dark {
+    .content {
+      padding: 20px 0;
+
+      article {
+        @media (max-width: $desktopXL) {
+          padding: 0;
+        }
+
+        .content_int {
+          max-width: initial;
+
+          .info {
+            width: 40%;
+            padding-left: 125px;
+            @media (max-width: $desktopXL) {
+              width: 50%;
+              padding-left: 72px;
+            }
+            @media (max-width: $desktopL) {
+              width: 100%;
+            }
+            @media (max-width: $desktop) {
+              position: relative;
+              transform: initial;
+              top: 0;
+              padding: 40px 20px 0 20px;
+            }
+
+            h2 {
+              text-transform: uppercase;
+              font-size: 40px;
+              line-height: 35px;
+              @media (max-width: $mobileXS) {
+                font-size: 38px;
+                line-height: 34px;
+              }
+
+              span {
+                color: $color-white;
+                @media (max-width: $desktop) {
+                  color: $color-r-black;
+                }
+              }
+            }
+
+            p {
+              color: $color-white;
+              max-width: 430px;
+              @media (max-width: $desktopL) {
+                max-width: 530px;
+              }
+              @media (max-width: $desktop) {
+                color: $color-r-fonts;
+                max-width: initial;
+              }
+
+              &:after {
+                display: none;
+              }
+
+              &.title {
+                color: $color-white;
+                @media (max-width: $desktop) {
+                  color: $color-r-fonts;
+                }
+
+
+                &:after {
+                  background-color: $color-r-blue;
+                  display: block;
+                }
+
+                &:before {
+                  background-image: url(../img/sprite.png);
+                  background-position: -84px -75px;
+                  background-size: 122px;
+                  @media (max-width: $desktop) {
+                    background-position: -85px -106px;
+                    background-size: 122px;
+                  }
+                }
+              }
+            }
+
+            .box-btn {
+              text-align: left;
+              margin-top: 20px;
+              @media (max-width: $desktop) {
+                text-align: center;
+                margin-top: 30px;
+              }
+
+              a.btn {
+                color: $color-white;
+                border: 1px solid $color-white;
+                @media (max-width: $mobileX) {
+                  width: 100%;
+                }
+
+                &:hover {
+                  border: 1px solid $color-r-blue;
+                }
+
+                @media (max-width: $desktop) {
+                  color: $color-r-blue;
+                  border: 1px solid $color-r-blue;
+                  &:hover {
+                    color: $color-white;
+                  }
+                }
+
+              }
+            }
+
+          }
+
+          .img_resort {
+            width: 100%;
+          }
+
+        }
+      }
+
+      .owl-nav {
+        .owl-prev {
+          background-size: 200px;
+          background-position: 0px -65px;
+        }
+
+        .owl-next {
+          background-size: 200px;
+          background-position: -45px -65px;
+        }
+
+      }
+
+    }
+  }
+
+  &.type-box {
+    .content {
+      article {
+        @media (max-width: $desktopXL) {
+          padding: initial;
+          min-height: initial;
+        }
+
+        .content_int {
+          max-width: initial;
+
+          .img_resort {
+            width: 100%;
+            float: initial;
+            @media (max-width: $mobile) {
+              padding: 4%;
+            }
+            @media (max-width: $desktopL) {
+              padding: 0;
+            }
+          }
+
+          .info {
+            float: initial;
+            background-color: $color-r-grey-legal-f;
+            width: 50%;
+            padding: 40px;
+            @media (max-width: $desktopL) {
+              width: 60%;
+            }
+            @media (max-width: $desktop) {
+              width: 100%;
+              background-color: transparent;
+              padding: 40px 20px 30px 20px;
+            }
+
+            .box-info {
+              width: 100%;
+              max-width: 500px;
+              display: inline-block;
+              @media (max-width: $desktopXL) {
+                max-width: 450px;
+              }
+              @media (max-width: $desktopL) {
+                max-width: 430px;
+              }
+              @media (max-width: $desktop) {
+                max-width: initial;
+              }
+
+              h2 {
+                span {
+                  color: $color-white;
+                  @media (max-width: $desktop) {
+                    color: $color-r-black;
+                  }
+                }
+              }
+
+              p {
+                color: $color-white;
+                @media (max-width: $desktop) {
+                  color: $color-r-fonts;
+                }
+
+                &:after {
+                  display: none;
+                }
+
+                &.title {
+                  &:after {
+                    width: 40px;
+                    height: 1px;
+                    background-color: $color-r-grey-font-header;
+                    display: block;
+                    content: "";
+                    margin: 15px 0 20px 0;
+                    @media (max-width: $mobile) {
+                      margin: 15px 0 10px 0;
+                    }
+                  }
+                }
+
+              }
+
+              .box-btn {
+                text-align: left;
+                @media (max-width: $desktop) {
+                  text-align: center;
+                  margin-top: 20px;
+                }
+
+                a.btn {
+                  @media (max-width: $mobileX) {
+                    width: 100%;
+                  }
+                }
+              }
+
+            }
+
+            &.no-title {
+              h2 {
+                margin-bottom: 40px;
+                @media (max-width: $mobile) {
+                  margin-bottom: 10px;
+                  margin-top: -15px;
+                }
+
+                &:after {
+                  width: 40px;
+                  height: 1px;
+                  background-color: $color-r-grey-font-header;
+                  display: block;
+                  content: "";
+                  margin: 15px 0 20px 0;
+                  position: absolute;
+                  right: 40px;
+                  margin-top: 10px;
+                  @media (max-width: $desktop) {
+                    right: initial;
+                    left: 20px;
+                  }
+                  @media (max-width: $mobile) {
+                    left: 0px;
+                    position: relative;
+                  }
+                }
+              }
+            }
+
+          }
+
+        }
+      }
+
+      .owl-nav {
+        margin-top: -39px;
+
+        .owl-prev, .owl-next {
+          display: inline-block;
+          background-size: 200px;
+          background-position: 0px -65px;
+        }
+
+        .owl-next {
+          background-position: -46px -65px;
+        }
+      }
+
+      .owl-dots {
+        margin: 0 auto;
+      }
+
+    }
+
+    &.left {
+      .content {
+        article {
+          .content_int {
+            .info {
+              text-align: right;
+              @media (max-width: $desktop) {
+                width: 100%;
+                padding: 40px 20px;
+                text-align: left;
+              }
+              @media (max-width: $mobile) {
+                padding: 40px 20px 30px 20px;
+              }
+
+              .box-info {
+                p {
+                  &.title {
+                    margin: 11px 0 40px 0;
+                    @media (max-width: $mobile) {
+                      margin: 11px 0 -11px 0;
+                    }
+
+                    &:before {
+                      position: absolute;
+                      right: 40px;
+                      margin-top: -12px;
+                      @media (max-width: $desktop) {
+                        right: initial;
+                        left: 20px;
+                      }
+                    }
+
+                    &:after {
+                      position: absolute;
+                      right: 40px;
+                      margin-top: 10px;
+                      @media (max-width: $desktop) {
+                        right: initial;
+                        left: 20px;
+                      }
+                      @media (max-width: $mobile) {
+                        position: relative;
+                        margin-top: 20px;
+                        left: 0;
+                      }
+                    }
+                  }
+                }
+
+                .box-btn {
+                  text-align: right;
+                  @media (max-width: $desktop) {
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .owl-nav {
+          width: initial;
+        }
+      }
+
+      &.our_resort {
+        .content {
+          article {
+            .content_int {
+              .info {
+                background-color: transparent;
+                text-align: left;
+                max-width: 1420px;
+                width: 100%;
+                left: 50%;
+                margin-left: -710px;
+                transform: initial;
+                top: 10%;
+                @media (max-width: $desktopXL) {
+                  width: 100%;
+                  left: initial;
+                  margin-left: initial;
+                  padding: 30px 60px;
+                  top: 0;
+                }
+                @media (max-width: $desktop) {
+                  padding: 40px 20px 30px 20px;
+                }
+
+                &.no-title {
+                  h2 {
+                    @media (max-width: $desktop) {
+                      text-align: center;
+                    }
+
+                    &:after {
+                      position: relative;
+                      right: initial;
+                      width: 60px;
+                      @media (max-width: $desktop) {
+                        margin: 15px auto 20px auto;
+                        left: initial;
+                      }
+                    }
+                  }
+                }
+
+                .box-info {
+
+                  .brand {
+                    margin-bottom: 30px;
+                    @media (max-width: $desktop) {
+                      margin-bottom: 10px;
+                    }
+
+                    img {
+                      max-width: 135px;
+                      @media (max-width: $desktop) {
+                        margin: 0 auto;
+                      }
+                    }
+                  }
+
+                  p {
+                    color: $color-r-black;
+                  }
+                }
+
+              }
+            }
+          }
+
+          .owl-nav {
+            top: initial;
+            margin-top: initial;
+            bottom: 40px;
+            margin-bottom: 10%;
+            width: 1420px;
+            left: 50%;
+            margin-left: -710px;
+            padding-left: 40px;
+            @media (max-width: $desktopXL) {
+              width: 100%;
+              left: initial;
+              margin-left: initial;
+              padding: 30px 60px;
+              margin-bottom: 0;
+              bottom: 100px;
+            }
+
+            .owl-prev {
+              background-image: url(../img/arrow-blue-medium.png);
+              display: inline-block;
+              background-size: cover;
+            }
+
+            .owl-next {
+              background-image: url(../img/arrow-blue-medium.png);
+              background-size: cover;
+              float: left;
+            }
+
+          }
+
+        }
+      }
+
+    }
+
+    &.right {
+      .content {
+        article {
+          .content_int {
+            .info {
+              right: 0;
+
+              &.no-title {
+                .box-info {
+
+                  h2 {
+                    &:after {
+                      right: initial;
+                    }
+                  }
+
+                  p.title {
+                    display: none;
+                  }
+                }
+              }
+
+            }
+          }
+        }
+
+        .owl-nav {
+          width: 90px;
+          left: initial;
+          right: 3%;
+        }
+      }
+    }
+
+  }
+
+}
+
+section.block_cuisine {
+  .content {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    max-width: 1320px;
+    @media (max-width: $desktop) {
+      padding: 0;
+    }
+
+    article {
+      font-size: 0;
+      overflow: auto;
+      position: relative;
+      height: auto;
+
+      .img_content {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        float: right;
+        @media (max-width: $desktop) {
+          width: 100%;
+          float: initial;
+        }
+
+        .description {
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          @media (max-width: $desktop) {
+            display: none;
+          }
+
+          h3 {
+            text-align: left;
+            color: $color-r-black;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: $gotham-light;
+            margin-bottom: 0;
+            text-align: left;
+
+            &:after {
+              width: 30px;
+              height: 1px;
+              background-color: $color-r-grey-font-header;
+              display: block;
+              content: "";
+              margin: 0 0 10px 0;
+            }
+
+          }
+
+          p {
+            text-align: left;
+            color: $color-r-blue-button;
+            font-family: $gotham-light;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+          }
+
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .info {
+        width: 50%;
+        display: table;
+        vertical-align: middle;
+        transform: translateY(-50%);
+        margin-top: 25%;
+        margin-bottom: -25%;
+        text-align: left;
+        padding-left: 30px;
+        box-sizing: border-box;
+        @media (max-width: $desktop) {
+          width: 100%;
+          display: block;
+          transform: initial;
+          margin: initial;
+          padding: 40px 20px 0 20px;
+        }
+
+        p {
+          max-width: 500px;
+          @media (max-width: $desktop) {
+            max-width: initial;
+          }
+
+          &.title {
+            font-size: 30px;
+            font-family: $gotham-light;
+            letter-spacing: -1px;
+            margin-bottom: 0;
+            line-height: 2.25rem;
+
+            &:after {
+              width: 40px;
+              height: 1px;
+              background-color: $color-r-grey-font-header;
+              display: block;
+              content: "";
+              margin: 15px 0 20px 0;
+              @media (max-width: $desktopL) {
+                margin: 15px 0;
+              }
+            }
+
+            &:before {
+              width: 22px;
+              height: 11px;
+              display: block;
+              content: "";
+              background-image: url(../img/sprite.png);
+              background-position: -85px -106px;
+              background-size: 122px;
+              margin-bottom: 6px;
+            }
+          }
+
+        }
+
+        h2 {
+          margin-top: 0px;
+          @media (max-width: $mobile) {
+            margin-bottom: 22px;
+          }
+
+          span {
+            color: $color-r-black;
+            display: block;
+          }
+        }
+
+        .opinion {
+          border-top: 1px solid $color-r-grey-font-header;
+          max-width: 500px;
+          margin-top: 40px;
+          padding-top: 20px;
+          @media (max-width: $desktop) {
+            max-width: initial;
+          }
+          @media (max-width: $mobileX) {
+            text-align: center;
+          }
+
+          picture {
+            width: 25%;
+            display: inline-block;
+            vertical-align: middle;
+            @media (max-width: $mobileX) {
+              width: 100%;
+            }
+          }
+
+          .lazyload__text {
+            color: $color-r-fonts;
+            font-size: 20px;
+            margin-bottom: 18px;
+            font-family: Times, serif;
+            font-style: italic;
+            width: 75%;
+            display: inline-block;
+            vertical-align: middle;
+            @media (max-width: $mobileX) {
+              width: 100%;
+            }
+            @media (max-width: $mobile) {
+              line-height: 30px;
+            }
+
+            &:after {
+              width: 20px;
+              height: 20px;
+              background-image: url(../img/sprite.png);
+              background-position: -111px -143px;
+              background-size: 200px;
+              display: inline-block;
+              content: "";
+              margin-left: 10px;
+              @media (max-width: $mobile) {
+                width: 15px;
+                height: 15px;
+                margin-left: 5px;
+                background-size: 152px;
+                background-position: -84px -110px;
+              }
+            }
+
+            &:before {
+              width: 20px;
+              height: 20px;
+              background-image: url(../img/sprite.png);
+              background-position: -108px -172px;
+              background-size: 200px;
+              display: inline-block;
+              content: "";
+              margin-right: 10px;
+              @media (max-width: $mobile) {
+                width: 15px;
+                height: 15px;
+                margin-right: 5px;
+                background-size: 152px;
+                background-position: -82px -131px;
+              }
+            }
+          }
+        }
+
+        .box-btn {
+          margin-top: 20px;
+          @media (max-width: $desktop) {
+            text-align: center;
+          }
+
+          a {
+            @media (max-width: $mobileX) {
+              margin-top: 20px;
+            }
+          }
+
+          .btn {
+            color: $color-r-blue-no-contrast;
+            margin-right: 10px;
+            @media (max-width: $mobileX) {
+              margin: 0 0 10px 0;
+              width: 100%;
+            }
+
+            &:hover {
+              color: $color-white;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+
+section.palace_resort_box_copy_ns {
+  .content {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    @media (max-width: $mobile) {
+      padding: 20px 0;
+    }
+
+    article {
+      position: relative;
+      @media (max-width: $desktopL) {
+        overflow: hidden;
+      }
+
+      .img_content {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+
+        .description {
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          @media (max-width: $desktop) {
+            display: none;
+          }
+
+          h3 {
+            text-align: left;
+            color: $color-r-black;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: $gotham-light;
+            margin-bottom: 0;
+            text-align: left;
+
+            &:after {
+              width: 30px;
+              height: 1px;
+              background-color: $color-r-grey-font-header;
+              display: block;
+              content: "";
+              margin: 0 0 10px 0;
+            }
+
+          }
+
+          p {
+            text-align: left;
+            color: $color-r-blue;
+            font-family: $gotham-light;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+          }
+
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      picture {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .info {
+        width: 50%;
+        max-width: 550px;
+        display: block;
+        transform: translateY(-50%);
+        top: 50%;
+        position: absolute;
+        text-align: left;
+        background-color: rgba(0, 52, 71, 0.80);
+        left: 40px;
+        padding: 40px;
+        box-sizing: border-box;
+        @media (max-width: $desktopL) {
+          max-width: 700px;
+          width: 100%;
+        }
+        @media (max-width: $desktop) {
+          position: relative;
+          transform: initial;
+          top: initial;
+          max-width: initial;
+          padding: 40px 20px;
+          left: 0;
+          background-color: initial;
+        }
+        @media (max-width: $mobile) {
+          padding: 20px;
+        }
+
+        p {
+          max-width: 500px;
+          color: $color-white;
+          @media (max-width: $desktopL) {
+            max-width: initial;
+          }
+          @media (max-width: $desktop) {
+            color: $color-r-fonts;
+          }
+
+          &.title {
+            font-size: 30px;
+            font-family: $gotham-light;
+            letter-spacing: -1px;
+            margin-bottom: 0;
+            line-height: 2.25rem;
+            &:after {
+              width: 40px;
+              height: 1px;
+              background-color: $color-r-blue;
+              display: block;
+              content: "";
+              margin: 15px 0 20px 0;
+              @media (max-width: $desktopL) {
+                margin: 15px 0;
+              }
+            }
+
+            &:before {
+              width: 24px;
+              height: 11px;
+              display: block;
+              content: "";
+              background-image: url(../img/sprite.png);
+              background-position: -84px -75px;
+              background-size: 122px;
+              margin-bottom: 6px;
+              @media (max-width: $desktop) {
+                background-image: url(../img/sprite.png);
+                background-position: -85px -106px;
+                background-size: 122px;
+              }
+            }
+          }
+
+        }
+
+        h2 {
+          margin-top: 0px;
+          margin-bottom: 20px;
+          @media (max-width: $mobile) {
+            margin-bottom: 26px;
+          }
+
+          span {
+            color: $color-white;
+            display: block;
+            @media (max-width: $desktop) {
+              color: $color-r-black;
+            }
+          }
+        }
+
+        .box-btn {
+          margin-top: 20px;
+          @media (max-width: $desktop) {
+            text-align: center;
+          }
+
+          .btn {
+            margin-right: 10px;
+            @media (max-width: $desktop) {
+              color: $color-r-blue;
+            }
+            @media (max-width: $mobileX) {
+              width: 100%;
+            }
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+
+      }
+
+      &.right {
+        .info {
+          right: 40px;
+          margin-left: initial;
+          left: initial;
+          text-align: right;
+          @media (max-width: $desktop) {
+            right: 0;
+            text-align: left;
+          }
+
+          p.title {
+            margin-bottom: 60px;
+            margin-top: 27px;
+            @media (max-width: $desktop) {
+              margin: initial;
+            }
+
+            &:before {
+              position: absolute;
+              right: 40px;
+              margin-top: -16px;
+              @media (max-width: $desktop) {
+                position: relative;
+                right: initial;
+                margin-top: initial;
+              }
+            }
+
+            &:after {
+              position: absolute;
+              right: 40px;
+              @media (max-width: $desktop) {
+                position: relative;
+                right: initial;
+              }
+            }
+
+          }
+
+          .box-btn {
+            .btn {
+              margin-right: 0px;
+            }
+          }
+
+        }
+      }
+
+      &.black {
+        .info {
+          background-color: rgba(20, 20, 20, 0.8);
+          @media (max-width: $desktop) {
+            background-color: initial;
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+
+section.palace-resort-credits-block-home {
+  .content {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    max-width: 1120px;
+
+    article {
+      font-size: 0;
+      overflow: auto;
+      position: relative;
+      height: auto;
+
+      picture {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        //float: left;
+        @media (max-width: $desktop) {
+          width: 100%;
+          float: initial;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .info {
+        width: 50%;
+        //display: table;
+        display: inline-block;
+        vertical-align: middle;
+        //transform: translateY(-50%);
+        //margin-top: 25%;
+        //margin-bottom: -25%;
+        text-align: right;
+        padding-left: 30px;
+        box-sizing: border-box;
+        @media (max-width: $desktopL) {
+          padding-left: 0;
+          padding-right: 30px;
+        }
+        @media (max-width: $desktop) {
+          width: 100%;
+          display: block;
+          transform: initial;
+          margin: initial;
+          text-align: left;
+          padding: 40px 20px;
+        }
+
+        picture {
+          width: inherit;
+          display: block;
+          vertical-align: inherit;
+        }
+
+        .img {
+          position: absolute;
+          right: 0;
+          width: 100%;
+          max-width: 150px;
+          @media (max-width: $desktopL) {
+            right: 30px;
+            max-width: 130px;
+          }
+          @media (max-width: $desktop) {
+            right: initial;
+          }
+          @media (max-width: $mobileX) {
+            position: relative;
+            margin: 0 auto 30px auto;
+          }
+        }
+
+        .copy {
+          padding-right: 200px;
+          @media (max-width: $desktopL) {
+            padding-right: 150px;
+          }
+          @media (max-width: $desktop) {
+            padding: 0 0 0 160px;
+          }
+          @media (max-width: $mobileX) {
+            padding: 0;
+          }
+        }
+
+        p {
+          max-width: 500px;
+          @media (max-width: $desktop) {
+            max-width: initial;
+          }
+
+          &.title {
+            font-size: 30px;
+            font-family: $gotham-light;
+            letter-spacing: -1px;
+            margin-bottom: 0;
+            line-height: 2.25rem;
+            &:after {
+              width: 40px;
+              height: 1px;
+              background-color: $color-r-grey-font-header;
+              display: block;
+              content: "";
+              margin: 15px 0 20px 0;
+              @media (max-width: $desktopL) {
+                margin: 15px 0;
+              }
+            }
+
+            &:before {
+              width: 22px;
+              height: 11px;
+              display: block;
+              content: "";
+              background-image: url(../img/sprite.png);
+              background-position: -85px -106px;
+              background-size: 122px;
+              margin-bottom: 6px;
+              @media (max-width: $mobile) {
+                margin-bottom: -5px;
+              }
+            }
+          }
+
+        }
+
+        h2 {
+          margin-top: 0px;
+          margin-bottom: 30px;
+          @media (max-width: $mobileX) {
+            text-align: center;
+          }
+
+          span {
+            color: $color-r-black;
+            display: block;
+            @media (max-width: $mobileX) {
+              display: initial;
+            }
+          }
+        }
+
+        .opinion {
+          border-top: 1px solid $color-r-grey-font-header;
+          max-width: 500px;
+          margin-top: 40px;
+          padding-top: 20px;
+          @media (max-width: $desktop) {
+            max-width: initial;
+          }
+          @media (max-width: $mobileX) {
+            text-align: center;
+          }
+
+          .img_people {
+            width: 25%;
+            display: inline-block;
+            vertical-align: middle;
+            @media (max-width: $mobileX) {
+              width: 100%;
+            }
+          }
+
+          h4 {
+            color: $color-r-fonts;
+            margin-bottom: 18px;
+            font-family: Times, serif;
+            font-style: italic;
+            width: 75%;
+            display: inline-block;
+            vertical-align: middle;
+            @media (max-width: $mobileX) {
+              width: 100%;
+            }
+
+            &:after {
+              width: 20px;
+              height: 20px;
+              background-image: url(../img/sprite.png);
+              background-position: -111px -146px;
+              background-size: 200px;
+              display: inline-block;
+              content: "";
+              margin-left: 10px;
+              @media (max-width: $mobile) {
+                width: 15px;
+                height: 15px;
+                margin-left: 5px;
+                background-size: 152px;
+                background-position: -84px -110px;
+              }
+            }
+
+            &:before {
+              width: 20px;
+              height: 20px;
+              background-image: url(../img/sprite.png);
+              background-position: -108px -173px;
+              background-size: 200px;
+              display: inline-block;
+              content: "";
+              margin-right: 10px;
+              @media (max-width: $mobile) {
+                width: 15px;
+                height: 15px;
+                margin-right: 5px;
+                background-size: 152px;
+                background-position: -82px -131px;
+              }
+            }
+          }
+        }
+
+        .box-btn {
+          margin-top: 20px;
+          @media (max-width: $desktop) {
+            text-align: center;
+          }
+
+          .btn {
+            color: $color-r-blue;
+            margin-right: 10px;
+            @media (max-width: $mobileX) {
+              margin: 0 0 10px 0;
+              width: 100%;
+            }
+
+            &:hover {
+              color: $color-white;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+section.amenidades_three_columns {
+  position: relative;
+
+  .content {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1120px;
+    @media (max-width: $desktop) {
+      max-width: 800px;
+    }
+
+    .title {
+      text-align: center;
+
+      h2 {
+        text-transform: uppercase;
+
+        &:after {
+          width: 60px;
+          height: 1px;
+          background-color: $color-r-blue;
+          display: block;
+          content: "";
+          margin: 20px auto 40px auto;
+        }
+      }
+    }
+
+    .listado {
+      ul {
+        column-count: 3;
+        @media (max-width: $desktop) {
+          column-count: 2;
+        }
+        @media (max-width: $tablet) {
+          column-count: 1;
+        }
+      }
+    }
+
+  }
+}
+/*
+section.palace-resort-interleaved-module {
+  position: relative;
+
+  .content {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    width: 100%;
+
+    h2 {
+      text-align: center;
+
+      span {
+        color: $color-r-black;
+        display: block;
+      }
+
+      &:after {
+        width: 60px;
+        height: 1px;
+        background-color: $color-r-grey-lines;
+        display: block;
+        content: "";
+        margin: 20px auto 40px auto;
+      }
+
+    }
+
+    article {
+      position: relative;
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .image {
+        width: 100%;
+        max-width: 70%;
+        @media (max-width: $desktopXL) {
+          max-width: 65%;
+          height: 505px;
+          overflow: hidden;
+          position: relative;
+        }
+        @media (max-width: $desktopL) {
+          height: 448px;
+        }
+        @media (max-width: $desktop) {
+          max-width: initial;
+          height: auto;
+        }
+
+        picture {
+          @media (max-width: $desktopXL) {
+            height: 100%;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+          }
+          @media (max-width: $desktopL) {
+            width: 774px;
+          }
+          @media (max-width: $desktop) {
+            position: relative;
+            width: 100%;
+          }
+          @media (max-width: $mobile) {
+            padding: 4%;
+          }
+
+          img {
+            width: 100%;
+            @media (max-width: $desktopXL) {
+              left: 50%;
+              min-height: 100%;
+              position: absolute;
+              transform: translate(-50%, -50%);
+              top: 50%;
+              min-width: 100%;
+              max-width: 70%;
+              object-position: center;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+            @media (max-width: $desktop) {
+              position: relative;
+              left: 0;
+              transform: initial;
+              top: initial;
+              max-width: initial;
+              min-height: auto;
+            }
+          }
+
+        }
+
+      }
+
+      .copy {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        max-width: 1320px;
+        left: 50%;
+        margin-left: -660px;
+        transform: translateY(-50%);
+        @media (max-width: $desktopXL) {
+          max-width: initial;
+          width: 96%;
+          left: 2%;
+          margin-left: initial;
+          z-index: 9;
+        }
+
+        @media (max-width: $desktop) {
+          position: relative;
+          top: initial;
+          transform: initial;
+        }
+
+        .box_copys {
+          background-color: $color-r-grey-legal-f;
+          width: 100%;
+          max-width: 500px;
+          padding: 40px;
+          box-sizing: border-box;
+          display: inline-block;
+          text-align: left;
+          @media (max-width: $desktop) {
+            max-width: initial;
+            padding: 40px 20px 20px 20px;
+            background-color: transparent;
+          }
+
+          h3 {
+            &:before {
+              width: 22px;
+              height: 13px;
+              display: block;
+              content: "";
+              background-image: url(../img/sprite.png);
+              background-position: -85px -90px;
+              background-size: 122px;
+              margin-bottom: 6px;
+            }
+
+            &:after {
+              width: 50px;
+              height: 1px;
+              background-color: $color-r-grey-lines;
+              display: block;
+              content: "";
+              margin: 15px 0 30px 0;
+            }
+
+            span {
+              color: $color-white;
+              @media (max-width: $desktop) {
+                color: $color-r-black;
+              }
+            }
+
+          }
+
+          p {
+            color: $color-white;
+            @media (max-width: $desktop) {
+              color: $color-r-fonts;
+            }
+
+            .bold {
+              color: $color-r-blue;
+            }
+          }
+
+          .box_btns {
+            margin-top: 20px;
+            @media (max-width: $desktop) {
+              text-align: center;
+            }
+
+            a {
+              margin-bottom: 0px;
+              @media (max-width: $mobile) {
+                margin-bottom: 20px !important;
+              }
+            }
+
+            a.btn {
+              margin-right: 5px;
+              @media (max-width: $desktop) {
+                color: $color-r-blue-no-contrast;
+              }
+              @media (max-width: $mobileX) {
+                display: block;
+                margin-bottom: 10px;
+                margin-right: 0;
+              }
+
+              &:hover {
+                @media (max-width: $desktop) {
+                  color: $color-white;
+                }
+              }
+
+              &:last-child {
+                @media (max-width: $mobileX) {
+                  margin-bottom: 0px;
+                }
+              }
+            }
+
+          }
+
+        }
+      }
+
+      &:nth-child(even) {
+        .copy {
+          text-align: right;
+        }
+      }
+
+      &:nth-child(odd) {
+        .image {
+          max-width: initial;
+          padding-left: 30%;
+          box-sizing: border-box;
+          @media (max-width: $desktopXL) {
+            max-width: 65%;
+            margin-left: 35%;
+          }
+          @media (max-width: $desktop) {
+            padding-left: 0;
+            margin-left: 0;
+            max-width: initial;
+          }
+
+          picture {
+            @media (max-width: $desktopXL) {
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  &.type-actividad {
+    .content {
+      article {
+        overflow: hidden;
+        font-size: 0;
+
+        .image {
+          width: 50%;
+          max-width: initial;
+          display: inline-block;
+          vertical-align: top;
+          padding-left: initial;
+          @media (max-width: $desktopXL) {
+            height: 404px;
+            overflow: hidden;
+            position: relative;
+          }
+          @media (max-width: $desktop) {
+            width: 100%;
+            height: auto;
+          }
+
+          picture {
+            @media (max-width: $desktopXL) {
+              height: 100%;
+              position: absolute;
+              text-align: center;
+              width: 742px;
+              z-index: 1;
+            }
+            @media (max-width: $desktop) {
+              width: 100%;
+              position: relative;
+            }
+
+            img {
+              @media (max-width: $desktopXL) {
+                left: 50%;
+                min-height: 100%;
+                max-width: inherit;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                min-width: 100%;
+              }
+              @media (max-width: $desktop) {
+                transform: initial;
+                left: initial;
+                top: initial;
+                position: relative;
+              }
+            }
+          }
+
+        }
+
+        .copy {
+          position: relative;
+          width: 50%;
+          max-width: initial;
+          display: inline-block;
+          left: initial;
+          margin-left: initial;
+          transform: initial;
+          vertical-align: top;
+          @media (max-width: $desktop) {
+            width: 100%;
+          }
+
+          .box_copys {
+            background-color: transparent;
+            max-width: 600px;
+            @media (max-width: $desktopL) {
+              padding: 0 30px 30px 30px;
+            }
+            @media (max-width: $desktop) {
+              max-width: initial;
+              padding: 40px 20px;
+            }
+
+            h3 {
+              span {
+                color: $color-r-black;
+              }
+            }
+
+            p {
+              color: $color-r-fonts;
+              margin: 0;
+
+              &.legal {
+                margin-top: 30px;
+                font-style: italic;
+                font-size: 14px;
+              }
+
+            }
+
+            a.btn {
+              color: $color-r-blue-no-contrast;
+
+              &:hover {
+                color: $color-white;
+              }
+            }
+
+            .detalle {
+              height: 160px;
+              overflow: hidden;
+              @include hover-transition-5;
+              position: relative;
+              @media (max-width: $desktopXL) {
+                height: 105px;
+              }
+
+              h4 {
+                margin-bottom: 0;
+                margin-top: 15px;
+                font-size: 24px;
+                line-height: 24px;
+                @media (max-width: $mobile) {
+                  margin-bottom: 8;
+                }
+              }
+
+              &:after {
+                background: linear-gradient(to bottom, transparent 0, rgba(255, 255, 255, .2) 25%, rgba(255, 255, 255, .7) 50%, #fff 100%);
+                content: "";
+                width: 100%;
+                position: absolute;
+                display: block;
+                height: 40px;
+                bottom: 0;
+                @include hover-transition-5;
+              }
+
+              &.active {
+                height: auto !important;
+                &:after {
+                  opacity: 0;
+                }
+              }
+
+            }
+
+            .redmore {
+              color: $color-r-blue;
+              font-size: 22px;
+              text-transform: uppercase;
+              font-family: $gotham-light;
+              letter-spacing: 1px;
+              margin-top: 30px;
+              cursor: pointer;
+
+              &:after {
+                width: 80px;
+                height: 1px;
+                background-color: $color-r-grey-lines;
+                display: block;
+                content: "";
+                margin: 5px 0 30px 0;
+              }
+
+            }
+
+          }
+
+        }
+
+        &:nth-child(odd) {
+          .image {
+            float: right;
+            margin: 0;
+          }
+
+          .copy {
+            text-align: right;
+          }
+
+        }
+
+        &:nth-child(even) {
+          .copy {
+            text-align: left;
+          }
+
+        }
+
+        &.no_view_more {
+          .copy {
+            .box_copys {
+              .detalle {
+                &:after {
+                  display: none;
+                }
+              }
+
+              .redmore {
+                display: none;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+
+  &.slider {
+    margin-top: 20px;
+
+    h2 {
+      text-align: center;
+
+      span {
+        color: $color-r-black;
+        display: block;
+      }
+
+      &:after {
+        width: 60px;
+        height: 1px;
+        background-color: $color-r-grey-lines;
+        display: block;
+        content: "";
+        margin: 20px auto 0 auto;
+      }
+
+    }
+
+    .owl-nav {
+      top: 50%;
+      margin-top: -37px;
+      width: 86px;
+      right: 50px;
+      position: absolute;
+      font-size: 0;
+      @media (max-width: $desktopL) {
+        top: initial;
+        bottom: 70px;
+      }
+
+      .owl-prev {
+        background-image: url(../img/arrow-white-medium-v2.png);
+        display: inline-block;
+        background-size: cover;
+        width: 43px;
+        height: 78px;
+        float: left;
+      }
+
+      .owl-next {
+        background-image: url(../img/arrow-white-medium-v2.png);
+        background-size: cover;
+        float: right;
+        width: 43px;
+        height: 78px;
+        background-position-x: -43px;
+      }
+
+    }
+
+    .owl-dots {
+      text-align: center;
+      z-index: 10;
+      display: block;
+      width: 60%;
+      max-width: 520px;
+      position: relative;
+      margin: 10px auto 20px auto;
+      left: initial;
+      max-height: 25px;
+      overflow: hidden;
+
+      .owl-dot {
+        height: 2px;
+        width: 17%;
+        background: $color-r-grey-lines;
+        display: inline-block;
+        opacity: 1;
+        position: relative;
+        margin: 0 1%;
+
+        &.active {
+          background: $color-r-blue;
+        }
+      }
+    }
+
+    &.right {
+
+      .content {
+        article:nth-child(odd) {
+          .image {
+            width: 100%;
+            max-width: 70%;
+            padding-left: initial;
+            @media (max-width: $desktopXL) {
+              max-width: 65%;
+              height: 505px;
+              overflow: hidden;
+              position: relative;
+              margin-left: initial;
+            }
+            @media (max-width: $desktopL) {
+              height: 448px;
+            }
+            @media (max-width: $desktop) {
+              max-width: initial;
+              height: auto;
+            }
+          }
+
+          .copy {
+            text-align: right;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            max-width: 1320px;
+            left: 50%;
+            margin-left: -660px;
+            transform: translateY(-50%);
+            @media (max-width: $desktopXL) {
+              max-width: initial;
+              width: 96%;
+              left: 2%;
+              margin-left: initial;
+              z-index: 9;
+            }
+
+            @media (max-width: $desktop) {
+              position: relative;
+              top: initial;
+              transform: initial;
+            }
+          }
+
+        }
+      }
+
+      .owl-nav {
+        left: 50px;
+      }
+    }
+
+  }
+
+}*/
+
+
+section.palace-resort-interleaved-module {
+  position: relative;
+
+  .content {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    width: 100%;
+
+    h2 {
+      text-align: center;
+
+      span {
+        color: $color-r-black;
+        display: block;
+      }
+
+      &:after {
+        width: 60px;
+        height: 1px;
+        background-color: $color-r-grey-lines;
+        display: block;
+        content: "";
+        margin: 20px auto 40px auto;
+      }
+
+    }
+
+    article {
+      position: relative;
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .image {
+        width: 100%;
+        max-width: 70%;
+        @media (max-width: $desktopXL) {
+          max-width: 65%;
+          height: 505px;
+          overflow: hidden;
+          position: relative;
+        }
+        @media (max-width: $desktopL) {
+          /*height: 448px;*/
+        }
+        @media (max-width: $desktopL) {
+          max-width: initial;
+          height: auto;
+        }
+
+        picture {
+          @media (max-width: $desktopXL) {
+            height: 100%;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+          }
+          @media (max-width: $desktopL) {
+            /*width: 774px;*/
+          }
+          @media (max-width: $desktopL) {
+            position: relative;
+            width: 100%;
+          }
+          @media (max-width: $mobile) {
+            padding: 4%;
+          }
+
+          img {
+            width: 100%;
+            @media (max-width: $desktopXL) {
+              left: 50%;
+              min-height: 100%;
+              position: absolute;
+              transform: translate(-50%, -50%);
+              top: 50%;
+              min-width: 100%;
+              max-width: 70%;
+              object-position: center;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+            @media (max-width: $desktopL) {
+              position: relative;
+              left: 0;
+              transform: initial;
+              top: initial;
+              max-width: initial;
+              min-height: auto;
+            }
+          }
+
+        }
+
+      }
+
+      .copy {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        max-width: 1320px;
+        left: 50%;
+        margin-left: -660px;
+        transform: translateY(-50%);
+        @media (max-width: $desktopXL) {
+          max-width: initial;
+          width: 96%;
+          left: 2%;
+          margin-left: initial;
+          z-index: 9;
+        }
+
+        @media (max-width: $desktopL) {
+          position: relative;
+          top: initial;
+          transform: initial;
+        }
+
+        .box_copys {
+          background-color: $color-r-grey-legal-f;
+          width: 100%;
+          max-width: 500px;
+          padding: 40px;
+          box-sizing: border-box;
+          display: inline-block;
+          text-align: left;
+          @media (max-width: $desktopL) {
+            max-width: initial;
+            padding: 40px 20px 20px 20px;
+            background-color: transparent;
+          }
+
+          h3 {
+            &:before {
+              width: 22px;
+              height: 13px;
+              display: block;
+              content: "";
+              background-image: url(../img/sprite.png);
+              background-position: -85px -90px;
+              background-size: 122px;
+              margin-bottom: 6px;
+            }
+
+            &:after {
+              width: 50px;
+              height: 1px;
+              background-color: $color-r-grey-lines;
+              display: block;
+              content: "";
+              margin: 15px 0 30px 0;
+            }
+
+            span {
+              color: $color-white;
+              @media (max-width: $desktopL) {
+                color: $color-r-black;
+              }
+            }
+
+          }
+
+          p {
+            color: $color-white;
+            @media (max-width: $desktopL) {
+              color: $color-r-fonts;
+            }
+
+            .bold {
+              color: $color-r-blue;
+            }
+          }
+
+          .box_btns {
+            margin-top: 20px;
+            @media (max-width: $desktopL) {
+              text-align: center;
+            }
+
+            a {
+              margin-bottom: 0px;
+              @media (max-width: $mobile) {
+                margin-bottom: 20px !important;
+              }
+            }
+
+            a.btn {
+              margin-right: 5px;
+              @media (max-width: $desktopL) {
+                color: $color-r-blue-no-contrast;
+              }
+              @media (max-width: $mobileX) {
+                display: block;
+                margin-bottom: 10px;
+                margin-right: 0;
+              }
+
+              &:hover {
+                @media (max-width: $desktopL) {
+                  color: $color-white;
+                }
+              }
+
+              &:last-child {
+                @media (max-width: $mobileX) {
+                  margin-bottom: 0px;
+                }
+              }
+            }
+
+          }
+
+        }
+      }
+
+      &:nth-child(even) {
+        .copy {
+          text-align: right;
+        }
+      }
+
+      &:nth-child(odd) {
+        .image {
+          max-width: initial;
+          padding-left: 30%;
+          box-sizing: border-box;
+          @media (max-width: $desktopXL) {
+            max-width: 65%;
+            margin-left: 35%;
+          }
+          @media (max-width: $desktopL) {
+            padding-left: 0;
+            margin-left: 0;
+            max-width: initial;
+          }
+
+          picture {
+            @media (max-width: $desktopXL) {
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  &.type-actividad {
+    .content {
+      article {
+        overflow: hidden;
+        font-size: 0;
+
+        .image {
+          width: 50%;
+          max-width: initial;
+          display: inline-block;
+          vertical-align: top;
+          padding-left: initial;
+          @media (max-width: $desktopXL) {
+            height: 404px;
+            overflow: hidden;
+            position: relative;
+          }
+          @media (max-width: $desktopL) {
+            width: 100%;
+            height: auto;
+          }
+
+          picture {
+            @media (max-width: $desktopXL) {
+              height: 100%;
+              position: absolute;
+              text-align: center;
+              width: 742px;
+              z-index: 1;
+            }
+            @media (max-width: $desktopL) {
+              width: 100%;
+              position: relative;
+            }
+
+            img {
+              @media (max-width: $desktopXL) {
+                left: 50%;
+                min-height: 100%;
+                max-width: inherit;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                min-width: 100%;
+              }
+              @media (max-width: $desktopL) {
+                transform: initial;
+                left: initial;
+                top: initial;
+                position: relative;
+              }
+            }
+          }
+
+        }
+
+        .copy {
+          position: relative;
+          width: 50%;
+          max-width: initial;
+          display: inline-block;
+          left: initial;
+          margin-left: initial;
+          transform: initial;
+          vertical-align: top;
+          @media (max-width: $desktopL) {
+            width: 100%;
+          }
+
+          .box_copys {
+            background-color: transparent;
+            max-width: 600px;
+            @media (max-width: $desktopL) {
+              /*padding: 0 30px 30px 30px;*/
+            }
+            @media (max-width: $desktopL) {
+              max-width: initial;
+              padding: 40px 20px;
+            }
+
+            h3 {
+              span {
+                color: $color-r-black;
+              }
+            }
+
+            p {
+              color: $color-r-fonts;
+              margin: 0;
+
+              &.legal {
+                margin-top: 30px;
+                font-style: italic;
+                font-size: 14px;
+              }
+
+            }
+
+            a.btn {
+              color: $color-r-blue-no-contrast;
+
+              &:hover {
+                color: $color-white;
+              }
+            }
+
+            .detalle {
+              height: 160px;
+              overflow: hidden;
+              @include hover-transition-5;
+              position: relative;
+              @media (max-width: $desktopXL) {
+                height: 105px;
+              }
+
+              h4 {
+                margin-bottom: 0;
+                margin-top: 15px;
+                font-size: 24px;
+                line-height: 24px;
+                @media (max-width: $mobile) {
+                  margin-bottom: 8;
+                }
+              }
+
+              &:after {
+                background: linear-gradient(to bottom, transparent 0, rgba(255, 255, 255, .2) 25%, rgba(255, 255, 255, .7) 50%, #fff 100%);
+                content: "";
+                width: 100%;
+                position: absolute;
+                display: block;
+                height: 40px;
+                bottom: 0;
+                @include hover-transition-5;
+              }
+
+              &.active {
+                height: auto !important;
+                &:after {
+                  opacity: 0;
+                }
+              }
+
+            }
+
+            .redmore {
+              color: $color-r-blue;
+              font-size: 22px;
+              text-transform: uppercase;
+              font-family: $gotham-light;
+              letter-spacing: 1px;
+              margin-top: 30px;
+              cursor: pointer;
+
+              &:after {
+                width: 80px;
+                height: 1px;
+                background-color: $color-r-grey-lines;
+                display: block;
+                content: "";
+                margin: 5px 0 30px 0;
+              }
+
+            }
+
+          }
+
+        }
+
+        &:nth-child(odd) {
+          .image {
+            float: right;
+            margin: 0;
+          }
+
+          .copy {
+            text-align: right;
+          }
+
+        }
+
+        &:nth-child(even) {
+          .copy {
+            text-align: left;
+          }
+
+        }
+
+        &.no_view_more {
+          .copy {
+            .box_copys {
+              .detalle {
+                &:after {
+                  display: none;
+                }
+              }
+
+              .redmore {
+                display: none;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+
+  &.slider {
+    margin-top: 20px;
+
+    h2 {
+      text-align: center;
+
+      span {
+        color: $color-r-black;
+        display: block;
+      }
+
+      &:after {
+        width: 60px;
+        height: 1px;
+        background-color: $color-r-grey-lines;
+        display: block;
+        content: "";
+        margin: 20px auto 0 auto;
+      }
+
+    }
+
+    .owl-nav {
+      top: 50%;
+      margin-top: -37px;
+      width: 86px;
+      right: 50px;
+      position: absolute;
+      font-size: 0;
+      @media (max-width: $desktopL) {
+        /*top: initial;
+        bottom: 70px;*/
+      }
+
+      .owl-prev {
+        background-image: url(../img/arrow-white-medium-v2.png);
+        display: inline-block;
+        background-size: cover;
+        width: 43px;
+        height: 78px;
+        float: left;
+      }
+
+      .owl-next {
+        background-image: url(../img/arrow-white-medium-v2.png);
+        background-size: cover;
+        float: right;
+        width: 43px;
+        height: 78px;
+        background-position-x: -43px;
+      }
+
+    }
+
+    .owl-dots {
+      text-align: center;
+      z-index: 10;
+      display: block;
+      width: 60%;
+      max-width: 520px;
+      position: relative;
+      margin: 10px auto 20px auto;
+      left: initial;
+      max-height: 25px;
+      overflow: hidden;
+
+      .owl-dot {
+        height: 2px;
+        width: 17%;
+        background: $color-r-grey-lines;
+        display: inline-block;
+        opacity: 1;
+        position: relative;
+        margin: 0 1%;
+
+        &.active {
+          background: $color-r-blue;
+        }
+      }
+    }
+
+    &.right {
+
+      .content {
+        article:nth-child(odd) {
+          .image {
+            width: 100%;
+            max-width: 70%;
+            padding-left: initial;
+            @media (max-width: $desktopXL) {
+              max-width: 65%;
+              height: 505px;
+              overflow: hidden;
+              position: relative;
+              margin-left: initial;
+            }
+            @media (max-width: $desktopL) {
+              /* height: 448px;*/
+            }
+            @media (max-width: $desktopL) {
+              max-width: initial;
+              height: auto;
+            }
+          }
+
+          .copy {
+            text-align: right;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            max-width: 1320px;
+            left: 50%;
+            margin-left: -660px;
+            transform: translateY(-50%);
+            @media (max-width: $desktopXL) {
+              max-width: initial;
+              width: 96%;
+              left: 2%;
+              margin-left: initial;
+              z-index: 9;
+            }
+
+            @media (max-width: $desktopL) {
+              position: relative;
+              top: initial;
+              transform: initial;
+            }
+          }
+
+        }
+      }
+
+      .owl-nav {
+        left: 50px;
+      }
+    }
+
+  }
+
+}
+
+section.palace-resort-tyc {
+  .content {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1120px;
+    text-align: center;
+
+    h3 {
+      &:after {
+        width: 60px;
+        height: 1px;
+        background-color: $color-r-grey-lines;
+        display: block;
+        content: "";
+        margin: 20px auto 30px auto;
+      }
+    }
+  }
+}
+
+section.block-triptonico-things {
+  position: relative;
+
+  .content {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    @media (max-width: $desktopXL) {
+      max-width: 1070px;
+    }
+    @media (max-width: $desktop) {
+      max-width: 500px;
+    }
+
+    article {
+
+      picture {
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: inherit;
+        @media (max-width: $tablet) {
+          padding: 0;
+          margin-bottom: 40px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      //.box_copys {
+      /*padding: 20px;
+      margin-top: -60px;
+      z-index: 9;
+      display: inline-block;*/
+      .copy {
+        background-color: $color-r-grey-legal-f;
+        color: $color-white;
+        padding: 40px;
+        box-sizing: border-box;
+        min-height: 300px;
+        margin-top: -60px;
+        z-index: 9;
+        display: inline-block;
+        width: calc(100% - 40px);
+        @media (max-width: $desktopXL) {
+          padding: 30px;
+        }
+
+        h3 {
+          margin-top: 0;
+
+          &:after {
+            width: 50px;
+            height: 1px;
+            background-color: $color-r-blue;
+            display: block;
+            content: "";
+            margin: 15px auto 30px auto;
+          }
+        }
+
+        p {
+          color: $color-white;
+        }
+
+      }
+
+      //}
+
+    }
+
+    .owl-dots {
+      text-align: center;
+      z-index: 10;
+      display: block;
+      max-width: 500px;
+      position: relative;
+      margin: 20px auto 0 auto;
+      left: initial;
+      @media (max-width: $desktop) {
+        margin: 40px auto;
+      }
+      @media (max-width: $tablet) {
+        margin: 20px auto 40px auto;
+      }
+
+      .owl-dot {
+        height: 2px;
+        width: 10%;
+        background: $color-r-grey-lines;
+        display: inline-block;
+        opacity: 1;
+        position: relative;
+        margin: 0 1%;
+
+        &.active {
+          background: $color-r-blue;
+        }
+      }
+    }
+
+  }
+
+  .custom-nav {
+    position: absolute;
+    width: 1320px;
+    top: 50%;
+    margin-top: -38px;
+    height: 10px;
+    z-index: 10;
+    left: 50%;
+    margin-left: -660px;
+    @media (max-width: $desktopXL) {
+      width: 1160px;
+      margin-left: -585px;
+    }
+
+    .owl-prev {
+      width: 40px;
+      height: 78px;
+      background-image: url(../img/arrow-blue-medium.png);
+      display: inline-block;
+      background-size: cover;
+      text-indent: 80px;
+      overflow: hidden;
+      float: left;
+      background-color: transparent;
+      border: 0;
+    }
+
+    .owl-next {
+      width: 40px;
+      height: 78px;
+      background-image: url(../img/arrow-blue-medium.png);
+      background-position-x: -46px;
+      display: inline-block;
+      background-size: cover;
+      text-indent: 80px;
+      overflow: hidden;
+      float: right;
+      background-color: transparent;
+      border: 0;
+    }
+
+    &.disabled {
+      display: none;
+    }
+
+  }
+
+}
+div.sectionDestinoPerfecto{
+  background-color: $color-r-section-gray;
+  padding-top: 40px;
+}
+
+section.palace-resort-gallery-dinning {
+  position: relative;
+  overflow: auto;
+  padding: 40px 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 0;
+  text-align: left;
+  background-color:$color-r-section-gray;
+
+  article {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid $color-white;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    height: 450px;
+    text-align: center;
+    @media (max-width: $desktop) {
+      width: 100%;
+      float: initial;
+      height: auto;
+    }
+
+    picture {
+      height: 100%;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      z-index: 1;
+      @media (max-width: $desktop) {
+        position: relative;
+      }
+
+      img {
+        left: 50%;
+        min-height: 100%;
+        max-width: inherit;
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        top: 50%;
+        width: 100%;
+        @media (max-width: $desktop) {
+          position: relative;
+          transform: initial;
+          left: initial;
+          top: initial;
+        }
+      }
+    }
+
+    .info {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      max-width: 450px;
+      left: 50%;
+      margin-left: -225px;
+      z-index: 10;
+      opacity: 0;
+      margin-top: 20px;
+      @include hover-transition-5;
+      @media (max-width: $desktop) {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        max-width: initial;
+        top: initial;
+        transform: initial;
+        margin: initial;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        left: 0;
+      }
+
+      h3 {
+        margin-top: 0;
+        visibility: hidden;
+        @media (max-width: $desktop) {
+          visibility: visible;
+          color: $color-r-blue;
+        }
+
+        &:before {
+          width: 24px;
+          height: 11px;
+          display: block;
+          content: "";
+          background-image: url(../img/sprite.png);
+          background-position: -84px -74px;
+          background-size: 122px;
+          margin: 0 auto 8px auto;
+          @media (max-width: $desktop) {
+            background-position: -85px -91px;
+            background-size: 122px;
+          }
+        }
+
+        &:after {
+          width: 40px;
+          height: 1px;
+          background-color: $color-r-blue;
+          display: block;
+          content: "";
+          margin: 15px auto 20px auto;
+        }
+
+      }
+
+      p {
+        color: $color-white;
+        @media (max-width: $desktop) {
+          color: $color-r-fonts;
+        }
+      }
+
+      ul,
+      ol {
+        color: $color-white;
+        text-align: left;
+        @media (max-width: $desktop) {
+          color: $color-r-fonts;
+        }
+      }
+
+      .btn {
+        margin-top: 20px;
+        @media (max-width: $desktop) {
+          color: $color-r-blue;
+        }
+        @media (max-width: $mobileX) {
+          width: 100%;
+        }
+
+        &:hover {
+          background-color: $color-r-blue;
+          color: $color-white;
+
+        }
+
+      }
+
+    }
+
+    &:after {
+      @include hover-transition-5;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .75);
+      display: block;
+      position: absolute;
+      z-index: 9;
+      top: 0;
+      opacity: 0;
+    }
+
+    &.destacado {
+      width: 100%;
+    }
+
+    &:hover {
+      .info {
+        opacity: 1;
+        margin-top: 0;
+        h3{
+          visibility: visible;
+          color: $color-white;
+          @media (max-width: $desktop) {
+            color: $color-r-blue;
+          }
+        }
+      }
+
+      &:after {
+        opacity: 1;
+        @media (max-width: $desktop) {
+          opacity: 0;
+        }
+      }
+    }
+
+  }
+
+  .owl-dots {
+    text-align: center;
+    z-index: 10;
+    display: block;
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    left: initial;
+    display: block;
+    max-width: 320px;
+
+    .owl-dot {
+      height: 2px;
+      width: 17%;
+      background: $color-r-grey-lines;
+      display: inline-block;
+      opacity: 1;
+      position: relative;
+      margin: 0 1%;
+
+      &.active {
+        background: $color-r-blue;
+      }
+    }
+  }
+}
+
+section.palace-resort-introduction-dinning {
+  position: relative;
+  overflow: auto;
+
+  .content {
+    padding: 40px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+  }
+}
+
+section.palace-resort-triptico-slider {
+  position: relative;
+  overflow: auto;
+
+  .content {
+    padding: 40px 0;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+
+    article {
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 450px;
+      text-align: center;
+      @media (max-width: $desktop) {
+        height: auto;
+      }
+
+      &:after {
+        @include hover-transition-5;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .75);
+        display: block;
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        opacity: 0;
+      }
+
+      picture {
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        min-width: 754px;
+        margin-left: -377px;
+        left: 50%;
+        @media (max-width: $desktop) {
+          position: relative;
+          left: initial;
+          margin-left: initial;
+          min-width: initial;
+          height: auto;
+        }
+      }
+
+      .info {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        max-width: 450px;
+        left: 50%;
+        margin-left: -225px;
+        z-index: 10;
+        opacity: 0;
+        margin-top: 20px;
+        @include hover-transition-5;
+        @media (max-width: $desktopXL) {
+          max-width: 380px;
+          margin-left: -190px;
+        }
+        @media (max-width: $desktopL) {
+          max-width: 300px;
+          margin-left: -150px;
+        }
+        @media (max-width: $desktop) {
+          width: 100%;
+          position: relative;
+          opacity: 1;
+          max-width: initial;
+          top: initial;
+          transform: initial;
+          margin: initial;
+          padding: 40px 20px;
+          box-sizing: border-box;
+          left: 0;
+        }
+
+        h3 {
+          color: $color-white;
+          margin-top: 0;
+          @media (max-width: $desktop) {
+            color: $color-r-blue;
+          }
+
+          &:before {
+            width: 22px;
+            height: 13px;
+            display: block;
+            content: "";
+            background-image: url(../img/sprite.png);
+            background-position: -84px -74px;
+            background-size: 122px;
+            margin: 0 auto 8px auto;
+            @media (max-width: $desktop) {
+              background-position: -85px -90px;
+              background-size: 122px;
+            }
+
+          }
+
+          &:after {
+            width: 40px;
+            height: 1px;
+            background-color: $color-r-blue;
+            display: block;
+            content: "";
+            margin: 15px auto 20px auto;
+
+          }
+
+        }
+
+        p {
+          color: $color-white;
+          @media (max-width: $desktop) {
+            color: $color-r-fonts;
+          }
+        }
+
+        ul,
+        ol {
+          color: $color-white;
+          text-align: left;
+          @media (max-width: $desktop) {
+            color: $color-r-fonts;
+          }
+        }
+
+        .btn {
+          margin-top: 20px;
+          @media (max-width: $desktop) {
+            color: $color-r-blue;
+          }
+          @media (max-width: $mobileX) {
+            width: 100%;
+          }
+
+          &:hover {
+            background-color: $color-r-blue;
+            color: $color-white;
+          }
+
+        }
+
+      }
+
+      &:hover {
+        .info {
+          opacity: 1;
+          margin-top: 0;
+        }
+
+        &:after {
+          opacity: 1;
+          @media (max-width: $desktop) {
+            opacity: 0;
+          }
+        }
+      }
+
+    }
+
+    .owl-dots {
+      text-align: center;
+      z-index: 10;
+      display: block;
+      width: 60%;
+      position: relative;
+      margin: 0 auto;
+      left: initial;
+      display: block;
+      max-width: 320px;
+
+      .owl-dot {
+        height: 2px;
+        width: 17%;
+        background: $color-r-grey-lines;
+        display: inline-block;
+        opacity: 1;
+        position: relative;
+        margin: 0 1%;
+
+        &.active {
+          background: $color-r-blue;
+        }
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      margin-top: -39px;
+      height: 0;
+      width: 100%;
+      left: 0;
+      margin-left: initial;
+      max-width: initial;
+      @media (max-width: $desktop) {
+        display: none;
+      }
+
+      .owl-prev {
+        width: 43px;
+        height: 78px;
+        background-image: url(../img/sprite.png);
+        background-size: 200px;
+        background-position: 0 -65px;
+        display: inline-block;
+        text-indent: 80px;
+        overflow: hidden;
+        float: left;
+        margin-left: 10px;
+      }
+
+      .owl-next {
+        width: 43px;
+        height: 78px;
+        background-image: url(../img/sprite.png);
+        background-size: 200px;
+        background-position: -45px -65px;
+        background-position-x: -43px;
+        display: inline-block;
+        text-indent: 80px;
+        overflow: hidden;
+        float: right;
+        margin-right: 10px;
+      }
+    }
+
+  }
+
+}
+
+section.palace-resort-sextuple {
+  position: relative;
+  overflow: auto;
+
+  .content {
+    padding: 40px 0;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+
+    article {
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      width: 33.33%;
+      height: 450px;
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      @media (max-width: $desktop) {
+        height: auto;
+        width: 100%;
+      }
+
+      &:after {
+        @include hover-transition-5;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .75);
+        display: block;
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        opacity: 0;
+      }
+
+      picture {
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        min-width: 754px;
+        margin-left: -377px;
+        left: 50%;
+        @media (max-width: $desktop) {
+          position: relative;
+          left: initial;
+          margin-left: initial;
+          min-width: initial;
+          height: auto;
+        }
+      }
+
+      .info {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        max-width: 450px;
+        left: 50%;
+        margin-left: -225px;
+        z-index: 10;
+        opacity: 0;
+        margin-top: 20px;
+        @include hover-transition-5;
+        @media (max-width: $desktopXL) {
+          max-width: 380px;
+          margin-left: -190px;
+        }
+        @media (max-width: $desktopL) {
+          max-width: 300px;
+          margin-left: -150px;
+        }
+        @media (max-width: $desktop) {
+          width: 100%;
+          position: relative;
+          opacity: 1;
+          max-width: initial;
+          top: initial;
+          transform: initial;
+          margin: initial;
+          padding: 40px 20px;
+          box-sizing: border-box;
+          left: 0;
+        }
+
+        h3 {
+          color: $color-white;
+          margin-top: 0;
+          @media (max-width: $desktop) {
+            color: $color-r-blue;
+          }
+
+          &:before {
+            width: 22px;
+            height: 13px;
+            display: block;
+            content: "";
+            background-image: url(../img/sprite.png);
+            background-position: -84px -74px;
+            background-size: 122px;
+            margin: 0 auto 8px auto;
+            @media (max-width: $desktop) {
+              background-position: -85px -90px;
+              background-size: 122px;
+            }
+
+          }
+
+          &:after {
+            width: 40px;
+            height: 1px;
+            background-color: $color-r-blue;
+            display: block;
+            content: "";
+            margin: 15px auto 20px auto;
+
+          }
+
+        }
+
+        p {
+          color: $color-white;
+          @media (max-width: $desktop) {
+            color: $color-r-fonts;
+          }
+        }
+
+        ul,
+        ol {
+          color: $color-white;
+          text-align: left;
+          @media (max-width: $desktop) {
+            color: $color-r-fonts;
+          }
+        }
+
+        .btn {
+          margin-top: 20px;
+          @media (max-width: $desktop) {
+            color: $color-r-blue;
+          }
+          @media (max-width: $mobileX) {
+            width: 100%;
+          }
+
+          &:hover {
+            background-color: $color-r-blue;
+            color: $color-white;
+          }
+
+        }
+
+      }
+
+      &:hover {
+        .info {
+          opacity: 1;
+          margin-top: 0;
+        }
+
+        &:after {
+          opacity: 1;
+          @media (max-width: $desktop) {
+            opacity: 0;
+          }
+        }
+      }
+
+    }
+
+    .owl-dots {
+      text-align: center;
+      z-index: 10;
+      display: block;
+      width: 60%;
+      position: relative;
+      margin: 0 auto;
+      left: initial;
+      display: block;
+      max-width: 420px;
+      @media (max-width: $desktop) {
+        width: 80%;
+      }
+
+      .owl-dot {
+        height: 2px;
+        width: 14%;
+        background: $color-r-grey-lines;
+        display: inline-block;
+        opacity: 1;
+        position: relative;
+        margin: 0 1%;
+
+        &.active {
+          background: $color-r-blue;
+        }
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      margin-top: -39px;
+      height: 0;
+      width: 100%;
+      left: 0;
+      margin-left: initial;
+      max-width: initial;
+      @media (max-width: $desktop) {
+        display: none;
+      }
+
+      .owl-prev {
+        width: 43px;
+        height: 78px;
+        background-image: url(../img/sprite.png);
+        background-size: 200px;
+        background-position: 0 -65px;
+        display: inline-block;
+        text-indent: 80px;
+        overflow: hidden;
+        float: left;
+        margin-left: 10px;
+      }
+
+      .owl-next {
+        width: 43px;
+        height: 78px;
+        background-image: url(../img/sprite.png);
+        background-size: 200px;
+        background-position: -45px -65px;
+        display: inline-block;
+        text-indent: 80px;
+        overflow: hidden;
+        float: right;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+/* Ajuste para GSC del panel */
+.panel-group .panel + .panel{
+  margin-top: 10px !important;
+}
+section.accordion-internal {
+  div#accordion {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    max-width: 1320px;
+    @media (max-width: $desktopXL) {
+      padding: 40px 20px;
+    }
+    .panel {
+      box-shadow: initial;
+      border-radius: 0;
+
+      .panel-heading {
+        padding: 15px;
+        background-color: rgba(206, 206, 206, .2);
+
+        h3.panel-title {
+          margin: 0;
+          padding: 0;
+          line-height: initial;
+
+          a {
+            margin: 0;
+            font-size: 28px;
+            color: $color-r-blue;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $gotham-light;
+            letter-spacing: -0.5px;
+            display: block;
+          }
+        }
+        h2.panel-title {
+          margin: 0;
+          padding: 0;
+          line-height: initial;
+
+          a {
+            margin: 0;
+            font-size: 28px;
+            color: $color-r-blue;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $gotham-light;
+            letter-spacing: -0.5px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  div.accordion {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    max-width: 1320px;
+    @media (max-width: $desktopXL) {
+      padding: 40px 20px;
+    }
+
+    .panel {
+      box-shadow: initial;
+      border-radius: 0;
+
+      .panel-heading {
+        padding: 15px;
+        background-color: rgba(206, 206, 206, .2);
+
+        h3.panel-title {
+          margin: 0;
+          padding: 0;
+          line-height: initial;
+
+          a {
+            margin: 0;
+            font-size: 28px;
+            color: $color-r-blue;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $gotham-light;
+            letter-spacing: -0.5px;
+            display: block;
+          }
+        }
+        h2.panel-title {
+          margin: 0;
+          padding: 0;
+          line-height: initial;
+
+          a {
+            margin: 0;
+            font-size: 28px;
+            color: $color-r-blue;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $gotham-light;
+            letter-spacing: -0.5px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.palace-resort-info-contact {
+  .content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px 0 20px;
+    box-sizing: border-box;
+    max-width: 1120px;
+    text-align: center;
+
+    h3 {
+      span {
+        color: $color-r-black;
+      }
+
+      &:after {
+        width: 60px;
+        height: 1px;
+        background-color: $color-r-grey-lines;
+        display: block;
+        content: "";
+        margin: 20px auto 40px auto;
+      }
+    }
+
+    h4 {
+      margin: 30px 0 10px 0;
+    }
+
+    ul.owl-carousel {
+      margin: 0 0 50px 0;
+      padding: 0;
+
+      li {
+        padding: 0 10px;
+        @media (max-width: $desktop) {
+          padding: 0;
+        }
+
+        &:before {
+          display: none;
+        }
+
+        p {
+          span {
+            color: $color-r-blue;
+            display: block;
+          }
+        }
+
+      }
+
+      .owl-nav {
+        position: absolute;
+        width: 100%;
+        margin-left: 0;
+        top: 50%;
+        margin-top: -14px;
+        height: 0;
+        z-index: 10;
+
+        .owl-prev {
+          width: 17px;
+          height: 28px;
+          background-image: url(../img/sprite.png);
+          background-size: 200px;
+          background-position: -291px 0;
+          display: inline-block;
+          text-indent: 80px;
+          overflow: hidden;
+          float: left;
+        }
+
+        .owl-next {
+          width: 17px;
+          height: 28px;
+          background-image: url(../img/sprite.png);
+          background-size: 200px;
+          background-position: -310px 0;
+          display: inline-block;
+          text-indent: 80px;
+          overflow: hidden;
+          float: right;
+        }
+      }
+
+      .owl-dots {
+        display: none;
+      }
+
+    }
+
+    p {
+      width: 100%;
+      margin: 0 auto;
+
+      span {
+        color: $color-r-blue;
+      }
+    }
+
+    .block-images {
+      font-size: 0;
+      width: 100%;
+      margin: 50px auto 0 auto;
+
+      &:after {
+        width: 100px;
+        height: 1px;
+        background-color: $color-r-blue;
+        content: "";
+        display: block;
+        margin: 50px auto 30px auto;
+      }
+
+      &:before {
+        width: 100px;
+        height: 1px;
+        background-color: $color-r-blue;
+        content: "";
+        display: none;
+        margin: 50px auto 30px auto;
+        @media (max-width: $desktop) {
+          display: block;
+        }
+      }
+
+      .left {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        overflow: auto;
+        text-align: right;
+        padding: 0 20px;
+        border-right: 1px solid $color-r-blue;
+        @media (max-width: $desktop) {
+          width: 100%;
+          text-align: center;
+          border: 0;
+          margin-bottom: 30px;
+        }
+
+        picture {
+          float: right;
+          text-align: center;
+          @media (max-width: $desktop) {
+            float: initial;
+          }
+        }
+
+        .info {
+          width: 250px;
+          float: right;
+          text-align: center;
+          @media (max-width: $desktop) {
+            float: initial;
+            width: 100%;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+      .right {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        overflow: auto;
+        padding: 0 20px;
+        text-align: left;
+        @media (max-width: $desktop) {
+          width: 100%;
+        }
+
+        picture {
+          width: 70px;
+          float: left;
+          text-align: center;
+          @media (max-width: $desktop) {
+            width: 100%;
+            float: initial;
+          }
+        }
+
+        .info {
+          width: 300px;
+          float: left;
+          text-align: center;
+          @media (max-width: $desktop) {
+            width: 100%;
+            float: initial;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+    }
+
+  }
+}
+
+section.form-internal {
+  .alert-danger {
+    font-size: 16px;
+    line-height: 20px;
+    color: #626262;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    max-width: 1120px;
+    text-align: center;
+    font-size: 0;
+    @media (max-width: $desktopXL) {
+      padding: 40px 20px;
+    }
+
+    .form-box {
+      //width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      @media (max-width: $desktop) {
+        width: 100%;
+      }
+
+      h3 {
+        text-align: left;
+      }
+
+      select.form-control {
+        padding: 0 22px;
+        height: 44px;
+      }
+
+      .form-control {
+        border-radius: 0;
+        padding: 22px;
+        border: 1px solid $color-r-blue;
+
+        &::placeholder {
+          color: $color-r-fonts;
+        }
+      }
+
+      .select-wrapper {
+        &:after {
+          right: 6px;
+          font-size: 13px;
+        }
+      }
+
+      select#edit-asunto,
+      select#edit-pais {
+        padding: 0 20px;
+        height: 46px;
+
+        &::placeholder {
+          color: $color-r-fonts;
+        }
+
+      }
+
+      .checkbox {
+        text-align: left;
+        font-size: 16px;
+
+        /*Checkbox*/
+        input[type=checkbox].form-checkbox {
+          position: absolute;
+          z-index: -1000;
+          left: -1000px;
+          overflow: hidden;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          width: 1px;
+          margin: -1px;
+          padding: 0;
+          border: 0;
+        }
+
+        input[type=checkbox].form-checkbox + label.control-label {
+          padding-left: 22px;
+          height: 17px;
+          display: inline-block;
+          line-height: 17px;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          font-size: 17px;
+          vertical-align: middle;
+          cursor: pointer;
+
+        }
+
+        label.control-label {
+          background-image: url(../img/checkbox-white.png);
+          background-repeat: no-repeat;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          min-height: initial;
+          height: 17px;
+
+          &.checked {
+            background-position: 0 -17px;
+          }
+        }
+
+        /*Checkbox*/
+
+      }
+
+      .btn-primary {
+        background-color: transparent;
+        color: $color-r-blue;
+        border: 1px solid $color-r-blue;
+        margin: 20px 0;
+        &:hover {
+          background-color: $color-r-blue;
+          color: $color-white;
+        }
+      }
+
+
+    }
+
+    .form-description {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      padding-left: 40px;
+      @media (max-width: $desktop) {
+        width: 100%;
+        padding: 60px 20px 0 20px;
+        text-align: center;
+      }
+
+      h2 {
+        span {
+          color: $color-r-black;
+          display: block;
+        }
+
+        &:after {
+          width: 40px;
+          height: 1px;
+          background-color: $color-r-grey-font-header;
+          display: block;
+          content: "";
+          margin: 15px 0 25px 0;
+          right: 40px;
+          margin-top: 10px;
+          @media (max-width: $desktop) {
+            margin: 15px auto 25px auto;
+          }
+        }
+
+      }
+
+      p {
+        span {
+          color: $color-r-blue;
+        }
+      }
+
+
+    }
+  }
+}
+
+section.palace-resort-best-rate {
+  .content {
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+
+    .info {
+      position: absolute;
+      top: 10%;
+      width: 100%;
+      max-width: 1320px;
+      left: 50%;
+      margin-left: -660px;
+      @media (max-width: $desktopXL) {
+        left: initial;
+        max-width: initial;
+        width: 90%;
+        margin-left: 5%;
+      }
+
+      @media (max-width: $desktop) {
+        position: relative;
+        width: 540px;
+        padding: 40px 20px;
+        margin: 0 auto;
+      }
+      @media (max-width: $mobile) {
+        width: 100%;
+      }
+
+      picture {
+        display: inline-block;
+        vertical-align: middle;
+        @media (max-width: $mobile) {
+          width: 100px;
+          display: block;
+          margin: 0 auto 25px auto;
+        }
+
+        img {
+          max-width: 160px;
+          @media (max-width: $desktop) {
+            max-width: 100px;
+          }
+        }
+      }
+
+      ul {
+        display: inline-block;
+        vertical-align: middle;
+        @media (max-width: $mobile) {
+          padding-left: 0;
+        }
+
+        li {
+          margin-bottom: 12px;
+          width: 100%;
+          max-width: 600px;
+          position: relative;
+          @media (max-width: $desktopXL) {
+            max-width: 500px;
+          }
+          @media (max-width: $desktop) {
+            max-width: 360px;
+          }
+          @media (max-width: $mobile) {
+            max-width: initial;
+          }
+
+          &:before {
+            display: none;
+          }
+
+          span {
+            color: $color-white;
+            border-radius: 50%;
+            text-align: center;
+            font-family: $gotham-light;
+            font-size: 26px;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 12px;
+            position: absolute;
+          }
+
+          p {
+            font-size: 26px;
+            line-height: 26px;
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 55px;
+            @media (max-width: $desktop) {
+              font-size: 20px;
+              line-height: 20px;
+            }
+
+            @media (max-width: $mobile) {
+              font-size: 20px;
+              line-height: 20px;
+            }
+          }
+
+          &:nth-child(odd) {
+            span {
+              background: $color-r-blue;
+            }
+          }
+
+          &:nth-child(even) {
+            span {
+              background: $color-r-black;
+            }
+          }
+
+        }
+      }
+
+    }
+
+    .img {
+      img {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+
+section.palace-resort-destinations-brand {
+  .content {
+    margin: 0 auto;
+    //padding: 40px 0;
+    padding-top: 40px;
+    box-sizing: border-box;
+    width: 100%;
+
+    nav {
+      width: 100%;
+      max-width: 1320px;
+      margin: 0 auto 40px auto;
+      @media (max-width: $desktopL) {
+        max-width: initial;
+        width: 100%;
+        padding: 0 30px;
+      }
+      @media (max-width: $mobile) {
+        margin: 0 auto 20px auto;
+      }
+
+      .owl-stage {
+        margin: 0 auto;
+
+        .owl-item {
+          display: inline-block;
+          float: initial;
+          vertical-align: middle;
+          @media (max-width: $desktopL) {
+            display: initial;
+            float: left;
+            vertical-align: initial;
+          }
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        li {
+          display: inline-block;
+          font-size: 20px;
+          line-height: 40px;
+          font-family: $gotham-light;
+          letter-spacing: -1px;
+          margin: 0;
+          text-transform: uppercase;
+          @include hover-transition-5;
+          cursor: pointer;
+          padding: 0 20px 20px 20px;
+          position: relative;
+          @media (max-width: $desktopL) {
+            font-size: 38px;
+            line-height: 28px;
+            display: initial;
+            text-align: center;
+            padding: 0;
+          }
+
+          &:hover {
+            color: $color-r-blue;
+          }
+
+          &:before {
+            display: none;
+          }
+
+          &.active {
+            color: $color-r-blue;
+            pointer-events: none;
+
+            &:after {
+              content: "";
+              width: 30px;
+              height: 11px;
+              background-image: url(../img/sprite.png);
+              background-size: 100px;
+              background-position: -167px 0;
+              display: block;
+              margin: -20px auto 40px auto;
+              cursor: pointer;
+              position: absolute;
+              bottom: -30px;
+              left: 50%;
+              margin-left: -15px;
+              @media (max-width: $desktopL) {
+                display: none;
+              }
+            }
+
+          }
+
+        }
+
+        .owl-nav {
+          @media (max-width: $desktopL) {
+            position: absolute;
+            width: 100%;
+            height: 0;
+            top: 50%;
+            margin-top: -14px;
+          }
+
+
+          .owl-prev {
+            @media (max-width: $desktopL) {
+              display: inline-block;
+              text-indent: 80px;
+              overflow: hidden;
+              float: left;
+              background-image: url(../img/sprite.png);
+              background-size: 200px;
+              background-position: -291px 0;
+              width: 17px;
+              height: 28px;
+              margin-left: -18px;
+            }
+
+            &.disabled {
+              opacity: 0.5;
+            }
+
+          }
+
+          .owl-next {
+            @media (max-width: $desktopL) {
+              display: inline-block;
+              text-indent: 80px;
+              overflow: hidden;
+              float: right;
+              background-image: url(../img/sprite.png);
+              background-size: 200px;
+              background-position: -310px 0;
+              width: 17px;
+              height: 28px;
+              margin-right: -18px;
+            }
+
+            &.disabled {
+              opacity: 0.5;
+            }
+
+          }
+        }
+
+      }
+    }
+
+    .content_box {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      article.info-imagen {
+        overflow: auto;
+        margin-bottom: 40px;
+        position: relative;
+
+        .img {
+          width: 50%;
+          vertical-align: middle;
+          float: right;
+          @media (max-width: $tablet) {
+            padding: 4%;
+          }
+          @media (max-width: $desktop) {
+            width: 100%;
+            float: initial;
+          }
+
+          .box_img {
+            width: 50%;
+            height: 250px;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            @media (max-width: $desktopL) {
+              height: 200px;
+            }
+            @media (max-width: $mobile) {
+              height: 120px;
+            }
+
+            picture {
+              height: 100%;
+              position: absolute;
+              text-align: center;
+              width: 100%;
+              z-index: 1;
+              @include hover-transition-5;
+
+              img {
+                left: 50%;
+                min-height: 100%;
+                max-width: inherit;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                min-width: 100%;
+                max-width: 100%;
+              }
+
+            }
+
+            &.destacado {
+              width: 50%;
+              height: 500px;
+              float: right;
+              @media (max-width: $desktopL) {
+                height: 400px;
+              }
+              @media (max-width: $mobile) {
+                height: 240px;
+              }
+
+              img {
+                max-width: initial;
+              }
+            }
+
+            &:hover {
+              picture {
+                transform: scale(1.1);
+              }
+            }
+
+          }
+
+        }
+
+        .info {
+          display: inline-block;
+          vertical-align: middle;
+          position: absolute;
+          width: 100%;
+          max-width: 1320px;
+          left: 50%;
+          margin-left: -660px;
+          top: 50%;
+          transform: translateY(-50%);
+          @media (max-width: $desktopXL) {
+            max-width: 1160px;
+            margin-left: -580px;
+          }
+          @media (max-width: $desktopL) {
+            max-width: 930px;
+            margin-left: -460px;
+          }
+          @media (max-width: $desktop) {
+            position: relative;
+            top: initial;
+            transform: initial;
+            left: initial;
+            margin-left: initial;
+            padding: 40px 20px;
+          }
+
+          .copys {
+            width: 40%;
+            @media (max-width: $desktop) {
+              width: 100%;
+            }
+
+            h2 {
+              span {
+                color: $color-r-black;
+                display: block;
+              }
+
+              &:before {
+                width: 22px;
+                height: 13px;
+                display: block;
+                content: "";
+                background-image: url(../img/sprite.png);
+                background-position: -85px -90px;
+                background-size: 122px;
+                margin-bottom: 6px;
+              }
+
+              &:after {
+                width: 50px;
+                height: 1px;
+                background-color: $color-r-grey-lines;
+                display: block;
+                content: "";
+                margin: 15px 0 30px 0;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .intercalate {
+        article {
+          position: relative;
+          margin-bottom: 40px;
+
+          /* &:last-child {
+            margin-bottom: 0;
+          } */
+
+          .image {
+            width: 100%;
+            max-width: 70%;
+            @media (max-width: $desktopXL) {
+              max-width: 65%;
+              height: 505px;
+              overflow: hidden;
+              position: relative;
+            }
+            @media (max-width: $desktopL) {
+              height: 448px;
+            }
+            @media (max-width: $desktop) {
+              max-width: initial;
+              height: auto;
+            }
+
+            picture {
+              @media (max-width: $desktopXL) {
+                height: 100%;
+                position: absolute;
+                text-align: center;
+                width: 993px;
+                z-index: 1;
+              }
+              @media (max-width: $desktopL) {
+                width: 774px;
+              }
+              @media (max-width: $desktop) {
+                position: relative;
+                width: 100%;
+              }
+
+              img {
+                width: 100%;
+                @media (max-width: $desktopXL) {
+                  left: 50%;
+                  min-height: 100%;
+                  position: absolute;
+                  transform: translate(-50%, -50%);
+                  top: 50%;
+                  min-width: 100%;
+                  max-width: 70%;
+                }
+                @media (max-width: $desktop) {
+                  position: relative;
+                  left: 0;
+                  transform: initial;
+                  top: initial;
+                  max-width: initial;
+                }
+              }
+
+            }
+
+          }
+
+          .copy {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            max-width: 1320px;
+            left: 50%;
+            margin-left: -660px;
+            transform: translateY(-50%);
+            @media (max-width: $desktopXL) {
+              max-width: initial;
+              width: 96%;
+              left: 2%;
+              margin-left: initial;
+              z-index: 9;
+            }
+
+            @media (max-width: $desktop) {
+              position: relative;
+              top: initial;
+              transform: initial;
+            }
+
+            .box_copys {
+              background-color: $color-r-grey-legal-f;
+              width: 100%;
+              max-width: 500px;
+              padding: 40px;
+              box-sizing: border-box;
+              display: inline-block;
+              text-align: left;
+              @media (max-width: $desktop) {
+                max-width: initial;
+                padding: 40px 20px 20px 20px;
+                background-color: transparent;
+              }
+
+              .brand {
+                text-align: center;
+                @media (max-width: $desktop) {
+                  display: none;
+                }
+
+                img {
+                  max-width: 200px;
+                  width: 100%;
+                  margin-bottom: 20px;
+                }
+
+              }
+
+              h3 {
+                &:before {
+                  width: 22px;
+                  height: 13px;
+                  display: block;
+                  content: "";
+                  background-image: url(../img/sprite.png);
+                  background-position: -85px -90px;
+                  background-size: 122px;
+                  margin-bottom: 6px;
+                }
+
+                &:after {
+                  width: 50px;
+                  height: 1px;
+                  background-color: $color-r-grey-lines;
+                  display: block;
+                  content: "";
+                  margin: 15px 0 30px 0;
+                }
+
+                span {
+                  color: $color-white;
+                  @media (max-width: $desktop) {
+                    color: $color-r-black;
+                  }
+                }
+
+              }
+
+              p {
+                color: $color-white;
+                @media (max-width: $desktop) {
+                  color: $color-r-fonts;
+                }
+              }
+
+              .box_btns {
+                margin-top: 20px;
+                @media (max-width: $desktop) {
+                  text-align: center;
+                }
+
+                a.btn {
+                  @media (max-width: $desktop) {
+                    color: $color-r-blue-no-contrast;
+                  }
+                  @media (max-width: $mobileX) {
+                    display: block;
+                    margin-bottom: 10px;
+                  }
+
+                  &:hover {
+                    @media (max-width: $desktop) {
+                      color: $color-white;
+                    }
+                  }
+
+                  &:first-child {
+                    margin-right: 5px;
+                    @media (max-width: $mobileX) {
+                      margin-right: 0;
+                    }
+                  }
+
+                  &:last-child {
+                    @media (max-width: $mobileX) {
+                      margin-bottom: 0px;
+                    }
+                  }
+                }
+
+              }
+
+            }
+          }
+
+          &:nth-child(even) {
+            .copy {
+              text-align: right;
+            }
+          }
+
+          &:nth-child(odd) {
+            .image {
+              max-width: initial;
+              padding-left: 30%;
+              box-sizing: border-box;
+              @media (max-width: $desktopXL) {
+                max-width: 65%;
+                margin-left: 35%;
+              }
+              @media (max-width: $desktop) {
+                padding-left: 0;
+                margin-left: 0;
+                max-width: initial;
+              }
+
+              picture {
+                @media (max-width: $desktopXL) {
+                  right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

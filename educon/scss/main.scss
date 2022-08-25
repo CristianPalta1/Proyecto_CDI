@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+
+@import "./base/mixins";
+@import "./base/reset";
+@import "./base/variables";
+
+//Componentes
+@import "./components/Header.scss";
+@import "./components/BreadCrum.scss";
+@import "./components/Home.scss";
+@import "./components/NewDetail.scss";
+@import "./components/ProgramsDetail.scss";
+@import "./components/ListOurPrograms.scss";
+@import "./components/Unipacks.scss";
+@import "./components/Sedes.scss";
+@import "./components/UnipackDetail.scss";
+@import "./components/ListEventNews.scss";
+@import "./components/FormacionEmpresarial.scss";
+@import "./components/Formulario.scss";
+@import "./components/Chat.scss";
+@import "./components/Pager.scss";
+@import "./components/NotFound.scss";
+@import "./components/ThankYou.scss";
+@import "./components/General.scss";
+@import "./components/Footer.scss";

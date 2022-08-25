@@ -1,0 +1,158 @@
+@mixin hover-transition-8 {
+	transition: all .8s;
+  -webkit-transition: all .8s;
+}
+
+@mixin hover-transition-5 {
+	transition: all .5s;
+  -webkit-transition: all .5s;
+}
+
+@mixin hover-transition-3 {
+	transition: all .3s;
+  -webkit-transition: all .3s;
+}
+
+@mixin hover-transition-2 {
+	transition: all .2s;
+  -webkit-transition: all .2s;
+}
+
+@mixin bRadius($radio) {
+  border-radius: $radio;
+  -moz-border-radius: $radio;
+  -webkit-border-radius: $radio;
+}
+
+@mixin btn-white {
+      border: 1px solid white;
+      text-transform: uppercase;
+      font-family: $gotham-bold;
+      @include hover-transition-5;
+      font-size: 1rem;
+      text-decoration: none;
+      background-color: white;
+      color: #274c69;
+      font-family: Gotham-Book;
+      display: block;
+      width: 150px;
+      padding: 8px 21px 6px 21px;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: transparent;
+        color: white;
+      }
+}
+
+
+@mixin btn-brown {
+  border: 1px solid rgb(39, 76, 105);
+  text-transform: uppercase;
+  font-family: $gotham-bold;
+  @include hover-transition-5;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: rgb(39, 76, 105);
+  color: white;
+  font-family: $gotham-bold;
+  display: block;
+  width: 150px;
+  padding: 8px 21px 6px 21px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  @media (max-width: $desktopL) {
+    font-size: .9rem;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: white;
+  }
+}
+
+@mixin btn-blue {
+  border: 1px solid #274C69;
+  text-transform: uppercase;
+  font-family: $gotham-bold;
+  @include hover-transition-5;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #274C69;
+  color: white;
+  font-family: $gotham-bold;
+  display: block;
+  width: 150px;
+  padding: 8px 21px 6px 21px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  @media (max-width: $desktopL) {
+    font-size: .9rem;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: #274C69;
+  }
+}
+
+@mixin btn {
+    border: 1px solid $color-r-blue-button;
+    @include bRadius(0);
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    @include hover-transition-5;
+    color: $color-r-blue-button;
+    padding: 8px 30px;
+    font-family: $gotham-light;
+    letter-spacing: 1px;
+    text-decoration: none;
+    &:hover {
+      background-color: $color-r-blue-button;
+      color: $color-white;
+    }
+
+		&:focus {
+			color: $color-fonts;
+		}
+}
+
+@mixin translatex($x,$x1) {
+  transform: translate($x, $x1);
+  -webkit-transform: translate($x, $x1);
+  -o-transform: translate($x, $x1);
+  -moz-transform: translate($x, $x1);
+}
+
+@mixin timming1s {
+  transition: all 1s ease-out 0ms;
+  -webkit-transition: all 1s ease-out 0ms;
+  -moz-transition: all 1s ease-out 0ms;
+  -o-transition: all 1s ease-out 0ms;
+}
+
+@mixin timming1sparam($seconDtime) {
+  transition: all $seconDtime cubic-bezier(0.22, 1, 0.36, 1) 0ms;
+  -webkit-transition: all $seconDtime cubic-bezier(0.22, 1, 0.36, 1) 0ms;
+  -moz-transition: all $seconDtime cubic-bezier(0.22, 1, 0.36, 1) 0ms;
+  -o-transition: all $seconDtime cubic-bezier(0.22, 1, 0.36, 1) 0ms;
+}
+@mixin translate-100 {
+  transform: translate(-100%, 0px);
+  -webkit-transform: translate(-100%, 0px);
+  -o-transform: translate(-100%, 0px);
+  -moz-transform: translate(-100%, 0px);
+}
+
+
+@mixin delaytime($time) {
+  transition-delay: $time;
+  -webkit-transition-delay: $time ;
+  -o-transition-delay: $time ;
+  -moz-transition-delay: $time;
+}

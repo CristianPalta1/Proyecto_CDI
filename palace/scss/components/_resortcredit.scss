@@ -1,0 +1,228 @@
+section.resort_credit_items {
+  .content {
+      width: 100%;
+      max-width: 1320px;
+      margin: 20px auto;
+      overflow: auto;
+      padding: 30px 20px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 0;
+      position: relative;
+      @media (max-width: $desktop){
+        text-align: center;
+      }
+
+      &:before {
+        background: linear-gradient(to right,rgba(105,105,105,0) 0,$color-r-blue 25%,$color-r-blue 75%,rgba(105,105,105,0) 100%);
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        opacity: .7;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        top: 0px;
+      }
+
+      &:after {
+        background: linear-gradient(to right,rgba(105,105,105,0) 0,$color-r-blue 25%,$color-r-blue 75%,rgba(105,105,105,0) 100%);
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        opacity: .7;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        bottom: 0;
+      }
+
+      .info {
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        border-right: 1px solid $color-r-grey-font-header;
+        position: relative;
+        @media (max-width: $desktop){
+          width: 33.33%;
+          border: 0;
+          margin-bottom: 15px;
+        }
+        @media (max-width: $mobile){
+          width: 50%;
+        }
+
+        @media (max-width: $mobileXA){
+          width: 100%;
+        }
+
+        &:last-child {
+          border-right: 0;
+          margin-bottom: 0;
+        }
+
+        .nights {
+            padding-left: 33%;
+
+            .content_nigths {
+              width: 70px;
+              height: 70px;
+              border: 3px solid $color-white;
+              @include bRadius(50%);
+              display: block;
+              position: relative;
+              text-align: center;
+              z-index: 1;
+              background-color: $color-r-blue;
+              margin: 0 auto -29px auto;
+
+              p {
+                  margin: 0;
+                  color: $color-white;
+
+                  &.copy {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                  }
+
+                  &.number {
+                      font-size: 20px;
+                      font-weight: 600;
+                      margin-top: 12px;
+                  }
+              }
+          }
+        }
+
+        .image {
+          img {
+              width: 100%;
+              max-width: 83px;
+          }
+        }
+
+        .description {
+          padding-top: 15px;
+
+          p {
+              display: inline-block;
+
+              &:first-child {
+                &:after {
+                  content: "";
+                  width: 1px;
+                  height: 10px;
+                  display: inline-block;
+                  background-color: $color-r-blue;
+                  margin: 0 9px;
+                }
+              }
+          }
+        }
+
+      }
+  }
+}
+
+section.resort_credit_card {
+  background-image: url(../img/resort-credit-card-bg.jpg);
+  background-size: cover;
+  position: relative;
+  background-position-y: center;
+
+  .content {
+      width: 100%;
+      max-width: 1320px;
+      margin: 20px auto;
+      overflow: auto;
+      padding: 30px 20px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 0;
+      position: relative;
+      z-index: 10;
+
+      .title {
+        text-align: center;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 30px;
+
+        &:after {
+            background: linear-gradient(to right,rgba(105,105,105,0) 0,#01b0ef 25%,#01b0ef 75%,rgba(105,105,105,0) 100%);
+            content: '';
+            display: block;
+            width: 30%;
+            left: 50%;
+            margin-left: -15%;
+            height: 1px;
+            opacity: .7;
+            position: absolute;
+            right: 0;
+            z-index: 0;
+            bottom: 0;
+          }
+      }
+
+      .card {
+          text-align: center;
+          padding: 60px 0;
+          box-sizing: border-box;
+
+          h3 {
+            display: inline-block;
+            vertical-align: middle;
+            font-family: $gotham-light;
+            text-transform: uppercase;
+            font-size: 58px;
+            margin: 0 20px;
+
+            &:last-child {
+              color: $color-r-black;
+            }
+            @media (max-width: $tablet){
+              display: block;
+              margin: 20px 0;
+            }
+            @media (max-width: $mobileX){
+              font-size: 50px;
+            }
+          }
+
+          picture {
+            display: inline-block;
+            vertical-align: middle;
+            @media (max-width: $desktop){
+              width: 340px;
+            }
+
+            @media (max-width: $tablet){
+              width: 100%;
+              max-width: 340px;
+            }
+
+            @media (max-width: $mobileX){
+              max-width: 300px;
+            }
+
+          }
+      }
+
+      .legal {
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+          text-align: center;
+          padding: 0;
+
+          a {
+              font-size: 16px;
+          }
+      }
+
+    }
+}

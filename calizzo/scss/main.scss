@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@import "./base/mixins";
+@import "./base/reset";
+@import "./base/variables";
+
+
+//Componentes
+@import "./components/general";
+@import "./components/navbar";
+@import "./components/breadCrumbs";
+@import "./components/pager";
+@import "./components/home";
+@import "./components/login";
+@import "./components/footer";
+@import "./components/detailProduct";
+@import "./components/listProduct";
+@import "./components/floatButton";
+@import "./components/quoter";
+@import "./components/thankYou";
+@import "./components/notFound";
+@import "./components/ally";
+@import "./components/customForm";
+@import "./components/aboutUs";
+@import "./components/search";
+@import "./components/contact";
+
+// @import "./components/print";

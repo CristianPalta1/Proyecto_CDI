@@ -1,0 +1,157 @@
+/*video*/
+.video {
+  padding: 60px 0 30px 0;
+  &.play {
+    .layerVideo,
+    .bannerArticle__img {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  .content {
+    .c-content {
+      .bannerArticle__content {
+        width: 90%;
+        margin: 0 auto;
+        @media (max-width: $tablet) {
+          width: 100%;
+        }
+        .bannerArticle__title {
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          padding-bottom: 25px;
+          @media (max-width: $mobile) {
+            width: 100%;
+            padding: 0 15px 25px 15px;
+          }
+          h1 {
+            font-size: 2rem;
+            line-height: 40px;
+            @media (max-width: $tablet) {
+              font-size: 1.75rem;
+              line-height: 34px;
+            }
+          }
+        }
+        .imgVideo {
+          position: relative;
+          .bannerArticle__img {
+            z-index: 1;
+            position: relative;
+            transition: all 0.25s;
+          }
+          .bannerArticle__video {
+            iframe {
+              top: 0;
+              left: 0;
+              z-index: 0;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              transition: all 0.25s;
+            }
+          }
+          .layerVideo {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all 0.25s;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon {
+              width: auto;
+              z-index: 2;
+              cursor: pointer;
+            }
+            .container__progress {
+              bottom: 25px;
+              z-index: 2;
+              width: 90%;
+              position: absolute;
+
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              @media (max-width: $mobile) {
+                bottom: 20px;
+              }
+              .icon {
+                width: auto;
+                z-index: 2;
+                cursor: pointer;
+              }
+              .progress {
+                width: 100%;
+                height: 10px;
+                margin: 3px 0 0 25px;
+                background-color: $background_silver;
+                .progress-bar {
+                  width: 25%;
+                  background-color: $background_big_stone;
+                }
+              }
+            }
+            .layer {
+              z-index: 1;
+              opacity: 0.5;
+              background-color: $background_black;
+            }
+          }
+        }
+        .text {
+          padding-top: 25px;
+          p,
+          b,
+          strong {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+
+          p {
+            strong {
+              font-size: inherit;
+              line-height: inherit;
+
+              a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: underline !important;
+
+              }
+            }
+          }
+
+          a {
+            font-size: inherit;
+            line-height: inherit;
+            text-decoration: underline !important;
+
+          }
+
+          ul {
+            li {
+              line-height: inherit;
+              font-size: 0.93rem;
+            }
+          }
+
+          ol {
+            padding-left: 25px;
+            li{
+              list-style: auto!important;
+              font-size: 1rem;
+              line-height: 2rem;
+              color: #777;
+            }
+          }
+        }
+      }
+    }
+  }
+}

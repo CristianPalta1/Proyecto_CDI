@@ -1,0 +1,92 @@
+/*infoInternationalization*/
+.infoInternationalization {
+  padding: 60px 0px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .content {
+    .c-content {
+      .infoInternationalization__content {
+        .infoInternationalization__info {
+          z-index: 1;
+          h2 {
+            color: $color_white;
+            margin-bottom: 30px;
+            @media (max-width: $mobile) {
+              font-size: 1.8rem;
+              margin-bottom: 15px;
+            }
+          }
+          p {
+            padding-top: 5px;
+            color: $color_white;
+            margin-bottom: 30px;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            @media (max-width: $mobile) {
+              margin-bottom: 0px;
+            }
+
+            a, strong {
+              font-size: inherit;
+              font-weight: 700;
+              line-height: inherit;
+            }
+            
+            a {
+              text-decoration: underline !important;
+            }
+          }
+          div {
+            @media (max-width: $mobile) {
+              background-color: $background_white;
+              padding: 15px 15px 30px 15px;
+              bottom: -60px;
+              position: relative;
+            }
+            ul {
+              padding-top: 20px;
+
+              display: flex;
+              flex-direction: row;
+              @media (max-width: $mobile) {
+                flex-direction: column;
+              }
+              li {
+                padding-right: 25px;
+                @media (max-width: $mobile) {
+                  padding-right: 0;
+                  padding-bottom: 15px;
+                }
+                &:last-child {
+                  padding-right: 0;
+                  padding-bottom: 0;
+                }
+                a {
+                  color: $color_white;
+                  font-size: 1rem;
+                  line-height: 1.5rem;
+                  padding-right: 25px;
+                  text-decoration: underline !important;
+                  @media (max-width: $mobile) {
+                    color: $color_big_stone;
+                    font-size: 0.8125rem;
+                    line-height: 14px;
+                    padding-right: 0;
+                    padding-bottom: 15px;
+                    text-decoration: underline !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .layer {
+    opacity: 0.8;
+    background-color: $background_congress_blue;
+  }
+}

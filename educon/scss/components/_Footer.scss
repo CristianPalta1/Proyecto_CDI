@@ -1,0 +1,520 @@
+footer {
+    .educon-container-footer {
+        margin: 0;
+        padding: 0;
+        .region-footer {
+            padding: 0;
+            #block-footerone {
+                background-color: #162644;
+                padding: 40px 24px;
+                @include media-query(mobile) {
+                    padding: 0;
+                }
+                .region-footer-one {
+                    max-width: 1000px;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    margin: 0 auto;
+                    padding: 0 20px;
+                    grid-template-areas: "f1 f2 f3 f4";
+                    justify-items: center;
+                    @include media-query(desktopXL) {
+                        max-width: 1000px;
+                    }
+                    @include media-query(mobile) {
+                        grid-template-columns: 1fr;
+                        grid-template-areas: "f1" "f2" "f3" "f4";
+                        padding: 0;
+                        justify-items: initial;
+                    }
+                    .region-footer-one--column-one {
+                        grid-area: f1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        padding: 0;
+                        @include media-query(mobile) {
+                            padding: 8px;
+                        }
+                        .menu--footer-logo-universidad {
+                            margin-bottom: 34px;
+                            @include media-query(mobile) {
+                                width: 100%;
+                            }
+                            h5 {
+                                display: none;
+                            }
+                            .menu-level-0 {
+                                margin: 0;
+                                @include media-query(mobile) {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                li {
+                                    color: $color-white;
+                                    a.rating-class {
+                                        display: none;
+                                    }
+
+                                    .menu-link-contentfooter-logo-universidad {
+                                        p,
+                                        a {
+                                            color: $color-white;
+                                            font-size: 1.1rem;
+                                            font-weight: 500;
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .menu--footer-notificaciones-judiciales {
+                            h5 {
+                                color: $color-yellow-text-footer;
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                            }
+                            .menu-level-0 {
+                                margin: 0;
+                                li {
+                                    color: $color-white;
+                                    span {
+                                        display: none;
+                                        color: $color-white;
+                                    }
+
+                                    .menu-link-contentfooter-notificaciones-judiciales {
+                                        p,
+                                        a {
+                                            color: $color-white;
+                                            font-size: 1rem;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .region-footer-one--column-two {
+                        grid-area: f2;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        margin-top: 14px;
+                        @include media-query(mobile) {
+                            justify-content: flex-start;
+                        }
+                        .menu--footer-informacion-legal {
+                            width: 100%;
+                            h5 {
+                                color: $color-yellow-text-footer;
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                margin-bottom: 16px;
+                                text-transform: uppercase;
+                                @include media-query(mobile) {
+                                    height: 30px;
+                                    background-color: #004a93;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 8px;
+                                }
+                            }
+                            ul {
+                                margin: 0;
+                                @include media-query(mobile) {
+                                    display: none;
+                                }
+                                li {
+                                    color: $color-white;
+                                    padding: 4px 0;
+                                    a {
+                                        padding: 0;
+                                        color: $color-white;
+                                        font-size: 1.1rem;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .region-footer-one--column-three {
+                        grid-area: f3;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        margin-top: 14px;
+                        @include media-query(mobile) {
+                            justify-content: flex-start;
+                        }
+                        .menu--footer-explora {
+                            @include media-query(mobile) {
+                                width: 100%;
+                            }
+                            h5 {
+                                color: $color-yellow-text-footer;
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                margin-bottom: 16px;
+                                text-transform: uppercase;
+                                @include media-query(mobile) {
+                                    height: 30px;
+                                    display: flex;
+                                    align-items: center;
+                                    border-bottom: 1px solid #f2f2f2;
+                                    border-top: 1px solid #f2f2f2;
+                                    padding: 8px;
+                                }
+                            }
+                            ul {
+                                margin: 0;
+                                @include media-query(mobile) {
+                                    display: none;
+                                }
+                                li {
+                                    color: $color-white;
+                                    padding: 4px 0;
+                                    a {
+                                        padding: 0;
+                                        color: $color-white;
+                                        font-size: 1.1rem;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .region-footer-one--column-four {
+                        grid-area: f4;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        margin-top: 14px;
+                        margin-bottom: 0;
+                        flex-direction: column;
+                        @include media-query(mobile) {
+                            align-items: center;
+                            margin-bottom: 32px;
+                        }
+                        .menu--footer-redes-sociales-y-boletin {
+                            margin-bottom: 24px;
+                            h5 {
+                                color: $color-yellow-text-footer;
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                            }
+                            ul.menu-level-0 {
+                                margin: 0;
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: 20px;
+                                li {
+                                    color: $color-white;
+                                    a.rating-class {
+                                        display: none;
+                                    }
+                                    .menu-link-contentfooter-redes-sociales-y-boletin {
+                                        width: 40px;
+                                        height: 40px;
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        align-items: center;
+                                        a {
+                                            padding: 0;
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .column-one-footer-four--contantanos {
+                            .footer__info {
+                                label,
+                                p,
+                                a {
+                                    padding: 0;
+                                    color: white;
+                                }
+                                label {
+                                    font-size: 12px;
+                                    margin-bottom: 8px;
+                                }
+                                p,
+                                a {
+                                    padding: 0;
+                                    font-size: 11px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #block-footerdosiconos {
+                background-color: #051533;
+                .region-footer-two {
+                    max-width: 1000px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0 auto;
+                    padding: 20px;
+                    justify-items: center;
+                    align-items: center;
+                    @include media-query(desktopXL) {
+                        max-width: 1000px;
+                    }
+                    @include media-query(mobile) {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-areas:
+                            "one two"
+                            "three three";
+                        padding: 0;
+                    }
+                    .region-footer-two--column-one {
+                        @include media-query(mobile) {
+                            grid-area: one;
+                            width: 100%;
+                        }
+                        .menu--footer-dos-icontec > .menu-level-0 {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0;
+                            gap: 8px;
+                            @include media-query(mobile) {
+                                justify-content: flex-start;
+                            }
+                        }
+                        .menu-level-0 {
+                            height: 88px;
+                            border-right: 1px solid $color-bg-tags-detalles;
+                            @include media-query(mobile) {
+                                border-right: none;
+                            }
+                            li {
+                                width: 85px;
+                                margin-right: 12px;
+                                a.rating-class {
+                                    display: none;
+                                }
+                                .menu-link-contentfooter-dos-icontec {
+                                    .field--name-social-media-icon {
+                                        border-right: none;
+                                        width: 85px;
+                                        padding: 0;
+                                        @include media-query(mobile) {
+                                            border-right: 1px solid $color-bg-tags-detalles;
+                                            padding: 12px;
+                                        }
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .region-footer-two--column-two {
+                        @include media-query(mobile) {
+                            grid-area: two;
+                        }
+                        .menu--footer-dos-rating-system {
+                            #-menu {
+                                display: none;
+                            }
+                        }
+                        .menu--footer-dos-rating-system > .menu {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .menu-item {
+                                width: 200px;
+                                @include media-query(desktop) {
+                                    width: 89px;
+                                }
+
+                                a.rating-class {
+                                    display: none;
+                                }
+                                .menu-link-contentfooter-dos-rating-system {
+                                    width: 200px;
+                                    @include media-query(desktop) {
+                                        width: 89px;
+                                    }
+
+                                    a {
+                                        padding: 0;
+                                        img {
+                                            width: 100%;
+                                            object-fit: contain;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .region-footer-two--column-three {
+                        max-width: 300px;
+                        overflow: hidden;
+                        @include media-query(mobile) {
+                            grid-area: three;
+                            width: 100%;
+                        }
+                        .menu--footer-dos-reconocimientos {
+                            width: 100%;
+                            border-left: 1px solid $color-bg-tags-detalles;
+                            height: 88px;
+                            max-width: 300px;
+                            @include media-query(mobile) {
+                                border-left: none;
+                                height: auto;
+                            }
+                            h5 {
+                                font-size: 12px;
+                                padding: 0;
+                                color: white;
+                                margin-left: 1em;
+                                @include media-query(mobile) {
+                                    padding: 8px;
+                                    margin-left: 0;
+                                }
+                            }
+                            .menu-level-0 {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                @include media-query(mobile) {
+                                    justify-content: space-between;
+                                }
+                                li {
+                                    width: 85px;
+
+                                    a {
+                                        display: none;
+                                    }
+                                    .field--name-social-media-icon {
+                                        width: 85px;
+                                        height: 85px;
+
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: contain;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #block-footertres {
+                background-color: #004a93;
+            }
+            #block-footertres > ul.navbar-nav {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px;
+                @include media-query(mobile) {
+                    padding: 4px;
+                    flex-direction: column;
+                }
+                li {
+                    border-right: 1px solid #f2f2f2;
+                    cursor: pointer;
+                    @include media-query(mobile) {
+                        border-right: none;
+                    }
+                    a {
+                        color: $color-white;
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                    }
+
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+            }
+            #block-footerfouricons {
+                background-color: #162644;
+                h2 {
+                    display: none;
+                }
+                .region-footer-four {
+                    padding: 24px 0;
+                    .menu--footer-four > .menu-level-0 {
+                        margin: 0;
+                    }
+                }
+                .region-footer-four--icons {
+                    .block-block-content {
+                        .field--type-text-with-summary {
+                            text-align: center;
+                            p {
+                                span {
+                                    color: #ffd300;
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    margin-bottom: 16px;
+                                    display: block;
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                    .menu--footer-four {
+                        .menu-level-0.footerCarousel {
+                            li {
+                                height: 80px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                a.rating-class {
+                                    display: none;
+                                }
+                                .field--name-social-media-icon {
+                                    img {
+                                        width: 100%;
+                                        object-fit: contain;
+                                    }
+                                }
+                            }
+                            .owl-nav {
+                                display: none;
+                            }
+                            .owl-dots {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #block-footercincoderechosreservados {
+                .footer_five {
+                    text-align: center;
+                    padding: 8px;
+                    p {
+                        font-size: 1rem;
+                        color: #aaaaaa;
+                    }
+                }
+            }
+        }
+    }
+}

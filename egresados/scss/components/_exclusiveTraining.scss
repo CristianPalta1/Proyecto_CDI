@@ -1,0 +1,457 @@
+[about^="/nuestros-servicios/formacion-exclusiva"] {
+  .block__general--service, .content__formacion {
+    .block__general__service__banner, .content__formacion__banner {
+      @include banner_text_right;
+    }
+
+    .block__general__service__nav, .content__formacion__nav {
+      @include nav_figure_background($color-orange);
+
+      @include media-query(tablet) {
+        margin-top: -60px;
+      }
+
+      .block-menu.navigation {
+        .menu {
+          @include media-query(desktop) {
+            gap: 3rem;
+          }
+
+          .menu-item {
+
+            &:hover, &.menu-item--active-trail {
+              margin: 0 3rem;
+              @include media-query(tablet) {
+                margin: 0;
+              }
+            }
+            .menu_link_content {
+              .field--name-menu-image-service {
+                a {
+                  padding: 1.7rem 0.6rem;
+
+                  img {
+                    width: 72px;
+                    height: auto;
+                  }
+                }
+              }
+
+              .field--name-menu-body {
+                display: none;
+              }
+
+              .images__bg {
+                &::after {
+                  background-color: $color-orange;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+[about^="/nuestros-servicios/formacion-exclusiva"] {
+  .block__general--service {
+    background-color: $color-bg-noticias;
+
+    .block__general__service__cards {
+      padding-bottom: 3rem;
+      .description_menu {
+        margin-bottom: 4rem;
+
+        @include media-query(tablet) {
+          margin-bottom: 2rem;
+        }
+
+        &--info {
+          width: 80%;
+          margin: auto;
+          font-size: 1rem;
+          font-weight: $medium;
+          text-align: center;
+
+          @include media-query(tablet) {
+            text-align: left;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+[about^="/nuestros-servicios/formacion-exclusiva/uniminuto"] {
+  .block__general--service {
+
+    .block__general__service__cards {
+
+      .views-element-container {
+        .view-header {
+          width: 48%;
+          display: inline-block;
+          font-size: 1rem;
+          font-weight: $semibold;
+
+          @include media-query(tablet) {
+            width: 100%;
+            margin: 1rem 0;
+          }
+        }
+
+        .view-filters {
+          width: 50%;
+          display: inline-block;
+
+          @include media-query(tablet) {
+            width: 100%;
+            order: -1;
+          }
+
+          form {
+            .form--inline {
+              width: 100%;
+              display: flex;
+              justify-content: flex-end;
+
+              @include media-query(tablet) {
+                justify-content: flex-start;
+              }
+
+              .form-type-select {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 0;
+
+                @include media-query(tablet) {
+                  justify-content: flex-start;
+                }
+
+                label {
+                  display: none;
+                }
+
+                .form-select {
+                  width: 50%;
+                  border: 1px solid $color-line-footer;
+                  border-radius: 10px;
+                  outline: none;
+                  box-shadow: none;
+
+                  @include media-query(tablet) {
+                    width: 100%;
+                  }
+                }
+
+              }
+
+            }
+          }
+        }
+        .view-content {
+          margin-top: 1.5rem;
+          .views-row {
+            margin-bottom: 4rem;
+            .block__general__culture {
+              display: flex;
+              background-color: $color-white;
+              border-radius: 20px;
+              box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+
+              .block__general__culture__image {
+                max-width: 459px;
+
+                @include media-query(desktop) {
+                  display: none;
+                }
+
+                img {
+                  width: 100%;
+                  border-top-left-radius: 20px;
+                  border-bottom-left-radius: 20px;
+                  object-fit: cover;
+                }
+              }
+
+              &.block__general__culture__right {
+                display: block;
+                position: relative;
+                padding: 2.5rem 9rem 2rem 3rem;
+                border-radius: 20px;
+                box-shadow: none;
+
+                @include media-query(desktop) {
+                  padding: 2.5rem 9rem 3rem 3rem;
+                }
+                @include media-query(mobile) {
+                  padding: 2rem 2rem 3rem;
+                }
+
+                .block__general__culture__title {
+                  margin-bottom: 1rem;
+
+                  @include media-query(mobile) {
+                    padding-right: 4rem;
+                    margin-bottom: 1.7rem;
+                  }
+
+                  h2 {
+                    font-size: 1.6rem;
+                    font-weight: $semibold;
+                  }
+
+                  .field--name-discount-rate {
+                    position: absolute;
+                    top: 15px;
+                    right: 20px;
+                    width: 70px;
+                    height: 70px;
+                    background-color: $color-nav-slider;
+                    border: 3px solid #E3E6EF;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    color: $color-white;
+                    font-weight: $bold;
+                    text-align: center;
+                    font-size: 1.1rem;
+                    line-height: 1;
+
+                    @include media-query(mobile) {
+                      width: 55px;
+                      height: 55px;
+                      font-size: .9rem;
+                    }
+                  }
+                }
+
+                .block__general__culture__center {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 1rem;
+
+                  .field--name-body {
+                    font-size: 1.1rem;
+                    line-height: 1.4;
+                    color: $color-font-second;
+
+                    p, strong {
+                      font-size: inherit;
+                    line-height: inherit;
+                    color: inherit;
+                    }
+                  }
+
+                  .field--name-terms-conditions {
+                    .field__label {
+                      font-size: 1rem;
+                      font-weight: $medium;
+                    }
+                    .field__item {
+                      font-size: 1rem;
+                      color: $color-gray-dark-letter;
+                      font-weight: $regular;
+                      line-height: 1.4;
+                    }
+                  }
+
+                  .field--name-external-link {
+                    margin-top: 1.5rem;
+
+                    a {
+                      background-color: $color-blue-light;
+                      color: $color-font-primary;
+                      font-weight: $semibold;
+                      font-size: .9rem;
+                      padding: .7rem 1.5rem;
+                      border-radius: 10px;
+                    }
+                  }
+                }
+
+
+
+              }
+            }
+
+            &:nth-child(even) {
+              .block__general__culture {
+                &.block__general__culture__right {
+                  .block__general__culture__title {
+                    .field--name-discount-rate {
+                      background-color: $color-blue;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+[about^="/nuestros-servicios/formacion-exclusiva/tecmd"], [about^="/nuestros-servicios/formacion-exclusiva/coursera"]  {
+  .block__general--service {
+
+    .block__general__service__cards {
+
+      .views-element-container {
+        .view-exclusive-training {
+          .view-header {
+            width: 48%;
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: $semibold;
+            padding-left: 15px;
+
+            @include media-query(tablet) {
+              width: 100%;
+              padding-left: 0;
+              margin: 1rem 0;
+            }
+          }
+
+          .view-filters {
+            width: 50%;
+            display: inline-block;
+
+            @include media-query(tablet) {
+              width: 100%;
+              order: -1;
+            }
+
+            form {
+              .form--inline {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                @include media-query(tablet) {
+                  justify-content: flex-start;
+                }
+
+                .form-type-select {
+                  width: 100%;
+                  display: flex;
+                  justify-content: flex-end;
+                  margin-right: 0;
+
+                  @include media-query(tablet) {
+                    justify-content: flex-start;
+                  }
+
+                  label {
+                    display: none;
+                  }
+
+                  .form-select {
+                    width: 50%;
+                    border: 1px solid $color-line-footer;
+                    border-radius: 10px;
+                    outline: none;
+                    box-shadow: none;
+
+                    @include media-query(tablet) {
+                      width: 100%;
+                    }
+                  }
+
+                }
+
+              }
+            }
+          }
+
+          .view-content {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 15px;
+
+            .views-row {
+              margin-bottom: 2rem;
+
+              .block__tecmd {
+                width: 340px;
+                display: flex;
+                flex-direction: column;
+                background-color: $color-white;
+                box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+                border-radius: 15px;
+
+                @include media-query(mobilexl) {
+                  max-width: 340px;
+                  width: 100%;
+                }
+
+                .block__tecmd__image {
+                  img {
+                    width: 100%;
+                    height: auto;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                  }
+                }
+
+                .block__tecmd__text {
+                  height: 260px;
+                  padding: 1rem 1rem 2rem;
+                  box-sizing: border-box;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+
+                  .field--name-exclusive-training-category {
+
+                    .general_rgb {
+                      .tax__name {
+                        display: inline-block;
+                        background-color: $color-blue;
+
+                        h2 {
+                          color: $color-white;
+                          font-size: .75rem;
+                          font-weight: $medium;
+                          padding: .2rem .4rem;
+                        }
+                      }
+                    }
+
+                  }
+
+                  .field--name-node-title {
+                    h2 {
+                      font-size: 1.2rem;
+                      font-weight: $semibold;
+                    }
+                  }
+
+                  .field--name-node-link-modal {
+                    a {
+                      color: $color-font-primary;
+                      text-decoration: underline;
+                      font-size: .9rem;
+                      font-weight: $extrabold;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+}

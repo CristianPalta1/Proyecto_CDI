@@ -1,0 +1,191 @@
+/*prodUniminuto*/
+.prodUniminuto {
+  padding: 60px 0;
+  .content {
+    .c-content {
+      .prodUniminuto__content {
+        .prodUniminuto__info {
+          padding-right: 60px;
+          @media (max-width: $mobile) {
+            padding: 15px;
+          }
+          h2 {
+            font-family: $montserratbold;
+          }
+          p {
+            padding: 10px 0;
+            font-size: 1rem;
+            line-height: 1.5rem;
+
+            a, strong {
+              font-size: inherit;
+              font-weight: 700;
+              line-height: inherit;
+            }
+            
+            a {
+              text-decoration: underline !important;
+            }
+          }
+        }
+        .prodUniminuto__topics {
+          @media (min-width: $desktop_1440) {
+            padding-bottom: 60px;
+          }
+          @media (max-width: $mobile) {
+            padding: 15px;
+          }
+          .prodUniminuto-gridColors__content {
+            .row {
+              .col-6 {
+                .row {
+                  .col-12 {
+                    padding-right: 1px;
+                    margin-bottom: 1px;
+                    position: relative;
+                    overflow: hidden;
+                    @media (min-width: $desktop_1640) {
+                      padding-right: 20%;
+                      margin-bottom: 20%;
+                    }
+                    .gridColors__item {
+                      position: relative;
+
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      .gridColors__img {
+                        position: relative;
+                        &:after {
+                          content: "";
+                          top: 0;
+                          left: 0;
+                          opacity: 0.4;
+                          width: 100%;
+                          height: 100%;
+                          position: absolute;
+                          background-color: $background_black;
+                        }
+                      }
+                      .gridColors__text {
+                        z-index: 1;
+                        height: 100%;
+                        padding: 10%;
+                        text-align: center;
+                        position: absolute;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        &.last {
+                          z-index: 1;
+                          position: absolute;
+
+                          display: flex;
+                          flex-direction: column;
+                          div {
+                            width: 30%;
+                            margin: 0 auto;
+                          }
+                          span {
+                            color: $color_golda;
+                          }
+                        }
+                        h3 {
+                          margin-bottom: 10px;
+                          color: $color_white;
+                          font-size: 0.9375rem;
+                          line-height: 19px;
+                          font-family: $montserratbold;
+                        }
+                        p {
+                          color: $color_white;
+                          font-family: $latobold;
+                        }
+                        a {
+                          display: none;
+                        }
+                      }
+                      .layer {
+                        opacity: 0;
+                        transition: all 0.1s;
+                      }
+                      &:hover {
+                        .gridColors__text {
+                          z-index: 1;
+                          height: 100%;
+                          padding: 10%;
+                          text-align: center;
+                          position: absolute;
+
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: space-between;
+                          &.last {
+                            z-index: 1;
+                            position: absolute;
+
+                            display: flex;
+                            flex-direction: column;
+                            div {
+                              width: 30%;
+                              margin: 0 auto;
+                            }
+                            span {
+                              color: $color_golda;
+                            }
+                          }
+                          h3 {
+                            color: $color_white;
+                          }
+                          p {
+                            color: $color_white;
+                          }
+                          a {
+                            display: block;
+                            color: $color_white;
+                            font-family: $montserratregular;
+                            i {
+                              margin-left: 10px;
+                            }
+                          }
+                        }
+                        .layer {
+                          opacity: 0.75;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .prodUniminuto__options {
+          margin-top: 40px;
+
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          .btn-border {
+            width: calc(25% - 40px);
+            margin: 15px 20px;
+            padding: 15px 30px;
+            text-align: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: $tablet) {
+              width: calc(33.33% - 40px);
+            }
+            @media (max-width: $mobile) {
+              width: calc(100% - 40px);
+              margin: 10px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

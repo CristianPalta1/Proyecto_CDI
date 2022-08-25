@@ -1,0 +1,135 @@
+.types-tabs {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    button {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid $gray;
+        width: 33%;
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-weight: 200;
+        &.active {
+            position: relative;
+            font-weight: bold;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 85%;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 2px;
+                bottom: -1px;
+                background-color: $gray;
+            }
+        }
+    }
+}
+
+.tabs-experience-section {
+    margin: 6rem 0 0 0;
+    padding: 0;
+    .types-tabs {
+        button {
+            width: 50%;
+        }
+    }
+    .tabs-content {
+        padding: 3% 0;
+        .row {
+            .content-info {
+                padding-right: 5%;
+                @media (max-width: $tablet) {
+                    padding-right: 0%;
+                }
+                .content-description {
+                    height: 150px;
+                    overflow-y: scroll;
+                  
+                    p {
+                        padding: 8px 0;
+                    }
+                }
+            }
+            .col-md-12 {
+                .faq-content {
+                    .faq-title {
+                        color: black;
+                        display: flex;
+                        position: relative;
+                        padding: 8px 0;
+                        cursor: pointer;
+                        animation: all .5s ease;
+                        &::after {
+                            content: "";
+                            background-image: url(../../../public/resourses/assets/mas.svg);
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            width: 18px;
+                            height: 15px;
+                            display: block;
+                            position: absolute;
+                            z-index: -1;
+                            right: 0;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            animation: all .5s ease;
+
+                        }
+                        &.active{
+                            &::after {
+                                background-image: url(../../../public/resourses/assets/menos.svg);
+                                animation: all .5s ease;
+                            }
+                        }
+                    }
+                    .faq-description-content {
+                        display: none;
+                        &.active{
+                            display:block;
+                            padding-left: 2%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content-info {
+        .content-title {
+            font-size: 50px;
+            text-align: start;
+            text-transform: uppercase;
+            @media (max-width: $desktop) {
+                font-size: 35px;
+            }
+        }
+
+        .content-list {
+            padding-left: 20px;
+            // .prince__content, .hours__content{
+            //     display: flex;
+            //     justify-content: flex-start;
+            //     align-items: center;
+            //     gap: 8px;
+            // }
+            .content-item {
+                margin: 1.3rem 0;
+                font-weight: 100;
+                a {
+                    color: $gray;
+                }
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .content-image-field {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,1880 @@
+.page-node-type-page {
+    main {
+        .educon-container {
+            .region-content {
+                padding: 0;
+            }
+            #block-educon-content {
+                .node__content {
+                    .layout__region--content {
+                        display: block;
+                    }
+                    //Banner
+                    .complete-banner-home {
+                        margin-bottom: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 0;
+
+                        .complete-banner-home--banners {
+                            //display: none;
+                            .main-banner {
+                                display: block;
+                                //max-width: 1900px;
+                                margin: 0 auto;
+                                width: 100%;
+                                height: 600px;
+                                @include media-query(desktopXL) {
+                                    height: 500px;
+                                }
+                                @include media-query(desktop) {
+                                    height: 500px;
+                                }
+                                @include media-query(mobile) {
+                                    height: 700px;
+                                }
+                                .owl-stage-outer {
+                                    .owl-stage {
+                                        .owl-item {
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            .s-sliderHome {
+                                                position: relative;
+                                                width: 100%;
+                                                height: 100%;
+                                                .s-sliderHome--img {
+                                                    picture {
+                                                        img {
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            object-fit: cover;
+                                                            object-position: left;
+                                                            @include media-query(mobile) {
+                                                                object-fit: contain;
+                                                                object-position: bottom;
+                                                            }
+                                                        }
+                                                    }
+
+                                                    & > .field--type-image {
+                                                        height: 600px;
+                                                        @include media-query(desktopXL) {
+                                                            height: 500px;
+                                                        }
+                                                        @include media-query(mobile) {
+                                                            height: 700px;
+                                                        }
+                                                    }
+                                                }
+                                                .s-sliderHome--info {
+                                                    position: absolute;
+                                                    top: 44%;
+                                                    width: 36%;
+                                                    right: 10%;
+                                                    left: initial;
+                                                    transform: translate(-10%, -44%);
+                                                    @include media-query(mobile) {
+                                                        top: 21%;
+                                                        width: 83%;
+                                                        left: 23%;
+                                                        right: initial;
+                                                        transform: translate(-23%, -21%);
+                                                    }
+                                                    h3 {
+                                                        font-size: 2rem;
+                                                        color: $color-gold;
+                                                        text-transform: uppercase;
+                                                        font-weight: 300;
+
+                                                        @include media-query(mobile) {
+                                                            font-size: 1.7rem;
+                                                        }
+                                                    }
+                                                    h2 {
+                                                        font-size: 2.8rem;
+                                                        margin-bottom: 3rem;
+                                                        font-weight: 700;
+                                                        text-transform: uppercase;
+                                                        color: $color-gold;
+                                                        @include media-query(desktopXL) {
+                                                            font-size: 2.2rem;
+                                                        }
+                                                        @include media-query(mobile) {
+                                                            margin-bottom: 1rem;
+                                                            font-size: 2.5rem;
+                                                        }
+                                                    }
+                                                    p {
+                                                        font-size: 1.6rem;
+                                                        margin-bottom: 24px;
+                                                        color: $color-btn-a;
+                                                        font-weight: 300;
+                                                        @include media-query(desktopXL) {
+                                                            font-size: 1.4rem;
+                                                        }
+                                                    }
+                                                    a {
+                                                        padding: 1rem 2rem;
+                                                        border: 1px solid $color-btn-a;
+                                                        border-radius: 6px;
+                                                        font-size: 1.4rem;
+                                                        text-decoration: none;
+                                                        font-weight: 400;
+                                                        color: $color-btn-a;
+                                                        @include media-query(desktopXL) {
+                                                            padding: 0.9rem 1.6rem;
+                                                        }
+                                                        &:hover {
+                                                            background-color: #07228b;
+                                                            color: white;
+                                                            font-weight: 700;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .owl-nav {
+                                    display: flex;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    width: 100%;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    @include media-query(mobile) {
+                                        display: none;
+                                    }
+                                    button {
+                                        width: 60px;
+                                        height: 60px;
+                                        background-color: rgba(255, 255, 255, 0.9);
+                                        border-radius: 50%;
+                                        border: 1px solid #041d74;
+                                        &.owl-prev {
+                                            margin-left: 20px;
+                                            background-image: url("./assets/img/izquierda.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            display: block;
+                                            outline: none;
+                                            span {
+                                                display: none;
+                                                font-size: 2.5rem;
+                                                content: "";
+                                            }
+                                        }
+                                        &.owl-next {
+                                            margin-right: 20px;
+                                            background-image: url("./assets/img/derecha.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            display: block;
+                                            outline: none;
+                                            span {
+                                                display: none;
+                                                font-size: 2.5rem;
+                                                content: "";
+                                                font-size: 2.5rem;
+                                            }
+                                        }
+                                        &:hover {
+                                            background-color: rgba(255, 255, 255, 0.9);
+                                        }
+                                    }
+                                }
+                                .owl-dots {
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: 13%;
+                                    transform: translate(-50%, 8%);
+                                    @include media-query(mobile) {
+                                        bottom: 13%;
+                                    }
+                                    .owl-dot {
+                                        width: 10px;
+                                        height: 10px;
+                                        background-color: #041d74;
+                                        border-radius: 50%;
+                                        border: 1px solid white;
+                                        margin: 0 2px;
+                                        &.active {
+                                            width: 15px;
+                                            height: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .complete-banner-home--info-blocks {
+                            margin-top: -50px;
+                            z-index: 3;
+                            @include media-query(mobile) {
+                            }
+                            .layout__region--content {
+                                display: block;
+                            }
+                            .cards0 {
+                                display: grid;
+                                grid-template-columns: 100px 1fr 1fr 1fr 100px;
+                                grid-template-areas: ". card1 card2 card3 .";
+                                gap: 12px;
+                                .field__item {
+                                    @include media-query(mobile) {
+                                        width: 100%;
+                                        height: 149px;
+                                    }
+                                    .blocks-info-banner {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 100%;
+                                        column-gap: 12px;
+                                        box-sizing: border-box;
+                                        padding: 16px;
+                                        border-radius: 6px;
+                                        overflow: hidden;
+                                        //width: 500px;
+                                        // margin: 0 20px;
+                                        @include media-query(desktopXL) {
+                                            // width: 183px;
+                                            // margin: 0 8px;
+                                        }
+                                        .field--name-icon {
+                                            width: 64px;
+                                            height: 64px;
+                                            img {
+                                                width: 100%;
+                                                object-fit: contain;
+                                            }
+                                        }
+                                        .blocks-info-banner--icon {
+                                            h3 {
+                                                font-size: 1.8rem;
+                                                font-family: "Montserrat", sans-serif;
+                                                font-weight: 600;
+                                                color: $color-white;
+                                                margin-bottom: 4px;
+                                                @include media-query(desktopXL) {
+                                                    font-size: 1.4rem;
+                                                }
+                                            }
+                                            p {
+                                                font-size: 1.6rem;
+                                                font-family: "Lato", sans-serif;
+                                                font-weight: 300;
+                                                color: $color-white;
+                                                @include media-query(desktopXL) {
+                                                    font-size: 1.4rem;
+                                                }
+                                            }
+                                        }
+                                        &.itemCard-0 {
+                                            background-color: $color-pink;
+                                        }
+                                        &.itemCard-1 {
+                                            background-color: $color-green;
+                                        }
+                                        &.itemCard-2 {
+                                            background-color: $color-purple;
+                                        }
+                                    }
+                                }
+                                .bannerCard0 {
+                                    grid-area: card1;
+                                }
+                                .bannerCard1 {
+                                    grid-area: card2;
+                                }
+                                .bannerCard2 {
+                                    grid-area: card3;
+                                }
+                                .owl-nav {
+                                    display: none;
+                                }
+                                .owl-dots {
+                                    display: none;
+                                }
+                                .owl-dots {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    //Titulo Nuestros programas
+                    .field--name-title {
+                        text-align: center;
+                        font-size: 2.8rem;
+                        color: $color-gold;
+                        margin: 1rem;
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 700;
+                        @include media-query(mobile) {
+                            font-size: 2.2rem;
+                        }
+                    }
+                    .itemTitle-1,
+                    .itemTitle-0 {
+                        margin-top: 6rem;
+                        @include media-query(mobile) {
+                            margin-top: 2rem;
+                            font-size: 2.2rem;
+                        }
+                    }
+                    .field--name-body {
+                        text-align: center;
+                        max-width: 750px;
+                        margin: 0 auto;
+                        p {
+                            strong {
+                                font-size: 1.6rem;
+                            }
+                            text-align: center;
+                            margin-bottom: 2rem;
+                            font-family: "Lato", sans-serif;
+                            font-size: 1.6rem;
+                            font-weight: 300;
+                            padding: 0 20px;
+                        }
+                    }
+                    nav.menu--menu-relacionados-cursos-y-diplo {
+                        margin-top: 4.5rem;
+                        margin-bottom: 51px;
+                        ul.navbar-nav {
+                            max-width: 500px;
+                            margin: 0 auto;
+                            justify-content: space-around;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                            border-bottom: 1px solid #92afd0;
+                            li {
+                                border-bottom: none;
+                                width: 170px;
+                                text-align: center;
+                                cursor: pointer;
+                                span {
+                                    font-size: 1.8rem;
+                                    text-decoration: none;
+                                    color: $color-btn-a;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                }
+                                &.active {
+                                    border-bottom: 2px solid $color-bottom-border;
+                                    span {
+                                        font-weight: 900;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .block-views-blocknon-formal-programs-cursos {
+                        position: relative;
+                        padding: 20px;
+                        margin: 0 20px;
+                        @include media-query(mobile) {
+                            padding: 0;
+                            margin: 0;
+                        }
+                        .container-sup__our-programs {
+                            padding: 0 28px;
+                            width: 100%;
+                            section.container__our-programs {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: center;
+                                flex-wrap: wrap;
+                                position: inherit;
+                                .owl-stage-outer {
+                                    position: inherit;
+                                    z-index: 3;
+                                    .views-row {
+                                        display: grid;
+                                        grid-template-columns: 10px 1fr 10px;
+                                        grid-template-areas:
+                                            "images images images"
+                                            ". desc .";
+                                        padding: 8px;
+                                        .our-programs__image {
+                                            grid-area: images;
+                                            width: 100%;
+                                            //height: 347px;
+                                            overflow: hidden;
+                                            border-radius: 6px;
+                                            position: relative;
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: contain;
+                                            }
+                                            .arrow {
+                                                bottom: 0;
+                                                height: 201px;
+                                                left: -53px;
+                                                position: absolute;
+                                                width: 158px;
+                                                @include media-query(desktopXL) {
+                                                    left: -53px;
+                                                    height: 148px;
+                                                    width: 148px;
+                                                }
+                                                @include media-query(mobile) {
+                                                    height: 200px;
+                                                    width: 200px;
+                                                    left: -70px;
+                                                }
+                                                svg {
+                                                    height: 100%;
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                        .our-programs__info {
+                                            grid-area: desc;
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            z-index: 3;
+                                            margin-top: -44px;
+                                            background-color: white;
+                                            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                                            padding: 12px;
+                                            border-radius: 6px;
+                                            .info__tags {
+                                                height: 29px;
+                                                margin-bottom: 20px;
+                                                .item-list {
+                                                    ul {
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        align-items: flex-start;
+                                                        /* margin: 0; */
+                                                        text-align: center;
+                                                        gap: 12px;
+                                                        li {
+                                                            margin: 0;
+                                                            background-color: #f2f2f2;
+                                                            border-radius: 6px;
+                                                            font-size: 1.4rem;
+                                                            padding: 4px 12px;
+                                                            font-weight: 300;
+                                                            @include media-query(desktopXL) {
+                                                                font-size: 1.2rem;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .info__title {
+                                                margin: 14px 0;
+                                                text-transform: uppercase;
+                                                font-weight: 700;
+                                                font-size: 1.8rem;
+                                                overflow: hidden;
+                                                display: inline-block;
+                                                text-overflow: ellipsis;
+                                                height: 100px;
+                                                @include media-query(desktopXL) {
+                                                    font-size: 1.6rem;
+                                                    margin: 0;
+                                                }
+                                            }
+                                            .description {
+                                                margin: 14px 0;
+                                                overflow: hidden;
+                                                display: inline-block;
+                                                height: 105px;
+                                                width: 100%;
+                                                text-overflow: ellipsis;
+                                                font-weight: 300;
+                                                font-size: 1.6rem;
+                                                @include media-query(desktopXL) {
+                                                    font-size: 1.4rem;
+                                                }
+                                            }
+                                            .info__info-general {
+                                                display: grid;
+                                                grid-template-columns: repeat(3, 1fr);
+                                                place-content: center;
+                                                align-items: center;
+                                                justify-items: center;
+                                                border-bottom: 1px solid $color-bottom-border;
+                                                gap: 8px;
+                                                .info__modalidad,
+                                                .info__inversion,
+                                                .info__duracion {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    height: 70px;
+                                                    align-items: center;
+                                                    h2 {
+                                                        font-size: 1.4rem;
+                                                        margin-bottom: 8px;
+                                                    }
+                                                    p {
+                                                        font-size: 1.24rem;
+                                                        font-weight: 300;
+                                                    }
+                                                }
+                                            }
+                                            .info__read-more {
+                                                text-align: center;
+                                                margin: 12px 0 0 0;
+                                                a {
+                                                    text-decoration: underline;
+                                                    text-transform: uppercase;
+                                                    &:hover {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .owl-nav {
+                                    display: flex;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    width: 100%;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    @include media-query(mobile) {
+                                        display: none;
+                                    }
+                                    button {
+                                        width: 40px;
+                                        height: 40px;
+                                        background-color: rgba(255, 255, 255, 0.5);
+                                        border-radius: 50%;
+                                        border: 1px solid #041d74;
+                                        &.owl-prev {
+                                            margin-left: 9px;
+                                            background-image: url("./assets/img/izquierda.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            display: block;
+                                            outline: none;
+                                            span {
+                                                display: none;
+                                                content: "";
+                                                font-size: 2.5rem;
+                                            }
+                                        }
+                                        &.owl-next {
+                                            margin-right: 9px;
+                                            background-image: url("./assets/img/derecha.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            display: block;
+                                            outline: none;
+                                            span {
+                                                display: none;
+                                                content: "";
+                                                font-size: 2.5rem;
+                                            }
+                                        }
+                                        &:hover {
+                                            background-color: rgba(255, 255, 255, 0.9);
+                                        }
+                                    }
+                                }
+                                .owl-dots {
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: 0;
+                                    transform: translate(-50%, 8%);
+                                    @include media-query(mobile) {
+                                        bottom: -45px;
+                                    }
+                                    .owl-dot {
+                                        width: 10px;
+                                        height: 10px;
+                                        background-color: #041d74;
+                                        border-radius: 50%;
+                                        border: 1px solid white;
+                                        margin: 0 2px;
+                                        &.active {
+                                            width: 15px;
+                                            height: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .block-views-blocknon-formal-programs-diplomados {
+                        display: none;
+                        position: relative;
+                        padding: 20px;
+                        margin: 0 20px;
+                        @include media-query(mobile) {
+                            padding: 0;
+                            margin: 0;
+                        }
+                        .container-sup__our-programs {
+                            padding: 0 28px;
+                            width: 100%;
+                            section.container__our-programs {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: center;
+                                flex-wrap: wrap;
+                                position: inherit;
+                                .owl-stage-outer {
+                                    position: inherit;
+                                    z-index: 3;
+                                    .views-row {
+                                        display: grid;
+                                        grid-template-columns: 10px 1fr 10px;
+                                        grid-template-areas:
+                                            "images images images"
+                                            ". desc .";
+                                        padding: 8px;
+                                        .our-programs__image {
+                                            grid-area: images;
+                                            width: 100%;
+                                            //height: 347px;
+                                            overflow: hidden;
+                                            border-radius: 6px;
+                                            position: relative;
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: contain;
+                                            }
+                                            .arrow {
+                                                bottom: 0;
+                                                height: 201px;
+                                                left: -53px;
+                                                position: absolute;
+                                                width: 158px;
+                                                @include media-query(desktopXL) {
+                                                    left: -53px;
+                                                    height: 148px;
+                                                    width: 148px;
+                                                }
+                                                @include media-query(mobile) {
+                                                    height: 200px;
+                                                    width: 200px;
+                                                    left: -70px;
+                                                }
+                                                svg {
+                                                    height: 100%;
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                        .our-programs__info {
+                                            grid-area: desc;
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            z-index: 3;
+                                            margin-top: -44px;
+                                            background-color: white;
+                                            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                                            padding: 12px;
+                                            border-radius: 6px;
+                                            .info__tags {
+                                                height: 29px;
+                                                margin-bottom: 20px;
+                                                .item-list {
+                                                    ul {
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        align-items: flex-start;
+                                                        /* margin: 0; */
+                                                        text-align: center;
+                                                        gap: 12px;
+                                                        li {
+                                                            margin: 0;
+                                                            background-color: #f2f2f2;
+                                                            border-radius: 6px;
+                                                            font-size: 1.4rem;
+                                                            padding: 4px 12px;
+                                                            font-weight: 300;
+                                                            @include media-query(desktopXL) {
+                                                                font-size: 1.2rem;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .info__title {
+                                                margin: 14px 0;
+                                                text-transform: uppercase;
+                                                font-weight: 700;
+                                                font-size: 1.8rem;
+                                                overflow: hidden;
+                                                display: inline-block;
+                                                text-overflow: ellipsis;
+                                                height: 100px;
+                                                @include media-query(desktopXL) {
+                                                    font-size: 1.6rem;
+                                                    margin: 0;
+                                                }
+                                            }
+                                            .description {
+                                                margin: 14px 0;
+                                                overflow: hidden;
+                                                display: inline-block;
+                                                height: 105px;
+                                                width: 100%;
+                                                text-overflow: ellipsis;
+                                                font-weight: 300;
+                                                font-size: 1.6rem;
+                                                @include media-query(desktopXL) {
+                                                    font-size: 1.4rem;
+                                                }
+                                            }
+                                            .info__info-general {
+                                                display: grid;
+                                                grid-template-columns: repeat(3, 1fr);
+                                                place-content: center;
+                                                align-items: center;
+                                                justify-items: center;
+                                                border-bottom: 1px solid $color-bottom-border;
+                                                gap: 8px;
+                                                .info__modalidad,
+                                                .info__inversion,
+                                                .info__duracion {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    height: 70px;
+                                                    align-items: center;
+                                                    h2 {
+                                                        font-size: 1.4rem;
+                                                        margin-bottom: 8px;
+                                                    }
+                                                    p {
+                                                        font-size: 1.24rem;
+                                                        font-weight: 300;
+                                                    }
+                                                }
+                                            }
+                                            .info__read-more {
+                                                text-align: center;
+                                                margin: 12px 0 0 0;
+                                                a {
+                                                    text-decoration: underline;
+                                                    text-transform: uppercase;
+                                                    &:hover {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .owl-nav {
+                                    display: flex;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    width: 100%;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    @include media-query(mobile) {
+                                        display: none;
+                                    }
+                                    button {
+                                        width: 40px;
+                                        height: 40px;
+                                        background-color: rgba(255, 255, 255, 0.5);
+                                        border-radius: 50%;
+                                        border: 1px solid #041d74;
+                                        &.owl-prev {
+                                            margin-left: 9px;
+                                            background-image: url("./assets/img/izquierda.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            display: block;
+                                            outline: none;
+                                            span {
+                                                display: none;
+                                                content: "";
+                                                font-size: 2.5rem;
+                                            }
+                                        }
+                                        &.owl-next {
+                                            margin-right: 9px;
+                                            background-image: url("./assets/img/derecha.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            display: block;
+                                            outline: none;
+                                            span {
+                                                display: none;
+                                                content: "";
+                                                font-size: 2.5rem;
+                                            }
+                                        }
+                                        &:hover {
+                                            background-color: rgba(255, 255, 255, 0.9);
+                                        }
+                                    }
+                                }
+                                .owl-dots {
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: 0;
+                                    transform: translate(-50%, 8%);
+                                    @include media-query(mobile) {
+                                        bottom: -45px;
+                                    }
+                                    .owl-dot {
+                                        width: 10px;
+                                        height: 10px;
+                                        background-color: #041d74;
+                                        border-radius: 50%;
+                                        border: 1px solid white;
+                                        margin: 0 2px;
+                                        &.active {
+                                            width: 15px;
+                                            height: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //Buttons
+                    .field--name-link {
+                        text-align: center;
+                        margin: 80px 0 32px 0;
+                        a {
+                            padding: 0.8rem 3.5rem;
+                            border: 1px solid $color-btn-a;
+                            color: $color-btn-a;
+                            border-radius: 6px;
+                            text-decoration: none;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            &:hover {
+                                background-color: #07228b;
+                                color: white;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .link1 {
+                        margin: 6rem !important;
+                        @include media-query(mobile) {
+                            margin: 1rem !important;
+                        }
+                    }
+
+                    //Cards Estudiar Con nosotros
+                    .complete-block-how-study {
+                        height: auto;
+                        position: relative;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        padding: 36px 56px;
+                        .complete-block-how-study--img {
+                            display: none;
+                        }
+                        .complete-block-how-study--info-block {
+                            text-align: center;
+                            z-index: 3;
+                            margin: 36px 0 24px 0;
+                            h3.block--how-study--title {
+                                font-size: 2.8rem;
+                                font-family: "Montserrat", sans-serif;
+                                color: $color-white;
+                                text-transform: uppercase;
+                                margin-bottom: 4px;
+                                @include media-query(mobile) {
+                                    font-size: 2.2rem;
+                                }
+                            }
+                            p {
+                                font-size: 1.6rem;
+                                font-family: "Lato", sans-serif;
+                                color: $color-white;
+                            }
+                        }
+                        .complete-block-how-study--cards {
+                            z-index: 3;
+                            margin: 24px 0 36px 0;
+                            @include media-query(mobile) {
+                                //display: none;
+                            }
+                            .view-id-how_study_home {
+                                .cardsStudy0 {
+                                    margin: 0 auto;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    text-align: center;
+                                    gap: 24px;
+                                    padding: 0 32px;
+                                    @include media-query(mobile) {
+                                        padding: 0;
+                                    }
+                                    .views-row {
+                                        width: 100%;
+                                        height: 405px;
+                                        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                                        background-color: $color-white;
+                                        border-radius: 6px;
+                                        height: auto;
+                                        position: relative;
+                                        overflow: hidden;
+                                        // @include media-query(mobile) {
+                                        //     height: 324px;
+                                        //     width: 350px;
+                                        // }
+                                        .block-how-study {
+                                            display: flex;
+                                            flex-direction: column;
+                                            height: 100%;
+                                            padding: 16px;
+                                            justify-content: space-around;
+                                            .block-how-study--icon {
+                                                height: 60px;
+                                                margin-top: 4px;
+                                                .field--name-field-image {
+                                                    width: 85px;
+                                                    height: 100%;
+                                                    margin: 0 auto;
+                                                    img {
+                                                        width: 62px;
+                                                        height: 62px;
+                                                        object-fit: contain;
+                                                    }
+                                                }
+                                            }
+                                            .block-how-study--info {
+                                                height: auto;
+
+                                                & > .field--name-node-title {
+                                                    text-align: center;
+                                                    display: block;
+                                                    width: 90%;
+                                                    margin: 0 auto;
+                                                    h2 {
+                                                        font-size: 1.8rem;
+                                                        padding: 16px 0;
+                                                        text-transform: uppercase;
+                                                        font-weight: 700;
+                                                        color: $color-title-news;
+                                                        height: 75px;
+                                                        @include media-query(desktopXL) {
+                                                            font-size: 1.6rem;
+                                                            height: 72px;
+                                                        }
+                                                        @include media-query(desktopL) {
+                                                            font-size: 1.6rem;
+                                                            height: 93px;
+                                                        }
+                                                    }
+                                                }
+                                                & > .field--name-short-description {
+                                                    text-align: center;
+                                                    max-width: 294px;
+                                                    margin: 0 auto;
+                                                    p {
+                                                        text-align: center;
+                                                        font-weight: 300;
+                                                        height: 120px;
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis;
+                                                        display: inline-block;
+                                                        //max-width: 266px;
+                                                        margin: 0 auto;
+                                                        font-size: 1.6rem;
+                                                        @include media-query(desktopXL) {
+                                                            font-size: 1.5rem;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .block-how-study--link {
+                                                margin: 24px 0;
+                                                .field--name-node-link-modal {
+                                                    border-top: 1px solid $color-bottom-border;
+                                                    max-width: 230px;
+                                                    margin: 0 auto;
+                                                    padding: 8px;
+                                                    a {
+                                                        text-decoration: underline;
+                                                        text-transform: uppercase;
+                                                    }
+                                                }
+                                            }
+                                            #cardsNumer {
+                                                position: absolute;
+                                                bottom: -20%;
+                                                right: 0;
+                                                span {
+                                                    font-family: "Montserrat", sans-serif !important;
+                                                    font-size: 19rem;
+                                                    color: #92afd0;
+                                                    opacity: 0.19;
+                                                    font-weight: 600;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .owl-nav {
+                                        display: none;
+                                    }
+                                    .owl-dots {
+                                        display: none;
+                                        position: absolute;
+                                        left: 50%;
+                                        bottom: -9%;
+                                        transform: translate(-50%, 8%);
+                                        @include media-query(mobile) {
+                                            display: block;
+                                        }
+                                        .owl-dot {
+                                            width: 10px;
+                                            height: 10px;
+                                            background-color: $color-white;
+                                            border-radius: 50%;
+                                            //border: 1px solid white;
+                                            margin: 0 2px;
+                                            &.active {
+                                                width: 15px;
+                                                height: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            background-color: $color-blue-before;
+                            opacity: 0.94;
+                        }
+                    }
+
+                    //Coursera
+                    section.coursera {
+                        padding: 0 30px;
+                        margin: 24px 0 58px 0;
+                        @include media-query(mobile) {
+                            margin: 0 0 24px 0;
+                            padding: 0 24px;
+                        }
+                        .container__coursera-information {
+                            display: grid;
+                            grid-template-columns: 1fr 875px;
+                            grid-template-areas:
+                                ". images"
+                                "desc images"
+                                ". images";
+                            grid-template-rows: 40px 1fr 40px;
+                            @include media-query(desktopXXL) {
+                                grid-template-columns: 1fr 693px;
+                                grid-template-rows: 45px 1fr 45px;
+                            }
+                            @include media-query(desktopXL) {
+                                grid-template-columns: 1fr 572px;
+                                grid-template-rows: 45px 1fr 45px;
+                            }
+
+                            @include media-query(tablet) {
+                                grid-template-areas:
+                                    "images images images"
+                                    ". desc. ";
+                                grid-template-columns: 15px 1fr 15px;
+                                grid-template-rows: 181px 1fr;
+                            }
+
+                            .coursera__image {
+                                grid-area: images;
+                                margin-left: -32px;
+                                z-index: 0;
+                                overflow: hidden;
+                                border-radius: 6px;
+                                @include media-query(desktopXL) {
+                                    margin-left: -64px;
+                                    padding: 24px;
+                                }
+                                @include media-query(mobile) {
+                                    margin-left: 0;
+                                    width: 100%;
+                                    border-radius: 6px;
+                                    overflow: hidden;
+                                    padding: 0;
+                                    height: auto;
+                                }
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    @include media-query(mobile) {
+                                        object-fit: contain;
+                                    }
+                                }
+                            }
+                            .container_desciprion {
+                                z-index: 3;
+                                grid-area: desc;
+                                background-color: $color-bg-corusera;
+                                //padding: 28px 32px;
+                                display: flex;
+                                flex-direction: column;
+                                border-radius: 6px;
+                                justify-content: center;
+                                @include media-query(mobile) {
+                                    margin-top: -24px;
+                                }
+                                .information {
+                                    padding: 24px;
+                                    p:nth-child(1) {
+                                        img {
+                                            margin: 28px 0;
+                                        }
+                                    }
+                                    h2 {
+                                        text-transform: uppercase;
+                                        font-weight: bold;
+                                        color: #0e62cb;
+                                        font-size: 2.8rem;
+                                        text-align: left;
+                                        strong {
+                                            color: #0e62cb;
+                                            font-size: 2.8rem;
+                                        }
+                                        @include media-query(mobile) {
+                                            font-size: 2.2rem;
+                                            strong {
+                                                font-size: 2.2rem;
+                                            }
+                                        }
+                                    }
+                                    p:nth-child(2) {
+                                        font-size: 1.6rem;
+                                        font-weight: 300;
+                                        margin: 32px 0;
+                                        color: $color-btn-a;
+                                        height: 70px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: inline-block;
+                                    }
+                                    a {
+                                        color: $color-btn-a;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //Bloque cifras
+                    .complete-cifras-home {
+                        background-size: cover;
+                        position: relative;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        position: relative;
+                        overflow: hidden;
+
+                        &::before {
+                            content: "";
+                            background-image: url("./assets/img/arrow_cifras.svg");
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            width: 34%;
+                            height: 100%;
+                            vertical-align: 0;
+                            border-top: 0;
+                            border-right: 0;
+                            border-bottom: 0;
+                            border-left: 0;
+                            position: absolute;
+                            top: 0;
+                            left: -44px;
+                            z-index: 3;
+                            @include media-query(mobile) {
+                                width: 100%;
+                                left: 0px;
+                            }
+                        }
+                        .complete-cifras-home--img {
+                            display: none;
+                            picture {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .complete-cifras-home--cards {
+                            display: flex;
+
+                            margin: 32px auto;
+                            padding: 32px;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                width: 100%;
+                                background-color: $color-purple;
+                                opacity: 0.95;
+                            }
+                            .field--name-media-cards {
+                                display: grid;
+                                grid-template-columns: repeat(4, 1fr);
+                                align-items: center;
+                                justify-items: center;
+                                z-index: 3;
+                                padding: 32px;
+                                margin: 8px;
+                                box-sizing: border-box;
+                                @include media-query(mobile) {
+                                    grid-template-columns: 1fr;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                .field__item {
+                                    .cifras-home {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        .cifras-home--number {
+                                            width: 130px;
+                                            height: 130px;
+                                            border-radius: 50%;
+                                            background-color: rgba(255, 255, 255, 0.2);
+                                            text-align: center;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            // @include media-query(desktopXL) {
+                                            //     width: 130px;
+                                            //     height: 130px;
+                                            // }
+                                        }
+                                        .cifras-home--number > .field {
+                                            width: 100px;
+                                            height: 100px;
+                                            border-radius: 50%;
+                                            background-color: white;
+                                            text-align: center;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            font-weight: 700;
+                                            font-size: 2.3rem;
+                                            color: $color-title-news;
+                                        }
+                                        .cifras-home--title_number {
+                                            width: 80%;
+                                            height: 70px;
+                                        }
+                                        .cifras-home--title_number > .field--name-title {
+                                            text-align: center;
+                                            font-size: 1.6rem;
+                                            color: $color-white;
+                                            font-weight: 700;
+                                            @include media-query(desktopXL) {
+                                                font-size: 1.4rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //Seccion bloque transforma
+                    .complete-transforma {
+                        position: relative;
+                        margin: 36px 0 0;
+                        @include media-query(mobile) {
+                            margin: 36px 0 68px;
+                        }
+                        .complete-transforma--text {
+                            text-align: center;
+                            margin: 24px 0 36px 0;
+                            padding: 0 20px;
+                            h2 {
+                                text-align: center;
+                                font-size: 2.8rem;
+                                color: $color-gold;
+                                margin: 1rem;
+                                font-family: "Montserrat", sans-serif;
+                                max-width: 830px;
+                                margin: 0 auto;
+                                font-weight: 700;
+                                @include media-query(mobile) {
+                                    font-size: 2.2rem;
+                                }
+                            }
+                            p {
+                                strong {
+                                    font-size: 1.6rem;
+                                }
+                                text-align: center;
+                                margin-bottom: 2rem;
+                                font-family: "Lato", sans-serif;
+                                font-size: 1.6rem;
+                                font-weight: 300;
+                                padding: 0 20px;
+                                max-width: 750px;
+                                margin: 12px auto;
+                            }
+                        }
+                        .complete-transforma--cards {
+                            .container__transforma-card-0 {
+                                position: relative;
+                                display: grid;
+                                grid-template-columns: repeat(4, 1fr);
+                                gap: 4px;
+                                @include media-query(mobile) {
+                                    position: inherit;
+                                }
+                                .field__item {
+                                    .block-transforma {
+                                        position: relative;
+                                        overflow: hidden;
+                                        // &::before {
+                                        //     content: "";
+                                        //     position: absolute;
+                                        //     top: 0;
+                                        //     left: 0;
+                                        //     height: 100%;
+                                        //     width: 100%;
+                                        //     background: rgb(2, 0, 36);
+                                        //     background: linear-gradient(
+                                        //         0deg,
+                                        //         rgba(2, 0, 36, 1) 0%,
+                                        //         rgba(4, 29, 116, 1) 25%,
+                                        //         rgba(36, 144, 252, 1) 100%
+                                        //     );
+                                        //     opacity: 0.94;
+                                        // }
+                                    }
+                                    .block-transforma--img {
+                                        a {
+                                            padding: 0;
+                                            margin: 0;
+                                            img {
+                                                max-width: 100%;
+                                                object-fit: contain;
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
+                                    }
+                                    .container_text_transforma {
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 10%;
+                                        width: 85%;
+
+                                        .block-transforma--title-block {
+                                            h2 {
+                                                font-size: 1.8rem;
+                                                color: $color-white;
+                                                margin-bottom: 36px;
+                                            }
+                                        }
+                                        .block-transforma--description-block {
+                                            display: none;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        .block-transforma--img {
+                                            &::before {
+                                                content: "";
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                height: 100%;
+                                                width: 100%;
+                                                background: rgb(2, 0, 36);
+                                                background: linear-gradient(
+                                                    0deg,
+                                                    rgba(2, 0, 36, 1) 0%,
+                                                    rgba(4, 29, 116, 1) 25%,
+                                                    rgba(36, 144, 252, 1) 100%
+                                                );
+                                                opacity: 0.94;
+                                            }
+                                        }
+                                        .container_text_transforma {
+                                            margin-bottom: 30px;
+                                        }
+                                        .block-transforma--description-block {
+                                            display: block;
+                                            p {
+                                                color: $color-white;
+                                            }
+                                        }
+                                    }
+                                }
+                                .owl-stage-outer {
+                                    position: inherit;
+                                }
+                                .owl-nav {
+                                    display: none;
+                                }
+                                .owl-dots {
+                                    display: none;
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: -4%;
+                                    transform: translate(-50%, 8%);
+                                    @include media-query(mobile) {
+                                        display: block;
+                                    }
+                                    .owl-dot {
+                                        width: 10px;
+                                        height: 10px;
+                                        background-color: #041d74;
+                                        border-radius: 50%;
+                                        //border: 1px solid white;
+                                        margin: 0 2px;
+                                        &.active {
+                                            width: 15px;
+                                            height: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .region-news-events-home {
+                        display: grid;
+                        grid-template-columns: 123px 1fr 185px 374px 123px;
+                        grid-template-areas:
+                            ". title title title ."
+                            ". news . events .";
+                        margin: 0 auto;
+                        gap: 8px;
+                        padding: 0;
+                        @include media-query(desktopXL) {
+                            grid-template-columns: 60px 1fr 70px 338px 60px;
+                        }
+                        @include media-query(desktopL) {
+                            grid-template-columns: 50px 1fr 30px 338px 50px;
+                        }
+                        @include media-query(desktop) {
+                            grid-template-columns: 1fr;
+                            grid-template-areas:
+                                "title"
+                                "news"
+                                "events";
+                        }
+                        @include media-query(mobile) {
+                            padding: 0 20px;
+                            margin-top: 5rem;
+                        }
+                        .region-news-events-home--top {
+                            grid-area: title;
+                        }
+                        .region-news-events-home--left {
+                            grid-area: news;
+                            .tnews {
+                                display: flex;
+                                align-items: center;
+                                flex-direction: row-reverse;
+                                justify-content: flex-end;
+                                .itemTitle-7 {
+                                    font-size: 2.4rem;
+                                    font-weight: 600;
+                                    color: $color-title-news;
+                                    text-transform: uppercase;
+                                }
+                                .field--name-image {
+                                    img {
+                                        width: 60px;
+                                        height: 60px;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                            .view-id-news {
+                                .views-row {
+                                    display: grid;
+                                    grid-template-columns: 427px 1fr;
+                                    grid-template-rows: 35px repeat(2, 30px) 1fr 50px 35px;
+                                    grid-template-areas:
+                                        "img ."
+                                        "img date"
+                                        "img title"
+                                        "img desc"
+                                        "img viewMore"
+                                        "img .";
+                                    margin: 24px 0;
+                                    column-gap: 16px;
+                                    align-items: center;
+                                    @include media-query(desktopXL) {
+                                        grid-template-rows: 20px repeat(2, 30px) 105px 25px 20px;
+                                        grid-template-columns: 348px 1fr;
+                                    }
+                                    @include media-query(mobile) {
+                                        grid-template-columns: 1fr;
+                                        grid-template-rows: initial;
+                                        grid-template-areas:
+                                            "img"
+                                            "date"
+                                            "title"
+                                            "desc"
+                                            "viewMore";
+                                    }
+                                    .views-field-title {
+                                        grid-area: title;
+                                        span {
+                                            font-size: 1.8rem;
+                                            color: $color-title-news;
+                                        }
+                                    }
+                                    .views-field-created {
+                                        grid-area: date;
+                                        margin-top: 10px;
+                                        span {
+                                            font-size: 1.6rem;
+                                            color: $color-bottom-border;
+                                        }
+                                    }
+                                    .views-field-field-image {
+                                        grid-area: img;
+                                        overflow: hidden;
+                                        border-radius: 6px;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: contain;
+                                        }
+                                    }
+                                    .views-field-body {
+                                        grid-area: desc;
+                                        p {
+                                            font-weight: 300;
+                                            overflow: hidden;
+                                            display: inline-block;
+                                            //height: 70px;
+                                            width: 100%;
+                                            text-overflow: ellipsis;
+                                        }
+                                    }
+                                    .views-field-view-node {
+                                        grid-area: viewMore;
+                                        border-top: 1px solid #92afd0;
+                                        a {
+                                            text-decoration: underline;
+                                            color: $color-btn-a;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .region-news-events-home--right {
+                            grid-area: events;
+                            .tevents {
+                                display: flex;
+                                align-items: center;
+                                flex-direction: row-reverse;
+                                justify-content: flex-end;
+                                .itemTitle-8 {
+                                    font-size: 2.4rem;
+                                    font-weight: 600;
+                                    color: $color-title-news;
+                                    text-transform: uppercase;
+                                }
+                                .field--name-image {
+                                    img {
+                                        width: 60px;
+                                        height: 60px;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                            .view-id-event {
+                                padding: 0;
+                                margin-top: 30px;
+                                .view-empty{
+                                    p{
+                                        color: #00071c;
+                                        font-weight: 300;
+                                        
+                                    }
+                                }
+                                .view-content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    background-color: $color-bg-events;
+                                }
+                                .views-row {
+                                    margin: 16px;
+                                    @include media-query(mobile) {
+                                        margin: 12px;
+                                    }
+                                    .date__container-item {
+                                        display: grid;
+                                        grid-template-columns: repeat(2, 1fr);
+                                        grid-template-areas: "dates info";
+                                        align-items: center;
+                                        @include media-query(desktopXL) {
+                                            grid-template-columns: auto 1fr;
+                                        }
+                                        .date__event {
+                                            grid-area: dates;
+                                            width: 122px;
+                                            margin: 0 auto;
+                                            height: 114px;
+                                            background-color: white;
+                                            border-radius: 6px;
+                                            box-shadow: 0px 2px 4px 0px rgba(119, 119, 119, 0.23);
+                                            text-align: center;
+                                            padding: 8px;
+                                            margin-right: 16px;
+                                            @include media-query(desktopXL) {
+                                                width: 90px;
+                                                height: 90px;
+                                            }
+                                            h3 {
+                                                font-size: 3rem;
+                                                margin: 8px;
+                                                font-weight: 700;
+                                                color: $color-title-news;
+                                                @include media-query(desktopXL) {
+                                                    font-size: 2.8rem;
+                                                    margin: 4px;
+                                                }
+                                            }
+                                            p {
+                                                font-size: 1.6rem;
+                                                color: $color-title-news;
+                                                font-weight: 700;
+                                                @include media-query(desktopXL) {
+                                                    font-size: 1.4rem;
+                                                }
+                                            }
+                                        }
+                                        .info__event {
+                                            grid-area: info;
+                                            .title_event {
+                                                font-size: 1.5rem;
+                                                font-weight: 600;
+                                                color: $color-title-news;
+                                            }
+                                            .date_event {
+                                                display: flex;
+                                                align-items: center;
+                                                &::before {
+                                                    content: "";
+                                                    background-image: url("./assets/img/reloj_event.svg");
+                                                    background-size: auto;
+                                                    background-repeat: no-repeat;
+                                                    background-position: center;
+                                                    width: 17px;
+                                                    height: 17px;
+                                                    vertical-align: 0;
+                                                    border-top: 0;
+                                                    border-right: 0;
+                                                    border-bottom: 0;
+                                                    border-left: 0;
+                                                    margin-right: 5px;
+                                                }
+                                                font-size: 1.6rem;
+                                                font-weight: 300;
+                                                color: $color-title-news;
+                                                @include media-query(desktopXL) {
+                                                    font-size: 1.4rem;
+                                                }
+                                                @include media-query(mobile) {
+                                                    font-size: 1.5rem;
+                                                }
+                                            }
+                                            .location_event {
+                                                display: flex;
+                                                align-items: center;
+                                                font-size: 1.6rem;
+                                                font-weight: 300;
+                                                color: $color-title-news;
+                                                @include media-query(mobile) {
+                                                    font-size: 1.5rem;
+                                                }
+                                                &::before {
+                                                    content: "";
+                                                    background-image: url("./assets/img/ubicacion_event.svg");
+                                                    background-size: auto;
+                                                    background-repeat: no-repeat;
+                                                    background-position: center;
+                                                    width: 17px;
+                                                    height: 17px;
+                                                    vertical-align: 0;
+                                                    border-top: 0;
+                                                    border-right: 0;
+                                                    border-bottom: 0;
+                                                    border-left: 0;
+                                                    margin-right: 5px;
+                                                }
+                                            }
+                                            .link_event {
+                                                font-size: 1.3rem;
+                                                font-weight: 300;
+                                                color: $color-title-news;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div[role="dialog"] {
+        width: 60% !important;
+        border: none !important;
+        border-radius: 6px !important;
+        text-align: center;
+        @include media-query(desktopXL) {
+            margin-top: 178px;
+        }
+        @include media-query(mobile) {
+            width: 70%;
+        }
+        .ui-dialog-titlebar {
+            background-color: white;
+            border: none;
+            border-radius: 6px;
+            button {
+                width: 59px;
+                height: 59px;
+                background-color: rgba(255, 255, 255, 0.6);
+                border-radius: 50%;
+                border: 1px solid white;
+                top: -430%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &::before {
+                    content: "";
+                    background-image: url("./assets/img/closePopUp.svg");
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 17px;
+                    height: 17px;
+                    vertical-align: 0;
+                    border-top: 0;
+                    border-right: 0;
+                    border-bottom: 0;
+                    border-left: 0;
+                }
+            }
+            .ui-dialog-title {
+                display: none;
+            }
+        }
+        #drupal-modal {
+            margin: 0 auto !important;
+            overflow: visible;
+            .block-how-study-pop-up {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .block-how-study-pop-up--icon {
+                    & > .field--name-field-image {
+                        height: 70px;
+                        width: 70px;
+                        margin: 24px auto;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .block-how-study-pop-up--info {
+                    h2 {
+                        font-size: 2.2rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #041d74;
+                        margin-bottom: 24px;
+                    }
+
+                    p {
+                        font-weight: 300;
+                        color: #00071c;
+                        padding: 16px 0;
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 12px;
+                        span {
+                            font-family: "Montserrat", sans-serif !important;
+                            font-size: 2.8rem;
+                            color: #041d74;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .block-how-study-pop-up--link {
+                    text-align: center;
+                    margin: 24px 0 32px 0;
+                    a {
+                        padding: 0.8rem 3.5rem;
+                        border: 1px solid $color-btn-a;
+                        color: $color-btn-a;
+                        border-radius: 6px;
+                        text-decoration: none;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        &:hover {
+                            background-color: #07228b;
+                            color: white;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .block-how-study-pop-up--number {
+                    position: absolute;
+                    bottom: -21%;
+                    right: 0%;
+                    .field--name-number {
+                        font-family: "Montserrat", sans-serif !important;
+                        font-size: 19rem;
+                        color: #92afd0;
+                        opacity: 0.19;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    .ui-widget-overlay {
+        background: rgb(0, 0, 0);
+        opacity: 0.7;
+    }
+}

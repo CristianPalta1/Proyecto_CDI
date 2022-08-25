@@ -1,0 +1,85 @@
+/*sliderOpinion*/
+.sliderOpinion {
+  padding: 60px 0;
+  background-color: $background_gallery;
+  .content {
+    .c-content {
+      .sliderOpinion__content {
+        padding-top: 35px;
+        .s-sliderOpinion {
+          .owl-stage {
+            padding-bottom: 50px;
+            li {
+              margin: 0;
+              padding: 0;
+              &:before {
+                display: none;
+              }
+            }
+            article {
+              margin: 5px;
+              position: relative;
+              &:hover {
+                .s-sliderOpinion__text {
+                  background-color: $background_golda;
+                  a,
+                  h3,
+                  p,
+                  .date,
+                  span {
+                    color: $color_big_stone;
+                  }
+                }
+              }
+              .s-sliderOpinion__text {
+                transition: all 0.25s;
+                padding: 20px 15px 60px 15px;
+                box-shadow: 0 0 10px 0 $box_shadow;
+                background-color: $background_white;
+                p {
+                  padding: 15px 0;
+                }
+              }
+              .s-sliderOpinion__img {
+                left: 0;
+                right: 0;
+                bottom: -40px;
+                width: 90%;
+                height: auto;
+                margin: 0 auto;
+                position: absolute;
+                .row {
+                  align-items: flex-end;
+                  .col-8 {
+                    padding-right: 5px;
+                  }
+                  .col-4 {
+                    overflow: hidden;
+                    border-radius: 50%;
+                  }
+                  .job {
+                    display: block;
+                    color: $color_congress_blue;
+                    font-size: 0.7rem;
+                    line-height: 13px;
+                    font-family: $latoregular;
+                  }
+                  .name {
+                    display: block;
+                    color: $color_big_stone;
+                    font-size: 0.6875rem;
+                    line-height: 14px;
+                    font-family: $montserratbold;
+                  }
+                }
+              }
+            }
+          }
+          .owl-dots {
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}

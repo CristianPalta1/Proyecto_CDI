@@ -1,0 +1,284 @@
+/*gridInternal*/
+.gridInternal {
+  .container {
+    @media (min-width: 769px) {
+      max-width: 100%;
+    }
+  }
+  .content {
+    .c-content {
+      .gridInternal__content {
+        @media (max-width: $tablet) {
+          padding: 30px 0;
+        }
+        .view-links-destacados-home {
+          width: 100%;
+          height: auto;
+          .view-content {
+            @media (max-width: $mobile) {
+              display: flex;
+              flex-wrap: wrap;
+            }
+            & > div {
+              @media (max-width: $mobile) {
+                width: 50%;
+                max-width: 50%;
+              }
+              .col-6 {
+                @media (max-width: $mobile) {
+                  width: 100%;
+                  max-width: 100%;
+                }
+              }
+            }
+            .gridInternal__item {
+              width: 100%;
+              height: 130px;
+              padding: 30px 0;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              justify-content: flex-end;
+              .gridInternal__text {
+                padding-top: 15px;
+                text-align: center;
+                span {
+                  color: $color_white;
+                  font-size: 1rem;
+                  line-height: 19px;
+                  font-family: $latobold;
+                  text-transform: uppercase;
+                  @media (max-width: $mobile) {
+                    font-size: 0.8125rem;
+                  }
+                }
+              }
+            }
+            .borderMobile {
+              @media (max-width: $tablet) {
+                border: 5px solid $border_white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*gridInternal - Bienestar*/
+.gridInternal {
+  .container {
+    @media (min-width: 769px) {
+      max-width: 100%;
+    }
+  }
+  .content {
+    .c-content {
+      .gridInternal__content {
+        @media (max-width: $tablet) {
+          padding: 30px 0;
+        }
+        .view-links-destacados-bienestar {
+          width: 100%;
+          height: auto;
+          margin-bottom: 60px;
+          @media (max-width: $mobile) {
+            margin-bottom: 40px;
+          }
+          .view-content {
+            @media (max-width: $mobile) {
+              display: flex;
+              flex-wrap: wrap;
+            }
+            & > div {
+              @media (max-width: $mobile) {
+                width: 50%;
+                max-width: 50%;
+              }
+              .col-6 {
+                @media (max-width: $mobile) {
+                  width: 100%;
+                  max-width: 100%;
+                }
+              }
+            }
+            .gridInternal__item {
+              width: 100%;
+              height: 100%;
+              padding: 30px 0;
+
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              justify-content: flex-end;
+              .gridInternal__text {
+                padding-top: 15px;
+                text-align: center;
+                p {
+                  color: $color_white;
+                  font-size: 1rem;
+                  line-height: 19px;
+                  font-family: $latobold;
+                  text-transform: uppercase;
+                  @media (max-width: $mobile) {
+                    font-size: 0.8125rem;
+                  }
+
+                  a, strong {
+                    font-size: inherit;
+                    font-weight: 700;
+                    line-height: inherit;
+                  }
+                  
+                  a {
+                    text-decoration: underline !important;
+                  }
+                }
+              }
+            }
+            .borderMobile {
+              @media (max-width: $tablet) {
+                border: 5px solid $border_white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*gridInternal - Pastoral*/
+.gridInternal {
+  .container {
+    @media (min-width: 769px) {
+      max-width: 100%;
+    }
+  }
+  .content {
+    .c-content {
+      .gridInternal__content {
+        @media (max-width: $tablet) {
+          padding: 30px 0;
+        }
+        .view-id-links_destacados {
+          width: 100%;
+          height: auto;
+          @media (max-width: $mobile) {
+            margin-bottom: 40px;
+          }
+          .view-content {
+            @media (max-width: $mobile) {
+              display: flex;
+              flex-wrap: wrap;
+            }
+            & > div {
+              @media (max-width: $mobile) {
+                width: 50%;
+                max-width: 50%;
+              }
+              .col-6 {
+                @media (max-width: $mobile) {
+                  width: 100%;
+                  max-width: 100%;
+                }
+              }
+            }
+            .gridInternal__item {
+              width: 100%;
+              height: 100%;
+              padding: 30px 0;
+
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              justify-content: flex-end;
+              .gridInternal__text {
+                padding-top: 15px;
+                text-align: center;
+                p {
+                  color: $color_white;
+                  font-size: 1rem;
+                  line-height: 19px;
+                  font-family: $latobold;
+                  text-transform: uppercase;
+                  @media (max-width: $mobile) {
+                    font-size: 0.8125rem;
+                  }
+
+                  a, strong {
+                    font-size: inherit;
+                    font-weight: 700;
+                    line-height: inherit;
+                  }
+                  
+                  a {
+                    text-decoration: underline !important;
+                  }
+                }
+              }
+            }
+            .borderMobile {
+              @media (max-width: $tablet) {
+                border: 5px solid $border_white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*micrositios - Sedes*/
+.block-micrositios-sedes {
+  &.block-micrositios-menus {
+    .gridInternal {
+      .container {
+        @media (min-width: 769px) {
+          max-width: 100%;
+        }
+      }
+      .content {
+        .c-content {
+          .gridInternal__content {
+            @media (max-width: $tablet) {
+              padding: 30px 0;
+            }
+            .row {
+              .gridInternal__item {
+                width: 100%;
+                height: 100%;
+                padding: 30px 0;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: flex-end;
+                .gridInternal__text {
+                  padding-top: 15px;
+                  text-align: center;
+                  span {
+                    color: $color_white;
+                    font-size: 1rem;
+                    line-height: 19px;
+                    font-family: $latobold;
+                    text-transform: uppercase;
+                    @media (max-width: $mobile) {
+                      font-size: 0.8125rem;
+                    }
+                  }
+                }
+              }
+              .borderMobile {
+                @media (max-width: $tablet) {
+                  border: 5px solid $border_white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

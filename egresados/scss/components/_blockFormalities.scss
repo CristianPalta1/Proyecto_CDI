@@ -1,0 +1,75 @@
+.block__procedure {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0rem;
+
+  &__img {
+    position: relative;
+    .block-field-blockblock-contentblock-our-proceduresunique-image {
+
+      &::after {
+        @include layer_images($color-blue-background);
+      }
+
+      img {
+        width: 100%;
+        height: 304px;
+        object-fit: cover;
+
+        @include media-query(mobile) {
+          height: 345px;
+        }
+      }
+    }
+  }
+
+  &__info {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    color: $color-white;
+
+    @include media-query(tablet) {
+      text-align: left;
+    }
+
+    .content-formatilies-title {
+      font-size: 2.81rem;
+      font-weight: $medium;
+      margin-bottom: 1rem;
+      
+      @include media-query(tablet) {
+        font-size: 2.4rem;
+      }
+      
+      @include media-query(mobile) {
+        font-size: 1.87rem;
+      }
+    }
+    
+    .block-field-blockblock-contentblock-our-proceduresdescription-general {
+      width: 60%;
+      margin: auto;
+
+      @include media-query(tablet) {
+        width: 100%;
+      }
+
+      p {
+        font-size: 1.12rem;
+        font-weight: $regular;
+
+        @include media-query(mobile) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+  }
+
+
+}

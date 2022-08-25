@@ -1,0 +1,44 @@
+.educon-container {
+    #block-educon-breadcrumbs {
+        margin-top: 106px;
+        @include media-query(mobile) {
+            margin-top: 9px;
+        }
+        nav {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            margin: 0 40px;
+            ol.breadcrumb {
+                background-color: transparent;
+                margin: 0 !important;
+                li {
+                    font-size: 1.4rem;
+                    color: $color-btn-a;
+                    font-weight: 300;
+                    a {
+                        color: $color-btn-a;
+                        font-weight: 300;
+                        font-size: 1.4rem;
+                    }
+
+                    &:last-child {
+                        font-weight: 700;
+                        font-size: 1.4rem;
+                        a {
+                            font-weight: 700;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+                .breadcrumb-item + .breadcrumb-item::before {
+                    float: left;
+                    padding-right: 0.5rem;
+                    color: #495057;
+                    content: ">";
+                }
+            }
+        }
+    }
+}

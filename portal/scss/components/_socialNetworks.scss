@@ -1,0 +1,167 @@
+/*socialNetworks*/
+.socialNetworks {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  span {
+    color: $color_silver_chalice;
+    font-size: 0.75rem;
+    line-height: 13px;
+    font-family: $latoregular;
+  }
+  .social-media-sharing {
+    ul {
+      margin: 0 auto;
+      padding-top: 6px;
+      padding-left: 0px;
+      text-align: center;
+      display: inline-flex;
+      @media (min-width: $desktop_1280) {
+        margin: 0 10px;
+        padding-top: 10px;
+        padding-left: 0;
+        display: inherit;
+        text-align: center;
+      }
+      li {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (min-width: $desktop_1280) {
+          margin-right: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+          @media (max-width: $desktop_1280) {
+            margin-right: 0;
+          }
+        }
+        &.facebook {
+          border: 1px solid $color_facebook;
+          .icon-icon-facebook {
+            color: $color_facebook;
+            font-size: 1.25rem;
+          }
+        }
+        &.twitter {
+          border: 1px solid $color_twitter;
+          .icon-icon-twitter {
+            color: $color_twitter;
+            font-size: 1rem;
+          }
+        }
+        &.share {
+          border: 1px solid $color_share;
+          .icon-icon-share {
+            color: $color_share;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  ul {
+    padding-top: 10px;
+    padding-left: 0px;
+    text-align: center;
+    display: inline-flex;
+    margin: 0 10px;
+    @media (min-width: $tablet) {
+      display: inherit;
+    }
+    li {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      border-radius: 50%;
+      margin-bottom: 10px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.facebook {
+        border: 1px solid $color_facebook;
+        .icon-icon-facebook {
+          color: $color_facebook;
+          font-size: 1.25rem;
+        }
+      }
+      &.twitter {
+        border: 1px solid $color_twitter;
+        .icon-icon-twitter {
+          color: $color_twitter;
+          font-size: 1rem;
+        }
+      }
+      &.share {
+        border: 1px solid $color_share;
+        .icon-icon-share {
+          color: $color_share;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/*page-node-type-programas*/
+.page-node-type-programas {
+  .socialNetworks {
+    z-index: 1;
+    position: absolute;
+    @media (min-width: 769px) {
+      left: 41%;
+      text-align: center;
+    }
+    @media (min-width: $desktop_992) {
+      left: 43%;
+      text-align: center;
+    }
+    @media (min-width: $desktop_1024) {
+      left: 43.5%;
+    }
+    @media (min-width: $desktop_1280) {
+      top: 404px;
+      left: 20px;
+    }
+    @media (min-width: $desktop_1366) {
+      top: 428px;
+      left: 40px;
+    }
+    @media (min-width: $desktop_1440) {
+      top: 453px;
+      left: 60px;
+    }
+    @media (min-width: $desktop_1640) {
+      top: 507px;
+      left: 40px;
+    }
+    @media (min-width: $desktop_1920) {
+      top: 587px;
+      left: 130px;
+    }
+    @media (max-width: $tablet) {
+      top: -200px;
+      left: 41%;
+      text-align: center;
+    }
+    @media (max-width: $mobile) {
+      top: -200px;
+      left: 34%;
+      text-align: center;
+    }
+    @media (max-width: $mobilex) {
+      top: -200px;
+      left: 32%;
+      text-align: center;
+    }
+  }
+}

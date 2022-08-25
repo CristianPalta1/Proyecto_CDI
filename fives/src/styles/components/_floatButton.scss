@@ -1,0 +1,200 @@
+.float-button_chats {
+    position: fixed;
+    top: 88%;
+    right: 1.5%;
+    transform: translate(-1%, -94%);
+    z-index: 4;
+    display: flex;
+    gap: 12px;
+   
+    @media (max-width: 1290px) {
+        top: 85%;
+    }
+    .messenger_fb,
+    .whatsapp,
+    .messenger2 {
+        background-color: #ededed;
+        overflow: hidden;
+        position: relative;
+
+      
+    }
+
+    .chats {
+        position: relative;
+        .dots__chat {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -70%);
+            display: flex;
+            gap: 4px;
+            z-index: 1;
+            cursor: pointer;
+            .dots {
+                cursor: pointer;
+                &:nth-child(1) {
+                    width: 5px;
+                    height: 5px;
+                    background-color: white;
+                    border-radius: 50%;
+                   
+                    display: block;
+                }
+                &:nth-child(2) {
+                    width: 5px;
+                    height: 5px;
+                    background-color: white;
+                    border-radius: 50%;
+                  
+                    display: block;
+                }
+                &:nth-child(3) {
+                    width: 5px;
+                    height: 5px;
+                    background-color: white;
+                    border-radius: 50%;
+                
+                    display: block;
+                }
+            }
+        }
+        .messenger2 {
+            display: none;
+        }
+        .messenger_fb,
+        .whatsapp,
+        .messenger2 {
+            background-color: #ededed;
+            border-radius: 50%;
+            margin: 8px 0;
+            a,
+            .container_float-button_mssg {
+                display: block;
+                width: 48px;
+                height: 48px;
+                border: 6px solid #ededed;
+                border-radius: 50%;
+            
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+            p {
+                display: block;
+                width: 48px;
+                height: 48px;
+                margin: 0;
+                a {
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                    border: 6px solid #ededed;
+                    border-radius: 50%;
+                  
+                   
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+            }
+            &.active {
+                a,
+                .container_float-button_mssg {
+                    z-index: 10;
+                    display: block;
+                   
+                }
+                p {
+                    display: block;
+                    a {
+                        display: block;
+                    }
+                }
+            }
+          
+        }
+        .generalChats {
+            display: none;
+            cursor: pointer;
+            .container_float-button_generals {
+                display: block;
+                width: 50px;
+                height: 50px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &.active {
+        top: 85%;
+        @media (max-width: 1290px) {
+            top: 82%;
+        }
+        transition: all 1s;
+        // animation: ease-in 0.9s;
+        &::before {
+            display: none;
+        }
+
+        .chats {
+            .dots__chat {
+                display: none;
+                top: 89%;
+                transform: translate(-50%, -89%);
+                .dots {
+                    &:nth-child(1) {
+                        width: 23px;
+                        height: 3px;
+                      
+                        border-radius: 10px;
+                    }
+                    &:nth-child(2) {
+                    
+                        transform: scale(0);
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                    
+                        transform: scale(0);
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        // .messenger_fb,
+        // .whatsapp,
+        // .messenger2 {a {
+        //     transition: 0.5s all;
+        //     display: block;
+        // }}
+        .messenger_fb,
+        .whatsapp,
+        .messenger2 {
+           
+        }
+        // .chats{
+        //     .generalChats {
+        //         .container_float-button_generals {
+        //             transform: scale(0.2);
+        //         }
+        //     }
+        // }
+    }
+}
+
+#calixta-badge {
+    display: none !important;
+}

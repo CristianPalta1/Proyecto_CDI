@@ -1,0 +1,102 @@
+/*Styles tables*/
+/*Style I*/
+.table-responsive{
+	margin-bottom: 3rem;
+	scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+	scrollbar-width: thin;	
+	&::-webkit-scrollbar{
+		-webkit-appearance: none;
+	}
+    &::-webkit-scrollbar-track{
+		background-color:$background_gallery;
+	}
+    &::-webkit-scrollbar:horizontal{
+	   height: .7rem;
+	}
+    &::-webkit-scrollbar-thumb{
+       background-color: $background_big_stone;
+	   border-radius: 2px;
+    }	
+	.table{
+		&.tableOption1{
+			width: 100%;
+			margin-top: 40px;
+			tr{
+				&:nth-child(odd){
+					background-color: $background_gallery;
+				}
+				td{
+					padding: .75rem;
+					color: $color_congress_blue;
+					font-size: .8rem;
+					white-space: nowrap;
+					vertical-align: middle;
+					font-family: $latobold;
+					&:first-of-type{
+						width: 50%;
+						color: $color_big_stone;
+					}
+					&:nth-child(2){
+						font-size: 1rem;
+						text-align: center;
+					}
+					&:nth-child(3){
+						font-size: 1rem;
+						text-align: center;
+					}
+					.btn-link{
+						color: $color_congress_blue;
+						font-size: .8rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*Style II*/
+.tableGeneric{
+	padding: 60px 0 10px;
+	background-color: $background_gallery;
+	.container{
+		.c-content{
+			.table-responsive{
+				.table{
+					&.tableOption2{
+						width: 100%;
+						margin-top: 40px;
+						thead{
+							tr{
+								background-color: $background_congress_blue;
+								th{
+									color: $color_white;
+									font-size: 1rem;
+									font-family: $latobold;	
+								}
+							}
+						}
+						tbody{
+							tr{
+								&:nth-child(odd){
+									background-color: $background_white;
+								}
+								td{
+									padding: .75rem;
+									color: $color_boulder;
+									font-size: .8rem;
+									white-space: nowrap;
+									vertical-align: middle;
+									font-family: $latoregular;
+									&:first-of-type{
+										width: 50%;
+										color: $color_congress_blue;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

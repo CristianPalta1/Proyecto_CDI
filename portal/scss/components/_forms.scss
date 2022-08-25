@@ -1,0 +1,139 @@
+/*contactForm1*/
+.contactForm1 {
+  margin: 25px;
+  padding: 25px;
+  margin-top: -35%;
+  background-color: $background_white;
+  box-shadow: 0 0 10px 0 $box_shadow;
+  @media (max-width: $desktop_1024) {
+    margin: 25px 0;
+    padding: 10px;
+    margin-top: -25%;
+  }
+  @media (max-width: $tablet) {
+    margin: 15px;
+    margin-top: -5%;
+  }
+  @media (max-width: $mobile) {
+    margin: 0;
+    padding: 0;
+    margin-top: -15%;
+  }
+  h3 {
+    margin-bottom: 20px;
+    font-family: $montserratbold;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  form {
+    label {
+      color: $color_congress_blue;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $border_alto;
+      background-color: $background_gallery;
+    }
+    .blue {
+      width: auto;
+      display: block;
+      color: $color_white;
+      padding: 10px 30px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $background_congress_blue;
+    }
+  }
+  .field--name-field-formulario-por-iframe {
+    .field__label {
+      display: none;
+    }
+    .field__item {
+      div {
+        iframe {
+          width: 100%;
+          height: 800px;
+          @media (max-width: $tablet) {
+            width: 100%;
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*contactForm2*/
+.contactForm2 {
+  padding: 60px 0;
+  margin-top: 60px;
+  background-color: $background_congress_blue;
+  .content {
+    .c-content {
+      .contactForm2__content {
+        .row {
+          .col-12 {
+            margin: 0 auto;
+            form {
+              padding: 25px;
+              border-radius: 5px;
+              box-shadow: 0 0 10px 0 $box_shadow;
+              background-color: $background_white;
+              .js-form-item {
+                h3 {
+                  font-size: 1.25rem;
+                  text-align: center;
+                  text-transform: uppercase;
+                  font-family: $montserratbold;
+                }
+                p {
+                  color: $color_boulder;
+                  font-size: 0.95rem;
+                  line-height: 1.5rem;
+                }
+                label {
+                  color: $color_congress_blue;
+                  font-size: 0.85rem;
+                  &.form-required:after {
+                    content: " *";
+                    width: auto;
+                    height: auto;
+                    color: $color_congress_blue;
+                    font-size: 0.95rem;
+                    position: relative;
+                    vertical-align: inherit;
+                    background-image: none;
+                  }
+                }
+                input,
+                textarea {
+                  padding: 5px;
+                  resize: none;
+                  box-shadow: none;
+                  color: $color_boulder;
+                  font-size: 0.95rem;
+                  line-height: 1.5rem;
+                  border: 1px solid $border_gallery;
+                  background-color: $background_gallery;
+                }
+              }
+              .form-actions {
+                text-align: center;
+                input {
+                  padding: 7px 40px;
+                  color: $color_white;
+                  text-transform: uppercase;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

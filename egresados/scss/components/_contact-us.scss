@@ -1,0 +1,225 @@
+.contact-us {
+  padding: 6rem 0;
+
+  @include media-query(desktop) {
+    padding: 4rem 0;
+  }
+
+  @include media-query(tablet) {
+    padding: 2rem 0;
+  }
+
+  .contact {
+    &__content {
+      display: flex;
+      align-items: center;
+      padding-left: 2rem;
+  
+      @include media-query(desktop) {
+        align-items: center;
+      }
+      @include media-query(tablet) {
+        flex-direction: column;
+        padding-left: 0;
+      }
+  
+      &--img {
+        position: relative;
+        width: 50%;
+        margin: 0 4rem 0 1rem;
+  
+        @include media-query(tablet) {
+          width: 100%;
+          margin: 0;
+          overflow: hidden;
+        }
+  
+        .field--name-unique-image {
+          position: relative;
+          transform: rotate(21deg);
+  
+          @include media-query(tablet) {
+            width: 84%;
+            margin: 40px 0 70px 9%;
+          }
+          @include media-query(mobilex) {
+            width: 84%;
+            margin: 40px 0 70px 7%;
+          }
+  
+          img {
+            width: 100%;
+            height: auto;
+            transform: rotate(-21deg);
+          }
+  
+          &::after {
+            @include bg-figure-images($color-orange, 50px);
+         
+  
+            @include media-query(desktopXL) {
+              border-radius: 41px;
+              height: 94%;
+           
+            }
+            @include media-query(desktopL) {
+              border-radius: 30px;
+            }
+            @include media-query(desktop) {
+              border-radius: 25px;
+              height: 94%;
+           
+            }
+            @include media-query(tablet) {
+              border-radius: 30px;
+              height: 94%;
+           
+            }
+            @include media-query(mobile) {
+              border-radius: 40px;
+         
+            }
+            @include media-query(mobilexl) {
+              border-radius: 30px;
+      
+            }
+            @include media-query(mobilex) {
+              border-radius: 20px;
+        
+            }
+          }
+  
+        }
+  
+        img {
+          border-radius: 79px;
+  
+          @include media-query(desktopL) {
+            border-radius: 50px;
+          }
+  
+          @include media-query(desktop) {
+            border-radius: 30px;
+          }
+  
+          @include media-query(mobile) {
+            border-radius: 40px;
+          }
+          @include media-query(mobilexl) {
+            border-radius: 30px;
+          }
+          @include media-query(mobilex) {
+            border-radius: 25px;
+          }
+        }
+  
+      }
+
+      &--info {
+        width: 50%;
+        padding-left: 3.44rem;
+
+        @include media-query(desktop) {
+          padding-left: 1rem;
+        }
+
+        @include media-query(tablet) {
+          width: 100%;
+          padding-left: 0;
+        }
+
+        .title {
+          font-size: 4.06rem;
+          color: $color-blue-light;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          margin-bottom: 2rem;
+
+          @include media-query(desktop) {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+          }
+
+          @include media-query(tablet) {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+          }
+
+          @include media-query(mobilex) {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+
+        .description {
+          font-size: 1.87rem;
+          font-weight: 500;
+
+          @include media-query(desktop) {
+            font-size: 1.5rem;
+          }
+          @include media-query(tablet) {
+            font-size: 1.37rem;
+          }
+        }
+
+        .block-field-blockblock-contentblock-contact-usmedia {
+          .field__item {
+            margin: 1rem 0;
+            .general-fields {
+              display: flex;
+              align-items: center;
+
+              .icon-contact {
+                margin-right: 15px;
+
+                .field__item {
+                  img {
+                    width: 80px;
+                    height: auto;
+
+                    @include media-query(desktop) {
+                      width: 60px;
+                    }
+                    @include media-query(tablet) {
+                      width: 50px;
+                    }
+                  }
+                }
+              }
+
+              .description-contact {
+                p {
+                  font-size: 1.8rem;
+                  font-weight: 300;
+                  color: $color-font-second;
+
+                  @include media-query(desktop) {
+                    font-size: 1.4rem;
+                  }
+                  @include media-query(tablet) {
+                    font-size: 1rem;
+                  }
+
+                  a {
+                    font-size: inherit;
+                    font-weight: inherit;
+                    color: inherit;
+
+                    &[target="_blank"] {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

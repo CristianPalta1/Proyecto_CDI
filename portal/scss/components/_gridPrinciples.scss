@@ -1,0 +1,23 @@
+/*gridPrinciples*/
+.gridprinciples {
+  .content {
+    .c-content {
+      .gridPrinciples__content,
+      .gridprinciples__content {
+        .row {
+          padding: 15px 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          h3 {
+            font-size: 1.125rem;
+            line-height: 18px;
+            padding-bottom: 10px;
+            font-family: $latobold;
+          }
+        }
+      }
+    }
+  }
+}

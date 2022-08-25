@@ -1,0 +1,28 @@
+body {
+    main {
+        .educon-container {
+            position: relative;
+            margin-top: 94px;
+            @include media-query(mobile) {
+                margin-top: 0 !important;
+            }
+            @include media-query(desktop) {
+                margin-top: 70px;
+            }
+            .region-content {
+                padding: 0 !important;
+            }
+        }
+    }
+}
+body.user-logged-in {
+    main {
+        .educon-container {
+            position: relative;
+            margin-top: 0;
+            @include media-query(mobile) {
+                margin-top: 0;
+            }
+        }
+    }
+}

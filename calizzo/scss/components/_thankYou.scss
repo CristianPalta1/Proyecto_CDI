@@ -1,0 +1,176 @@
+.block-block-content4c2eb4d0-0635-473b-977f-76682840b612,
+.block-block-content45597cdc-34f7-4a78-8a1a-37ad93df49fa {
+  height: 70vh;
+  @include media-query(tablet) {
+    height: 134vh;
+  }
+  .page__thank_you {
+    background-color: $color-background-product;
+    height: 70vh;
+    @include media-query(tablet) {
+      height: 134vh;
+    }
+    .container__thank_you {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      @include media-query(tablet) {
+        flex-direction: column;
+      }
+      .field--type-image {
+        height: 100%;
+        width: initial;
+        @include media-query(tablet) {
+          width: 100%;
+        }
+        picture {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .container__card_info {
+        background-color: $color-white;
+        border-radius: 0.6rem;
+        transform: translateX(-28rem);
+        text-align: center;
+        position: relative;
+        padding: 0 4rem;
+        box-shadow: 0 0.2rem 0.4rem rgba($color: #000, $alpha: 0.16);
+        width: initial;
+        @include media-query(desktopLS) {
+          transform: translateX(-24.5rem);
+        }
+        @include media-query(tablet) {
+          transform: translateX(0);
+          transform: translateY(-28rem);
+          width: 80%;
+        }
+        .container__logo_success {
+          border-radius: 50%;
+          height: 8rem;
+          width: 8rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          margin-top: -8%;
+          border: 0.1rem solid $color-input;
+          @include media-query(desktopLS) {
+            margin-top: -13%;
+          }
+          .logo__success {
+            background-color: $color-input;
+            border-radius: 50%;
+            width: 7rem;
+            height: 7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 3.5rem;
+            }
+          }
+        }
+        .main__title_thank_you {
+          .field--name-title {
+            font-size: 4rem;
+            text-transform: uppercase;
+            width: initial;
+            margin: 3rem 0;
+            @include media-query(desktopLS) {
+              font-size: 3rem;
+              text-transform: uppercase;
+              margin: 2rem 0;
+              width: 46rem;
+            }
+            @include media-query(tablet) {
+              width: initial;
+              font-size: 3rem;
+            }
+          }
+        }
+        .container__subtitles {
+          margin: 0 auto 2rem;
+          .subtitle__one {
+            margin-bottom: 2rem;
+          }
+          .field--name-sub-title,
+          .field--name-sub-title-2 {
+            color: $color-black;
+            font-family: "Lato", sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            width: 86%;
+            margin: 0 auto;
+            @include media-query(desktopLS) {
+              font-size: 1.4rem;
+            }
+            @include media-query(desktop) {
+              font-size: 1.3rem;
+            }
+            @include media-query(tablet) {
+              width: initial;
+            }
+          }
+        }
+        .btn__thank_you {
+          margin: 1rem;
+          display: inline-block;
+
+          background-color: $color-input;
+          position: relative;
+          border: 0.1rem solid $color-input-border;
+          border-radius: 0.6rem;
+          overflow: hidden;
+          a {
+            padding: 1rem 2rem;
+            display: block;
+            color: $color-white;
+            font-weight: 400;
+            position: relative;
+            z-index: 2;
+            text-decoration: none;
+          }
+
+          &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: $color-white;
+            transition: all 0.5s;
+            border-radius: 0.6rem;
+            z-index: 1;
+          }
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+            a {
+              color: $color-black;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.block-block-content45597cdc-34f7-4a78-8a1a-37ad93df49fa {
+  .page__thank_you {
+    .container__thank_you {
+      .container__card_info {
+        .main__title_thank_you {
+          .field--name-title {
+            font-size: 3.8rem;
+          }
+        }
+      }
+    }
+  }
+}

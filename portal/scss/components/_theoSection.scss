@@ -1,0 +1,147 @@
+/*theoSection*/
+.theoSection {
+  padding: 60px 0;
+  background-color: $background_golda;
+  position: relative;
+  @media (max-width: $mobile) {
+    padding: 40px 0;
+  }
+  .content {
+    .c-header {
+      @media (max-width: $mobile) {
+        z-index: 1;
+        position: relative;
+        margin-bottom: 230px;
+      }
+      @media (max-width: $mobilex) {
+        z-index: 1;
+        position: relative;
+        margin-bottom: 200px;
+      }
+    }
+    .c-content {
+      div {
+        .blockquote {
+          margin-left: 5%;
+          padding: 40px 0 0 0;
+          @media (min-width: $desktop_1920) {
+            width: 105%;
+          }
+          @media (max-width: $mobile) {
+            margin-left: 0;
+            padding: 30px 0 0 0;
+          }
+          .content {
+            .c-content {
+              .blockquote__content {
+                .blockquote__text {
+                  padding: 40px 20% 40px 40px;
+                  position: relative;
+                  box-shadow: 0 0 10px 0 $box_shadow;
+                  background-color: $background_gallery;
+                  @media (min-width: $desktop_1920) {
+                    padding: 40px 15% 40px 40px;
+                  }
+                  @media (max-width: $mobile) {
+                    padding: 20px;
+                  }
+                  span {
+                    display: block;
+                    color: $color_big_stone;
+                    font-size: 1.125rem;
+                    line-height: 24px;
+                    font-family: $montserratsemibold;
+                  }
+                  label {
+                    display: block;
+                    font-size: 0.75rem;
+                    line-height: 24px;
+                    color: $color_big_stone;
+                    margin-top: 30px;
+                  }
+                  .icon-icon-quote {
+                    top: -40px;
+                    left: 35px;
+                    color: $color_big_stone;
+                    font-size: 3rem;
+                    position: absolute;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      div.center {
+        margin: 0 auto;
+        text-align: center;
+        padding-right: 15%;
+        @media (min-width: $desktop_1280) {
+          padding-right: 5%;
+        }
+        @media (min-width: $desktop_1640) {
+          padding-right: 0;
+          max-width: 30%;
+        }
+        @media (min-width: $desktop_1920) {
+          flex: 0 0 30%;
+          max-width: 30%;
+        }
+        @media (max-width: $mobile) {
+          padding-right: 0;
+        }
+        span {
+          color: $color_big_stone;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          text-align: center;
+          font-family: $montserratsemibold;
+        }
+        p {
+          color: $color_big_stone;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        .btn-border.blue {
+          color: $color_white;
+          border: 1px solid $border_big_stone;
+          background-color: $background_big_stone;
+          padding: 10px;
+          &:hover {
+            color: $color_big_stone;
+            background-color: $background_white;
+          }
+        }
+      }
+      div {
+        .theoSection__img {
+          right: 10%;
+          bottom: 0%;
+          position: absolute;
+          @media (min-width: $desktop_1920) {
+            flex: 0 0 23.333333%;
+            max-width: 23.333333%;
+          }
+          @media (min-width: $desktop_1640) {
+            flex: 0 0 26.333333%;
+            max-width: 26.333333%;
+          }
+          @media (max-width: $tablet) {
+            right: 0;
+          }
+          @media (max-width: $mobile) {
+            right: 25% !important;
+            top: 15.5%;
+            max-width: 50%;
+            flex: 0 0 50%;
+          }
+          @media (max-width: $mobilex) {
+            top: 16%;
+          }
+        }
+      }
+    }
+  }
+}

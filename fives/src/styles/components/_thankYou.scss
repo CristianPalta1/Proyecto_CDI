@@ -1,0 +1,89 @@
+.thankyou__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr minmax(100px, 300px);
+    grid-template-areas: "images .";
+    background-color: #f5f5f5;
+    margin-top: 0px;
+    @media (max-width: $mobile) {
+        margin-top: 96px;
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-areas: "images images images" ". cards .";
+    }
+    .image__thank-you {
+        grid-area: images;
+        img {
+            width: 100%;
+        }
+    }
+    .thank-you__info--container {
+        position: absolute;
+        top: 50%;      
+        right: 3%;
+        transform: translate(-3%, -50%);
+        background-color: white;
+        @media (max-width: $desktopLS) {
+            top: 60%;  
+            right: 5%;
+            transform: translate(-5%, -60%);
+        }
+        @media (max-width: $mobile) {
+            grid-area: cards;
+            position: relative;
+            top: 0;
+            right: 0%;
+            transform: translate(0, 0%);
+            transform: translateY(-15%);
+        }
+        .thank-you {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2rem;
+            .thank_you_icon {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: black;
+                transform: translateY(-75%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 3px 5px 0 #c5c5c5;
+                img{
+                    width: 40px;
+                    filter: invert(1);
+                }
+            }
+            .description__container{
+                transform: translateY(-15%);
+                text-align: center;
+                .title__thank-you{
+                    font-size: 2.7rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                }
+                .desc__thank-you{
+                    width: 66%;
+                    margin: 0 auto;
+                    font-weight: 600;
+                    @media (max-width: $mobile) {
+                        width: 72%;
+                    }
+                }
+            }
+            .btn__thank-you{
+                padding: 0.6rem 2.7rem;
+                background-color: black;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 600;
+                border: none;
+                margin-top: 24px;
+            }
+        }
+    }
+}

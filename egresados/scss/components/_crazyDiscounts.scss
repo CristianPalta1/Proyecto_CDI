@@ -1,0 +1,195 @@
+[about^="/nuestros-servicios/descuentos-locura"] {
+  .block__general--service, .content__descuentos {
+    .block__general__service__banner, .content__descuentos__banner {
+      @include banner_text_right;
+    }
+
+    .block__general__service__nav, .content__descuentos__nav {
+      @include nav_figure_background($color-blue-light);
+    }
+
+    .block__general__service__cards {
+      margin-bottom: 3rem;
+
+      .view-discounts {
+        @include media-query(tablet) {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .view-header {
+          width: 48%;
+          display: inline-block;
+          font-size: 1rem;
+          font-weight: $semibold;
+          padding-left: 15px;
+
+          @include media-query(tablet) {
+            width: 100%;
+            padding-left: 0;
+            margin: 1rem 0;
+          }
+        }
+
+        .view-filters {
+          width: 50%;
+          display: inline-block;
+
+          @include media-query(tablet) {
+            width: 100%;
+            order: -1;
+          }
+
+          form {
+            .form--inline {
+              width: 100%;
+              display: flex;
+              justify-content: flex-end;
+
+              @include media-query(tablet) {
+                justify-content: flex-start;
+              }
+
+              .form-type-select {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 0;
+
+                @include media-query(tablet) {
+                  justify-content: flex-start;
+                }
+
+                label {
+                  display: none;
+                }
+
+                .form-select {
+                  width: 50%;
+                  border: 1px solid $color-line-footer;
+                  border-radius: 10px;
+                  outline: none;
+                  box-shadow: none;
+
+                  @include media-query(tablet) {
+                    width: 100%;
+                  }
+                }
+
+              }
+
+            }
+          }
+        }
+
+        .view-content {
+          margin-top: 1.5rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          gap: 15px;
+
+          .views-row {
+            margin-bottom: 2rem;
+            .layout {
+              height: 100%;
+              .layout__region--content {
+                width: 340px;
+                height: 100%;
+                background-color: $color-white;
+                box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+                border-radius: 12px;
+
+                .field--name-coupon-image {
+                  img {
+                    width: 100%;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                  }
+                }
+
+                .field--name-coupon-entity {
+                  margin: 1rem 0 1.2rem;
+                  padding: 0 1.25rem;
+
+                  .layout__region--content {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width: auto;
+                    border-radius: 0;
+                    box-shadow: none;
+                    height: auto;
+
+                    .field--name-taxonomy-term-title {
+                      h2 {
+                        font-size: 1.25rem;
+                        font-weight: $semibold;
+                      }
+
+                    }
+
+                    .field--name-discounts-entity-image {
+                      position: relative;
+                      width: 48px;
+                      height: 48px;
+                      margin-right: 20px;
+
+                      &::after {
+                        content: "";
+                        width: 1px;
+                        height: 38px;
+                        position: absolute;
+                        top: 50%;
+                        right: -10px;
+                        background-color: $color-line-footer;
+                        transform: translateY(-50%);
+                      }
+
+                      img {
+                        width: 100%;
+                        height: 100%;
+                      }
+                    }
+                  }
+                }
+
+                .field--name-node-title {
+                  margin-bottom: .7rem;
+                  padding: 0 1.25rem;
+
+                  h2 {
+                    font-size: 1.25rem;
+                    color: $color-font-second;
+                    font-weight: $medium;
+                  }
+                }
+
+                .field--name-short-description {
+                  font-size: 1rem;
+                  font-weight: $light;
+                  color: $color-font-second;
+                  padding: 0 1.25rem;
+                }
+
+                .field--name-node-link-modal {
+                  margin: 1.5rem 0 2rem;
+                  padding: 0 1.25rem;
+
+                  a {
+                    font-size: .95rem;
+                    font-weight: $extrabold;
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  
+  }
+}

@@ -1,0 +1,1321 @@
+.educon-container {
+    #block-educon-content {
+        .vocabulary-rectory {
+            .content {
+                .banner-rectories-detail {
+                    height: auto;
+                    position: relative;
+                    margin-bottom: 6rem;
+                    @include media-query(mobile) {
+                        height: auto;
+                    }
+                    .banner-rectories-detail--text-info {
+                        position: absolute;
+                        top: 50%;
+                        left: 10%;
+                        transform: translate(-10%, -50%);
+                        @include media-query(mobile) {
+                            left: 22%;
+                            transform: translate(-22%, -86%);
+                            top: 86%;
+                        }
+                        .block-field-blocktaxonomy-termrectorylabel-sede {
+                            margin: 16px 0;
+                            @include media-query(mobile) {
+                                margin: 8px 0;
+                            }
+                            h2 {
+                                font-size: 2.6rem;
+                                color: #c6a16e;
+                                font-weight: 500;
+                                @include media-query(mobile) {
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+                        .block-field-blocktaxonomy-termrectoryname {
+                            h2 {
+                                font-size: 3rem;
+                                color: #c6a16e;
+                                font-weight: 700;
+                                width: 100%;
+                                @include media-query(desktopXL) {
+                                    width: 389px;
+                                }
+                                @include media-query(mobile) {
+                                    width: 100%;
+                                    font-size: 2.2rem;
+                                }
+                            }
+                        }
+                        .block-field-blocktaxonomy-termrectorydescription {
+                            .field--name-description {
+                                p {
+                                    text-align: left;
+                                    max-width: 435px;
+                                    color: #00071c;
+                                    padding: 0;
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+                    }
+                    .banner-rectories-detail--img {
+                        height: auto;
+                        @include media-query(mobile) {
+                            height: auto;
+                        }
+                        .block-field-blocktaxonomy-termrectoryimage-desktop {
+                            .field--type-image {
+                                height: auto;
+                                @include media-query(mobile) {
+                                    height: auto;
+                                }
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                    object-position: right;
+                                    // @include media-query(mobile) {
+                                    //     height: auto;
+                                    // }
+                                }
+                            }
+                        }
+                    }
+                }
+                .block-info-rectories-detail {
+                    display: grid;
+                    grid-template-columns: 130px 1fr 48px 1fr 130px;
+                    grid-template-areas: ". texts . images .";
+                    padding: 0 20px;
+                    align-items: center;
+                    column-gap: 12px;
+                    margin-bottom: 6rem;
+                    position: relative;
+                    @include media-query(mobile) {
+                        grid-template-columns: 1fr;
+                        grid-template-areas: "texts" "images";
+                        background-color: white;
+                    }
+                    &::before {
+                        content: "";
+                        background-image: url("./assets/img/arrow_sedes.svg");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 100%;
+                        height: 259px;
+                        vertical-align: 0;
+                        border-top: 0;
+                        border-right: 0;
+                        border-bottom: 0;
+                        border-left: 0;
+                        margin-right: 0;
+                        position: absolute;
+                        top: 11%;
+                        left: -43%;
+                        z-index: 0;
+                    }
+                    .block-info-banner-rectories-detail--text-info {
+                        grid-area: texts;
+                        z-index: 3;
+                        .block-field-blocktaxonomy-termrectoryblock-title {
+                            h2 {
+                                font-size: 2.6rem;
+                                color: $color-gold;
+                                font-weight: 700;
+                                margin-bottom: 12px;
+                                @include media-query(mobile) {
+                                    font-size: 2.2rem;
+                                }
+                            }
+                        }
+                        .block-field-blocktaxonomy-termrectoryblock-description {
+                            .field--name-block-description {
+                                p {
+                                    color: $color-btn-a;
+                                    font-weight: 300;
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                    .block-info-banner-rectories-detail--img {
+                        grid-area: images;
+                        margin-top: 0;
+                        @include media-query(mobile) {
+                            margin-top: 8px;
+                        }
+                        .block-field-blocktaxonomy-termrectoryimage-block {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+                .block-related {
+                    .block-related--title-description {
+                        .field--name-title {
+                            text-align: center;
+                            font-size: 2.8rem;
+                            color: $color-gold;
+                            margin: 1rem;
+                            font-family: "Montserrat", sans-serif;
+                            font-weight: 700;
+                            @include media-query(mobile) {
+                                font-size: 2.2rem;
+                            }
+                        }
+                        .field--type-text-with-summary {
+                            text-align: center;
+                            max-width: 750px;
+                            margin: 0 auto;
+                            p {
+                                strong {
+                                    font-size: 1.6rem;
+                                }
+                                text-align: center;
+                                margin-bottom: 2rem;
+                                font-family: "Lato", sans-serif;
+                                font-size: 1.6rem;
+                                font-weight: 300;
+                                padding: 0 20px;
+                            }
+                            @include media-query(mobile) {
+                                p {
+                                    width: 90%;
+                                }
+                            }
+                        }
+                    }
+                    .block-related--items {
+                        .menu--menu-relacionados-cursos-y-diplo {
+                            .nav {
+                                max-width: 500px;
+                                margin: 0 auto;
+                                justify-content: space-around;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                border-bottom: 1px solid #92afd0;
+                                margin-bottom: 40px;
+                                li {
+                                    border-bottom: none;
+                                    width: 170px;
+                                    text-align: center;
+                                    cursor: pointer;
+                                    span {
+                                        font-size: 1.8rem;
+                                        text-decoration: none;
+                                        color: $color-btn-a;
+                                        font-weight: 400;
+                                        text-transform: uppercase;
+                                    }
+                                    &.active {
+                                        border-bottom: 2px solid $color-bottom-border;
+                                        span {
+                                            font-weight: 900;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .blocks-cursos-diplomados {
+                        .block-related--cursos {
+                            position: relative;
+                            .block-views-blockrectory-non-formal-programs-cursos {
+                                section.container__our-programs {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-wrap: wrap;
+                                    position: inherit;
+                                    .owl-stage-outer {
+                                        position: inherit;
+                                        z-index: 3;
+                                        .views-row {
+                                            display: grid;
+                                            grid-template-columns: 10px 1fr 10px;
+                                            grid-template-areas:
+                                                "images images images"
+                                                ". desc .";
+                                            padding: 8px;
+                                            .our-programs__image {
+                                                grid-area: images;
+                                                width: 100%;
+                                                //height: 347px;
+                                                overflow: hidden;
+                                                border-radius: 6px;
+                                                position: relative;
+                                                img {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    object-fit: contain;
+                                                }
+                                                .arrow {
+                                                    bottom: 0;
+                                                    height: 201px;
+                                                    left: -53px;
+                                                    position: absolute;
+                                                    width: 158px;
+                                                    @include media-query(desktopXL) {
+                                                        left: -53px;
+                                                        height: 148px;
+                                                        width: 148px;
+                                                    }
+                                                    @include media-query(mobile) {
+                                                        height: 200px;
+                                                        width: 200px;
+                                                        left: -70px;
+                                                    }
+                                                    svg {
+                                                        height: 100%;
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                            .our-programs__info {
+                                                grid-area: desc;
+                                                display: flex;
+                                                flex-direction: column;
+                                                width: 100%;
+                                                z-index: 3;
+                                                margin-top: -44px;
+                                                background-color: white;
+                                                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                                                padding: 12px;
+                                                border-radius: 6px;
+                                                .info__tags {
+                                                    height: 29px;
+                                                    margin-bottom: 20px;
+                                                    .item-list {
+                                                        ul {
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: flex-start;
+                                                            /* margin: 0; */
+                                                            text-align: center;
+                                                            gap: 12px;
+                                                            li {
+                                                                margin: 0;
+                                                                background-color: #f2f2f2;
+                                                                border-radius: 6px;
+                                                                font-size: 1.4rem;
+                                                                padding: 4px 12px;
+                                                                font-weight: 300;
+                                                                @include media-query(desktopXL) {
+                                                                    font-size: 1.2rem;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .info__title {
+                                                    margin: 14px 0;
+                                                    text-transform: uppercase;
+                                                    font-weight: 700;
+                                                    font-size: 1.8rem;
+                                                    overflow: hidden;
+                                                    display: inline-block;
+                                                    text-overflow: ellipsis;
+                                                    height: 70px;
+                                                    @include media-query(desktopXL) {
+                                                        font-size: 1.6rem;
+                                                        margin: 0;
+                                                    }
+                                                }
+                                                .description {
+                                                    margin: 14px 0;
+                                                    overflow: hidden;
+                                                    display: inline-block;
+                                                    height: 105px;
+                                                    width: 100%;
+                                                    text-overflow: ellipsis;
+                                                    font-weight: 300;
+                                                    font-size: 1.6rem;
+                                                    @include media-query(desktopXL) {
+                                                        font-size: 1.4rem;
+                                                    }
+                                                }
+                                                .info__info-general {
+                                                    display: grid;
+                                                    grid-template-columns: repeat(3, 1fr);
+                                                    place-content: center;
+                                                    align-items: center;
+                                                    justify-items: center;
+                                                    border-bottom: 1px solid $color-bottom-border;
+                                                    gap: 8px;
+                                                    .info__modalidad,
+                                                    .info__inversion,
+                                                    .info__duracion {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        height: 70px;
+                                                        align-items: center;
+                                                        h2 {
+                                                            font-size: 1.4rem;
+                                                            margin-bottom: 8px;
+                                                        }
+                                                        p {
+                                                            font-size: 1.24rem;
+                                                            font-weight: 300;
+                                                        }
+                                                    }
+                                                }
+                                                .info__read-more {
+                                                    text-align: center;
+                                                    margin: 12px 0 0 0;
+                                                    a {
+                                                        text-decoration: underline;
+                                                        text-transform: uppercase;
+                                                        &:hover {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .owl-nav {
+                                        display: flex;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 0;
+                                        width: 100%;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        @include media-query(mobile) {
+                                            display: none;
+                                        }
+                                        button {
+                                            width: 40px;
+                                            height: 40px;
+                                            background-color: rgba(255, 255, 255, 0.5);
+                                            border-radius: 50%;
+                                            border: 1px solid #041d74;
+                                            &.owl-prev {
+                                                margin-left: 20px;
+                                                background-image: url("./assets/img/izquierda.svg");
+                                                background-size: auto;
+                                                background-repeat: no-repeat;
+                                                background-position: center;
+                                                display: block;
+                                                outline: none;
+                                                span {
+                                                    display: none;
+                                                    content: "";
+                                                    font-size: 2.5rem;
+                                                }
+                                            }
+                                            &.owl-next {
+                                                margin-right: 20px;
+                                                background-image: url("./assets/img/derecha.svg");
+                                                background-size: auto;
+                                                background-repeat: no-repeat;
+                                                background-position: center;
+                                                display: block;
+                                                outline: none;
+                                                span {
+                                                    display: none;
+                                                    content: "";
+                                                    font-size: 2.5rem;
+                                                }
+                                            }
+                                            &:hover {
+                                                background-color: rgba(255, 255, 255, 0.9);
+                                            }
+                                        }
+                                        &.disabled {
+                                            display: none !important;
+                                        }
+                                    }
+                                    .owl-dots {
+                                        position: absolute;
+                                        left: 50%;
+                                        bottom: 8%;
+                                        transform: translate(-50%, -8%);
+                                        @include media-query(mobile) {
+                                            bottom: 7%;
+                                            transform: translate(-50%, -7%);
+                                        }
+                                        .owl-dot {
+                                            width: 10px;
+                                            height: 10px;
+                                            background-color: #041d74;
+                                            border-radius: 50%;
+                                            border: 1px solid white;
+                                            margin: 0 2px;
+                                            &.active {
+                                                width: 15px;
+                                                height: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                                footer {
+                                    text-align: center;
+                                    margin: 68px 0 32px 0;
+                                    a {
+                                        padding: 0.8rem 3.5rem;
+                                        border: 1px solid $color-btn-a;
+                                        color: $color-btn-a;
+                                        border-radius: 6px;
+                                        text-decoration: none;
+                                        font-weight: 400;
+                                        text-transform: uppercase;
+                                        &:hover {
+                                            background-color: #07228b;
+                                            color: white;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .block-related--diplomado {
+                            display: none;
+                            position: relative;
+                            .block-views-blockrectory-non-formal-programs-diplomados {
+                                section.container__our-programs {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-wrap: wrap;
+                                    position: inherit;
+                                    .owl-stage-outer {
+                                        position: inherit;
+                                        z-index: 3;
+                                        .views-row {
+                                            display: grid;
+                                            grid-template-columns: 10px 1fr 10px;
+                                            grid-template-areas:
+                                                "images images images"
+                                                ". desc .";
+                                            padding: 8px;
+                                            .our-programs__image {
+                                                grid-area: images;
+                                                width: 100%;
+                                                //height: 347px;
+                                                overflow: hidden;
+                                                border-radius: 6px;
+                                                position: relative;
+                                                img {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    object-fit: contain;
+                                                }
+                                                .arrow {
+                                                    bottom: 0;
+                                                    height: 201px;
+                                                    left: -53px;
+                                                    position: absolute;
+                                                    width: 158px;
+                                                    @include media-query(desktopXL) {
+                                                        left: -53px;
+                                                        height: 148px;
+                                                        width: 148px;
+                                                    }
+                                                    @include media-query(mobile) {
+                                                        height: 200px;
+                                                        width: 200px;
+                                                        left: -70px;
+                                                    }
+                                                    svg {
+                                                        height: 100%;
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                            .our-programs__info {
+                                                grid-area: desc;
+                                                display: flex;
+                                                flex-direction: column;
+                                                width: 100%;
+                                                z-index: 3;
+                                                margin-top: -44px;
+                                                background-color: white;
+                                                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                                                padding: 12px;
+                                                border-radius: 6px;
+                                                .info__tags {
+                                                    height: 29px;
+                                                    margin-bottom: 20px;
+                                                    .item-list {
+                                                        ul {
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: flex-start;
+                                                            /* margin: 0; */
+                                                            text-align: center;
+                                                            gap: 12px;
+                                                            li {
+                                                                margin: 0;
+                                                                background-color: #f2f2f2;
+                                                                border-radius: 6px;
+                                                                font-size: 1.4rem;
+                                                                padding: 4px 12px;
+                                                                font-weight: 300;
+                                                                @include media-query(desktopXL) {
+                                                                    font-size: 1.2rem;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .info__title {
+                                                    margin: 14px 0;
+                                                    text-transform: uppercase;
+                                                    font-weight: 700;
+                                                    font-size: 1.8rem;
+                                                    overflow: hidden;
+                                                    display: inline-block;
+                                                    text-overflow: ellipsis;
+                                                    height: 70px;
+                                                    @include media-query(desktopXL) {
+                                                        font-size: 1.6rem;
+                                                        margin: 0;
+                                                    }
+                                                }
+                                                .description {
+                                                    margin: 14px 0;
+                                                    overflow: hidden;
+                                                    display: inline-block;
+                                                    height: 105px;
+                                                    width: 100%;
+                                                    text-overflow: ellipsis;
+                                                    font-weight: 300;
+                                                    font-size: 1.6rem;
+                                                    @include media-query(desktopXL) {
+                                                        font-size: 1.4rem;
+                                                    }
+                                                }
+                                                .info__info-general {
+                                                    display: grid;
+                                                    grid-template-columns: repeat(3, 1fr);
+                                                    place-content: center;
+                                                    align-items: center;
+                                                    justify-items: center;
+                                                    border-bottom: 1px solid $color-bottom-border;
+                                                    gap: 8px;
+                                                    .info__modalidad,
+                                                    .info__inversion,
+                                                    .info__duracion {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        height: 70px;
+                                                        align-items: center;
+                                                        h2 {
+                                                            font-size: 1.4rem;
+                                                            margin-bottom: 8px;
+                                                        }
+                                                        p {
+                                                            font-size: 1.24rem;
+                                                            font-weight: 300;
+                                                        }
+                                                    }
+                                                }
+                                                .info__read-more {
+                                                    text-align: center;
+                                                    margin: 12px 0 0 0;
+                                                    a {
+                                                        text-decoration: underline;
+                                                        text-transform: uppercase;
+                                                        &:hover {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .owl-nav {
+                                        display: flex;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 0;
+                                        width: 100%;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        @include media-query(mobile) {
+                                            display: none;
+                                        }
+                                        button {
+                                            width: 40px;
+                                            height: 40px;
+                                            background-color: rgba(255, 255, 255, 0.5);
+                                            border-radius: 50%;
+                                            border: 1px solid #041d74;
+                                            &.owl-prev {
+                                                margin-left: 20px;
+                                                background-image: url("./assets/img/izquierda.svg");
+                                                background-size: auto;
+                                                background-repeat: no-repeat;
+                                                background-position: center;
+                                                display: block;
+                                                outline: none;
+                                                span {
+                                                    display: none;
+                                                    content: "";
+                                                    font-size: 2.5rem;
+                                                }
+                                            }
+                                            &.owl-next {
+                                                margin-right: 20px;
+                                                background-image: url("./assets/img/derecha.svg");
+                                                background-size: auto;
+                                                background-repeat: no-repeat;
+                                                background-position: center;
+                                                display: block;
+                                                outline: none;
+                                                span {
+                                                    display: none;
+                                                    content: "";
+                                                    font-size: 2.5rem;
+                                                }
+                                            }
+                                            &:hover {
+                                                background-color: rgba(255, 255, 255, 0.9);
+                                            }
+                                        }
+                                        &.disabled {
+                                            display: none !important;
+                                        }
+                                    }
+                                    .owl-dots {
+                                        position: absolute;
+                                        left: 50%;
+                                        bottom: 8%;
+                                        transform: translate(-50%, -8%);
+                                        @include media-query(mobile) {
+                                            bottom: 7%;
+                                            transform: translate(-50%, -7%);
+                                        }
+                                        .owl-dot {
+                                            width: 10px;
+                                            height: 10px;
+                                            background-color: #041d74;
+                                            border-radius: 50%;
+                                            border: 1px solid white;
+                                            margin: 0 2px;
+                                            &.active {
+                                                width: 15px;
+                                                height: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                                footer {
+                                    text-align: center;
+                                    margin: 68px 0 32px 0;
+                                    a {
+                                        padding: 0.8rem 3.5rem;
+                                        border: 1px solid $color-btn-a;
+                                        color: $color-btn-a;
+                                        border-radius: 6px;
+                                        text-decoration: none;
+                                        font-weight: 400;
+                                        text-transform: uppercase;
+                                        &:hover {
+                                            background-color: #07228b;
+                                            color: white;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .external-programs-detail {
+                    .external-programs-detail--courses {
+                        .field--name-title {
+                            text-align: center;
+                            font-size: 2.8rem;
+                            color: $color-gold;
+                            margin: 1rem;
+                            font-weight: 700;
+                            @include media-query(desktopXL) {
+                                font-size: 2rem;
+                            }
+                        }
+                        .field--name-body {
+                            text-align: center;
+                            margin: 0 auto;
+                            max-width: 700px;
+                            p {
+                                strong {
+                                    font-size: 1.6rem;
+                                }
+                                text-align: center;
+                                margin-bottom: 2rem;
+                                font-size: 1.6rem;
+                                @include media-query(desktopXL) {
+                                    font-size: 1.4rem;
+                                    padding: 12px;
+                                }
+                            }
+                        }
+                        .block-views-blocktype-non-formal-programs-rectoria {
+                            .view-id-type_non_formal_programs {
+                                #views-bootstrap-tab-views-bootstrap-type-non-formal-programs-rectoria {
+                                    .nav-tabs {
+                                        max-width: 500px;
+                                        margin: 0 auto;
+                                        justify-content: space-around;
+                                        flex-direction: row;
+                                        flex-wrap: nowrap;
+                                        border-bottom: 1px solid $color-bottom-border;
+                                        li {
+                                            border-bottom: none;
+                                            width: 170px;
+                                            text-align: center;
+                                            a {
+                                                font-size: 1.8rem;
+                                                text-decoration: none;
+                                                color: $color-btn-a;
+                                                font-weight: 400;
+                                                text-transform: uppercase;
+                                            }
+                                            &.active {
+                                                border-bottom: 2px solid $color-bottom-border;
+                                                a {
+                                                    font-weight: 900;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .external-programs-detail--transform {
+                        .complete-transforma {
+                            position: relative;
+                            margin-bottom: 36px;
+                            .complete-transforma--text {
+                                text-align: center;
+                                margin: 24px 0 36px 0;
+                                padding: 0 20px;
+                                h2 {
+                                    text-align: center;
+                                    font-size: 2.8rem;
+                                    color: $color-gold;
+                                    margin: 1rem;
+                                    font-family: "Montserrat", sans-serif;
+                                    max-width: 830px;
+                                    margin: 0 auto;
+                                    font-weight: 700;
+                                    @include media-query(mobile) {
+                                        font-size: 2.2rem;
+                                    }
+                                }
+                                p {
+                                    color: #00071c;
+                                    font-weight: 300;
+                                    strong {
+                                        color: #00071c;
+                                        font-weight: 300;
+                                        font-size: 1.6rem;
+                                    }
+                                    text-align: center;
+
+                                    font-family: "Lato", sans-serif;
+                                    font-size: 1.6rem;
+                                    max-width: 600px;
+                                    margin: 0 auto;
+                                }
+                            }
+                            .complete-transforma--cards {
+                                .container__transforma-card-0 {
+                                    position: relative;
+                                    display: grid;
+                                    grid-template-columns: repeat(4, 1fr);
+                                    gap: 4px;
+                                    @include media-query(mobile) {
+                                        position: inherit;
+                                    }
+                                    .field__item {
+                                        .block-transforma {
+                                            position: relative;
+                                            overflow: hidden;
+                                            // &::before {
+                                            //     content: "";
+                                            //     position: absolute;
+                                            //     top: 0;
+                                            //     left: 0;
+                                            //     height: 100%;
+                                            //     width: 100%;
+                                            //     background: rgb(2, 0, 36);
+                                            //     background: linear-gradient(
+                                            //         0deg,
+                                            //         rgba(2, 0, 36, 1) 0%,
+                                            //         rgba(4, 29, 116, 1) 25%,
+                                            //         rgba(36, 144, 252, 1) 100%
+                                            //     );
+                                            //     opacity: 0.94;
+                                            // }
+                                        }
+                                        .block-transforma--img {
+                                            a {
+                                                padding: 0;
+                                                margin: 0;
+                                                img {
+                                                    max-width: 100%;
+                                                    object-fit: contain;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                            }
+                                        }
+                                        .container_text_transforma {
+                                            position: absolute;
+                                            bottom: 0;
+                                            left: 10%;
+                                            width: 85%;
+
+                                            .block-transforma--title-block {
+                                                h2 {
+                                                    font-size: 1.8rem;
+                                                    color: $color-white;
+                                                    margin-bottom: 36px;
+                                                }
+                                            }
+                                            .block-transforma--description-block {
+                                                display: none;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            .block-transforma--img {
+                                                &::before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    background: rgb(2, 0, 36);
+                                                    background: linear-gradient(
+                                                        0deg,
+                                                        rgba(2, 0, 36, 1) 0%,
+                                                        rgba(4, 29, 116, 1) 25%,
+                                                        rgba(36, 144, 252, 1) 100%
+                                                    );
+                                                    opacity: 0.94;
+                                                }
+                                            }
+                                            .container_text_transforma {
+                                                margin-bottom: 30px;
+                                            }
+                                            .block-transforma--description-block {
+                                                display: block;
+                                                p {
+                                                    color: $color-white;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .owl-stage-outer {
+                                        position: inherit;
+                                    }
+                                    .owl-nav {
+                                        display: none;
+                                    }
+                                    .owl-dots {
+                                        display: none;
+                                        position: absolute;
+                                        left: 50%;
+                                        bottom: -4%;
+                                        transform: translate(-50%, 8%);
+                                        @include media-query(mobile) {
+                                            display: block;
+                                            bottom: -7%;
+                                            transform: translate(-50%, 7%);
+                                        }
+                                        .owl-dot {
+                                            width: 10px;
+                                            height: 10px;
+                                            background-color: #041d74;
+                                            border-radius: 50%;
+                                            //border: 1px solid white;
+                                            margin: 0 2px;
+                                            &.active {
+                                                width: 15px;
+                                                height: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .field--name-link {
+                            text-align: center;
+                            margin: 24px 0 32px 0;
+                            @include media-query(mobile) {
+                                margin: 91px 0 32px 0;
+                            }
+                            a {
+                                padding: 0.8rem 3.5rem;
+                                border: 1px solid $color-btn-a;
+                                color: $color-btn-a;
+                                border-radius: 6px;
+                                text-decoration: none;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                                &:hover {
+                                    background-color: #07228b;
+                                    color: white;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                    .external-programs-detail--news-events {
+                        .region-news-events-home {
+                            display: grid;
+                            grid-template-columns: 70px 1fr 30px 374px 70px;
+                            grid-template-areas:
+                                ". title title title ."
+                                ". news . events .";
+                            margin: 0 auto;
+                            gap: 8px;
+                            padding: 0;
+                            @include media-query(desktopXL) {
+                                grid-template-columns: 60px 1fr 15px 338px 60px;
+                            }
+                            @include media-query(desktopL) {
+                                grid-template-columns: 50px 1fr 15px 338px 50px;
+                            }
+                            @include media-query(desktop) {
+                                grid-template-columns: 1fr;
+                                grid-template-areas:
+                                    "title"
+                                    "news"
+                                    "events";
+                            }
+                            @include media-query(mobile) {
+                                padding: 0 20px;
+                                margin-top: 5rem;
+                            }
+                            .region-news-events-home--top {
+                                grid-area: title;
+                                .field--name-title {
+                                    text-align: center;
+                                    font-size: 2.8rem;
+                                    color: $color-gold;
+                                    margin: 1rem;
+                                    font-family: "Montserrat", sans-serif;
+                                    font-weight: 700;
+                                    @include media-query(mobile) {
+                                        font-size: 2.2rem;
+                                    }
+                                }
+                                .field--type-text-with-summary {
+                                    text-align: center;
+                                    max-width: 750px;
+                                    margin: 0 auto;
+                                    p {
+                                        strong {
+                                            font-size: 1.6rem;
+                                        }
+                                        text-align: center;
+                                        margin-bottom: 2rem;
+                                        font-family: "Lato", sans-serif;
+                                        font-size: 1.6rem;
+                                        font-weight: 300;
+                                        padding: 0 20px;
+                                    }
+                                }
+                            }
+                            .region-news-events-home--left {
+                                grid-area: news;
+                                .tnews {
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: row-reverse;
+                                    justify-content: flex-end;
+                                    .field--name-title {
+                                        font-size: 2.4rem;
+                                        font-weight: 600;
+                                        color: $color-title-news;
+                                        text-transform: uppercase;
+                                        margin-left: 16px;
+                                    }
+                                    .field--name-image {
+                                        img {
+                                            width: 60px;
+                                            height: 60px;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                }
+                                .view-id-news {
+                                    margin-right: 40px;
+                                    @include media-query(mobile) {
+                                        margin: 0;
+                                    }
+                                    .views-row {
+                                        display: grid;
+                                        grid-template-columns: 427px 1fr;
+                                        grid-template-rows: 35px repeat(2, 30px) 1fr 50px 35px;
+                                        grid-template-areas:
+                                            "img ."
+                                            "img date"
+                                            "img title"
+                                            "img desc"
+                                            "img viewMore"
+                                            "img .";
+                                        margin: 24px 0;
+                                        column-gap: 16px;
+                                        align-items: center;
+                                        @include media-query(desktopXL) {
+                                            grid-template-rows: 30px repeat(2, 30px) 105px 25px 30px;
+                                            grid-template-columns: 348px 1fr;
+                                        }
+                                        @include media-query(mobile) {
+                                            grid-template-columns: 1fr;
+                                            grid-template-rows: initial;
+                                            grid-template-areas:
+                                                "img"
+                                                "date"
+                                                "title"
+                                                "desc"
+                                                "viewMore";
+                                        }
+                                        .views-field-title {
+                                            grid-area: title;
+                                            span {
+                                                font-size: 1.8rem;
+                                                color: $color-title-news;
+                                            }
+                                        }
+                                        .views-field-created {
+                                            grid-area: date;
+                                            margin-top: 10px;
+                                            span {
+                                                font-size: 1.6rem;
+                                                color: $color-bottom-border;
+                                            }
+                                        }
+                                        .views-field-field-image {
+                                            grid-area: img;
+                                            overflow: hidden;
+                                            border-radius: 6px;
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: contain;
+                                            }
+                                        }
+                                        .views-field-body {
+                                            grid-area: desc;
+                                            p {
+                                                font-weight: 300;
+                                                overflow: hidden;
+                                                display: inline-block;
+                                                //height: 70px;
+                                                width: 100%;
+                                                text-overflow: ellipsis;
+                                            }
+                                        }
+                                        .views-field-view-node {
+                                            grid-area: viewMore;
+                                            border-top: 1px solid #92afd0;
+                                            a {
+                                                text-decoration: underline;
+                                                color: $color-btn-a;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .region-news-events-home--right {
+                                grid-area: events;
+                                .tevents {
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: row-reverse;
+                                    justify-content: flex-end;
+                                    .field--name-title {
+                                        font-size: 2.4rem;
+                                        font-weight: 600;
+                                        color: $color-title-news;
+                                        text-transform: uppercase;
+                                        margin-left: 16px;
+                                    }
+                                    .field--name-image {
+                                        img {
+                                            width: 60px;
+                                            height: 60px;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                }
+                                .block-views-blockevent-rectoria {
+                                    p {
+                                        font-weight: 300;
+                                        color: #00071c;
+                                    }
+                                }
+                                .block-views-blockevent-rectoria {
+                                    padding: 0;
+                                    margin-top: 30px;
+
+                                    .container__list-events {
+                                        display: flex;
+                                        flex-direction: column;
+                                        background-color: $color-bg-events;
+                                    }
+                                    .views-row {
+                                        margin: 16px;
+                                        @include media-query(mobile) {
+                                            margin: 12px;
+                                        }
+                                        .date__container-item {
+                                            display: grid;
+                                            grid-template-columns: repeat(2, 1fr);
+                                            grid-template-areas: "dates info";
+                                            align-items: center;
+                                            @include media-query(desktopXL) {
+                                                grid-template-columns: auto 1fr;
+                                            }
+                                            .date__event {
+                                                grid-area: dates;
+                                                width: 122px;
+                                                margin: 0 auto;
+                                                height: 114px;
+                                                background-color: white;
+                                                border-radius: 6px;
+                                                box-shadow: 0px 2px 4px 0px rgba(119, 119, 119, 0.23);
+                                                text-align: center;
+                                                padding: 8px;
+                                                margin-right: 16px;
+                                                @include media-query(desktopXL) {
+                                                    width: 90px;
+                                                    height: 90px;
+                                                }
+                                                h3 {
+                                                    font-size: 2.8rem;
+                                                    margin: 8px;
+                                                    font-weight: 700;
+                                                    color: $color-title-news;
+                                                    @include media-query(desktopXL) {
+                                                        font-size: 2.8rem;
+                                                        margin: 4px;
+                                                    }
+                                                }
+                                                p {
+                                                    font-size: 1.6rem;
+                                                    color: $color-title-news;
+                                                    font-weight: 700;
+                                                    @include media-query(desktopXL) {
+                                                        font-size: 1.4rem;
+                                                    }
+                                                }
+                                            }
+                                            .info__event {
+                                                grid-area: info;
+                                                .title_event {
+                                                    font-size: 1.5rem;
+                                                    font-weight: 600;
+                                                    color: $color-title-news;
+                                                }
+                                                .date_event {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    &::before {
+                                                        content: "";
+                                                        background-image: url("./assets/img/reloj_event.svg");
+                                                        background-size: auto;
+                                                        background-repeat: no-repeat;
+                                                        background-position: center;
+                                                        width: 17px;
+                                                        height: 17px;
+                                                        vertical-align: 0;
+                                                        border-top: 0;
+                                                        border-right: 0;
+                                                        border-bottom: 0;
+                                                        border-left: 0;
+                                                        margin-right: 5px;
+                                                    }
+                                                    font-size: 1.6rem;
+                                                    font-weight: 300;
+                                                    color: $color-title-news;
+                                                    @include media-query(desktopXL) {
+                                                        font-size: 1.4rem;
+                                                    }
+                                                    @include media-query(mobile) {
+                                                        font-size: 1.5rem;
+                                                    }
+                                                }
+                                                .location_event {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    font-size: 1.6rem;
+                                                    font-weight: 300;
+                                                    color: $color-title-news;
+                                                    @include media-query(mobile) {
+                                                        font-size: 1.5rem;
+                                                    }
+                                                    &::before {
+                                                        content: "";
+                                                        background-image: url("./assets/img/ubicacion_event.svg");
+                                                        background-size: auto;
+                                                        background-repeat: no-repeat;
+                                                        background-position: center;
+                                                        width: 17px;
+                                                        height: 17px;
+                                                        vertical-align: 0;
+                                                        border-top: 0;
+                                                        border-right: 0;
+                                                        border-bottom: 0;
+                                                        border-left: 0;
+                                                        margin-right: 5px;
+                                                    }
+                                                }
+                                                .link_event {
+                                                    font-size: 1.3rem;
+                                                    font-weight: 300;
+                                                    color: $color-title-news;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .know-rectories {
+                    margin-top: 6rem;
+                    .know-rectories--info {
+                        .block-field-blocktaxonomy-termrectoryknow-title {
+                            text-align: center;
+                            h3 {
+                                font-size: 2.8rem;
+                                color: $color-gold;
+                                margin: 1rem;
+                                font-weight: 700;
+                                @include media-query(desktopXL) {
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+                        .block-field-blocktaxonomy-termrectoryknow-description {
+                            text-align: center;
+                            p {
+                                color: #00071c;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+                .gallery-rectories-detail {
+                }
+            }
+        }
+    }
+}

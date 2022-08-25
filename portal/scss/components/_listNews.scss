@@ -1,0 +1,46 @@
+/*listNews*/
+.listNews {
+  padding: 0 0 60px 0;
+  .content {
+    .c-content {
+      .listNews__content {
+        .listNews__articles {
+          margin: 0 -15px;
+          padding-top: 45px;
+          article {
+            margin-bottom: 25px;
+            @media (max-width: $mobile) {
+              height: auto !important;
+
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+            }
+            .listNews__img {
+              width: 100%;
+              @media (max-width: $mobile) {
+                width: 45%;
+              }
+            }
+            .listNews__text {
+              padding: 10px 0;
+              @media (max-width: $mobile) {
+                width: 65%;
+                height: auto !important;
+                padding: 0 0 0 10px;
+              }
+              h3 {
+                padding: 15px 0 10px 0;
+                @media (max-width: $mobile) {
+                  height: auto !important;
+                  font-size: 0.8125rem;
+                  padding: 5px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

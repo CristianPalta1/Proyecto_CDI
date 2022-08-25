@@ -1,0 +1,31 @@
+.slider-logos {
+  .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      z-index: 203;
+      border-radius: 50px;
+      background-color: #162644 !important;
+      line-height: 0.8 !important;
+      top: calc(50% - 25px);
+      span {
+        color: $color_white;
+        font-size: 50px;
+      }
+    }
+    .owl-prev {
+      left: -50px !important;
+    }
+    .owl-next {
+      right: -50px !important;
+    }
+  }
+  .owl-dots {
+    display: none;
+  }
+}

@@ -1,0 +1,49 @@
+/*gridPodcast*/
+.gridPodcast {
+  padding: 60px 0;
+  .content {
+    .c-header {
+      .gridPodcast__icon {
+        @media (max-width: $mobile) {
+          display: none;
+        }
+      }
+    }
+    .c-content {
+      .gridPodcast__content {
+        padding-top: 35px;
+        .gridPodcast__item {
+          margin-bottom: 20px;
+
+          display: flex;
+          flex-direction: row;
+          .gridPodcast__img {
+            width: 20%;
+            @media (max-width: $desktop_1024) {
+              width: 25%;
+            }
+            @media (max-width: $tablet) {
+              width: 35%;
+            }
+          }
+          .gridPodcast__text {
+            width: 80%;
+            padding: 15px;
+            box-shadow: 0 0 10px 0 $box_shadow;
+            background-color: $background_gallery;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media (max-width: $desktop_1024) {
+              width: 75%;
+            }
+            @media (max-width: $tablet) {
+              width: 65%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

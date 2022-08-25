@@ -1,0 +1,101 @@
+/*gridGenericModule*/
+.gridGenericModule {
+  padding: 60px 0 0 0;
+  .content {
+    .c-content {
+      .gridGenericModule__content {
+        article {
+          padding-bottom: 60px;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          @media (max-width: $mobile) {
+            flex-direction: column;
+          }
+          .gridGenericModule__img {
+            width: 40%;
+            @media (max-width: $mobile) {
+              width: 100%;
+            }
+          }
+          .gridGenericModule__text {
+            width: 60%;
+            padding: 30px 15% 30px 7%;
+            @media (max-width: $desktop_1024) {
+              padding: 30px 7%;
+            }
+            @media (max-width: $mobile) {
+              width: 100%;
+              padding: 25px 15px 0 15px;
+            }
+            h4 {
+              margin: 20px 0 15px 0;
+            }
+            p {
+              line-height: 17px;
+            }
+            ol {
+              list-style: auto !important;
+              margin: 20px 0;
+              padding-left: 25px;
+              li {
+                list-style: auto !important;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                color: $color_boulder;
+                margin-top: 10px;
+                &::marker {
+                  font-weight: 500;
+                  color: $color_congress_blue;
+                }
+                a {
+                  font-size: inherit;
+                  text-decoration: underline !important;
+                }
+              }
+            }
+            ul {
+              li {
+                font-size: inherit;
+                line-height: 1.5;
+                a {
+                  font-size: inherit;
+                  text-decoration: underline !important;
+                }
+              }
+            }
+            h3 {
+              font-size: 2rem;
+              line-height: 44px;
+              padding-bottom: 15px;
+              font-family: $montserratbold;
+              @media (max-width: $mobile) {
+                font-size: 1.875rem;
+                line-height: 37px;
+              }
+            }
+            p,
+            b,
+            strong {
+              font-size: 1rem;
+              line-height: 1.5rem;
+              margin-bottom: 1rem;
+            }
+
+            a {
+              font-size: inherit;
+
+              &:hover{
+                text-decoration: underline !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .layer {
+    opacity: 0.8;
+    background-color: $background_seance;
+  }
+}

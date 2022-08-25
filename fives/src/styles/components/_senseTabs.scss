@@ -1,0 +1,202 @@
+.sense-section {
+    margin: 6% 0;
+    padding: 0;
+    @media (max-width: $desktop) {
+        margin: 4rem 0;
+    }
+    .container-fluid {
+        padding: 0 0;
+        position: relative;
+        width: 100%;
+        height: 700px;
+        @media (max-width: $desktopLS) {
+            height: 400px;
+        }
+        @media (max-width: $tablet) {
+            height: 700px;
+        }
+
+        picture {
+            span {
+                width: 100% !important;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            transition: all 0.5s;
+            animation: ease-in 0.5s;
+        }
+        .tabs-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+            .sense-section-title {
+                font-weight: 300;
+                color: white;
+                font-size: 2rem;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 5rem;
+                @media (max-width: $desktopLS) {
+                    font-size: 1.5rem;
+                }
+                @media (max-width: $desktop) {
+                    font-size: 1.3rem;
+                }
+                span {
+                    font-size: 3.2rem;
+                    display: block;
+                    font-weight: 300;
+                    color: white;
+                    @media (max-width: $desktopLS) {
+                        font-size: 2.9rem;
+                    }
+                    @media (max-width: $desktop) {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            .tabs-sense-list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                .tab-item-content {
+                    width: 73px;
+                    background: transparent;
+                    border: 0;
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin: 0 1rem;
+                    opacity: 0.5;
+                    @media (max-width: $desktop) {
+                        opacity: 1;
+                    }
+                    &::after {
+                        content: "";
+                        background-color: white;
+                        width: 54px;
+                        left: 50%;
+                        height: 1px;
+                        transform: translate(-50%, -50%);
+                        bottom: -15%;
+                        position: absolute;
+                        display: none;
+                    }
+                    @media (max-width: $tablet) {
+                        &::after {
+                            bottom: -14%;
+                        }
+                    }
+                    &.active,
+                    &:hover {
+                        font-weight: 700;
+                        opacity: 1;
+                        position: relative;
+                        .tab-item,
+                        .tab-item-title {
+                            opacity: 1;
+                        }
+
+                        &::after {
+                            display: block;
+                        }
+                    }
+                    .tab-item,
+                    .tab-item-title {
+                        color: white;
+                        @media (max-width: $desktopLS) {
+                            width: 68px !important;
+                            height: 68px !important;
+                        }
+                        @media (max-width: $desktopLS) {
+                            width: 75px !important;
+                            height: 75px !important;
+                        }
+                    }
+                    .tab-item-title {
+                        @media (max-width: $desktopLS) {
+                            font-size: 12px;
+                        }
+                        @media (max-width: $tablet) {
+                            font-size: 18px;
+                            margin-top: 24px;
+                            display: block;
+                            height: 24px !important;
+                        }
+                    }
+                }
+            }
+            .tabs-sense-content {
+                text-align: center;
+                padding: 4% 25% 0;
+                color: white;
+                font-size: 12px;
+                @media (max-width: $desktop) {
+                    padding: 3% 5%;
+                    font-weight: 300;
+                }
+                @media (max-width: $tablet) {
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 9% 5%;
+                }
+            }
+        }
+        .react-multi-carousel-track {
+            .react-multi-carousel-item {
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(56, 34, 1, 0.2);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+            }
+        }
+        .react-multi-carousel-track,
+        .react-multi-carousel-list {
+            height: 100%;
+            @media (max-width: $tablet) {
+                padding-bottom: 0;
+            }
+        }
+        .react-multi-carousel-dot-list {
+            @media (max-width: $desktop) {
+                bottom: 9%;
+            }
+            @media (max-width: $tablet) {
+                bottom: 14%;
+            }
+            .react-multi-carousel-dot {
+                button {
+                    width: 34px;
+                    height: 2px;
+                    border-radius: 0;
+                    background-color: white;
+                    border: 0;
+                    opacity: 0.5;
+                }
+                &.react-multi-carousel-dot--active {
+                    button {
+                        width: 80px;
+                        background-color: white;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

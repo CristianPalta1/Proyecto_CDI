@@ -1,0 +1,123 @@
+/*bannerArticle*/
+.bannerArticle {
+  padding: 40px 0 0 0;
+  @media (max-width: $tablet) {
+    padding: 20px 0 0 0;
+  }
+  &.play {
+    .bannerArticle__img,
+    .layerVideo {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  .container {
+    @media (max-width: $mobile) {
+      padding: 0;
+    }
+  }
+  .content {
+    .c-content {
+      .bannerArticle__content {
+        width: 90%;
+        margin: 0 auto;
+        @media (max-width: $tablet) {
+          width: 100%;
+        }
+        .bannerArticle__title {
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          padding-bottom: 25px;
+          @media (max-width: $mobile) {
+            width: 100%;
+            padding: 0 15px 25px 15px;
+          }
+          h1 {
+            font-size: 2rem;
+            line-height: 40px;
+            @media (max-width: $tablet) {
+              font-size: 1.75rem;
+              line-height: 34px;
+            }
+          }
+        }
+        .imgVideo {
+          position: relative;
+          .bannerArticle__img {
+            z-index: 1;
+            width: 60%;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            transition: all 0.25s;
+            @media (max-width: $desktop_1024) {
+              width: 100%;
+              height: auto;
+            }
+          }
+          .bannerArticle__video {
+            top: 0;
+            width: 60%;
+            height: 100%;
+            margin: 0 20%;
+            position: absolute;
+            @media (max-width: $desktop_1024) {
+              width: 100%;
+              height: auto;
+              margin: 0 auto;
+              position: initial;
+            }
+            iframe {
+              top: 0;
+              left: 0;
+              z-index: 0;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              transition: all 0.25s;
+            }
+          }
+          .layerVideo {
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            margin: 0 20%;
+            position: absolute;
+            transition: all 0.25s;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: $desktop_1024) {
+              width: 100%;
+              height: 100%;
+              margin: 0 auto;
+            }
+            .icon {
+              width: 5%;
+              z-index: 2;
+              @media (max-width: $mobile) {
+                width: 10%;
+              }
+            }
+            .layer {
+              z-index: 1;
+              opacity: 0.5;
+              background-color: $background_black;
+            }
+          }
+        }
+        span {
+          display: block;
+          padding: 5px 0;
+          text-align: right;
+          @media (max-width: $mobile) {
+            padding: 5px 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,880 @@
+main {
+    .educon-container {
+        #block-educon-content {
+            .node__content {
+                .layout__region--content {
+                    .business__title {
+                        h1 {
+                            margin: 24px 40px 40px;
+                            font-size: 4rem;
+                            color: #c6a16e;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            @include media-query(desktopXL) {
+                                font-size: 2.8rem;
+                            }
+                            @include media-query(mobile) {
+                                font-size: 2.2rem;
+                                margin: 24px 17px 22px;
+                            }
+                        }
+                    }
+                    .business__banner {
+                        .layout--onecol {
+                            .layout__region--content {
+                                .s-sliderBussines {
+                                    display: block;
+                                    //max-width: 1900px;
+                                    margin: 0 auto;
+                                    width: 100%;
+                                    height: 600px;
+                                    @include media-query(desktopXL) {
+                                        height: 500px;
+                                    }
+                                    .owl-stage-outer {
+                                        .owl-stage {
+                                            .owl-item {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                .s-sliderHome {
+                                                    position: relative;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    .s-sliderHome--img {
+                                                        picture {
+                                                            img {
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                object-fit: cover;
+                                                                object-position: left;
+                                                            }
+                                                        }
+
+                                                        & > .field--type-image {
+                                                            height: 600px;
+                                                            @include media-query(desktopXL) {
+                                                                height: 500px;
+                                                            }
+                                                        }
+                                                    }
+                                                    .s-sliderHome--info {
+                                                        position: absolute;
+                                                        top: 20%;
+                                                        width: 35%;
+                                                        left: 20%;
+                                                        right: initial;
+                                                        transform: translate(-20%, 20%);
+                                                        @include media-query(mobile) {
+                                                            top: 40%;
+                                                            width: 83%;
+                                                            left: 23%;
+                                                            right: initial;
+                                                            transform: translate(-23%, -40%);
+                                                        }
+                                                        h3 {
+                                                            font-size: 2.6rem;
+                                                            color: white;
+                                                            text-transform: uppercase;
+                                                            font-weight: 300;
+                                                            @include media-query(desktopXL) {
+                                                                font-size: 2rem;
+                                                            }
+                                                            @include media-query(mobile) {
+                                                                font-size: 1.7rem;
+                                                            }
+                                                        }
+                                                        h2 {
+                                                            font-size: 3.5rem;
+                                                            margin-bottom: 3rem;
+                                                            font-weight: 700;
+                                                            text-transform: uppercase;
+                                                            color: white;
+                                                            @include media-query(desktopXL) {
+                                                                font-size: 2.8rem;
+                                                                margin-bottom: 2.8rem;
+                                                            }
+                                                            @include media-query(mobile) {
+                                                                margin-bottom: 1rem;
+                                                                font-size: 2.2rem;
+                                                            }
+                                                        }
+                                                        p {
+                                                            font-size: 1.6rem;
+                                                            margin-bottom: 24px;
+                                                            color: white;
+                                                            font-weight: 300;
+                                                            @include media-query(desktopXL) {
+                                                                font-size: 1.4rem;
+                                                            }
+                                                        }
+                                                        a {
+                                                            padding: 1rem 2rem;
+                                                            border: 1px solid white;
+                                                            border-radius: 6px;
+                                                            font-size: 1.4rem;
+                                                            text-decoration: none;
+                                                            text-transform: uppercase;
+                                                            font-weight: 400;
+                                                            color: white;
+                                                            background-color: rgba(255, 255, 255, 0.41);
+                                                            @include media-query(desktopXL) {
+                                                                padding: 0.9rem 1.6rem;
+                                                            }
+                                                            &:hover {
+                                                                font-weight: 700;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .owl-nav {
+                                        display: flex;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 0;
+                                        width: 100%;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        pointer-events: none;
+                                        @include media-query(mobile) {
+                                            display: none;
+                                        }
+                                        button {
+                                            width: 60px;
+                                            height: 60px;
+                                            background-color: rgba(255, 255, 255, 0.6);
+                                            border-radius: 50%;
+                                            border: 1px solid #041d74;
+                                            pointer-events: auto;
+                                            @include media-query(desktopXL) {
+                                                width: 40px;
+                                                height: 40px;
+                                            }
+                                            &.owl-prev {
+                                                margin-left: 20px;
+                                                background-image: url("./assets/img/izquierda.svg");
+                                                background-size: auto;
+                                                background-repeat: no-repeat;
+                                                background-position: center;
+                                                display: block;
+                                                outline: none;
+                                                span {
+                                                    display: none;
+                                                    font-size: 2.5rem;
+                                                    content: "";
+                                                }
+                                            }
+                                            &.owl-next {
+                                                margin-right: 20px;
+                                                background-image: url("./assets/img/derecha.svg");
+                                                background-size: auto;
+                                                background-repeat: no-repeat;
+                                                background-position: center;
+                                                display: block;
+                                                outline: none;
+                                                span {
+                                                    display: none;
+                                                    font-size: 2.5rem;
+                                                    content: "";
+                                                    font-size: 2.5rem;
+                                                }
+                                            }
+                                            &:hover {
+                                                background-color: rgba(255, 255, 255, 0.9);
+                                            }
+                                        }
+                                    }
+                                    .owl-dots {
+                                        position: absolute;
+                                        left: 50%;
+                                        bottom: 13%;
+                                        transform: translate(-50%, 8%);
+                                        @include media-query(mobile) {
+                                            bottom: 13%;
+                                        }
+                                        .owl-dot {
+                                            width: 10px;
+                                            height: 10px;
+                                            background-color: white;
+                                            border-radius: 50%;
+                                            border: 1px solid white;
+                                            margin: 0 2px;
+                                            &.active {
+                                                width: 15px;
+                                                height: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .business__about {
+                        margin: 40px auto;
+                        padding: 0;
+                        @include media-query(mobile) {
+                            padding: 0 20px;
+                        }
+                        .ds-1col {
+                            display: none;
+                        }
+                        .ds-2col {
+                            display: grid;
+                            grid-template-columns: 100px 1fr 50px 1fr 100px;
+                            grid-template-areas: ". infor . images .";
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 auto;
+                            width: 100%;
+                            column-gap: 12px;
+                            position: relative;
+                            @include media-query(mobile) {
+                                grid-template-columns: 1fr;
+                                grid-template-areas:
+                                    "infor"
+                                    "images";
+                            }
+                            .group-left {
+                                grid-area: infor;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                &::before {
+                                    content: "";
+                                    background-image: url("./assets/img/arrow_sedes.svg");
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    width: 100%;
+                                    height: 303px;
+                                    vertical-align: 0;
+                                    border-top: 0;
+                                    border-right: 0;
+                                    border-bottom: 0;
+                                    border-left: 0;
+                                    margin-right: 0;
+                                    position: absolute;
+                                    top: 11%;
+                                    left: -43%;
+                                    z-index: 0;
+                                }
+                                .block-field-blockblock-contentblock-2columnstitle {
+                                    z-index: 3;
+                                    h3 {
+                                        font-size: 2.8rem;
+                                        color: #c6a16e;
+                                        width: 100%;
+                                        font-weight: 700;
+                                        margin-bottom: 12px;
+                                        @include media-query(mobile) {
+                                            font-size: 2.2rem;
+                                            margin: 16px 0;
+                                        }
+                                    }
+                                }
+                                .block-field-blockblock-contentblock-2columnsblock-description-long {
+                                    z-index: 3;
+                                    .field--name-block-description-long {
+                                        p {
+                                            color: #00071c;
+                                            font-weight: 300;
+                                            text-align: left;
+                                            @include media-query(mobile) {
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+                                }
+                                @include media-query(mobile) {
+                                    &::before {
+                                        height: 237px;
+                                    }
+                                }
+                            }
+                            .group-right {
+                                grid-area: images;
+                                width: 400px;
+                                @include media-query(mobile) {
+                                    width: 100%;
+                                }
+                                .block-field-blockblock-contentblock-2columnsimage {
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .business__title__plans {
+                        padding: 0;
+                        @include media-query(mobile) {
+                            padding: 0 20px;
+                        }
+                    }
+                    .business__steps {
+                        padding: 0;
+                        @include media-query(mobile) {
+                            padding: 0 20px;
+                        }
+                        & > .field--type-image {
+                            width: 1000px;
+                            margin: 0 auto;
+                            @include media-query(mobile) {
+                                width: 100%;
+                            }
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .block-block-content {
+                        .field--type-text-with-summary {
+                            .field--name-link {
+                                text-align: center;
+                                margin: 80px 0 32px 0;
+                                span {
+                                    padding: 0.8rem 3.5rem;
+                                    border: 1px solid $color-btn-a;
+                                    color: $color-btn-a;
+                                    border-radius: 6px;
+                                    text-decoration: none;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                    cursor: pointer;
+                                    &:hover {
+                                        background-color: #07228b;
+                                        color: white;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .business__responsibility {
+                        padding: 0;
+                        @include media-query(mobile) {
+                            padding: 0 20px;
+                        }
+                        .ds-1col {
+                            display: none;
+                        }
+                        .ds-2col {
+                            display: grid;
+                            grid-template-columns: 50px 1fr 10px 1fr 50px;
+                            grid-template-areas: ". images . texts.";
+                            align-items: center;
+                            justify-content: center;
+                            @include media-query(mobile) {
+                                grid-template-columns: 1fr;
+                                grid-template-areas:
+                                    "texts"
+                                    "images";
+                            }
+                            .group-left {
+                                grid-area: texts;
+                                width: 100%;
+                                .block-field-blockblock-contentblock-2columnstitle {
+                                    h3 {
+                                        font-size: 2.8rem;
+                                        color: #c6a16e;
+                                        width: 100%;
+                                        font-weight: 700;
+                                        margin-bottom: 12px;
+                                        @include media-query(mobile) {
+                                            font-size: 2.2rem;
+                                        }
+                                    }
+                                }
+                                .block-field-blockblock-contentblock-2columnsblock-description-long {
+                                    .field--name-block-description-long {
+                                        p {
+                                            color: #00071c;
+                                            font-weight: 300;
+                                        }
+                                    }
+                                }
+                            }
+                            .group-right {
+                                grid-area: images;
+                                width: 100%;
+                                .block-field-blockblock-contentblock-2columnsimage {
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .business__transformation {
+                        padding: 0;
+                        @include media-query(mobile) {
+                            padding: 0 20px;
+                        }
+                        .complete-transforma {
+                            position: relative;
+                            margin-bottom: 36px;
+                            .complete-transforma--text {
+                                text-align: center;
+                                margin: 24px 0 36px 0;
+                                padding: 0 20px;
+                                h2 {
+                                    text-align: center;
+                                    font-size: 2.8rem;
+                                    color: $color-gold;
+                                    margin: 1rem;
+                                    font-family: "Montserrat", sans-serif;
+                                    max-width: 830px;
+                                    margin: 0 auto;
+                                    font-weight: 700;
+                                    @include media-query(mobile) {
+                                        font-size: 2.2rem;
+                                        margin: 16px 0;
+                                    }
+                                }
+                                p {
+                                    strong {
+                                        font-size: 1.6rem;
+                                    }
+                                    text-align: center;
+
+                                    font-family: "Lato", sans-serif;
+                                    font-size: 1.6rem;
+                                    max-width: 600px;
+                                    margin: 0 auto;
+                                }
+                            }
+                            .complete-transforma--cards {
+                                .container__transforma-card-0 {
+                                    position: relative;
+                                    display: grid;
+                                    grid-template-columns: repeat(4, 1fr);
+                                    gap: 4px;
+                                    @include media-query(mobile) {
+                                        position: inherit;
+                                    }
+                                    .field__item {
+                                        .block-transforma {
+                                            position: relative;
+                                            overflow: hidden;
+
+                                            .block-transforma--img {
+                                                img {
+                                                    max-width: 100%;
+                                                    object-fit: contain;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                            }
+                                            .container_text_transforma {
+                                                position: absolute;
+                                                bottom: 0;
+                                                left: 10%;
+                                                width: 85%;
+
+                                                .block-transforma--title-block {
+                                                    h2 {
+                                                        font-size: 1.8rem;
+                                                        color: $color-white;
+                                                        margin-bottom: 36px;
+                                                    }
+                                                }
+                                                .block-transforma--description-block {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+
+                                        &:hover {
+                                            .block-transforma--img {
+                                                &::before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    background: rgb(2, 0, 36);
+                                                    background: linear-gradient(
+                                                        0deg,
+                                                        rgba(2, 0, 36, 1) 0%,
+                                                        rgba(4, 29, 116, 1) 25%,
+                                                        rgba(36, 144, 252, 1) 100%
+                                                    );
+                                                    opacity: 0.94;
+                                                }
+                                            }
+                                            .container_text_transforma {
+                                                margin-bottom: 30px;
+                                            }
+                                            .block-transforma--description-block {
+                                                display: block;
+                                                p {
+                                                    color: $color-white;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .owl-stage-outer {
+                                        position: inherit;
+                                    }
+                                    .owl-nav {
+                                        display: none;
+                                    }
+                                    .owl-dots {
+                                        display: none;
+                                        position: absolute;
+                                        left: 50%;
+                                        bottom: -4%;
+                                        transform: translate(-50%, 8%);
+                                        @include media-query(mobile) {
+                                            display: block;
+                                        }
+                                        .owl-dot {
+                                            width: 10px;
+                                            height: 10px;
+                                            background-color: #041d74;
+                                            border-radius: 50%;
+                                            //border: 1px solid white;
+                                            margin: 0 2px;
+                                            &.active {
+                                                width: 15px;
+                                                height: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .business__title__project {
+                        padding: 0;
+                        @include media-query(mobile) {
+                            padding: 0 20px;
+                        }
+                        .itemTitle-1 {
+                            text-align: center;
+                            font-size: 2.8rem;
+                            color: #c6a16e;
+                            margin: 1rem;
+                            font-family: "Montserrat", sans-serif;
+                            font-weight: 700;
+                            width: 50%;
+                            margin: 0 auto;
+                            @include media-query(mobile) {
+                                font-size: 2.2rem;
+                                width: 100%;
+                                margin-bottom: 16px;
+                            }
+                        }
+                        .itemBody-1 {
+                            text-align: center;
+                            max-width: 750px;
+                            margin: 0 auto;
+                            p {
+                                color: $color-btn-a;
+                            }
+                        }
+                    }
+                    .title__number {
+                        padding: 0;
+                        @include media-query(mobile) {
+                            padding: 0 20px;
+                        }
+                        & > .complete-cifras-home {
+                            position: relative;
+                            &::before {
+                                content: "";
+                                background-image: url("./assets/img/arrow_empresarial_der.svg");
+                                background-size: auto;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                width: 100%;
+                                height: 200px;
+                                vertical-align: 0;
+                                border-top: 0;
+                                border-right: 0;
+                                border-bottom: 0;
+                                border-left: 0;
+                                margin-right: 0;
+                                position: absolute;
+                                top: 11%;
+                                left: 22%;
+                                z-index: 0;
+                            }
+                            &::after {
+                                content: "";
+                                background-image: url("./assets/img/arrow_empresarial_izq.svg");
+                                background-size: auto;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                width: 100%;
+                                height: 200px;
+                                vertical-align: 0;
+                                border-top: 0;
+                                border-right: 0;
+                                border-bottom: 0;
+                                border-left: 0;
+                                margin-right: 0;
+                                position: absolute;
+                                top: 11%;
+                                left: -22%;
+                                z-index: 0;
+                            }
+                            .complete-cifras-home--cards {
+                                justify-content: center;
+                                align-items: center;
+                                margin: 0;
+                                padding: 0;
+
+                                &::before {
+                                    display: none;
+                                }
+                                & > .field--name-media-cards {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    gap: 36px;
+                                    @include media-query(mobile) {
+                                        flex-direction: column;
+                                    }
+                                    .field__item {
+                                        .cifras-home {
+                                            .cifras-home--number {
+                                                width: auto;
+                                                height: auto;
+                                                .field--name-number {
+                                                    font-size: 7rem;
+                                                    color: #041d74;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    font-weight: 800;
+                                                    @include media-query(mobile) {
+                                                        font-size: 5rem;
+                                                    }
+                                                }
+                                            }
+                                            .cifras-home--title_number {
+                                                margin: 0 auto;
+                                                width: 80%;
+                                                height: 70px;
+                                                .field--name-short-descripcion-block {
+                                                    text-align: center;
+                                                    p {
+                                                        color: #92afd0;
+                                                        span {
+                                                            color: #92afd0;
+                                                            font-weight: 700;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .business__projects {
+                        margin: 40px 0;
+                        padding: 0 20px;
+                        .view-id-projects {
+                            display: grid;
+                            grid-template-columns: 100px 1fr 100px;
+                            grid-template-areas: ". content .";
+                            @include media-query(mobile) {
+                                display: block;
+                                padding: 0 20px;
+                            }
+                            .view-content {
+                                grid-area: content;
+                                display: grid;
+                                grid-template-columns: repeat(4, 1fr);
+                                gap: 12px;
+                                .owl-stage-outer {
+                                }
+                                .views-row {
+                                    .bussines_item {
+                                        flex-direction: column;
+
+                                        position: relative;
+                                        display: flex;
+                                        align-items: center;
+                                        .image_bussines {
+                                            position: relative;
+                                            margin-top: 4px;
+                                            margin-bottom: -50px;
+                                            padding: 12px;
+                                        }
+                                        .desc_busines {
+                                            background-color: #f8f8f8;
+                                            height: 304px;
+                                            padding: 24px;
+                                            h3 {
+                                                color: #041d74;
+                                                margin-top: 50px;
+                                                font-weight: 700;
+                                                height: 94px;
+                                                display: block;
+                                                font-size: 1.4rem;
+                                            }
+                                            p {
+                                                font-weight: 300;
+                                                color: #00071c;
+                                                // height: 100px;
+                                                font-size: 1.3rem;
+                                            }
+                                            ul {
+                                                height: 100px;
+                                                li {
+                                                    color: #00071c;
+                                                    font-weight: 300;
+                                                    font-size: 1.3rem;
+                                                    &::before {
+                                                        content: "\2022";
+                                                        color: #041d74;
+                                                        font-weight: bold;
+                                                        display: inline-block;
+                                                        width: 1em;
+                                                        margin-left: -1em;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    // background-color: #f8f8f8;
+                                    // border-radius: 6px;
+                                    // padding: 16px 22px;
+                                    // position: relative;
+                                    // display: flex;
+                                    // flex-direction: column;
+                                    // justify-content: center;
+                                    // & > .views-field-field-image {
+                                    //     position: absolute;
+                                    //     top: -11%;
+                                    //     left: 50%;
+                                    //     transform: translate(-50%, -11%);
+                                    //     overflow: hidden;
+                                    //     border-radius: 50%;
+                                    //     box-shadow: 0px 2px 14px 0px rgba(119, 119, 119, 0.23);
+                                    // }
+                                    // & > .views-field-title {
+                                    //     margin-top: 28%;
+
+                                    //     span {
+                                    //         color: #041d74;
+                                    //         font-weight: 700;
+                                    //         height: 94px;
+                                    //         display: block;
+                                    //         font-size: 1.4rem;
+                                    //     }
+                                    // }
+
+                                    // & > .views-field-short-description {
+                                    //     p {
+                                    //         font-weight: 300;
+                                    //         color: #00071c;
+                                    //         height: 100px;
+                                    //         font-size: 1.3rem;
+                                    //     }
+                                    //     .field-content {
+                                    //         ul {
+                                    //             height: 100px;
+                                    //             li {
+                                    //                 color: #00071c;
+                                    //                 font-weight: 300;
+                                    //                 font-size: 1.3rem;
+                                    //                 &::before {
+                                    //                     content: "\2022";
+                                    //                     color: #041d74;
+                                    //                     font-weight: bold;
+                                    //                     display: inline-block;
+                                    //                     width: 1em;
+                                    //                     margin-left: -1em;
+                                    //                 }
+                                    //             }
+                                    //         }
+                                    //     }
+                                    // }
+                                }
+                                .owl-nav {
+                                    display: none;
+                                }
+                                .owl-dots {
+                                    display: none;
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: -8%;
+                                    transform: translate(-50%, 8%);
+                                    @include media-query(mobile) {
+                                        display: block;
+                                    }
+                                    .owl-dot {
+                                        width: 10px;
+                                        height: 10px;
+                                        background-color: #041d74;
+                                        border-radius: 50%;
+                                        //border: 1px solid white;
+                                        margin: 0 2px;
+                                        &.active {
+                                            width: 15px;
+                                            height: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .business__title__partners {
+                        .itemTitle-2 {
+                            text-align: center;
+                            font-size: 2.8rem;
+                            color: #c6a16e;
+                            margin: 1rem;
+                            font-family: "Montserrat", sans-serif;
+                            font-weight: 700;
+                            width: 50%;
+                            margin: 0 auto;
+                            @include media-query(mobile) {
+                                font-size: 2.2rem;
+                                width: 100%;
+                                margin: 16px 0;
+                            }
+                        }
+                        .itemBody-2 {
+                            text-align: center;
+                            max-width: 750px;
+                            margin: 0 auto;
+                            p {
+                                color: #00071c;
+                            }
+                        }
+                    }
+                    .business__partners {
+                        margin: 20px 0;
+                        & > .partnersSlider {
+                            .field__item {
+                                .media--type-partners {
+                                    height: 122px;
+                                    width: 100%;
+                                    img {
+                                        width: 100%;
+                                        object-fit: contain;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

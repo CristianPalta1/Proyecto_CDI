@@ -1,0 +1,72 @@
+/*gridContact*/
+.gridContact {
+  padding-bottom: 40px;
+  .content {
+    .c-content {
+      .gridContact__content {
+        .row {
+          @media (max-width: $tablet) {
+            flex-direction: column-reverse;
+          }
+          .contact__options {
+            padding: 25px 0;
+            .row {
+              padding: 15px 0;
+              h3 {
+                font-size: 1.25rem;
+                line-height: 2rem;
+                font-family: $latobold;
+              }
+              p {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                
+                a, strong {
+                  font-size: inherit;
+                  font-weight: 700;
+                  line-height: inherit;
+                }
+                
+                a {
+                  text-decoration: underline !important;
+                }
+              }
+              span {
+                font-size: 1rem;
+                line-height: 1.5rem;
+              }
+            }
+            .redesSociales.header {
+              @media (max-width: $tablet) {
+                display: none;
+              }
+            }
+            .redesSociales.footer {
+              @media (min-width: $desktop_992) {
+                display: none;
+              }
+              @media (max-width: $tablet) {
+                display: none;
+                span {
+                  color: $color_big_stone;
+                }
+                ul {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  margin-top: 20px;
+                  li {
+                    margin-right: 10px;
+                    &:last-child {
+                      margin-right: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

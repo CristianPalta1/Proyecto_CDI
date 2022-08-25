@@ -1,0 +1,147 @@
+.typeof-rooms {
+    position: relative;
+    margin: 6% 0;
+    padding: 0;
+    .banner-type-room {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 2;
+        padding: 15px 0 30px;
+        @media (max-width: $desktop) {
+            max-width: 90%;
+            justify-content: space-around;
+        }
+        .content-info {
+            .content-title {
+                color: white;
+                margin-top: 5%;
+                b{
+                    color: white;
+                }
+                .content-title-comp{
+                    color: white;
+                }
+            }
+        }
+
+        .content-actions {
+            margin-top: 10%;
+            text-align: center;
+            @media (max-width: $desktopLS) {
+                margin-top: 5%;
+            }
+            a {
+                @media (max-width: $desktop) {
+                    width: 100%;
+                }
+                padding: 10px 45px;
+                border: 1px solid white;
+                border-radius: 0;
+                text-transform: uppercase;
+                white-space: normal;
+                color: white;
+                background-color: #ffffff21;
+                overflow: hidden;
+                z-index: 1;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 100%;
+                    background: white;
+                    z-index: -1;
+                    transition: width 0.5s ease-in-out;
+                }
+
+                &:hover {
+                    color: black;
+                    font-weight: 600;
+                    &::after {
+                        width: 110%;
+                    }
+                }
+            }
+        }
+        .content-types-type {
+            text-align: center;
+            width: 85%;
+            margin: 0 auto;
+            @media (max-width: $desktop) {
+                width: 100%;
+            }
+            .type-item-content {
+                width: 24.5%;
+                padding: 10px 0;
+                border: 0;
+                background-color: transparent;
+                text-transform: uppercase;
+                color: white;
+                position: relative;
+             
+                &.active {
+                    font-weight: bold;
+                }
+                // &:first-child {
+                //     border-left: 0;
+                // }
+                &:hover {
+                    font-weight: bold;
+                    transition: 0.5s all;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 40%;
+                    width: 0.5px;
+                    background-color: #bebebe;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    
+                    @media (max-width: $tablet) {
+                        right: 0%;
+                    }
+                    @media (max-width: $mobileS) {
+                       display: none;
+                    }
+                }
+                &:last-child {
+                    &::after {
+                      display: none;
+                    }
+                  }
+                // &:nth-child(2){
+                //     width: 33.3%;
+                //   }
+            }
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $brown;
+        z-index: 1;
+    }
+}

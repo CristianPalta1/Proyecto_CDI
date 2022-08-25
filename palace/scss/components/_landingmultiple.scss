@@ -1,0 +1,1905 @@
+body.page-node-type-test {
+  padding: 0;
+}
+section.landing_multiple {
+  font-size: 0;
+  position: relative;
+
+  .only_resort,
+  .resort_fly {
+      text-align: left;
+  }
+
+  section.banner {
+    img {
+        width: 100%;
+    }
+  }
+
+  .color {
+    color: $color-r-lm-blue;
+  }
+
+  header {
+    width: 100%;
+    max-width: 1320px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -660px;
+    padding: 20px;
+    @media (max-width: $desktopXL){
+      max-width: 1100px;
+      margin-left: -550px;
+    }
+
+    @media (max-width: $desktopL){
+      max-width: initial;
+      margin-left: initial;
+      left: 0;
+    }
+
+    .brand {
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+        @media (max-width: $tablet){
+          width: 125px;
+          margin: 0 auto 30px auto;
+          display: block;
+        }
+    }
+
+    nav {
+        width: 70%;
+        display: inline-block;
+        vertical-align: middle;
+        @media (max-width: $tablet){
+          width: 100%;
+        }
+
+        ul {
+           margin: 0;
+           padding: 0;
+           text-align: right;
+
+           li {
+             display: inline-block;
+             text-transform: uppercase;
+             padding: 0;
+
+             &:before {
+               display: none;
+             }
+
+             p {
+              font-weight: 600;
+              display: inline-block;
+              vertical-align: middle;
+              color: $color-r-hd-green !important;
+              margin: 0;
+              @media (max-width: $tablet){
+                font-size: 17px;
+              }
+
+               &:after {
+                 content: "|";
+                 display: inline-block;
+                 width: 38px;
+                 vertical-align: middle;
+                 text-align: center;
+                 @media (max-width: $desktop){
+                   display: none;
+                 }
+               }
+
+             }
+
+             a {
+               color: $color-r-lm-blue;
+               @media (max-width: $tablet){
+                 font-size: 17px;
+                 font-weight: 600;
+               }
+             }
+
+             &:last-child{
+               p {
+                 &:after {
+                   display: none;
+                 }
+               }
+             }
+
+             &.chat {
+               @media (max-width: $desktop){
+                 display: block;
+                 margin-bottom: 8px;
+               }
+               @media (max-width: $tablet){
+                 text-align: center;
+               }
+               span {
+                  width: 28px;
+                  height: 20px;
+                  background-image: url(../img/landing-multiple/blue-glob.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-right: 5px;
+                  @media (max-width: $mobileX){
+                    vertical-align: top;
+                    width: 26px;
+                    height: 18px;
+                    margin-right: 2px;
+                  }
+               }
+             }
+
+             &.phone {
+               @media (max-width: $tablet){
+                 width: 100%;
+                 text-align: center;
+               }
+                p {
+                  @media (max-width: $desktop){
+                    font-size: 0;
+                  }
+
+                  @media (max-width: $tablet){
+                    font-size: 14px;
+                    display: block;
+                    margin-top: 10px;
+                  }
+
+                  a {
+                    @media (max-width: $desktop){
+                      font-size: 16px;
+                    }
+                    @media (max-width: $mobileX){
+                      font-size: 14px;
+                    }
+                  }
+                }
+
+
+               span {
+                  width: 28px;
+                  height: 24px;
+                  background-image: url(../img/landing-multiple/blue-phone.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin: 0 0px 0 15px;
+                  @media (max-width: $mobileX){
+                    vertical-align: top;
+                    width: 26px;
+                    height: 22px;
+                  }
+               }
+             }
+
+          }
+        }
+
+    }
+
+    &.jp {
+      nav {
+        ul {
+          li {
+            p {
+              font-family: 'Noto Sans JP', sans-serif;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  section.booking {
+      height: 64px;
+      background-color: $color-r-grey-light;
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-left: initial;
+      left: 0;
+      text-align: center;
+
+      &.mobile {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: initial;
+        margin-left: initial;
+        display: none;
+        top: 0;
+        z-index: 9999;
+        background-color: $color-white;
+      }
+
+  }
+
+
+  section.information {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+    .left {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 20px;
+      box-sizing: border-box;
+      @media (max-width: $desktop){
+        width: 100%;
+        padding-right: 0;
+      }
+
+      h2 {
+        font-family: $gotham-ultra;
+        font-size: 25px;
+        font-weight: 600;
+        max-width: 420px;
+        line-height: initial;
+        margin-bottom: 20px;
+        letter-spacing: 0;
+        color: $color-r-lm-green-light;
+        @media (max-width: $desktop){
+          max-width: initial;
+          text-align: center;
+          font-size: 24px;
+        }
+
+        @media (max-width: $mobile){
+          letter-spacing: -0.5px;
+          font-family: $gotham-bold;
+        }
+      }
+
+      h3 {
+          color: $color-black;
+          font-size: 35px;
+          line-height: 30px;
+          letter-spacing: 0;
+          @media (max-width: $mobile){
+            font-size: 32px;
+            line-height: 26px;
+            letter-spacing: -1.2px;
+            margin-bottom: 20px;
+          }
+      }
+
+      p.title {
+        color: $color-r-black;
+        margin: 0;
+
+        span {
+          font-weight: 600;
+          color: $color-r-lm-green;
+        }
+      }
+
+      .legal {
+          margin-top: 20px;
+          @media (max-width: $mobile){
+            margin: 13px 0;
+          }
+
+          p {
+              font-size: 13px;
+              line-height: initial;
+          }
+      }
+
+
+    }
+
+    .right {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 20px;
+      box-sizing: border-box;
+      @media (max-width: $desktop){
+        width: 100%;
+        padding-left: 0;
+      }
+      ul {
+        margin: 0;
+        li {
+          line-height: 26px;
+          color: $color-r-lm-green;
+          font-family: $gotham-bold;
+          letter-spacing: -0.5px;
+          @media (max-width: $mobile){
+            font-family: $gotham-rounded-medium;
+            line-height: 18px;
+            margin-bottom: 6px;
+          }
+          &:before {
+            background-image: url(../img/landing-multiple/icon-more.png);
+            background-size: cover;
+            width: 15px;
+            height: 15px;
+            color: transparent;
+            margin-right: 5px;
+            vertical-align: middle;
+            @media (max-width: $mobile){
+              width: 9px;
+              height: 9px;
+            }
+          }
+
+          a {
+            color: $color-r-dark-green;
+          }
+
+        }
+      }
+
+      .tripadvisor_module {
+        background-color: $color-r-lm-green-light;
+        padding: 14px 14px 14px 0px;
+        box-sizing: border-box;
+        margin-top: 16px;
+
+        picture {
+            width: 16%;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            border-right: 1px solid $color-r-dark-green;
+            @media (max-width: $mobileX){
+              width: 18%;
+            }
+
+            img {
+              max-width: 48px;
+              @media (max-width: $mobileX){
+                width: 40px;
+              }
+            }
+        }
+
+        .info {
+            display: inline-block;
+            width: 84%;
+            vertical-align: middle;
+            padding: 0 12px 0 20px;
+            @media (max-width: $mobileX){
+              width: 82%;
+            }
+
+            .box {
+                overflow: hidden;
+              p {
+                color: $color-r-dark-green;
+                font-size: 18px;
+                animation: moveText 40s infinite linear;
+                width: 300px;
+                text-align: center;
+                @media (max-width: $desktop){
+                  width: 500px;
+                }
+              }
+
+              @keyframes moveText {
+                  from {
+                      margin-left: 80%
+                  }
+                  to {
+                      margin-left: -80%
+                  }
+              }
+
+            }
+        }
+
+      }
+    }
+
+    &.jp {
+      .left {
+        .legal {
+          p {
+            font-family: 'Noto Sans JP',sans-serif;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+  }
+
+  section.promo_resorts {
+    margin-top: 40px;
+    @media (max-width: $mobile){
+        margin-top: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: $gotham-light;
+      font-size: 38px;
+      color: $color-r-lm-green-light;
+      @media (max-width: $tablet){
+        font-size: 32px;
+        line-height: 30px;
+        padding: 0 20px;
+      }
+      span {
+        font-family: $gotham-bold;
+      }
+
+      &:before {
+          background: linear-gradient(to right,rgba(169,115,62,0) 0,rgba(169,115,62,.02) 1%,$color-r-lm-green 53%,rgba(169,115,62,0) 100%);
+          width: 70%;
+          height: 1px;
+          display: block;
+          content: "";
+          margin: 0 auto 10px auto;
+      }
+
+      &:after {
+          background: linear-gradient(to right,rgba(169,115,62,0) 0,rgba(169,115,62,.02) 1%,$color-r-lm-green 53%,rgba(169,115,62,0) 100%);
+          width: 70%;
+          height: 1px;
+          display: block;
+          content: "";
+          margin: 10px auto 30px auto;
+      }
+
+    }
+
+    article {
+      width: 33.33%;
+      display: inline-block;
+      vertical-align: top;
+      @media (max-width: $desktopL){
+        width: 50%;
+      }
+      @media (max-width: $tablet){
+        width: 100%;
+      }
+
+      &.destacado {
+          width: 100%;
+          @media (max-width: $desktopL){
+            width: 50%;
+          }
+          @media (max-width: $tablet){
+            width: 100%;
+          }
+      }
+
+      &:nth-child(even) {
+        background-color: $color-r-grey-light;
+      }
+
+      &:nth-child(odd) {
+        background-color: $color-r-grey-light2;
+      }
+
+      .img {
+        position: relative;
+
+        picture {
+          &:after {
+            background: linear-gradient(to bottom,transparent 0,rgba(0,0,0,.2) 25%,rgba(0,0,0,.6) 50%,rgba(0, 0, 0, 0.8) 100%);
+            content: "";
+            width: 100%;
+            height: 150px;
+            display: block;
+            position: absolute;
+            bottom: 0;
+          }
+        }
+
+        img {
+          width: 100%;
+        }
+
+        h4 {
+          position: absolute;
+          bottom: 10px;
+          width: 100%;
+          text-align: center;
+          color: $color-white;
+          text-transform: uppercase;
+          z-index: 9;
+        }
+
+      }
+
+      .info {
+        padding: 20px;
+        box-sizing: border-box;
+
+        .price {
+          width: 380px;
+          margin: 0 auto;
+          @media (max-width: $tablet){
+            width: 324px;
+          }
+          .left {
+            display: inline-block;
+            vertical-align: middle;
+            width: 108px;
+
+            p {
+              &.copy {
+                  color: $color-r-grey-light4;
+                  margin-bottom: -20px;
+                  font-family: $roboto-condensed-regular;
+                  font-size: 15px;
+                  @media (max-width: $mobile){
+                      margin-bottom: -14px;
+                  }
+              }
+              &.number {
+                font-size: 76px;
+                font-family: $gotham-bold;
+                letter-spacing: -3px;
+                position: relative;
+                line-height: initial;
+                color: $color-r-dark-green;
+                @media (max-width: $mobile){
+                    letter-spacing: -7px;
+                    font-size: 80px;
+                }
+
+                span {
+                  background-color: $color-r-grey-light4;
+                  font-size: 18px;
+                  border-radius: 50%;
+                  color: $color-white;
+                  width: 30px;
+                  position: absolute;
+                  height: 30px;
+                  padding: 4px 0 0 7px;
+                  right: 0;
+                  bottom: 15px;
+                }
+
+              }
+            }
+
+
+          }
+
+          .right {
+            display: inline-block;
+            vertical-align: middle;
+            width: 272px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            @media (max-width: $tablet){
+              width: 216px;
+            }
+            @media (max-width: $mobileX){
+              width: 200px;
+            }
+            @media (max-width: $mobileXS){
+              width: 175px;
+            }
+
+            h3 {
+              font-family: $roboto-condensed-regular;
+              color: $color-r-grey-light4;
+              font-size: 19px;
+              letter-spacing: 0;
+              line-height: 20px;
+              margin-bottom: 6px;
+              min-height: 50px;
+            }
+
+            p.legal {
+              font-size: 13px;
+              line-height: initial;
+              color: $color-r-grey-light4;
+            }
+
+          }
+
+        }
+
+      }
+
+      .box_btns {
+        text-align: center;
+        padding: 0 20px 20px 20px;
+        box-sizing: border-box;
+
+        .btn {
+          &.red {
+            font-family: $gotham-bold;
+            background-color: $color-r-lm-green-light;
+            border: 1px solid $color-r-lm-green-light;
+            border: 0;
+            margin: 0 4px;
+            font-size: 14px;
+            letter-spacing: 0;
+            @media (max-width: $desktopL){
+              margin-bottom: 10px;
+              min-width: 250px;
+            }
+            @media (max-width: $mobileXS){
+              font-size: 14px;
+            }
+
+            &:hover {
+              background-color: $color-white;
+              color: $color-r-lm-green-light;
+              a {
+                color: $color-r-lm-green-light;
+              }
+            }
+
+            a {
+              color: $color-white;
+            }
+
+          }
+
+          &.black {
+            font-family: $gotham-bold;
+            color: $color-white;
+            background-color: $color-r-dark-green;
+            border: 1px solid $color-r-dark-green;
+            border: 0;
+            margin: 0 4px;
+            font-size: 14px;
+            letter-spacing: 0;
+            @media (max-width: $desktopL){
+              margin-bottom: 10px;
+              min-width: 250px;
+            }
+
+            &:hover {
+              background-color: $color-white;
+              color: $color-r-dark-green;
+              a {
+                color: #000;
+              }
+            }
+
+            a {
+              color: $color-white;
+            }
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+  section.icons_moon_brand {
+      background: none;
+      position: relative;
+      overflow: hidden;
+    .content {
+        border: 2px solid #000;
+        border-radius: 10px;
+        background: none;
+        @media (max-width: $desktopXL){
+          width: 95%;
+        }
+
+        .main_box_icons {
+            padding: 60px;
+            box-sizing: border-box;
+
+            @media (max-width: 385px) and (min-width:350px){
+              padding: 35px;
+            }
+
+            h3 {
+              font-size: 38px;
+              line-height: 37px;
+              color: $color-r-hd-green;
+              letter-spacing: 1px;
+              padding: 0 20px;
+              box-sizing: border-box;
+              font-family: $steelfish_rg;
+            }
+
+            .box_btn {
+              .btn {
+                color: #fff;
+                border: 1px solid #219acd;
+                background-color: #219acd;
+                font-family: $steelfish_rg;
+                padding: 6px 26px;
+                font-size: 28px;
+                line-height: 28px;
+
+                &:hover {
+                  background-color: transparent;
+                  color: $color-r-hd-green;
+                }
+              }
+            }
+
+            .int_box_icons {
+                min-height: 200px;
+                .item {
+                  .box_item {
+                    border: 1px solid $color-r-black;
+                    background-color: transparent;
+                    p {
+                        color: #000000;
+                    }
+                  }
+
+                  &.text {
+                    .box_item {
+                      border: 0;
+                      background: none;
+                    }
+                  }
+                }
+
+                .four_box {
+                  /* border: 1px solid $color-r-black; */
+                  border: none!important;
+                  background-color: transparent;
+                  .item {
+                    .box_item {
+                      //background-color: rgba(255, 255, 255, 0.70);
+                      p {
+                          color: #000000;
+                      }
+
+                      &.text {
+                        .box_item {
+                          background: none;
+                        }
+                      }
+                    }
+                  }
+                }
+
+
+            }
+
+        }
+
+    }
+
+    .background {
+      position: absolute;
+      top: 50%;
+      z-index: -9;
+      width: 100%;
+      left: 0;
+      height: 100%;
+      transform: translatey(-50%);
+
+      picture {
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+
+        img {
+            left: 50%;
+            min-height: 100%;
+            max-width: inherit;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            min-width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+
+  section.landings_tyc {
+      background-color: $color-r-lm-green-light;
+
+      .title {
+        text-align: center;
+        box-sizing: border-box;
+        color: $color-white;
+        background-color: $color-r-lm-green-light;
+        cursor: pointer;
+        padding: 12px 20px;
+
+        p {
+          color: $color-white;
+          text-transform: uppercase;
+          font-family: $gotham-rounded-book;
+          font-size: 17px;
+
+          &:after {
+            content: "";
+            display: inline-block;
+            margin-left: 8px;
+            vertical-align: middle;
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 8px solid $color-white;
+            @include hover-transition-5;
+          }
+
+        }
+      }
+
+      .box_terms {
+          padding: 20px;
+          display: none;
+          width: 100%;
+          max-width: 1120px;
+          margin: 0 auto;
+
+          p {
+            color: $color-white;
+            font-size: 14px;
+          }
+      }
+
+  }
+
+  footer {
+    background-color: $color-r-grey-footer;
+
+    .content {
+      width: 100%;
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      @media (max-width: $desktop){
+        max-width: 768px;
+        padding: 30px 20px 40px 20px;
+      }
+
+      .img_footer_brands {
+          width: 22%;
+          display: inline-block;
+          vertical-align: top;
+          @media (max-width: $desktop){
+            width: 100%;
+            text-align: center;
+            margin-bottom: 18px;
+          }
+      }
+
+      .links {
+          width: 26%;
+          display: inline-block;
+          vertical-align: top;
+          @media (max-width: $desktop){
+            width: 33.33%;
+          }
+          @media (max-width: $tablet){
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: center;
+          }
+      }
+
+      ul {
+        padding: 0;
+
+        li {
+          &::before {
+              display: none;
+          }
+
+          a {
+            color: $color-white;
+            font-size: 15px;
+
+            &:hover {
+              color: $color-r-grey-light3;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+section.icons_palace_resort_1 {
+  background: none;
+  position: relative;
+  overflow: hidden;
+  .content {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    overflow: auto;
+    @media (max-width: $desktop){
+      padding: 40px 20px;
+    }
+
+      .main_box_icons {
+          width: 60%;
+          float: right;
+          @media (max-width: $desktop){
+            width: 100%;
+            float: initial;
+          }
+
+          h3 {
+            color: $color-white;
+            @media (max-width: $desktop){
+              text-align: center;
+              max-width: 600px;
+              margin: 0 auto 20px auto;
+            }
+          }
+
+          p {
+            color: $color-r-grey-light3;
+            font-family: $gotham-light;
+          }
+
+          .int_box_icons {
+            max-width: 550px;
+            display: inline-block;
+            @media (max-width: $tablet){
+              max-width: initial;
+            }
+            .item {
+              width: 20%;
+              display: inline-block;
+              vertical-align: middle;
+              text-align: center;
+              padding: 8px;
+              box-sizing: border-box;
+              @media (max-width: $mobile){
+                width: 50%;
+              }
+              .box_item {
+                  padding: 10px;
+                p {
+                  font-size: 10px;
+                  text-transform: uppercase;
+                  color: $color-white;
+                  line-height: 10px;
+                  height: 22px;
+                }
+              }
+
+              &.text {
+                .box_item {
+                  background: none;
+                }
+              }
+            }
+
+          }
+
+          .box_btn {
+              display: inline-block;
+              vertical-align: middle;
+              text-align: center;
+              padding: 6px;
+              box-sizing: border-box;
+              @media (max-width: $tablet){
+                text-align: center;
+                display: block;
+                margin-top: 20px;
+              }
+
+              .btn {
+                  font-family: $gotham-bold;
+                  margin: 0 4px;
+                  font-size: 15px;
+                  letter-spacing: 0;
+                  border: 1px solid $color-r-lm-green-light;
+                  background-color: $color-r-lm-green-light;
+                  color: $color-white;
+                  padding: 8px 20px;
+
+                  &:hover {
+                    background-color: transparent;
+                    border: 1px solid $color-white;
+                    color: $color-white;
+                  }
+              }
+
+          }
+
+      }
+
+    }
+
+    .background {
+      position: absolute;
+      top: 50%;
+      z-index: -9;
+      width: 100%;
+      height: 100%;
+      transform: translatey(-50%);
+
+      picture {
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+
+        img {
+            left: 50%;
+            min-height: 100%;
+            max-width: inherit;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            min-width: 100%;
+        }
+
+      }
+
+    }
+
+}
+
+section.icons_palace_resort_2 {
+    background-color: $color-r-grey-footer;
+
+    .main_box_icons {
+        width: 100%;
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 30px 20px;
+
+        h3 {
+          color: $color-white;
+          width: 25%;
+          display: inline-block;
+          vertical-align: middle;
+          padding-right: 20px;
+          box-sizing: border-box;
+          font-size: 26px;
+          line-height: 28px;
+          @media (max-width: $desktopL){
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+          }
+
+          span {
+            font-weight: 600;
+          }
+        }
+
+        .int_box_icons {
+            width: 75%;
+            display: inline-block;
+            vertical-align: middle;
+            @media (max-width: $desktopL){
+              width: 100%;
+              margin-top: 30px;
+            }
+
+            .item {
+                width: 12.5%;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+                @media (max-width: $desktop){
+                  width: 25%;
+                  margin-bottom: 15px;
+                }
+                @media (max-width: $tablet){
+                  width: 33.33%;
+                }
+                @media (max-width: $tablet){
+                  width: 50%;
+                }
+
+                p {
+                  font-size: 10px;
+                  text-transform: uppercase;
+                  color: $color-white;
+                  line-height: 10px;
+                  height: 22px;
+                  font-family: $gotham-light;
+                  padding: 5px 5px 0 5px;
+                  box-sizing: border-box;
+                }
+            }
+
+        }
+
+    }
+
+    .box_btn {
+        text-align: center;
+        margin-top: 40px;
+
+        a.btn {
+          background-color: $color-r-dark-green;
+          border: 1px solid $color-r-dark-green;
+          color: $color-white;
+          font-family: $gotham-bold;
+          font-size: 16px;
+
+          &:hover {
+            background-color: transparent;
+            border: 1px solid $color-r-lm-green-light;
+            color: $color-white;
+          }
+
+        }
+
+        .item.legal {
+          margin-top: 20px;
+          p {
+              color: $color-white;
+          }
+        }
+
+    }
+
+}
+
+section.landings_hotdeal_intro {
+      margin-top: 40px;
+  .content {
+      width: 100%;
+      max-width: 920px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+
+      .intro {
+        h1 {
+          color: $color-r-hd-green;
+          font-size: 64px;
+          line-height: initial;
+          font-family: $steelfish_rg;
+          @media (max-width: $tablet){
+            font-size: 54px;
+            line-height: 50px;
+            margin-bottom: 20px;
+          }
+        }
+
+        p {
+          color: $color-r-black;
+          font-family: $steelfish_rg;
+          font-size: 26px;
+          line-height: 26px;
+        }
+
+      }
+
+      .information {
+        margin: 50px 0;
+        font-size: 0;
+        .left {
+          width: 50%;
+          display: inline-block;
+          vertical-align: middle;
+          text-align: left;
+          padding-right: 30px;
+          @media (max-width: $tablet){
+            width: 100%;
+            text-align: center;
+          }
+          h3 {
+            color: $color-r-lm-green;
+            font-family: $steelfish_rg;
+            font-size: 80px;
+            line-height: 70px;
+            @media (max-width: $tablet){
+              font-size: 60px;
+            }
+          }
+
+          p {
+            font-size: 22px;
+            font-family: $gotham-light;
+          }
+
+        }
+
+        .right {
+          width: 50%;
+          display: inline-block;
+          vertical-align: middle;
+          text-align: left;
+          @media (max-width: $tablet){
+            width: 100%;
+            max-width: 320px;
+            margin-top: 30px;
+          }
+
+          ul {
+            margin: 0;
+            li {
+              line-height: 26px;
+              letter-spacing: -0.5px;
+              font-family: $gotham-rounded-medium;
+              font-size: 18px;
+              color: $color-r-black;
+              &:before {
+                content: '+';
+                font-family: $gotham-bold;;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                color: $color-white;
+                text-align: center;
+                font-size: 16px;
+                background-color: $color-r-lm-green;
+                display: inline-block;
+                margin-right: 8px;
+              }
+            }
+          }
+
+          p.legal {
+            font-size: 14px;
+            margin-top: 15px;
+          }
+
+        }
+
+        &:after {
+            background: linear-gradient(to right,rgba(169,115,62,0) 0,rgba(169,115,62,.02) 1%,$color-r-lm-green 53%,rgba(169,115,62,0) 100%);
+            width: 70%;
+            height: 2px;
+            display: block;
+            content: "";
+            margin: 40px auto 20px auto;
+        }
+
+      }
+
+  }
+}
+
+section.landings_hotdeal_slider {
+  .content {
+      width: 100%;
+      max-width: 1320px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 20px;
+
+      h2 {
+        color: $color-r-hd-green;
+        font-size: 64px;
+        line-height: initial;
+        font-family: $steelfish_rg;
+        @media (max-width: $tablet){
+          font-size: 54px;
+        }
+      }
+
+      p {
+        color: $color-r-black;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .box_slider {
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+        @media (max-width: $desktop){
+          margin: 0 auto 20px auto;
+        }
+
+        .owl-item {
+          article {
+            margin-bottom: 40px;
+            @media (max-width: $desktopXL){
+              margin-bottom: 50px;
+            }
+            @media (max-width: $desktop){
+              margin-bottom: 30px;
+            }
+            .info {
+              position: absolute;
+              bottom: 0;
+              width: 85%;
+              padding: 20px;
+              box-sizing: border-box;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 180px;
+              max-height: 190px;
+              @media (max-width: $desktopXL){
+                width: 95%;
+              }
+              @media (max-width: $desktopL){
+                width: 100%;
+                position: relative;
+              }
+
+              .box_info {
+                  width: 70%;
+                  display: inline-block;
+                  vertical-align: middle;
+                  @media (max-width: $mobile){
+                    width: 100%;
+                  }
+              }
+
+              .box_btn {
+                width: 30%;
+                overflow: hidden;
+                  display: inline-block;
+                  vertical-align: middle;
+                  text-align: center;
+                  @media (max-width: $mobile){
+                    width: 100%;
+                    margin-top: 30px;
+                  }
+
+                  .btn {
+                    background-color: $color-white;
+                    color: $color-r-hd-green;
+                    font-family: $steelfish_rg;
+                    border: 1px solid $color-white;
+                    font-size: 22px;
+                    @media (max-width: $mobile){
+                      display: block;
+                    }
+
+                    &:hover {
+                      background-color: transparent;
+                      color: $color-white;
+                    }
+                  }
+              }
+
+               p {
+                 color: $color-r-hd-green;
+                 margin-bottom: 0;
+                 &.title {
+                   color: $color-white;
+                   font-family: $steelfish_rg;
+                   font-size: 25px;
+                   letter-spacing: 1px;
+                   line-height: 25px;
+                   margin-bottom: 20px;
+                   @media (max-width: $desktopXL){
+                     margin-bottom: 12px;
+                   }
+                 }
+
+                 span {
+                   color: $color-white;
+                   font-weight: 600;
+                   font-family: $gotham-bold;
+                 }
+
+               }
+
+           }
+          }
+
+          &:nth-child(odd) {
+            article {
+              .info {
+                 background-color: $color-r-lm-green;
+                 right: 0;
+             }
+            }
+
+          }
+
+          &:nth-child(even) {
+            article {
+              .info {
+                background-color: $color-r-hd-orange;
+                left: 0;
+             }
+            }
+
+          }
+
+
+        }
+
+        .owl-nav {
+          position: absolute;
+          width: 96%;
+          margin-left: 2%;
+          top: 50%;
+          margin-top: -38px;
+          height: 10px;
+          z-index: 10;
+
+         .owl-prev {
+             width: 40px;
+             height: 78px;
+             background-image: url(../img/sprite.png);
+             background-size: 200px;
+             background-position: 0 -65px;
+             display: inline-block;
+             text-indent: 80px;
+             overflow: hidden;
+           }
+
+           .owl-next {
+             width: 40px;
+             height: 78px;
+             background-image: url(../img/sprite.png);
+             background-size: 200px;
+             background-position: -45px -65px;
+             display: inline-block;
+             text-indent: 80px;
+             overflow: hidden;
+             float: right;
+           }
+         }
+
+         .owl-dots {
+             text-align: center;
+             z-index: 10;
+             display: block;
+             width: 60%;
+             position: relative;
+             margin: 0 auto;
+             left: initial;
+             display: block;
+             max-width: 320px;
+
+             .owl-dot {
+              height: 2px;
+              width: 17%;
+              background: $color-r-grey-lines;
+              display: inline-block;
+              opacity: 1;
+              position: relative;
+              margin: 0 1%;
+
+              &.active {
+                background: $color-r-hd-green;
+              }
+            }
+          }
+
+
+    }
+
+}
+
+section.landings_hotdeal_single_banner {
+    width: 100%;
+    max-width: 1120px;
+    margin: 50px auto;
+    text-align: center;
+
+    h1,h2 {
+      color: $color-white;
+      font-size: 43px;
+      line-height: initial;
+      font-family: $steelfish_rg;
+      background-color: $color-r-lm-green;
+      padding: 3px 22px;
+      letter-spacing: .2px;
+      margin: 0 auto -26px auto;
+      z-index: 9;
+      position: relative;
+      width: auto;
+      display: inline-block;
+      max-width: 700px;
+      @media (max-width: $tablet){
+        font-size: 40px;
+      }
+    }
+
+    picture {
+      position: relative;
+      &:after {
+        background: linear-gradient(to right,rgba(169,115,62,0) 0,rgba(169,115,62,.02) 1%,$color-r-lm-green 53%,rgba(169,115,62,0) 100%);
+        width: 70%;
+        left: 15%;
+        height: 2px;
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+      }
+    }
+
+}
+
+body.page-node-type-landing-hot-deals {
+  @media (max-width: $desktopL){
+    padding: 0;
+  }
+
+button#btn-book-now-mobile {
+  background-color: $color-r-hd-orange;
+  display: none;
+
+  @media (max-width: $desktopL){
+    display: block;
+  }
+}
+
+  section.landing_multiple {
+
+    header {
+      nav {
+        .color {
+          color: $color-r-hd-white !important;
+        }
+
+        ul {
+          li.chat {
+            span {
+                background-image: url(../img/landing-multiple/white-glob.png);
+                background-size: contain;
+            }
+          }
+
+          li.phone {
+            span {
+                background-image: url(../img/landing-multiple/white-phone.png);
+                background-size: contain;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    section.booking {
+      background-color: $color-r-lm-green;
+
+      &.mobile {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: initial;
+        margin-left: initial;
+        display: none;
+        top: 0;
+        z-index: 9999;
+        background-color: $color-white;
+
+        form.form_book_now {
+          .icons_booking {
+            .ico_resort.active:after {
+                 border-top: 6px solid $color-r-dark-green;
+             }
+          }
+        }
+
+      }
+
+      form.form_book_now {
+
+        .icons_booking {
+          .ico_resort {
+
+            img {
+              display: none;
+            }
+
+            p {
+              font-weight: 600;
+              opacity: 0.5;
+              color: $color-white;
+            }
+
+            &.active {
+              &::after{
+                border-top: 6px solid $color-white;
+              }
+              p {
+                opacity: 1;
+              }
+            }
+
+            &[data-ref="onlyresort"]{
+              &.active {
+                &:before {
+                  opacity: 1;
+                }
+              }
+              &:before {
+                  width: 29px;
+                  height: 21px;
+                  display: block;
+                  background-image: url(../img/landing-multiple/book-icon-1.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  position: relative;
+                  content: "";
+                  opacity: 0.5;
+                  margin: 0 auto;
+              }
+            }
+
+            &[data-ref="resortfly"] {
+              &.active {
+                &:before {
+                  opacity: 1;
+                }
+              }
+              &:before {
+                  width: 61px;
+                  height: 21px;
+                  display: block;
+                  background-image: url(../img/landing-multiple/book-icon-2.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  position: relative;
+                  content: "";
+                  opacity: 0.5;
+                  margin: 0 auto;
+              }
+            }
+
+          }
+        }
+
+        .only_resort {
+          button#btn_book_now_resort {
+            background-color: $color-r-hd-orange;
+            &::after{
+              display: none;
+            }
+          }
+          .rooms {
+            .type_guests_text_adult,
+            .type_guests_text_children,
+            .rooms_text_select {
+                border: 1px solid $color-white;
+            }
+            .rooms_text_select {
+                &::before{
+                  background-color: $color-white;
+                }
+                &::after{
+                  border-top: 6px solid $color-white;
+                }
+                .box_p{
+                  .number_rooms,
+                  .copy_rooms{
+                    color: $color-white;
+                  }
+                }
+            }
+            .type_guests_text_children,
+            .type_guests_text_adult{
+              &::before{
+                background-color: $color-white;
+              }
+              &::after{
+                border-top: 6px solid $color-white;
+              }
+              .box_p{
+                .number,
+                .copy{
+                  color: $color-white;
+                }
+              }
+            }
+          }
+
+          .checkin,
+          .checkout {
+            span{
+              color: $color-white;
+            }
+            &::before{
+              background-color: $color-white;
+            }
+            /* &::after{
+              border: 6px solid $color-white;
+            } */
+            input.form-control {
+              border: 1px solid $color-white;
+            }
+          }
+
+          .select_resort {
+            .box_select_resort {
+                .box{
+                  .copy_select_resort{
+                    color: $color-white;
+                  }
+                }
+
+              border: 1px solid $color-white;
+              &::before{
+                background-color: $color-white;
+              }
+              &::after{
+                border-top: 6px solid $color-white;
+              }
+            }
+          }
+          .checkin input.form-control,
+          .checkout input.form-control{
+            color: $color-white;
+          }
+        }
+
+        .resort_fly {
+          button#btn_book_now_resort_fly {
+            background-color: $color-r-hd-orange;
+            &::after{
+              display: none;
+            }
+          }
+          .box_inputs .select_resort_f .box_select_resort_f,.box_inputs .easy-autocomplete input.origin, .box_inputs .checkin input.form-control,.box_inputs .checkout input.form-control,.box_inputs .adults_select_rf .number_adults_rf,.box_inputs .children_select_rf .number_children_rf,.box_inputs .rooms_select_rf .box_number_romms_rf{
+            border: 1px solid $color-white;
+          }
+          .box_inputs .checkin input.form-control,
+          .box_inputs .checkout input.form-control{
+            color: $color-white;
+          }
+          .box_inputs {
+            .rooms_select_rf .box_number_romms_rf,
+            .children_select_rf .number_children_rf,
+            .adults_select_rf .number_adults_rf
+              {
+              &::before{
+                background-color: $color-white;
+              }
+              &::after{
+                border-top: 6px solid $color-white;
+              }
+              .box{
+                p{
+                  color: $color-white;
+                }
+              }
+
+          }
+            .checkin,
+            .checkout{
+              span{
+                color: $color-white;
+              }
+              &::before{
+                background-color: $color-white;
+              }
+              /* &::after{
+                border: 6px solid $color-white;
+              } */
+            }
+
+            .easy-autocomplete{
+              input.origin{
+                background-color: $color-white;
+              }
+            }
+            .select_resort_f {
+              .box_select_resort_f{
+                &::before{
+                  background-color:$color-white;
+                }
+                &::after{
+                  border-top: 6px solid $color-white;
+                }
+                p{
+                  color: $color-white;
+                }
+              }
+            }
+          }
+
+        }
+
+      }
+
+    }
+  }
+}
+
+body.page-node-type-landing-multiple {
+  @media (max-width: $desktopL){
+    padding: 0;
+  }
+
+    button#btn-book-now-mobile {
+        display: none;
+
+        @media (max-width: $desktopL){
+          display: block;
+        }
+    }
+
+    form.form_book_now {
+
+        .icons_booking {
+          .ico_resort {
+
+            .active:after {
+                border-top: 6px solid $color-r-dark-green;
+            }
+
+            img,span{
+              display: none;
+            }
+
+            p {
+              font-weight: 600;
+              opacity: 0.5;
+              color: $color-r-dark-green;
+            }
+
+            &.active {
+              p {
+                opacity: 1;
+                color: $color-r-dark-green;
+              }
+            }
+
+
+          }
+        }
+
+        .only_resort {
+
+          .rooms {
+            .type_guests_text_adult,
+            .type_guests_text_children,
+            .rooms_text_select {
+                border: 1px solid $color-r-dark-green;
+            }
+          }
+
+          .checkin,
+          .checkout {
+            input.form-control {
+              border: 1px solid $color-r-dark-green;
+            }
+          }
+
+          .select_resort {
+            .box_select_resort {
+              border: 1px solid $color-r-dark-green;
+            }
+          }
+
+        }
+
+        .resort_fly {
+
+          .box_inputs {
+            .rooms_select_rf,
+            .children_select_rf,
+            .adults_select_rf,
+            .checkin,
+            .checkout,
+            .easy-autocomplete,
+            .select_resort_f {
+              border: 1px solid $color-r-dark-green;
+            }
+          }
+
+        }
+
+      }
+
+}

@@ -1,0 +1,1182 @@
+.page-node-type-unipacks {
+    main {
+        .educon-container {
+            .region-content {
+                padding: 0 !important;
+            }
+            #block-educon-content {
+                .node__content {
+                    .banner-non-unipacks {
+                        //height: 500px;
+                        position: relative;
+                        .banner-non-unipacks--info {
+                            position: absolute;
+                            top: 50%;
+                            left: 10%;
+                            transform: translate(-10%, -50%);
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            @include media-query(mobile) {
+                                left: 25%;
+                                transform: translate(-25%, -50%);
+                            }
+                            .block-field-blocknodeunipackslabel-unipack {
+                                h3 {
+                                    font-size: 2.6rem;
+                                    color: white;
+                                    text-transform: uppercase;
+                                    @include media-query(mobile) {
+                                        font-size: 2rem;
+                                    }
+                                }
+                            }
+                            .block-field-blocknodeunipackstitle {
+                                h2 {
+                                    font-size: 4rem;
+                                    color: white;
+                                    width: 300px;
+                                    font-weight: 700;
+                                    margin-bottom: 8px;
+                                    @include media-query(mobile) {
+                                        font-size: 2.2rem;
+                                    }
+                                }
+                            }
+                            .block-field-blocknodeunipacksbody {
+                                p {
+                                    max-width: 450px;
+                                    font-size: 1.6rem;
+                                    color: white;
+                                    font-weight: 600;
+                                    @include media-query(mobile) {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+                            }
+                            .block-field-blocknodeunipackslink {
+                                margin-top: 16px;
+                                .link0 {
+                                    text-align: justify !important;
+                                    a {
+                                        padding: 8px 12px;
+                                        border-radius: 6px;
+                                        border: 1px solid white !important;
+                                        background-color: rgba(255, 255, 255, 0.3);
+                                        color: white !important;
+                                        text-transform: uppercase !important;
+                                    }
+                                }
+                            }
+                        }
+                        .banner-non-unipacks--img {
+                            .block-field-blocknodeunipacksbanner-desktop {
+                                // height: 500px;
+                                & > .field--type-image {
+                                    //height: 500px;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .layout--onecol {
+                        nav {
+                            margin: 36px;
+                            padding: 0 20px;
+                            ul {
+                                display: flex;
+                                flex-direction: row;
+                                border-bottom: 1px solid #92afd0;
+                                justify-content: space-evenly;
+                                margin: 0;
+                                li.nav-item {
+                                    font-size: 1.8rem;
+                                    font-weight: 400;
+                                    text-align: left;
+                                    &.active {
+                                        font-weight: 700;
+                                        border-bottom: 1px solid #92afd0;
+                                    }
+                                    @include media-query(mobile) {
+                                        text-align: center;
+                                    }
+                                }
+                                .owl-nav {
+                                    display: flex;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    width: 100%;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    button {
+                                        width: 30px;
+                                        height: 30px;
+                                        background-color: rgba(255, 255, 255, 0.9);
+                                        border-radius: 50%;
+                                        border: 1px solid #041d74;
+                                        &.owl-prev {
+                                            margin-left: -40px;
+                                            background-image: url("./assets/img/izquierda.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            display: block;
+                                            outline: none;
+                                            span {
+                                                display: none;
+                                                font-size: 2.5rem;
+                                                content: "";
+                                            }
+                                        }
+                                        &.owl-next {
+                                            margin-right: -40px;
+                                            background-image: url("./assets/img/derecha.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            display: block;
+                                            outline: none;
+                                            span {
+                                                display: none;
+                                                font-size: 2.5rem;
+                                                content: "";
+                                                font-size: 2.5rem;
+                                            }
+                                        }
+                                        &:hover {
+                                            background-color: rgba(255, 255, 255, 0.9);
+                                        }
+                                    }
+                                }
+                                .owl-dots {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .layout__region--content {
+                            .block-block-content {
+                                .field--name-title {
+                                    text-align: center;
+                                    font-size: 2.8rem;
+                                    color: #172666;
+                                    font-weight: 700;
+                                    margin-top: 32px;
+                                    @include media-query(mobile) {
+                                        font-size: 2.2rem;
+                                    }
+                                }
+                                .itemBody-0 {
+                                    p {
+                                        width: 50%;
+                                        margin: 0 auto;
+                                        font-size: 1.5rem;
+                                        font-weight: 300;
+                                        margin-bottom: 32px;
+                                        @include media-query(mobile) {
+                                            font-size: 1.4rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .non-programs-why-study {
+                        height: 500px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        position: relative;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            background-color: #f6c22a;
+                            z-index: 0;
+                            opacity: 0.9;
+                            top: 0;
+                            left: 0;
+                        }
+                        .non-programs-why-study--img {
+                            display: none;
+                            .block-field-blocknodeunipacksimage-desktop {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .non-programs-why-study--title-block {
+                            z-index: 3;
+                            margin: 12px;
+                            .block-field-blocknodeunipackstitle-block {
+                                text-align: center;
+                                // margin: 24px 0;
+                                h3 {
+                                    color: $color-btn-a;
+                                    font-size: 2.8rem;
+                                    text-transform: uppercase;
+                                    font-weight: bold;
+                                    @include media-query(mobile) {
+                                        font-size: 2.2rem;
+                                    }
+                                }
+                            }
+                            .non-programs-why-study--subtitle-block {
+                                p {
+                                    color: $color-btn-a;
+                                    font-size: 1.6rem;
+                                    text-transform: uppercase;
+                                    @include media-query(mobile) {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+                            }
+                        }
+                        .non-programs-why-study--subtitle-block {
+                            z-index: 3;
+                        }
+                        .non-programs-why-study--cards-why-study {
+                            position: relative;
+                            z-index: 3;
+                            .field--name-cards-why-study {
+                                // margin: 12px;
+                                // padding: 24px;
+                                max-width: 1000px;
+                                position: inherit;
+                                margin: 0 auto;
+                                @include media-query(mobile) {
+                                    max-width: 100%;
+                                }
+                                .owl-stage-outer {
+                                    position: inherit;
+                                    z-index: 3;
+                                }
+
+                                .field__item {
+                                    @include media-query(mobile) {
+                                        width: 100%;
+                                    }
+                                    #porque-estudiar {
+                                        height: 300px;
+                                        text-align: center;
+                                        background-color: white;
+                                        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: space-evenly;
+                                        padding: 24px;
+                                        @include media-query(mobile) {
+                                            width: 300px;
+                                            margin: 0 auto;
+                                        }
+                                        .cards-why-study--icon-card {
+                                            height: 70px;
+                                            width: 70px;
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: contain;
+                                            }
+                                        }
+                                        .cards-why-study--title-card {
+                                            margin-top: 12px;
+                                            h3 {
+                                                font-size: 1.8rem;
+                                                font-weight: 700;
+                                                color: #172666;
+                                                height: 60px;
+                                            }
+                                        }
+                                        .cards-why-study--description-card {
+                                            p {
+                                                font-weight: 300;
+                                                color: #00071c;
+                                                height: 100px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .owl-nav {
+                                    display: flex;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    width: 100%;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    z-index: 0;
+                                    @include media-query(mobile) {
+                                        display: none;
+                                    }
+                                    button {
+                                        width: 40px;
+                                        height: 40px;
+                                        //background-color: rgba(255, 255, 255, 0.5);
+                                        border-radius: 50%;
+                                        border: 1px solid white;
+                                        background-color: transparent;
+
+                                        &.owl-prev {
+                                            margin-left: 20px;
+                                            background-image: url("./assets/img/izquierda.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            display: block;
+                                            outline: none;
+                                            span {
+                                                display: none;
+                                                content: "";
+                                                font-size: 2.5rem;
+                                            }
+                                        }
+                                        &.owl-next {
+                                            margin-right: 20px;
+                                            background-image: url("./assets/img/derecha.svg");
+                                            background-size: auto;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            display: block;
+                                            outline: none;
+                                            span {
+                                                display: none;
+                                                content: "";
+                                                font-size: 2.5rem;
+                                            }
+                                        }
+                                        &:hover {
+                                            background-color: rgba(255, 255, 255, 0.9);
+                                        }
+                                    }
+                                }
+                                .owl-dots {
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: -8%;
+                                    transform: translate(-50%, 8%);
+                                    @include media-query(mobile) {
+                                        bottom: -20px;
+                                    }
+                                    .owl-dot {
+                                        width: 10px;
+                                        height: 10px;
+                                        background-color: #9e64bb;
+                                        border-radius: 50%;
+                                        border: 1px solid white;
+                                        margin: 0 2px;
+                                        &.active {
+                                            width: 15px;
+                                            height: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .two-columns-unipacks {
+                        position: relative;
+                        margin-top: 40px;
+                        display: grid;
+                        grid-template-columns: 100px 1fr 100px 300px 100px;
+                        gap: 12px;
+                        grid-template-areas: ". texts . price .";
+                        @include media-query(mobile) {
+                            grid-template-columns: 1fr;
+                            grid-template-areas:
+                                "texts"
+                                "price";
+                            padding: 0 20px;
+                        }
+                        .infoColumn0 {
+                            grid-area: texts;
+                            #acerca-unipacks {
+                                .two-columns-unipacks--left--about--title-block {
+                                    .block-field-blocknodeunipacksgeneric-title {
+                                        h3 {
+                                            color: #172666;
+                                            font-weight: 700;
+                                            font-size: 2.8rem;
+                                            @include media-query(mobile) {
+                                                font-size: 2.2rem;
+                                            }
+                                        }
+                                    }
+                                }
+                                .two-columns-unipacks--left--subtitle-block {
+                                    margin: 12px 0;
+                                    .block-field-blocknodeunipacksabout-subtitle {
+                                        h4 {
+                                            font-size: 2rem;
+                                            color: #000f41;
+                                        }
+                                    }
+                                }
+                                .two-columns-unipacks--left--description-block {
+                                    margin: 16px 0;
+                                    .block-field-blocknodeunipacksdescription-programs {
+                                        p {
+                                            font-size: 1.6rem;
+                                            font-weight: 300;
+                                            color: #00071c;
+                                        }
+                                    }
+                                }
+                                .two-columns-unipacks--left--img {
+                                    overflow: hidden;
+                                    border-radius: 6px;
+
+                                    .block-field-blocknodenon-formal-programsimage-desktop-about {
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                            #contentido-unipacks {
+                                .two-columns-unipacks--left--title-content {
+                                    margin-top: 16px;
+                                    margin-bottom: 16px;
+                                    .block-field-blocknodeunipackstitle-content {
+                                        & > .field--name-title-content {
+                                            color: #172666;
+                                            font-size: 2.4rem;
+                                            font-weight: 700;
+                                            @include media-query(mobile) {
+                                                font-size: 2.2rem;
+                                            }
+                                        }
+                                    }
+                                }
+                                .two-columns-unipacks--left--subtitle-content {
+                                    .block-field-blocknodeunipackssubtitle-content {
+                                        & > .field--name-subtitle-content {
+                                            font-size: 1.6rem;
+                                            color: #000f41;
+                                        }
+                                    }
+                                }
+                                .two-columns-unipacks--left--description-content {
+                                    .block-field-blocknodeunipacksdescription-content {
+                                        ul {
+                                            li {
+                                                font-size: 1.6rem;
+                                                font-weight: 300;
+                                                padding: 8px 0;
+                                                height: auto;
+                                                strong {
+                                                    display: none;
+                                                }
+                                                &::before {
+                                                    content: "";
+                                                    background-image: url("./assets/img/arrow_unipackDetail.svg");
+                                                    background-size: auto;
+                                                    background-repeat: no-repeat;
+                                                    background-position: center;
+                                                    width: 17px;
+                                                    height: 17px;
+
+                                                    border-top: 0;
+                                                    border-right: 0;
+                                                    border-bottom: 0;
+                                                    border-left: 0;
+                                                    margin-right: 8px;
+                                                    display: block;
+                                                    float: left;
+                                                }
+                                                ul {
+                                                    li {
+                                                        font-size: 1.6rem;
+                                                        font-weight: 300;
+                                                        padding: 8px 0;
+                                                        height: auto;
+                                                        strong {
+                                                            display: none;
+                                                        }
+                                                        &::before {
+                                                            content: "";
+                                                            background-image: url("./assets/img/arrow_unipackDetail.svg");
+                                                            background-size: auto;
+                                                            background-repeat: no-repeat;
+                                                            background-position: center;
+                                                            width: 17px;
+                                                            height: 17px;
+
+                                                            border-top: 0;
+                                                            border-right: 0;
+                                                            border-bottom: 0;
+                                                            border-left: 0;
+                                                            margin-right: 8px;
+                                                            display: block;
+                                                            float: left;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            #beneficios-unipacks {
+                                .two-columns-unipacks--left--title-benefits {
+                                    margin-top: 16px;
+                                    .block-field-blocknodeunipackstitle-objetive {
+                                        & > .field--name-title-objetive {
+                                            color: #172666;
+                                            font-size: 2.4rem;
+                                            font-weight: 700;
+                                            @include media-query(mobile) {
+                                                font-size: 2.2rem;
+                                            }
+                                        }
+                                    }
+                                }
+                                .two-columns-unipacks--left--subtitle-benefits {
+                                    .block-field-blocknodeunipackssubtitle-objetives {
+                                        margin-top: 16px;
+                                        & > .field--name-subtitle-objetives {
+                                            font-size: 2rem;
+                                            color: #000f41;
+                                        }
+                                    }
+                                }
+                                .two-columns-unipacks--left--description-benefits {
+                                    .block-field-blocknodeunipacksdescription-objetives {
+                                        ul {
+                                            li {
+                                                font-size: 1.6rem;
+                                                font-weight: 300;
+
+                                                align-items: center;
+                                                height: auto;
+                                                padding: 8px 0;
+                                                strong {
+                                                    display: none;
+                                                }
+                                                &::before {
+                                                    content: "";
+                                                    background-image: url("./assets/img/arrow_unipackDetail.svg");
+                                                    background-size: auto;
+                                                    background-repeat: no-repeat;
+                                                    background-position: center;
+                                                    width: 17px;
+                                                    height: 17px;
+
+                                                    border-top: 0;
+                                                    border-right: 0;
+                                                    border-bottom: 0;
+                                                    border-left: 0;
+                                                    margin-right: 8px;
+                                                    display: block;
+                                                    float: left;
+                                                }
+                                                ul {
+                                                    li {
+                                                        font-size: 1.6rem;
+                                                        font-weight: 300;
+                                                        padding: 8px 0;
+                                                        align-items: center;
+                                                        height: auto;
+                                                        padding: 8px 0;
+                                                        strong {
+                                                            display: none;
+                                                        }
+                                                        &::before {
+                                                            content: "";
+                                                            background-image: url("./assets/img/arrow_unipackDetail.svg");
+                                                            background-size: auto;
+                                                            background-repeat: no-repeat;
+                                                            background-position: center;
+                                                            width: 17px;
+                                                            height: 17px;
+
+                                                            border-top: 0;
+                                                            border-right: 0;
+                                                            border-bottom: 0;
+                                                            border-left: 0;
+                                                            margin-right: 8px;
+                                                            display: block;
+                                                            float: left;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .infoColumn1 {
+                            grid-area: price;
+                            position: relative;
+
+                            #informacion-unipacks {
+                                position: sticky;
+                                top: 15%;
+                                background-color: #f8f8f8;
+                                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                                padding: 20px;
+                                border-radius: 6px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-start;
+                                flex-direction: column;
+                                &::before {
+                                    content: "";
+                                    background-image: url("./assets/img/arrrow_details_info.svg");
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    width: 174px;
+                                    height: 50%;
+                                    border-top: 0;
+                                    border-right: 0;
+                                    border-bottom: 0;
+                                    border-left: 0;
+                                    margin-right: 8px;
+                                    position: absolute;
+                                    bottom: -10.8%;
+                                    left: 0;
+                                    z-index: 0;
+                                }
+                                .two-columns-unipacks--right--title-general-info {
+                                    margin-bottom: 18px;
+                                    width: 100%;
+                                    h3 {
+                                        font-weight: 700;
+                                        font-size: 2rem;
+                                        color: #172666;
+                                    }
+                                }
+                                .two-columns-unipacks--right--description_gen_info {
+                                }
+                                .two-columns-unipacks--left--description-content {
+                                    border-bottom: 1px solid #92afd0;
+                                    padding: 16px 0;
+                                    width: 100%;
+                                    h3 {
+                                        font-size: 1.6rem;
+                                        color: #172666;
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                        margin-bottom: 8px;
+                                    }
+                                    .block-field-blocknodeunipacksdescripcion-certificacion-otorga {
+                                        p {
+                                            font-size: 1.5rem;
+                                            font-weight: 300;
+                                            color: $color-btn-a;
+                                        }
+                                    }
+                                }
+                                .two-columns-unipacks--right--knowledge_area {
+                                    border-bottom: 1px solid #92afd0;
+                                    padding: 16px 0;
+                                    width: 100%;
+                                    h3 {
+                                        font-size: 1.6rem;
+                                        color: #172666;
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                    }
+                                    .block-field-blocknodeunipackstitle {
+                                        p {
+                                            font-size: 1.5rem;
+                                            font-weight: 300;
+                                            color: $color-btn-a;
+                                        }
+                                    }
+                                }
+                                .two-columns-unipacks--right--modality {
+                                    border-bottom: 1px solid #92afd0;
+                                    padding: 16px 0;
+                                    width: 100%;
+                                    .block-field-blocknodeunipacksmodality {
+                                        h2 {
+                                            font-size: 1.6rem;
+                                            color: #172666;
+                                            font-weight: 700;
+                                            text-transform: uppercase;
+                                        }
+                                        p {
+                                            font-size: 1.5rem;
+                                            font-weight: 300;
+                                            color: $color-btn-a;
+                                        }
+                                    }
+                                }
+                                .two-columns-programs--right--duration {
+                                    border-bottom: 1px solid #92afd0;
+                                    padding: 16px 0;
+                                    width: 100%;
+                                    h4 {
+                                        font-size: 1.6rem;
+                                        color: #172666;
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                    }
+                                    .block-field-blocknodenon-formal-programshours-or-credits {
+                                        p {
+                                            font-size: 1.5rem;
+                                            font-weight: 300;
+                                            color: $color-btn-a;
+                                        }
+                                    }
+                                }
+                                .two-columns-unipacks--right--investment {
+                                    padding: 16px 0;
+                                    z-index: 3;
+                                    h3 {
+                                        font-size: 1.6rem;
+                                        color: #172666;
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                    }
+                                    .block-field-blocknodeunipackscost-investment-values {
+                                        .field--name-cost-investment-values {
+                                            .field__item {
+                                                .paragraph--type--investment-cost {
+                                                    .container {
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        flex-direction: row;
+                                                        align-items: center;
+                                                        gap: 16px;
+                                                        padding: 0;
+                                                        .label-investment,
+                                                        .label-numbers {
+                                                            p {
+                                                                color: $color-btn-a;
+                                                                font-weight: 400;
+                                                                width: 57px;
+                                                            }
+                                                        }
+                                                        .label-investment {
+                                                            p {
+                                                                font-weight: 700;
+                                                                width: 100px;
+                                                            }
+                                                        }
+                                                        .label-numbers {
+                                                            p {
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .two-columns-unipacks--right--incription_button {
+                                    width: 100%;
+                                    text-align: center;
+                                    margin-bottom: 28px;
+                                    margin-top: 12px;
+                                    z-index: 3;
+                                    .block-field-blocknodeunipackslink {
+                                        .link1 {
+                                            a {
+                                                width: 100%;
+                                                padding: 1rem 2rem;
+                                                background-color: #04228b;
+                                                display: block;
+                                                border-radius: 6px;
+                                                border: 1px solid #00071c;
+                                                color: white;
+                                                text-transform: uppercase;
+                                                &:hover {
+                                                    background-color: transparent;
+                                                    color: #00071c;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .block-related {
+                        margin: 30px 0;
+                        .block-related--title-description {
+                            .field--name-title {
+                                text-align: center;
+                                font-size: 2.8rem;
+                                color: $color-gold;
+                                margin: 1rem;
+                                font-weight: 700;
+                                @include media-query(mobile) {
+                                    font-size: 2.2rem;
+                                }
+                            }
+                            .field--type-text-with-summary {
+                                text-align: center;
+                                margin: 0 auto;
+                                max-width: 700px;
+                                p {
+                                    strong {
+                                        font-size: 1.6rem;
+                                    }
+                                    text-align: center;
+                                    margin-bottom: 2rem;
+                                    font-size: 1.6rem;
+                                    @include media-query(mobile) {
+                                        font-size: 1.4rem;
+                                        padding: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        .block-related--items {
+                            .block-block-content {
+                                .field--name-title {
+                                    text-align: center;
+                                    font-size: 2.8rem;
+                                    color: $color-gold;
+                                    margin-top: 2rem;
+                                    margin-bottom: 1rem;
+                                    font-weight: 700;
+                                    @include media-query(mobile) {
+                                        font-size: 2.2rem;
+                                    }
+                                }
+                                .field--type-text-with-summary {
+                                    text-align: center;
+                                    margin: 0 auto;
+                                    max-width: 700px;
+                                    p {
+                                        strong {
+                                            font-size: 1.6rem;
+                                            color: #00071c;
+                                            font-weight: 300;
+                                        }
+                                        text-align: center;
+                                        margin-bottom: 2rem;
+                                        font-size: 1.6rem;
+                                        color: #00071c;
+                                        font-weight: 300;
+                                        @include media-query(mobile) {
+                                            font-size: 1.4rem;
+                                            padding: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                            .menu--menu-relacionados-cursos-y-diplo {
+                                .nav {
+                                    max-width: 500px;
+                                    margin: 0 auto;
+                                    justify-content: space-around;
+                                    flex-direction: row;
+                                    flex-wrap: nowrap;
+                                    border-bottom: 1px solid #92afd0;
+                                    margin-bottom: 40px;
+                                    li {
+                                        border-bottom: none;
+                                        width: 170px;
+                                        text-align: center;
+                                        span {
+                                            font-size: 1.8rem;
+                                            text-decoration: none;
+                                            color: $color-btn-a;
+                                            font-weight: 400;
+                                            text-transform: uppercase;
+                                        }
+                                        &.active {
+                                            border-bottom: 1px solid $color-bottom-border;
+                                            a {
+                                                font-weight: 900;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .blocks-cursos-diplomados {
+                            padding: 0 20px;
+                            margin: 0 20px;
+                            @include media-query(mobile) {
+                                padding: 0;
+                                margin: 0 auto;
+                                margin-bottom: 84px;
+                            }
+                            .block-related--cursos {
+                                position: relative;
+                                padding: 20px;
+                                margin: 0 20px;
+                                @include media-query(mobile) {
+                                    padding: 0;
+                                    margin: 0 auto;
+                                }
+                                .block-views-blockunipacks-list-unipacks {
+                                    padding: 20px;
+                                    margin: 0 20px;
+                                    @include media-query(mobile) {
+                                        padding: 0;
+                                        margin: 0 auto;
+                                    }
+                                    .view-id-unipacks {
+                                        @include media-query(mobile) {
+                                            width: 100%;
+                                        }
+                                        .view-content {
+                                            position: relative;
+                                            .owl-stage-outer {
+                                                position: inherit;
+
+                                                .views-row {
+                                                    display: grid;
+                                                    grid-template-columns: 10px 1fr 10px;
+                                                    grid-template-areas:
+                                                        "images images images"
+                                                        ". desc .";
+                                                    padding: 8px;
+
+                                                    .our-programs__image {
+                                                        grid-area: images;
+                                                        width: 100%;
+                                                        //height: 347px;
+                                                        overflow: hidden;
+                                                        border-radius: 6px;
+                                                        position: relative;
+                                                        img {
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            object-fit: contain;
+                                                        }
+                                                        .arrow {
+                                                            bottom: 0;
+                                                            height: 201px;
+                                                            left: -53px;
+                                                            position: absolute;
+                                                            width: 158px;
+                                                            @include media-query(desktopXL) {
+                                                                left: -53px;
+                                                                height: 148px;
+                                                                width: 148px;
+                                                            }
+                                                            @include media-query(mobile) {
+                                                                height: 200px;
+                                                                width: 200px;
+                                                                left: -70px;
+                                                            }
+                                                            svg {
+                                                                height: 100%;
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                    }
+                                                    .our-programs__info {
+                                                        grid-area: desc;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        width: 100%;
+                                                        z-index: 3;
+                                                        margin-top: -44px;
+                                                        background-color: white;
+                                                        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                                                        padding: 12px;
+                                                        border-radius: 6px;
+                                                        .info__tags {
+                                                            height: 29px;
+                                                            margin-bottom: 20px;
+                                                            .item-list {
+                                                                ul {
+                                                                    display: flex;
+                                                                    justify-content: flex-start;
+                                                                    align-items: flex-start;
+                                                                    /* margin: 0; */
+                                                                    text-align: center;
+                                                                    gap: 12px;
+                                                                    li {
+                                                                        margin: 0;
+                                                                        background-color: #f2f2f2;
+                                                                        border-radius: 6px;
+                                                                        font-size: 1.4rem;
+                                                                        padding: 4px 12px;
+                                                                        font-weight: 300;
+                                                                        @include media-query(desktopXL) {
+                                                                            font-size: 1.2rem;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        .info__title {
+                                                            margin: 14px 0;
+                                                            text-transform: uppercase;
+                                                            font-weight: 700;
+                                                            font-size: 1.8rem;
+                                                            overflow: hidden;
+                                                            display: inline-block;
+                                                            text-overflow: ellipsis;
+                                                            height: 55px;
+                                                            color: #172666;
+                                                            @include media-query(desktopXL) {
+                                                                font-size: 1.6rem;
+                                                                margin: 0;
+                                                            }
+                                                        }
+                                                        .description {
+                                                            margin: 14px 0;
+                                                            overflow: hidden;
+                                                            display: inline-block;
+                                                            height: 105px;
+                                                            width: 100%;
+                                                            text-overflow: ellipsis;
+                                                            font-weight: 300;
+                                                            font-size: 1.6rem;
+                                                            @include media-query(desktopXL) {
+                                                                font-size: 1.4rem;
+                                                            }
+                                                        }
+                                                        .info__info-general {
+                                                            display: grid;
+                                                            grid-template-columns: repeat(3, 1fr);
+                                                            place-content: center;
+                                                            align-items: center;
+                                                            justify-items: center;
+                                                            border-bottom: 1px solid $color-bottom-border;
+                                                            gap: 8px;
+                                                            .info__modalidad,
+                                                            .info__inversion,
+                                                            .info__duracion {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                height: 70px;
+                                                                align-items: center;
+                                                                h2 {
+                                                                    font-size: 1.4rem;
+                                                                    margin-bottom: 8px;
+                                                                }
+                                                                p {
+                                                                    font-size: 1.24rem;
+                                                                    font-weight: 300;
+                                                                }
+                                                            }
+                                                        }
+                                                        .info__read-more {
+                                                            text-align: center;
+                                                            margin: 12px 0 0 0;
+                                                            a {
+                                                                text-decoration: underline;
+                                                                text-transform: uppercase;
+                                                                &:hover {
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .owl-nav {
+                                                display: flex;
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 0;
+                                                width: 100%;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                @include media-query(mobile) {
+                                                    display: none;
+                                                }
+                                                button {
+                                                    width: 40px;
+                                                    height: 40px;
+                                                    background-color: rgba(255, 255, 255, 0.5);
+                                                    border-radius: 50%;
+                                                    border: 1px solid #041d74;
+                                                    &.owl-prev {
+                                                        margin-left: -40px;
+                                                        background-image: url("./assets/img/izquierda.svg");
+                                                        background-size: auto;
+                                                        background-repeat: no-repeat;
+                                                        background-position: center;
+                                                        display: block;
+                                                        outline: none;
+                                                        span {
+                                                            display: none;
+                                                            content: "";
+                                                            font-size: 2.5rem;
+                                                        }
+                                                    }
+                                                    &.owl-next {
+                                                        margin-right: -40px;
+                                                        background-image: url("./assets/img/derecha.svg");
+                                                        background-size: auto;
+                                                        background-repeat: no-repeat;
+                                                        background-position: center;
+                                                        display: block;
+                                                        outline: none;
+                                                        span {
+                                                            display: none;
+                                                            content: "";
+                                                            font-size: 2.5rem;
+                                                        }
+                                                    }
+                                                    &:hover {
+                                                        background-color: rgba(255, 255, 255, 0.9);
+                                                    }
+                                                }
+                                                &.disabled {
+                                                    display: none !important;
+                                                }
+                                            }
+                                            .owl-dots {
+                                                display: block;
+                                                position: absolute;
+                                                left: 50%;
+                                                bottom: -8%;
+                                                transform: translate(-50%, 8%);
+                                                @include media-query(mobile) {
+                                                    bottom: -45px;
+                                                }
+                                                .owl-dot {
+                                                    width: 10px;
+                                                    height: 10px;
+                                                    background-color: #9e64bb;
+                                                    border-radius: 50%;
+                                                    border: 1px solid white;
+                                                    margin: 0 2px;
+                                                    &.active {
+                                                        width: 15px;
+                                                        height: 15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .block-block-content {
+                                    .field--name-link {
+                                        text-align: center;
+                                        margin: 80px 0 32px 0;
+                                        a {
+                                            padding: 0.8rem 3.5rem;
+                                            border: 1px solid $color-btn-a;
+                                            color: $color-btn-a;
+                                            border-radius: 6px;
+                                            text-decoration: none;
+                                            font-weight: 400;
+                                            text-transform: uppercase;
+                                            &:hover {
+                                                background-color: #07228b;
+                                                color: white;
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

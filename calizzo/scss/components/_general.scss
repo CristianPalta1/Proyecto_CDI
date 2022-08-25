@@ -1,0 +1,208 @@
+.products_featured__header,
+.projects_featured__header {
+  text-align: center;
+  margin: 6rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+
+  @include media-query(desktopLS) {
+    margin: 4.5rem 0;
+    padding: 2.5rem 0;
+  }
+  .titles__section {
+    font-size: 3rem;
+    z-index: 3;
+    background-color: $color-white;
+    padding: 0 2rem;
+    position: relative;
+    font-weight: 900;
+    width: initial;
+    @include media-query(desktopLS) {
+      font-size: 2.8rem;
+    }
+    @include media-query(desktopL) {
+      font-size: 2.5rem;
+    }
+    @include media-query(desktop) {
+      font-size: 1.8rem;
+    }
+    @include media-query(tablet) {
+      width: 71%;
+      padding: 0;
+    }
+    &::after {
+      content: "";
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: $color-input;
+      border-radius: 50%;
+      border: none;
+      position: absolute;
+      z-index: 4;
+    }
+  }
+  &::before {
+    content: "";
+    width: 100%;
+    height: 0.1rem;
+    background-color: $color-gray-nav-links;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    z-index: 0;
+  }
+}
+
+.products_featured__header {
+  .titles__section {
+    &::after {
+      bottom: -4%;
+      right: 7.7%;
+      transform: translate(4%, -7.7%);
+    }
+  }
+}
+
+.projects_featured__header {
+  .titles__section {
+    &::after {
+      bottom: -4%;
+      right: 11.9%;
+      transform: translate(4%, -11.9%);
+    }
+  }
+}
+
+.views-element-container,
+.product__info,
+.product_simulator {
+  margin: 0 4rem;
+  padding: 0 2rem;
+  @include media-query(tablet) {
+    margin: 0 1rem;
+    padding: 0 1rem;
+  }
+}
+
+.products_featured__footer {
+  display: inline-block;
+  text-align: center;
+  margin: 10rem 0;
+  width: initial;
+  overflow: hidden;
+  position: relative;
+  @include media-query(desktopLS) {
+    margin: 6.5rem 0;
+  }
+  @include media-query(tablet) {
+    width: 100%;
+    margin: 0;
+  }
+  a {
+    display: block;
+    padding: 1rem 5.5rem;
+    border-radius: 0.6rem;
+    border: 0.1rem solid $color-black;
+    color: $color-black;
+    font-size: 1.6rem;
+    font-weight: 800;
+    width: initial;
+    z-index: 2;
+    @include media-query(tablet) {
+      width: 100%;
+      padding: 0.8rem 5rem;
+      font-size: 1.4rem;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $color-black;
+    transition: all 0.5s;
+    border-radius: 0.6rem;
+    z-index: -1;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+    a {
+      color: $color-white;
+      font-weight: 700;
+    }
+  }
+}
+
+.products_featured__info,
+.data__card {
+  h3, h2,
+  .products_featured__title {
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding-left: 2rem;
+    text-transform: uppercase;
+    text-align: initial;
+    @include media-query(desktopL) {
+      font-size: 1.6rem;
+    }
+  }
+  p,
+  .products_featured__body {
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    text-align: initial;
+    height: 5.5rem;
+    @include media-query(tablet) {
+      height: initial;
+    }
+  }
+}
+
+.products_featured__link,
+.projects_featured__link,
+.link__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+  padding-left: 1rem;
+  @include media-query(desktopL) {
+    gap: 1rem;
+  }
+  a {
+    color: $color-links-a;
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+    border-radius: 0.6rem;
+
+    &:hover {
+      color: $color-black;
+      background-color: #e5e5e5;
+    }
+    &.active {
+      color: $color-black;
+      background-color: #e5e5e5;
+    }
+    @include media-query(desktopLS) {
+      font-size: 1.2rem;
+    }
+    @include media-query(desktopL) {
+      padding: 0.5rem 0.5rem;
+    }
+  }
+}
+
+// .layout--onecol {
+//   background-color: $color-white;
+// }

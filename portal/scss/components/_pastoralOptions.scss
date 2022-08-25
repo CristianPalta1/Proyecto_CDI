@@ -1,0 +1,26 @@
+/*pastoralOptions*/
+.pastoralOptions {
+  padding: 60px 0;
+  @media (max-width: $tablet) {
+    padding: 40px 0;
+  }
+  .pastoralOptions__options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .btn-border {
+      width: calc(33.33% - 40px);
+      margin: 15px 20px;
+      padding: 15px 30px;
+      text-align: center;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: $mobile) {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+      }
+    }
+  }
+}

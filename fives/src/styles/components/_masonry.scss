@@ -1,0 +1,411 @@
+section.masonry-section {
+   padding: 0;
+   &.experiences-and-services{
+     margin-bottom: 0;;
+   }
+  .content-title{
+    margin: 1rem 0;
+    font-weight: 300;
+                color: black;
+                font-size: 2rem;
+                text-transform: uppercase;
+                text-align: center;
+              
+                @media (max-width: $desktopLS) {
+                    font-size: 1.5rem;
+                }
+                @media (max-width: $desktop) {
+                    font-size: 1.3rem;
+                }
+                @media (max-width: $desktop) {
+                  margin: 0.5rem 0;
+                }
+                b, span {
+                    font-size: 3.2rem;
+                    display: block;
+                    font-weight: 300;
+                    @media (max-width: $desktopLS) {
+                        font-size: 2.9rem;
+                    }
+                    @media (max-width: $desktop) {
+                        font-size: 2.5rem;
+                    }
+                }
+  }
+  .masonry-link-field {
+    text-align: center;
+    @media (max-width: $desktop) {
+      margin: 1rem 0 2rem;
+    }
+    @media (max-width: $tablet) {
+      margin: 2.5rem 0 2rem;
+      padding: 0 21px;
+      
+    }
+ 
+    a,
+    .btn-see-all {
+      position: relative;
+      padding: 10px 45px;
+      border: 1px solid $gray;
+      border-radius: 0;
+      text-transform: uppercase;
+      white-space: normal;
+      overflow: hidden;
+      z-index: 1;
+    
+      @media (max-width: $tablet) {
+       width:100%        
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 100%;
+        background: black;
+        z-index: -1;
+        transition: width 0.5s ease-in-out;
+    }
+    &:hover {
+     
+            color: white;
+            font-weight: 700;
+            &::after {
+                width: 110%;
+            }
+        
+    }
+    }
+  }
+  .masonry {
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    -ms-flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 0;
+    height: auto;
+
+    &.main-masonry,
+    &.detail-masonry {
+      .masonry-item {
+        box-sizing: border-box;
+        margin: 3px;
+        position: relative;
+        width: 33.3%;
+        img{
+          display: none;
+        
+        }
+
+        img[src] {
+          width: 100%;
+          height: 100%;
+          filter: brightness(80%);
+          object-fit: cover;
+          object-position: center center;
+          display: block;
+          &.image_without_src{
+            display: none !important;
+          }
+        }
+
+        .masonry-content-info {
+          position: absolute;
+          bottom: 10px;
+          box-sizing: border-box;
+          padding: 20px;
+          text-align: center;
+
+          .masonry-icon-content {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.397);
+            border: 1px solid white;
+            border-radius: 50%;
+            margin: 10px auto;
+            position: relative;
+            &::after {
+              content: url(../../../public/resourses/assets/eye-gallery-icon.svg);
+              top: 54%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              position: absolute;
+            }
+          }
+          .masonry-content-title {
+            color: white;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+          }
+          .masonry-content-description {
+        
+            font-weight: 400;
+            margin-bottom: 1.7rem;
+            color: white;
+            padding-right: 20%;
+            display: none;
+            transition: all 0.5s;
+            animation: ease-in 0.5s;
+          }
+          .masonry-link {
+            color: white;
+            display: none;
+            font-weight: 200;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.5s;
+            animation: ease-in 0.5s;
+            &:hover {
+              font-weight: 600;
+            }
+            a{
+              color: white;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+          img[src] {
+            filter: brightness(50%);
+          }
+          .masonry-content-info {
+            .masonry-content-description,
+            .masonry-link {
+              display: block;
+              transition: all 1s;
+              animation: ease-in 1s;
+            }
+          }
+        }
+      }
+    }
+
+    &.detail-masonry {
+      @media (min-width: $tablet) {
+        height: 70vw;
+      }
+      @media (min-width: $desktop) {
+        height: 75vw;
+      }
+      @media (min-width: $desktopL) {
+        height: 80vw;
+      }
+
+      @media (min-width: 1500px) {
+        height: 50vw;
+      }
+      .masonry-item {
+        text-align: center;
+        .masonry-content-info {
+          bottom: 0%;
+          top: 50%;
+          transform: translateY(-50%);
+          text-align: center;
+          width: 100%;
+          display: none;
+          .masonry-content-title {
+            text-align: center;
+          }
+          .masonry-content-description {
+            padding: 0;
+          }
+          .masonry-item{            a{
+
+              color: white;
+            }
+          }
+        }
+        &:hover {
+          .masonry-content-info {
+            display: block;
+            transition: all 0.5s;
+          }
+        }
+        &:nth-child(1) {
+          order: 1;
+          height: 350px;
+        }
+        &:nth-child(2) {
+          order: 2;
+          height: 450px;
+        }
+        &:nth-child(3) {
+          order: 3;
+          height: 350px;
+        }
+        &:nth-child(4) {
+          order: 1;
+          height: 450px;
+        }
+        &:nth-child(5) {
+          order: 2;
+          height: 350px;
+        }
+        &:nth-child(6) {
+          order: 3;
+          height: 450px;
+        }
+      }
+    }
+
+    &.main-masonry {
+      // overflow-x: scroll;
+      @media (min-width: $tablet) {
+        height: 123vw;
+      }
+      @media (min-width: $desktop) {
+        height: 94vw;
+      }
+
+      @media (min-width: $desktopL) {
+        height: 79vw;
+      }
+      @media (min-width: 1331px) {
+        height: 75vw;
+      }
+      @media (min-width: 1366px) {
+        height: 72vw;
+      }
+
+      @media (min-width: 1500px) {
+        height: 64vw;
+      }
+
+      @media (min-width: 1750px) {
+        height: 54vw;
+      }
+      @media (min-width: 2200px) {
+        height: 40vw;
+      }
+      .masonry-item {
+        &:nth-child(1) {
+          width: 25%;
+          order: 1;
+          height: 420px;
+        }
+        &:nth-child(2) {
+          width: 50%;
+          order: 2;
+          height: 475px;
+        }
+        &:nth-child(3) {
+          width: 25%;
+          order: 3;
+          height: 530px;
+        }
+        &:nth-child(4) {
+          width: 25%;
+          order: 1;
+          height: 530px;
+        }
+        &:nth-child(5) {
+          width: 50%;
+          order: 2;
+          height: 475px;
+        }
+        &:nth-child(6) {
+          width: 25%;
+          order: 3;
+          height: 420px;
+        }
+      }
+    }
+  }
+  .col-md-12 {
+    position: relative;
+    .masonry-carousel {
+      position: initial;
+      height: 400px;
+      .react-multi-carousel-track {
+        height: 100%;
+      }
+      .masonry-item {
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        max-width: 335px;
+        max-height: 430px;
+        margin: 0 auto;
+
+        @media (max-width: $desktop) {
+          height: 100%;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          filter: brightness(50%);
+          object-fit: cover;
+          object-position: center center;
+        }
+        .masonry-content-info {
+          position: absolute;
+          bottom: 10px;
+          box-sizing: border-box;
+          padding: 20px;
+          transition: all 1s;
+          animation: ease-in 1s;
+          .masonry-content-title {
+            color: white;
+            text-transform: uppercase;
+            font-size: 17px;
+          }
+          .masonry-content-description {
+            color: white;
+            padding-right: 20%;
+
+            transition: all 0.5s;
+            animation: ease-in 0.5s;
+            @media (max-width: $tablet) {
+              margin-bottom: 24px;
+            }
+          }
+          .masonry-link {
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.5s;
+            animation: ease-in 0.5s;
+          }
+        }
+      }
+
+      .react-multi-carousel-track {
+        position: initial;
+      }
+
+      .react-multi-carousel-dot-list {
+        bottom: -6%;
+        flex-wrap: wrap;
+        @media (max-width: $tablet) {
+          bottom: -11%;
+        }
+        .react-multi-carousel-dot {
+          button {
+            width: 34px;
+            height: 2px;
+            border-radius: 0;
+            background-color: $gray;
+            border: 0;
+          }
+          &.react-multi-carousel-dot--active {
+            button {
+              width: 80px;
+              background-color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

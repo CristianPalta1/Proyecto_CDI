@@ -1,0 +1,293 @@
+.rewards-for {
+  margin: 6rem 0 0rem;
+  padding: 0;
+  @media (max-width: $desktop) {
+    margin: 3rem 0;
+  }
+  .row {
+    @media (max-width: $desktop) {
+      flex-direction: column;
+      margin: 0 15px;
+    }
+  }
+  .rewards-info {
+    padding: 30px;
+    background-color: $grayLight;
+    position: relative;
+    @media (max-width: $desktop) {
+      padding: 30px;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    // @media (max-width: $desktopLS) {
+    //   padding: 48px 35px;
+    // }
+    @media (max-width: $tablet) {
+      padding: 26px 35px;
+    }
+    .content-title {
+      text-align: start;
+      margin: 2rem 0 1rem;
+      p {
+        color: black;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        text-align: start;
+        @media (max-width: $desktopLS) {
+          font-size: 1.2rem;
+        }
+        @media (max-width: $desktop) {
+          font-size: 1.3rem;
+        }
+        @media (max-width: $tablet) {
+          font-size: 11px;
+        }
+        b {
+          font-size: 3.2rem;
+          display: block;
+          font-weight: 300;
+          @media (max-width: $desktopLS) {
+            font-size: 2.2rem;
+          }
+          @media (max-width: $desktop) {
+            font-size: 2.1rem;
+          }
+          @media (max-width: $tablet) {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    .title-plus {
+      display: flex;
+      gap: 2px;
+      .yellow-box,
+      .orange-box {
+        align-items: center;
+        color: #fff;
+        display: flex;
+        font-size: 30px;
+        font-weight: 600;
+        justify-content: center;
+        line-height: 30px;
+        padding: 5px;
+        @media (max-width: $tablet) {
+          font-size: 24px;
+        }
+      }
+      .yellow-box {
+        background-color: #fbb038;
+      }
+      .orange-box {
+        background-color: #f8642c;
+      }
+    }
+    .rewards {
+      .rewards-list {
+        padding-left: 1.2rem;
+        @media (max-width: $desktop) {
+          padding-left: 20px;
+        }
+        .rewards-item {
+          margin: 0.5rem 0;
+          p{
+           
+            font-weight: 700;
+            span{
+              font-weight: 300;
+            }
+          }
+          .reward {
+            font-weight: 400;
+            color: #575656;
+
+            @media (max-width: $desktopLS) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .bnt__login--loyalti{
+        margin-top: 5rem;
+        @media (max-width: $tablet) {
+          margin-top: 0;
+        }
+        .btn-see-all{
+          font-weight: 500;
+          text-decoration: none;
+          text-align: center;
+          padding: 10px 45px;
+          border: 1px solid #575656;
+          color: black;
+          text-transform: uppercase;
+          border-radius: 0;
+          overflow: hidden;
+          z-index: 1;
+          position: relative;
+          @media (max-width: $tablet) {
+            width: 100%;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 100%;
+            background: black;
+            z-index: -1;
+            transition: width 0.5s ease-in-out;
+        }
+        &:hover {
+     
+          color: white;
+          font-weight: 700;
+          &::after {
+              width: 100%;
+          }
+      
+  }
+        }
+      }
+    }
+  }
+  .rewards-images {
+    @media (max-width: $desktop) {
+      padding: 0;
+      width: 100%;
+    }
+    .rewards-images-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 5px 10px;
+      @media (max-width: $desktop) {
+        justify-content: center;
+        gap: 5px;  
+      }
+      .reward-field {
+        width: 49%;
+        height: auto;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.property-rewards-section {
+  background-color: $grayLight;
+  padding: 3% 0;
+  position: relative;
+  margin-bottom: 3%;
+  @media (max-width: $desktop) {
+    padding: 10% 0;
+  }
+  .content-title {
+    b {
+      position: relative;
+      &::after {
+        content: "";
+      }
+    }
+  }
+  .content-rewards {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .reward {
+      margin: 0 1rem;
+      display: inline-block;
+      width: 200px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      @media (max-width: $desktopXL) {
+        width: 150px;
+      }
+      @media (max-width: $desktopLS) {
+        width: 174px;
+      }
+      span {
+        background-position: center;
+      }
+      .reward-title {
+        font-weight: 300;
+        font-size: 26px;
+        text-transform: none;
+        text-align: center;
+        margin: 1.5rem 0 0;
+        color: $gray;
+        @media (max-width: $desktop) {
+          font-size: 20px;
+        }
+      }
+      .reward-description {
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        word-break: break-all;
+        color: $gray;
+        @media (max-width: $desktopLS) {
+          font-size: 13px;
+        }
+
+        a {
+          color: $gray;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        height: 40%;
+        width: 0.5px;
+        background-color: #bebebe;
+        right: 0;
+        top: 90%;
+        transform: translate(0, -90%);
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .react-multi-carousel-track,
+    .rewards-carousel {
+      position: inherit;
+      .react-multi-carousel-item {
+        margin: 1rem 0;
+      }
+    }
+
+    .react-multi-carousel-dot-list {
+      bottom: 5%;
+
+      .react-multi-carousel-dot {
+        button {
+          width: 34px;
+          height: 1px;
+          border-radius: 0;
+          background-color: $gray;
+          border: 0;
+        }
+        &.react-multi-carousel-dot--active {
+          button {
+            width: 80px;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+}

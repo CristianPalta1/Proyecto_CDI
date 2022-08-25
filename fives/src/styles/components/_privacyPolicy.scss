@@ -1,0 +1,94 @@
+.container_privacy {
+    margin-top: -141px;
+    padding: 7% 0 1% 0;
+    @media (max-width: $desktopL) {
+        margin-top: -77px;
+    }
+    @media (max-width: $tablet) {
+        padding: 15% 0;
+    }
+    .container {
+        padding: 0;
+    }
+    .privacy-content {
+        box-shadow: 0 3px 5px 0 #c5c5c5;
+        padding: 3% 7% 2%;
+        @media (max-width: $tablet) {
+            padding: 3% 2% 2%;
+        }
+        transform: translateY(0%);
+        margin-top: -8%;
+
+        .room-title {
+            margin: 1rem 0;
+            font-weight: 500;
+            span {
+                font-weight: 500;
+            }
+        }
+        .subtitle {
+            .subtitleIntro {
+                text-align: center;
+                font-weight: 700;
+            }
+        }
+        .container__acordeon {
+            margin-top: 6rem;
+            @media (max-width: $desktopLS) {
+                margin-top: 3rem;
+            }
+            @media (max-width: $tablet) {
+                margin-top: 3rem;
+            }
+            .title_acordeon {
+                padding: 0;
+                margin: 0;
+                .acordeon__content {
+                    li.title__acordeon {
+                        list-style: none;
+                        margin: 0;
+                        font-size: 20px;
+                        color: black;
+                        text-decoration: none;
+                        padding: 20px 0;
+                        display: flex;
+                        position: relative;
+                        cursor: pointer;
+                        @media (max-width: $desktopLS) {
+                            font-size: 18px;
+                        }
+                        @media (max-width: $tablet) {
+                            font-size: 14px;
+                        }
+                        &::after {
+                            content: "";
+                            background-image: url(../../../public/resourses/assets/mas.svg);
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            width: 18px;
+                            height: 15px;
+                            display: block;
+                            position: absolute;
+                            z-index: -1;
+                            right: 0;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                        }
+                        &.active{
+                            &::after {
+                                background-image: url(../../../public/resourses/assets/menos.svg); 
+                            }
+                        }
+                    }
+                    .privacy__description {
+                        display: none;
+                        &.active{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
