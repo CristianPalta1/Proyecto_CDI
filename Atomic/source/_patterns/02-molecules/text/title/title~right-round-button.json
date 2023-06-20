@@ -1,0 +1,11 @@
+{
+  "alignHeader": "block-header--right",
+  "textTitle": "Heading Level 3 align right Round",
+  "tagParagraph": false,
+  "tagButtonNormal": false,
+  "tagButtonRouded": true,
+  "tagButton": "button",
+  "idButton": "buttonTitle",
+  "typeButton": "button",
+  "buttonText": "Right"
+}

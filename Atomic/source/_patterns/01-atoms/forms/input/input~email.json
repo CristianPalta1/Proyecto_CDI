@@ -1,0 +1,7 @@
+{
+    "inputType" : "email",
+    "inputId" : "email",
+    "inputName": "email",
+    "inputPlaceholder" : "cdpalta@gmail.com",
+    "disabled": true
+}

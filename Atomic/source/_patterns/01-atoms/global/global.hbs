@@ -1,0 +1,13 @@
+<section>
+  <h2>Primary colors</h2>
+  <ul class="primary-colors-container">
+    {{#each colors.primary }}
+      <li>
+        <span class="color-block" style="background: {{ hexValue }};"></span>
+        <h6> {{#if name }}{{ name }}{{/if}}</h6>
+        <p>{{#if varName }} {{ varName }} {{/if}}</p>
+        <p> {{ hexValue }} </p>
+      </li>
+    {{/each}}
+  </ul>
+</section>

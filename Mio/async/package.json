@@ -1,0 +1,15 @@
+{
+  "name": "clasess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "callbaks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CristianPalta",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.2.10"
+  },
+  "type": "module"
+}

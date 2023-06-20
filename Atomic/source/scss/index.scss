@@ -1,0 +1,103 @@
+/* ==================== BASE ====================*/
+// body{
+//     background-color: red;
+// }
+
+@import './base/variables';
+@import './base/base';
+@import './base/global';
+@import './base/typography';
+
+
+/* ==================== ATOMS ====================*/
+
+// Texto
+@import '../_patterns/01-atoms/text/heading/heading.scss';
+@import '../_patterns/01-atoms/text/links/links.scss';
+@import '../_patterns/01-atoms/text/paragraph/paragraph.scss';
+@import '../_patterns/01-atoms/text/weights/weights.scss';
+
+// Formularios
+@import '../_patterns/01-atoms/forms/buttons/buttons.scss';
+@import '../_patterns/01-atoms/forms/label/label.scss';
+@import '../_patterns/01-atoms/forms/input/input.scss';
+@import '../_patterns/01-atoms/forms/selects/selects.scss';
+@import '../_patterns/01-atoms/forms/textarea/textarea.scss';
+
+// Cajas
+@import '../_patterns/01-atoms/elevations/elevations.scss';
+
+// Imagenes
+@import '../_patterns/01-atoms/images/bannerDesktop/bannerDesktop.scss';
+
+// Listas
+@import '../_patterns/01-atoms/list/list-unordered/list-unordered-square.scss';
+@import '../_patterns/01-atoms/list/list-unordered/list-unordered-acordeon.scss';
+@import '../_patterns/01-atoms/list/list-unordered/list-unordered-circle.scss';
+@import '../_patterns/01-atoms/list/list-unordered/list-unordered-icon-HTML-entities.scss';
+
+// Media
+@import '../_patterns/01-atoms/media/videoYoutube/youtube.scss';
+
+/* ==================== MOLECULES ====================*/
+
+// Card
+@import '../_patterns/02-molecules/card/card.scss';
+
+// Formularios
+@import '../_patterns/02-molecules/forms/text_field/text_field.scss';
+@import '../_patterns/02-molecules/forms/inline-checkbox/inline-checkbox.scss';
+@import '../_patterns/02-molecules/forms/checkbox-field/checkbox-field.scss';
+
+// Bloques
+
+@import '../_patterns/02-molecules/blocks/blocks.scss';
+
+
+// Bloques
+
+@import '../_patterns/02-molecules/navigation/navigation.scss';
+
+// Media 
+
+@import '../_patterns/02-molecules/media/image-gallery/image-gallery.scss';
+@import '../_patterns/02-molecules/media/img-caption/img-caption.scss';
+@import '../_patterns/02-molecules/media/image-thumbnails/image-thumbnails.scss';
+
+//Banner
+@import '../_patterns/03-organisms/banner/banner.scss';
+// Layout
+@import '../_patterns/02-molecules/layout/flex-media/flex-media.scss';
+@import '../_patterns/02-molecules/layout/flex-region/flex-region.scss';
+// Text
+@import '../_patterns/02-molecules/text/title/title.scss';
+@import '../_patterns/02-molecules/text/paragraph/paragraph.scss';
+
+// Message
+@import '../_patterns/02-molecules/message/message.scss';
+
+//Link
+@import '../_patterns/02-molecules/components/link/link.scss';
+@import '../_patterns/02-molecules/components/images-with-link/images-with-link.scss';
+@import '../_patterns/02-molecules/components/icon-with-link/icon-with-link.scss';
+
+// Articles landing
+@import '../_patterns/02-molecules/pagination/pagination.scss';
+
+/* ==================== ORGANISMS ====================*/
+
+// Formularios
+@import '../_patterns/03-organisms/comment-form/comment-form.scss';
+
+// Globals
+@import '../_patterns/03-organisms/globals/header.scss';
+@import '../_patterns/03-organisms/globals/footer.scss';
+
+// Body-content
+@import '../_patterns/03-organisms/body-content/form-iframe/form-iframe.scss';
+
+
+/* ==================== TEMPLATES ====================*/
+
+// Articles landing
+@import '../_patterns/04-templates/articles-landing/articles-landing.scss';

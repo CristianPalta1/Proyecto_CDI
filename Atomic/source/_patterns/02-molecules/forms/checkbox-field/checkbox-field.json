@@ -1,0 +1,37 @@
+{
+    "checkbox": {
+        "question": "Choose your interests",
+        "list": [
+            {
+                "inputType" : "checkbox",
+                "inputId" : "coding",
+                "inputName": "interest",
+                "inputClass": "checkbox",
+                "inputValue": "coding",
+                "labelFor" : "coding",
+                "labelText": "Coding",
+                "labelClass": "inline-checkbox"
+            },
+            {
+                "inputType" : "checkbox",
+                "inputId" : "music",
+                "inputName": "interest",
+                "inputClass": "checkbox",
+                "inputValue": "music",
+                "labelFor" : "music",
+                "labelText": "Music",
+                "labelClass": "inline-checkbox"
+            },
+            {
+                "inputType" : "checkbox",
+                "inputId" : "games",
+                "inputName": "interest",
+                "inputClass": "checkbox",
+                "inputValue": "games",
+                "labelFor" : "games",
+                "labelText": "Games",
+                "labelClass": "inline-checkbox"
+            }
+        ]
+    }
+}

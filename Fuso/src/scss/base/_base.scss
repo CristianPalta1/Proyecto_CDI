@@ -1,0 +1,102 @@
+//---------------------------------------------------------------------
+// ESTILOS GENERALES
+//---------------------------------------------------------------------
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    min-height: 100%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom; //quita el margen raro abajo de la img
+}
+
+.skip-link {
+    display: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "HelveticaItalic", Arial, sans-serif;
+}
+p,
+span,
+a,
+li,
+input, button {
+    font-family: "HelveticaRegular", Arial, sans-serif;
+}
+main {
+    width: 100%;
+    margin-top: 7.5rem;
+    @media (min-width: 576px) {
+        max-width: 540px;
+        margin: 7.5rem auto 0;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+        margin: 7.5rem auto 0;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1320px;
+    }
+
+    @media (min-width: 1600px) {
+        max-width: 1560px;
+    }
+
+    @media (min-width: 1800px) {
+        max-width: 1740px;
+    }
+    section {
+        margin-top: 12rem;
+        padding: 2rem 0;
+    }
+}
+
+// ==================== BOOTSTRAP OVERRIDE ====================
+
+.container,
+.row {
+    --bs-gutter-x: 3rem;
+}

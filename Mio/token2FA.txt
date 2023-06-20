@@ -1,0 +1,7 @@
+zh46Z-TvoyyqAd2ApYrz
+
+git remote set-url origin 'https://cpalta1:zh46Z-TvoyyqAd2ApYrz@gitlab.ariadna.co/cdi-interactive/enel-expedicion-e.git'
+
+git clone https://cpalta1:zh46Z-TvoyyqAd2ApYrz@gitlab.ariadna.co/cdi-interactive/Bat/bat-web.git
+git clone https://cpalta1:zh46Z-TvoyyqAd2ApYrz@gitlab.ariadna.co/cdi-interactive/uniminuto-colegios.git
+https://

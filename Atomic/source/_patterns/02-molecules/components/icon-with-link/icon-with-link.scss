@@ -1,0 +1,37 @@
+.component-link-icon {
+  color: #000000;
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('https://dev-cdi.ariadna.co/themes/custom/cdi_subtheme/dist/assets/images/hoverHeader-red.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 4px;
+    position: absolute;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &-style {
+    &--two {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &--three {
+      &:hover {
+        color: #03bbdf;
+      }
+    }
+  }
+}

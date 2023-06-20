@@ -1,0 +1,9 @@
+{
+  "alignParagraph": "block-description--left",
+  "textParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae molestiae ullam officia eligendi dignissimos sequi quibusdam laboriosam porro neque accusamus ipsam delectus nesciunt fugiat adipisci praesentium debitis",
+  "tagButtonNormal": true,
+  "tagButton": "button",
+  "idButton": "buttonTitle",
+  "typeButton": "button",
+  "buttonText": "Left"
+}

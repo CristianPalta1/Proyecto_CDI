@@ -1,0 +1,7 @@
+{
+    "inputType" : "text",
+    "inputId" : "text",
+    "inputClass": "error",
+    "inputName": "text",
+    "inputPlaceholder" : "text"
+}

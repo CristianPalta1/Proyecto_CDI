@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;300;400;500;600;700&display=swap");
+/* ==================== BASE ==================== */
+
+// Mixins
+@import "./base/mixins";
+
+// Variables
+@import "./base/variables";
+
+// Fonts
+@import "./base/fonts";
+
+//Estilos generales
+@import "./base/base";
+
+// Textos
+@import "./base/texts";
+
+
+/* ==================== ORGANISMS ==================== */
+
+// Header
+@import "./components/organisms/Header";
+@import "./components/organisms/Cards";
+@import "./components/organisms/Banner";
+@import "./components/organisms/Spare-Parts";
+@import "./components/organisms/Highlight";
+@import "./components/organisms/Dealer";
+@import "./components/organisms/Faq";
+@import "./components/organisms/Footer";
+@import "./components/organisms/Modal";
+@import "./components/organisms/Contact";
+
+/* ==================== MOLECULES ==================== */
+@import "./components/molecules/Title";

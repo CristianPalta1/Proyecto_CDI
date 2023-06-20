@@ -1,0 +1,98 @@
+// ==================== MEDIA QUERYS ====================
+@mixin media-query($media-query) {
+    @if $media-query==mobileXS {
+        @media only screen and (max-width: $mobileXS) {
+            @content;
+        }
+    }
+    @if $media-query==minmobileXS {
+        @media only screen and (min-width: $mobileXS) {
+            @content;
+        }
+    }
+    @if $media-query==mobileS {
+        @media only screen and (max-width: $mobileS) {
+            @content;
+        }
+    }
+    @if $media-query==minmobileS {
+        @media only screen and (min-width: $mobileS) {
+            @content;
+        }
+    }
+    @if $media-query==mobile {
+        @media only screen and (max-width: $mobile) {
+            @content;
+        }
+    }
+    @if $media-query==minmobile {
+        @media only screen and (min-width: $mobile) {
+            @content;
+        }
+    }
+    @if $media-query==tablet {
+        @media only screen and (max-width: $tablet) {
+            @content;
+        }
+    }
+    @if $media-query==mintablet {
+        @media only screen and (min-width: $tablet) {
+            @content;
+        }
+    }
+    @if $media-query==desktop {
+        @media only screen and (max-width: $desktop) {
+            @content;
+        }
+    }
+    @if $media-query==mindesktop {
+        @media only screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+    @if $media-query==desktopL {
+        @media only screen and (max-width: $desktopL) {
+            @content;
+        }
+    }
+    @if $media-query==mindesktopL {
+        @media only screen and (min-width: $desktopL) {
+            @content;
+        }
+    }
+    @if $media-query==desktopXL {
+        @media only screen and (max-width: $desktopXL) {
+            @content;
+        }
+    }
+    @if $media-query==mindesktopXL {
+        @media only screen and (min-width: $desktopXL) {
+            @content;
+        }
+    }
+    @if $media-query==desktopXXL {
+        @media only screen and (max-width: $desktopXXL) {
+            @content;
+        }
+    }
+    @if $media-query==mindesktopXXL {
+        @media only screen and (min-width: $desktopXXL) {
+            @content;
+        }
+    }
+}
+// Ejemplo de uso
+/*
+    @include media-query(mindesktop) {
+        flex-direction: column;
+    }
+*/
+
+// ==================== HACK CLEARFIX ====================
+@mixin clearfix{
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

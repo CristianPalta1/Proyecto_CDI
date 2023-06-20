@@ -1,0 +1,74 @@
+#repuestos {
+    position: relative;
+    margin-top: 4rem;
+    padding: 15rem 0;
+    @include media-query(desktopXL) {
+        padding: 12rem 0;
+    }
+    @include media-query(tablet) {
+        margin: -9rem 0 0 0;
+        height: 79rem;
+        padding: 8rem 0 2rem;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background-image: url("./assets/images/kit_image.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        width: 100vw;
+        max-width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        @include media-query(tablet) {
+            background-image: url("./assets/images/kit_image_movil.png");
+        }
+    }
+    .container-promocion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-content: center;
+        place-items: center;
+        gap: 1.2rem;
+        width: 100%;
+        @include media-query(tablet) {
+            grid-template-columns: 1fr;
+            padding: 2rem;
+        }
+        .title-section {
+            text-align: left;
+            // width: 45.5rem;
+            @include media-query(tablet) {
+                width: initial;
+            }
+            p {
+                margin-bottom: 2rem;
+            }
+            button {
+                border: none;
+                background-color: transparent;
+                text-decoration: underline;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        picture {
+            width: 48rem;
+            height: 51rem;
+            @include media-query(desktopXL) {
+                width: 28rem;
+                height: 31rem;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

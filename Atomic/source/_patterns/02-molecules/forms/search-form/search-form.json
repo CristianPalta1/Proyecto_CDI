@@ -1,0 +1,22 @@
+{
+    "formUrl": "#",
+    "formMethod": "get",
+    "formClass": "",
+    "input-list": [
+        {
+            "inputType" : "search",
+            "inputId" : "search",
+            "inputClass" : "input",
+            "inputName": "search",
+            "inputPlaceholder" : "Search"
+        },
+        {
+            "inputType" : "submit",
+            "inputId" : "buscar",
+            "inputName": "buscar",
+            "inputClass": "btn primary",
+            "inputValue" : "Buscar"
+        }
+    ]
+    
+}

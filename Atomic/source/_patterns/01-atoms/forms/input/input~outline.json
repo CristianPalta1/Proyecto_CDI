@@ -1,0 +1,8 @@
+{
+    "inputType" : "text",
+    "inputId" : "name",
+    "inputClass" : "input",
+    "inputClassModifier" : "input--outline",
+    "inputName": "name",
+    "inputPlaceholder" : "name" 
+}

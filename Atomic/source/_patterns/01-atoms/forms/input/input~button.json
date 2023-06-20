@@ -1,0 +1,7 @@
+{
+    "inputType" : "button",
+    "inputId" : "button",
+    "inputName": "button",
+    "inputClass": "btn primary",
+    "inputValue" : "Click me!"
+}

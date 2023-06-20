@@ -1,0 +1,58 @@
+.block-images-link {
+  max-width: 200px;
+  width: 100%;
+
+  .component-link-images {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.8rem;
+    transition: all 300ms;
+
+    &__figure {
+      height: 200px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__body {
+
+      p,
+      strong,
+      span {
+        color: #000000;
+      }
+    }
+
+    &-style {
+      &--two {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      &--three {
+        &:hover {
+          .component-link-images__body {
+
+            p,
+            strong,
+            span {
+              color: #03bbdf;
+            }
+          }
+        }
+      }
+
+      &--four {
+        &:hover {
+          background-color: gainsboro;
+        }
+      }
+    }
+  }
+}

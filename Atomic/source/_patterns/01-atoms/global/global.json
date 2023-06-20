@@ -1,0 +1,47 @@
+{
+  "colors":{
+    "primary":[
+      {
+        "name":"Red",
+        "varName":"$red",
+        "hexValue":"#E52520"
+      },
+      {
+        "name":"BBQ",
+        "varName":"$bbqcolor",
+        "hexValue":"#9E1922"
+      },
+      {
+        "name":"Black",
+        "varName":"$black",
+        "hexValue":"#000000"
+      },
+      {
+        "name":"Gray",
+        "varName":"$gray",
+        "hexValue":"#d0cece"
+      },
+      {
+        "name":"White",
+        "varName":"$white",
+        "hexValue":"#ffffff"
+      },
+      {
+        "name":"Yellow",
+        "varName":"$yellow",
+        "hexValue":"#fcc760"
+      },
+      {
+        "name":"Blue",
+        "varName":"$blue",
+        "hexValue":"#0555fa"
+      },
+      {
+        "name":"Dark Gray",
+        "varName":"$darkgray",
+        "hexValue":"#00000099"
+      }      
+    ],
+    "secondary":[]
+  }
+}

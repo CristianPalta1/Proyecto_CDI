@@ -1,0 +1,18 @@
+<form 
+    {{~#if formUrl }} action="{{{ formUrl }}}" {{~/if~}}
+    {{~#if formMethod }} method="{{formMethod}}" {{~/if~}}
+    {{~#if formClass }} class="{{formClass}} 
+        {{~#if formClassModifier }} {{formClassModifier}} {{~/if~}}" 
+    {{~/if~}}
+>
+    <fieldset class="form__fields">
+        {{#each textfield-list }}
+            {{> molecules-text_field }}
+        {{/each}}
+    </fieldset>
+    <div class="form__call">
+        {{#with formSubmit}}
+            {{> atoms-input }}
+        {{/with}}
+    </div>
+</form>

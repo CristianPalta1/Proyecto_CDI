@@ -1,0 +1,20 @@
+.list-unordered {
+    list-style: none;
+
+    &.list--icon {
+        list-style: none;
+
+        li {
+            &::before {
+                position: absolute;
+                margin: 1px 0.5em 0 -1.25em;
+                color: #deb31a;
+                content: "\260E";
+                font-family: Georgia;
+                font-size: 1.25em;
+                font-weight: normal;
+                line-height: 1;
+            }
+        }
+    }
+}

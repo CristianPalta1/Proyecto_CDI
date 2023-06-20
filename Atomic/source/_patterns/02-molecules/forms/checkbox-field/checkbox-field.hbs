@@ -1,0 +1,8 @@
+<div class="checkbox-field">
+    <p class="checkbox-field__question">{{{checkbox.question}}}</p>
+    <ul class="checkbox-field__group">
+        {{#each checkbox.list }}
+            <li>{{> molecules-inline-checkbox }}</li>
+        {{/each}}
+    </ul>
+</div>

@@ -1,0 +1,34 @@
+{
+    "iframeClass": "iframeclass",
+    "iframeSrc" : "https://open.spotify.com/embed/track/0DWdj2oZMBFSzRsi2Cvfzf?utm_source=generator",
+    "iframeAdditionalAttr": [
+        {
+            "attribute": "style",
+            "value": "border-radius:12px"
+        },
+        {
+            "attribute": "width",
+            "value": "100%"
+        },
+        {
+            "attribute": "height",
+            "value": "152"
+        },
+        {
+            "attribute": "frameBorder",
+            "value": "0"
+        },
+        {
+            "attribute": "allowfullscreen",
+            "value": ""
+        },
+        {
+            "attribute": "allow",
+            "value": "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        },
+        {
+            "attribute": "loading",
+            "value": "lazy"
+        }
+    ]
+}

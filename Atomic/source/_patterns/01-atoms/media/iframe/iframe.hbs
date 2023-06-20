@@ -1,0 +1,9 @@
+<iframe 
+    {{~#if iframeClass }} class="{{iframeClass}}"
+        {{~#if iframeClassModifier }} {{iframeClassModifier}} {{~/if~}}" 
+    {{~/if~}}
+    {{~#if iframeSrc }} src="{{{iframeSrc}}}" {{~/if~}}
+    {{~#if iframeAdditionalAttr ~}}
+        {{#each iframeAdditionalAttr}} {{{attribute}}}="{{{value}}}" {{~/each~}}
+    {{~/if~}}
+></iframe>

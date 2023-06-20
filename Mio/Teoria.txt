@@ -1,0 +1,177 @@
+El navegador hace 5 paso
+
+1) Pasa los archvos a objetos. Pasa el html a objetos que entiende eso es el DOM
+
+2) Calcula el estilo correspondiente a cada etiqueda DOM
+
+3)Calcula las dimensiones de cada nodo y donde va en la pantalla
+
+4)Pinta las difeentes cajas
+
+5) Toma las capas y las convierte en una imagen para mostrar en pantalla
+
+
+HTML SEMANTICO
+
+Utilizar las etiquetas especifica para cada contenido. Mejora el posicionamiento SEO. 
+
+*////Selectores basicos
+
+de id => div {}
+
+de clase  => .container{}
+
+de id => #containder {}
+
+de atributo => a[href= ""] {}
+
+universal *{}
+
+*/// Selectores combinados
+
+descendientes => div p
+hijo directo div > p
+elemento adyacente div + p 
+general de hermano div ~ p 
+
+
+
+
+///*** PSEUDOCLASES Y PSEUDOELEMENTOS
+
+PSEUDOCLASES: 
+    permite llegar a las acciones que realiza el usuario: Ej click a un btn. 
+    :active
+    :focus
+    :hover
+    :nth-child(n)
+
+PSEUDOELEMENTOS:
+    Permite acceder a elemetnso html que no son accesibles justamente con selectores. 
+    ::after
+    ::before
+    ::first-letter
+    ::placeholder
+
+
+
+CASCADA Y ESPECIFICIDAD
+
+CASCADA: Significa que el orden de las reglas en CSS importa. Si un elemento esta mas abajo que otro 
+se sobrescribe por el ultimo
+
+Los navegadores determinan que reglas de css deben aplicarse a las etiquetas HTML.
+El orden y el origen de clasificacion del css, interviene en ese proceso.
+Los navegadores no saben que regla aplicar.
+
+La especificidad que el propio CSS de a un selector aumentara la posibilidad de que sea usado sobre cualquier otro
+
+
+Reglas de especificidad:
+
+1 o o o o    !important
+  1 o o o     estios en linea   
+    1 o o     #id 
+      1 o     clases, atributos y PSEUDOCLASES
+        1     elementos y PSEUDOELEMENTOS 
+        o     selector universal 
+
+
+Display: Tipo de visualizacion que tiene los elementos
+block => bloque
+
+inline => en linea
+
+inline-block => en linea y bloque
+
+flex
+
+grid
+
+
+///MOdelo de caja
+Margin
+border
+padding 
+content
+
+
+
+///Colapso de margenes
+Sucede cuando:
+    Hay dos elementos bloque adyacentes
+
+No sucede cuando:
+    Flexbox, grif y elementos que no sean bloque
+
+
+//Posicionamiento
+Nos ayuda  ubicar elementos en el espacio del contenedor
+
+relative
+abosolute
+fixed  => fijo
+sticky => pegarse 
+static
+initial =>posicion inicial
+inherital => si se quiere heredar la posicion del padre
+
+
+
+///Tipos de medida
+
+Absoluto: Son medidad que no dependen de algo para calcular su medida
+  px, pt, pc, in, cm, mm
+
+Relativos: Dependen de algo para calcular su medida
+  rem, em, vw, vh, vmin, vmax, ex, ch
+
+
+100% -> 16px
+ x   -> 10px
+
+html{
+  font-size: 62.5%
+}
+
+
+@media (min-width: 300px) =>desde 300px en adelante
+@media (max-width: 300px) => hasta 300 px 
+
+///Metologias
+OOCSS
+Tener objetos que son estrucutras principales que estaran amarradas en mascara. La mascara 
+semodifica pero la estructura sera intacta
+
+BEM => Bloque Elemento Modificador
+
+SMACSS
+No indica el orden en el que podemos estructurar nuestros diferentes componentes
+Base Layout Module State Theme
+
+
+Triangulo Invertido de CSS  ITCSS
+Separar para mejorar la especificidad magnitud claridad
+
+                    Magnitud
+
+
+Especificidad                   Claridad
+{
+  Ajustes
+  Herramientas
+  generico
+  elementosobjetos
+  componentes
+  utilidades
+}
+
+
+Atomic Desing
+Elementos pequeños input
+Moleculas agrupacion formularios
+Organismos formularios
+Pagina 
+Templates
+
+

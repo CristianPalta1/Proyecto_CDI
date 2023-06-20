@@ -1,0 +1,28 @@
+.block-description {
+  display: flex;
+  flex-direction: column;
+  
+  p {
+    font-size: 16px;
+  }
+
+  &--center {
+    align-items: center;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  &--left {
+    align-items: flex-start;
+  }
+  &--right {
+    align-items: flex-end;
+
+    p {
+      text-align: right;
+    }
+  }
+
+}

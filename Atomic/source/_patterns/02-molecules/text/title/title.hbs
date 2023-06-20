@@ -1,0 +1,14 @@
+<div class="block-header {{alignHeader}}">
+
+  <h3>{{{textTitle}}}</h3>
+  {{~#if tagParagraph }}
+  <p>{{{tagParagraph}}}</p>
+  {{~/if~}}
+  {{~#if tagButtonNormal }}
+  <{{tagButton}} id="{{idButton}}" type="{{typeButton}}" class="btn primary">{{{buttonText}}}</{{tagButton}}>
+  {{~/if~}}
+  {{~#if tagButtonRouded }}
+  <{{tagButton}} id="{{idButton}}" type="{{typeButton}}" class="btn primary rounded">{{{buttonText}}}</{{tagButton}}>
+  {{~/if~}}
+
+</div>

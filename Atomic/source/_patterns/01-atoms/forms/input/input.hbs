@@ -1,0 +1,19 @@
+<input 
+    {{~#if inputType }} type="{{inputType}}" {{~/if~}} 
+    {{~#if inputId }} id="{{inputId}}" {{~/if~}} 
+    {{~#if inputClass }} class="{{inputClass}} 
+        {{~#if inputClassModifier }} {{inputClassModifier}} {{~/if~}}" 
+    {{~/if~}}
+    {{~#if inputName }} name="{{inputName}}" {{~/if~}}
+    {{~#if inputPlaceholder }} placeholder="{{inputPlaceholder}}" {{~/if~}}
+    {{~#if disabled }} disabled {{~/if~}}
+    {{~#if checked }} checked {{~/if~}}
+    {{~#if required }} required {{~/if~}}
+    {{~#if inputAdditionalAttr ~}}
+        {{#each inputAdditionalAttr}} {{attribute}}="{{value}}" {{~/each~}}
+    {{~/if~}}
+    {{~#if inputJsEvents ~}}
+        {{#each inputJsEvents}} {{event}}="{{{value}}}" {{~/each~}}
+    {{~/if~}}
+    {{~#if inputValue }} value="{{inputValue}}" {{~/if~}}
+>

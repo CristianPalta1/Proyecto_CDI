@@ -1,0 +1,34 @@
+{
+    "heading" : [
+        {
+            "headingTag" : "h1",
+            "headingClass": "headline-1",
+            "headingText": "Heading Level 1"
+        },
+        {
+            "headingTag" : "h2",
+            "headingClass": "headline-2",
+            "headingText": "Heading Level 2"
+        },
+        {
+            "headingTag" : "h3",
+            "headingClass": "headline-3",
+            "headingText": "Heading Level 3"
+        },
+        {
+            "headingTag" : "h4",
+            "headingClass": "headline-4",
+            "headingText": "Heading Level 4"
+        },
+        {
+            "headingTag" : "h5",
+            "headingClass": "headline-5",
+            "headingText": "Heading Level 5"
+        },
+        {
+            "headingTag" : "h6",
+            "headingClass": "headline-6",
+            "headingText": "Heading Level 6"
+        }
+    ]
+}

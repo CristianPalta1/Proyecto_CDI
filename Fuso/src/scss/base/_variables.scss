@@ -1,0 +1,67 @@
+// ==================== COLORES ====================
+
+// Primarios
+$color-brand--primary: #024a93;
+$color-brand--secondary: #f4d419;
+$color-brand--tertiary: #86E2F6;
+$color-navs--primary: #f3d319;
+
+// extras
+$color-brand--extra-yellow: #EFEE83;
+$color-brand--extra-blue: #9DE0F4;
+$color-brand--extra-red: #F2B0AB;
+$color-brand--extra-green:#B3F4C7;
+
+// Neutrales
+$color-neutral--white: #ffffff;
+
+$color-neutral--black: #000000;
+$color-neutral--black-02: #212121;
+
+$color-neutral--gray: #999999;
+$color-neutral--gray-02: #555555;
+$color-neutral--gray-03: #5A5A5A;
+$color-neutral--gray-04: #666666;
+$color-neutral--gray-05: #707070;
+$color-neutral--gray-06: #606060;
+$color-neutral--gray-07: #777777;
+
+$color-neutral--light-gray: #eaeaea;
+$color-neutral--light-gray-02: #d0cece;
+$color-neutral--light-gray-03: #E0E0E0;
+$color-neutral--light-gray-04: #9E9E9E;
+$color-neutral--light-gray-05: #CECECE;
+$color-neutral--light-gray-06:#F8F8F8;
+
+$color-neutral--dark-gray:#3D3D3D;
+
+// Utilidad
+$color-utility--red: red;
+
+$color-utility--light-red: #E63385;
+$color-utility--light-red-02: #F7EEEE;
+
+$color-utility--dark-red: #B00020;
+
+$color-utility--green: #009C66;
+
+
+// ==================== BREAKPOINTS ====================
+$mobileXS: 375px !default;
+$mobileS: 480px !default;
+$mobile: 576px !default;
+$tablet: 768px !default;
+$desktop: 992px !default;
+$desktopL: 1200px !default;
+$desktopXL: 1440px !default;
+$desktopXXL: 1600px !default;
+
+
+// ==================== FONT WEIGHTS ====================
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$weight-extrabold: 800;
+$weight-black: 900;

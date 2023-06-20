@@ -1,0 +1,8 @@
+{
+    "inputType" : "checkbox",
+    "inputId" : "checkbox",
+    "inputName": "checkbox",
+    "inputClass": "checkbox",
+    "inputClassModifier": "custom-check",
+    "checked": true
+}

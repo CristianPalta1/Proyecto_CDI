@@ -1,0 +1,84 @@
+{
+    "people": [
+        {
+            "text": "John Doe",
+            "classBase": "text text--bold",
+            "classModified":  "headline-1"
+        },
+        {
+            "text": "John Doe",
+            "classBase": "text text--regular",
+            "classModified":  "headline-2"
+        },
+        {
+            "text": "John Doe",
+            "classBase": "text text--light",
+            "classModified":  "headline-3"
+        },
+        {
+            "text": "John Doe",
+            "classBase": "text",
+            "classModified":  "headline-4"
+        },
+        {
+            "text": "John Doe",
+            "classBase": "text",
+            "classModified":  "headline-5"
+        },
+        {
+            "text": "John Doe",
+            "classBase": "text",
+            "classModified":  "headline-6"
+        },
+        {
+            "text": "John Doe",
+            "classBase": "text",
+            "classModified":  "subtitle-1"
+        },
+        {
+            "text": "John Doe",
+            "classBase": "text",
+            "classModified":  "subtitle-2"
+        },
+        {
+            "text": "John Doe",
+            "classBase": "text",
+            "classModified":  "body-1"
+        },
+        {
+            "text": "John Doe",
+            "classBase": "text",
+            "classModified":  "body-2"
+        },
+        {
+            "text": "text button",
+            "classBase": "text",
+            "classModified":  "button"
+        },
+        {
+            "text": "John Doe",
+            "classBase": "text",
+            "classModified":  "caption"
+        },
+        {
+            "text": "John Doe",
+            "classBase": "text",
+            "classModified":  "overline"
+        },
+        {
+            "text": "tags 1",
+            "classBase": "text",
+            "classModified":  "tags"
+        },
+        {
+            "text": "by Author Name",
+            "classBase": "text",
+            "classModified":  "byline"
+        },
+        {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "classBase": "text",
+            "classModified":  "pullquote"
+        }        
+    ]
+}

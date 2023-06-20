@@ -1,0 +1,13 @@
+.checkbox-field{
+    &__group{
+        margin-top: 7px;
+        
+        li{
+            list-style: none;
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

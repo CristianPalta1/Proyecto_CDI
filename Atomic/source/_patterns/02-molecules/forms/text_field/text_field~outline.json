@@ -1,0 +1,10 @@
+{
+    "labelFor" : "lastname",
+    "labelText" : "Last name",
+    "labelClass" : "field-placeholder",
+    "inputType": "text",
+    "inputId": "lastname",
+    "inputName": "lastname",
+    "inputClass": "input--outline",
+    "inputPlaceholder": "Last name"
+}

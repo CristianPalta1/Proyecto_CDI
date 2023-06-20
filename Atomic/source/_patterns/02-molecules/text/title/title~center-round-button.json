@@ -1,0 +1,11 @@
+{
+  "alignHeader": "block-header--center",
+  "textTitle": "Heading Level 3 align center Round",
+  "tagParagraph": false,
+  "tagButtonNormal": false,
+  "tagButtonRouded": true,
+  "tagButton": "button",
+  "idButton": "buttonTitle",
+  "typeButton": "button",
+  "buttonText": "Center"
+}

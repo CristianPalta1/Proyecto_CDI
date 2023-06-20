@@ -1,0 +1,13 @@
+JavaScript
+
+Lenguaje interpretado orientado a objeto debilmente tipado y dinamico
+
+Compilte time  => sinatxis que nosotros como humanos entendemos y lo traduce al lenguaje que al manquina entiende
+
+Runetime => Los lenguajes que corren en el runtime. Osea que directamente lo entiende la manquina
+
+Lenguaje interpretado => 
+
+
+WebAssembly = WA
+

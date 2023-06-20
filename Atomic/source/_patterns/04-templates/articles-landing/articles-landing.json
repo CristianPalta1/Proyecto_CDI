@@ -1,0 +1,58 @@
+{
+  "list": [
+    {
+      "urlImages": "https://dummyimage.com/280x200",
+      "altImages": "Link Image",
+      "titleCard": "Title Card 1",
+      "descriptionCard": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "linkCard": "#",
+      "textButton": "Ver más",
+      "classLink": "btn primary rounded"
+    },
+    {
+      "urlImages": "https://dummyimage.com/280x200",
+      "altImages": "Link Image",
+      "titleCard": "Title Card 2",
+      "descriptionCard": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "linkCard": "#",
+      "textButton": "Ver más",
+      "classLink": "btn primary rounded"
+    },
+    {
+      "urlImages": "https://dummyimage.com/280x200",
+      "altImages": "Link Image",
+      "titleCard": "Title Card 3",
+      "descriptionCard": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "linkCard": "#",
+      "textButton": "Ver más",
+      "classLink": "btn primary rounded"
+    },
+    {
+      "urlImages": "https://dummyimage.com/280x200",
+      "altImages": "Link Image",
+      "titleCard": "Title Card 4",
+      "descriptionCard": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "linkCard": "#",
+      "textButton": "Ver más",
+      "classLink": "btn primary rounded"
+    },
+    {
+      "urlImages": "https://dummyimage.com/280x200",
+      "altImages": "Link Image",
+      "titleCard": "Title Card 5",
+      "descriptionCard": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "linkCard": "#",
+      "textButton": "Ver más",
+      "classLink": "btn primary rounded"
+    },
+    {
+      "urlImages": "https://dummyimage.com/280x200",
+      "altImages": "Link Image",
+      "titleCard": "Title Card 6",
+      "descriptionCard": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "linkCard": "#",
+      "textButton": "Ver más",
+      "classLink": "btn primary rounded"
+    }
+  ]
+}

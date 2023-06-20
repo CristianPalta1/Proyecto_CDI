@@ -1,0 +1,45 @@
+.title-section {
+    text-align: center;
+    h2 {
+        color: #333333;
+        font-size: 3.1rem;
+        font-weight: bold;
+        margin: 2rem 0 0;
+        @include media-query(desktopXL) {
+            font-size: 2.8rem;
+        }
+        @include media-query(tablet) {
+            font-size: 2.5rem;
+        }
+    }
+    p {
+        font-size: 1.3rem;
+        color: #ffffff;
+        font-weight: 300;
+        margin-top: 1.2rem;
+    }
+    &-white {
+        h2 {
+            color: $color-neutral--white;
+        }
+        p {
+            margin-bottom: 7.2rem;
+            @include media-query(tablet) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    &-gray {
+        h2,
+        p {
+            color: #000000;
+        }
+        p {
+            max-width: 48%;
+            margin: 2rem auto 4.6rem auto;
+            @include media-query(tablet) {
+                max-width: initial;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "inputType" : "range",
+    "inputId" : "range",
+    "inputName": "range",
+    "inputAdditionalAttr": [
+        {
+            "attribute": "min",
+            "value": "0"
+        },
+        {
+            "attribute": "max",
+            "value": "100"
+        }
+    ],
+    "inputJsEvents": [
+        {
+            "event" : "onChange",
+            "value" : "rangeSlide(this.inputValue)"
+        },
+        {
+            "event": "onmousemove",
+            "value" : "rangeSlide(this.inputValue)"
+        }
+    ] 
+}

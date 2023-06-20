@@ -1,0 +1,7 @@
+{
+    "inputType" : "submit",
+    "inputId" : "submit",
+    "inputName": "submit",
+    "inputClass": "btn primary",
+    "inputValue" : "Enviar"
+}

@@ -1,0 +1,134 @@
+/* ***************   MOLECULE (TEXTFIELD)    **************** */
+.text-field{
+    $padding-left-input: 16px;
+
+    position: relative;
+    width: 320px;
+
+    .field-placeholder {
+        position: absolute;
+        background-color: transparent;
+        top: 50%;
+        transform: translate($padding-left-input, -50%);
+        pointer-events: none;
+        transition: all .14s ease-in-out;
+        font-size: 16px;
+        color: #adadad;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .field-input,
+    .input,
+    .input--outline,
+    .select,
+    .textarea{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        // color: #000;
+        // border: none;
+        // padding: 5px;
+        // margin-top: 2px;
+        // font-size: 16px;
+        // bottom: 0px;
+        margin: 0;
+        padding-top: 23px;
+        padding-bottom: 14px;
+
+        &:focus{
+            .field-input:not(:placeholder-shown) {
+                border-color: transparent;
+            }
+
+            + label {
+                color: #646669;
+                font-size: 12px;
+                // top: calc(30% - 0.5rem);
+                top: 9px;
+                transform: translate($padding-left-input, 0%);
+            }
+
+        }
+
+        // Label style when placeholder is shown
+        &:placeholder-shown + label {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        // Si no esta mostrando placeholder (campo lleno)
+        &:not(:placeholder-shown) + label {
+            color: #646669;
+            font-size: 11px;
+            // top: calc(30% - 0.5rem);
+            top: 9px;
+            transform: translate($padding-left-input, 0%);
+        }
+
+        // Ocultamos placeholder
+        &::-webkit-input-placeholder,
+        &:-moz-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder,
+        &::placeholder {
+            color: transparent;
+            opacity: 0;
+        }
+    }
+
+    // Para variantes Outline
+    .input--outline,
+    .textarea--outline{
+        $padding-x-label: 3px;
+        $position-x-label: $padding-left-input - $padding-x-label;
+        background-color: transparent; // este pasarlo al outline
+        padding-top: 18px;
+        padding-bottom: 18px;
+        &:focus{
+            + label {
+                top: -8px;
+                transform: translate($position-x-label, 0%);
+                padding-left: $padding-x-label;
+                padding-right: $padding-x-label;
+                background-color: $color-neutral--white;
+            }
+
+        }
+
+        // Si no esta mostrando placeholder (campo lleno)
+        &:not(:placeholder-shown) + label {
+            top: -8px;
+            transform: translate($padding-left-input, 0%);
+        }
+    }
+}
+
+// .field-input:focus .field-input:not(:placeholder-shown) {
+//     border-color: transparent;
+// }
+
+// .field-input:focus ~ label {
+//     color: #646669;
+//     font-size: 11px;
+//     top: calc(30% - 0.5rem);
+//     transform: translate($padding-left-input, 0%);
+// }
+// .field-input:not(:placeholder-shown) ~ label {
+//     color: #646669;
+//     font-size: 11px;
+//     top: calc(30% - 0.5rem);
+//     transform: translate($padding-left-input, 0%);
+// }
+
+// .field-input::-webkit-input-placeholder {
+//     color: transparent;
+// }
+
+// .field-input::-moz-placeholder {
+//     color: transparent;
+// }
+
+// .field-input:-ms-input-placeholder {
+//     color: transparent;
+// }

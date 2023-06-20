@@ -1,0 +1,40 @@
+$color_1: #03BBDF;
+$color_2: rgb(77, 0, 77);
+$color_3: red;
+$background-color_1: #02404c;
+
+a {
+	outline: none;
+	text-decoration: none;
+	padding: 2px 1px;
+	position: relative;
+}
+
+a.item-link {
+  color: $color_1;
+	font-size: 16px;
+	&::after {
+		position: absolute;
+		content: '';
+		width: 0%;
+		height: 1.2px;
+		left: 0;
+		bottom: 0px;
+		background-color: $background-color_1;
+		transition: all .4s linear;
+	}
+	&:visited {
+		color: $color_2;
+	}
+
+	&:focus, 
+	&:hover {
+		&::after {
+			transition: all .4s linear;
+			width: 100%;
+		}
+	}
+	&:active {
+		color: $color_3;
+	}
+}

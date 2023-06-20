@@ -1,0 +1,18 @@
+.layout-flex-media {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+
+  
+  @media (min-width: 768px) {
+    grid-template-columns: auto 1fr;
+    
+    &--der {
+      grid-template-columns: 1fr auto;
+
+      .layout-flex-media__images {
+        order: 1;
+      }
+    }
+  }
+}

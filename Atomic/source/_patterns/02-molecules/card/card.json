@@ -1,0 +1,9 @@
+{
+  "urlImages": "https://dummyimage.com/280x200",
+  "altImages": "Link Image",
+  "titleCard": "Title Card 1",
+  "descriptionCard": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+  "linkCard": "#",
+  "textButton": "Ver más",
+  "classLink": "btn primary rounded"
+}

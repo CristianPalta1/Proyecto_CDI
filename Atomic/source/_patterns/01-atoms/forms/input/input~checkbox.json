@@ -1,0 +1,6 @@
+{
+    "inputType" : "checkbox",
+    "inputId" : "checkbox",
+    "inputName": "checkbox",
+    "inputClass": "checkbox"
+}

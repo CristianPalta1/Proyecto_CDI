@@ -1,0 +1,31 @@
+<div class="template-article">
+  <div class="complete-banner">
+    <picture>
+      <source srcset="https://dummyimage.com/414x600/000/fff.png" media="(max-width: 767.98px)" type="image/png">
+      <img src="https://dummyimage.com/1920x800/000/fff.png" alt="" title="" typeof="foaf:Image">
+    </picture>
+
+    <div class="container-text">
+      <h1 class="title-banner">What is Lorem Ipsum?</h1>
+      <p class="description-banner">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        Ipsum
+        has been the industry's
+        standard dummy text ever since the 1500s</p>
+    </div>
+  </div>
+
+
+  <div class="molecule-card">
+    <div class="row row-cols-1 row-cols-md-2">
+      {{#each list }}
+      <div class="col">
+        {{> molecules-card }}
+      </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="paginations">
+    {{> molecules-pagination }}
+  </div>
+</div>

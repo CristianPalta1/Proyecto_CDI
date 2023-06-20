@@ -1,0 +1,10 @@
+{
+    "labelFor" : "name",
+    "labelText" : "First name",
+    "labelClass" : "field-placeholder",
+    "inputType": "text",
+    "inputId": "name",
+    "inputName": "name",
+    "inputClass": "input",
+    "inputPlaceholder": "First name"
+}

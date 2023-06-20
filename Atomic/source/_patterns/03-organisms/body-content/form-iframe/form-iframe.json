@@ -1,0 +1,87 @@
+{
+    "iframeClass": "iframe-responsive",
+    "iframeSrc" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.1189767125296!2d-74.06187170955022!3d4.687047662145689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ac261ea1fc1%3A0x630a5ce8f158c126!2sAriadna%20Communications%20Group!5e0!3m2!1ses!2sco!4v1684280966244!5m2!1ses!2sco",
+    "iframeAdditionalAttr": [
+        {
+            "attribute": "style",
+            "value": "border:0;"
+        },
+        {
+            "attribute": "width",
+            "value": "600"
+        },
+        {
+            "attribute": "height",
+            "value": "450"
+        },
+        {
+            "attribute": "allowfullscreen",
+            "value": ""
+        },
+        {
+            "attribute": "loading",
+            "value": "lazy"
+        },
+        {
+            "attribute": "referrerpolicy",
+            "value": "no-referrer-when-downgrade"
+        }
+    ],
+    "formUrl": "#",
+    "formMethod": "post",
+    "formClass": "form",
+    "textfield-list" : [
+        {
+            "labelFor" : "name",
+            "labelText" : "First name",
+            "labelClass" : "field-placeholder",
+            "inputType": "text",
+            "inputId": "name",
+            "inputName": "name",
+            "inputClass": "input",
+            "inputPlaceholder": "First name",
+            "required" : true
+        },
+        {
+            "labelFor" : "lastname",
+            "labelText" : "Last name",
+            "labelClass" : "field-placeholder",
+            "inputType": "text",
+            "inputId": "lastname",
+            "inputName": "lastname",
+            "inputClass": "input",
+            "inputPlaceholder": "Last name",
+            "required" : true
+        },
+        {
+            "labelFor" : "email",
+            "labelText" : "Email",
+            "labelClass" : "field-placeholder",
+            "inputType" : "email",
+            "inputId" : "email",
+            "inputName": "email",
+            "inputClass": "input",
+            "inputPlaceholder" : "Email",
+            "required" : true
+        },
+        {
+            "labelFor" : "comment",
+            "labelText" : "Comment",
+            "labelClass" : "field-placeholder",            
+            "textareaId": "comment",
+            "textareaName": "comment",
+            "textareaClass": "textarea",
+            "textareaPlaceholder" : "Comment",
+            "textareaCols" : 33,
+            "textareaRows" : 4,
+            "required" : true
+        }
+    ],
+    "formSubmit" : {
+        "inputType" : "submit",
+        "inputId" : "submit",
+        "inputName": "submit",
+        "inputClass": "btn primary",
+        "inputValue" : "Enviar"
+    }
+}

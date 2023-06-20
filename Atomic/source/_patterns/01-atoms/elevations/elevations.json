@@ -1,0 +1,52 @@
+{
+  "listElevation" : [
+    {
+      "tag": "div",
+      "text": "00",
+      "modifier": "elevation-none",
+      "padding-box": "padding--flush"
+    },
+    {
+      "tag": "div",
+      "text": "01",
+      "modifier": "elevation-one",
+      "padding-box": "padding--small"
+    },
+    {
+      "tag": "div",
+      "text": "02",
+      "modifier": "elevation-two",
+      "padding-box": "padding--small"
+    },
+    {
+      "tag": "div",
+      "text": "03",
+      "modifier": "elevation-three",
+      "padding-box": "padding--small"
+    },
+    {
+      "tag": "div",
+      "text": "04",
+      "modifier": "elevation-four",
+      "padding-box": "padding--small"
+    },
+    {
+      "tag": "div",
+      "text": "05",
+      "modifier": "elevation-five",
+      "padding-box": "padding--small"
+    },
+    {
+      "tag": "div",
+      "text": "06",
+      "modifier": "elevation-six",
+      "padding-box": "padding--large"
+    },
+    {
+      "tag": "div",
+      "text": "07",
+      "modifier": "elevation-seven",
+      "padding-box": "padding--large"
+    }
+  ]
+}

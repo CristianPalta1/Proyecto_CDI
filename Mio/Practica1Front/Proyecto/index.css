@@ -1,0 +1,316 @@
+/*Variables globales */
+:root {
+    --very-light-pink: #c7c7c7;
+    --text-input-filed: #f7f7f7;
+    --white: #ffffff;
+    --hospital-green: #acd9b2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+}
+
+.password,
+.login,
+.edit,
+.my-account {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.password__form--container,
+.login__form--container,
+.edit__form--container,
+.my-account__form--container {
+    display: grid;
+    /* Auto seria para que elemento tome el alto que sobre */
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.password__logo,
+.login__logo {
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    display: none;
+}
+
+.password__title {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.edit__title,
+.my-account__title {
+    font-size: var(--lg);
+    margin-bottom: 36px;
+    text-align: start;
+}
+
+.password__subtitle {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.password__form,
+.login__form,
+.edit__form,
+.my-account__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.password__form--label-pasword,
+.login__form--label-email,
+.login__form--label-pasword,
+.edit__form--label-name,
+.edit__form--label-email,
+.my-account__form--label-name,
+.my-account__form--label-email {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.input {
+    background-color: var(--text-input-filed);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+.password__form--input-password,
+.login__form--input-email,
+.login__form--input-password {
+}
+
+.primary__button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.password__form--btn-submit,
+.login__form--btn-submit {
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+form a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 52px;
+}
+
+.login__form--input-email,
+.edit__form--input-name,
+.edit__form--input-email,
+.password__form--input-password {
+    margin-bottom: 22px;
+}
+
+.secondary__button {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.value {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
+}
+
+.card__product {
+    height: 200px;
+    width: 100%;
+}
+
+.card__product--img {
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.store__container--cards {
+    display: grid;
+    /* sea llena automaticamente dependiendo la capacidad del ancho de la pantalla */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 240px));
+    gap: 26px;
+    /* Posiciona la grila totlamente al centro */
+    place-content: center;
+}
+.card__product {
+    width: 240px;
+}
+
+.card__product--information {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__product--information figure {
+    margin: 0;
+}
+.card__product--information figure img {
+    width: 35px;
+    height: 35px;
+}
+
+.card__product > .card__product--information p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin: 0 0 4px 0;
+}
+.card__product > .card__product--information p:nth-child(2) {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 0;
+}
+
+.desktop__menu {
+    width: 142px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+}
+
+.menu__options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__options li {
+    text-align: end;
+}
+.options__my-order,
+.options__my-account {
+    font-weight: bold;
+}
+
+.menu__options li:last-child {
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+}
+.menu__options li:last-child a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+.menu__options li a {
+    display: inline-block;
+    color: var(--black);
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.mobile__menu {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu__options--categories,
+.menu__options--acount,
+.menu__options--sign-out {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 24px 0;
+}
+.menu__options--categories{
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.menu__options--sign-out{
+    margin-top: 24px;
+}
+
+.options__sign-out {
+    color: var(--hospital-green) !important;
+    font-size: var(--sm);
+
+}
+
+.menu__options--categories li,
+.menu__options--acount li,
+.menu__options--sign-out li {
+    margin-bottom: 24px;
+}
+
+.menu__options--categories li a,
+.menu__options--acount li a,
+.menu__options--sign-out li a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.options__my-email{
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+    font-weight: 300 !important;
+}
+
+@media (max-width: 640px) {
+    .password__logo,
+    .login__logo {
+        display: block;
+    }
+    .login__form--btn-register,
+    .edit__form--btn-submit,
+    .my-account__form--btn-submit {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        max-width: 85%;
+        transform: translateX(-50%);
+    }
+    .store__container--cards {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 140px));
+    }
+    .card__product {
+        width: 140px;
+    }
+    .card__product--img {
+        width: 140px;
+        height: 140px;
+    }
+}

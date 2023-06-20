@@ -1,0 +1,37 @@
+.elevation{
+  &__block{
+    background-color: #fff ;
+    border: 1px solid #ddd ;
+    width: 100%; 
+    display: block ;
+    height: 85px; 
+    margin: 1.2rem 0 ;
+    padding: .8rem;
+  }
+  &-none{
+    box-shadow: none; 
+  }
+  &-one{
+    box-shadow: 0 1px 1px 0px #00000045;
+  }
+	
+  &-two{
+    box-shadow: 0 3px 3px 0px #00000045; 
+  }
+  &-three{
+    box-shadow: 0 5px 5px 1px #00000045; 
+  } 
+  &-four{
+    box-shadow: 0 7px 6px 1px #00000045; 
+  } 
+  &-five{
+    box-shadow: 0 8px 8px 1px #00000045;
+  } 
+  &-six{
+    box-shadow: 0 9px 9px 2px #00000045;
+  } 
+  &-seven{
+    box-shadow: 0 11px 11px 3px #00000045; 
+  } 
+}
+	 

@@ -1,0 +1,9 @@
+{
+    "heading" : [
+        {
+            "headingTag" : "h1",
+            "headingClass": "headline-1",
+            "headingText": "Home Page"
+        }
+    ]
+}

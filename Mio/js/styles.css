@@ -1,0 +1,41 @@
+.container-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 30px minmax(50px, 70px) repeat(6, 1fr); */
+    /* grid-template-columns: 1fr 1fr 1fr 300px 1fr 1fr 1fr 1fr; */
+    grid-template-areas: "logo logo logo nav nav nav nav nav"
+                         ". banner banner1 . banner2 banner2 . relacionados "
+                         "news news banner1 . banner2 banner2 . relacionados";
+}
+
+.container-dashboard .picture {
+    grid-area: logo;
+    background-color: red;
+}
+
+.container-dashboard .nav {
+    grid-area: nav;
+    background-color: blue;
+}
+
+.container-dashboard .banner {
+    grid-area: banner;
+    background-color: green;
+}
+.container-dashboard .banner1 {
+    grid-area: banner1;
+    background-color: yellow;
+}
+.container-dashboard .banner2 {
+    grid-area: banner2;
+    background-color: purple;
+}
+.container-dashboard .relacionados {
+    grid-area: relacionados;
+    background-color: maroon;
+}
+
+.container-dashboard .news {
+    grid-area: news;
+    background-color: goldenrod
+}

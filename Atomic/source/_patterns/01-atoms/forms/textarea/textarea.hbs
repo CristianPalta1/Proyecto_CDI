@@ -1,0 +1,12 @@
+<textarea 
+    {{~#if textareaId }} id="{{textareaId}}" {{~/if~}}
+    {{~#if textareaName }} name="{{textareaName}}" {{~/if~}}
+    {{~#if textareaClass }} class="{{textareaClass}} 
+        {{~#if textareaClassModifier }} {{textareaClassModifier}} {{~/if~}}"
+    {{~/if~}}
+    {{~#if textareaPlaceholder }} placeholder="{{ textareaPlaceholder }}" {{~/if~}}
+    {{~#if textareaCols }} cols="{{textareaCols}}" {{~/if~}}
+    {{~#if textareaRows }} rows="{{textareaRows}}" {{~/if~}}
+    {{~#if disabled }} disabled {{~/if~}}
+    {{~#if required }} required {{~/if~}}
+></textarea>

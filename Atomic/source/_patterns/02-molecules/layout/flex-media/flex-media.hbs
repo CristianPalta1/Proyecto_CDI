@@ -1,0 +1,13 @@
+<section class="layout-flex-media row {{{typeLayout}}}">
+
+  <div class="layout-flex-media__images {{{mediaImagesCol}}}">
+    {{> atoms-thumbnail}}
+  </div>
+  <div class="layout-flex-media__info {{{mediaInfoCol}}}">
+    {{#mediaInfo}}
+    <{{tagTitle}}>{{{title}}}</{{tagTitle}}>
+    <{{tagDescription}}>{{{description}}}</{{tagDescription}}>
+    {{/mediaInfo}}
+  </div>
+
+</section>

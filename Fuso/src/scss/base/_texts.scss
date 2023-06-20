@@ -1,0 +1,99 @@
+//---------------------------------------------------------------------
+// TEXT
+//---------------------------------------------------------------------
+
+/* ==================== UTILITIES TEXT =================== */
+
+.c-primary{
+    color: $color-brand--primary;
+}
+
+.c-secondary{
+    color: $color-brand--secondary;
+}
+
+.italic{
+    font-style: italic;
+}
+
+/* ==================== HEADINGS =================== */
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+
+    &--1, &--2, &--3, &--4, &--5, &--6{
+        @extend .heading;
+    }
+
+    &--1{
+        font-size: 4rem;
+        margin: 1rem 0;
+        text-transform: uppercase;
+
+        @include media-query(minmobileXS) {
+            font-size: 5rem;
+        }
+
+        @include media-query(minmobileS) {
+            font-size: 6rem;
+        }
+
+        @include media-query(minmobile) {
+            font-size: 7rem;
+        }
+        @include media-query(mintablet) {
+            font-size: 8rem;
+        }
+    }
+    &--2{
+        font-size: 3.6rem;
+        margin: 1rem 0;
+        @include media-query(mintablet) {
+            font-size: 4.2rem;
+        }
+    }
+    &--3{
+        font-size: 2rem;
+    }
+    // &--4{
+        
+    // }
+    // &--5{
+        
+    // }
+    // &--6{
+        
+    // }
+
+}
+
+/* ==================== PARAGRAPH =================== */
+
+p{
+    color: $color-neutral--gray-07;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+/* ==================== SUBTITLE =================== */
+
+.subtitle {
+    font-size: 2rem;
+}
+
+.subtitle--primary {
+    font-size: 1.8rem;
+    color: $color-brand--primary;
+    font-weight: $weight-medium;
+}
+
+/* ==================== LINKS =================== */
+
+a{
+    color: $color-brand--primary;
+    text-decoration: none;
+    transition: all 300ms;
+    &:hover{
+        text-decoration: underline;
+    }
+}

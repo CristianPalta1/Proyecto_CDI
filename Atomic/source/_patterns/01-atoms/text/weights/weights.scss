@@ -1,0 +1,74 @@
+/************** START TEXT *************/
+.text {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.text--bold {
+    font-weight: 700;
+}
+
+.text--regular {
+    font-weight: 500;
+}
+
+.text--light {
+    font-weight: 300;
+}
+
+.subtitle-1 {
+    font-size: 16px;
+}
+
+.subtitle-2 {
+    font-size: 14px;
+
+}
+
+.body-1 {
+    font-size: 16px;
+
+}
+
+.body-2 {
+    font-size: 14px;
+
+}
+
+.button {
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.caption {
+    font-size: 12px;
+
+}
+
+.overline {
+    font-size: 10px;
+
+}
+
+.tags {
+    font-size: 14px;
+
+}
+
+.byline {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #555;
+}
+
+.pullquote {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 1em;
+
+}
+
+/************** END TEXT *************/

@@ -1,0 +1,59 @@
+{
+    "formUrl": "#",
+    "formMethod": "post",
+    "formClass": "form",
+    "textfield-list" : [
+        {
+            "labelFor" : "name",
+            "labelText" : "First name",
+            "labelClass" : "field-placeholder",
+            "inputType": "text",
+            "inputId": "name",
+            "inputName": "name",
+            "inputClass": "input",
+            "inputPlaceholder": "First name",
+            "required" : true
+        },
+        {
+            "labelFor" : "lastname",
+            "labelText" : "Last name",
+            "labelClass" : "field-placeholder",
+            "inputType": "text",
+            "inputId": "lastname",
+            "inputName": "lastname",
+            "inputClass": "input",
+            "inputPlaceholder": "Last name",
+            "required" : true
+        },
+        {
+            "labelFor" : "email",
+            "labelText" : "Email",
+            "labelClass" : "field-placeholder",
+            "inputType" : "email",
+            "inputId" : "email",
+            "inputName": "email",
+            "inputClass": "input",
+            "inputPlaceholder" : "Email",
+            "required" : true
+        },
+        {
+            "labelFor" : "comment",
+            "labelText" : "Comment",
+            "labelClass" : "field-placeholder",            
+            "textareaId": "comment",
+            "textareaName": "comment",
+            "textareaClass": "textarea",
+            "textareaPlaceholder" : "Comment",
+            "textareaCols" : 33,
+            "textareaRows" : 4,
+            "required" : true
+        }
+    ],
+    "formSubmit" : {
+        "inputType" : "submit",
+        "inputId" : "submit",
+        "inputName": "submit",
+        "inputClass": "btn primary",
+        "inputValue" : "Enviar"
+    }
+}

@@ -1,0 +1,7 @@
+.list-unordered {
+    list-style: none;
+
+    &.rounded-marker {
+        list-style-type: disc;
+    }
+}

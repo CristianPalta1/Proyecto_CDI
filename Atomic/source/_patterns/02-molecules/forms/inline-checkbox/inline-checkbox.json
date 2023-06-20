@@ -1,0 +1,9 @@
+{
+    "inputType" : "checkbox",
+    "inputId" : "checkbox",
+    "inputName": "checkbox",
+    "inputClass": "checkbox",
+    "labelFor" : "checkbox",
+    "labelText": "Label text",
+    "labelClass": "inline-checkbox"
+}

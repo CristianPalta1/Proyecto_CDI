@@ -1,0 +1,14 @@
+<form 
+    {{~#if formUrl }} action="{{{ formUrl }}}" {{~/if~}}
+    {{~#if formMethod }} method="{{formMethod}}" {{~/if~}}
+    {{~#if formClass }} class="{{formClass}} 
+        {{~#if formClassModifier }} {{formClassModifier}} {{~/if~}}" 
+    {{~/if~}}
+>
+    {{#each input-list }}
+        {{> atoms-input }}
+    {{/each}}
+    {{!-- <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button> --}}
+</form>

@@ -1,0 +1,85 @@
+#faq {
+    margin-top: 3rem;
+    position: relative;
+    padding: 3rem 0 5rem;
+    @include media-query(tablet) {
+        padding: 3rem 2rem 5rem;
+     }
+    &::before {
+        content: "";
+        box-shadow: 0px 0px 10px #00000029;
+        width: 100vw;
+        max-width: 100vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        z-index: -1;
+    }
+    .faq {
+        font-family: Arial, sans-serif;
+        max-width: 75%;
+        margin: 0 auto;
+        padding-top: 0.8rem;
+        height: 5.3rem;
+        @include media-query(tablet) {
+            max-width: initial;
+         }
+        h3 {
+            background-color: #455056;
+            color: #ffffff;
+            padding: 1.2rem;
+            margin: 0;
+            font-weight: 300;
+            cursor: pointer;
+            position: relative;
+            font-family: "HelveticaRegular", Arial, sans-serif !important;
+            padding-left: 3rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            @include media-query(tablet) {
+                padding-left: 1.8rem;
+                font-size: 1.3rem;
+            }
+            &::before {
+                content: url("./assets/images/plus.png");
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        p {
+            padding: 0;
+        }
+        &.active {
+            box-shadow: 0px 0px 6px #0000004d;
+            padding: 2rem;
+            height: auto;
+            h3 {
+                background-color: transparent;
+                color: #707070;
+                padding-left: 0;
+                &::before {
+                    content: url("./assets/images/minus.png");
+                    color: #455056;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .answer {
+        display: none;
+
+        p {
+            font-weight: 500;
+            color: #707070;
+            font-size: 1.6rem;
+        }
+    }
+}

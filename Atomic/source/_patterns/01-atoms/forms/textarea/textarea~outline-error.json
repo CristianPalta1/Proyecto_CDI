@@ -1,0 +1,10 @@
+{
+    "textareaId": "comment",
+    "textareaName": "comment",
+    "textareaClass": "textarea",
+    "textareaClassModifier": "textarea--outline error",
+    "textareaPlaceholder" : "Comment here",
+    "textareaCols" : 33,
+    "textareaRows" : 4,
+    "required" : true
+}

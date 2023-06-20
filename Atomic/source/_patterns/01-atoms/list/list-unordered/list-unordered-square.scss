@@ -1,0 +1,7 @@
+.list-unordered {
+    list-style: none;
+
+    &.square-marker {
+        list-style-type: square ;
+    }
+}

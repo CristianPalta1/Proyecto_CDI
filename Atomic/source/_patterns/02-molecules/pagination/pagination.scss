@@ -1,0 +1,38 @@
+.pagination {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  .page-item {
+    .page-link {
+      color: black;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--previous,
+    &--next {
+      .page-link {
+        width: auto;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &.is-active {
+      border-radius: 50%;
+
+      .page-link {
+        border-radius: 50%;
+        background-color: #E52520;
+        color: #fff;
+      }
+    }
+  }
+}
